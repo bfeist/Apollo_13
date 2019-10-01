@@ -38,7 +38,7 @@ for url in urlArray:
 
     for line in lines:
         linecounter += 1
-        if linecounter == 717:
+        if linecounter == 1036:
             print('test area')
         line_match = re.search(r'(\d{3}:\d{2}:\d{2})', line)
         if line_match is not None:
@@ -74,9 +74,12 @@ for url in urlArray:
             new_line_to_write = True
 
         if new_line_to_write:
-            utterance = re.sub(r'\[.*?ause.*?\]', '', utterance)
-            utterance = re.sub(r'\[.*?arble.?\]', '...', utterance)
-            print(str(linecounter) + " " + timestamp + "|" + utterance_type + "|" + who.strip() + "|" + utterance.strip())
+            utterance = re.sub(r'\[((L|l)ong )?(P|p)ause.*?\]', '', utterance)
+            utterance = re.sub(r'\.\.\.', ' - ', utterance)
+            utterance = re.sub(r'\[(G|g)arble.?\]', '...', utterance)
+            utterance = re.sub(r'\.\.\.\.', '...', utterance)
+            utterance = utterance.strip()
+            print(str(linecounter) + " " + timestamp + "|" + utterance_type + "|" + who.strip() + "|" + utterance)
             outputFile.write(timestamp + "|" + utterance_type + "|" + who.strip() + "|" + utterance.strip() + "\n")
             new_line_to_write = False
 
