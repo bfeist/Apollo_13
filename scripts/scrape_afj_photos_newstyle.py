@@ -14,7 +14,7 @@ urlArray = ["00_crewchange.html", "01launch_ascent.html", "02earth_orbit_tli.htm
             "27day6-odysseyresurrected.html", "28day6-farewellaquarius.html", "29day6-returnhome.html",
             "30postflight.html"]
 
-urlArray = ["01launch_ascent.html"]
+# urlArray = ["01launch_ascent.html"]
 
 outputFilePath = "../MISSION_DATA/scraped_data/scraped_photoinfo_AFJ_newstyle.csv"
 outputFile = open(outputFilePath, "w")
