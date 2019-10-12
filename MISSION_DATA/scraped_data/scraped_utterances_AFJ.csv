@@ -1888,7 +1888,7 @@
 023:18:06|C|Kerwin|Jim, Houston. Your comm got pretty garbled there just as you started to talk.
 023:18:38|T|CDR|Okay. Houston, Apollo 13.
 023:18:40|C|Kerwin|Okay, 13. You're loud and clear again.
-023:18:45|T|CDR|We averaged about 5&frac12; hours sleep apiece, and we're estimating that the sleep was good.
+023:18:45|T|CDR|We averaged about 5 1/2; hours sleep apiece, and we're estimating that the sleep was good.
 023:18:53|C|Kerwin|Okay. Copy that.  Let's see what else we got for you, Jim. Midcourse-2 looks like about 23 feet per second [7 m/s], approximately retrograde and on time. And it's holding real firm there. For your information, and you don't need to copy this down, because it's still pretty soft, but we have an S-IVB impact of about 8.57 south and about 33.9 west, which is a little west and a little south of the Flight Plan value. We have it at a GET of about 77 plus 51 which is just before AOS, and the LOI paths are a little bit late, and as I say, it's still pretty soft, and we'll be updating you with firm numbers.
 023:19:57|T|CDR|That's fine, Joe. Just as long as it doesn't hit Cone Crater.
 023:20:02|C|Kerwin|Okay. And I'll have a consumables update for you in a little while, and I have a small Flight Plan update for you sometime a little later on when you're ready to copy. There's no big deals in it.
@@ -2865,6 +2865,7 @@
 046:44:36|T|CDR|It might be interesting that just after we went to sleep last night we had a Master Alarm and it really scared us. And we were all over the cockpit like a wet noodle.
 046:44:45|C|Kerwin|(Laughter) Sorry it wasn't something more significant. I've also got a procedure for you on that H<sub>2</sub> tank; simple thing after you get done stirring up the cryos.
 046:44:59|T|CDR|Okay.
+046:46:55|T||(Music)
 046:47:10|C|Kerwin|That was beautiful. What was it?
 046:47:16|T|CDR|A little of 'With Their Eyes on the Stars' to wake up to.
 046:47:24|C|Kerwin|Sounds like all the comforts of home. Have you guys got a flower on your breakfast table?
@@ -3316,11 +3317,11 @@
 055:14:16|C|Lousma|Roger.
 055:14:16|P|PAO|That was spacecraft Commander Jim Lovell confirming that they had the High Gain narrow beam locked up.
 055:14:36|C|Lousma|13, Houston. We'd like to disable Quads C and D; use Alpha and Bravo. Over.
-055:14:36|P|PAO|We're now receiving a transmission, television transmission.
+055:14:43|P|PAO|We're now receiving a transmission, television transmission.
 055:14:44|T|CMP|Okay -
 055:14:45|T|CDR|- Disable quads C and D. Roger.
 055:14:56|C|Lousma|Okay, 13. We've got Freddo on TV.
-055:15:04|T|CDR|Roger, Houston. What we plan to do for you today is start out in the space shipper [sic] Odyssey, and take you on through from Odyssey in through the tunnel into Aquarius. And show you a little bit of the landing vehicle, and your TV operator is now resting on the center couch, looking at Fred Haise, whose head is now just about at the beginning of the tunnel, and his back is against the Lower Equipment Bay optical area. And Fred will now transport himself into the tunnel, and into the spaceship Aquarius.
+055:15:04|T|CDR|Roger, Houston. What we plan to do for you today is start out in the space ship - er, Odyssey, and take you on through from Odyssey in through the tunnel into Aquarius. And show you a little bit of the landing vehicle, and your TV operator is now resting on the center couch, looking at Fred Haise, whose head is now just about at the beginning of the tunnel, and his back is against the Lower Equipment Bay optical area. And Fred will now transport himself into the tunnel, and into the spaceship Aquarius.
 055:15:48|T|LMP|You know one thing I noted, Jack, when I first came across here, that starting upright in the Command Module and heading down in Aquarius, there's a little bit of an orientation change that, even though I'd been through it once in the water tank, it still pretty unusual. I find myself, now, standing with my head on the floor when I get down inside the LM.
 055:16:25|C|Lousma|That's a great picture, Jim. You got the light just right.
 055:16:40|T|LMP|And one of the nice things, Jack, particularly for a novice like myself, is the - the ease of moving around in here. It's, of course, as you know from working in the Command Module Simulator, it's really quite a boon to have zero gravity as an aid. Because you get - pretty confining, really, at one g, to move around very much in there, and it's quite easy in this environment. The LM, as you can see, it looked pretty clean, I found a couple of loose washers about it and the - a little plastic cap off the sequence camera had come loose and I found it lodged over by the ED panel. Okay. Right under Jim, now, he's actually standing on a - what looks to be a can here. And, for the sake of all the people back there, housed inside this can is the - the LM ascent engine where, hopefully, you can see my hand resting on top of right now - the engine that we use to get off of the Moon. Immediately adjacent to the engine cover here, I have my hand on a white box now, which has been shown before. This happens to be Jim's PLSS, or the backpack which'll supply oxygen and water for cooling while on the lunar surface. This device we hope to make use of for - a planned 4 hours and possibly up to as much as 5 hours. Right - right behind the PLSS, a couple of little square packages I now have my hand on here, one here and one right below, are our OPSs, which are, in essence, the emergency oxygen supplies, which are good for some 40 to 45 minutes. These are - when we get ready to mount up and head outside, will be placed up on top of the PLSS.
@@ -3546,8 +3547,8 @@
 056:35:55|C|Lousma|13, Houston. Turn Battery A, Off -
 056:35:56|T|CDR|Okay, Jack, ...
 056:35:57|T|Unknown speaker|[Garbled.]
-056:36:01|T|CMP|That's right; we were pulling current all the time.
-056:36:02|T|CDR|Battery A, Off. Roger.
+056:35:59|T|CMP|That's right; we were pulling current all the time.
+056:36:00|T|CDR|Battery A, Off. Roger.
 056:36:05|T|CMP|Now you're ... up.
 056:36:07|T|CDR|I'm transmitting. I don't have any current now.
 056:36:15|T|CMP|Hey, it's off - it's off. They - they killed the bus completely now.
@@ -3594,7 +3595,7 @@
 056:53:20|C|Lousma|- my last copy is Secondary RAD In.
 056:53:28|T|LMP|Okay. Your Secondary RAD In, I gave to you 70 - about 72 degrees; the RAD Out is about 30; the Glycol Evap Temp is reading about 65; Steam Pressure full scale high, Glycol Discharge Pressure about 9 psi. The Accum - Secondary Accumulator is about 30 - 34 percent. Our temperatures: Suits showing about 52 degrees; Cabin, about 58 degrees; pressures, Suit reading 4.1, Cabin at 5. Partial Pressure CO<sub>2</sub> is up to little over 1, about 1.1. On the SPS side of the house, the temperature is 72 degrees, helium's reading 3500; N<sub>2</sub> A is reading 2300; N<sub>2</sub> B, about 2450. And our ullage pressures: Fuel is reading about 165; Oxidizer 170. Fuel cells: Fuel Cell 1, both Closed, they're zip; Skin Temp 405 degrees; Condenser Exhaust is lower scale. Fuel Cell 2 - right now we've got an O<sub>2</sub> or an H<sub>2</sub> Flow reading of 0.13 to 0.14, and the O<sub>2</sub> Flow is right now pegged full scale high although it has been varying depending on thruster activity which has also given us Main Bus A undervolts from a steady reading of about 1.1 up to full scale high. The T-skin is about 445 and the Condenser Exhaust, 17 - correction, 180. Let's see if you want it on the DC indicator: Fuel Cell 1 is 0 amps; 2 is reading somewhere between 44 and about - oscillating 44 to 48 again depending on thruster activity.
 056:56:03|C|Lousma|Stand by.
-056:56:04|T|LMP|- is 0 amps. Say again, Jack. [Long pause.
+056:56:03|T|LMP|- is 0 amps. Say again, Jack.
 056:56:04|P|PAO|Apollo Control, Houston, continuing to troubleshoot with Apollo 13 crew, closely watching oxygen quantities and pressures in the Command Module. Isolating the surge tank leaves oxygen for entry if this should become necessary. Also, if necessary, the 13 crew could open a tunnel and use oxygen from the Lunar Module.
 056:56:23|T|CDR|Houston, 13.
 056:56:55|T|LMP|Hello, Houston; Apollo 13. How do you read?
@@ -3639,7 +3640,7 @@
 057:10:14|T|LMP|Okay. Jack, 1-A is reading, lower scale, 0; 1-B is reading. 3.45. Okay. You only want fuel cell 1 and 3. Okay. Ignore that, 1-B reading. 1-C is reading 3.4. Now, 1-D is reading 2.4. 2-D is reading 0.25.
 057:11:09|C|Lousma|Roger. Is that 2 Bravo, Fred?
 057:11:15|T|LMP|That's 2 Bravo is reading - oh, about 0.25 to 0.3.
-057:11:30|C|Unidentified Ground technician|Okay. Let me get back with you, men. Stand by on these readouts.
+057:11:30|C|Unidentified Ground technician|Okay. Let me get back with you in a minute, Flight. Stand by on these readouts.
 057:11:30|P|PAO|This is Apollo Control, Houston, 57 hours, 11 minutes  -
 057:11:39|T|LMP|Okay. 2-C is reading 4.1.
 057:11:39|P|PAO|We now show an altitude of 180,521 nautical miles [334,325 km]. Here in Mission Control we are now looking towards an alternate mission swinging around the Moon and using the Lunar Module power systems because of the situation that has developed here this evening. We now show a velocity of 3,210 feet per second [978 m/s]. This is Apollo Control, Houston.
@@ -3813,8 +3814,8 @@
 058:02:26|T|LMP|Okay. Verb 41, Noun 20. Okay. You want plus? Plus or minus? Plus 302.43? Is that right?
 058:03:12|T|LMP|Okay. Let me enter it. Okay. What's the next one? Plus 347.78. 347.78. Okay. 08.13. Is that right? Enter. Okay.
 058:03:53|C|Lousma|Odyssey, Houston  -
-058:03:54|T|CDR|Houston, [Garbled
-058:03:55|C|Lousma|-  your battery A on.
+058:03:54|T|CDR|Houston, ...
+058:03:54|C|Lousma|-  your battery A on.
 058:03:59|T|CMP|Battery A on now.
 058:04:01|C|Lousma|Go ahead, Aquarius.
 058:04:03|T|CDR|Houston. Okay. I want you to doublecheck my arithmetic to make sure we got a good coarse align. The roll CAL angle was minus 2 degrees. The Command Module angles were 355.57, 167.78, 351.87.
@@ -4023,8 +4024,9 @@
 058:44:48|T|CDR|Okay. I read your gyro torquing angles as plus 003.30, Y is plus 023, I only have four numbers for Y; you'll have to give that one to me again, and Z is minus 015.10. Read Y again, please.
 058:45:06|C|Lousma|Okay, Jim. X and Z are correct and Y is plus 024.80.
 058:45:19|T|CDR|Okay. We read Y as plus 024.80. We'll proceed on Activation 40 to fine align the platform.
-058:45:28|C|Lousma|Roger. Okay, Aquarius, proceed as on page 40 with IMU fine align.
-058:45:28|P|PAO|"This is Apollo Control; 58 hours, 46 minutes Ground Elapsed Time. Lovell and Haise still powering up the Lunar Module, getting attitude control, aligning the platform, in preparation for what turns out to be an alternate mission in which no lunar landing will be possible. However, the spacecraft will fly around the Moon. At this point in translunar coast, it is more economical in propellant and time to continue to coast on around the Moon and come back to Earth interception trajectory. In about 20 minutes in the Houston News Center there will be a press conference in the small briefing room. Stand by.
+058:45:28|C|Lousma|Roger.
+058:45:38|C|Lousma|Okay, Aquarius, proceed as on page 40 with IMU fine align.
+058:45:28|P|PAO|This is Apollo Control; 58 hours, 46 minutes Ground Elapsed Time. Lovell and Haise still powering up the Lunar Module, getting attitude control, aligning the platform, in preparation for what turns out to be an alternate mission in which no lunar landing will be possible. However, the spacecraft will fly around the Moon. At this point in translunar coast, it is more economical in propellant and time to continue to coast on around the Moon and come back to Earth interception trajectory. In about 20 minutes in the Houston News Center there will be a press conference in the small briefing room. Stand by.
 058:47:41|C|Lousma|Aquarius, Houston. Can you see any stars out the LM window?
 058:47:53|T|LMP|We'll have to wipe them off, Jack. They're coated with water right now.
 058:47:59|T|CDR|Can I get a towel?
@@ -9988,8 +9990,8 @@
 120:21:03|T|CDR|Go ahead.
 120:21:05|C|Kerwin|For our benefit while we do this briefing, Jim, we'd like to have the, the COMM better, and we can sure spare the power; so we'd like you on panel 16 to close the POWER AMPLIFIER circuit breaker, and on panel 12 we'd like you to move the VOICE FUNCTION switch to VOICE. Over.
 120:22:22|C|Kerwin|Okay, Aquarius; Houston. How do you read?
-120:22:26|T|CDR|Read you loud and clear.
-120:22:27|C|Kerwin|Okay, and you're real good. It's a  -  It's a pleasure not to have all that noise. Let me tell you what I want to do, Jim. As I said, we're not going to give you detailed procedures, now. What we expect to have for you shortly are procedures which we'll try and get up to you in the following form. First, we'll have a time line, sort of a flight plan thing, which will have the times of all the major events and any configurations, switch settings, and so forth which are peculiar to our configuration and which, therefore, you won't find in the checklist. This, for instance, will be true of the way we power up the command module; and second, of course, we'll have any redlines to the checklist so that you can enter the checklist where possible to  -  to perform functions, and the time line will simply refer you to the checklist when that's appropriate. Okay?
+120:22:26|T|CDR|Reading you loud and clear.
+120:22:27|C|Kerwin|Okay, and you're real good. It's a  -  It's a pleasure not to have all that noise. Let me tell you what I want to do, Jim. As I said, we're not going to give you detailed procedures, now. What we expect to have for you shortly are procedures which we'll try and get up to you in the following form. First, we'll have a timeline, sort of a flight plan thing, which will have the times of all the major events and any configurations, switch settings, and so forth which are peculiar to our configuration and which, therefore, you won't find in the checklist. This, for instance, will be true of the way we power up the command module; and second, of course, we'll have any redlines to the checklist so that you can enter the checklist where possible to  -  to perform functions, and the timeline will simply refer you to the checklist when that's appropriate. Okay?
 120:23:32|T|CDR|Okay. Sounds good. You're going to give me an overall time line now, I take it; is that right?
 120:23:36|C|Kerwin|That's affirm. I'm going to first of all just quickly run through the times of the major events, and then we'll go back and fill in some of the details. Okay. Entry interface is at 142 hours 40 minutes; 6-1/2 hours, roughly prior to that or at about 136:10, we'll start this whole thing going by applying IMU HEATER POWER, by checking the CM/RCS temperatures and preheating the CM/RCS if required, and we suspect we'll probably want to do that. We'll have detailed procedures up for it later. At about 6 hours prior to EI or about 136:40, we will commence powering up the LM, powering up the AGS, using the modified LM/DPS RCS 30-minute checklist, which you have used for the previous midcourse. Then shortly, just before 5 hours, prior to EI or at about 137:40, we'll want you in the attitude for a LM AGS body axis alignment, using the Earth terminator like we did before; and as soon as we have that, we'll perform MCC-7, which looks like, now, about a 2-foot-per-second burn or about 15 seconds of RCS. And I'm told that it's down to 1-1/2 now, so it's comfortably within the RCS margin. Okay. When we do that, we'll immediately start the maneuver to the service module jettison attitude, which will be in plane since we're jettisoning it earlier than we usually do. We don't need, and don't want, the out-of plane component. So it'll be in plane with the service module pointed back out along the radius vector. We will then commence to get the command module ready for service module SEP, including command module RCS checkout and hot fire, and at approximately 4 hours and 30 minutes prior to EI or 138:10, we'll jettison the service module. We'll pitch the LM up until we aquire the service module in the ... and try and get some photographs, but we're not going to fool around with LM translation maneuvers for pictures because we don't want to screw up  -  foul up your flight path angle at that time. Okay. That gives us 2 hours to  -  of more or less open time here to finish up, if we're late on that, to go on over to checklist and prepare for powering up the command module. We're going to start the command module full powerup at EI minus 2 hours and 30 minutes or 140:10 GET. We'll get the computer on the line, we'll get the IMU up, we'll start uplinking your state vectors, and so forth, and aligning the command module platform. At about 1 hour and 30 minutes at the latest, giving us an hour to do this command module stuff, we will start the maneuver to the LM jettison attitude. You'll then start to close out the LM. Of course, we don't have our stowage all configured way before this. We'll close the hatch, do a pressure integrity check, and at EI minus 1 hour, or 141 hoars and 40 minutes, we'll jettison the LM. As soon as we do that, you can start the maneuver to the entry attitude. When you're there, do a sextant star check, take down the optics, and at that point we'll be giving you your final entry PAD. You can initialize the EMS, and you'll essentially be right back on the checklist at that point. There's one  -  one little difference from your nominal entry. You're a little bit earlier in the morning, so it going  -  it's going to be nighttime when you get to EI. However, we're fortunate enough to have the Moon in a perfect position for a horizon check. We'll give you a Moon check instead of a horizon check, and you can track it right down to moonset, which is going to be at EI roughly minus 3 minutes. And that's it for the quick time line. Do you have any questions right now?
 120:28:11|T|CDR|I don't believe so, Joe, right now. We'll have to look at those time lines, and think about it for a little bit.
@@ -10054,7 +10056,7 @@
 120:56:58|P|PAO|"This is Apollo Control, the change of shift news conference will begin momentarily."
 120:57:07|C|Brand|Aquarius, Houston. Go ahead.
 120:57:07|P|PAO|"Capcom now is Astronaut Vance Brand."
-120:57:27|T|CDR|Houston, Aquariuds.
+120:57:27|T|CDR|Houston, Aquarius.
 120:57:28|C|Brand|Roger, Jim. We're receiving you now. Go ahead.
 120:58:34|T|CDR|Okay. I thought you were calling, but I guess we had a ground switching problem down there.
 120:58:40|C|Brand|Yes. We lost the lock for a little while there, Jim. Well, good day. Could you give us battery A voltage ... reading, please, and battery charger current, as you have been doing.
@@ -10274,7 +10276,7 @@
 123:32:12|T|CMP|All right, go ahead.
 123:36:29|T|CMP|Okay, Vance. The volt 39.3, amp 1.3.
 123:36:38|C|Brand|Roger. Copy 39.3 and 1.3.
-123:37:56|C|Brand|Aquarius, Houston. Over.
+123:38:56|C|Brand|Aquarius, Houston. Over.
 123:38:01|T|CMP|Go ahead, Vance.
 123:38:03|C|Brand|Jack, looks like the LM suit release valve has been bumped to AUTO again; request it  -
 123:38:12|T|CMP|Okay.
@@ -11688,7 +11690,7 @@
 135:02:39|C|Lousma|We haven't got them yet.
 135:02:51|C|Lousma|Aquarius, hold on to torquing angles, Please.
 135:02:55|T|CDR|We're doing that.
-135:03:18|C|Lousma|Jim, the reason for the delay is that we're not seeing the data yet. We're having to check a point here; and as soon as they come up, we'll let you know what to do with them.
+135:03:18|C|Lousma|Jim, the reason for the delay is that we're not seeing the data yet. We're having a checkpoint here; and as soon as they come up, we'll let you know what to do with them.
 135:03:30|T|CDR|Okay. We had a large NOUN 05 of  -  what  -  112, and our torquing angles, Jack, are minus 01713, minus 03278, minus 01395.
 135:03:53|C|Lousma|Roger. Minus 01713, and we see them now.
 135:04:17|C|Lousma|Aquarius, torque them.
