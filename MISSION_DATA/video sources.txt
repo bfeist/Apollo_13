@@ -1,0 +1,79 @@
+L000817/AK-037 707
+L000817/AK-038 707
+L000573/FR-8246 mocr
+L000573/FR-8247 mocr
+L000573/FR-8249 mocr
+L000573/FR-8251 mocr
+L000575/FR-8252 565 mocr
+L000575/FR-8253	566 mocr
+L000575/FR-8254 mocr
+L000575/FR-8255	566 mocr
+L000575/FR-8256	 mocr
+L000577/FR-8257	 mocr
+L000577/FR-8258	660 mocr
+L000577/FR-8259	660 mocr
+L000577/FR-8260	660 mocr
+L000579/FR-8261	660 recovery
+L000579/FR-8262	566 recovery
+FR-8263 566 recovery
+L000579/FR-8264 Apollo 13 recovery-President Nixon and astronauts in Hawaii-astronauts in Samoa-astronauts inspect CM on carrier   
+L000579/FR-8265 Apollo 13 pre-launch alert and MSS pullback - Part 1 of 2   
+L000581/FR-8266 Apollo 13 pre-launch alert and MSS pullback - Part 1 of 2   
+L000581/FR-8267 Apollo 13 launch - launch deck and base of vehicle   
+L000581/FR-8268	546 launch
+L000581/FR-8269 launch
+L000581/FR-8270 launch	
+L000581/FR-8271	672 launch
+L000583/FR-8272	672 launch
+FR-8273 onboard 16mm
+L000583/FR-8274	567  launch
+L000583/FR-8275 mission support room
+L000583/FR-8276 preparing bread
+L000583/FR-8282 prelaunch - van
+L000583/FR-8283 prelaunch - firing room
+L000585/FR-8285	567 prelaunch - walking across swingarm
+L000591/FR-8304	567 prelaunch - breakvast
+L000593/FR-8306	567 - van
+L000593/FR-8307 launch
+L000593/FR-8308 launch
+L000593/FR-8309 launch
+L000597/FR-8336	672 simulation room during emergency
+FR-8337 onboard 16mm
+L000599/FR-8342	public reactions
+L000599/FR-8343	public reactions
+L000599/FR-8344	568	public reactions
+L000609/FR-8354 launch - white room pull back
+L000609/FR-8355 post launch pad damage
+L000609/FR-8356 public reactions
+L000611/FR-8357 public reactions
+L000609/FR-8358 public reactions
+L000613/FR-8376 public reactions
+L000613/FR-8377 public reactions
+L000615/FR-8383 CBS - Shumacher-Apollo 13 in trouble.
+L000615/FR-8384 public reactions
+L000615/FR-8385 ABC art work - Jules Bergman   
+L000045/FR-8405 LM status report mocr during reentry and splashdown
+
+
+missing:
+FR-8248 - TV transmission
+FR-8250 - TV transmission
+
+FR-8310 press conference
+FR-8311 press conference
+FR-8312 press conference
+FR-8313 press conference
+FR-8314 press conference
+FR-8315 press conference
+FR-8316 press conference
+FR-8317 press conference
+FR-8318 press conference
+FR-8319 press conference
+FR-8320 press conference
+FR-8321 press conference
+FR-8322 press conference
+FR-8338 press conference during splashdown
+FR-8359	Apollo 13 press conference with Dr. Paine and George Low   
+FR-8360	Apollo 13 press conference with Dr. Gilruth, Kraft, Myers, Petrone, and McDivitt Part 1 of 2   
+FR-8361	Apollo 13 press conference with Dr. Gilruth, Kraft, Myers, Petrone, and McDivitt Part 2 of 2   
+
