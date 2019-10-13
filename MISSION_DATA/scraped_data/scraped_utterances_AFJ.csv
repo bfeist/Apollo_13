@@ -12714,13 +12714,13 @@
 142:49:16|T|CMP|We got two good drogues.
 142:49:20|C|Kerwin|Roger that.
 142:49:21|T|CMP|... thousand.
-142:49:21|P|PAO|"A report of 2 good drogues. Coming up now for main chutes."
-142:49:21|P|PAO|"Standing by for confirmation of main chutes."
+142:49:25|P|PAO|A report of 2 good drogues. Coming up now for main chutes.
+142:49:44|P|PAO|Standing by for confirmation of main chutes.
 142:50:06|C|Kerwin|Odyssey, Houston. We show you on the mains, it really looks great.
-142:50:06|P|PAO|"An extremely loud applause here in Mission Control."
-142:50:15|C|Kerwin|Got you on television, babe.
-142:50:17|T|CMP|...
-142:50:17|P|PAO|"An extremely loud applause as Apollo 13 on main chutes comes through loud and clear on the television display here."
+142:50:13|P|PAO|Extremely loud applause here in Mission Control.
+142:50:14|C|Kerwin|Got you on television, babe.
+142:50:16|T|CMP|...
+142:50:23|P|PAO|Extremely loud applause as Apollo 13 on main chutes comes through loud and clear on the television display here.
 142:50:26|C|Swimmer 2|Iwo Jima Control, this is Swim 2. I have a visual bearing 182.
 142:50:34|C|USS Iwo Jima|Iwo Jima; Roger.
 142:50:39|C|Recovery helicopters|Iwo Jima Control, this is ... Recovery. I have a visual bearing 190. Over.
