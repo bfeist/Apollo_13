@@ -54,7 +54,6 @@ L000615/FR-8384 public reactions
 L000615/FR-8385 ABC art work - Jules Bergman   
 L000045/FR-8405 LM status report mocr during reentry and splashdown
 
-
 missing:
 FR-8248 - TV transmission
 FR-8250 - TV transmission
