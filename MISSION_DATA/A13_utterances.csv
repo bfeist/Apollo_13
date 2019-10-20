@@ -12153,394 +12153,394 @@
 138:39:32|C|Kerwin|Down in the mud. Okay, understand that. Request he turn them back on and - Okay, Jim, that's the AUTO coils back on RING 1, MAIN A, and when you get that done, I'd like you to copy the entry PAD.
 138:40:25|T|CDR|Okay, Joe. Standing by to copy the entry PAD.
 138:40:29|C|Kerwin|Okay, here we come. Entry pad: Mid-Pacific, 000,153; 000. The next two lines will be the GET of moonset and the Moon-check attitude; 142:38:17, 178; NOUN 61, minus 21.66, minus 165.37; 06.7; 36211, 6.51; 1168.9, 36292; 142:40:40; 00:28. The next four are N/A; D subzero is 4.00, 02:04; 00:17, 03:22, 08:14; 33, 353.1, 29.9. Boresight star is Sigma Libra, down 08.8, left 0.4; lift vector up. Comments: GDC for entry alignment, stars 31 and 23. The roll align 041, pitch 245, yaw 024, use EMS nonexit pattern. Maintain Moon-check attitude until moonset; then go to entry attitude or track horizon with the 36-degree window mark. Last comment: constant g entry is roll right. Over.
-138:43:27|T|CDR|Entry pad as follows: Mid-PAC, 000,153, 000; 142:38:17, 178; minus 21.66, minus 165.37; 06.7; 36211, 6.51; 1168.9, 36292; 142:40:40; 00:28. Next four columns are N/A; D subzero is 4.00, 02:04; 00:17, 03:22 08:14; 33, 353.1, 29.9. Zebra Libra, or something like that, Beta Libra is down 08.8, left 0.4; lift vector up; GDC entry alined, stars 31, 33. Roll 041, pitch, 045, yaw 024. EMS nonexit pattern to be used; maintain Moon check attitude until moonset, and if all else is lost, the constant g entry is right - Roll is right.
-138:44:49|C|Kerwin|Okay. Roger that, Jim. I want to verify a couple of things I'm not sure I heard you read back. The first one was Zebra Libra (laughter) that's Sigma Libra. The set stars 31 and 23. Did you get that? Over.
-138:45:08|T|CDR|Okay. No, I had 31 and 33, and I got Sigma Libra now, and it'll be 31 and 23 for the set stars.
-138:45:15|C|Kerwin|Okay. And your GDC pitch align, I wasn't sure whether that was - whether you read back 245 or 045. The correct number is 245. Over.
-138:45:26|T|CDR|Good show, because I have 045 down. 245.
-138:45:29|C|Kerwin|Okay. And the Moon check here, unlike the horizon check, is on the 36-degree window mark all the way. Just wanted to repeat that.
-138:45:49|T|CDR|Moon check on 30-degree window mark.
-138:45:52|C|Kerwin|That's 36-degree window mark, Jim.
-138:45:55|T|CDR|Three six. Roger.
+138:43:46|T|CDR|Entry pad as follows: Mid-PAC, 000,153, 000; 142:38:17, 178; minus 21.66, minus 165.37; 06.7; 36211, 6.51; 1168.9, 36292; 142:40:40; 00:28. Next four columns are N/A; D subzero is 4.00, 02:04; 00:17, 03:22 08:14; 33, 353.1, 29.9. Zebra Libra, or something like that, Beta Libra is down 08.8, left 0.4; lift vector up; GDC entry alined, stars 31, 33. Roll 041, pitch, 045, yaw 024. EMS nonexit pattern to be used; maintain Moon check attitude until moonset, and if all else is lost, the constant g entry is right  -  Roll is right.
+138:45:08|C|Kerwin|Okay. Roger that, Jim. I want to verify a couple of things I'm not sure I heard you read back. The first one was Zebra Libra (laughter) that's Sigma Libra. The set stars 31 and 23. Did you get that? Over.
+138:45:27|T|CDR|Okay. No, I had 31 and 33, and I got Sigma Libra now, and it'll be 31 and 23 for the set stars.
+138:45:34|C|Kerwin|Okay. And your GDC pitch align, I wasn't sure whether that was - whether you read back 245 or 045. The correct number is 245. Over.
+138:45:45|T|CDR|Good show, because I have 045 down. 245.
+138:45:48|C|Kerwin|Okay. And the Moon check here, unlike the horizon check, is on the 36-degree window mark all the way. Just wanted to repeat that.
+138:46:08|T|CDR|Moon check on 30-degree window mark.
+138:46:11|C|Kerwin|That's 36-degree window mark, Jim.
+138:46:14|T|CDR|Three six. Roger.
 138:45:56|C|Kerwin|Okay. Readback correct.
 138:46:05|C|Kerwin|And, Aquarius; Houston. If you want me to read you the landing area summary, I'll do that.
-138:46:12|T|CDR|Sounds good.
-138:46:14|C|Kerwin|Okay. In the mid-Pacific landing area, the weather is good. The cloud cover is 2000, scattered; visibility, 10; winds 060 at 10; wave heights are 4 feet, and the altimeter 2986, if you care. Scattered showers less than 10 percent of the area. Recovery forces are as follows: the Iwo Jima will be at the touchdown point, the aircraft call sign will be Recovery 1, on station with swimmers on board. The - we have the constant g backup reentry area covered with the USS Hall, the Good Liberty Ship, and the other recovery aircraft whose call signs you may hear are Samoa Rescue C-130s.
-138:47:12|T|CDR|Okay, fine. We have the Iwo Jima as the prime recovery ship.
-138:47:15|C|Kerwin|That's correct.
-138:50:18|T|CDR|Joe, Jack tells me he is still having trouble looking through the optics so I'm just going to pitch up a little bit more here to see if he can get into the dark spot.
-138:50:27|C|Kerwin|Okay, real fine. You might tell him when we get to that point, we have some - some stars with corresponding shaft and trunnion angles to pass to him as backups in case the computer doesn't happen to point him straight at one. And it's the Summer Triangle.
-138:50:56|T|CDR|And are you tracking us, and do you have any results on that last midcourse?
-138:51:01|C|Kerwin|Stand by. It looks good. I'll try and get you numbers.
-138:51:55|T|CDR|It feels nice to use the hand controller again.
-138:52:00|C|Kerwin|Go ahead, Aquarius.
-138:52:03|T|CDR|I just said, Joe, it feels nice to use the hand controller again.
-138:52:05|C|Kerwin|Oh. Roger that. FIDO says he's got you nailed within a half a foot per second; the midcourse looked real good.
-138:52:14|T|CDR|Okay.
-138:52:15|C|Kerwin|And I've got two things we'd like Jack to do in the command module to ease the load on MAIN A. One of them is to verify or turn the CM/RCS HEATER switch to OFF. We're done with that, and even though the circuit breakers are pulled, the switches might be drawing a little current. And the second one is, we'd like him to turn SCS LOGIC POWER 2/3 to OFF; we don't need it now. It's called up in the checklist at the appropriate time, and we'd like him to turn that off. Over.
-138:53:01|T|CDR|Okay. I'll tell Jack to check that the CM/RCS HEATER switch is off, and, if not, we'll turn it off; and also to turn off the SCS LOGIC POWER 2/3 switch, OFF, since it comes up later in the checklist.
-138:53:16|C|Kerwin|That's correct.
-138:53:54|T|CDR|Houston, Aquarius. We're recording MAIN A voltage up to 31.0.
-138:53:59|C|Kerwin|Roger. That's 31.0. We're smiling.
-138:54:08|P|PAO|This is Apollo Control Houston. You heard the entry PAD being passed up to Apollo 13; this PAD based on the last midcourse; lets quickly summarize the meaning of some of those numbers. We are presently looking at splash coordinates of 21 point 66 south lattitude, 165.37 west latitude, or longitude, max g of 6.7, velocity at entry interface of 36,211 feet per second, and an entry angle of minus 6.51; time of entry interface at 142 hours, 40 minutes, 40 seconds ground elapsed time; begin blackout 17 seconds, following entry innerface, end of blackout 3 minutes, 22 seconds following entry interface, deployment of the drogue chutes at 8 minutes, 14 seconds. Our digital display now shows Apollo 13 at a distance of 30,226 nautical miles away, with a velocity of 11,290 feet per second. We are 138 hours, 56 minutes into the flight, and this is Apollo Control Houston.
-138:58:51|T|CDR|Houston, Aquarius.
-138:58:52|C|Kerwin|Go, Aquarius.
-138:58:54|T|CDR|Okay. How about if I hold a pitch attitude of about 115 instead of about 91. I think Jack can use the optics a little bit better at that angle.
-138:59:09|C|Kerwin|Jim, that's perfectly okay with us, if it looks good for stars.
-138:59:16|T|CDR|He just looked at them briefly; I'll go down and look at them a little bit better here.
-138:59:21|C|Kerwin|Okay. With the new attitude, our shaft and trunnion angles we were going to pass him don't mean anything, but it's more important to have a good star field.
-139:09:26|C|Kerwin|Aquarius, Houston.
-139:09:28|T|CDR|Go ahead.
-139:09:30|C|Kerwin|Okay, Jim. We - We've been talking about your going to a different attitude than the PAD attitude for better star field vision out the command module, and what we'd like to have you do is this. If you can predict now or sometime soon, what attitude it is that you would like to hold at that time, and go to that attitude now, we'd like to be able to compute the coarse align gimbal angles for the CSM, and we can do that if you go to the selected attitude, hold it, call up a VERB 06 NOUN 20, and read us your LM gimbal angles, we can take those and compute CSM coarse align gimbal angles on the assumption that, when we get back into the CSM coarse align, you will return to that selected attitude. Does that sound okay? Over.
-139:10:27|T|CDR|Yes. I'll try to hold the attitude we select directly, while you're giving us the coarse align attitude. We're not too sure what - what's the best attitude. I'm going to ask Jack again if 115 is sufficient for him.
-139:10:43|C|Kerwin|Okay. You can take some time figuring out the best attitude, and then you won't have to hold it all the way from now until then, if you just get back to it.
-139:12:39|T|CDR|Houston, Jack would like to know what constellations are in his sextant, or scanning telescope field of view at an attitude of about 105 pitch, zero roll, zero yaw. Can you give that to us?
-139:12:56|C|Kerwin|Okay. We'll sure give it a go. As I said, we - We have some stars. They're not - They're not centered with the shaft and trunnion zero. Let us take a quick look at 105 pitch, shaft and trunnion zero, and see if we can get you an answer.
-139:13:33|C|Kerwin|Aquarius, Houston.
-139:13:36|T|CDR|Go ahead.
-139:13:37|C|Kerwin|Roger. These - None of these stars will be exactly centered, but, at a pitch attitude of 115, we had computed that Vega, Altair, Rasalhague, and Deneb would all be in the telescope field of view, and the first three were also in view at the 91-degree pitch, so he should be able to see one or more of those four stars. Over.
-139:14:11|T|CDR|Okay. Thank you, very much.
-139:14:14|C|Kerwin|Okay. And, Jim, I can give shaft and trunnions if - if he's interested.
-139:14:23|T|CDR|Okay. Why don't you give us the shaft and trunion for - say, Altair at 115, and I'll go up there, and I'll see if he can pick it up.
-139:14:32|C|Kerwin|Okay. Real fine, At 115 degrees of pitch, Altair, shaft 274, trunnion 22.2. Over.
-139:14:49|T|CDR|Roger. Shaft is 274, trunnion 22.2.
-139:14:52|C|Kerwin|That's affirm.
-139:15:26|C|Kerwin|Aquarius, Houston.
-139:15:28|T|CDR|Go ahead, Joe.
-139:15:29|C|Kerwin|Okay, Jim. In the LM, there we have - We show battery 3 only drawing about an amp, and we think it's probably time to get it off the line; battery 3 to OFF/RESET. Over.
-139:15:51|T|CDR|Battery 3 is OFF/RESET.
-139:15:53|C|Kerwin|Okay.
-139:16:00|T|CDR|Just how's our power consumption, Houston, just out of curiosity?
-139:16:05|C|Kerwin|I'll verify it, Jim. I'm sure it's okay.
-139:16:28|C|Kerwin|Okay, Aquarius; Houston. With the present amount of power you've got in the LM, which is over 500 amp-hours, and the rate you're using them, we figure you've got almost 12 hours of power left.
-139:16:45|T|CDR|Twelve hours, huh? We could reenter with it.
-139:16:47|C|Kerwin|That's affirm.
-139:16:56|C|Kerwin|That's enough for two touch-and-goes and a full stop, Jim.
-139:17:05|T|CDR|That's right, Joe; if you could dig a crater like Cone Crater, I could might hit it.
-139:17:11|C|Kerwin|(Laughter) Okay.
-139:17:13|T|CDR|Jack reports that he thinks he can see Altair.
-139:17:17|C|Kerwin|Very good.
-139:17:21|T|CDR|He says, he thinks he can see Altair.
-139:17:26|C|Kerwin|Okay. I'll take back the "very," but I'll leave the "good."
-139:19:01|P|PAO|This is Apollo Control Houston. We're now at 139 hours 19 minutes into the flight. Our digital displays show the Apollo 13 spacecraft at a distance of 27,698 nautical miles away from Earth. Velocity increasing, now reading 11,779 feet per second. As you heard the discussion earlier about LM descent battery number 3 has been taken off the line. Five batteries, including 2 in the ascent stage are now on the line. This gives almost 12 hours of light time remaining. To quickly recap what has transpired earlier, the midcourse burn number 7 was performed as scheduled at 137 hours 39 minutes 48 seconds into the flight. This was a burn of 23 seconds in duration with a DELTA-V of 3 feet per second. Our flight dynamics tracking confirms that the burn was performed precisely as planned. Command Module Pilot, Jack Swigert is now in the command module. Earlier he powered up the main BUS B, and powered up some of the equipment in his checkout process. The command module computer was verified as looking good. Service Module separation occurred a little earlier then planned. Of course, this is not a time critical event. Jim Lovell decided to separate from the service module some 8 minutes in advance of that time previously considered. We copied a separation time -
-139:21:02|T|CDR|Houston, Aquarius.
-139:21:06|C|Kerwin|Aquarius, Houston. Go.
-139:21:11|T|CDR|I ran back there to take a look and see what I could see in the - in the scanning telescope. It looks pretty grim back there right now. It might be that we have to go with the coarse align, and maybe computation of some fine align docking angles, if we have time.
-139:21:27|C|Kerwin|Okay. We'd like to do that, too. Wait a minute; stand by, Jim.
-139:21:49|P|PAO|We copied service module separation 138 hours 2 minutes 8 seconds ground elapsed time. Jim Lovell vividly described the condition of the service module as Apollo 13 moved away from it as having one whole side missing. Fred Haise then reported that the service propulsion system engine bell appeared damaged. Looking ahead, we plan to bring up the command module batteries 2-1/2 hours prior to entry interface some considerably in advance of what would transpire if we had a normal mission. The batteries are normally brought on the line about 30 minutes prior to entry interface. Right now our clock is counting down to lunar module jettison. And we show a time of 2 hours 17 minutes from this time. We're at 139 hours 23 minutes into the flight, and this is Apollo Control Houston.
-139:23:09|C|Mattingly|Aquarius, Houston. How do you read?
-139:23:12|T|CDR|I read you loud and clear.
-139:23:14|C|Mattingly|Okay. What we'd like to do, Jim, is - We'll go ahead and get the coarse align to the gimbal angles that - that you're going to be holding for us; and we'll get the platform up, and then when you call P52 and you use PICAPAR, it probably won't be close enough to put the star in the sextant, but if you can see any kind of a bright star in the general vicinity, - and like general vicinity, I mean 2 to 3 degrees from the center of the telescope, so that you have some clue as to which way to go, then the identification problem shouldn't present much of a - of a difficulty. And once you get the thing in the sextant, then you can go ahead and treat it like any other PICAPAR.
-139:24:00|T|CDR|That sounds great, Ken. One little problem: there's all sorts of bright objects floating around us, and also that just staring at part of Aquarius; it's just reflecting light like mad. We can give it a try. There's no problem there; if we can see it, we'll get it.
-139:24:20|C|Mattingly|Okay. And in - in the event that that doesn't work, we're standing by with the original scheme, a set of LM FDAI angles to fly to that'll point the command module optics at the Moon and the Sun; so we can always go back to that.
-139:24:35|T|CDR|Okay.
-139:24:52|C|Kerwin|And, Aquarius, Houston. We'd like you to verify the SUIT RELIEF valve to closed. Over.
-139:25:00|T|CDR|Stand by. It's closed.
-139:25:06|C|Kerwin|Okay.
-139:30:47|T|CDR|Okay, Houston; Aquarius.
-139:30:49|C|Kerwin|Aquarius, Houston. Go.
-139:30:51|T|CDR|We'll go with your original 91-degree angle, if you have the stars figured out, and the coarse align angle for it.
-139:31:00|C|Kerwin|Okay. Roger that, Jim. Then at - at your convenience here, we'd like you to go to that attitude, as close as you can get, and call up a NOUN 20 for us.
-139:31:13|T|CDR|Okay. In work now.
-139:31:14|C|Kerwin|Okay.
-139:34:40|T|CDR|Houston, Aquarius.
-139:35:44|C|Kerwin|Go ahead, Aquarius.
-139:35:46|T|CDR|Okay. I take it that, if - if Jack cannot see stars at this attitude after you give him the coarse align angles, we're just not going to read down to you our gimbal angles and have you figure out a target angle for Jack, but you want him to do sighting on the Moorn and the Sun. Is that correct?
-139:36:09|C|Kerwin|That's roughly correct, Jim. Jack will coarse align at that attitude. This is what we're having you maneuver to the - to that attitude for. We're going to compute coarse align gimbal angles and pass them up to him, and the first thing he'll do when he gets there, per his checklist, is to coarse align his platform. Then he'll go into the P52, and, if he can't see stars, we will quickly pass up to you the - your FDAI angles to put him in the Moon-view attitude, and he'll do his P52 on the Moon, and then have you maneuver on the Sun and complete the P52 of the Sun.
-139:35:53|T|CDR|Okay. But I'm going to have to maneuver to the Moon to help him out.
-139:35:57|C|Kerwin|Oh. That's - That's affirmative. If he can't see stars at the - at the SEP attitude that - that you'll be holding, you'll have to maneuver to the Moon attitude and then to the Sun attitude for him.
-139:37:06|C|Kerwin|Aquarius, Houston.
-139:37:11|T|CDR|Go ahead.
-139:37:12|C|Kerwin|Just like to mention that, even if, for some reason, we run out of time or something and don't complete the Moon-Sun P52, Jack will have a platform coarse align to the entry REFSMMAT, which we feel will be plenty good enough.
-139:37:28|T|CDR|Roger. That's my feelings, too.
-139:37:30|C|Kerwin|Okay.
-139:41:07|P|PAO|This is Apollo Control, Houston,139 hours 42 minutes now into the flight. Apollo 13 is presently 25,227 nautical miles out from Earth, traveling at a velocity of about 12,307 feet per second. As you heard the earlier discussion, Jack Swigert having some difficulty seeing stars through the command module optics. These sightings are used as a reference in platform alignment - that's the computer platform. The problem is caused by sunlight reflecting off the surface of the lunar module and this reflection getting into the optics and washing out the view of the stars. If Command Module Pilot Swigert is unsuccessful in his star sighting efforts, Jim Lovell will maneuver with the lunar module to give him the opportunity to sight off the Sun and Moon. We're at 139 hours 42 minutes and continuing to monitor. This is Apollo Control, Houston.
-139:50:28|C|Kerwin|Aquarius, Houston.
-139:50:32|T|CDR|Hello there, Houston.
-139:50:33|C|Kerwin|Hi! Jim, we - We've gone ahead and computed the CSM coarse align gimbal angles based on your being at the service module SEP attitude at the time that Jack cranks up the computer and - and coarse aligns the IMU. That is, we assume that you're going to be at roll, 0; pitch, 091; yaw, 0; and, if you concur on that, I'd like to pass up the angles for - for Jack to have.
-139:51:10|T|CDR|Okay. I'll be there to the best of my ability.
-139:51:13|C|Kerwin|Good show. You ready to copy?
-139:51:22|T|CDR|Go ahead.
-139:51:23|C|Kerwin|Okay. CSM coarse align angles: ROLL, plus 298.95; PITCH, plus 271.30; YAW, plus 000.20.
-139:51:54|T|CDR|Okay. The command module angles will be: ROLL, 298.95, PITCH, 271.30; and YAW, 000.20.
-139:52:04|C|Kerwin|That's affirmative, and that's for his VERB 41 NOUN 20 when he gets there.
-139:52:58|P|PAO|This is Apollo Control, Houston. 139 hours 53 minutes now into the flight of Apollo 13. Our display shows this 13 spacecraft at 23,873 nautical miles now out from Earth. Less than 20 minutes from this time, Jack Swigert aboard the Command Module will start drawing power from the 3 command module entry batteries. With this event forthcoming, Flight Director, Gene Kranz, advised his flight control team on the loop to review all checklist procedures for power transfer. You may recall that yesterday the entry batteries A and B were recharged from the LM. Presently there are 118 amp hours showing for the 3 entry batteries on the Command Module, this is within 2 amp hours of the lift-off number. We're at 139 hours 55 minutes into the flight and this is Apollo Control, Houston.
-139:58:43|P|PAO|This is Apollo Control, Houston at 139 hours, 59 minutes now into the flight of Apollo 13. We presently show Apollo 13 at 23,196 nautical miles away from Earth and with a speed of 12,798 feet per second. The retrofire officer advised the flight director, Gene Kranz, that our entry times are holding quite firm. There's only a one second change in ground elapsed time for entry interface. We're now looking at 142 hours 40 minutes 39 seconds for time of entry into the Earths atmosphere and at a velocity of 36,211 feet per second, at an entry angle of 6.5 - minus 6.5 degrees. We're at 140 hours now into the flight and this is Apollo Control, Houston.
-140:00:34|C|Kerwin|Aquarius, Houston. Over.
-140:00:37|T|CDR|Go ahead, Houston; Aquarius here.
-140:00:39|C|Kerwin|Okay, Jim. We're getting about 9 minutes from the commencement of command module powerup, and we wanted to just mention to you for Jack's benefit that, although the batteries are looking real good, in case they're cool and have a little difficulty hacking the load just at first, we'd like him to monitor main bus voltage to 24 volts or above during the powerup procedure and, if it falls below, we'll have a couple of circuit breakers for him that - that will solve the problem.
-140:01:17|T|CDR|Okay. And I take it you're also monitoring main bus voltage.
-140:01:21|C|Kerwin|Negative. Not in the command module at this time, because we don't call up telemetry until a little bit later on.
-140:01:28|T|CDR|Ah so. That's right; I forgot. Okay. I will tell him.
-140:01:31|C|Kerwin|Thank you.
-140:09:32|C|Kerwin|Aquarius, Houston.
-140:09:35|T|CDR|Go ahead.
-140:09:36|C|Kerwin|Okay. You're GO to start powering up the command module.
-140:09:40|T|CDR|Right-o. We're starting now.
-140:09:42|C|Kerwin|Okay.
-140:11:16|T|LMP|Okay. We have LM power breakers.
-140:11:04|T|LMP|Okay. Houston, you're looking at it.
-140:11:08|C|Kerwin|Okay. Roger. Stand by.
-140:11:17|C|Kerwin|Okay. Press on, Fred.
-140:11:23|T|LMP|Okay.
-140:11:58|T|LMP|Okay. That's - That's it, Joe.
-140:12:01|C|Kerwin|Okay. Real good.
-140:16:01|P|PAO|Apollo Control Houston. 140 hours 16 minutes down in the flight - the network  -
-140:16:08|C|Kerwin|Aquarius, Huston.
-140:16:10|T|CDR|Go ahead.
-140:16:12|C|Kerwin|Roger. We have command module AOS. Request OMNI Charlie in the CM. Over.
-140:16:17|T|CDR|OMNI Charlie. Okay. Standby.
-140:16:22|P|PAO|That call off from Joe Kerwin confirming that Honeysuckle has acquisition of signal of the command module S-band. We're at 140 hours 16 minutes. Apollo 13 now 21,092 nautical miles away.
-140:16:25|T|CDR|Coming up.
-140:16:28|C|Kerwin|Okay.
-140:16:39|T|CDR|That was sent through a new onboard communication system known as yelling through the tunnel.
-140:17:44|C|Kerwin|(Laughter) The one MC.
-140:17:52|T|CDR|I've got Fred up there with Jack now helping to power up the CM, and I'm staying down in good old Aquarius.
-140:17:00|C|Kerwin|Understand, Jim.
-140:17:30|P|PAO|Apollo Control, Houston. We're 140 hours 18 minutes, now into the flight. That last report from spacecraft commander Jim Lovell, reporting that Fred Haise, now in the command module, helping Jack Swigert power up the systems. The nominal timeline called for Lovell and Haise is to transfer into the lunar module at about minus 1 hour 30 minutes from time of entry interface. So lunar module pilot, Haise has stepped ahead slightly in that timeline. We now show that we're 1 hour 22 minutes away from time of jettison of the lunar module. With 140 hours 19 minutes into the flight, this is Apollo Control Houston.
-140:20:46|P|PAO|Apollo Control Houston at 140 hours 21 minutes now into the flight. We're receiving command module tracking data now and the data is looking good.
-140:20:58|C|Kerwin|Aquarius, Houston.
-140:21:00|T|CDR|Go ahead.
-140:21:02|C|Kerwin|Just to inform you. We've got data from the - from Odyssey, and it looks good.
-140:21:07|T|CDR|Hey, great.
-140:21:14|P|PAO|However, in looking over some of the command module displays it appears -
-140:21:18|T|CDR|Houston, Aquarius. Odyssey is trying to call. Can you read them?
-140:21:21|C|Kerwin|Negative. Don't read Odyssey yet; has he got his intercom panel configured?
-140:21:30|T|CDR|I'll doublecheek. They're hearing you.
-140:21:32|C|Kerwin|Okay. Good deal. I don't hear him, yet.
-140:21:41|P|PAO|It appears to be a little chilly inside the command module cabin at the present time. We have a reading of 38 degrees.
-140:21:44|T|CDR|Are you ready for an E-MEMORY dump, VERB 74?
-140:21:52|C|Kerwin|Stand by for just 1 minute, Jim.
-140:21:28|T|CDR|We've got a lot of things to do, Houston.
-140:22:30|C|Kerwin|I know it. Okay, Aquarius; Houston. Recommend in Odyssey that he switch the POWER AMPLIFIER to LOW. Over.
-140:22:39|T|CDR|POWER AMPLIFIER to LOW.
-140:22:47|T|CDR|It's been switched to LOW, Houston.
-140:22:51|C|Kerwin|Roger. Okay. Verify the POWER AMP talkback is gray, Jim.
-140:22:58|T|CDR|Okay. That's verified.
-140:23:09|C|Kerwin|Okay.
-140:23:19|P|PAO|We're at 140 hours 23 minutes now into the flight. We presently show Apollo 13 at 20,257 nautical miles away and having a velocity of 13,622 feet per second. This is Apollo Control Houston.
-140:23:58|C|Kerwin|Aquarius, Houston.
-140:24:00|T|CDR|Go ahead.
-140:24:01|C|Kerwin|We have high bit rate; we are standing by for the VERB 74 ENTER and the E-MOD dump.
-140:24:06|T|CDR|Roger. Thank you.
-140:24:09|T|CMP|Joe, how do you read?
-140:24:11|C|Kerwin|Okay. Read you, babe.
-140:24:13|T|CMP|Okay, Loud and clear. VERB 74 coming down.
-140:24:23|C|Kerwin|Okay. Copy that, Jack.
-140:24:28|T|CMP|And I'll be ready for your P27 update.
-140:24:35|C|Kerwin|Okay.
-140:24:35|T|CMP|And I'm in ACCEPT,
-140:24:37|C|Kerwin|Okay. Understand you are in P00 and ACCEPT. Verify OMNI Charlie.
-140:24:48|T|CMP|Okay. Joe, we are OMNI Charlie. We have little bit better signal strength on another OMNI.
-140:24:55|C|Kerwin|Okay. Stand by.
-140:25:08|C|Kerwin|Okay, Odyssey; Houston. Select your own best OMNI and then repeat VERB 74 ENTER. Over.
-140:26:36|C|Kerwin|Okay, Odyssey; Houston. We are locked on solid high bit rate now; repeat the VERB 74 ENTER. Over. Belay that; hold the VERB 74 1 minute. Wait.
-140:26:47|T|CMP|You're too late, Joe; it's coming down.
-140:27:16|C|Kerwin|Okay, Odyssey, Houston.
-140:27:20|T|CMP|Go ahead.
-140:27:21|C|Kerwin|Okay. We are going to skip the E-MOD dump for right now and get the uplink in.
-140:27:27|T|CMP|Okay. P00 and ACCEPT.
-140:27:29|C|Kerwin|Okay. P00 and ACCEPT. And, Jack, you can go ahead with the IMU and optics powerup. Over.
-140:27:39|T|CMP|Roger. It's in work.
-140:27:41|C|Kerwin|Okay.
-140:33:20|P|PAO|Apollo Control Houston 140 hours 34 minutes now into the flight. We're presently in the process of updating the command module computer, the CMC now in program 27. We show 1 hour 7 minutes away from scheduled time of jettison of the lunar module. This Apollo Control Houston.
-140:34:58|T|LMP|We ... unable to read any BAT B voltage. We do have current, though, on BAT B.
-140:35:10|C|Kerwin|Okay. Copy that, Fred.
-140:35:14|T|LMP|Why don't you check?
-140:35:23|C|Kerwin|You're looking good on the ground, Odyssey.
-140:35:27|T|LMP|Okay.
-140:35:30|C|Kerwin|And I think the reason you don't read voltage is that it's a circuit breaker that we have called as being out.
-140:35:38|T|CMP|All right. Real fine.
-140:36:12|P|PAO|This is Apollo Control Houston now 140 hours 37 minutes now into the flight. We presently show Apollo 13 at 18,623 nautical miles from Earth and with a velocity of 14,144 feet per second. This is Apollo Control.
-140:36:42|C|Kerwin|Odyssey, Houston. The uplink is going well. We have one more load to get in.
-140:36:47|T|LMP|Okay. Real fine.
-140:36:55|T|CMP|Is the computer mine now, Joe?
+138:46:31|T|CDR|Sounds good.
+138:46:33|C|Kerwin|Okay. In the mid-Pacific landing area, the weather is good. The cloud cover is 2000, scattered; visibility, 10; winds 060 at 10; wave heights are 4 feet, and the altimeter 2986, if you care. Scattered showers less than 10 percent of the area. Recovery forces are as follows: the Iwo Jima will be at the touchdown point, the aircraft call sign will be Recovery 1, on station with swimmers on board. The - we have the constant g backup reentry area covered with the USS Hall, the Good Liberty Ship, and the other recovery aircraft whose call signs you may hear are Samoa Rescue C-130s.
+138:47:31|T|CDR|Okay, fine. We have the Iwo Jima as the prime recovery ship.
+138:47:34|C|Kerwin|That's correct.
+138:47:37|T|CDR|Joe, Jack tells me he is still having trouble looking through the optics so I'm just going to pitch up a little bit more here to see if he can get into the dark spot.
+138:47:46|C|Kerwin|Okay, real fine. You might tell him when we get to that point, we have some - some stars with corresponding shaft and trunnion angles to pass to him as backups in case the computer doesn't happen to point him straight at one. And it's the Summer Triangle.
+138:51:16|T|CDR|And are you tracking us, and do you have any results on that last midcourse?
+138:51:21|C|Kerwin|Stand by. It looks good. I'll try and get you numbers.
+138:52:14|T|CDR|It feels nice to use the hand controller again.
+138:52:19|C|Kerwin|Go ahead, Aquarius.
+138:52:22|T|CDR|I just said, Joe, it feels nice to use the hand controller again.
+138:52:25|C|Kerwin|Oh. Roger that. FIDO says he's got you nailed within a half a foot per second; the midcourse looked real good.
+138:52:33|T|CDR|Okay.
+138:52:35|C|Kerwin|And I've got two things we'd like Jack to do in the command module to ease the load on MAIN A. One of them is to verify or turn the CM/RCS HEATER switch to OFF. We're done with that, and even though the circuit breakers are pulled, the switches might be drawing a little current. And the second one is, we'd like him to turn SCS LOGIC POWER 2/3 to OFF; we don't need it now. It's called up in the checklist at the appropriate time, and we'd like him to turn that off. Over.
+138:53:20|T|CDR|Okay. I'll tell Jack to check that the CM/RCS HEATER switch is off, and, if not, we'll turn it off; and also to turn off the SCS LOGIC POWER 2/3 switch, OFF, since it comes up later in the checklist.
+138:53:34|C|Kerwin|That's correct.
+138:54:14|T|CDR|Houston, Aquarius. We're recording MAIN A voltage up to 31.0.
+138:54:19|C|Kerwin|Roger. That's 31.0. We're smiling.
+138:54:19|P|PAO|This is Apollo Control Houston. You heard the entry PAD being passed up to Apollo 13; this PAD based on the last midcourse; lets quickly summarize the meaning of some of those numbers. We are presently looking at splash coordinates of 21 point 66 south lattitude, 165.37 west latitude, or longitude, max g of 6.7, velocity at entry interface of 36,211 feet per second, and an entry angle of minus 6.51; time of entry interface at 142 hours, 40 minutes, 40 seconds ground elapsed time; begin blackout 17 seconds, following entry innerface, end of blackout 3 minutes, 22 seconds following entry interface, deployment of the drogue chutes at 8 minutes, 14 seconds. Our digital display now shows Apollo 13 at a distance of 30,226 nautical miles away, with a velocity of 11,290 feet per second. We are 138 hours, 56 minutes into the flight, and this is Apollo Control Houston.
+138:59:10|T|CDR|Houston, Aquarius.
+138:59:11|C|Kerwin|Go, Aquarius.
+138:59:14|T|CDR|Okay. How about if I hold a pitch attitude of about 115 instead of about 91. I think Jack can use the optics a little bit better at that angle.
+138:59:28|C|Kerwin|Jim, that's perfectly okay with us, if it looks good for stars.
+138:59:35|T|CDR|He just looked at them briefly; I'll go down and look at them a little bit better here.
+138:59:41|C|Kerwin|Okay. With the new attitude, our shaft and trunnion angles we were going to pass him don't mean anything, but it's more important to have a good star field.
+139:09:45|C|Kerwin|Aquarius, Houston.
+139:09:48|T|CDR|Go ahead.
+139:09:49|C|Kerwin|Okay, Jim. We - We've been talking about your going to a different attitude than the PAD attitude for better star field vision out the command module, and what we'd like to have you do is this. If you can predict now or sometime soon, what attitude it is that you would like to hold at that time, and go to that attitude now, we'd like to be able to compute the coarse align gimbal angles for the CSM, and we can do that if you go to the selected attitude, hold it, call up a VERB 06 NOUN 20, and read us your LM gimbal angles, we can take those and compute CSM coarse align gimbal angles on the assumption that, when we get back into the CSM coarse align, you will return to that selected attitude. Does that sound okay? Over.
+139:10:46|T|CDR|Yes. I'll try to hold the attitude we select directly, while you're giving us the coarse align attitude. We're not too sure what - what's the best attitude. I'm going to ask Jack again if 115 is sufficient for him.
+139:11:02|C|Kerwin|Okay. You can take some time figuring out the best attitude, and then you won't have to hold it all the way from now until then, if you just get back to it.
+139:12:58|T|CDR|Houston, Jack would like to know what constellations are in his sextant, or scanning telescope field of view at an attitude of about 105 pitch, zero roll, zero yaw. Can you give that to us?
+139:13:15|C|Kerwin|Okay. We'll sure give it a go. As I said, we - We have some stars. They're not - They're not centered with the shaft and trunnion zero. Let us take a quick look at 105 pitch, shaft and trunnion zero, and see if we can get you an answer.
+139:13:52|C|Kerwin|Aquarius, Houston.
+139:13:55|T|CDR|Go ahead.
+139:13:56|C|Kerwin|Roger. These - None of these stars will be exactly centered, but, at a pitch attitude of 115, we had computed that Vega, Altair, Rasalhague, and Deneb would all be in the telescope field of view, and the first three were also in view at the 91-degree pitch, so he should be able to see one or more of those four stars. Over.
+139:14:30|T|CDR|Okay. Thank you, very much.
+139:14:33|C|Kerwin|Okay. And, Jim, I can give shaft and trunnions if - if he's interested.
+139:14:42|T|CDR|Okay. Why don't you give us the shaft and trunion for - say, Altair at 115, and I'll go up there, and I'll see if he can pick it up.
+139:14:52|C|Kerwin|Okay. Real fine, At 115 degrees of pitch, Altair, shaft 274, trunnion 22.2. Over.
+139:15:08|T|CDR|Roger. Shaft is 274, trunnion 22.2.
+139:15:11|C|Kerwin|That's affirm.
+139:15:44|C|Kerwin|Aquarius, Houston.
+139:15:47|T|CDR|Go ahead, Joe.
+139:15:48|C|Kerwin|Okay, Jim. In the LM, there we have - We show battery 3 only drawing about an amp, and we think it's probably time to get it off the line; battery 3 to OFF/RESET. Over.
+139:16:10|T|CDR|Battery 3 is OFF/RESET.
+139:16:12|C|Kerwin|Okay.
+139:16:19|T|CDR|Just how's our power consumption, Houston, just out of curiosity?
+139:16:25|C|Kerwin|I'll verify it, Jim. I'm sure it's okay.
+139:16:47|C|Kerwin|Okay, Aquarius; Houston. With the present amount of power you've got in the LM, which is over 500 amp-hours, and the rate you're using them, we figure you've got almost 12 hours of power left.
+139:17:04|T|CDR|Twelve hours, huh? We could reenter with it.
+139:17:06|C|Kerwin|That's affirm.
+139:17:15|C|Kerwin|That's enough for two touch-and-goes and a full stop, Jim.
+139:17:24|T|CDR|That's right, Joe; if you could dig a crater like Cone Crater, I could might hit it.
+139:17:30|C|Kerwin|(Laughter) Okay.
+139:17:33|T|CDR|Jack reports that he thinks he can see Altair.
+139:17:36|C|Kerwin|Very good.
+139:17:40|T|CDR|He says, he thinks he can see Altair.
+139:17:44|C|Kerwin|Okay. I'll take back the "very," but I'll leave the "good."
+139:17:44|P|PAO|This is Apollo Control Houston. We're now at 139 hours 19 minutes into the flight. Our digital displays show the Apollo 13 spacecraft at a distance of 27,698 nautical miles away from Earth. Velocity increasing, now reading 11,779 feet per second. As you heard the discussion earlier about LM descent battery number 3 has been taken off the line. Five batteries, including 2 in the ascent stage are now on the line. This gives almost 12 hours of light time remaining. To quickly recap what has transpired earlier, the midcourse burn number 7 was performed as scheduled at 137 hours 39 minutes 48 seconds into the flight. This was a burn of 23 seconds in duration with a DELTA-V of 3 feet per second. Our flight dynamics tracking confirms that the burn was performed precisely as planned. Command Module Pilot, Jack Swigert is now in the command module. Earlier he powered up the main BUS B, and powered up some of the equipment in his checkout process. The command module computer was verified as looking good. Service Module separation occurred a little earlier then planned. Of course, this is not a time critical event. Jim Lovell decided to separate from the service module some 8 minutes in advance of that time previously considered. We copied a separation time -
+139:21:22|T|CDR|Houston, Aquarius.
+139:21:25|C|Kerwin|Aquarius, Houston. Go.
+139:21:30|T|CDR|I ran back there to take a look and see what I could see in the - in the scanning telescope. It looks pretty grim back there right now. It might be that we have to go with the coarse align, and maybe computation of some fine align docking angles, if we have time.
+139:21:46|C|Kerwin|Okay. We'd like to do that, too. Wait a minute; stand by, Jim.
+139:21:46|P|PAO|We copied service module separation 138 hours 2 minutes 8 seconds ground elapsed time. Jim Lovell vividly described the condition of the service module as Apollo 13 moved away from it as having one whole side missing. Fred Haise then reported that the service propulsion system engine bell appeared damaged. Looking ahead, we plan to bring up the command module batteries 2-1/2 hours prior to entry interface some considerably in advance of what would transpire if we had a normal mission. The batteries are normally brought on the line about 30 minutes prior to entry interface. Right now our clock is counting down to lunar module jettison. And we show a time of 2 hours 17 minutes from this time. We're at 139 hours 23 minutes into the flight, and this is Apollo Control Houston.
+139:23:28|C|Mattingly|Aquarius, Houston. How do you read?
+139:23:31|T|CDR|I read you loud and clear.
+139:23:32|C|Mattingly|Okay. What we'd like to do, Jim, is - We'll go ahead and get the coarse align to the gimbal angles that - that you're going to be holding for us; and we'll get the platform up, and then when you call P52 and you use PICAPAR, it probably won't be close enough to put the star in the sextant, but if you can see any kind of a bright star in the general vicinity, - and like general vicinity, I mean 2 to 3 degrees from the center of the telescope, so that you have some clue as to which way to go, then the identification problem shouldn't present much of a - of a difficulty. And once you get the thing in the sextant, then you can go ahead and treat it like any other PICAPAR.
+139:24:18|T|CDR|That sounds great, Ken. One little problem: there's all sorts of bright objects floating around us, and also that just staring at part of Aquarius; it's just reflecting light like mad. We can give it a try. There's no problem there; if we can see it, we'll get it.
+139:24:38|C|Mattingly|Okay. And in - in the event that that doesn't work, we're standing by with the original scheme, a set of LM FDAI angles to fly to that'll point the command module optics at the Moon and the Sun; so we can always go back to that.
+139:24:53|T|CDR|Okay.
+139:25:10|C|Kerwin|And, Aquarius, Houston. We'd like you to verify the SUIT RELIEF valve to closed. Over.
+139:25:18|T|CDR|Stand by. It's closed.
+139:25:25|C|Kerwin|Okay.
+139:31:05|T|CDR|Okay, Houston; Aquarius.
+139:31:07|C|Kerwin|Aquarius, Houston. Go.
+139:31:09|T|CDR|We'll go with your original 91-degree angle, if you have the stars figured out, and the coarse align angle for it.
+139:31:18|C|Kerwin|Okay. Roger that, Jim. Then at - at your convenience here, we'd like you to go to that attitude, as close as you can get, and call up a NOUN 20 for us.
+139:31:31|T|CDR|Okay. In work now.
+139:31:33|C|Kerwin|Okay.
+139:34:58|T|CDR|Houston, Aquarius.
+139:35:02|C|Kerwin|Go ahead, Aquarius.
+139:35:05|T|CDR|Okay. I take it that, if - if Jack cannot see stars at this attitude after you give him the coarse align angles, we're just not going to read down to you our gimbal angles and have you figure out a target angle for Jack, but you want him to do sighting on the Moorn and the Sun. Is that correct?
+139:35:26|C|Kerwin|That's roughly correct, Jim. Jack will coarse align at that attitude. This is what we're having you maneuver to the - to that attitude for. We're going to compute coarse align gimbal angles and pass them up to him, and the first thing he'll do when he gets there, per his checklist, is to coarse align his platform. Then he'll go into the P52, and, if he can't see stars, we will quickly pass up to you the - your FDAI angles to put him in the Moon-view attitude, and he'll do his P52 on the Moon, and then have you maneuver on the Sun and complete the P52 of the Sun.
+139:36:11|T|CDR|Okay. But I'm going to have to maneuver to the Moon to help him out.
+139:36:15|C|Kerwin|Oh. That's - That's affirmative. If he can't see stars at the - at the SEP attitude that - that you'll be holding, you'll have to maneuver to the Moon attitude and then to the Sun attitude for him.
+139:37:26|C|Kerwin|Aquarius, Houston.
+139:37:29|T|CDR|Go ahead.
+139:37:30|C|Kerwin|Just like to mention that, even if, for some reason, we run out of time or something and don't complete the Moon-Sun P52, Jack will have a platform coarse align to the entry REFSMMAT, which we feel will be plenty good enough.
+139:37:46|T|CDR|Roger. That's my feelings, too.
+139:37:48|C|Kerwin|Okay.
+139:37:48|P|PAO|This is Apollo Control, Houston,139 hours 42 minutes now into the flight. Apollo 13 is presently 25,227 nautical miles out from Earth, traveling at a velocity of about 12,307 feet per second. As you heard the earlier discussion, Jack Swigert having some difficulty seeing stars through the command module optics. These sightings are used as a reference in platform alignment - that's the computer platform. The problem is caused by sunlight reflecting off the surface of the lunar module and this reflection getting into the optics and washing out the view of the stars. If Command Module Pilot Swigert is unsuccessful in his star sighting efforts, Jim Lovell will maneuver with the lunar module to give him the opportunity to sight off the Sun and Moon. We're at 139 hours 42 minutes and continuing to monitor. This is Apollo Control, Houston.
+139:50:45|C|Kerwin|Aquarius, Houston.
+139:50:49|T|CDR|Hello there, Houston.
+139:50:50|C|Kerwin|Hi! Jim, we - We've gone ahead and computed the CSM coarse align gimbal angles based on your being at the service module SEP attitude at the time that Jack cranks up the computer and - and coarse aligns the IMU. That is, we assume that you're going to be at roll, 0; pitch, 091; yaw, 0; and, if you concur on that, I'd like to pass up the angles for - for Jack to have.
+139:51:27|T|CDR|Okay. I'll be there to the best of my ability.
+139:51:30|C|Kerwin|Good show. You ready to copy?
+139:51:38|T|CDR|Go ahead.
+139:51:40|C|Kerwin|Okay. CSM coarse align angles: ROLL, plus 298.95; PITCH, plus 271.30; YAW, plus 000.20.
+139:52:11|T|CDR|Okay. The command module angles will be: ROLL, 298.95, PITCH, 271.30; and YAW, 000.20.
+139:52:21|C|Kerwin|That's affirmative, and that's for his VERB 41 NOUN 20 when he gets there.
+139:52:21|P|PAO|This is Apollo Control, Houston. 139 hours 53 minutes now into the flight of Apollo 13. Our display shows this 13 spacecraft at 23,873 nautical miles now out from Earth. Less than 20 minutes from this time, Jack Swigert aboard the Command Module will start drawing power from the 3 command module entry batteries. With this event forthcoming, Flight Director, Gene Kranz, advised his flight control team on the loop to review all checklist procedures for power transfer. You may recall that yesterday the entry batteries A and B were recharged from the LM. Presently there are 118 amp hours showing for the 3 entry batteries on the Command Module, this is within 2 amp hours of the lift-off number. We're at 139 hours 55 minutes into the flight and this is Apollo Control, Houston.
+139:52:21|P|PAO|This is Apollo Control, Houston at 139 hours, 59 minutes now into the flight of Apollo 13. We presently show Apollo 13 at 23,196 nautical miles away from Earth and with a speed of 12,798 feet per second. The retrofire officer advised the flight director, Gene Kranz, that our entry times are holding quite firm. There's only a one second change in ground elapsed time for entry interface. We're now looking at 142 hours 40 minutes 39 seconds for time of entry into the Earths atmosphere and at a velocity of 36,211 feet per second, at an entry angle of 6.5 - minus 6.5 degrees. We're at 140 hours now into the flight and this is Apollo Control, Houston.
+140:00:50|C|Kerwin|Aquarius, Houston. Over.
+140:00:53|T|CDR|Go ahead, Houston; Aquarius here.
+140:00:55|C|Kerwin|Okay, Jim. We're getting about 9 minutes from the commencement of command module powerup, and we wanted to just mention to you for Jack's benefit that, although the batteries are looking real good, in case they're cool and have a little difficulty hacking the load just at first, we'd like him to monitor main bus voltage to 24 volts or above during the powerup procedure and, if it falls below, we'll have a couple of circuit breakers for him that - that will solve the problem.
+140:01:33|T|CDR|Okay. And I take it you're also monitoring main bus voltage.
+140:01:38|C|Kerwin|Negative. Not in the command module at this time, because we don't call up telemetry until a little bit later on.
+140:01:44|T|CDR|Ah so. That's right; I forgot. Okay. I will tell him.
+140:01:47|C|Kerwin|Thank you.
+140:09:48|C|Kerwin|Aquarius, Houston.
+140:09:51|T|CDR|Go ahead.
+140:09:52|C|Kerwin|Okay. You're GO to start powering up the command module.
+140:09:56|T|CDR|Right-o. We're starting now.
+140:09:58|C|Kerwin|Okay.
+140:10:32|T|LMP|Okay. We have LM power breakers.
+140:11:20|T|LMP|Okay. Houston, you're looking at it.
+140:11:24|C|Kerwin|Okay. Roger. Stand by.
+140:11:34|C|Kerwin|Okay. Press on, Fred.
+140:11:39|T|LMP|Okay.
+140:12:10|T|LMP|Okay. That's - That's it, Joe.
+140:12:17|C|Kerwin|Okay. Real good.
+140:12:17|P|PAO|Apollo Control Houston. 140 hours 16 minutes down in the flight - the network  -
+140:16:23|C|Kerwin|Aquarius, Huston.
+140:16:26|T|CDR|Go ahead.
+140:16:27|C|Kerwin|Roger. We have command module AOS. Request OMNI Charlie in the CM. Over.
+140:16:33|T|CDR|OMNI Charlie. Okay. Standby.
+140:16:33|P|PAO|That call off from Joe Kerwin confirming that Honeysuckle has acquisition of signal of the command module S-band. We're at 140 hours 16 minutes. Apollo 13 now 21,092 nautical miles away.
+140:16:45|T|CDR|Coming up.
+140:16:46|C|Kerwin|Okay.
+140:16:54|T|CDR|That was sent through a new onboard communication system known as yelling through the tunnel.
+140:17:00|C|Kerwin|(Laughter) The one MC.
+140:17:08|T|CDR|I've got Fred up there with Jack now helping to power up the CM, and I'm staying down in good old Aquarius.
+140:17:16|C|Kerwin|Understand, Jim.
+140:17:16|P|PAO|Apollo Control, Houston. We're 140 hours 18 minutes, now into the flight. That last report from spacecraft commander Jim Lovell, reporting that Fred Haise, now in the command module, helping Jack Swigert power up the systems. The nominal timeline called for Lovell and Haise is to transfer into the lunar module at about minus 1 hour 30 minutes from time of entry interface. So lunar module pilot, Haise has stepped ahead slightly in that timeline. We now show that we're 1 hour 22 minutes away from time of jettison of the lunar module. With 140 hours 19 minutes into the flight, this is Apollo Control Houston.
+140:17:16|P|PAO|Apollo Control Houston at 140 hours 21 minutes now into the flight. We're receiving command module tracking data now and the data is looking good.
+140:21:13|C|Kerwin|Aquarius, Houston.
+140:21:16|T|CDR|Go ahead.
+140:21:17|C|Kerwin|Just to inform you. We've got data from the - from Odyssey, and it looks good.
+140:21:22|T|CDR|Hey, great.
+140:21:22|P|PAO|However, in looking over some of the command module displays it appears -
+140:21:33|T|CDR|Houston, Aquarius. Odyssey is trying to call. Can you read them?
+140:21:36|C|Kerwin|Negative. Don't read Odyssey yet; has he got his intercom panel configured?
+140:21:41|T|CDR|I'll doublecheek. They're hearing you.
+140:21:49|C|Kerwin|Okay. Good deal. I don't hear him, yet.
+140:21:49|P|PAO|It appears to be a little chilly inside the command module cabin at the present time. We have a reading of 38 degrees.
+140:22:01|T|CDR|Are you ready for an E-MEMORY dump, VERB 74?
+140:22:07|C|Kerwin|Stand by for just 1 minute, Jim.
+140:22:42|T|CDR|We've got a lot of things to do, Houston.
+140:22:45|C|Kerwin|I know it. Okay, Aquarius; Houston. Recommend in Odyssey that he switch the POWER AMPLIFIER to LOW. Over.
+140:22:54|T|CDR|POWER AMPLIFIER to LOW.
+140:23:02|T|CDR|It's been switched to LOW, Houston.
+140:23:05|C|Kerwin|Roger. Okay. Verify the POWER AMP talkback is gray, Jim.
+140:23:13|T|CDR|Okay. That's verified.
+140:23:24|C|Kerwin|Okay.
+140:23:24|P|PAO|We're at 140 hours 23 minutes now into the flight. We presently show Apollo 13 at 20,257 nautical miles away and having a velocity of 13,622 feet per second. This is Apollo Control Houston.
+140:24:13|C|Kerwin|Aquarius, Houston.
+140:24:15|T|CDR|Go ahead.
+140:24:16|C|Kerwin|We have high bit rate; we are standing by for the VERB 74 ENTER and the E-MOD dump.
+140:24:22|T|CDR|Roger. Thank you.
+140:24:25|T|CMP|Joe, how do you read?
+140:24:26|C|Kerwin|Okay. Read you, babe.
+140:24:29|T|CMP|Okay, Loud and clear. VERB 74 coming down.
+140:24:39|C|Kerwin|Okay. Copy that, Jack.
+140:24:43|T|CMP|And I'll be ready for your P27 update.
+140:24:47|C|Kerwin|Okay.
+140:24:51|T|CMP|And I'm in ACCEPT,
+140:24:54|C|Kerwin|Okay. Understand you are in P00 and ACCEPT. Verify OMNI Charlie.
+140:25:04|T|CMP|Okay. Joe, we are OMNI Charlie. We have little bit better signal strength on another OMNI.
+140:25:10|C|Kerwin|Okay. Stand by.
+140:25:23|C|Kerwin|Okay, Odyssey; Houston. Select your own best OMNI and then repeat VERB 74 ENTER. Over.
+140:26:50|C|Kerwin|Okay, Odyssey; Houston. We are locked on solid high bit rate now; repeat the VERB 74 ENTER. Over. Belay that; hold the VERB 74 1 minute. Wait.
+140:27:02|T|CMP|You're too late, Joe; it's coming down.
+140:27:31|C|Kerwin|Okay, Odyssey, Houston.
+140:27:36|T|CMP|Go ahead.
+140:27:37|C|Kerwin|Okay. We are going to skip the E-MOD dump for right now and get the uplink in.
+140:27:43|T|CMP|Okay. P00 and ACCEPT.
+140:27:44|C|Kerwin|Okay. P00 and ACCEPT. And, Jack, you can go ahead with the IMU and optics powerup. Over.
+140:27:54|T|CMP|Roger. It's in work.
+140:27:56|C|Kerwin|Okay.
+140:27:56|P|PAO|Apollo Control Houston 140 hours 34 minutes now into the flight. We're presently in the process of updating the command module computer, the CMC now in program 27. We show 1 hour 7 minutes away from scheduled time of jettison of the lunar module. This Apollo Control Houston.
+140:35:13|T|LMP|We ... unable to read any BAT B voltage. We do have current, though, on BAT B.
+140:35:25|C|Kerwin|Okay. Copy that, Fred.
+140:35:28|T|LMP|Why don't you check?
+140:35:38|C|Kerwin|You're looking good on the ground, Odyssey.
+140:35:41|T|LMP|Okay.
+140:35:45|C|Kerwin|And I think the reason you don't read voltage is that it's a circuit breaker that we have called as being out.
+140:35:53|T|CMP|All right. Real fine.
+140:35:53|P|PAO|This is Apollo Control Houston now 140 hours 37 minutes now into the flight. We presently show Apollo 13 at 18,623 nautical miles from Earth and with a velocity of 14,144 feet per second. This is Apollo Control.
+140:36:56|C|Kerwin|Odyssey, Houston. The uplink is going well. We have one more load to get in.
+140:37:02|T|LMP|Okay. Real fine.
+140:39:09|T|CMP|Is the computer mine now, Joe?
 140:36:58|C|Kerwin|Standby one second.
 140:37:02|T|CMP|Okay.
-140:39:48|C|Kerwin|Okay, Jack. We'd like the VERB 74 ENTER, and it'll take less than a minute for E-MOD dump.
-140:39:56|T|CMP|Coming down.
-140:40:06|C|Kerwin|And, Jack, Houston. It'll be 100 seconds on that.
-140:40:12|T|CMP|Okay. Can I go to BLOCK on the UP TELEMETRY?
-140:40:15|C|Kerwin|Aah - not not just yet, Jack.
-140:40:42|C|Kerwin|Odyssey, Houston. You can go to UP TEL BLOCK. Over.
-140:40:47|T|CMP|UP TEL BLOCK and the computer is mine.
-140:40:49|C|Kerwin|Not yet, Jack. We're still in the E-MOD dump. And, Aquarius, Houston -
-140:40:53|T|CMP|Okay.
-140:41:01|T|CDR|Go ahead, Houston.
-140:41:02|C|Kerwin|Okay. We're coming up on time for the coarse align, Jim, so you can hold your attitude real good.
-140:41:09|T|CDR|Rog.
-140:41:11|C|Kerwin|And, Odyssey, Houston. The computer is yours. You can press on.
-140:41:17|T|CMP|Okay.
-140:43:00|T|CDR|Houston, Aquarius.
-140:43:02|C|Kerwin|Aquarius, Houston. Go ahead.
-140:43:04|T|CDR|Roger. He just did the coarse align. I'm going to the jettison attitude.
-140:43:09|C|Kerwin|Copy that.
-140:43:23|C|Kerwin|Aquarius, Houston. I copied that you - that he's completed the coarse align; he's going into the P52 now? Is that right?
-140:43:40|T|CDR|Let me check. I think he is.
-140:43:43|C|Kerwin|Okay. You're staying at your present attitude, aren't you?
-140:43:49|T|CDR|Yeah. We'll - I'll stay in the present attitude.
-140:43:51|C|Kerwin|Roger that.
-140:44:13|T|CMP|Okay, Houston. I got a 220 alarm here. ...
-140:44:21|C|Kerwin|Roger that.
-140:44:21|T|CMP|...
-140:44:41|C|Kerwin|Odyssey, Houston. Have you set the drift flag and the REFSMMAT flag Over.
-140:44:53|C|Kerwin|Odyssey, Houston.
-140:44:56|T|CMP|... flag.
-140:45:02|C|Kerwin|You were noisy; I didn't copy. Have you set the drift and REFSMMAT flag?
-140:45:12|P|PAO|Jack Swigert reported a 220 alarm, this indicating that the IMU is not aligned. We're at 140 hours 45 minutes into the flight. We show Apollo 13 at 17,461 nautical miles away at the present, now traveling at a speed of 14,552 feet per second.
-140:46:02|P|PAO|Apollo 13 now 54 minutes away from the time of lunar module jettison. To dispose of Aquarius, the crew inside the command module after installing the hatch will vent the lunar module tunnel to 1-1/2 or 2 pounds giving a DELTA pressure of 3 psi across the docking tunnel hacth. This to insure a proper sealing. To jettison the lunar module the pyros are fired aboard the command module and pressure in the tunnell gives a separation velocity of some 2 feet per second. The command module will do most of the moving at this point because it will be the lighter of the 2 spacecraft. Separation could be likened to the releasing of a balloon and having air propel it along. We're at 140 hours 47 minutes now into the flight and Apollo 13 now at a distance of 17,225 nautical miles from Earth traveling at a speed of 14,629 feet per second. This is Apollo Control Houston.
-140:47:51|T|CMP|Okay, Joe. I don't have a star in the sextant. I'm going to hunt for it in a minute.
-140:47:56|C|Kerwin|Roger that, Jack.
-140:49:10|T|CMP|Okay, Joe. Can you give me any stars that I might try here?
-140:49:16|C|Kerwin|That's affirmative. Vega and Altair should be good. Vega is 36, Altair is 40.
-140:49:23|T|CMP|Okay. We'll give that a try
-140:49:25|C|Kerwin|Okay. And you might look for them in the telescope if they're not in the sextant right off. They should be close to the crosshairs.
-140:49:33|T|CMP|Okay. I got all that material that's venting from the bottom of the command module.
-140:49:38|C|Kerwin|Roger that.
-140:51:54|T|CDR|I have an RCS light, Houston.
-140:52:03|C|Kerwin|Okay, Jim. That's the one we warned you about some time ago. Low helium; no sweat.
-140:52:09|T|CDR|Oh, okay.
-140:52:26|T|CMP|Okay, Houston. There's a star angle difference with stars 36 and 40.
-140:52:33|C|Kerwin|How about that, baby!
-140:52:36|T|CDR|And I'm maneuvering, Houston.
-140:52:39|T|CMP|Okay -  ...
-140:52:39|C|Kerwin|Roger that. Copy you're maneuvering to the LM JETT attitude. Is that right?
-140:52:45|T|CMP|That's affirm  -
-140:52:45|T|CDR|That's affirm.
-140:52:46|T|CMP|I'm going to torque those gimbal angles.
-140:52:50|C|Kerwin|Torque them, babe.
-140:52:54|T|CMP|There it is. Okay. I'll do a star check.
-140:52:58|C|Kerwin|Okay.
-140:53:15|C|Kerwin|Okay, Odyssey. You're suddenly ahead of the timeline.
-140:53:40|C|Kerwin|Odyssey, Houston. Request OMNI Bravo.
-140:53:53|T|CMP|I am OMNI Bravo, Joe.
-140:53:55|C|Kerwin|Okay.
-140:54:05|T|CMP|Okay, Houston. The sextant star check passes.
-140:54:13|C|Kerwin|Say again, Jack.
-140:54:16|T|CMP|I did a star check, and it passes. It puts that star right in the telescope.
-140:54:22|C|Kerwin|Good enough. You can press on in the checklist, Jack.
-140:54:43|C|Kerwin|Mind out LM gimbal lock, Jim.
-140:54:46|T|CDR|It's the command module's gimbal lock I'm worried about.
-140:54:49|C|Kerwin|(Laughter) Okay.
-140:54:57|P|PAO|Apollo Control Houston. 140 hours, 55 minutes into the flight; that star check report confirms proper alignment of the command module platform. We are 45 minutes away now from scheduled time of LM jettison.
-140:55:14|C|Kerwin|Aquarius, Houston.
-140:55:17|T|CDR|Go ahead.
-140:55:18|C|Kerwin|Roger. If you concur, we would be inclined to recommend that you go to AGS for the maneuver because you'll have to be there later on anyway.
-140:55:28|T|CDR|Okay.
-140:55:30|C|Kerwin|And AGS PULSE is the recommendation.
-140:55:33|T|CDR|We're having trouble maneuvering, Joe, without getting it in gimbal lock.
-140:55:37|C|Kerwin|Okay. You can  -
-140:55:38|T|CDR|You picked a lousy attitude, though, to separate.
-140:55:42|C|Kerwin|Well, we apologize. Just take your time. Jim, we've got time now.
-140:55:49|T|CDR|Okay.
-140:56:16|T|CDR|Uh, Houston, why can't I stay in PGNS ATT HOLD for the LM attitude hold?
-140:56:25|C|Kerwin|Stand by on that, Jim.
-140:57:22|C|Kerwin|Aquarius, Houston. Over.
-140:57:23|T|CDR|Go ahead.
-140:57:25|C|Kerwin|Okay. Our recommendation is that you stay in AGS for the LM JETT simply because we've thought it through. We've got the right deadbands and all set up. Over.
-140:57:37|T|CDR|Okay. It's a lot easier for me to maneuver in PGNS, Joe, than it is AGS.
-140:57:43|C|Kerwin|Yes. You can maneuver in PGNS, Jim. I'm sorry, I thought you were talking about the ATT HOLD and the LM JETT afterward. You can maneuver in PGNS if you want to.
+140:40:02|C|Kerwin|Okay, Jack. We'd like the VERB 74 ENTER, and it'll take less than a minute for E-MOD dump.
+140:40:10|T|CMP|Coming down.
+140:40:20|C|Kerwin|And, Jack, Houston. It'll be 100 seconds on that.
+140:40:26|T|CMP|Okay. Can I go to BLOCK on the UP TELEMETRY?
+140:40:29|C|Kerwin|Aah - not not just yet, Jack.
+140:40:55|C|Kerwin|Odyssey, Houston. You can go to UP TEL BLOCK. Over.
+140:41:01|T|CMP|UP TEL BLOCK and the computer is mine.
+140:41:03|C|Kerwin|Not yet, Jack. We're still in the E-MOD dump. And, Aquarius, Houston -
+140:41:04|T|CMP|Okay.
+140:41:14|T|CDR|Go ahead, Houston.
+140:41:16|C|Kerwin|Okay. We're coming up on time for the coarse align, Jim, so you can hold your attitude real good.
+140:41:23|T|CDR|Rog.
+140:41:25|C|Kerwin|And, Odyssey, Houston. The computer is yours. You can press on.
+140:41:30|T|CMP|Okay.
+140:43:13|T|CDR|Houston, Aquarius.
+140:43:17|C|Kerwin|Aquarius, Houston. Go ahead.
+140:43:18|T|CDR|Roger. He just did the coarse align. I'm going to the jettison attitude.
+140:43:23|C|Kerwin|Copy that.
+140:43:37|C|Kerwin|Aquarius, Houston. I copied that you - that he's completed the coarse align; he's going into the P52 now? Is that right?
+140:43:54|T|CDR|Let me check. I think he is.
+140:43:56|C|Kerwin|Okay. You're staying at your present attitude, aren't you?
+140:44:03|T|CDR|Yeah. We'll - I'll stay in the present attitude.
+140:44:05|C|Kerwin|Roger that.
+140:44:26|T|CMP|Okay, Houston. I got a 220 alarm here. ...
+140:44:34|C|Kerwin|Roger that.
+140:44:37|T|CMP|...
+140:44:55|C|Kerwin|Odyssey, Houston. Have you set the drift flag and the REFSMMAT flag Over.
+140:45:07|C|Kerwin|Odyssey, Houston.
+140:45:12|T|CMP|... flag.
+140:45:15|C|Kerwin|You were noisy; I didn't copy. Have you set the drift and REFSMMAT flag?
+140:45:15|P|PAO|Jack Swigert reported a 220 alarm, this indicating that the IMU is not aligned. We're at 140 hours 45 minutes into the flight. We show Apollo 13 at 17,461 nautical miles away at the present, now traveling at a speed of 14,552 feet per second.
+140:45:15|P|PAO|Apollo 13 now 54 minutes away from the time of lunar module jettison. To dispose of Aquarius, the crew inside the command module after installing the hatch will vent the lunar module tunnel to 1-1/2 or 2 pounds giving a DELTA pressure of 3 psi across the docking tunnel hacth. This to insure a proper sealing. To jettison the lunar module the pyros are fired aboard the command module and pressure in the tunnell gives a separation velocity of some 2 feet per second. The command module will do most of the moving at this point because it will be the lighter of the 2 spacecraft. Separation could be likened to the releasing of a balloon and having air propel it along. We're at 140 hours 47 minutes now into the flight and Apollo 13 now at a distance of 17,225 nautical miles from Earth traveling at a speed of 14,629 feet per second. This is Apollo Control Houston.
+140:48:04|T|CMP|Okay, Joe. I don't have a star in the sextant. I'm going to hunt for it in a minute.
+140:48:09|C|Kerwin|Roger that, Jack.
+140:49:23|T|CMP|Okay, Joe. Can you give me any stars that I might try here?
+140:49:28|C|Kerwin|That's affirmative. Vega and Altair should be good. Vega is 36, Altair is 40.
+140:49:36|T|CMP|Okay. We'll give that a try
+140:49:38|C|Kerwin|Okay. And you might look for them in the telescope if they're not in the sextant right off. They should be close to the crosshairs.
+140:49:45|T|CMP|Okay. I got all that material that's venting from the bottom of the command module.
+140:49:53|C|Kerwin|Roger that.
+140:52:07|T|CDR|I have an RCS light, Houston.
+140:52:16|C|Kerwin|Okay, Jim. That's the one we warned you about some time ago. Low helium; no sweat.
+140:52:22|T|CDR|Oh, okay.
+140:52:39|T|CMP|Okay, Houston. There's a star angle difference with stars 36 and 40.
+140:52:46|C|Kerwin|How about that, baby!
+140:52:49|T|CDR|And I'm maneuvering, Houston.
+140:52:50|T|CMP|Okay -  ...
+140:52:52|C|Kerwin|Roger that. Copy you're maneuvering to the LM JETT attitude. Is that right?
+140:52:58|T|CMP|That's affirm  -
+140:52:59|T|CDR|That's affirm.
+140:53:00|T|CMP|I'm going to torque those gimbal angles.
+140:53:05|C|Kerwin|Torque them, babe.
+140:53:07|T|CMP|There it is. Okay. I'll do a star check.
+140:53:10|C|Kerwin|Okay.
+140:53:27|C|Kerwin|Okay, Odyssey. You're suddenly ahead of the timeline.
+140:53:53|C|Kerwin|Odyssey, Houston. Request OMNI Bravo.
+140:54:06|T|CMP|I am OMNI Bravo, Joe.
+140:54:08|C|Kerwin|Okay.
+140:54:18|T|CMP|Okay, Houston. The sextant star check passes.
+140:54:25|C|Kerwin|Say again, Jack.
+140:54:28|T|CMP|I did a star check, and it passes. It puts that star right in the telescope.
+140:54:35|C|Kerwin|Good enough. You can press on in the checklist, Jack.
+140:54:56|C|Kerwin|Mind out LM gimbal lock, Jim.
+140:54:59|T|CDR|It's the command module's gimbal lock I'm worried about.
+140:55:03|C|Kerwin|(Laughter) Okay.
+140:55:03|P|PAO|Apollo Control Houston. 140 hours, 55 minutes into the flight; that star check report confirms proper alignment of the command module platform. We are 45 minutes away now from scheduled time of LM jettison.
+140:55:28|C|Kerwin|Aquarius, Houston.
+140:55:30|T|CDR|Go ahead.
+140:55:31|C|Kerwin|Roger. If you concur, we would be inclined to recommend that you go to AGS for the maneuver because you'll have to be there later on anyway.
+140:55:41|T|CDR|Okay.
+140:55:43|C|Kerwin|And AGS PULSE is the recommendation.
+140:55:46|T|CDR|We're having trouble maneuvering, Joe, without getting it in gimbal lock.
+140:55:50|C|Kerwin|Okay. You can  -
+140:55:51|T|CDR|You picked a lousy attitude, though, to separate.
+140:55:55|C|Kerwin|Well, we apologize. Just take your time. Jim, we've got time now.
+140:56:01|T|CDR|Okay.
+140:56:28|T|CDR|Uh, Houston, why can't I stay in PGNS ATT HOLD for the LM attitude hold?
+140:56:38|C|Kerwin|Stand by on that, Jim.
+140:57:34|C|Kerwin|Aquarius, Houston. Over.
+140:57:36|T|CDR|Go ahead.
+140:57:38|C|Kerwin|Okay. Our recommendation is that you stay in AGS for the LM JETT simply because we've thought it through. We've got the right deadbands and all set up. Over.
+140:57:49|T|CDR|Okay. It's a lot easier for me to maneuver in PGNS, Joe, than it is AGS.
+140:57:56|C|Kerwin|Yes. You can maneuver in PGNS, Jim. I'm sorry, I thought you were talking about the ATT HOLD and the LM JETT afterward. You can maneuver in PGNS if you want to.
 140:57:56|P|PAO|Apollo Control, 140 hours, 58 minutes, Apollo 13 now 15,786 nautical miles away. Velocity now reading 15,192 feet per second.
-140:58:10|T|CDR|I want to get way over here, Joe. To prevent him into gimbal lock, I have the yaw at about - I'd say about almost 50 degrees.
-140:58:23|C|Kerwin|Roger that. Just stay out of gimbal lock and that 45-degree isn't critical - the out of plane, that is.
-140:58:53|C|Kerwin|Odyssey, Houston. Request OMNI Charlie.
-140:58:57|T|CMP|Okay. Going OMNI Charlie.
-140:58:59|C|Kerwin|Thank you.
-140:59:59|T|CMP|There.
-140:59:00|C|Kerwin|Okay. Good.
-141:00:08|C|Kerwin|Roger. That's VERB 46. Roger. Aquarius, Houston.
-141:00:18|T|CDR|Go ahead.
-141:00:19|C|Kerwin|Okay, Jim. The particular DAP configuration we have set up now is using more fuel than we'd like out of system B. We'd like you to reconfigure the DAP to 30021. Over.
-141:00:45|C|Kerwin|Thank you.
-141:01:23|C|Kerwin|Odyssey, Houston.
-141:01:26|T|CMP|Go ahead.
-141:01:27|C|Kerwin|We'd like to have you turn the optics power off until you need them again, and we would like to have you check the RCS ring 1 and 2 temps for us. Over.
-141:01:39|T|CMP|Optics power going off.
-141:01:41|C|Kerwin|Okay.
-141:01:52|T|LMP|Okay, Joe. Our ring 1 is 50; ring 2 is plus 42.
-141:01:57|C|Kerwin|Ring 1 is 50; copy. What was the other?
-141:02:01|T|LMP|42.
-141:02:02|C|Kerwin|Got it. Thank you.
-141:02:10|T|CDR|Okay, Houston; Aquarius. I am at the LM SEP attitude and I'm planning on bailing out.
-141:02:20|C|Kerwin|Okay. I can't think of a better idea, Jim.
-141:02:24|T|CDR|I'll go to AGS ATT HOLD, if you want me to.
-141:02:27|C|Kerwin|We recommend that, Jim.
-141:02:41|C|Kerwin|Okay, Aquarius; Houston. In AGS ATT HOLD, we recommend WIDE DEADBAND. Over.
-141:03:49|T|CDR|I'm in the AGS DEADBAND.
-141:03:52|C|Kerwin|Roger.
-141:03:23|C|Kerwin|Aquarius, Houston. Don't forget the ...
-141:03:41|T|LMP|You need to relay something downstairs, Jim?
-141:03:48|C|Kerwin|Odyssey, Houston.
-141:03:51|T|CMP|Go ahead, Joe.
-141:03:52|C|Kerwin|Okay. Our troops would like to have you go to the SYSTEMS TEST METER and read out the injector temps on RCS for us.
-141:04:00|T|CMP|Okay. Okay. In work.
-141:04:36|T|CMP|Okay, Houston. Let me read out the injector temperatures for you.
-141:04:39|C|Kerwin|Go ahead.
-141:04:44|T|CMP|5 Charlie, 4.2; 5 Dogs 4.6; 6 Alfa, 4.3; 6 Bravo, 4.3; 6 Charlie, 3.6; 6 Dog, 3.6.
-141:05:08|C|Kerwin|Okay. Copy that. No complaints.
-141:05:20|T|CMP|Okay. We're ready to proceed with hatch closeup.
-141:05:23|C|Kerwin|Okay. Did Jim get the film out of Aquarius?
-141:05:31|T|CMP|Yes. We - You mean the film we took this morning?
-141:05:34|C|Kerwin|That's affirm.
-141:05:36|T|CMP|Yes, We've transferred that.
-141:05:38|C|Kerwin|Okay. Good deal. Jack, let me mention something about the hatch integrity check. You're going to vent the tunnel until you get a 3-psi DELTA-P. That should take 9 or 10 minutes, and it's our firm feeling that you don't have to wait another 10 minutes after that for a leak check. If it holds pressure for a minute or so or even gets down there, you know you've got a good hatch. Over.
-141:06:04|T|CMP|Okay. Copy that.
-141:06:06|C|Kerwin|Okay.
-141:07:28|P|PAO|Apollo Control, Houston. 141 hours 8 minutes now into the flight. Apollo 13 presently 14,468 nautical miles out from Earth. All three crewmen now in the command module preparing to install the hatch. We show 32 minutes 40 seconds away from scheduled time of lunar module jettison. This is Apollo Control, Houston.
-141:10:35|P|PAO|"This is Apollo Control, Houston, now 141 hours 11 minutes now into the mission; it's less than 30 minutes away from the scheduled time of jettisoning the lunar module. We show Apollo 13 at an altitude of 14,020 nautical miles. We have an estimate of an altitude of 9,729 nautical miles at the time of jettisoning the lunar module. We're at 141 hours 11 minutes continuing to monitor. This is Apollo Control, Houston."
-141:12:31|T|CMP|Okay, Houston. We've got an O2 FLOW HIGH.
-141:12:36|C|Kerwin|Okay, Jack, are you  -
-141:12:43|T|CMP|Well, we might be pressurizing a lot of the system that was not pressurized.
-141:12:48|C|Kerwin|Roger. I expect that's the case. Let us check it.
-141:12:52|T|CMP|Okay. Take a good look at CABIN.
-141:12:56|C|Kerwin|Will do.
-141:13:17|C|Kerwin|Odyssey, Houston. Just verify your DIRECT O2 is OFF. Over.
-141:13:26|T|CMP|Yes, sir. That is verified.
-141:13:27|C|Kerwin|Okay, and  -
-141:13:28|T|CDR|... it's dropping now, Joe.
-141:13:32|C|Kerwin|Roger. We think that you were just pressurizing the cabin up to that regulator's particular SPEC.
-141:15:04|C|Kerwin|Odyssey, Houston.
+140:58:22|T|CDR|I want to get way over here, Joe. To prevent him into gimbal lock, I have the yaw at about - I'd say about almost 50 degrees.
+140:58:35|C|Kerwin|Roger that. Just stay out of gimbal lock and that 45-degree isn't critical - the out of plane, that is.
+140:59:05|C|Kerwin|Odyssey, Houston. Request OMNI Charlie.
+140:59:10|T|CMP|Okay. Going OMNI Charlie.
+140:59:11|C|Kerwin|Thank you.
+140:59:12|T|CMP|There.
+140:59:13|C|Kerwin|Okay. Good.
+141:00:20|C|Kerwin|Roger. That's VERB 46. Roger. Aquarius, Houston.
+141:00:31|T|CDR|Go ahead.
+141:00:32|C|Kerwin|Okay, Jim. The particular DAP configuration we have set up now is using more fuel than we'd like out of system B. We'd like you to reconfigure the DAP to 30021. Over.
+141:00:57|C|Kerwin|Thank you.
+141:01:35|C|Kerwin|Odyssey, Houston.
+141:01:36|T|CMP|Go ahead.
+141:01:39|C|Kerwin|We'd like to have you turn the optics power off until you need them again, and we would like to have you check the RCS ring 1 and 2 temps for us. Over.
+141:01:52|T|CMP|Optics power going off.
+141:01:54|C|Kerwin|Okay.
+141:02:05|T|LMP|Okay, Joe. Our ring 1 is 50; ring 2 is plus 42.
+141:02:09|C|Kerwin|Ring 1 is 50; copy. What was the other?
+141:02:13|T|LMP|42.
+141:02:15|C|Kerwin|Got it. Thank you.
+141:02:22|T|CDR|Okay, Houston; Aquarius. I am at the LM SEP attitude and I'm planning on bailing out.
+141:02:32|C|Kerwin|Okay. I can't think of a better idea, Jim.
+141:02:36|T|CDR|I'll go to AGS ATT HOLD, if you want me to.
+141:02:40|C|Kerwin|We recommend that, Jim.
+141:02:54|C|Kerwin|Okay, Aquarius; Houston. In AGS ATT HOLD, we recommend WIDE DEADBAND. Over.
+141:03:01|T|CDR|I'm in the AGS DEADBAND.
+141:03:04|C|Kerwin|Roger.
+141:03:35|C|Kerwin|Aquarius, Houston. Don't forget the ...
+141:03:53|T|LMP|You need to relay something downstairs, Jim?
+141:04:00|C|Kerwin|Odyssey, Houston.
+141:04:03|T|CMP|Go ahead, Joe.
+141:04:04|C|Kerwin|Okay. Our troops would like to have you go to the SYSTEMS TEST METER and read out the injector temps on RCS for us.
+141:04:12|T|CMP|Okay. Okay. In work.
+141:04:49|T|CMP|Okay, Houston. Let me read out the injector temperatures for you.
+141:04:53|C|Kerwin|Go ahead.
+141:04:57|T|CMP|5 Charlie, 4.2; 5 Dogs 4.6; 6 Alfa, 4.3; 6 Bravo, 4.3; 6 Charlie, 3.6; 6 Dog, 3.6.
+141:05:19|C|Kerwin|Okay. Copy that. No complaints.
+141:05:32|T|CMP|Okay. We're ready to proceed with hatch closeup.
+141:05:35|C|Kerwin|Okay. Did Jim get the film out of Aquarius?
+141:05:43|T|CMP|Yes. We - You mean the film we took this morning?
+141:05:46|C|Kerwin|That's affirm.
+141:05:48|T|CMP|Yes, We've transferred that.
+141:05:50|C|Kerwin|Okay. Good deal. Jack, let me mention something about the hatch integrity check. You're going to vent the tunnel until you get a 3-psi DELTA-P. That should take 9 or 10 minutes, and it's our firm feeling that you don't have to wait another 10 minutes after that for a leak check. If it holds pressure for a minute or so or even gets down there, you know you've got a good hatch. Over.
+141:06:16|T|CMP|Okay. Copy that.
+141:06:18|C|Kerwin|Okay.
+141:06:18|P|PAO|Apollo Control, Houston. 141 hours 8 minutes now into the flight. Apollo 13 presently 14,468 nautical miles out from Earth. All three crewmen now in the command module preparing to install the hatch. We show 32 minutes 40 seconds away from scheduled time of lunar module jettison. This is Apollo Control, Houston.
+141:06:18|P|PAO|"This is Apollo Control, Houston, now 141 hours 11 minutes now into the mission; it's less than 30 minutes away from the scheduled time of jettisoning the lunar module. We show Apollo 13 at an altitude of 14,020 nautical miles. We have an estimate of an altitude of 9,729 nautical miles at the time of jettisoning the lunar module. We're at 141 hours 11 minutes continuing to monitor. This is Apollo Control, Houston."
+141:12:42|T|CMP|Okay, Houston. We've got an O2 FLOW HIGH.
+141:12:47|C|Kerwin|Okay, Jack, are you  -
+141:12:53|T|CMP|Well, we might be pressurizing a lot of the system that was not pressurized.
+141:12:59|C|Kerwin|Roger. I expect that's the case. Let us check it.
+141:13:04|T|CMP|Okay. Take a good look at CABIN.
+141:13:07|C|Kerwin|Will do.
+141:13:28|C|Kerwin|Odyssey, Houston. Just verify your DIRECT O2 is OFF. Over.
+141:13:37|T|CMP|Yes, sir. That is verified.
+141:13:38|C|Kerwin|Okay, and  -
+141:13:39|T|CDR|... it's dropping now, Joe.
+141:13:43|C|Kerwin|Roger. We think that you were just pressurizing the cabin up to that regulator's particular SPEC.
+141:15:14|C|Kerwin|Odyssey, Houston.
 141:15:17|T|CMP|Go ahead.
-141:15:07|T|CDR|Go ahead.
-141:15:08|C|Kerwin|Okay. We're observing middle gimbal angle getting a little bit high. The LM appears to be deadbanding okay within its attitude, but just wanted you to know that we're keeping an eye on it and if it does get too high, we might want you to punch off early.
-141:15:21|T|CMP|Okay.
-141:15:25|C|Kerwin|And verify that the hatch is secured and that you are venting the tunnel. Over.
-141:15:31|T|CMP|That's verified. We have a DELTA-P of 2.8.
-141:15:35|C|Kerwin|Real good. Real good.
-141:15:58|P|PAO|This is Apollo Control Houston at 141 hours 16 minutes into the flight. Apollo 13 now 13,283 nautical miles away from Earth with a velocity building up now to 16,350 feet per second.
-141:16:16|T|CMP|Okay, Joe. Since we're ahead of the timeline, can I proceed on and kind of punch off early, or do you want me to punch off at exactly 1 hour?
-141:16:24|C|Kerwin|Jack, when you are comfortably ready to punch off, you can go ahead and do it.
-141:16:29|T|CMP|Okay.
-141:16:34|P|PAO|That was Jack Swigert receiving that confirmation from the ground from Joe Kerwin that he can jettison the lunar module at his convenience. So we'll stand by for that possibility at any time. We're at 141 hours 17 minutes into the flight of Apollo 13.
-141:17:39|C|Kerwin|Odyssey, Houston. We just had a formal GO for LM JETT at your convenience. Over.
-141:17:46|T|CMP|Okay. Thanks, Joe.
+141:15:18|T|CDR|Go ahead.
+141:15:19|C|Kerwin|Okay. We're observing middle gimbal angle getting a little bit high. The LM appears to be deadbanding okay within its attitude, but just wanted you to know that we're keeping an eye on it and if it does get too high, we might want you to punch off early.
+141:15:32|T|CMP|Okay.
+141:15:36|C|Kerwin|And verify that the hatch is secured and that you are venting the tunnel. Over.
+141:15:42|T|CMP|That's verified. We have a DELTA-P of 2.8.
+141:15:46|C|Kerwin|Real good. Real good.
+141:15:46|P|PAO|This is Apollo Control Houston at 141 hours 16 minutes into the flight. Apollo 13 now 13,283 nautical miles away from Earth with a velocity building up now to 16,350 feet per second.
+141:16:27|T|CMP|Okay, Joe. Since we're ahead of the timeline, can I proceed on and kind of punch off early, or do you want me to punch off at exactly 1 hour?
+141:16:35|C|Kerwin|Jack, when you are comfortably ready to punch off, you can go ahead and do it.
+141:16:40|T|CMP|Okay.
+141:16:40|P|PAO|That was Jack Swigert receiving that confirmation from the ground from Joe Kerwin that he can jettison the lunar module at his convenience. So we'll stand by for that possibility at any time. We're at 141 hours 17 minutes into the flight of Apollo 13.
+141:17:49|C|Kerwin|Odyssey, Houston. We just had a formal GO for LM JETT at your convenience. Over.
+141:17:57|T|CMP|Okay. Thanks, Joe.
 141:17:58|C|Kerwin|Okay.
-141:18:15|C|Kerwin|Okay, Odyssey; Houston. We're ready for you to bring the BMAGs ON and WARM UP and all other things being equal, we'd like you to go through the LM JETT at - on the checklist you've got. And that is BMAGs 1  -
-141:18:29|T|CMP|Okay. Will do.
-141:18:29|C|Kerwin|-  1. That's BMAG 1 now, as you know.
-141:18:34|T|CMP|Yes, BMAG 1 is in WARM UP.
-141:18:36|C|Kerwin|Good deal.
-141:19:34|P|PAO|Apollo Control Houston, 141 hours 20 minutes now into the flight. While we're standing by we'll pass along some updated numbers from the retro fire officer. We show time of entry into the Earth's atmosphere at 142 hours, 40 minutes, 39 seconds, blackout begins at plus 18 seconds from time of entry interface -
-141:20:06|T|CMP|Okay, Houston. Do you have a command module weight for me?
-141:20:14|C|Kerwin|Stand by 1, Jack.
-141:20:22|P|PAO|Blackout ends at 3 minutes 23 seconds from time of entry interface.
-141:20:33|C|Kerwin|Odyssey, Houston.
-141:20:37|T|CMP|Go ahead.
-141:20:38|C|Kerwin|Okay. I'm reminded that the entry DAP is all you've got. It'll initialize itself, and you won't have an - you won't have an RCS DAP, so you don't have to fool with it.
-141:20:49|T|CMP|Okay.
-141:20:54|P|PAO|Drogue deploys at 8 minutes 16 seconds, main chutes deploy at 9 minutes 4 seconds from time of entry interface, predicted time of splash 14 minutes 1 second from time of entry interface. Standing by, continuing to monitor, this is Apollo Control Houston.
-141:21:34|P|PAO|Apollo Control Houston, now 141 hours 22 minutes into the flight. We show Apollo 13 presently at an altitude of 12,474 nautical miles at a speed of 16,761 feet per second.
-141:22:03|T|CMP|Okay, Joe. I'm - Have you got your checklist out there on the SCS powerup?
-141:22:07|C|Kerwin|That's affirm.
-141:22:09|T|CMP|Okay. I'm coming down here to a step that says FDAI POWER, off. Is that what you want right now, I guess, huh?
-141:22:18|C|Kerwin|Go ahead.
-141:22:19|C|Mattingly|Okay, Jack. That FDAI POWER, OFF, is to stop momentary glitches as you bring up the BMAG to put it on, and you turn right around and put the FDAI POWER right back on 1.
-141:22:34|T|CMP|Okay. And I don't have the BMAG TEMP light out yet. Do you want me to go ahead and put the BMAG ON with the TEMP light still ON?
-141:22:40|C|Mattingly|That's affirm. We can go ahead and you'll have a good stable rate.
-141:22:45|T|CMP|All right. Let's do it.
-141:23:58|P|PAO|Apollo Control Houston 141 hours 24 minutes now into the flight. The flight surgeons now monitoring the consoles are taking readings on Jack Swigert and Fred Haise's heart rates on these gentlemen just running over 100, slightly higher than average indicating an increased work load. We now show Apollo 13 at 12,064 nautical miles away from Earth, speed continuing to build up, now reading 16,989 feet per second. This is Apollo Control Houston.
-141:26:29|T|CMP|Okay, Houston. We'll punch off at 141 plus 30.
-141:26:34|C|Kerwin|Okay, Jack. We copy and we concur.
+141:18:25|C|Kerwin|Okay, Odyssey; Houston. We're ready for you to bring the BMAGs ON and WARM UP and all other things being equal, we'd like you to go through the LM JETT at - on the checklist you've got. And that is BMAGs 1  -
+141:18:38|T|CMP|Okay. Will do.
+141:18:40|C|Kerwin|-  1. That's BMAG 1 now, as you know.
+141:18:45|T|CMP|Yes, BMAG 1 is in WARM UP.
+141:18:47|C|Kerwin|Good deal.
+141:18:47|P|PAO|Apollo Control Houston, 141 hours 20 minutes now into the flight. While we're standing by we'll pass along some updated numbers from the retro fire officer. We show time of entry into the Earth's atmosphere at 142 hours, 40 minutes, 39 seconds, blackout begins at plus 18 seconds from time of entry interface -
+141:20:17|T|CMP|Okay, Houston. Do you have a command module weight for me?
+141:20:24|C|Kerwin|Stand by 1, Jack.
+141:20:24|P|PAO|Blackout ends at 3 minutes 23 seconds from time of entry interface.
+141:20:43|C|Kerwin|Odyssey, Houston.
+141:20:47|T|CMP|Go ahead.
+141:20:48|C|Kerwin|Okay. I'm reminded that the entry DAP is all you've got. It'll initialize itself, and you won't have an - you won't have an RCS DAP, so you don't have to fool with it.
+141:20:59|T|CMP|Okay.
+141:20:59|P|PAO|Drogue deploys at 8 minutes 16 seconds, main chutes deploy at 9 minutes 4 seconds from time of entry interface, predicted time of splash 14 minutes 1 second from time of entry interface. Standing by, continuing to monitor, this is Apollo Control Houston.
+141:20:59|P|PAO|Apollo Control Houston, now 141 hours 22 minutes into the flight. We show Apollo 13 presently at an altitude of 12,474 nautical miles at a speed of 16,761 feet per second.
+141:22:12|T|CMP|Okay, Joe. I'm - Have you got your checklist out there on the SCS powerup?
+141:22:17|C|Kerwin|That's affirm.
+141:22:19|T|CMP|Okay. I'm coming down here to a step that says FDAI POWER, off. Is that what you want right now, I guess, huh?
+141:22:28|C|Kerwin|Go ahead.
+141:22:29|C|Mattingly|Okay, Jack. That FDAI POWER, OFF, is to stop momentary glitches as you bring up the BMAG to put it on, and you turn right around and put the FDAI POWER right back on 1.
+141:22:44|T|CMP|Okay. And I don't have the BMAG TEMP light out yet. Do you want me to go ahead and put the BMAG ON with the TEMP light still ON?
+141:22:50|C|Mattingly|That's affirm. We can go ahead and you'll have a good stable rate.
+141:22:55|T|CMP|All right. Let's do it.
+141:22:55|P|PAO|Apollo Control Houston 141 hours 24 minutes now into the flight. The flight surgeons now monitoring the consoles are taking readings on Jack Swigert and Fred Haise's heart rates on these gentlemen just running over 100, slightly higher than average indicating an increased work load. We now show Apollo 13 at 12,064 nautical miles away from Earth, speed continuing to build up, now reading 16,989 feet per second. This is Apollo Control Houston.
+141:26:38|T|CMP|Okay, Houston. We'll punch off at 141 plus 30.
+141:26:43|C|Kerwin|Okay, Jack. We copy and we concur.
 141:26:44|P|PAO|That was Jack Swigert indicating that they plan to jettison the lunar module in about 3 minutes from this time.
 141:27:34|P|PAO|Apollo Control Houston 141 hours 28 minutes into the flight, Apollo 13 now 11,590 nautical miles away from Earth. For reentry the 3 crewmen will be traveling in shirt sleeve environment, not in their space suits. We're standing by now for reports of jettison of the lunar module. At 141 hours 28 minutes this is Apollo Control Houston.
 141:28:12|T|CMP|Okay, Houston. Do we have a go for PYRO ARM?
@@ -12551,147 +12551,147 @@
 141:29:43|T|CMP|10 seconds.
 141:29:48|T|CDR|5 -
 141:29:54|T|CDR|LM jettison.
-141:29:56|C|Kerwin|Okay, copy that. Farewell, Aquarius, and we thank you.
-141:30:13|C|Kerwin|Watch gimbal lock there, Jack.
-141:30:16|T|CMP|Yeah, we did.
-141:30:33|P|PAO|This is Apollo Control Houston at 141 hours, 31 minutes into the flight; we have had lunar module jettison, and for Apollo 13, the age of Aquarius ended at 141 hours, 30 minutes ground elapsed time.
-141:31:43|C|Kerwin|Odyssey, Houston. Request OMNI Bravo.
+141:30:05|C|Kerwin|Okay, copy that. Farewell, Aquarius, and we thank you.
+141:30:21|C|Kerwin|Watch gimbal lock there, Jack.
+141:30:24|T|CMP|Yeah, we did.
+141:30:24|P|PAO|"This is Apollo Control Houston at 141 hours, 31 minutes into the flight; we have had lunar module jettison, and for Apollo 13, the age of Aquarius ended at 141 hours, 30 minutes ground elapsed time."
+141:31:52|C|Kerwin|Odyssey, Houston. Request OMNI Bravo.
 141:34:36|P|PAO|Apollo Control, Houston. 141 hours 35 minutes now into the flight. We have a report from recovery that Samoa rescue Aircraft 1, 3 and 4 are now enroute to their respective stations. These C-130 aircraft. Samoa 1 will be positioned 105 nautical miles uprange. Samoa 4, 200 nautical miles downrange. Correction to that last report Samoa 1 will be 345 nautical miles uprange. Samoa 2, 240 nautical miles uprange. Samoa 4, 200 nautical miles downrange. Continue to monitor at 141 hours 36 minutes. This is Apollo Control, Houston.
-141:35:54|C|Kerwin|Odyssey, Houston.
-141:35:56|T|CMP|Go ahead.
-141:35:57|C|Kerwin|Okay, Jack. We'll have a PAD for you in a few minutes. We're getting data now on the tracking, and although we suspect the changes from your preliminary PAD will be very small, we recommend that you hold off on initializing the EMS until we get you the final PAD. Over.
-141:36:15|T|CMP|Okay. Will do.
-141:36:16|C|Kerwin|Roger.
-141:37:12|T|CMP|Okay, Houston. The sextant star check passes.
-141:37:15|C|Kerwin|Houston, copy. Good show. That was some P52, Jack.
-141:37:27|T|CMP|Yes. I was kind of lucky, I guess.
-141:37:32|C|Kerwin|Give you a big gold star for that.
-141:37:36|T|CMP|Thank you.
-141:38:06|T|CMP|Hey, Joe. We're standing by to copy your new PAD.
-141:38:09|C|Kerwin|Okay, Jack. It'll be a few minutes yet. We want to get it right up to speed.
-141:38:35|T|CMP|Okay. I can proceed with EMS check, can't I, Joe?
-141:38:38|C|Kerwin|That's affirmative, Jack. You can go ahead with that.
+141:36:03|C|Kerwin|Odyssey, Houston.
+141:36:05|T|CMP|Go ahead.
+141:36:06|C|Kerwin|Okay, Jack. We'll have a PAD for you in a few minutes. We're getting data now on the tracking, and although we suspect the changes from your preliminary PAD will be very small, we recommend that you hold off on initializing the EMS until we get you the final PAD. Over.
+141:36:23|T|CMP|Okay. Will do.
+141:36:25|C|Kerwin|Roger.
+141:37:20|T|CMP|Okay, Houston. The sextant star check passes.
+141:37:23|C|Kerwin|Houston, copy. Good show. That was some P52, Jack.
+141:37:35|T|CMP|Yes. I was kind of lucky, I guess.
+141:37:41|C|Kerwin|Give you a big gold star for that.
+141:37:44|T|CMP|Thank you.
+141:38:15|T|CMP|Hey, Joe. We're standing by to copy your new PAD.
+141:38:18|C|Kerwin|Okay, Jack. It'll be a few minutes yet. We want to get it right up to speed.
+141:38:43|T|CMP|Okay. I can proceed with EMS check, can't I, Joe?
+141:38:46|C|Kerwin|That's affirmative, Jack. You can go ahead with that.
 141:39:48|P|PAO|This is Apollo Control Houston. 141 hours 40 minutes now into the flight of Apollo 13. Apollo 13 now at an altitude of 9,703 nautical miles from Earth with a velocity now reading 18,504 feet per second. We have a report that the lunar module is continuing to hold altitude the way it should. Cabin pressure is holding and here in Mission Control we'll continue to track the lunar module, Aquarius until it reenters. We're at 141 hours 41 minutes into the flight, and this is Apollo Control Houston.
 141:43:46|P|PAO|This is Apollo Control Houston at 141 hours 44 minutes now into the mission. Apollo 13 presently at a distance of 9,102 nautical miles from Earth and with a velocity reading 18,952 feet per second. Meanwhile we have a listing of the crew members of the helicopters who will be airborn at the time of predicted landing. We read an estimated time of landing now of 1 hour 10 minutes.
 141:44:42|P|PAO|Aboard Recovery 1 Pilot will be Commander Charles B. Smiley, 39, of Oklahoma City, Okalahoma. Commander Smiley is the H-S4 Commanding Officer and picked up the Apollo 10 astronauts. Co Pilot Lt. Junior Grade Dana G. McCarthy, 25, of Chathum, Mass. First crewman, Ralph G. Slider, 28, of Paden City, West Va., Second crewman, Michael Longe, 21, of Shelburn, Vermont. The swimmer aboard Lt. Junior Grade Ernest Lee Jahncke, 26, of Greenwich Connecticut. Aboard Swim 1, Pilot Lt. Commander Carl John Frank, 35, North Merrick, New York, Co Pilot Lt. Jr. Grade Douglas Fillmore Hudson, Jr., 24, of Barrington Illinois. First crewman, Robert Peterson, 23, of Susanville California, Second crewman, Gary W. Neilson, 21 of Delhi Louisiana. Swimmer, Stephen P. Jewett, 25 of Ontario, California, and Second swimmer, Robert J. Pfanzelter, 19, of Burlington, Wisconsin, Third swimmer, Luco Palma, 19, of Tewksbury, Mass.
-141:46:41|C|Kerwin|Odyssey, Houston. Over.
-141:46:44|T|CDR|Go ahead, Houston.
-141:46:45|C|Kerwin|Okay, Jim. Your CABIN is looking real good. We recommend you turn the SUIT COMPRESSOR to OFF now. Over.
-141:46:52|T|CDR|Going OFF.
-141:47:00|T|CDR|Boy, it's nice and quiet in here.
-141:47:02|C|Kerwin|Okay, real good. Incidentally, your power is looking real good also, Jim.
-141:47:08|T|CDR|Thank you.
+141:46:48|C|Kerwin|Odyssey, Houston. Over.
+141:46:51|T|CDR|Go ahead, Houston.
+141:46:53|C|Kerwin|Okay, Jim. Your CABIN is looking real good. We recommend you turn the SUIT COMPRESSOR to OFF now. Over
+141:47:00|T|CDR|Going OFF.
+141:47:07|T|CDR|Boy, it's nice and quiet in here.
+141:47:09|C|Kerwin|Okay, real good. Incidentally, your power is looking real good also, Jim.
+141:47:16|T|CDR|Thank you.
 141:47:35|P|PAO|Aboard Swim Helicopter No. 2 Pilot Lt. Allen Leroy Willhite, 27, Oklahoma City, Oklahoma. Co Pilot Lt. Jr. Grade Vernon E. Wright, 27, Atlanta, Georgia, First crewman, Raymond Lloyd Morrison of Lynchburg, Va., Second crewman John William Towne, McCook, Nebraska, First swimmer Allan W. Starr.
-141:48:05|C|Kerwin|Odyssey, Houston. I have your final entry PAD when you are ready.
+141:48:12|C|Kerwin|Odyssey, Houston. I have your final entry PAD when you are ready.
 141:48:11|P|PAO|Allan W. Start of Jackpot, Nevada.
-141:48:13|T|CDR|Okay, Houston. Ready to copy.
-141:48:16|C|Kerwin|Okay. Mid-PAC, 000,152, 000; 142:38:19, 178; and you recall that's GET moonset and Moon-check attitude. NOUN 61, minus 21.66, minus 165.37; 05.2; 36211, 6.20; 11197, 36291; 142:40:46; 00:30; the next four are N/A; D zero is 4.00, 02:20; 00:19, 03:38, 07:59. The rest of the pad is N/A for this one. You are lift vector up at the very bottom. And the remarks all remain the same; if you want me to copy them, let me know; otherwise, you can read back. Over.
-141:49:55|T|CDR|Okay. Entry pad as follows: Mid-PAC, 000,152, 000; 142:38:19, 178; minus 21.66, minus 165.37; 05.2; 36211, 6.20; 11197, 36291; 142:40:46; 00:30; all the DLS are N/A. D0 is 4.00, 02:20; 00:19, 03:38, 07:59. All the rest are N/A, except lift vector which is up; and I have the the ...
-141:50:44|C|Kerwin|Okay, Jim. That's a tiny hair shallower than we had you before, but it's based on solid tracking, and it still is lift vector up comfortably.
-141:50:59|T|CDR|Roger. We never did bring that angle up, did we?
-141:51:06|C|Kerwin|No, actually, we didn't.
+141:48:22|T|CDR|Okay, Houston. Ready to copy.
+141:48:23|C|Kerwin|Okay. Mid-PAC, 000,152, 000; 142:38:19, 178; and you recall that's GET moonset and Moon-check attitude. NOUN 61, minus 21.66, minus 165.37; 05.2; 36211, 6.20; 11197, 36291; 142:40:46; 00:30; the next four are N/A; D zero is 4.00, 02:20; 00:19, 03:38, 07:59. The rest of the pad is N/A for this one. You are lift vector up at the very bottom. And the remarks all remain the same; if you want me to copy them, let me know; otherwise, you can read back. Over.
+141:50:02|T|CDR|Okay. Entry pad as follows: Mid-PAC, 000,152, 000; 142:38:19, 178; minus 21.66, minus 165.37; 05.2; 36211, 6.20; 11197, 36291; 142:40:46; 00:30; all the DLS are N/A. D0 is 4.00, 02:20; 00:19, 03:38, 07:59. All the rest are N/A, except lift vector which is up; and I have the the ...
+141:50:51|C|Kerwin|Okay, Jim. That's a tiny hair shallower than we had you before, but it's based on solid tracking, and it still is lift vector up comfortably.
+141:51:06|T|CDR|Roger. We never did bring that angle up, did we?
+141:51:12|C|Kerwin|No, actually, we didn't.
 141:52:55|P|PAO|This is Apollo Control, Houston, now 141 hours 53 minutes now into the flight. Our final pad shows a time of entry interface at 142 hours 40 minutes 46 seconds; begin blackout at plus 19 seconds from time of entry interface, end the blackout, 3 minutes and 38 seconds. Time of drogue deploy from entry interface is plus 7 minutes and 59 seconds; main chute deployment plus 8 minutes 46 seconds from time of entry interface and predicted time of splash, 13 minutes 44 seconds from time of entry interface. We're now at 141 hours 54 minutes into the mission continuing to monitor. This is Apollo Control, Houston.
 141:54:41|P|PAO|Apollo Control, Houston at 141 hours 55 minutes into the flight of Apollo 13. At the present, we're now feeding a downrange picture of the recovery on the closed circuit television circuit. Further report from recovery: all recovery aircraft, the C-130's, are airborne and helicopters 1 and 2 with swimmers are airborne and proceeding to station at this time. This is Apollo Control, Houston, at 141 hours 56 minutes into the flight of Apollo 13.
 141:56:16|P|PAO|Apollo Control Houston 141 hours 56 minutes into the flight. Apollo 13 now 7,084 nautical miles away from Earth, velocity increasing. They are presently reading 20,770 feet per second. For the report from recovery, both ARIA aircraft are airborne and on station. This is Apollo Control Houston at 141 hours 57 minutes into the flight.
 141:59:50|P|PAO|Apollo Control Houston 141 hours 59 minutes - correction - 142 hours now into the flight. We show Apollo 13 at an altitude of 6,613 nautical miles away, velocity really beginning to build up now, now reading 21,227 feet per second. We show 40 minutes from time of reentry into the Earth's atmosphere.
-142:00:36|C|Kerwin|Odyssey, Houston. Over.
-142:00:38|T|CMP|Go ahead.
-142:00:39|C|Kerwin|Okay, Jack. We'd like P00 and ACCEPT for your final state vector.
-142:00:48|T|CDR|You've got it.
-142:00:58|C|Kerwin|And, Odyssey, Houston. We're also sending you a final PIPA bias update and clock increment. Over.
-142:01:06|T|CDR|Okay. Fine; thank you, Joe. How does the LM look? Are you still tracking it?
-142:01:11|C|Kerwin|All I've heard was that it's - that the cabin was holding pressure. I haven't heard anything more. And, Odyssey, we're ready for you to warm up the BMAG number 2's at your discretion and we're curious whether the Moon check attitude is good. Over.
-142:01:37|T|CMP|Yes, Joe, it's coming down. I guess it's about 45 degrees now and it's coming on down.
-142:01:44|C|Kerwin|Roger that.
-142:02:59|P|PAO|This is Apollo Control, Houston. 142 hours 3 minutes now into the flight. We presently show on one of our displays a splash coordinance of 21 degrees 39 minutes South. 165 degrees, 23 minutes West. Apollo 13 now at an altitude of 5,862 nautical miles. Velocity now reading 22,085 feet per second.
-142:06:07|C|Kerwin|Odyssey, Houston. The computer is yours. Over.
-142:06:10|T|CMP|Okay. Thanks, Joe.
+142:00:42|C|Kerwin|Odyssey, Houston. Over.
+142:00:44|T|CMP|Go ahead.
+142:00:45|C|Kerwin|Okay, Jack. We'd like P00 and ACCEPT for your final state vector.
+142:00:55|T|CDR|You've got it.
+142:01:04|C|Kerwin|And, Odyssey, Houston. We're also sending you a final PIPA bias update and clock increment. Over.
+142:01:12|T|CDR|Okay. Fine; thank you, Joe. How does the LM look? Are you still tracking it?
+142:01:17|C|Kerwin|All I've heard was that it's - that the cabin was holding pressure. I haven't heard anything more. And, Odyssey, we're ready for you to warm up the BMAG number 2's at your discretion and we're curious whether the Moon check attitude is good. Over.
+142:01:43|T|CMP|Yes, Joe, it's coming down. I guess it's about 45 degrees now and it's coming on down.
+142:01:50|C|Kerwin|Roger that.
+142:01:50|P|PAO|This is Apollo Control, Houston. 142 hours 3 minutes now into the flight. We presently show on one of our displays a splash coordinance of 21 degrees 39 minutes South. 165 degrees, 23 minutes West. Apollo 13 now at an altitude of 5,862 nautical miles. Velocity now reading 22,085 feet per second.
+142:06:12|C|Kerwin|Odyssey, Houston. The computer is yours. Over.
+142:06:15|T|CMP|Okay. Thanks, Joe.
 142:06:20|P|PAO|Apollo Control, Houston - 142 hours 7 minutes now into the flight of Apollo 13. Odyssey now 34 minutes away from time of entry into the Earth's atmosphere. Mission Control has just passed a computer update to the onboard CMC and as you heard Joe Kerwin's last report to the crew, telling them that the computer now belongs to them. We're at 142 hours 7 minutes, continuing to monitor, this is Apollo Control.
-142:06:58|T|CMP|Okay, Joe. The Moon is coming down to about 38 degrees.
-142:07:05|C|Kerwin|Okay, Jack. Sounds real good.
-142:07:35|P|PAO|Apollo Control at 142 hours, 8 minutes now into the flight of Apollo 13. Presently 5,134 nautical miles away from Earth. Velocity now reading 23,023 feet per second. We're 33 minutes away from time of entry. This is Apollo Control, Houston.
-142:08:56|C|Kerwin|Odyssey, Houston.
-142:08:59|T|CDR|Go ahead.
-142:09:00|C|Kerwin|Okay. We'd like the S-BAND POWER AMPLIFIER to OFF, center, at this time, Jim.
-142:09:06|T|CDR|OFF, center, is done
-142:09:09|C|Kerwin|Okay. You're still looking real fat on power. We show you having over 30 amps on the water. If you do get into a bind and don't come up - that's amp-hours - don't come up with Recovery, you can always power down and you can always put the pyro batteries on the line if you need them after you're down.
-142:09:30 |T|CDR|Okay.
-142:13:35|P|PAO|"This is Apollo Control, Houston. 142 hours 14 minutes now into the mission. Apollo 13 presently 4,075 nautical miles out from Earth. Velocity now showing 24,619 feet per second. We're less than 27 minutes now from time of entry into the Earth's atmosphere."
-142:15:50|T|CMP|Joe, are you planning to run this all the way down without the suit compressor?
-142:15:55|C|Kerwin|Say again, Jack.
-142:15:57|T|CMP|Are you planning to turn on the suit compressor at all on the way down?
-142:16:02|C|Kerwin|That's negative Jack; I'll verify it; but I sure don't think so.
-142:16:06|T|CMP|Okay, that's all right with us.
-142:16:18|C|Kerwin|Okay, Jack, this is Houston, we've got power, and you can cycle it for 10 minutes if you so desire, but we don't think you need to do it. Over.
-142:16:27|T|CMP|Okay, we'll hold that.
-142:16:29|C|Kerwin|Okay, real fine. How did the EMS check go, Jack?
-142:16:32|T|CMP|EMS checked out okay  -
-142:16:34|C|Kerwin|Good deal.
-142:16:34|T|CMP|Its been initialized and setting on ENTRY.
-142:18:37|C|Kerwin|Roger.
-142:16:52|P|PAO|Apollo Control Houston, 142 hours, 17 minutes now into the mission - our digital display at present shows Apollo 13 at 3,505 nautical miles away from Earth, now travelingat a speed of 25,693 feet per second. Jack Swigert confirms that the EMS check went well, which provides a good backup monitor for checking the guidance and navigation system performance; we are at 142 hours, 18 minutes into the flight, and this is Apollo Control Houston.
-142:20:17|T|CMP|Okay, Joe, are you watching - you and FIDO taking a look at our NOUN 60 here?
-142:20:23|C|Kerwin|Thats affirmative; hold it just a second; we are looking at 6.13 and 4.80; I'll get a check on that.
-142:20:33|T|CMP|Okay, that's not too many g's.
-142:20:38|C|Kerwin|Jack, FIDO says that okay.
-142:20:41|T|CMP|Okay.
-142:20:52|P|PAO|Apollo Control - that was a reading from the onboard computer displays showing a velocity at entry of 36,211 feet per second.
-142:21:18|C|Kerwin|Jack, Houston, your NOUN 63 looks good to us also.
-142:21:22|T|CMP|Okay.
-142:21:01|P|PAO|Apollo Control Houston, at 142 hours, 22 minutes into the mission.
-142:22:05|T|CMP|Joe, how far out do you show us now?
-142:22:09|C|Kerwin|Oh, on our plotboard up here, we can't hardly see how far out you are.
-142:22:15|T|CMP|Okay.
-142:22:25|T|CMP|I know all of us here want to thank all you guys down there for the very fine job you did.
-142:22:32|T|CDR|That's affirm, Joe.
-142:22:35|C|Kerwin|I'll tell you - We all had a good time doing it.
-142:22:48|P|PAO|We now now show Apollo 13 at a distance at 2,581 nautical mile.
-142:22:53|C|Kerwin|Okay, Odyssey; Houston. Just for your information, it looks as though battery C will deplete around main chute time; that's expected; you've got plenty of amp-hours in the other batteries.
-142:23:48|P|PAO|We now show velocity of 27,553 feet per second at 142 hours, 24 minutes.
-142:24:31|C|Kerwin|Odyssey, Houston. Over.
-142:24:42|C|Kerwin|Odyssey, Houston. Over.
-142:24:54|P|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission - aboard Apollo 13 -
-142:25:02|C|Kerwin|Odyssey, Houston. Over.
-142:25:11|C|Kerwin|Odyssey, Houston. Over.
-142:25:12|T|CMP|Go ahead.
-142:25:13|C|Kerwin|Okay, I was just going to tell you about that handover we just had, but I was a little late on the - on the ball. Since we're fat on power and we'd kind of like to have S-band with you after blackout - we'd - We'd like you to delete the step on your entry checklist page 2-5, after "Begin blackout," it says "POWER PMP to OFF." We'd like you to leave it on if you think of it. Over.
-142:25:38|T|CDR|Okay.
-142:25:40|C|Kerwin|Okay.
+142:07:06|T|CMP|Okay, Joe. The Moon is coming down to about 38 degrees.
+142:07:10|C|Kerwin|Okay, Jack. Sounds real good.
+142:07:10|P|PAO|Apollo Control at 142 hours, 8 minutes now into the flight of Apollo 13. Presently 5,134 nautical miles away from Earth. Velocity now reading 23,023 feet per second. We're 33 minutes away from time of entry. This is Apollo Control, Houston.
+142:09:00|C|Kerwin|Odyssey, Houston.
+142:09:02|T|CDR|Go ahead.
+142:09:03|C|Kerwin|Okay. We'd like the S-BAND POWER AMPLIFIER to OFF, center, at this time, Jim.
+142:09:11|T|CDR|OFF, center, is done
+142:09:14|C|Kerwin|Okay. You're still looking real fat on power. We show you having over 30 amps on the water. If you do get into a bind and don't come up - that's amp-hours - don't come up with Recovery, you can always power down and you can always put the pyro batteries on the line if you need them after you're down.
+142:09:35 |T|CDR|Okay.
+142:09:35|P|PAO|"This is Apollo Control, Houston. 142 hours 14 minutes now into the mission. Apollo 13 presently 4,075 nautical miles out from Earth. Velocity now showing 24,619 feet per second. We're less than 27 minutes now from time of entry into the Earth's atmosphere."
+142:17:54|T|CMP|Joe, are you planning to run this all the way down without the suit compressor?
+142:18:00|C|Kerwin|Say again, Jack.
+142:18:02|T|CMP|Are you planning to turn on the suit compressor at all on the way down?
+142:18:07|C|Kerwin|That's negative Jack; I'll verify it; but I sure don't think so.
+142:18:11|T|CMP|Okay, that's all right with us.
+142:18:22|C|Kerwin|Okay, Jack, this is Houston, we've got power, and you can cycle it for 10 minutes if you so desire, but we don't think you need to do it. Over.
+142:18:31|T|CMP|Okay, we'll hold that.
+142:18:33|C|Kerwin|Okay, real fine. How did the EMS check go, Jack?
+142:18:36|T|CMP|EMS checked out okay  -
+142:18:39|C|Kerwin|Good deal.
+142:18:40|T|CMP|Its been initialized and setting on ENTRY.
+142:18:42|C|Kerwin|Roger.
+142:18:42|P|PAO|Apollo Control Houston, 142 hours, 17 minutes now into the mission - our digital display at present shows Apollo 13 at 3,505 nautical miles away from Earth, now travelingat a speed of 25,693 feet per second. Jack Swigert confirms that the EMS check went well, which provides a good backup monitor for checking the guidance and navigation system performance; we are at 142 hours, 18 minutes into the flight, and this is Apollo Control Houston.
+142:20:21|T|CMP|Okay, Joe, are you watching - you and FIDO taking a look at our NOUN 60 here?
+142:20:26|C|Kerwin|Thats affirmative; hold it just a second; we are looking at 6.13 and 4.80; I'll get a check on that.
+142:20:37|T|CMP|Okay, that's not too many g's.
+142:20:41|C|Kerwin|Jack, FIDO says that okay.
+142:20:45|T|CMP|Okay.
+142:20:45|P|PAO|Apollo Control - that was a reading from the onboard computer displays showing a velocity at entry of 36,211 feet per second.
+142:21:21|C|Kerwin|Jack, Houston, your NOUN 63 looks good to us also.
+142:21:25|T|CMP|Okay.
+142:21:25|P|PAO|Apollo Control Houston, at 142 hours, 22 minutes into the mission.
+142:22:08|T|CMP|Joe, how far out do you show us now?
+142:22:12|C|Kerwin|Oh, on our plotboard up here, we can't hardly see how far out you are.
+142:22:19|T|CMP|Okay.
+142:22:28|T|CMP|I know all of us here want to thank all you guys down there for the very fine job you did.
+142:22:36|T|CDR|That's affirm, Joe.
+142:22:38|C|Kerwin|I'll tell you - We all had a good time doing it.
+142:22:38|P|PAO|We now now show Apollo 13 at a distance at 2,581 nautical mile.
+142:22:56|C|Kerwin|Okay, Odyssey; Houston. Just for your information, it looks as though battery C will deplete around main chute time; that's expected; you've got plenty of amp-hours in the other batteries.
+142:22:56|P|PAO|We now show velocity of 27,553 feet per second at 142 hours, 24 minutes.
+142:24:34|C|Kerwin|Odyssey, Houston. Over.
+142:24:45|C|Kerwin|Odyssey, Houston. Over.
+142:25:04|P|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission - aboard Apollo 13 -
+142:25:04|C|Kerwin|Odyssey, Houston. Over.
+142:25:13|C|Kerwin|Odyssey, Houston. Over.
+142:25:16|T|CMP|Go ahead.
+142:25:25|C|Kerwin|Okay, I was just going to tell you about that handover we just had, but I was a little late on the - on the ball. Since we're fat on power and we'd kind of like to have S-band with you after blackout - we'd - We'd like you to delete the step on your entry checklist page 2-5, after "Begin blackout," it says "POWER PMP to OFF." We'd like you to leave it on if you think of it. Over.
+142:25:41|T|CDR|Okay.
+142:25:43|C|Kerwin|Okay.
 142:25:45|P|PAO|We're now reading the onboard computer display, which shows a present velocity of 29,160 feet per second. This is what the crew is reading out. A range-to-go distance of 4,984 nautical miles. We're at 142 hours 26 minutes into the flight. We show 14-1/2 minutes from time of entry interface.
 142:27:43|P|PAO|13 minutes now from predicted time of entry. The onboard computer shows a velocity of 30,113 feet per second, range-to-go distance 4,683 nautical miles. Retrofire Officer has just reported to Flight Director Gene Kranz, we look real good here now. TELMU has just reported to Flight Director Gene Kranz that we have now lost tracking on lunar module Aquarius.
 142:29:42|P|PAO|Eleven minutes away now from time of entry interface. Onboard displays show a velocity of 31,141 feet per second, range-to-go distance of 4,332 nautical miles. We're at 142 hours 30 minutes into the flight of Apollo 13.
-142:30:45|C|Kerwin|Odyssey, Houston. Over.
-142:30:47|T|CMP|Go ahead.
-142:30:48|C|Kerwin|Okay. At 10 minutes to 400 K, you're looking good; we're real happy with the trajectory, and a minute ago, we just lost contact with your friend Aquarius.
-142:31:00|T|CMP|Okay. Where did she go?
-142:31:05|C|Kerwin|Oh, I don't know. She's up there somewhere.
-142:31:10|T|CMP|She sure was a good ship.
-142:31:14|C|Kerwin|Hey, just as I said that, we got another burst of LM data, so I guess it's still ticking.
+142:30:47|C|Kerwin|Odyssey, Houston. Over.
+142:30:49|T|CMP|Go ahead.
+142:30:50|C|Kerwin|Okay. At 10 minutes to 400 K, you're looking good; we're real happy with the trajectory, and a minute ago, we just lost contact with your friend Aquarius.
+142:31:03|T|CMP|Okay. Where did she go?
+142:31:07|C|Kerwin|Oh, I don't know. She's up there somewhere.
+142:31:13|T|CMP|She sure was a good ship.
+142:31:16|C|Kerwin|Hey, just as I said that, we got another burst of LM data, so I guess it's still ticking.
 142:31:43|P|PAO|Nine minutes now from time of entry interface. The onboard computer now reading a velocity of 32,193 feet per second. A range-to-go distance of 3,919 nautical miles.
-142:33:04|C|Kerwin|Odyssey, Houston. Your DSKY is doing all the right things. The G&N is GO. Over.
-142:33:09|T|CMP|Okay. Thank you.
-142:33:16|T|CDR|You have a good bedside manner, Joe.
-142:33:20|C|Kerwin|Say again, Jack.
-142:33:23|T|CDR|You have a good bedside manner.
-142:33:29|C|Kerwin|(Laughter) That's the nicest thing anybody's ever said!
+142:33:06|C|Kerwin|Odyssey, Houston. Your DSKY is doing all the right things. The G&N is GO. Over.
+142:33:11|T|CMP|Okay. Thank you.
+142:33:18|T|CDR|You have a good bedside manner, Joe.
+142:33:22|C|Kerwin|Say again, Jack.
+142:33:25|T|CDR|You have a good bedside manner.
+142:33:31|C|Kerwin|(Laughter) That's the nicest thing anybody's ever said!
 142:33:34|P|PAO|Capcom Joe Kerwin, in addition to being an astronaut, is also a medical doctor.
-142:33:40|T|CMP|Sure wish I could go to the FIDO party tonight.
-142:33:43|C|Kerwin|(Laughter) Yes, it's going to be a wild one.
-142:33:52|P|PAO|Less then 7 minutes now from entry into the Earth's atmosphere. Onboard display now shows a velocity of 33,383 feet per second.
-142:34:02|C|Kerwin|Somebody said, "We'll - We'll cover for you guys; and, if Jack's got any phone numbers he wants us to call, why, pass them down."
+142:33:43|T|CMP|Sure wish I could go to the FIDO party tonight.
+142:33:47|C|Kerwin|(Laughter) Yes, it's going to be a wild one.
+142:33:47|P|PAO|Less then 7 minutes now from entry into the Earth's atmosphere. Onboard display now shows a velocity of 33,383 feet per second.
+142:34:04|C|Kerwin|Somebody said, "We'll - We'll cover for you guys; and, if Jack's got any phone numbers he wants us to call, why, pass them down."
 142:34:33|P|PAO|Range to go now 3,271 nautical miles. We're 6 minutes now from time of reentry into the Earth's atmosphere.
 142:35:44|P|PAO|Five minutes to go now for reentry into the Earths atmosphere. Now reading a velocity of 34,335 feet per second. Range to go 2,921 nautical miles. Flight Director Gene Kranz now going around the room posting his Flight Control team as to the status.
-142:36:14|C|Kerwin|Odyssey, Houston. Over.
-142:36:16|T|CMP|Go ahead.
-142:36:17|C|Kerwin|Okay; We just had one last time around the room and everybody says you're looking great.
-142:36:22|T|CMP|Thank you.
+142:36:15|C|Kerwin|Odyssey, Houston. Over.
+142:36:17|T|CMP|Go ahead.
+142:36:18|C|Kerwin|Okay; We just had one last time around the room and everybody says you're looking great.
+142:36:24|T|CMP|Thank you.
 142:36:44|P|PAO|4 minutes to go now for entry interface, velocity now reading now 34,802 feet per second, range to go about 2,625 nautical miles.
 142:37:38|P|PAO|Still receiving onboard data. Still looking good. Three minutes to go now from the time of entry into the Earth's atmosphere. Onboard display shows a velocity of 35,245 feet per second. Range to go 2,301 nautical miles.
-142:38:13|T|CMP|The mood fits the color.
-142:38:32|C|Kerwin|Odyssey, Houston. Over.
-142:38:33|T|CMP|Go ahead.
-142:38:34|C|Kerwin|Okay LOS is about a minute or a minute and a half; in entry attitude, we'd like OMNI Charlie, and welcome home. Over.
-142:38:44|T|CMP|Thank you.
+142:38:14|T|CMP|The mood fits the color.
+142:38:33|C|Kerwin|Odyssey, Houston. Over.
+142:38:35|T|CMP|Go ahead.
+142:38:36|C|Kerwin|Okay LOS is about a minute or a minute and a half; in entry attitude, we'd like OMNI Charlie, and welcome home. Over.
+142:38:45|T|CMP|Thank you.
 142:38:47|P|PAO|Two minutes to go till entry. Velocity now reading 35,646 feet per second; range to go 1,961 nautical miles.
 142:39:43|P|PAO|Apollo Control, Houston. We've just had loss of signal from Honeysuckle with Apollo 13. Our last velocity reading was 35,837 feet per second with a range to go of 1,791 nautical miles.
 142:40:49|P|PAO|Apollo 13 should have entered the Earth's atmosphere at this time. A few moments ago, we had a report from the retrofire officer that based on his data, a predicted set of coordiance for splash of 21 degrees 39 minutes south of 165 degrees 22 minutes west. The period of blackout for the spacecraft should have begun about 20 some odd seconds ago.
@@ -12704,14 +12704,14 @@
 142:45:50|P|PAO|We're had a report that ARIA 4 aircraft has acquisition of signal.
 142:46:03|C|Kerwin|Odyssey, Houston standing by. Over.
 142:46:08|T|CMP|Okay, Joe.
-142:46:11|C|Kerwin|Okay. We read you, Jack.
+142:46:12|C|Kerwin|Okay. We read you, Jack.
 142:46:16|P|PAO|That was Jim Lovell responding with the "Okay, Joe." Correction there. That was command module pilot Jack Swigert.
 142:46:28|C|Kerwin|We're looking at the weather on TV and it looks just as advertised; real good.
 142:46:47|P|PAO|Less than 2 minutes now from time of drogue deployment.
 142:47:52|P|PAO|Less than a minutes away now from time of drogue deployment.
 142:48:22|P|PAO|Less than 30 seconds away now from drogue deployment. The drogue deployment - these 2 chutes will provide braking and stabilization prior to main chute deployment. Standing by now for - continue to monitor.
 142:48:53|C|Kerwin|Odyssey, Houston standing by for your NOUN 67 when you get it. Over.
-142:49:16|T|CMP|We got two good drogues.
+142:49:17|T|CMP|We got two good drogues.
 142:49:20|C|Kerwin|Roger that.
 142:49:21|T|CMP|... thousand.
 142:49:25|P|PAO|A report of 2 good drogues. Coming up now for main chutes.
