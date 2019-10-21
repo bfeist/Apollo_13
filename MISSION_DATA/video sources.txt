@@ -32,7 +32,7 @@ L000583/FR-8276 preparing bread
 L000583/FR-8282 prelaunch - van
 L000583/FR-8283 prelaunch - firing room
 L000585/FR-8285	567 prelaunch - walking across swingarm
-L000591/FR-8304	567 prelaunch - breakvast
+L000591/FR-8304	567 prelaunch - breakfast
 L000593/FR-8306	567 - van
 L000593/FR-8307 launch
 L000593/FR-8308 launch
