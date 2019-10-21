@@ -12554,9 +12554,9 @@
 141:30:05|C|Kerwin|Okay, copy that. Farewell, Aquarius, and we thank you.
 141:30:21|C|Kerwin|Watch gimbal lock there, Jack.
 141:30:24|T|CMP|Yeah, we did.
-141:30:24|P|PAO|"This is Apollo Control Houston at 141 hours, 31 minutes into the flight; we have had lunar module jettison, and for Apollo 13, the age of Aquarius ended at 141 hours, 30 minutes ground elapsed time."
+141:30:44|P|PAO|This is Apollo Control Houston at 141 hours, 31 minutes into the flight; we have had lunar module jettison, and for Apollo 13, the age of Aquarius ended at 141 hours, 30 minutes ground elapsed time.
 141:31:52|C|Kerwin|Odyssey, Houston. Request OMNI Bravo.
-141:34:36|P|PAO|Apollo Control, Houston. 141 hours 35 minutes now into the flight. We have a report from recovery that Samoa rescue Aircraft 1, 3 and 4 are now enroute to their respective stations. These C-130 aircraft. Samoa 1 will be positioned 105 nautical miles uprange. Samoa 4, 200 nautical miles downrange. Correction to that last report Samoa 1 will be 345 nautical miles uprange. Samoa 2, 240 nautical miles uprange. Samoa 4, 200 nautical miles downrange. Continue to monitor at 141 hours 36 minutes. This is Apollo Control, Houston.
+141:34:46|P|PAO|Apollo Control, Houston. 141 hours 35 minutes now into the flight. We have a report from recovery that Samoa rescue Aircraft 1, 3 and 4 are now enroute to their respective stations. These C-130 aircraft. Samoa 1 will be positioned 105 nautical miles uprange. Samoa 4, 200 nautical miles downrange. Correction to that last report Samoa 1 will be 345 nautical miles uprange. Samoa 2, 240 nautical miles uprange. Samoa 4, 200 nautical miles downrange. Continue to monitor at 141 hours 36 minutes. This is Apollo Control, Houston.
 141:36:03|C|Kerwin|Odyssey, Houston.
 141:36:05|T|CMP|Go ahead.
 141:36:06|C|Kerwin|Okay, Jack. We'll have a PAD for you in a few minutes. We're getting data now on the tracking, and although we suspect the changes from your preliminary PAD will be very small, we recommend that you hold off on initializing the EMS until we get you the final PAD. Over.
@@ -12571,9 +12571,9 @@
 141:38:18|C|Kerwin|Okay, Jack. It'll be a few minutes yet. We want to get it right up to speed.
 141:38:43|T|CMP|Okay. I can proceed with EMS check, can't I, Joe?
 141:38:46|C|Kerwin|That's affirmative, Jack. You can go ahead with that.
-141:39:48|P|PAO|This is Apollo Control Houston. 141 hours 40 minutes now into the flight of Apollo 13. Apollo 13 now at an altitude of 9,703 nautical miles from Earth with a velocity now reading 18,504 feet per second. We have a report that the lunar module is continuing to hold altitude the way it should. Cabin pressure is holding and here in Mission Control we'll continue to track the lunar module, Aquarius until it reenters. We're at 141 hours 41 minutes into the flight, and this is Apollo Control Houston.
-141:43:46|P|PAO|This is Apollo Control Houston at 141 hours 44 minutes now into the mission. Apollo 13 presently at a distance of 9,102 nautical miles from Earth and with a velocity reading 18,952 feet per second. Meanwhile we have a listing of the crew members of the helicopters who will be airborn at the time of predicted landing. We read an estimated time of landing now of 1 hour 10 minutes.
-141:44:42|P|PAO|Aboard Recovery 1 Pilot will be Commander Charles B. Smiley, 39, of Oklahoma City, Okalahoma. Commander Smiley is the H-S4 Commanding Officer and picked up the Apollo 10 astronauts. Co Pilot Lt. Junior Grade Dana G. McCarthy, 25, of Chathum, Mass. First crewman, Ralph G. Slider, 28, of Paden City, West Va., Second crewman, Michael Longe, 21, of Shelburn, Vermont. The swimmer aboard Lt. Junior Grade Ernest Lee Jahncke, 26, of Greenwich Connecticut. Aboard Swim 1, Pilot Lt. Commander Carl John Frank, 35, North Merrick, New York, Co Pilot Lt. Jr. Grade Douglas Fillmore Hudson, Jr., 24, of Barrington Illinois. First crewman, Robert Peterson, 23, of Susanville California, Second crewman, Gary W. Neilson, 21 of Delhi Louisiana. Swimmer, Stephen P. Jewett, 25 of Ontario, California, and Second swimmer, Robert J. Pfanzelter, 19, of Burlington, Wisconsin, Third swimmer, Luco Palma, 19, of Tewksbury, Mass.
+141:39:58|P|PAO|This is Apollo Control Houston. 141 hours 40 minutes now into the flight of Apollo 13. Apollo 13 now at an altitude of 9,703 nautical miles from Earth with a velocity now reading 18,504 feet per second. We have a report that the lunar module is continuing to hold altitude the way it should. Cabin pressure is holding and here in Mission Control we'll continue to track the lunar module, Aquarius until it reenters. We're at 141 hours 41 minutes into the flight, and this is Apollo Control Houston.
+141:43:53|P|PAO|This is Apollo Control Houston at 141 hours 44 minutes now into the mission. Apollo 13 presently at a distance of 9,102 nautical miles from Earth and with a velocity reading 18,952 feet per second. Meanwhile we have a listing of the crew members of the helicopters who will be airborn at the time of predicted landing. We read an estimated time of landing now of 1 hour 10 minutes.
+141:44:49|P|PAO|Aboard Recovery 1 Pilot will be Commander Charles B. Smiley, 39, of Oklahoma City, Okalahoma. Commander Smiley is the H-S4 Commanding Officer and picked up the Apollo 10 astronauts. Co Pilot Lt. Junior Grade Dana G. McCarthy, 25, of Chathum, Mass. First crewman, Ralph G. Slider, 28, of Paden City, West Va., Second crewman, Michael Longe, 21, of Shelburn, Vermont. The swimmer aboard Lt. Junior Grade Ernest Lee Jahncke, 26, of Greenwich Connecticut. Aboard Swim 1, Pilot Lt. Commander Carl John Frank, 35, North Merrick, New York, Co Pilot Lt. Jr. Grade Douglas Fillmore Hudson, Jr., 24, of Barrington Illinois. First crewman, Robert Peterson, 23, of Susanville California, Second crewman, Gary W. Neilson, 21 of Delhi Louisiana. Swimmer, Stephen P. Jewett, 25 of Ontario, California, and Second swimmer, Robert J. Pfanzelter, 19, of Burlington, Wisconsin, Third swimmer, Luco Palma, 19, of Tewksbury, Mass.
 141:46:48|C|Kerwin|Odyssey, Houston. Over.
 141:46:51|T|CDR|Go ahead, Houston.
 141:46:53|C|Kerwin|Okay, Jim. Your CABIN is looking real good. We recommend you turn the SUIT COMPRESSOR to OFF now. Over
@@ -12581,19 +12581,19 @@
 141:47:07|T|CDR|Boy, it's nice and quiet in here.
 141:47:09|C|Kerwin|Okay, real good. Incidentally, your power is looking real good also, Jim.
 141:47:16|T|CDR|Thank you.
-141:47:35|P|PAO|Aboard Swim Helicopter No. 2 Pilot Lt. Allen Leroy Willhite, 27, Oklahoma City, Oklahoma. Co Pilot Lt. Jr. Grade Vernon E. Wright, 27, Atlanta, Georgia, First crewman, Raymond Lloyd Morrison of Lynchburg, Va., Second crewman John William Towne, McCook, Nebraska, First swimmer Allan W. Starr.
+141:47:42|P|PAO|Aboard Swim Helicopter No. 2 Pilot Lt. Allen Leroy Willhite, 27, Oklahoma City, Oklahoma. Co Pilot Lt. Jr. Grade Vernon E. Wright, 27, Atlanta, Georgia, First crewman, Raymond Lloyd Morrison of Lynchburg, Va., Second crewman John William Towne, McCook, Nebraska, First swimmer Allan W. Starr.
 141:48:12|C|Kerwin|Odyssey, Houston. I have your final entry PAD when you are ready.
-141:48:11|P|PAO|Allan W. Start of Jackpot, Nevada.
+141:48:18|P|PAO|Allan W. Start of Jackpot, Nevada.
 141:48:22|T|CDR|Okay, Houston. Ready to copy.
 141:48:23|C|Kerwin|Okay. Mid-PAC, 000,152, 000; 142:38:19, 178; and you recall that's GET moonset and Moon-check attitude. NOUN 61, minus 21.66, minus 165.37; 05.2; 36211, 6.20; 11197, 36291; 142:40:46; 00:30; the next four are N/A; D zero is 4.00, 02:20; 00:19, 03:38, 07:59. The rest of the pad is N/A for this one. You are lift vector up at the very bottom. And the remarks all remain the same; if you want me to copy them, let me know; otherwise, you can read back. Over.
 141:50:02|T|CDR|Okay. Entry pad as follows: Mid-PAC, 000,152, 000; 142:38:19, 178; minus 21.66, minus 165.37; 05.2; 36211, 6.20; 11197, 36291; 142:40:46; 00:30; all the DLS are N/A. D0 is 4.00, 02:20; 00:19, 03:38, 07:59. All the rest are N/A, except lift vector which is up; and I have the the ...
 141:50:51|C|Kerwin|Okay, Jim. That's a tiny hair shallower than we had you before, but it's based on solid tracking, and it still is lift vector up comfortably.
 141:51:06|T|CDR|Roger. We never did bring that angle up, did we?
 141:51:12|C|Kerwin|No, actually, we didn't.
-141:52:55|P|PAO|This is Apollo Control, Houston, now 141 hours 53 minutes now into the flight. Our final pad shows a time of entry interface at 142 hours 40 minutes 46 seconds; begin blackout at plus 19 seconds from time of entry interface, end the blackout, 3 minutes and 38 seconds. Time of drogue deploy from entry interface is plus 7 minutes and 59 seconds; main chute deployment plus 8 minutes 46 seconds from time of entry interface and predicted time of splash, 13 minutes 44 seconds from time of entry interface. We're now at 141 hours 54 minutes into the mission continuing to monitor. This is Apollo Control, Houston.
-141:54:41|P|PAO|Apollo Control, Houston at 141 hours 55 minutes into the flight of Apollo 13. At the present, we're now feeding a downrange picture of the recovery on the closed circuit television circuit. Further report from recovery: all recovery aircraft, the C-130's, are airborne and helicopters 1 and 2 with swimmers are airborne and proceeding to station at this time. This is Apollo Control, Houston, at 141 hours 56 minutes into the flight of Apollo 13.
-141:56:16|P|PAO|Apollo Control Houston 141 hours 56 minutes into the flight. Apollo 13 now 7,084 nautical miles away from Earth, velocity increasing. They are presently reading 20,770 feet per second. For the report from recovery, both ARIA aircraft are airborne and on station. This is Apollo Control Houston at 141 hours 57 minutes into the flight.
-141:59:50|P|PAO|Apollo Control Houston 141 hours 59 minutes - correction - 142 hours now into the flight. We show Apollo 13 at an altitude of 6,613 nautical miles away, velocity really beginning to build up now, now reading 21,227 feet per second. We show 40 minutes from time of reentry into the Earth's atmosphere.
+141:53:02|P|PAO|This is Apollo Control, Houston, now 141 hours 53 minutes now into the flight. Our final pad shows a time of entry interface at 142 hours 40 minutes 46 seconds; begin blackout at plus 19 seconds from time of entry interface, end the blackout, 3 minutes and 38 seconds. Time of drogue deploy from entry interface is plus 7 minutes and 59 seconds; main chute deployment plus 8 minutes 46 seconds from time of entry interface and predicted time of splash, 13 minutes 44 seconds from time of entry interface. We're now at 141 hours 54 minutes into the mission continuing to monitor. This is Apollo Control, Houston.
+141:54:47|P|PAO|Apollo Control, Houston at 141 hours 55 minutes into the flight of Apollo 13. At the present, we're now feeding a downrange picture of the recovery on the closed circuit television circuit. Further report from recovery: all recovery aircraft, the C-130's, are airborne and helicopters 1 and 2 with swimmers are airborne and proceeding to station at this time. This is Apollo Control, Houston, at 141 hours 56 minutes into the flight of Apollo 13.
+141:56:24|P|PAO|Apollo Control Houston 141 hours 56 minutes into the flight. Apollo 13 now 7,084 nautical miles away from Earth, velocity increasing. They are presently reading 20,770 feet per second. For the report from recovery, both ARIA aircraft are airborne and on station. This is Apollo Control Houston at 141 hours 57 minutes into the flight.
+141:59:57|P|PAO|Apollo Control Houston 141 hours 59 minutes - correction - 142 hours now into the flight. We show Apollo 13 at an altitude of 6,613 nautical miles away, velocity really beginning to build up now, now reading 21,227 feet per second. We show 40 minutes from time of reentry into the Earth's atmosphere.
 142:00:42|C|Kerwin|Odyssey, Houston. Over.
 142:00:44|T|CMP|Go ahead.
 142:00:45|C|Kerwin|Okay, Jack. We'd like P00 and ACCEPT for your final state vector.
@@ -12603,20 +12603,21 @@
 142:01:17|C|Kerwin|All I've heard was that it's - that the cabin was holding pressure. I haven't heard anything more. And, Odyssey, we're ready for you to warm up the BMAG number 2's at your discretion and we're curious whether the Moon check attitude is good. Over.
 142:01:43|T|CMP|Yes, Joe, it's coming down. I guess it's about 45 degrees now and it's coming on down.
 142:01:50|C|Kerwin|Roger that.
-142:01:50|P|PAO|This is Apollo Control, Houston. 142 hours 3 minutes now into the flight. We presently show on one of our displays a splash coordinance of 21 degrees 39 minutes South. 165 degrees, 23 minutes West. Apollo 13 now at an altitude of 5,862 nautical miles. Velocity now reading 22,085 feet per second.
+142:03:05|P|PAO|This is Apollo Control, Houston. 142 hours 3 minutes now into the flight. We presently show on one of our displays a splash coordinance of 21 degrees 39 minutes South. 165 degrees, 23 minutes West. Apollo 13 now at an altitude of 5,862 nautical miles. Velocity now reading 22,085 feet per second.
 142:06:12|C|Kerwin|Odyssey, Houston. The computer is yours. Over.
 142:06:15|T|CMP|Okay. Thanks, Joe.
-142:06:20|P|PAO|Apollo Control, Houston - 142 hours 7 minutes now into the flight of Apollo 13. Odyssey now 34 minutes away from time of entry into the Earth's atmosphere. Mission Control has just passed a computer update to the onboard CMC and as you heard Joe Kerwin's last report to the crew, telling them that the computer now belongs to them. We're at 142 hours 7 minutes, continuing to monitor, this is Apollo Control.
+142:06:25|P|PAO|Apollo Control, Houston - 142 hours 7 minutes now into the flight of Apollo 13. Odyssey now 34 minutes away from time of entry into the Earth's atmosphere. Mission Control has just passed a computer update to the onboard CMC and as you heard Joe Kerwin's last report to the crew, telling them that the computer now belongs to them. We're at 142 hours 7 minutes, continuing to monitor, this is Apollo Control.
 142:07:06|T|CMP|Okay, Joe. The Moon is coming down to about 38 degrees.
 142:07:10|C|Kerwin|Okay, Jack. Sounds real good.
-142:07:10|P|PAO|Apollo Control at 142 hours, 8 minutes now into the flight of Apollo 13. Presently 5,134 nautical miles away from Earth. Velocity now reading 23,023 feet per second. We're 33 minutes away from time of entry. This is Apollo Control, Houston.
+142:07:40|P|PAO|Apollo Control at 142 hours, 8 minutes now into the flight of Apollo 13. Presently 5,134 nautical miles away from Earth. Velocity now reading 23,023 feet per second. We're 33 minutes away from time of entry. This is Apollo Control, Houston.
 142:09:00|C|Kerwin|Odyssey, Houston.
 142:09:02|T|CDR|Go ahead.
 142:09:03|C|Kerwin|Okay. We'd like the S-BAND POWER AMPLIFIER to OFF, center, at this time, Jim.
 142:09:11|T|CDR|OFF, center, is done
 142:09:14|C|Kerwin|Okay. You're still looking real fat on power. We show you having over 30 amps on the water. If you do get into a bind and don't come up - that's amp-hours - don't come up with Recovery, you can always power down and you can always put the pyro batteries on the line if you need them after you're down.
 142:09:35 |T|CDR|Okay.
-142:09:35|P|PAO|"This is Apollo Control, Houston. 142 hours 14 minutes now into the mission. Apollo 13 presently 4,075 nautical miles out from Earth. Velocity now showing 24,619 feet per second. We're less than 27 minutes now from time of entry into the Earth's atmosphere."
+142:13:40|P|PAO|This is Apollo Control, Houston. 142 hours 14 minutes now into the mission. Apollo 13 presently 4,075 nautical miles out from Earth. Velocity now showing 24,619 feet per second. We're less than 27 minutes now from time of entry into the Earth's atmosphere.
+142:16:57|P|PAO|Apollo Control Houston, 142 hours, 17 minutes now into the mission - our digital display at present shows Apollo 13 at 3,505 nautical miles away from Earth, now travelingat a speed of 25,693 feet per second. Jack Swigert confirms that the EMS check went well, which provides a good backup monitor for checking the guidance and navigation system performance; we are at 142 hours, 18 minutes into the flight, and this is Apollo Control Houston.
 142:17:54|T|CMP|Joe, are you planning to run this all the way down without the suit compressor?
 142:18:00|C|Kerwin|Say again, Jack.
 142:18:02|T|CMP|Are you planning to turn on the suit compressor at all on the way down?
@@ -12629,13 +12630,12 @@
 142:18:39|C|Kerwin|Good deal.
 142:18:40|T|CMP|Its been initialized and setting on ENTRY.
 142:18:42|C|Kerwin|Roger.
-142:18:42|P|PAO|Apollo Control Houston, 142 hours, 17 minutes now into the mission - our digital display at present shows Apollo 13 at 3,505 nautical miles away from Earth, now travelingat a speed of 25,693 feet per second. Jack Swigert confirms that the EMS check went well, which provides a good backup monitor for checking the guidance and navigation system performance; we are at 142 hours, 18 minutes into the flight, and this is Apollo Control Houston.
 142:20:21|T|CMP|Okay, Joe, are you watching - you and FIDO taking a look at our NOUN 60 here?
 142:20:26|C|Kerwin|Thats affirmative; hold it just a second; we are looking at 6.13 and 4.80; I'll get a check on that.
 142:20:37|T|CMP|Okay, that's not too many g's.
 142:20:41|C|Kerwin|Jack, FIDO says that okay.
 142:20:45|T|CMP|Okay.
-142:20:45|P|PAO|Apollo Control - that was a reading from the onboard computer displays showing a velocity at entry of 36,211 feet per second.
+142:20:55|P|PAO|Apollo Control - that was a reading from the onboard computer displays showing a velocity at entry of 36,211 feet per second.
 142:21:21|C|Kerwin|Jack, Houston, your NOUN 63 looks good to us also.
 142:21:25|T|CMP|Okay.
 142:21:25|P|PAO|Apollo Control Houston, at 142 hours, 22 minutes into the mission.
@@ -12645,21 +12645,21 @@
 142:22:28|T|CMP|I know all of us here want to thank all you guys down there for the very fine job you did.
 142:22:36|T|CDR|That's affirm, Joe.
 142:22:38|C|Kerwin|I'll tell you - We all had a good time doing it.
-142:22:38|P|PAO|We now now show Apollo 13 at a distance at 2,581 nautical mile.
+142:22:52|P|PAO|We now now show Apollo 13 at a distance at 2,581 nautical mile.
 142:22:56|C|Kerwin|Okay, Odyssey; Houston. Just for your information, it looks as though battery C will deplete around main chute time; that's expected; you've got plenty of amp-hours in the other batteries.
-142:22:56|P|PAO|We now show velocity of 27,553 feet per second at 142 hours, 24 minutes.
+142:23:51|P|PAO|We now show velocity of 27,553 feet per second at 142 hours, 24 minutes.
 142:24:34|C|Kerwin|Odyssey, Houston. Over.
 142:24:45|C|Kerwin|Odyssey, Houston. Over.
-142:25:04|P|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission - aboard Apollo 13 -
+142:24:57|P|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission - aboard Apollo 13 -
 142:25:04|C|Kerwin|Odyssey, Houston. Over.
 142:25:13|C|Kerwin|Odyssey, Houston. Over.
 142:25:16|T|CMP|Go ahead.
 142:25:25|C|Kerwin|Okay, I was just going to tell you about that handover we just had, but I was a little late on the - on the ball. Since we're fat on power and we'd kind of like to have S-band with you after blackout - we'd - We'd like you to delete the step on your entry checklist page 2-5, after "Begin blackout," it says "POWER PMP to OFF." We'd like you to leave it on if you think of it. Over.
 142:25:41|T|CDR|Okay.
 142:25:43|C|Kerwin|Okay.
-142:25:45|P|PAO|We're now reading the onboard computer display, which shows a present velocity of 29,160 feet per second. This is what the crew is reading out. A range-to-go distance of 4,984 nautical miles. We're at 142 hours 26 minutes into the flight. We show 14-1/2 minutes from time of entry interface.
-142:27:43|P|PAO|13 minutes now from predicted time of entry. The onboard computer shows a velocity of 30,113 feet per second, range-to-go distance 4,683 nautical miles. Retrofire Officer has just reported to Flight Director Gene Kranz, we look real good here now. TELMU has just reported to Flight Director Gene Kranz that we have now lost tracking on lunar module Aquarius.
-142:29:42|P|PAO|Eleven minutes away now from time of entry interface. Onboard displays show a velocity of 31,141 feet per second, range-to-go distance of 4,332 nautical miles. We're at 142 hours 30 minutes into the flight of Apollo 13.
+142:25:48|P|PAO|We're now reading the onboard computer display, which shows a present velocity of 29,160 feet per second. This is what the crew is reading out. A range-to-go distance of 4,984 nautical miles. We're at 142 hours 26 minutes into the flight. We show 14-1/2 minutes from time of entry interface.
+142:27:45|P|PAO|13 minutes now from predicted time of entry. The onboard computer shows a velocity of 30,113 feet per second, range-to-go distance 4,683 nautical miles. Retrofire Officer has just reported to Flight Director Gene Kranz, we look real good here now. TELMU has just reported to Flight Director Gene Kranz that we have now lost tracking on lunar module Aquarius.
+142:29:45|P|PAO|Eleven minutes away now from time of entry interface. Onboard displays show a velocity of 31,141 feet per second, range-to-go distance of 4,332 nautical miles. We're at 142 hours 30 minutes into the flight of Apollo 13.
 142:30:47|C|Kerwin|Odyssey, Houston. Over.
 142:30:49|T|CMP|Go ahead.
 142:30:50|C|Kerwin|Okay. At 10 minutes to 400 K, you're looking good; we're real happy with the trajectory, and a minute ago, we just lost contact with your friend Aquarius.
@@ -12667,25 +12667,25 @@
 142:31:07|C|Kerwin|Oh, I don't know. She's up there somewhere.
 142:31:13|T|CMP|She sure was a good ship.
 142:31:16|C|Kerwin|Hey, just as I said that, we got another burst of LM data, so I guess it's still ticking.
-142:31:43|P|PAO|Nine minutes now from time of entry interface. The onboard computer now reading a velocity of 32,193 feet per second. A range-to-go distance of 3,919 nautical miles.
+142:31:45|P|PAO|Nine minutes now from time of entry interface. The onboard computer now reading a velocity of 32,193 feet per second. A range-to-go distance of 3,919 nautical miles.
 142:33:06|C|Kerwin|Odyssey, Houston. Your DSKY is doing all the right things. The G&N is GO. Over.
 142:33:11|T|CMP|Okay. Thank you.
 142:33:18|T|CDR|You have a good bedside manner, Joe.
 142:33:22|C|Kerwin|Say again, Jack.
 142:33:25|T|CDR|You have a good bedside manner.
 142:33:31|C|Kerwin|(Laughter) That's the nicest thing anybody's ever said!
-142:33:34|P|PAO|Capcom Joe Kerwin, in addition to being an astronaut, is also a medical doctor.
+142:33:36|P|PAO|Capcom Joe Kerwin, in addition to being an astronaut, is also a medical doctor.
 142:33:43|T|CMP|Sure wish I could go to the FIDO party tonight.
 142:33:47|C|Kerwin|(Laughter) Yes, it's going to be a wild one.
-142:33:47|P|PAO|Less then 7 minutes now from entry into the Earth's atmosphere. Onboard display now shows a velocity of 33,383 feet per second.
+142:33:54|P|PAO|Less then 7 minutes now from entry into the Earth's atmosphere. Onboard display now shows a velocity of 33,383 feet per second.
 142:34:04|C|Kerwin|Somebody said, "We'll - We'll cover for you guys; and, if Jack's got any phone numbers he wants us to call, why, pass them down."
-142:34:33|P|PAO|Range to go now 3,271 nautical miles. We're 6 minutes now from time of reentry into the Earth's atmosphere.
+142:34:35|P|PAO|Range to go now 3,271 nautical miles. We're 6 minutes now from time of reentry into the Earth's atmosphere.
 142:35:44|P|PAO|Five minutes to go now for reentry into the Earths atmosphere. Now reading a velocity of 34,335 feet per second. Range to go 2,921 nautical miles. Flight Director Gene Kranz now going around the room posting his Flight Control team as to the status.
 142:36:15|C|Kerwin|Odyssey, Houston. Over.
 142:36:17|T|CMP|Go ahead.
 142:36:18|C|Kerwin|Okay; We just had one last time around the room and everybody says you're looking great.
 142:36:24|T|CMP|Thank you.
-142:36:44|P|PAO|4 minutes to go now for entry interface, velocity now reading now 34,802 feet per second, range to go about 2,625 nautical miles.
+142:36:45|P|PAO|4 minutes to go now for entry interface, velocity now reading now 34,802 feet per second, range to go about 2,625 nautical miles.
 142:37:38|P|PAO|Still receiving onboard data. Still looking good. Three minutes to go now from the time of entry into the Earth's atmosphere. Onboard display shows a velocity of 35,245 feet per second. Range to go 2,301 nautical miles.
 142:38:14|T|CMP|The mood fits the color.
 142:38:33|C|Kerwin|Odyssey, Houston. Over.
@@ -12693,15 +12693,15 @@
 142:38:36|C|Kerwin|Okay LOS is about a minute or a minute and a half; in entry attitude, we'd like OMNI Charlie, and welcome home. Over.
 142:38:45|T|CMP|Thank you.
 142:38:47|P|PAO|Two minutes to go till entry. Velocity now reading 35,646 feet per second; range to go 1,961 nautical miles.
-142:39:43|P|PAO|Apollo Control, Houston. We've just had loss of signal from Honeysuckle with Apollo 13. Our last velocity reading was 35,837 feet per second with a range to go of 1,791 nautical miles.
-142:40:49|P|PAO|Apollo 13 should have entered the Earth's atmosphere at this time. A few moments ago, we had a report from the retrofire officer that based on his data, a predicted set of coordiance for splash of 21 degrees 39 minutes south of 165 degrees 22 minutes west. The period of blackout for the spacecraft should have begun about 20 some odd seconds ago.
-142:42:11|P|PAO|Apollo Control, Houston. Apollo 13 should be coming up on max g right now. Our last estimate for max g was 5.2 g's.
-142:42:57|P|PAO|We have about a minute and a half to go during this period of blackout. Here in Mission Control the scene from the recovery ship Iwo Jima has been flashed up on one or our large screens for all our flight controllers to watch. We have about 1 minute to go now to time of end of blackout.
-142:43:58|P|PAO|About 30 seconds to go for blackout.
-142:44:18|P|PAO|Less than 10 seconds now. We will attempt to contact Apollo 13 through one of the ARIA aircraft. Continuing to monitor, this is Apollo Control Houston.
-142:44:47|P|PAO|Apollo 13 should be out of blackout at this time. We are standing by for any reports of ARIA acquisition, ARIA a C-135 type aircraft.
+142:39:42|P|PAO|Apollo Control, Houston. We've just had loss of signal from Honeysuckle with Apollo 13. Our last velocity reading was 35,837 feet per second with a range to go of 1,791 nautical miles.
+142:40:47|P|PAO|Apollo 13 should have entered the Earth's atmosphere at this time. A few moments ago, we had a report from the retrofire officer that based on his data, a predicted set of coordiance for splash of 21 degrees 39 minutes south of 165 degrees 22 minutes west. The period of blackout for the spacecraft should have begun about 20 some odd seconds ago.
+142:42:09|P|PAO|Apollo Control, Houston. Apollo 13 should be coming up on max g right now. Our last estimate for max g was 5.2 g's.
+142:42:58|P|PAO|We have about a minute and a half to go during this period of blackout. Here in Mission Control the scene from the recovery ship Iwo Jima has been flashed up on one or our large screens for all our flight controllers to watch. We have about 1 minute to go now to time of end of blackout.
+142:43:59|P|PAO|About 30 seconds to go for blackout.
+142:44:19|P|PAO|Less than 10 seconds now. We will attempt to contact Apollo 13 through one of the ARIA aircraft. Continuing to monitor, this is Apollo Control Houston.
+142:44:48|P|PAO|Apollo 13 should be out of blackout at this time. We are standing by for any reports of ARIA acquisition, ARIA a C-135 type aircraft.
 142:45:35|P|PAO|Coming up now on 3 minutes until time of drogue deployment, standing by for any reports of acquisition.
-142:45:50|P|PAO|We're had a report that ARIA 4 aircraft has acquisition of signal.
+142:45:51|P|PAO|We've had a report that ARIA 4 aircraft has acquisition of signal.
 142:46:03|C|Kerwin|Odyssey, Houston standing by. Over.
 142:46:08|T|CMP|Okay, Joe.
 142:46:12|C|Kerwin|Okay. We read you, Jack.
