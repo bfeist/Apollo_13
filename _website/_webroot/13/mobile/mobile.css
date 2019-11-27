@@ -1,0 +1,318 @@
+body {
+    background-color: #0a0a0a;
+    font-family: 'Michroma';
+    color: #adadad;
+}
+
+a {
+    color: #adadad;
+}
+
+h1 {
+    font-size: 1.2em;
+    color: #5E92A6;
+}
+
+h2 {
+    font-size: 0.8em;
+    color: #5E92A6;
+}
+
+h3 {
+    font-size: 1.1em;
+    color: #ffffff;
+}
+
+p {
+    display: block;
+    margin-block-start: 0em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.histtime {
+    font-size: 0.9em;
+    color: #5E92A6;
+    text-align: left;
+    padding-left: 4em;
+}
+
+.historicalTime {
+    padding-left: 10px;
+}
+
+.historicalTime.splash {
+    padding-left: 0px;
+    font-size: 0.9em;
+    color: #5E92A6;
+}
+
+.historicalDate {
+    font-size: 0.9em;
+    color: #5E92A6;
+}
+
+.missionElapsedTime {
+    padding-left: 10px;
+}
+
+.splash-content {
+  overflow-y: scroll;
+    -webkit-overflow-scrolling: touch;
+  font-size: 1em;
+  /*font-family: 'Michroma', sans-serif;*/
+    font-family: 'Roboto', sans-serif;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  display: block;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+
+  /*background-size: cover;*/
+  /*background-position: center top;*/
+  /*background-image: url("../img/AS11-40-5962.jpg");*/
+  /*background-repeat: no-repeat;*/
+
+    background-size: cover;
+    background-position: center center;
+    background-image: url("../img/splash_sidebar_bg.jpg");
+    background-repeat: no-repeat;
+
+    padding: 8px;
+}
+
+.accent {
+    color: #EEEEEE;
+}
+
+#block-clicks {
+  position: fixed;
+  top: 110px;
+  height: 240px;
+  left: 0;
+  right: 0;
+  display: block;
+  background-color: #FFF;
+  opacity: 0;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+
+    position: relative;
+
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1),1px 1px 9px rgba(0, 0, 0, 1)
+}
+
+.content-wrapper:after {
+    content: " ";
+    clear: both;
+    display: block;
+    /*border-right: 1px solid #444;*/
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 1px;
+}
+.patch {
+    background-image: url("../img/Apollo_11_insignia_200.png");
+    width: 3em;
+    height:3em;
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    flex: none;
+    margin-right: 10px;
+}
+
+.patch-right {
+    flex: none;
+}
+
+.heading-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.heading {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.2em;
+    color: #FFF;
+    line-height: 1;
+    flex: none;
+    /*margin-bottom: 6px;*/
+}
+
+.heading-realtime {
+    font-family: 'Michroma', sans-serif;
+    flex: none;
+    background-color: white;
+    color: black;
+    font-size: 0.6em;
+    font-weight: bold;
+
+    padding: 2 12 4 12;
+    margin-left: 20px;
+    border-radius: 5px;
+
+    text-shadow: none;
+}
+
+.subheading1 {
+    font-family: 'Roboto Mono', sans-serif;
+    color: #c6c6c6;
+    font-size: 0.9em;
+    margin-top: 0.8em;
+}
+
+.subheading2 {
+    font-family: 'Roboto', sans-serif;
+    color: #5E92A6;
+    font-size: 0.8em;
+}
+
+.subheading3 {
+    font-family: 'Michroma', sans-serif;
+    /*color: #5E92A6;*/
+    color: #adadad;
+    font-size: 1em;
+    margin-top: 0em;
+    text-align: left;
+}
+
+.splash-copy {
+    /*overflow: auto;*/
+    display: block;
+    padding-top: 2em;
+
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+
+.splash-copy .section-header {
+    /*color: #FFF;*/
+    color: #5E92A6;
+    font-size: 1.1em;
+    font-family: 'Michroma', sans-serif;
+}
+
+.splash-btn-container {
+    /*overflow: auto;*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    /*justify-content: center;*/
+    align-items: center;
+    margin-top: 1em;
+}
+
+.splash-btn {
+    flex: none;
+    margin-right: 0.8em;
+    border-radius: 4px;
+    display: block;
+    float: left;
+    padding: 0.6em 1em 1em 1em;
+
+    height: 2em;
+    width: 9em;
+
+    font-size: 1em;
+    /*font-family: 'Michroma', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Roboto Mono', sans-serif;*/
+    /*font-weight: 700;*/
+
+    transition: all .15s ease-in-out;
+    -webkit-transition: all .15s ease-in-out;
+
+    cursor: pointer;
+    box-shadow: inset -1px -1px 7px 3px rgba(0, 0, 0, 0.25);
+    /*background-color: #5E92A6;*/
+    background-color: rgba(94, 146, 166, .9);
+    border-right: 1px solid rgb(93, 153, 177);
+    border-bottom: 1px solid rgb(93, 153, 177);
+}
+
+.splash-btn-title {
+    font-family: 'Michroma', sans-serif;
+    font-weight: 700;
+    color: #000;
+}
+
+.splash-btn.primary {
+    /*background-color: #d3a474;*/
+    background-color: rgba(215, 160, 108, .9);
+    border-right: 1px solid rgba(215, 160, 108, 1);
+    border-bottom: 1px solid rgba(215, 160, 108, 1);
+
+}
+
+#button1m {
+    display: flex;
+}
+
+#buttonRt {
+    display: flex;
+}
+
+.btn-playpause {
+    border: none;
+    /*width: 100px;*/
+    border-radius: 3px;
+    font-weight: bold;
+    white-space:nowrap;
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    height: 20px;
+
+    margin-top: 5px;
+
+    box-shadow: inset -1px -1px 7px 3px rgba(0, 0, 0, 0.25);
+    /*background-color: #5E92A6;*/
+    background-color: rgba(94, 146, 166, .9);
+    border-right: 1px solid rgb(93, 153, 177);
+    border-bottom: 1px solid rgb(93, 153, 177);
+    position: relative;
+    background-size: 15px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box;
+}
+
+#playPauseBtn {
+    /*background-image: url("img/icons/controller-paus.png");*/
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"> <path d="M15,10.001c0,0.299-0.305,0.514-0.305,0.514l-8.561,5.303C5.51,16.227,5,15.924,5,15.149V4.852 c0-0.777,0.51-1.078,1.135-0.67l8.561,5.305C14.695,9.487,15,9.702,15,10.001z"/> </svg>');
+
+}
+#playPauseBtn.pause  {
+    background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Paus" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"> <path d="M15,3h-2c-0.553,0-1,0.048-1,0.6V16.4c0,0.552,0.447,0.6,1,0.6h2c0.553,0,1-0.048,1-0.6V3.6C16,3.048,15.553,3,15,3z M7,3H5 C4.447,3,4,3.048,4,3.6V16.4C4,16.952,4.447,17,5,17h2c0.553,0,1-0.048,1-0.6V3.6C8,3.048,7.553,3,7,3z"/> </svg>');
+}
+
+.blink_me_orange {
+    animation: blinker_orange 0.2s step-start infinite;
+}
+
+@keyframes blinker_orange {
+    60% {
+        /*opacity: 0.2;*/
+        background-color: #FFC688;
+        border-right: 1px solid rgba(215, 160, 108, 1);
+        border-bottom: 1px solid rgba(215, 160, 108, 1);
+    }
+}

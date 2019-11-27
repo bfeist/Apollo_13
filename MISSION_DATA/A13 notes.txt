@@ -1,3 +1,7 @@
 -023:04:57 - Press conference announcing crew change
-055:15:00 - TV
+001:38:22 - 001:41:15 TV
+030:34:22 - 030:56:13 TV
+030:57:42 - 031:02:36 TV
+055:14:30 - 055:46:29 TV
+138:02:06 - Service Module Jettison
 141:28:33 - LM Jettison

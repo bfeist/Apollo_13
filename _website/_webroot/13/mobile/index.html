@@ -1,0 +1,180 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="./mobile.css" />
+    <link href='https://fonts.googleapis.com/css?family=Michroma' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Mono' rel='stylesheet'>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-37086725-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script type="text/javascript" src="lib/date.js"></script>
+    <script type="text/javascript" src="./mobile.js"></script>
+</head>
+<body>
+<div class="title-content">
+    <div class="content-wrapper">
+        <div class="patch"></div>
+        <div class="patch-right">
+            <div class="heading-wrapper">
+                <div class="heading">APOLLO 11</div>
+                <div class="heading-realtime">IN REAL TIME</div>
+            </div>
+            <div class="subheading3">Mobile Edition</div>
+        </div>
+    </div>
+    <div class="histtime">
+        <span class="historicalDate date">Thu Dec 07 1972</span>
+        <span class="historicalTime time">12:32:00 AM</span>
+        <!--<span class="missionElapsedTime time">000:00:00</span>-->
+    </div>
+    <div class="btn-playpause pause" id="playPauseBtn" title="Play/Pause"></div>
+</div>
+<div id="thirtytrack-iframe">
+    <iframe id="MOCRvizIframe" src="../MOCRviz/MOCRviz.html" style="display: block; width: 100%; height: 850px; border: none;"></iframe>
+</div>
+<div id="block-clicks" onclick=""></div>
+<div class="splash-content">
+    <div class="content-wrapper">
+        <div class="patch"></div>
+        <div class="patch-right">
+            <div class="heading-wrapper">
+                <div class="heading">APOLLO 11</div>
+                <div class="heading-realtime">IN REAL TIME</div>
+            </div>
+            <div class="subheading3">Mobile Edition</div>
+        </div>
+    </div>
+    <div class="subheading1">Experience the first landing on the Moon</div>
+<!--    <div class="subheading2">This website consists entirely of original historical mission material</div>-->
+    <div class="splash-btn-container" id="button1m">
+        <a data-loading-text="Loading..." class="splash-btn simplemodal-close primary" onclick="launchButtonClick(); return false;" >
+            <span id="labelLaunch" class="splash-btn-title">T-MINUS 1M</span>
+        </a>
+        <div>Join at 1  minute to launch</div>
+    </div>
+
+    <div class="splash-btn-container" id="buttonRt">
+        <a class="splash-btn" onclick="historicalButtonClick(); return false;">
+            <span id="labelRealtime" class="splash-btn-title">NOW</span>
+        </a>
+        <div>Join in-progress
+            <div class="historicalDate date splash">Thu Dec 07 1972</div>
+            <div class="historicalTime time splash">12:32:00 AM</div>
+            <small><span class="historicalSubtext"></span></small>
+        </div>
+    </div>
+
+    <div class="splash-copy">
+        <p>
+            This website replays the Apollo 11 mission as it happened, 50 years ago. It consists entirely of historical material.
+        </p>
+        <p>
+            Select whether to begin one minute before launch, or click "Now" to drop in exactly 50 years ago, to-the-second during the anniversary.</p>
+        <div class="section-header">Mobile Edition</div>
+        <p>
+            The mobile edition features Apollo 11's Mission Control audio. Select a Mission Control audio channel by touching the seats in mission control, or the channel buttons below. These 50 channels of Mission Control audio have only recently been digitized and restored, and are made publicly available here for the first time. They total over 11,000 hours in length.
+        </p>
+        <p>
+            The full desktop/laptop version of this website contains all of the mission's historical media. Footage of Mission Control, film shot by the astronauts, television broadcasts transmitted from space and the surface of the Moon, have all been painstakingly placed to the very moments they were shot during the mission, as has every photograph taken, and every word spoken.
+        </p>
+        <p>
+            Please contact <a href="http://benfeist.com" target="_blank" style="color:#c6c6c6;">Ben Feist</a> for any inquiries.
+        </p>
+        <div class="section-header">Credits</div>
+
+        <p>
+            <span class="accent">Ben Feist</span> Concept, research, mission data restoration, audio restoration, video, software architecture and programming. Follow <a href="https://twitter.com/benfeist" target="_blank" style="color: yellow;">@BenFeist</a> for updates.
+            <br>
+            <br>
+            <span class="accent">Stephen Slater</span> Archive Producer, historical audio/footage syncronization
+            <br>
+            <br>
+            <span class="accent">Chris Bennett</span> Visual design, interface styling and programming
+            <br>
+            <span class="accent">David Charney</span> Visual design
+            <br>
+            <span class="accent">Arnfinn Holderer</span> Audio restoration programming
+            <br>
+            <br>
+            <span class="accent">Robin Wheeler</span> Photography timing, transcript corrections
+            <br>
+        </p>
+
+        <div class="section-header">Thanks</div>
+        <p>
+            <span class="accent">Todd Miller</span> Director, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
+            <br>
+            <span class="accent">Tom Petersen</span> Producer, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
+            <br>
+            <br>
+            <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>. More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
+            <br>
+            <br>
+            <span class="accent">NASA Headquarters</span>
+            <br>
+            <span class="accent">Dr. Bill Barry</span> Chief Historian, NASA HQ
+            <br>
+            <span class="accent">Dr. Jacob Bleacher</span> Chief Exploration Scientist, NASA HQ
+            <br>
+            <br>
+            <span class="accent">NASA Johnson Space Center</span>
+            <br>
+            <span class="accent">Dr. Cindy Evans</span> Division Chief, Astromaterials Research and Exploration Science (ARES) Division, NASA JSC
+            <br>
+            <span class="accent">Dan Garrison</span> Jacobs Technology, NASA JSC
+            <br>
+            <span class="accent">Dr. Ryan Zeigler</span> Manager, Apollo Curator, ARES, NASA JSC
+            <br>
+            <span class="accent">Dr. Paul Niles</span> Assistant Chief Scientist, ARES NASA JSC
+            <br>
+            <span class="accent">Sandra Tetley</span> Real Property Officer, Historic Preservation Officer, NASA JSC
+            <br>
+            <span class="accent">Greg Wiseman</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>, NASA JSC
+            <br>
+            <br>
+            <span class="accent">NASA Goddard Space Flight Center</span>
+            <br>
+            <span class="accent">Dr. Noah Petro</span> Project Scientist, Lunar Reconnaissance Orbiter. Planetary Geology, Geochemistry and Geophysics Lab, NASA Goddard
+            <br>
+            <br>
+            <span class="accent">David Woods</span> Author, <a href="http://www.hafttm.com/" target="_blank">How Apollo Flew to the Moon</a>
+            <br>
+            <span class="accent">Kipp Teague</span> <a href="https://www.flickr.com/photos/projectapolloarchive/albums" target="_blank">Apollo mission photography</a>
+            <br>
+            <a href="http://history.nasa.gov/afj/" target="_blank">NASA Apollo Flight Journal</a>
+            <br>
+            <span class="accent"><a href="https://www.hq.nasa.gov/alsj/" target="_blank">NASA Apollo Lunar Surface Journal</a></span>
+            <br>
+            <span class="accent"><a href="https://archive.org" target="_blank">Internet Archive</a></span>
+            <br>
+            <span class="accent">The crew of Apollo 11</span>
+            <br>
+            <span class="accent">The men and women of Mission Control</span>
+        </p>
+        <div class="section-header">Beta Testers</div>
+        <p>
+            Mike Dinn
+            <br>Todd Green
+            <br>Ian House
+            <br>Joey Schwartz
+            <br>David Charney
+            <br>Sammy Goldberg
+            <br>Robin Wheeler
+            <br>Joe Davenport
+            <br>Linden Sims
+            <br>Suzanne Molina
+            <br>Kevin Spencer
+        </p>
+    </div>
+</div>
+</body>
+</html>
