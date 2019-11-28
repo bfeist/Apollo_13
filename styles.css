@@ -1,0 +1,109 @@
+body {
+    background-color: #ffffff;
+    color: #000000;
+    /*font-family: Arial, Sans-serif, Verdana, 'Trebuchet MS';*/
+    /*font-family: 'Times New Roman';*/
+    /*font-size: 15px;*/
+}
+a { /* link colour */
+    color: #4040b0;
+}
+a:visited { /* visited link colour */
+    color: #805050;
+}
+
+/* styling directive for every div of every class type */
+div {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #000000;
+}
+
+/* styling directive for every div that does not have a class assigned to it. This catches "normal" utterances
+This sets the first line (with hack) at the left of the page, and pushes any
+wrapped text to the right keeping hacks in their own visual column */
+div:not([class]) {
+    text-indent: -70px;
+    padding-left: 70px;
+}
+
+ul{
+    list-style: none;
+}
+
+.unindented {
+    padding-left: 0;
+    text-indent: 0;
+}
+.indented {
+    padding-left: 70px;
+}
+.acronLink {
+    color: #202060;
+}
+.attribution {
+    font-style: italic;
+    color: saddlebrown;
+}
+.cc {
+    color: #802080;
+	text-indent: -70px;
+    padding-left: 70px;
+}
+.comment { /* transcript commentary item */
+    font-style: italic;
+    padding-left: 70px;
+    color: #000080;
+}
+/* add square brackets before and after each commentary statement */
+.comment::before {
+    content: "["
+}
+.comment::after {
+    content: "]"
+}
+.fd {
+    color: #ff0000;
+	text-indent: -70px;
+    padding-left: 70px;
+}
+.pao {
+    padding-left: 70px;
+    color: #008000;
+}
+.pao::before {
+    font-weight: bold;
+    content: "Public Affairs Officer - "
+}
+.onboard {
+    text-indent: -70px;
+    padding-left: 70px;
+    color: #800000;
+}
+
+.photo_wrapper {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+.photo {
+    padding: 10px;
+    background-color: #ECECEC;
+}
+
+.photo img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+}
+.video {
+    padding-left: 70px;
+}
+.caption {
+    font-size: 90%;
+	text-align: center;
+    background-color: #ECECEC;
+}
