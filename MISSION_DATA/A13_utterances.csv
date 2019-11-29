@@ -43,19 +43,18 @@
 000:00:10|C|Weitz (LCC)|Clear the tower.
 000:00:11|O|CDR|Clear the tower.
 000:00:12|T|CMP|Clear the tower.
+000:00:12|P|PAO|This is Mission Control, Houston. We appear to have a good first stage at this point.
 000:00:14|T|CDR|Yaw complete. Roll program.
-000:00:14|P|PAO|This is Mission Control, Houston. We appear to have a good first stage at this point.
 000:00:16|C|Kerwin|Houston, Roger. Roll.
 000:00:19|O|CDR|2,000 feet.
-000:00:19|P|PAO|Flight Dynamics Officer says the trajectory looks good; we show a one half mile in altitude at this time.
+000:00:24|P|PAO|Flight Dynamics Officer says the trajectory looks good; we show a one half mile in altitude at this time.
 000:00:30|C|Kerwin|13, Houston. Go at 30 seconds.
 000:00:32|O|CMP|Okay, you're right on, Jim. You're right on trajectory.
 000:00:34|T|CDR|Roll complete, and we're pitching.
 000:00:36|C|Kerwin|Roger that. Stand by for Mode I Bravo.
-000:00:42|C|Kerwin|Mark.
-000:00:43|C|Kerwin|I Bravo.
+000:00:42|C|Kerwin|Mark. I Bravo.
 000:00:44|C|CDR|I Bravo.
-000:00:45|T|CMP|RCS command.
+000:00:44|T|CMP|RCS command.
 000:00:45|P|PAO|Altitude, 1.2 miles; velocity, 1,500 feet per second.
 000:00:48|O|CDR|One-and-a-half g's. Okay, high Q coming up.
 000:00:55|O|LMP|Cabin's coming down.
@@ -65,10 +64,10 @@
 000:01:05|O|CMP|Yes.
 000:01:07|T|CDR|13; Roger.
 000:01:07|O|CMP|You're right on, Jim.
-000:01:07|P|PAO|And at 1 minute, 10 seconds; we show an altitude of 4.1 nautical miles; downrange, 1 mile.
+000:01:10|P|PAO|And at 1 minute, 10 seconds; we show an altitude of 4.1 nautical miles; downrange, 1 mile.
 000:01:17|O|CDR|Two g's.
-000:01:17|P|PAO|All sources continue to report that we are Go; the trajectory on our plot board is right on the preplanned line.
 000:01:26|O|CDR|Alt is looking good.
+000:01:27|P|PAO|All sources continue to report that we are Go; the trajectory on our plot board is right on the preplanned line.
 000:01:31|O|CMP|Okay, you're right on at 01:30. 10 4 - a little bit high - we're a little bit high, about 0.4 of a mile.
 000:01:37|O|CDR|Got to speak louder.
 000:01:37|P|PAO|And the booster engineer reports we are now through the region of maximum dynamic pressure and we're Go.
@@ -90,10 +89,10 @@
 000:02:08|C|Kerwin|Copy that.
 000:02:11|O|CDR|3&frac12; g's.
 000:02:16|T|CDR|Inboard.
-000:02:16|P|PAO|Jim Lovell reports that the inboard engine has shut down as scheduled.
+000:02:19|P|PAO|Jim Lovell reports that the inboard engine has shut down as scheduled.
 000:02:27|C|Kerwin|We confirm inboard out, 13. You're looking good.
 000:02:29|T|CDR|Roger.
-000:02:29|P|PAO|Coming up on 30 miles altitude.
+000:02:36|P|PAO|Coming up on 30 miles altitude.
 000:02:42|O|CDR|Coming up on 4 g.
 000:02:45|O|CMP|Got a little flash out the window.
 000:02:48|T|CDR|S-II ignition.
@@ -128,7 +127,7 @@
 000:03:48|T|CDR|13; Roger.
 000:03:49|O|CMP|Okay, we're Mode II; I'm set for staging.
 000:03:52|O|CDR|Mode II. Got them all Rate Command and hang on.
-000:03:52|P|PAO|Coming up now on 4 minutes. We are now at an altitude of 63 miles.
+000:03:55|P|PAO|Coming up now on 4 minutes. We are now at an altitude of 63 miles.
 000:04:00|O|CDR|Four minutes.
 000:04:03|O|CMP|Okay, Jim, we're right on.
 000:04:04|O|CDR|Okay.
@@ -140,19 +139,19 @@
 000:04:12|O|CDR|04:11.
 000:04:13|O|LMP|Cabin's settled out very nicely.
 000:04:14|O|CMP|Yes.
+000:04:14|P|PAO|At 4 minutes, 15 seconds, the trajectory.
 000:04:15|O|CDR|Okay.
-000:04:15|P|PAO|At 4 minutes, 15 seconds, the trajectory.
 000:04:16|C|Kerwin|13, Houston. You are Go at 4 minutes. The little red lines are right on the little white lines down here.
 000:04:22|T|CDR|Sounds good.
 000:04:30|O|CDR|Coming up on one g.
 000:04:31|O|CMP|Boy, we're right on. We're about a mile and two-tenths high, though, but we're right on V<sub>i</sub> and right on H-dot.
-000:04:31|P|PAO|Velocity now up to 11,000 feet per second. That's about 36 percent of the amount needed for a minimum orbit. We're now 75 miles in altitude.
+000:04:33|P|PAO|Velocity now up to 11,000 feet per second. That's about 36 percent of the amount needed for a minimum orbit. We're now 75 miles in altitude.
 000:04:36|O|CDR|That's ... One g. You could walk around here.
 000:04:51|O|CMP|I bet I never had such a view. Freddo ... -
 000:04:51|P|PAO|222 miles downrange now. The EECOM reports -
 000:04:55|C|Kerwin|13, Houston. Coming up 5 minutes. You're looking perfect. Over.
 000:04:59|T|CDR|13; Roger.
-000:04:59|P|PAO|And EECOM reports that cabin pressure is sealed at 6.1 pound, which is normal. We are now 250 miles downrange, altitude 81 nautical miles.
+000:05:01|P|PAO|And EECOM reports that cabin pressure is sealed at 6.1 pound, which is normal. We are now 250 miles downrange, altitude 81 nautical miles.
 000:05:04|O|CMP|Okay. Watching 8.
 000:05:04|P|PAO|And at 5 minutes 30 seconds into the launch, we continue to look very good on the second stage.
 000:05:32|T|CDR|Inboard.

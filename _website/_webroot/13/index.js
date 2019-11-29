@@ -13,13 +13,13 @@ var cWebCdnRoot = '';
 var cYouTubeSDorHD = 0; //0 for SD  1 for HD
 
 //constants
-var cMissionDurationSeconds = 713311;
-var cCountdownSeconds = 74768;
+var cMissionDurationSeconds = 518400;
+var cCountdownSeconds = 126610;
 var cDefaultStartTimeId = '-000109';
-var cLaunchDate = Date.parse("1969-07-16 9:32 -400");
-var cLaunchDateModern = Date.parse("2019-07-16 9:32 -400");
-var cCountdownStartDate = Date.parse("1969-07-15 1:46:57 -400");
-var cCountdownStartDateModern = Date.parse("2019-07-15 1:46:57 -400");
+var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
+var cLaunchDateModern = Date.parse("2020-04-11 19:13 -000");
+var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse("2019-04-10 7:55:50 -000");
 
 var cBackground_color_active = "#1e1e1e";
 
@@ -206,8 +206,8 @@ function onPlayerStateChange(event) {
                 break;
             }
         }
-        gCurrVideoStartSeconds = timeStrToSeconds(gMediaList[i + 1][2]);
-        gCurrVideoEndSeconds = timeStrToSeconds(gMediaList[i + 1][3]);
+        gCurrVideoStartSeconds = timeStrToSeconds(gMediaList[i + 1][1]);
+        gCurrVideoEndSeconds = timeStrToSeconds(gMediaList[i + 1][2]);
 
         player.iv_load_policy = 3;
         gNextVideoStartTime = 0; //force next video to start at 0 seconds in the play event handler
@@ -495,8 +495,8 @@ function seekToTime(timeId) { // transcript click handling --------------------
 
     var currVideoID = player.getVideoUrl().substr(player.getVideoUrl().indexOf("v=") + 2, 11);
     for (var i = 0; i < gMediaList.length; ++i) {
-        var itemStartTimeSeconds = timeStrToSeconds(gMediaList[i][2]);
-        var itemEndTimeSeconds = timeStrToSeconds(gMediaList[i][3]);
+        var itemStartTimeSeconds = timeStrToSeconds(gMediaList[i][1]);
+        var itemEndTimeSeconds = timeStrToSeconds(gMediaList[i][2]);
 
         if (totalSeconds >= itemStartTimeSeconds && totalSeconds < itemEndTimeSeconds) { //if this video in loop contains the time we want to seek to
             var seekToSecondsWithOffset = totalSeconds - itemStartTimeSeconds;

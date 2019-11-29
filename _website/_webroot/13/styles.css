@@ -976,8 +976,7 @@ body.splash-loaded .splash-content {
     display: block;
     background-size: cover;
     background-position: center bottom;
-    background-image: url("img/bg_panorama_alt.jpg");
-    /*background-image: url("img/AS11-40-5962.jpg");*/
+    background-image: url("img/bg_panorama.jpg");
     background-repeat: no-repeat;
     top: 0;
     /*bottom: 0;*/

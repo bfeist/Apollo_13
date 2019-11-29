@@ -28,7 +28,7 @@ $.when(
 //--------------- index file handling --------------------
 
 function ajaxGetVideoURLData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/videoURLData.csv";
+    var urlStr = cWebCdnRoot + "indexes/videoURLData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -38,7 +38,7 @@ function ajaxGetVideoURLData() {
     });
 }
 function ajaxGetTOCData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/TOCData.csv";
+    var urlStr = cWebCdnRoot + "indexes/TOCData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -48,7 +48,7 @@ function ajaxGetTOCData() {
     });
 }
 function ajaxGetUtteranceData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/utteranceData.csv";
+    var urlStr = cWebCdnRoot + "indexes/utteranceData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -58,7 +58,7 @@ function ajaxGetUtteranceData() {
     });
 }
 function ajaxGetCommentaryData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/commentaryData.csv";
+    var urlStr = cWebCdnRoot + "indexes/commentaryData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -68,7 +68,7 @@ function ajaxGetCommentaryData() {
     });
 }
 function ajaxGetPhotoData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/photoData.csv";
+    var urlStr = cWebCdnRoot + "indexes/photoData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -78,7 +78,7 @@ function ajaxGetPhotoData() {
     });
 }
 function ajaxGetMissionStagesData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/missionStagesData.csv";
+    var urlStr = cWebCdnRoot + "indexes/missionStagesData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -88,7 +88,7 @@ function ajaxGetMissionStagesData() {
     });
 }
 function ajaxGetVideoSegmentData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/videoSegmentData.csv";
+    var urlStr = cWebCdnRoot + "indexes/videoSegmentData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -98,7 +98,7 @@ function ajaxGetVideoSegmentData() {
     });
 }
 function ajaxGetTelemetryData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/telemetryData.csv";
+    var urlStr = cWebCdnRoot + "indexes/telemetryData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -108,7 +108,7 @@ function ajaxGetTelemetryData() {
     });
 }
 function ajaxCrewStatusData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/crewStatusData.csv";
+    var urlStr = cWebCdnRoot + "indexes/crewStatusData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -119,7 +119,7 @@ function ajaxCrewStatusData() {
 }
 
 function ajaxOrbitData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/orbitData.csv";
+    var urlStr = cWebCdnRoot + "indexes/orbitData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -130,7 +130,7 @@ function ajaxOrbitData() {
 }
 
 function ajaxGeoData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/geoData.csv";
+    var urlStr = cWebCdnRoot + "indexes/geoData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -141,7 +141,7 @@ function ajaxGeoData() {
 }
 
 function ajaxGeoCompendiumData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/geoCompendiumData.csv";
+    var urlStr = cWebCdnRoot + "indexes/geoCompendiumData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -152,7 +152,7 @@ function ajaxGeoCompendiumData() {
 }
 
 function ajaxPaperData() {
-    var urlStr = cWebCdnRoot + "/11/indexes/paperData.csv";
+    var urlStr = cWebCdnRoot + "indexes/paperData.csv";
     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
     return $.ajax({
         type: "GET",
@@ -173,7 +173,6 @@ function processVideoURLData(allText) {
         rec.push(data[0]);
         rec.push(data[1]);
         rec.push(data[2]);
-        rec.push(data[3]);
         gMediaList.push(rec);
     }
 }
@@ -201,11 +200,11 @@ function processUtteranceData(allText) {
         if (data[0] !== "") {
             gUtteranceDataLookup[data[0]] = curRow;
             gUtteranceIndex[i] = data[0];
-            data[1] = data[1].replace(/CDR/g, "Armstrong");
-            data[1] = data[1].replace(/CMP/g, "Collins");
-            data[1] = data[1].replace(/LMP/g, "Aldrin");
+            data[1] = data[1].replace(/CDR/g, "Lovell");
+            data[1] = data[1].replace(/CMP/g, "Swigert");
+            data[1] = data[1].replace(/LMP/g, "Haise");
             data[1] = data[1].replace(/PAO/g, "Public Affairs");
-            data[1] = data[1].replace(/CC/g, "Mission Control");
+            // data[1] = data[1].replace(/CC/g, "Mission Control");
             data[2] = data[2].replace(/O2/g, "O<sub>2</sub>");
             data[2] = data[2].replace(/H2/g, "H<sub>2</sub>");
             data[2] = data[2].replace(/Tig /ig, "T<sub>ig</sub> ");
@@ -229,23 +228,28 @@ function processCommentaryData(allText) {
         if (data[0] !== "") {
             gCommentaryIndex[curRow] = data[0];
             gCommentaryDataLookup[data[0]] = curRow;
-            if (data[2].length === 0) {
-                data[1] = data[1].replace('ALSJ', '<a href="https://www.hq.nasa.gov/alsj/a11/a11.html" target="alsj">ALSJ</a> Commentary');
-                data[1] = data[1].replace('AFJ', '<a href="https://history.nasa.gov/afj/ap11fj/index.html" target="alsj">AFJ</a> Commentary');
-            }
-            data[2] = data[2].replace(/CDR/g, "Armstrong");
-            data[2] = data[2].replace(/CMP/g, "Collins");
-            data[2] = data[2].replace(/LMP/g, "Aldrin");
-            data[2] = data[2].replace(/PAO/g, "Public Affairs");
-            data[2] = data[2].replace(/CC/g, "Mission Control");
-            data[3] = data[3].replace(/O2/g, "O<sub>2</sub>");
-            data[3] = data[3].replace(/H2/g, "H<sub>2</sub>");
-            data[3] = data[3].replace(/Tig /ig, "T<sub>ig</sub> ");
-            data[3] = data[3].replace(/DELTA-VC/ig, "DELTA-V<sub>c</sub>");
-            data[3] = data[3].replace(/DELTA-VT/ig, "DELTA-V<sub>t</sub>");
-            data[3] = data[3].replace(/VGX /g, "V<sub>gx</sub> ");
-            data[3] = data[3].replace(/VGY /g, "V<sub>gy</sub> ");
-            data[3] = data[3].replace(/VGZ /g, "V<sub>gz</sub> ");
+            // if (data[2].length === 0) {
+            //     data[1] = data[1].replace('ALSJ', '<a href="https://www.hq.nasa.gov/alsj/a11/a11.html" target="alsj">ALSJ</a> Commentary');
+            //     data[1] = data[1].replace('AFJ', '<a href="https://history.nasa.gov/afj/ap11fj/index.html" target="alsj">AFJ</a> Commentary');
+            // }
+            // data[2] = data[2].replace(/CDR/g, "Lovell");
+            // data[2] = data[2].replace(/CMP/g, "Swigert");
+            // data[2] = data[2].replace(/LMP/g, "Haise");
+            // data[2] = data[2].replace(/PAO/g, "Public Affairs");
+            // data[2] = data[2].replace(/CC/g, "Mission Control");
+            // data[3] = data[3].replace(/O2/g, "O<sub>2</sub>");
+            // data[3] = data[3].replace(/H2/g, "H<sub>2</sub>");
+            // data[3] = data[3].replace(/Tig /ig, "T<sub>ig</sub> ");
+            // data[3] = data[3].replace(/DELTA-VC/ig, "DELTA-V<sub>c</sub>");
+            // data[3] = data[3].replace(/DELTA-VT/ig, "DELTA-V<sub>t</sub>");
+            // data[3] = data[3].replace(/VGX /g, "V<sub>gx</sub> ");
+            // data[3] = data[3].replace(/VGY /g, "V<sub>gy</sub> ");
+            // data[3] = data[3].replace(/VGZ /g, "V<sub>gz</sub> ");
+
+            //TODO: fix commentary attribution
+            data[2] = '';
+            data[3] = '';
+
             gCommentaryData.push(data);
             curRow ++;
         }
