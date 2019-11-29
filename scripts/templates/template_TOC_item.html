@@ -1,0 +1,12 @@
+#if (@itemDepth != @prevDepth)
+    #if (@depthComparison == "true")
+</ul>
+    #else
+<ul class="TOCli TOC@itemDepth">
+    #end
+#end
+#if (@timestamp != '')
+    <li onclick="parent.seekToTime('@itemURL')" class="tocitem" id="tocid@itemURL"><span class="TOCTimestamp">@timestamp</span>
+        <span class="TOC_item">@itemTitle</span>
+    </li>
+#end
