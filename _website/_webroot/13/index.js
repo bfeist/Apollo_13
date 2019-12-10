@@ -17,7 +17,7 @@ var cMissionDurationSeconds = 518400;
 var cCountdownSeconds = 126610;
 var cDefaultStartTimeId = '-000109';
 var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
-var cLaunchDateModern = Date.parse("2020-04-11 19:13 -000");
+var cLaunchDateModern = Date.parse("2019-04-11 19:13 -000");
 var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
 var cCountdownStartDateModern = Date.parse("2019-04-10 7:55:50 -000");
 
@@ -580,19 +580,21 @@ function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" bu
     // histDate.setYear(cCountdownStartDateModern.getYear());
 
     var dayOfMonth = 0;
-    if (nowDate.getDate() < 9) {
-        dayOfMonth = nowDate.getDate() + 15;
-    } else if (nowDate.getDate() >= 9 && nowDate.getDate() < 15) {
-        dayOfMonth = nowDate.getDate() + 9;
-    } else if (nowDate.getDate() > 24) {
-        dayOfMonth = nowDate.getDate() - 9;
-    } else {
+    if (nowDate.getDate() <= 4) {
+        dayOfMonth = nowDate.getDate() + 10;
+    } else if (nowDate.getDate() > 4 && nowDate.getDate() <= 10) {
+        dayOfMonth = nowDate.getDate() + 7;
+    } else if (nowDate.getDate() >= 10 && nowDate.getDate() <= 17) {
         dayOfMonth = nowDate.getDate()
+    } else if (nowDate.getDate() > 17 && nowDate.getDate() <= 24) {
+        dayOfMonth = nowDate.getDate() - 7;
+    } else if (nowDate.getDate() > 24 && nowDate.getDate() <= 31) {
+        dayOfMonth = nowDate.getDate() - 14;
     }
     histDate.setDate(dayOfMonth);
 
     if (histDate < cCountdownStartDate) { //bump to same time next day if in the few hours on the 15th before recording starts
-        histDate.setDate(16);
+        histDate.setDate(11);
     }
 
     // Convert dates to milliseconds
@@ -1089,16 +1091,16 @@ function populatePhotoGallery() {
         var html = $('#photoGalleryTemplate').html();
 
         var photoName = photoObject[1];
-        var filetypematch = photoName.match(/AS11-(\d\d)-(\d\d\d\d)/g);
+        var filetypematch = photoName.match(/AS13-(\d\d)-(\d\d\d\d)/g);
         if (filetypematch !== null) {
             var rollNum = RegExp.$1;
             var imgNum = RegExp.$2;
             // var imageURL = 'http://tothemoon.ser.asu.edu/data_a70/AS11/extra/'  + photoObject[1] + '.thumb.png';
-            var imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/thumb/AS11/' + rollNum + '/' + imgNum + '.jpg';
+            var imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
         } else if (photoObject[3] !== '') { //if custom image URL in datafile
             imageURL = photoObject[3];
         } else {
-            imageURL = 'https://www.hq.nasa.gov/alsj/a11/' + photoObject[2];
+            imageURL = 'https://www.hq.nasa.gov/alsj/a13/' + photoObject[2];
         }
 
         html = html.replace(/@imageURL/g , imageURL);
@@ -1150,23 +1152,23 @@ function loadPhotoHtml(photoIndex) {
 
     var photoTimeId = photoObject[0];
     var photoName = photoObject[1];
-    var filetypematch = photoName.match(/AS11-(\d\d)-(\d\d\d\d)/g);
+    var filetypematch = photoName.match(/AS13-(\d\d)-(\d\d\d\d)/g);
     if (filetypematch !== null) {
         var rollNum = RegExp.$1;
         var imgNum = RegExp.$2;
         if (photoObject[2] !== '') {
-            // var imageURL = 'https://www.hq.nasa.gov/alsj/a11/' + photoObject[2];
-            var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
+            var imageURL = 'https://www.hq.nasa.gov/alsj/a11/' + photoObject[2];
+            // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
         } else if (photoObject[3] !== '') { //if custom image URL in datafile
             imageURL = photoObject[3];
         } else {
-            imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/print/AS11/' + rollNum + '/' + imgNum + '.jpg';
+            imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
         }
     } else if (photoObject[3] !== '') { //if custom image URL in datafile
         imageURL = photoObject[3];
     } else {
-        // imageURL = 'https://www.hq.nasa.gov/alsj/a11/' + photoObject[2];
-        var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
+        imageURL = 'https://www.hq.nasa.gov/alsj/a13/' + photoObject[2];
+        // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
     }
     var source = "LPI";
     var caption = photoObject[4];
