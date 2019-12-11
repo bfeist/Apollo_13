@@ -1,9 +1,9 @@
-var cMissionDurationSeconds = 784086;
-var cCountdownSeconds = 74768;
+var cMissionDurationSeconds = 518400;
+var cCountdownSeconds = 126610;
 var cAppStartGET = -109;
 
-// var cCdnRoot = 'https://media.apolloinrealtime.org/mp3';
-var cCdnRoot = 'https://keycdn.apolloinrealtime.org/mp3';
+var cCdnRoot = 'https://media.apolloinrealtime.org/mp3/A13';
+// var cCdnRoot = 'https://keycdn.apolloinrealtime.org/mp3';
 // var cCdnRoot = 'https://apollomedia.sfo2.cdn.digitaloceanspaces.com/mp3';
 // var cCdnRoot = 'https://apollomedia.sfo2.digitaloceanspaces.com/mp3';
 
@@ -495,9 +495,9 @@ function loadChannelSoundfile() {
     if (tapeData.length !== 0 && tapeData[0] !== 'T999') {
         gActiveTape = tapeData[0];
         var channel = (gActiveChannel > 30) ? gActiveChannel - 30 : gActiveChannel;
-        var filename = "defluttered_A11_" + tapeData[0] + "_" + tapeData[1] + "_CH" + channel;
-        var datFile = cCdnRoot + "/" + tapeData[0] + "_defluttered_mp3_16/audiowaveform_512/" + filename + '.dat';
-        var audioFile = cCdnRoot + "/" + tapeData[0] + "_defluttered_mp3_16/" + filename + '.mp3';
+        var filename = "DA13_" + tapeData[0] + "_" + tapeData[1] + "_CH" + channel;
+        var datFile = cCdnRoot + "/" + "DA13_" + tapeData[0] + "_" + tapeData[1] + "_16khz_mp3_16/audiowaveform_512/" + filename + '.dat';
+        var audioFile = cCdnRoot + "/" + "DA13_" + tapeData[0] + "_" + tapeData[1] + "_16khz_mp3_16/" + filename + '.mp3';
 
         if (gPlayer.src.substr(gPlayer.src.length - 20) !== audioFile.substr(audioFile.length - 20)) {
             trace("loading tape: " + audioFile + " :datFile: " + datFile);
@@ -1164,7 +1164,7 @@ function pauseAudio() {
 
 //------------ data import
 function ajaxGetTapeRangeData() {
-    var urlStr = cWebCdnRoot + "/11/MOCRviz/data/tape_ranges.csv";
+    var urlStr = cWebCdnRoot + "./data/tape_ranges.csv";
     return $.ajax({
         type: "GET",
         url: urlStr,
