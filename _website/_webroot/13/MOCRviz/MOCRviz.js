@@ -1,6 +1,6 @@
 var cMissionDurationSeconds = 518400;
 var cCountdownSeconds = 126610;
-var cAppStartGET = -109;
+var cAppStartGET = -102;
 
 var cCdnRoot = 'https://media.apolloinrealtime.org/mp3/A13';
 // var cCdnRoot = 'https://keycdn.apolloinrealtime.org/mp3';
@@ -21,7 +21,7 @@ var cTrackInfo = {
     ch2: ['FLIGHT OPS DIR', 'Overall responsibility for the mission interface to program Management.'],
     ch3: ['MISSION DIRECTOR', 'The primary interface between NASA Headquarters and the Flight Control Team.'],
     ch4: ['DOD MANAGER', 'Primary interface with NASA for any Department of Defense support required during a mission, including recovery ships and DoD controlled tracking resources.'],
-    ch5: ['OPS AND PRO', 'Operations and Procedures Officer – Supervised the application of mission rules and detailed implementation of the Mission Control Center/Ground Operational Support Systems mission control procedures.'],
+    ch5: ['PROCEDURES', 'Operations and Procedures Officer – Supervised the application of mission rules and detailed implementation of the Mission Control Center/Ground Operational Support Systems mission control procedures.'],
     ch6: ['ASST FLIGHT DIR', 'Responsible to the Flight Director for detailed control of the mission and assumed the duties of the Flight Director in his absence.'],
     ch7: ['FLIGHT DIRECTOR [L]', 'Left seat - Responsible to the Mission Director for detailed control of the mission from launch (tower clear) to splashdown and assumed the duties of the Mission Director in his absence. In real time was responsible to take any actions needed for crew safety and mission success.'],
     ch8: ['FLIGHT DIRECTOR [R]', 'Right seat - Responsible to the Mission Director for detailed control of the mission from launch (tower clear) to splashdown and assumed the duties of the Mission Director in his absence. In real time was responsible to take any actions needed for crew safety and mission success.'],
@@ -32,9 +32,9 @@ var cTrackInfo = {
     ch13: ['SURGEON [R]', 'Directed all operational medical activities and crew’s medical status. (right seat)'],
     ch14: ['CAPCOM [L]', 'Spacecraft Communicator – or Capsule Communicator - An astronaut who provided all the voice communications between the ground and the spacecraft. (left seat)'],
     ch15: ['CAPCOM [R]', 'Spacecraft Communicator – or Capsule Communicator - An astronaut who provided all the voice communications between the ground and the spacecraft. (right seat)'],
-    ch16: ['INCO', 'Instrumentation and Communications Officer – With the advent of dual spacecraft operations, lunar surface operations, science TV, and extensive data recovery, a new operating position was added, beginning with the Apollo 11 mission.'],
-    ch17: ['EECOM', 'Electrical, Environmental and Consumables Manager - Monitored cryogenic levels for fuel cells, and cabin cooling systems; electrical distribution systems; cabin pressure control systems; and vehicle lighting systems. EECOM originally stood for Electrical, Environmental and COMmunication systems'],
-    ch18: ['GNC', 'Guidance, Navigation, and Controls Systems Engineer - Monitored all vehicle guidance, navigation and control systems. Also responsible for propulsion systems such as the Service Propulsion System and Reaction Control System (RCS).'],
+    ch16: ['CSM EECOM', 'Electrical, Environmental and Consumables Manager - Monitored cryogenic levels for fuel cells, and cabin cooling systems; electrical distribution systems; cabin pressure control systems; and vehicle lighting systems. EECOM originally stood for Electrical, Environmental and COMmunication systems'],
+    ch17: ['POS EECOM', 'Electrical, Environmental and Consumables Manager - Monitored cryogenic levels for fuel cells, and cabin cooling systems; electrical distribution systems; cabin pressure control systems; and vehicle lighting systems. EECOM originally stood for Electrical, Environmental and COMmunication systems'],
+    ch18: ['CSM GNC', 'Guidance, Navigation, and Controls Systems Engineer - Monitored all vehicle guidance, navigation and control systems. Also responsible for propulsion systems such as the Service Propulsion System and Reaction Control System (RCS).'],
     ch19: ['RETRO', 'Retrofire Officer - Drew up abort plans and was responsible for determination of retrofire times. During lunar missions the RETRO planned and monitored Trans Earth Injection (TEI) maneuvers, where the Apollo Service Module fired its engine to return to Earth from the Moon.'],
     ch20: ['FIDO', 'Flight Dynamics Officer - Responsible for the flight path of the space vehicle, both atmospheric and orbital. During lunar missions the FDO was also responsible for the lunar trajectory. The FDO monitored vehicle performance during the powered flight phase and assessed abort modes, calculated orbital maneuvers and resulting trajectories, and monitored vehicle flight profile and energy levels during re-entry.'],
     ch21: ['GUIDO [L]', 'Guidance Officer - Monitored onboard navigational systems and onboard guidance computer software. Responsible for determining the position of the spacecraft in space. One well-known Guidance officer was Steve Bales, who gave the GO call when the Apollo 11 guidance computer came close to overloading during the first lunar descent. (left seat)'],
@@ -69,12 +69,12 @@ var cTrackInfo = {
     ch50: ['FLIGHT DIRECTOR LOOP', 'FD clean voice-only recording of Flight Director [R]'],
     ch51: ['AFD CONF LOOP', 'Assistant Flight Director - Comm line.'],
     ch52: ['GOSS 2 LOOP', 'Ground Operational Support System (GOSS) - Comm line.'],
-    ch53: ['ALSEP EAO 2', ''],
+    ch53: ['INCO', 'Instrumentation and Communications Officer – With the advent of dual spacecraft operations, lunar surface operations, science TV, and extensive data recovery, a new operating position was added, beginning with the Apollo 11 mission.'],
     ch54: ['MOCR DYN LOOP', 'Comm line.'],
     ch55: ['GOSS CONF LOOP', 'Ground Operational Support System (GOSS) - Comm line.'],
     ch56: ['GOSS 4 LOOP', 'Ground Operational Support System (GOSS) - Comm line.'],
-    ch57: ['CONTROL', 'Lunar Module Guidance, Navigation, and Controls Systems Engineer.'], //LM GNC ENGINEER
-    ch58: ['TELCOM', 'Lunar Module Electrical, Environmental and Consumables Management Engineer.'], //LM EECOM ENGINEER
+    ch57: ['LM GNC', 'Lunar Module Guidance, Navigation, and Controls Systems Engineer.'], //LM GNC ENGINEER
+    ch58: ['LM EECOM', 'Lunar Module Electrical, Environmental and Consumables Management Engineer.'], //LM EECOM ENGINEER
     ch59: ['EXPMT ACTIVITIES OFSR', 'Experiments Officer.'],
     ch60: ['HR2 VOICE ANNOTATION', '']
 };
@@ -745,27 +745,27 @@ function positionChannelButtons() {
         $('#btn-ch15').css({"width": buttonWidth / 2 + "px"});
     x = x + buttonWidth + aisleGap;
     buttonWidth = buttonWidth - 10;
-    $('#btndiv-ch17').css({"left": x + "px", "top": y + "px"}); //EECOM
+    $('#btndiv-ch17').css({"left": x + "px", "top": y + "px"}); //POS EECOM
     $('#btn-ch17').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
     buttonWidth = buttonWidth - 20;
-    $('#btndiv-ch18').css({"left": x + "px", "top": y + "px"}); //GNC
+    $('#btndiv-ch18').css({"left": x + "px", "top": y + "px"}); //CSM GNC
     $('#btn-ch18').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
     buttonWidth = buttonWidth + 20;
-    $('#btndiv-ch58').css({"left": x + "px", "top": y + "px"}); //TELCOM
+    $('#btndiv-ch58').css({"left": x + "px", "top": y + "px"}); //LM EECOM
     $('#btn-ch58').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch57').css({"left": x + "px", "top": y + "px"}); //CONTROL
+    $('#btndiv-ch57').css({"left": x + "px", "top": y + "px"}); //LM GNC
     $('#btn-ch57').css({"width": buttonWidth + "px"});
 
     y = y + rowGap;
     //row 3
     x = 0;
-    $('#btndiv-ch16').css({"left": x + "px", "top": y + "px"}); //INCO
+    $('#btndiv-ch16').css({"left": x + "px", "top": y + "px"}); //CSM EECOM
     $('#btn-ch16').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch5').css({"left": x + "px", "top": y + "px"}); //O&P
+    $('#btndiv-ch5').css({"left": x + "px", "top": y + "px"}); //PRO
     $('#btn-ch5').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
     $('#btndiv-ch6').css({"left": x + "px", "top": y + "px"}); //AFD
@@ -818,7 +818,7 @@ function positionChannelButtons() {
     $('#btndiv-ch59').css({"left": x + "px", "top": y + "px"}); //EXPMT
     $('#btn-ch59').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch53').css({"left": x + "px", "top": y + "px"}); //EASEP
+    $('#btndiv-ch53').css({"left": x + "px", "top": y + "px"}); //INCO
     $('#btn-ch53').css({"width": buttonWidth + "px"});
 
     y = y + rowGap / 2 - 2;
@@ -1033,13 +1033,13 @@ function positionIsometricElements() {
 
     isoSelector.append("<span id='dot12' class='isometric_dot' style='left:" + 196 + "px;top:" + 280 + "px'>S</span>"); //SURGEON
     isoSelector.append("<span id='dot14' class='isometric_dot' style='left:" + 279 + "px;top:" + 231 + "px'>C</span>"); //CAPCOM
-    isoSelector.append("<span id='dot17' class='isometric_dot' style='left:" + 366 + "px;top:" + 166 + "px'>E</span>"); //EECOM
-    isoSelector.append("<span id='dot18' class='isometric_dot' style='left:" + 416 + "px;top:" + 136 + "px'>G</span>"); //GNC
-    isoSelector.append("<span id='dot58' class='isometric_dot' style='left:" + 469 + "px;top:" + 105 + "px'>T</span>"); //TELCOM
-    isoSelector.append("<span id='dot57' class='isometric_dot' style='left:" + 528 + "px;top:" + 71 + "px'>C</span>"); //CONTROL
+    isoSelector.append("<span id='dot17' class='isometric_dot' style='left:" + 366 + "px;top:" + 166 + "px'>PE</span>"); //POS EECOM
+    isoSelector.append("<span id='dot18' class='isometric_dot' style='left:" + 416 + "px;top:" + 136 + "px'>CG</span>"); //CSM GNC
+    isoSelector.append("<span id='dot58' class='isometric_dot' style='left:" + 469 + "px;top:" + 105 + "px'>LE</span>"); //LM EECOM
+    isoSelector.append("<span id='dot57' class='isometric_dot' style='left:" + 528 + "px;top:" + 71 + "px'>LG</span>"); //LM GNC
 
-    isoSelector.append("<span id='dot16' class='isometric_dot' style='left:" + 217 + "px;top:" + 366 + "px'>I</span>"); //INCO
-    isoSelector.append("<span id='dot5' class='isometric_dot' style='left:" + 286 + "px;top:" + 323 + "px'>O</span>"); //O&P
+    isoSelector.append("<span id='dot16' class='isometric_dot' style='left:" + 217 + "px;top:" + 366 + "px'>CE</span>"); //CSM EECOM
+    isoSelector.append("<span id='dot5' class='isometric_dot' style='left:" + 286 + "px;top:" + 323 + "px'>P</span>"); //PRO
     isoSelector.append("<span id='dot6' class='isometric_dot' style='left:" + 344 + "px;top:" + 291 + "px'>A</span>"); //AFD
     isoSelector.append("<span id='dot50' class='isometric_dot' style='left:" + 454 + "px;top:" + 214 + "px'>FD</span>"); //FLIGHT
     isoSelector.append("<span id='dot9' class='isometric_dot' style='left:" + 538 + "px;top:" + 161 + "px'>FA</span>"); //FAO

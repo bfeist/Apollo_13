@@ -15,7 +15,7 @@ var cYouTubeSDorHD = 0; //0 for SD  1 for HD
 //constants
 var cMissionDurationSeconds = 518400;
 var cCountdownSeconds = 126610;
-var cDefaultStartTimeId = '-000109';
+var cDefaultStartTimeId = '-000102';
 var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
 var cLaunchDateModern = Date.parse("2019-04-11 19:13 -000");
 var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
