@@ -1,5 +1,5 @@
 var cMissionDurationSeconds = 518400;
-var cCountdownSeconds = 126610;
+var cCountdownSeconds = 127048;
 var cAppStartGET = -102;
 
 var cCdnRoot = 'https://media.apolloinrealtime.org/mp3/A13';
