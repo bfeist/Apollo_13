@@ -10,7 +10,7 @@ $.when(
     ajaxGetVideoSegmentData(),
     ajaxGetTelemetryData(),
     ajaxCrewStatusData(),
-    ajaxOrbitData(),
+    // ajaxOrbitData(),
     ajaxGeoData(),
     ajaxGeoCompendiumData(),
     ajaxPaperData()).done(function(){
@@ -118,16 +118,16 @@ function ajaxCrewStatusData() {
     });
 }
 
-function ajaxOrbitData() {
-    var urlStr = cWebCdnRoot + "indexes/orbitData.csv";
-    urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
-    return $.ajax({
-        type: "GET",
-        url: urlStr,
-        dataType: "text",
-        success: function(data) {processOrbitData(data);}
-    });
-}
+// function ajaxOrbitData() {
+//     var urlStr = cWebCdnRoot + "indexes/orbitData.csv";
+//     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
+//     return $.ajax({
+//         type: "GET",
+//         url: urlStr,
+//         dataType: "text",
+//         success: function(data) {processOrbitData(data);}
+//     });
+// }
 
 function ajaxGeoData() {
     var urlStr = cWebCdnRoot + "indexes/geoData.csv";
@@ -388,20 +388,20 @@ function processCrewStatusData(allText) {
     gCrewStatusData[gCrewStatusData.length - 1][2] = secondsToTimeStr(cMissionDurationSeconds); //insert last end time as end of mission
 }
 
-function processOrbitData(allText) {
-    //console.log("processOrbitData()");
-    var allTextLines = allText.split(/\r\n|\n/);
-    for (var i = 0; i < allTextLines.length; i++) {
-        var data = allTextLines[i].split('|');
-        if (data[0] !== "") {
-            gOrbitData.push(data);
-        }
-        if (i > 0) {
-            gOrbitData[i - 1][2] = data[0]; //append this item's start time as the last item's end time
-        }
-    }
-    gOrbitData[gOrbitData.length - 1][2] = gOrbitData[gOrbitData.length - 1][0]; //insert 0 length end time record for TEI
-}
+// function processOrbitData(allText) {
+//     //console.log("processOrbitData()");
+//     var allTextLines = allText.split(/\r\n|\n/);
+//     for (var i = 0; i < allTextLines.length; i++) {
+//         var data = allTextLines[i].split('|');
+//         if (data[0] !== "") {
+//             gOrbitData.push(data);
+//         }
+//         if (i > 0) {
+//             gOrbitData[i - 1][2] = data[0]; //append this item's start time as the last item's end time
+//         }
+//     }
+//     gOrbitData[gOrbitData.length - 1][2] = gOrbitData[gOrbitData.length - 1][0]; //insert 0 length end time record for TEI
+// }
 
 function processGeoData(allText) {
     //console.log("processGeoData()");

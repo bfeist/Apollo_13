@@ -478,17 +478,18 @@ function drawTier1() {
         }
     }
 
+    //unneeded for 13
     //display lunar orbit ticks
-    for (i = 0; i < gOrbitData.length; i++) {
-        itemLocX = gTier1Left + (timeStrToSeconds(gOrbitData[i][0]) + cCountdownSeconds) * gTier1PixelsPerSecond;
-        barHeight = gTier1Height / gHeightPhotoTickDenominator;
-        barTop = tierBottom - barHeight;
-        topPoint = new paper.Point(itemLocX, barTop);
-        bottomPoint = new paper.Point(itemLocX, tierBottom);
-        aLine = new paper.Path.Line(topPoint, bottomPoint);
-        aLine.strokeColor = gColorTOCStroke;
-        tempGroup.addChild(aLine);
-    }
+    // for (i = 0; i < gOrbitData.length; i++) {
+    //     itemLocX = gTier1Left + (timeStrToSeconds(gOrbitData[i][0]) + cCountdownSeconds) * gTier1PixelsPerSecond;
+    //     barHeight = gTier1Height / gHeightPhotoTickDenominator;
+    //     barTop = tierBottom - barHeight;
+    //     topPoint = new paper.Point(itemLocX, barTop);
+    //     bottomPoint = new paper.Point(itemLocX, tierBottom);
+    //     aLine = new paper.Path.Line(topPoint, bottomPoint);
+    //     aLine.strokeColor = gColorTOCStroke;
+    //     tempGroup.addChild(aLine);
+    // }
 
     //rasterize temp group for entire tier
     if (tempGroup.children.length > 0) {
@@ -528,65 +529,124 @@ function drawTier1NavBox(seconds) {
     rightAlphaRectPath.fillColor = new paper.Color(0,0,0, gAlphaRectOpacity);
     gTier1NavGroup.addChild(rightAlphaRectPath);
 
+
+    //add zoom curves
+    var leftCurveObj = new paper.Path({
+        segments:
+            [
+                [gTier1NavBoxLocX, (gTier1Top + gTier1Height/2)],
+                [gTier2Left, gTier2Top],
+                [gTier1NavBoxLocX, gTier2Top]
+            ],
+
+        strokeColor: 'white',
+        // closed: true,
+        strokeWidth: 1,
+        strokeJoin: 'round',
+        fillColor: 'white',
+        opacity: gNaxBoxZoomFadeOpacity
+    });
+    var handleVector = new paper.Point({
+        angle: 90,
+        length: gTier1Height
+    });
+    leftCurveObj.segments[0].handleOut = handleVector;
+    gTier1NavGroup.addChild(leftCurveObj);
+
+    var rightCurveObj = new paper.Path({
+        segments:
+            [
+                [gTier1NavBoxLocX + navBoxWidth, (gTier1Top + gTier1Height/2)],
+                [gTier2Width, gTier2Top],
+                [gTier1NavBoxLocX + navBoxWidth, gTier2Top]
+            ],
+
+        strokeColor: 'white',
+        // closed: true,
+        strokeWidth: 1,
+        strokeJoin: 'round',
+        fillColor: 'white',
+        opacity: gNaxBoxZoomFadeOpacity
+    });
+    rightCurveObj.segments[0].handleOut = handleVector;
+    gTier1NavGroup.addChild(rightCurveObj);
+
+    var fillUnderNavBox = new paper.Path({
+        segments:
+            [
+                [gTier1NavBoxLocX + 0.5, (gTier1Top + gTier1Height)],
+                [gTier1NavBoxLocX + 0.5, gTier2Top],
+                [gTier1NavBoxLocX + navBoxWidth - 0.5, gTier2Top],
+                [gTier1NavBoxLocX + navBoxWidth - 0.5, (gTier1Top + gTier1Height)]
+            ],
+        strokeColor: 'white',
+        closed: true,
+        strokeWidth: 1,
+        // strokeJoin: 'round',
+        fillColor: 'white',
+        opacity: gNaxBoxZoomFadeOpacity
+    });
+    gTier1NavGroup.addChild(fillUnderNavBox);
+
     //add zoom fades
      var leftGradient = new paper.Point(gTier2Left, gTier2Top);
      var rightGradient = new paper.Point(gTier1NavBoxLocX, gTier1Top);
-     var zoomRect = new paper.Path({
-         segments:   [
-             [gTier1NavBoxLocX, gTier1Top],
-             [gTier1NavBoxLocX, (gTier1Top + gTier1Height)],
-             [gTier2Left, (gTier2Top + gTier2Height)],
-             [gTier2Left, gTier2Top]
-         ],
-         strokeColor: {
-             gradient: {
-                 stops: [gColorZoomStrokeDark, gColorZoomStrokeLight]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         closed: true,
-         strokeWidth: 1,
-         strokeJoin: 'round',
-         fillColor: {
-             gradient: {
-                 stops: [gColorZoomFillDark, gColorZoomFillLight]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         opacity: gNaxBoxZoomFadeOpacity
-     });
-     gTier1NavGroup.addChild(zoomRect);
-     leftGradient = new paper.Point(gTier1NavBoxLocX + navBoxWidth, gTier1Top);
-     rightGradient = new paper.Point(gTier2Left + gTier2Width, gTier2Top);
-     zoomRect = new paper.Path({
-         segments: [
-             [gTier1NavBoxLocX + navBoxWidth, gTier1Top],
-             [gTier1NavBoxLocX + navBoxWidth, (gTier1Top + gTier1Height)],
-             [gTier2Left + gTier2Width, gTier2Top + gTier2Height],
-             [gTier2Left + gTier2Width, gTier2Top]
-         ],
-         strokeColor: {
-             gradient: {
-                 stops: [gColorZoomStrokeLight, gColorZoomStrokeDark]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         closed: true,
-         strokeWidth: 1,
-         strokeJoin: 'round',
-         fillColor: {
-             gradient: {
-                 stops: [gColorZoomFillLight, gColorZoomFillDark]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         opacity: gNaxBoxZoomFadeOpacity
-     });
-     gTier1NavGroup.addChild(zoomRect);
+     // var zoomRect = new paper.Path({
+     //     segments:   [
+     //         [gTier1NavBoxLocX, gTier1Top],
+     //         [gTier1NavBoxLocX, (gTier1Top + gTier1Height)],
+     //         [gTier2Left, (gTier2Top + gTier2Height)],
+     //         [gTier2Left, gTier2Top]
+     //     ],
+     //     strokeColor: {
+     //         gradient: {
+     //             stops: [gColorZoomStrokeDark, gColorZoomStrokeLight]
+     //         },
+     //         origin: leftGradient,
+     //         destination: rightGradient
+     //     },
+     //     closed: true,
+     //     strokeWidth: 1,
+     //     strokeJoin: 'round',
+     //     fillColor: {
+     //         gradient: {
+     //             stops: [gColorZoomFillDark, gColorZoomFillLight]
+     //         },
+     //         origin: leftGradient,
+     //         destination: rightGradient
+     //     },
+     //     opacity: gNaxBoxZoomFadeOpacity
+     // });
+     // gTier1NavGroup.addChild(zoomRect);
+     // leftGradient = new paper.Point(gTier1NavBoxLocX + navBoxWidth, gTier1Top);
+     // rightGradient = new paper.Point(gTier2Left + gTier2Width, gTier2Top);
+     // zoomRect = new paper.Path({
+     //     segments: [
+     //         [gTier1NavBoxLocX + navBoxWidth, gTier1Top],
+     //         [gTier1NavBoxLocX + navBoxWidth, (gTier1Top + gTier1Height)],
+     //         [gTier2Left + gTier2Width, gTier2Top + gTier2Height],
+     //         [gTier2Left + gTier2Width, gTier2Top]
+     //     ],
+     //     strokeColor: {
+     //         gradient: {
+     //             stops: [gColorZoomStrokeLight, gColorZoomStrokeDark]
+     //         },
+     //         origin: leftGradient,
+     //         destination: rightGradient
+     //     },
+     //     closed: true,
+     //     strokeWidth: 1,
+     //     strokeJoin: 'round',
+     //     fillColor: {
+     //         gradient: {
+     //             stops: [gColorZoomFillLight, gColorZoomFillDark]
+     //         },
+     //         origin: leftGradient,
+     //         destination: rightGradient
+     //     },
+     //     opacity: gNaxBoxZoomFadeOpacity
+     // });
+     // gTier1NavGroup.addChild(zoomRect);
 }
 
 function drawTier2(forceRefresh) {
@@ -711,43 +771,44 @@ function drawTier2(forceRefresh) {
             }
         }
 
+        //unneeded for 13
         // draw lunar orbits
-        for (i = 0; i <= gOrbitData.length - 1; i++) {
-            //draw if orbit start is before end of viewport, and stage end is after start of viewport
-            if (timeStrToSeconds(gOrbitData[i][0]) <= gTier2StartSeconds + secondsOnTier2 && timeStrToSeconds(gOrbitData[i][2]) >= gTier2StartSeconds) {
-                itemLocX = gTier2Left + (timeStrToSeconds(gOrbitData[i][0]) - gTier2StartSeconds) * gTier2PixelsPerSecond;
-
-                var drawTick = true;
-                if (itemLocX < gTier2Left + 1) {
-                    itemLocX = gTier2Left + 1;
-                    drawTick = false;
-                }
-                topPoint = new paper.Point(itemLocX, gTier2Top);
-                bottomPoint = new paper.Point(itemLocX, gTier2Top + (gTier2Height / 3));
-
-                if (drawTick) {
-                    var orbitStroke = new paper.Path.Line(topPoint, bottomPoint);
-                    orbitStroke.strokeColor = gColorTOCStroke;
-                    tempGroup.addChild(orbitStroke); // draw orange tick for stage
-                }
-
-                //var orbitText = new paper.PointText({
-                //    justification: 'left',
-                //    fontFamily: graphFontFamily,
-                //    //fontWeight: 'bold',
-                //    fontSize: 8 + gFontScaleFactor,
-                //    fillColor: gColorTOCText
-                //});
-                //var textTop = gTier2Top + (gTier2Height / 2) - 3;
-                //orbitText.point = new paper.Point(itemLocX + 2 , textTop);
-                //orbitText.content = "Begin lunar orbit " + gOrbitData[i][1] + "/75";
-
-                //var stageTextRect = new paper.Path.Rectangle(stageText.bounds);
-                //stageTextRect.fillColor ='black';
-                //tempGroup.addChild(stageTextRect); //blank out area behind text
-                //tempGroup.addChild(orbitText); // text label
-            }
-        }
+        // for (i = 0; i <= gOrbitData.length - 1; i++) {
+        //     //draw if orbit start is before end of viewport, and stage end is after start of viewport
+        //     if (timeStrToSeconds(gOrbitData[i][0]) <= gTier2StartSeconds + secondsOnTier2 && timeStrToSeconds(gOrbitData[i][2]) >= gTier2StartSeconds) {
+        //         itemLocX = gTier2Left + (timeStrToSeconds(gOrbitData[i][0]) - gTier2StartSeconds) * gTier2PixelsPerSecond;
+        //
+        //         var drawTick = true;
+        //         if (itemLocX < gTier2Left + 1) {
+        //             itemLocX = gTier2Left + 1;
+        //             drawTick = false;
+        //         }
+        //         topPoint = new paper.Point(itemLocX, gTier2Top);
+        //         bottomPoint = new paper.Point(itemLocX, gTier2Top + (gTier2Height / 3));
+        //
+        //         if (drawTick) {
+        //             var orbitStroke = new paper.Path.Line(topPoint, bottomPoint);
+        //             orbitStroke.strokeColor = gColorTOCStroke;
+        //             tempGroup.addChild(orbitStroke); // draw orange tick for stage
+        //         }
+        //
+        //         //var orbitText = new paper.PointText({
+        //         //    justification: 'left',
+        //         //    fontFamily: graphFontFamily,
+        //         //    //fontWeight: 'bold',
+        //         //    fontSize: 8 + gFontScaleFactor,
+        //         //    fillColor: gColorTOCText
+        //         //});
+        //         //var textTop = gTier2Top + (gTier2Height / 2) - 3;
+        //         //orbitText.point = new paper.Point(itemLocX + 2 , textTop);
+        //         //orbitText.content = "Begin lunar orbit " + gOrbitData[i][1] + "/75";
+        //
+        //         //var stageTextRect = new paper.Path.Rectangle(stageText.bounds);
+        //         //stageTextRect.fillColor ='black';
+        //         //tempGroup.addChild(stageTextRect); //blank out area behind text
+        //         //tempGroup.addChild(orbitText); // text label
+        //     }
+        // }
 
         // draw mission stages
         for (i = 0; i <= gMissionStages.length - 1; i++) {
@@ -825,62 +886,119 @@ function drawTier2NavBox(seconds) {
     rightAlphaRectPath.fillColor = new paper.Color(0, 0, 0, gAlphaRectOpacity);
     gTier2NavGroup.addChild(rightAlphaRectPath);
 
-    //add zoom fades
-     var leftGradient = new paper.Point(gTier3Left, gTier3Top);
-     var rightGradient = new paper.Point(gTier2NavBoxLocX, gTier2Top);
-     var zoomRect = new paper.Path({
-         segments:   [[gTier2NavBoxLocX, gTier2Top],
-             [gTier2NavBoxLocX, (gTier2Top + gTier2Height)],
-             [gTier3Left, (gTier3Top + gTier3Height)],
-             [gTier3Left, gTier3Top]],
-         strokeColor: {
-             gradient: {
-                 stops: [gColorZoomStrokeDark, gColorZoomStrokeLight]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         closed: true,
-         strokeWidth: 1,
-         strokeJoin: 'round',
-         fillColor: {
-             gradient: {
-                 stops: [gColorZoomFillDark, gColorZoomFillLight]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         opacity: gNaxBoxZoomFadeOpacity
-     });
-     gTier2NavGroup.addChild(zoomRect);
+    var leftCurveObj = new paper.Path({
+             segments:
+                 [
+                    [gTier2NavBoxLocX, (gTier2Top + gTier2Height/2)],
+                    [gTier3Left, gTier3Top],
+                    [gTier2NavBoxLocX, gTier3Top]
+                 ],
 
-     leftGradient = new paper.Point(gTier2NavBoxLocX + navBoxWidth, gTier2Top);
-     rightGradient = new paper.Point(gTier3Left + gTier3Width, gTier3Top);
-     zoomRect = new paper.Path({
-         segments:   [[gTier2NavBoxLocX + navBoxWidth, gTier2Top],
-             [gTier2NavBoxLocX + navBoxWidth, (gTier2Top + gTier2Height)],
-             [gTier3Left + gTier3Width, (gTier3Top + gTier3Height)],
-             [gTier3Left + gTier3Width, gTier3Top]],
-         strokeColor: {
-             gradient: {
-                 stops: [gColorZoomStrokeLight, gColorZoomStrokeDark]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         closed: true,
-         strokeWidth: 1,
-         strokeJoin: 'round',
-         fillColor: {
-             gradient: {
-                 stops: [gColorZoomFillLight, gColorZoomFillDark]
-             },
-             origin: leftGradient,
-             destination: rightGradient
-         },
-         opacity: gNaxBoxZoomFadeOpacity
-     });
-     gTier2NavGroup.addChild(zoomRect);
+             strokeColor: 'white',
+             // closed: true,
+             strokeWidth: 1,
+             strokeJoin: 'round',
+             fillColor: 'white',
+             opacity: gNaxBoxZoomFadeOpacity
+    });
+    var handleVector = new paper.Point({
+        angle: 90,
+        length: gTier2Height
+    });
+    leftCurveObj.segments[0].handleOut = handleVector;
+    gTier2NavGroup.addChild(leftCurveObj);
+
+    var rightCurveObj = new paper.Path({
+        segments:
+            [
+                [gTier2NavBoxLocX + navBoxWidth, (gTier2Top + gTier2Height/2)],
+                [gTier3Width, gTier3Top],
+                [gTier2NavBoxLocX + navBoxWidth, gTier3Top]
+            ],
+
+        strokeColor: 'white',
+        // closed: true,
+        strokeWidth: 1,
+        strokeJoin: 'round',
+        fillColor: 'white',
+        opacity: gNaxBoxZoomFadeOpacity
+    });
+    rightCurveObj.segments[0].handleOut = handleVector;
+    gTier2NavGroup.addChild(rightCurveObj);
+
+    var fillUnderNavBox = new paper.Path({
+        segments:
+            [
+                [gTier2NavBoxLocX + 0.5, (gTier2Top + gTier2Height)],
+                [gTier2NavBoxLocX + 0.5, gTier3Top],
+                [gTier2NavBoxLocX + navBoxWidth - 0.5, gTier3Top],
+                [gTier2NavBoxLocX + navBoxWidth - 0.5, (gTier2Top + gTier2Height)]
+            ],
+        strokeColor: 'white',
+        closed: true,
+        strokeWidth: 1,
+        // strokeJoin: 'round',
+        fillColor: 'white',
+        opacity: gNaxBoxZoomFadeOpacity
+    });
+    gTier2NavGroup.addChild(fillUnderNavBox);
+
+    // //add zoom fades
+    //  var leftGradient = new paper.Point(gTier3Left, gTier3Top);
+    //  var rightGradient = new paper.Point(gTier2NavBoxLocX, gTier2Top);
+    //  var zoomRect = new paper.Path({
+    //      segments:   [[gTier2NavBoxLocX, gTier2Top],
+    //          [gTier2NavBoxLocX, (gTier2Top + gTier2Height)],
+    //          [gTier3Left, (gTier3Top + gTier3Height)],
+    //          [gTier3Left, gTier3Top]],
+    //      strokeColor: {
+    //          gradient: {
+    //              stops: [gColorZoomStrokeDark, gColorZoomStrokeLight]
+    //          },
+    //          origin: leftGradient,
+    //          destination: rightGradient
+    //      },
+    //      closed: true,
+    //      strokeWidth: 1,
+    //      strokeJoin: 'round',
+    //      fillColor: {
+    //          gradient: {
+    //              stops: [gColorZoomFillDark, gColorZoomFillLight]
+    //          },
+    //          origin: leftGradient,
+    //          destination: rightGradient
+    //      },
+    //      opacity: gNaxBoxZoomFadeOpacity
+    //  });
+    //  gTier2NavGroup.addChild(zoomRect);
+    //
+    //  leftGradient = new paper.Point(gTier2NavBoxLocX + navBoxWidth, gTier2Top);
+    //  rightGradient = new paper.Point(gTier3Left + gTier3Width, gTier3Top);
+    //  zoomRect = new paper.Path({
+    //      segments:   [[gTier2NavBoxLocX + navBoxWidth, gTier2Top],
+    //          [gTier2NavBoxLocX + navBoxWidth, (gTier2Top + gTier2Height)],
+    //          [gTier3Left + gTier3Width, (gTier3Top + gTier3Height)],
+    //          [gTier3Left + gTier3Width, gTier3Top]],
+    //      strokeColor: {
+    //          gradient: {
+    //              stops: [gColorZoomStrokeLight, gColorZoomStrokeDark]
+    //          },
+    //          origin: leftGradient,
+    //          destination: rightGradient
+    //      },
+    //      closed: true,
+    //      strokeWidth: 1,
+    //      strokeJoin: 'round',
+    //      fillColor: {
+    //          gradient: {
+    //              stops: [gColorZoomFillLight, gColorZoomFillDark]
+    //          },
+    //          origin: leftGradient,
+    //          destination: rightGradient
+    //      },
+    //      opacity: gNaxBoxZoomFadeOpacity
+    //  });
+    //  gTier2NavGroup.addChild(zoomRect);
 }
 
 function drawTier3(forceRefresh, drawForwardForScrolling) {
@@ -981,43 +1099,44 @@ function drawTier3(forceRefresh, drawForwardForScrolling) {
             }
         }
 
-        // draw lunar orbits
-        for (i = 0; i <= gOrbitData.length - 1; i++) {
-            //draw if orbit start is before end of viewport, and stage end is after start of viewport
-            if (timeStrToSeconds(gOrbitData[i][0]) <= gTier3StartSeconds + (secondsOnTier3 * lengthMultiplier) && timeStrToSeconds(gOrbitData[i][2]) >= gTier3StartSeconds) {
-                itemLocX = gTier3Left + (timeStrToSeconds(gOrbitData[i][0]) - gTier3StartSeconds) * gTier3PixelsPerSecond;
-
-                var drawTick = true;
-                if (itemLocX < gTier3Left + 1) {
-                    itemLocX = gTier3Left + 1;
-                    drawTick = false;
-                }
-                topPoint = new paper.Point(itemLocX, gTier3Top);
-                bottomPoint = new paper.Point(itemLocX, gTier3Top + 12 + gFontScaleFactor);
-
-                if (drawTick) {
-                    var orbitStroke = new paper.Path.Line(topPoint, bottomPoint);
-                    orbitStroke.strokeColor = gColorTOCStroke;
-                    tempGroup.addChild(orbitStroke); // draw orange tick for stage
-                }
-
-                var orbitText = new paper.PointText({
-                    justification: 'left',
-                    fontFamily: graphFontFamily,
-                    //fontWeight: 'bold',
-                    fontSize: 8 + gFontScaleFactor,
-                    fillColor: gColorTOCText
-                });
-                var textTop = gTier3Top + 10;
-                orbitText.point = new paper.Point(itemLocX + 2, textTop);
-                orbitText.content = "Begin lunar orbit " + gOrbitData[i][1] + "/75";
-
-                //var stageTextRect = new paper.Path.Rectangle(stageText.bounds);
-                //stageTextRect.fillColor ='black';
-                //tempGroup.addChild(stageTextRect); //blank out area behind text
-                tempGroup.addChild(orbitText); // text label
-            }
-        }
+        //unneeded for 13
+        // // draw lunar orbits
+        // for (i = 0; i <= gOrbitData.length - 1; i++) {
+        //     //draw if orbit start is before end of viewport, and stage end is after start of viewport
+        //     if (timeStrToSeconds(gOrbitData[i][0]) <= gTier3StartSeconds + (secondsOnTier3 * lengthMultiplier) && timeStrToSeconds(gOrbitData[i][2]) >= gTier3StartSeconds) {
+        //         itemLocX = gTier3Left + (timeStrToSeconds(gOrbitData[i][0]) - gTier3StartSeconds) * gTier3PixelsPerSecond;
+        //
+        //         var drawTick = true;
+        //         if (itemLocX < gTier3Left + 1) {
+        //             itemLocX = gTier3Left + 1;
+        //             drawTick = false;
+        //         }
+        //         topPoint = new paper.Point(itemLocX, gTier3Top);
+        //         bottomPoint = new paper.Point(itemLocX, gTier3Top + 12 + gFontScaleFactor);
+        //
+        //         if (drawTick) {
+        //             var orbitStroke = new paper.Path.Line(topPoint, bottomPoint);
+        //             orbitStroke.strokeColor = gColorTOCStroke;
+        //             tempGroup.addChild(orbitStroke); // draw orange tick for stage
+        //         }
+        //
+        //         var orbitText = new paper.PointText({
+        //             justification: 'left',
+        //             fontFamily: graphFontFamily,
+        //             //fontWeight: 'bold',
+        //             fontSize: 8 + gFontScaleFactor,
+        //             fillColor: gColorTOCText
+        //         });
+        //         var textTop = gTier3Top + 10;
+        //         orbitText.point = new paper.Point(itemLocX + 2, textTop);
+        //         orbitText.content = "Begin lunar orbit " + gOrbitData[i][1] + "/75";
+        //
+        //         //var stageTextRect = new paper.Path.Rectangle(stageText.bounds);
+        //         //stageTextRect.fillColor ='black';
+        //         //tempGroup.addChild(stageTextRect); //blank out area behind text
+        //         tempGroup.addChild(orbitText); // text label
+        //     }
+        // }
 
         // draw mission stages
         for (i = 0; i <= gMissionStages.length - 1; i++) {
