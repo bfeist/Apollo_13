@@ -1226,8 +1226,8 @@ function getTapeActivityRanges(activeSec) {
     var tapesActivity2filename = "tape_activity_" + nearestStart.toString() + "-" + (nearestStart + 999).toString() + ".json";
 
     var nearestEnd = Math.ceil(activeSec/1000)*1000;
-    if (nearestEnd + 1000 > 784140) {  //if greater than total length of tape activity data
-        var endRange = 784140;
+    if (nearestEnd + 1000 > 645444) {  //if greater than total length of tape activity data
+        var endRange = 645444;
     } else {
         endRange = nearestEnd + 1000;
     }
@@ -1258,12 +1258,15 @@ function ajaxGetTapesActivityDataRange(tapesActivityFilenames) {
         gTapesActivityRangeArray = [];
         $.when(
             $.getJSON(tapeActivityDataPath + tapesActivityFilenames[0], function (data) {
+                trace("getting tape activity: " + tapeActivityDataPath + tapesActivityFilenames[0]);
                 tapeActivity1 = data;
             }),
             $.getJSON(tapeActivityDataPath + tapesActivityFilenames[1], function (data) {
+                trace("getting tape activity: " + tapeActivityDataPath + tapesActivityFilenames[1]);
                 tapeActivity2 = data;
             }),
             $.getJSON(tapeActivityDataPath + tapesActivityFilenames[2], function (data) {
+                trace("getting tape activity: " + tapeActivityDataPath + tapesActivityFilenames[2]);
                 tapeActivity3 = data;
             })
         ).then(function () {

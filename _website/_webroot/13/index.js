@@ -1271,7 +1271,7 @@ function updateDashboard(timeId) {
     //Display day
     var missionCurrDate = getHistoricalDateTimeByTimeId(timeId);
     var dashMissionDay = missionCurrDate.getDate();
-    dashMissionDay = (dashMissionDay - 16) + 1; //16th for launch day of month
+    dashMissionDay = (dashMissionDay - 11) + 1; //11th for launch day of month
     // var dashMissionDay = Math.ceil(timeIdInSeconds / 86400);
     // dashMissionDay = dashMissionDay === 0 ? 1 : dashMissionDay;
     $('#dashMissionDay').html(dashMissionDay);
@@ -1301,16 +1301,21 @@ function updateDashboard(timeId) {
 
     var calculateVelocity;
     var calculateDistanceFromEarth;
-    if (timeIdInSeconds < timeStrToSeconds("075:49:44")) { //trans-lunar coast
-        calculateVelocity = true;
-        calculateDistanceFromEarth = true
-    } else if (timeIdInSeconds > timeStrToSeconds("135:23:36")){ //trans-earth coast
-        calculateVelocity = true;
-        calculateDistanceFromEarth = true;
-    } else { //lunar orbit
-        calculateVelocity = false;
-        calculateDistanceFromEarth = false;
-    }
+
+    //UNNEEDED for 13
+    // if (timeIdInSeconds < timeStrToSeconds("075:49:44")) { //trans-lunar coast
+    //     calculateVelocity = true;
+    //     calculateDistanceFromEarth = true
+    // } else if (timeIdInSeconds > timeStrToSeconds("135:23:36")){ //trans-earth coast
+    //     calculateVelocity = true;
+    //     calculateDistanceFromEarth = true;
+    // } else { //lunar orbit
+    //     calculateVelocity = false;
+    //     calculateDistanceFromEarth = false;
+    // }
+    calculateVelocity = false;
+    calculateDistanceFromEarth = false;
+
     //Display velocity
     if (calculateVelocity) {
         if (timeIdInSeconds < timeStrToSeconds("195:18:18")) { //splashdown time
@@ -2187,7 +2192,7 @@ function getTapeActivityRanges(activeSec) {
 function ajaxGetTapesActivityDataRange(tapesActivityFilename) {
     trace("ajaxGetTapesActivityDataRange()main: "  + tapesActivityFilename.toString());
 
-    var tapeActivityDataPath = cCdnRoot + '/tape_activity/';
+    var tapeActivityDataPath = cCdnRoot + '/A13/tape_activity/';
     var tapeActivity;
     gTapesActivityRangeArray = [];
     $.when(

@@ -41,7 +41,7 @@ def timestampBySeconds(seconds):
 
 
 for tapeName in os.listdir(root_path):
-    inputDirectory = root_path + tapeName + '/audiowaveform_512_json'
+    inputDirectory = root_path + tapeName + '/audiowaveform_256_json'
     inputDirectoryFS = os.fsencode(inputDirectory)
 
     outputDirectory = root_path + tapeName + '/noiseranges'

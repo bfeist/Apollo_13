@@ -20,11 +20,11 @@ for d in $ROOTDIR ; do
 				echo "dat already generated...skipping."
 			fi
 
-			mkdir -p $d/audiowaveform_512_json
-			if [ ! -f $d/audiowaveform_512_json/$filename.json ] ; then
+			mkdir -p $d/audiowaveform_256_json
+			if [ ! -f $d/audiowaveform_256_json/$filename.json ] ; then
 			    echo "No json found...generating."
-			    touch $d/audiowaveform_512_json/$filename.json
-			    audiowaveform -b 8 -z 512 -i $d/$filename.$extension -o $d/audiowaveform_512_json/$filename.json
+			    touch $d/audiowaveform_256_json/$filename.json
+			    audiowaveform -b 8 -z 256 -i $d/$filename.$extension -o $d/audiowaveform_256_json/$filename.json
 			else
 				echo "json already generated...skipping."
 			fi
