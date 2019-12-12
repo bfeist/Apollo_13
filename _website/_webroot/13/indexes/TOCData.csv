@@ -1,7 +1,17 @@
+-351728|1|Countdown
 -230405|1|Press conference announcing crew change
-0013822|1|001:41:15 TV
-0303422|1|030:56:13 TV
-0305742|1|031:02:36 TV
-0551430|1|055:46:29 TV
+-000015|2|Pre-Launch
+0000000|1|Launch
+0001142|1|Earth Orbit
+0013822|2|001:41:15 TV
+0024418|1|Trans-Lunar Injection (TLI)
+0303422|2|030:56:13 TV
+0305742|2|031:02:36 TV
+0551430|2|055:46:29 TV
+0555520|1|An Explosion onboard disables the spacecraft
+0770944|1|Slingshot around Moon
+0805235|1|Returning to Earth
 1380206|1|Service Module Jettison
 1412833|1|LM Jettison
+1423836|1|Re-entring Earth's Atmosphere
+1425440|1|Recovering crew from spacecraft

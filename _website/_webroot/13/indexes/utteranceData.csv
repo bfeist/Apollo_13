@@ -12664,36 +12664,36 @@
 1425023|PAO|Extremely loud applause as Apollo 13 on main chutes comes through loud and clear on the television display here.|P
 1425026|Swimmer 2|Iwo Jima Control, this is Swim 2. I have a visual bearing 182.|C
 1425034|USS Iwo Jima|Iwo Jima; Roger.|C
-1425039|Recovery helicopters|Iwo Jima Control, this is ... Recovery. I have a visual bearing 190. Over.|C
+1425039|Recovery|Iwo Jima Control, this is ... Recovery. I have a visual bearing 190. Over.|C
 1425044|USS Iwo Jima|Iwo Jima; Roger.|C
 1425052|Swimmer 1|Iwo Jima, Swim I has a visual at 110. ...|C
 1425057|USS Iwo Jima|Iwo Jima; Roger.|C
-1425059|Recovery helicopters|Apollo 13, Apollo 13, this is Recovery. Over.|C
+1425059|Recovery|Apollo 13, Apollo 13, this is Recovery. Over.|C
 1425059|PAO|A recovery helicopter has just put in a call to Apollo 13.|P
-1425118|Recovery helicopters|Apollo 13, Apollo 13, this is Recovery. Over.|C
+1425118|Recovery|Apollo 13, Apollo 13, this is Recovery. Over.|C
 1425118|PAO|We have a report from the Iwo Jima that Apollo 13 at a distance of 4 miles from the ship.|P
-1425147|Recovery helicopters|Apollo 13  -|C
+1425147|Recovery|Apollo 13  -|C
 1425149|CMP|Go ahead.|T
 1425149|PAO|The smoke you see is venting of RCS propellants, a reaction control system propellants.|P
 1425155|CMP|-  see you loud and clear going through 5000.|T
-1425159|Recovery helicopters|Roger, Apollo 13. This is Recovery and your chutes look good.|C
-1425211|Recovery helicopters|Apollo 13, this is Recovery. We observed your RCS burn. Over.|C
+1425159|Recovery|Roger, Apollo 13. This is Recovery and your chutes look good.|C
+1425211|Recovery|Apollo 13, this is Recovery. We observed your RCS burn. Over.|C
 1425211|PAO|You heard the conversation between the recovery helicopter and the crew of Apollo 13. The floor of the Mission Operations Control Room now crowded and there are visible smiles on the faces of the flight controllers and astronauts in this room.|P
-1425338|Recovery helicopters|This is Recovery. Apollo 13 is descending through 2000 feet.|C
+1425338|Recovery|This is Recovery. Apollo 13 is descending through 2000 feet.|C
 1425342|USS Iwo Jima|Okay. Our altimeter concurs.|C
 1425347|USS Iwo Jima|Iwo Jima; Roger. Out.|C
 1425347|PAO|A report from the Iwo Jima that Apollo 13 is descending at a point 4 miles due south of the ship.|P
-1425409|Recovery helicopters|Apollo 13 and Recovery passing through 1000 feet.|C
+1425409|Recovery|Apollo 13 and Recovery passing through 1000 feet.|C
 1425414|USS Iwo Jima|Iwo Jima; Roger.|C
-1425434|Recovery helicopters|Through 500 feet.|C
+1425434|Recovery|Through 500 feet.|C
 1425438|Swimmer 1|Swim 1 on station.|C
 1425440|Swimmer 2|-  2 is on station.|C
-1425444|Photographic helicopters|Photo 1's on station. Photo 1 observes splashdown at this time.|C
+1425444|Photo|Photo 1's on station. Photo 1 observes splashdown at this time.|C
 1425448|USS Iwo Jima|1 ... pickup ...|C
 1425449|Swimmer 1|Roger.|C
 1425449|PAO|Another cheer in the control room as we had splashdown.|P
-1425456|Photographic helicopters|Photo-1. Splashdown at this time. The three chutes are displaced. They're in the water.|C
-1425512|Recovery:</b> Helicopters|... Recovery, I have a clock  -|C
+1425456|Photo|Photo-1. Splashdown at this time. The three chutes are displaced. They're in the water.|C
+1425512|Recovery|... Recovery, I have a clock  -|C
 1425515|Recovery 1|... 3-1/2 miles Iwo Jima.|C
 1425524|Speaker|Iwo Jima, Roger.|C
 1425526|Speaker|Iwo Jima, Roger.|C
@@ -12702,7 +12702,7 @@
 1425612|Recovery 1|The vertical axis are approximately 15 degrees.|C
 1425632|Recovery|Recovery is maneuvering to grab hold of the main chute the 2 other chutes are still visible in the water. Swim 1, you are clear to move up to position to retrieve the other chutes.|C
 1425639|Swimmer 1|Swim 1. Roger.|C
-1425650|Photographic helicopters|This is photo 1, I observe the flashing light on top of the Command Module.|C
+1425650|Photo|This is photo 1, I observe the flashing light on top of the Command Module.|C
 1425703|Recovery|1 on 270.|C
 1425716|Recovery|Warm present ... Winds in the area from 270 magnetic to approximately 6 knots.|C
 1425716|PAO|Recovery 1 will be the - will perform the pickup of the crew.|P

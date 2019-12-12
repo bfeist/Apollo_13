@@ -11,5 +11,6 @@
 030:34:22 - 030:56:13 TV
 030:57:42 - 031:02:36 TV
 055:14:30 - 055:46:29 TV
+https://apolloinrealtime.org/11/?t=064:45:04&ch=57 - powerup discussion
 138:02:06 - Service Module Jettison
 141:28:33 - LM Jettison

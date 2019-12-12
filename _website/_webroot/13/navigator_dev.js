@@ -1,19 +1,74 @@
 trace("INIT: Loading index.js");
-var gStopCache = true;
-var gCdnEnabled = false;
+var cStopCache = false;
 
-var gMissionDurationSeconds = 1100166;
-var gCountdownSeconds = 9442;
-var gDefaultStartTimeId = '-000105';
+// var cCdnRoot = 'https://media.apolloinrealtime.org/mp3';
+var cCdnRoot = 'https://keycdn.apolloinrealtime.org/mp3';
+// var cCdnRoot = 'https://apollomedia.sfo2.cdn.digitaloceanspaces.com/mp3';
+// var cCdnRoot = 'https://apollomedia.sfo2.digitaloceanspaces.com/mp3';
 
+var cWebCdnRoot = '';
+// var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
+
+var cYouTubeSDorHD = 0; //0 for SD  1 for HD
+
+//constants
+var cMissionDurationSeconds = 518400;
+var cCountdownSeconds = 127048;
+var cDefaultStartTimeId = '-000102';
+var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
+var cLaunchDateModern = Date.parse("2019-04-11 19:13 -000");
+var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse("2019-04-10 7:55:50 -000");
+
+var cBackground_color_active = "#1e1e1e";
+
+var cRedactedChannelsArray = [1, 4, 10, 30, 31, 36, 37, 38, 39, 40, 41, 60];
+
+//global control objects
+var player;
+var gIntervalID = null;
+var gIntroInterval = null;
+var gApplicationReadyIntervalID = null;
+var YT = {
+    loading: 0,
+    loaded: 0
+};
+
+//global flags
+var gApplicationReady = 0;
+var gFontsLoaded = false;
+var gFontLoaderDelay = 3; //seconds
+var gSplashImageLoaded = false;
+var gMustInitNav = true;
+var gPlaybackState = "normal";
 var gLastTOCElement = '';
 var gLastTOCTimeId = '';
 var gLastCommentaryTimeId = '';
 var gLastUtteranceTimeId = '';
 var gLastTimeIdChecked = '';
+var gLastVideoSegmentDashboardHidden = '';
+var gUtteranceDisplayStartIndex;
+var gUtteranceDisplayEndIndex;
+var gCurrentHighlightedUtteranceIndex;
+var gCommentaryDisplayStartIndex;
+var gCommentaryDisplayEndIndex;
+var gCurrentHighlightedCommentaryIndex;
+var gDashboardManuallyToggled = false;
+var gNextVideoStartTime = -1; //used to track when one video ends to ensure next plays from 0 (needed because youtube bookmarks where you left off in videos without being asked to)
+var gMissionTimeParamSent = 0;
+
+var gActiveChannel;
+var gMOCRToggled = false;
+
+var gTapesActivityStartIndex = 0;
+var gTapesActivityRangeArray = [];
+
+//global mission state trackers
 var gCurrMissionTime = '';
-var gIntervalID = null;
-var gIntroInterval = null;
+var gCurrVideoStartSeconds = -9442; //countdown
+var gCurrVideoEndSeconds = 0;
+
+//global data objects
 var gMediaList = [];
 var gTOCIndex = [];
 var gTOCData = [];
@@ -24,32 +79,18 @@ var gUtteranceDataLookup = [];
 var gCommentaryIndex = [];
 var gCommentaryData = [];
 var gCommentaryDataLookup = [];
+var gSearchData = [];
+var gTelemetryData = [];
+var gCrewStatusData = [];
+var gOrbitData = [];
 var gPhotoData = [];
 var gPhotoIndex = [];
 var gPhotoDataLookup = [];
 var gMissionStages = [];
 var gVideoSegments = [];
-var gCurrentPhotoTimeid = "initial";
-var gCurrVideoStartSeconds = -9442; //countdown
-var gCurrVideoEndSeconds = 0;
-var gPlaybackState = "normal";
-var gNextVideoStartTime = -1; //used to track when one video ends to ensure next plays from 0 (needed because youtube bookmarks where you left off in videos without being asked to)
-var gMissionTimeParamSent = 0;
-var player;
-var gApplicationReady = 0; //starts at 0. Ready at 2. Checks both ajax loaded and player ready before commencing poller.
-var gApplicationReadyIntervalID = null;
-
-var gUtteranceDisplayStartIndex;
-var gUtteranceDisplayEndIndex;
-var gCurrentHighlightedUtteranceIndex;
-
-var gCommentaryDisplayStartIndex;
-var gCommentaryDisplayEndIndex;
-var gCurrentHighlightedCommentaryIndex;
-
-var gHoveredUtteranceArray; //share button
-
-var gBackground_color_active = "#222222";
+var gGeoData = [];
+var gGeoCompendiumData = [];
+var gPaperData = [];
 
 
 $( document ).ready(function() {
@@ -67,7 +108,11 @@ function setMissionTimeIncrement() {
 
 function setAutoScrollPoller() {
     return window.setInterval(function () {
-        if (gCurrMissionTime != gLastTimeIdChecked) {
+        if (gMustInitNav) {
+            initNavigator(); //only init navigator after fonts have loaded to avoid mousex position bug
+            gMustInitNav = false;
+        }
+        if (gCurrMissionTime !== gLastTimeIdChecked) {
             gLastTimeIdChecked = gCurrMissionTime;
             //scroll nav cursor
             if (!gMouseOnNavigator) {
