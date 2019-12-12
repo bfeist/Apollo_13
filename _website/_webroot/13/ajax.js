@@ -9,11 +9,12 @@ $.when(
     ajaxGetMissionStagesData(),
     ajaxGetVideoSegmentData(),
     ajaxGetTelemetryData(),
-    ajaxCrewStatusData(),
     // ajaxOrbitData(),
-    ajaxGeoData(),
-    ajaxGeoCompendiumData(),
-    ajaxPaperData()).done(function(){
+    // ajaxGeoData(),
+    // ajaxGeoCompendiumData(),
+    // ajaxPaperData(),
+    ajaxCrewStatusData()
+).done(function(){
         // the code here will be executed when all ajax requests resolve.
         gApplicationReady += 1;
         trace("APPREADY: Ajax loaded: " + gApplicationReady);
@@ -128,39 +129,39 @@ function ajaxCrewStatusData() {
 //         success: function(data) {processOrbitData(data);}
 //     });
 // }
-
-function ajaxGeoData() {
-    var urlStr = cWebCdnRoot + "indexes/geoData.csv";
-    urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
-    return $.ajax({
-        type: "GET",
-        url: urlStr,
-        dataType: "text",
-        success: function(data) {processGeoData(data);}
-    });
-}
-
-function ajaxGeoCompendiumData() {
-    var urlStr = cWebCdnRoot + "indexes/geoCompendiumData.csv";
-    urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
-    return $.ajax({
-        type: "GET",
-        url: urlStr,
-        dataType: "text",
-        success: function(data) {processGeoCompendiumData(data);}
-    });
-}
-
-function ajaxPaperData() {
-    var urlStr = cWebCdnRoot + "indexes/paperData.csv";
-    urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
-    return $.ajax({
-        type: "GET",
-        url: urlStr,
-        dataType: "text",
-        success: function(data) {processPaperData(data);}
-    });
-}
+//
+// function ajaxGeoData() {
+//     var urlStr = cWebCdnRoot + "indexes/geoData.csv";
+//     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
+//     return $.ajax({
+//         type: "GET",
+//         url: urlStr,
+//         dataType: "text",
+//         success: function(data) {processGeoData(data);}
+//     });
+// }
+//
+// function ajaxGeoCompendiumData() {
+//     var urlStr = cWebCdnRoot + "indexes/geoCompendiumData.csv";
+//     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
+//     return $.ajax({
+//         type: "GET",
+//         url: urlStr,
+//         dataType: "text",
+//         success: function(data) {processGeoCompendiumData(data);}
+//     });
+// }
+//
+// function ajaxPaperData() {
+//     var urlStr = cWebCdnRoot + "indexes/paperData.csv";
+//     urlStr += cStopCache === true ? "?stopcache=" + Math.random() : "";
+//     return $.ajax({
+//         type: "GET",
+//         url: urlStr,
+//         dataType: "text",
+//         success: function(data) {processPaperData(data);}
+//     });
+// }
 
 
 function processVideoURLData(allText) {
@@ -319,16 +320,16 @@ function createSearchData() {
         tmpItem[4] = 1;
         gSearchData.push(tmpItem);
     }
-    for (counter = 0; counter < gGeoData.length; counter++) {
-        tmpItem = [];
-        tmpItem[0] = gGeoData[counter][0];
-        tmpItem[1] = "";
-        tmpItem[2] = "";
-
-        tmpItem[3] = "Geology sample container; Sample bag: " + gGeoData[counter][2] + "; Sample Numbers: " + gGeoData[counter][5].replace(/`/g, ", ");
-        tmpItem[4] = 2;
-        gSearchData.push(tmpItem);
-    }
+    // for (counter = 0; counter < gGeoData.length; counter++) {
+    //     tmpItem = [];
+    //     tmpItem[0] = gGeoData[counter][0];
+    //     tmpItem[1] = "";
+    //     tmpItem[2] = "";
+    //
+    //     tmpItem[3] = "Geology sample container; Sample bag: " + gGeoData[counter][2] + "; Sample Numbers: " + gGeoData[counter][5].replace(/`/g, ", ");
+    //     tmpItem[4] = 2;
+    //     gSearchData.push(tmpItem);
+    // }
     for (counter = 0; counter < gPhotoData.length; counter++) {
         var photoObject = gPhotoData[counter];
         var photoTimeId = photoObject[0];

@@ -89,9 +89,9 @@ var gPhotoIndex = [];
 var gPhotoDataLookup = [];
 var gMissionStages = [];
 var gVideoSegments = [];
-var gGeoData = [];
-var gGeoCompendiumData = [];
-var gPaperData = [];
+// var gGeoData = [];
+// var gGeoCompendiumData = [];
+// var gPaperData = [];
 
 //mobile detect and redirect
 if( /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
@@ -891,12 +891,13 @@ function getUtteranceObjectHTML(utteranceIndex, style) {
     var who_modified = utteranceObject[1];
     var words_modified = utteranceObject[2];
 
-    for (var i = 0; i < gGeoData.length; i++) {
-        if (gGeoData[i][0] === utteranceObject[0]) {
-            var re = new RegExp(gGeoData[i][3], "g");
-            words_modified = words_modified.replace(re, "<a href='javascript:;' onclick='loadGeosampleIntoOverlay(" + i + ");'>" + gGeoData[i][3] + "</a>");
-        }
-    }
+    // No geodata on 13
+    // for (var i = 0; i < gGeoData.length; i++) {
+    //     if (gGeoData[i][0] === utteranceObject[0]) {
+    //         var re = new RegExp(gGeoData[i][3], "g");
+    //         words_modified = words_modified.replace(re, "<a href='javascript:;' onclick='loadGeosampleIntoOverlay(" + i + ");'>" + gGeoData[i][3] + "</a>");
+    //     }
+    // }
 
     var html = $('#utteranceTemplate').html();
     html = html.replace("@style", style);
@@ -1529,228 +1530,229 @@ function closeMOCRviz() {
     gMOCRToggled = false;
 }
 
-function openGeosampleOverlay() {
-    closeMOCRviz();
-
-    var geosampleTable = $('#geosampleTable');
-    geosampleTable.html('');
-    var html = $('#geosampleSplash').html();
-
-    var samplerows = '';
-    for (var i = 0; i < gGeoData.length; i++) {
-        var sampleNums = gGeoData[i][5].split('`');
-        var sampleNumsItem = '';
-        for (var x = 0; x < sampleNums.length; x++) {
-            if (x == sampleNums.length - 1) {
-                sampleNumsItem += sampleNums[x]
-            } else {
-                sampleNumsItem += sampleNums[x] + ', ';
-            }
-        }
-
-        samplerows += "<tr onclick='seekToGeosample(" + i + ")'>" +
-            "<td>" + timeIdToTimeStr(gGeoData[i][0]) + "</td>" +
-            "<td class='samplecontainerslink'>" + gGeoData[i][2] + "</td>" +
-            "<td>" + sampleNumsItem + "</td>" +
-            "</tr>\n";
-    }
-    html = html.replace(/@samplerows/g, samplerows);
-    geosampleTable.html(html);
-
-    var geosampleOverlaySelector = $('#geosample-overlay');
-    geosampleOverlaySelector.fadeIn();
-}
-
-function closeGeosampleOverlay() {
-    var geosampleOverlaySelector = $('#geosample-overlay');
-    geosampleOverlaySelector.fadeOut();
-}
-
-function seekToGeosample(GeoDataIndex) {
-    seekToTime(gGeoData[GeoDataIndex][0]);
-    loadGeosampleIntoOverlay(GeoDataIndex);
-}
-
-function loadGeosampleIntoOverlay(geoDataIndex) {
-    closeMOCRviz();
-    activateAppTab('geosampleTab');
-
-    ga('send', 'event', 'button', 'click', 'geosample');
-    var geosampleTable = $('#geosampleTable');
-    geosampleTable.html('');
-    $('#bagnum').html(' - ' + gGeoData[geoDataIndex][2]);
-
-    var sampleNumberArray = gGeoData[geoDataIndex][5].split("`");
-
-    for (var counter = 0; counter < sampleNumberArray.length; counter++) {
-        // add papers table
-        var paperHtml = "";
-        var firstPapersIteration = true;
-        var papersFound = false;
-        for (var paperCounter = 0; paperCounter < gPaperData.length - 1; paperCounter++) {
-            if (gPaperData[paperCounter][10].includes(sampleNumberArray[counter])) {
-                papersFound = true;
-                if (firstPapersIteration) {
-                    paperHtml = paperHtml + "<div class='geoPapersTitle'>Published scientific papers that reference <span class='samplenum'>Sample " + sampleNumberArray[counter] + "</span></div>\n";
-                    paperHtml = paperHtml + "<table class='geoPapersTable'><thead><tr>" +
-                        "<th>Year</th>" +
-                        "<th>Title</th>" +
-                        "<th>Authors</th>" +
-                        "<th>Journal</th>" +
-                        "</tr></thead><tbody>\n";
-                    firstPapersIteration = false;
-                }
-                var journalString = gPaperData[paperCounter][4];
-                if (gPaperData[paperCounter][5] !== "") journalString = journalString + ", Vol. " + gPaperData[paperCounter][5];
-                if (gPaperData[paperCounter][6] !== "") journalString = journalString + ", Issue " + gPaperData[paperCounter][6];
-                if (gPaperData[paperCounter][7] !== "") journalString = journalString + ", Page " + gPaperData[paperCounter][7];
-
-                var linkURL = "";
-                if (gPaperData[paperCounter][9] !== "") { //use DOI link if available
-                    linkURL = gPaperData[paperCounter][9];
-                } else if (gPaperData[paperCounter][0] !== "") { // if no DOI, use Bibcode link to ADS if available
-                    linkURL = "https://ui.adsabs.harvard.edu/#abs/" + gPaperData[paperCounter][0] + "/abstract";
-                } else { // fall back to using google scholar
-                    linkURL = "https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=" + gPaperData[paperCounter][1] + "+" + gPaperData[paperCounter][2];
-                    linkURL = linkURL.replace(' ', '+');
-                    linkURL = encodeURI(linkURL);
-                }
-
-                paperHtml = paperHtml + "<tr>" +
-                    "<td><a href='" + linkURL + "' target='_blank'>" + gPaperData[paperCounter][1] + "</a></td>" +
-                    "<td><a href='" + linkURL + "' target='_blank'>" + gPaperData[paperCounter][2] + "</a></td>" +
-                    "<td><a href='" + linkURL + "' target='_blank'>" + gPaperData[paperCounter][3] + "</a></td>" +
-                    "<td><a href='" + linkURL + "' target='_blank'>" + journalString + "</a></td>" +
-                    "</tr>\n";
-            }
-        }
-        if (!firstPapersIteration) {
-            paperHtml = paperHtml + "</tbody></table>\n"
-        }
-
-        //add sample compendium link if exists
-        var compendiumHtml = "";
-        for (var compendiumCounter = 0; compendiumCounter < gGeoCompendiumData.length; compendiumCounter++) {
-            if (gGeoCompendiumData[compendiumCounter][1].includes(sampleNumberArray[counter])) {
-                var compendiumSampleNumber = gGeoCompendiumData[compendiumCounter][0];
-                if (gGeoCompendiumData[compendiumCounter][2] === 'compendium') {
-                    compendiumHtml = '<span> - <a href="https://curator.jsc.nasa.gov/lunar/lsc/' + compendiumSampleNumber + '.pdf" target="geoImage">Lunar Sample Compendium (PDF)</a></span>';
-                } else {
-                    compendiumHtml = '<span> - <a href="https://curator.jsc.nasa.gov/lunar/catalogs/apollo11/' + compendiumSampleNumber + '.pdf" target="geoImage">Lunar Sample Information Catalog (PDF)</a></span>';
-                }
-                break;
-            }
-        }
-
-        var html = getGeosampleHTML(sampleNumberArray[counter], paperHtml, compendiumHtml);
-        geosampleTable.append(html);
-
-        // remove papers element if no papers
-        if (!papersFound) {
-            var element = document.getElementById("geoPapers" + sampleNumberArray[counter]);
-            element.remove();
-        }
-
-        // if (compendiumHtml == "") {
-        //     element = document.getElementById("geoSampleCompendium" + sampleNumberArray[counter]);
-        //     element.remove();
-        // }
-
-        //get sample images
-        jQuery.ajax({
-            url: './indexes/geosampledetails/' + sampleNumberArray[counter] + '.csv',
-            success: function (data) {
-                if (data.isOk === false) {
-                    alert(data.message);
-                }
-                var sampleID = this.url.substring(this.url.length - 9, this.url.length - 4);
-                var allImages = data.split('|');
-                var geoImagesDivSelector = $("#geoImages" + sampleID);
-                var html = '<div class="sampleimagessubtitle">Sample Photography</div>';
-                html = html + '<ul class="flex-container">';
-
-                for (var i = 0; i < allImages.length; i++) {
-                    html = html + '<li><a href="https://curator.jsc.nasa.gov/lunar/samplecatalog/photoinfo.cfm?photo=' + allImages[i] + '" target="geoImage"><img src="https://curator.jsc.nasa.gov/lunar/samplecatalog/photos/thumbs/' + allImages[i] + '.jpg"></a></li>';
-                }
-                html = html + "</ul>";
-                geoImagesDivSelector.html(html);
-            },
-            error: function () {
-                //remove images div if no images file containing image list is found
-                var sampleID = this.url.substring(this.url.length - 9, this.url.length - 4);
-                var element = document.getElementById("geoImages" + sampleID);
-                element.remove();
-            },
-            async: true
-        });
-
-        // get moondb info into sampleinfotable
-        jQuery.ajax({
-            url: 'http://api.moondb.org/specimen/' + sampleNumberArray[counter],
-            success: function (data) {
-                if (data.isOk === false) {
-                    alert(data.message);
-                }
-                var sampleID = this.url.substring(this.url.length - 5, this.url.length);
-                var moondbDivSelector = $("#moondb" + sampleID);
-                // var moondbhtml = JSON.stringify(data);
-                var moondbhtml = "<table class='sampleinfotable'>" +
-                    "<tr>" +
-                    "<td>Specimen Name</td>" +
-                    "<td>" + (data.specimenName != null ? data.specimenName : '') + "</td>" +
-                    "<td>Lunar Station</td>" +
-                    "<td>" + (data.lunarStation != null ? data.lunarStation : '') + "</td></tr>\n";
-
-                moondbhtml = moondbhtml +
-                    "<tr>" +
-                    "<td>Specimen Type</td>" +
-                    "<td>" + (data.specimenType != null ? data.specimenType : '') + "</td>" +
-                    "<td>Return Container</td>" +
-                    "<td>" + (data.returnContainer != null ? data.returnContainer : '') + "</td></tr>\n";
-
-                moondbhtml = moondbhtml +
-                    "<tr>" +
-                    "<td>Sampling Technique</td>" +
-                    "<td>" + (data.samplingTechnique != null ? data.samplingTechnique : '') + "</td>" +
-                    "<td>Weight</td>" +
-                    "<td>" + (data.weight != null ? data.weight : '') + "</td></tr>\n";
-
-                moondbhtml = moondbhtml +
-                    "<tr>" +
-                    "<td>Landmark</td>" +
-                    "<td>" + (data.landmark != null ? data.landmark : '') + "</td>" +
-                    "<td>Pristinity</td>" +
-                    "<td>" + (data.pristinity != null ? data.pristinity : '') + " (" + (data.pristinityDate != null ? data.pristinityDate : '') + ")</td></tr>\n";
-
-                moondbhtml = moondbhtml +
-                    "<tr>" +
-                    "<td>Description</td>" +
-                    "<td colspan='3'>" + (data.description != null ? data.description : '') + "</td>" +
-                    "</tr>\n";
-
-                moondbhtml = moondbhtml +
-                    "<tr>" +
-                    "<td>Child Specimens</td>" +
-                    "<td colspan='3'>" + data.childSpecimens.join(" ") + "</td>" +
-                    "</tr>\n";
-                moondbDivSelector.html(moondbhtml);
-            },
-            async: true
-        });
-    }
-    var geosampleOverlaySelector = $('#geosample-overlay');
-    geosampleOverlaySelector.fadeIn();
-}
-
-function getGeosampleHTML(samplenumber, paperHtml, compendiumHtml) {
-    //trace("getUtteranceObjectHTML():" + utteranceIndex);
-    var html = $('#geosampleTemplate').html();
-
-    html = html.replace(/@samplenumber/g, samplenumber);
-    html = html.replace(/@papers/g, paperHtml);
-    html = html.replace(/@geocompendium/g, compendiumHtml);
-    return html;
-}
+//none on 13
+// function openGeosampleOverlay() {
+//     closeMOCRviz();
+//
+//     var geosampleTable = $('#geosampleTable');
+//     geosampleTable.html('');
+//     var html = $('#geosampleSplash').html();
+//
+//     var samplerows = '';
+//     for (var i = 0; i < gGeoData.length; i++) {
+//         var sampleNums = gGeoData[i][5].split('`');
+//         var sampleNumsItem = '';
+//         for (var x = 0; x < sampleNums.length; x++) {
+//             if (x == sampleNums.length - 1) {
+//                 sampleNumsItem += sampleNums[x]
+//             } else {
+//                 sampleNumsItem += sampleNums[x] + ', ';
+//             }
+//         }
+//
+//         samplerows += "<tr onclick='seekToGeosample(" + i + ")'>" +
+//             "<td>" + timeIdToTimeStr(gGeoData[i][0]) + "</td>" +
+//             "<td class='samplecontainerslink'>" + gGeoData[i][2] + "</td>" +
+//             "<td>" + sampleNumsItem + "</td>" +
+//             "</tr>\n";
+//     }
+//     html = html.replace(/@samplerows/g, samplerows);
+//     geosampleTable.html(html);
+//
+//     var geosampleOverlaySelector = $('#geosample-overlay');
+//     geosampleOverlaySelector.fadeIn();
+// }
+//
+// function closeGeosampleOverlay() {
+//     var geosampleOverlaySelector = $('#geosample-overlay');
+//     geosampleOverlaySelector.fadeOut();
+// }
+//
+// function seekToGeosample(GeoDataIndex) {
+//     seekToTime(gGeoData[GeoDataIndex][0]);
+//     loadGeosampleIntoOverlay(GeoDataIndex);
+// }
+//
+// function loadGeosampleIntoOverlay(geoDataIndex) {
+//     closeMOCRviz();
+//     activateAppTab('geosampleTab');
+//
+//     ga('send', 'event', 'button', 'click', 'geosample');
+//     var geosampleTable = $('#geosampleTable');
+//     geosampleTable.html('');
+//     $('#bagnum').html(' - ' + gGeoData[geoDataIndex][2]);
+//
+//     var sampleNumberArray = gGeoData[geoDataIndex][5].split("`");
+//
+//     for (var counter = 0; counter < sampleNumberArray.length; counter++) {
+//         // add papers table
+//         var paperHtml = "";
+//         var firstPapersIteration = true;
+//         var papersFound = false;
+//         for (var paperCounter = 0; paperCounter < gPaperData.length - 1; paperCounter++) {
+//             if (gPaperData[paperCounter][10].includes(sampleNumberArray[counter])) {
+//                 papersFound = true;
+//                 if (firstPapersIteration) {
+//                     paperHtml = paperHtml + "<div class='geoPapersTitle'>Published scientific papers that reference <span class='samplenum'>Sample " + sampleNumberArray[counter] + "</span></div>\n";
+//                     paperHtml = paperHtml + "<table class='geoPapersTable'><thead><tr>" +
+//                         "<th>Year</th>" +
+//                         "<th>Title</th>" +
+//                         "<th>Authors</th>" +
+//                         "<th>Journal</th>" +
+//                         "</tr></thead><tbody>\n";
+//                     firstPapersIteration = false;
+//                 }
+//                 var journalString = gPaperData[paperCounter][4];
+//                 if (gPaperData[paperCounter][5] !== "") journalString = journalString + ", Vol. " + gPaperData[paperCounter][5];
+//                 if (gPaperData[paperCounter][6] !== "") journalString = journalString + ", Issue " + gPaperData[paperCounter][6];
+//                 if (gPaperData[paperCounter][7] !== "") journalString = journalString + ", Page " + gPaperData[paperCounter][7];
+//
+//                 var linkURL = "";
+//                 if (gPaperData[paperCounter][9] !== "") { //use DOI link if available
+//                     linkURL = gPaperData[paperCounter][9];
+//                 } else if (gPaperData[paperCounter][0] !== "") { // if no DOI, use Bibcode link to ADS if available
+//                     linkURL = "https://ui.adsabs.harvard.edu/#abs/" + gPaperData[paperCounter][0] + "/abstract";
+//                 } else { // fall back to using google scholar
+//                     linkURL = "https://scholar.google.ca/scholar?hl=en&as_sdt=0%2C5&q=" + gPaperData[paperCounter][1] + "+" + gPaperData[paperCounter][2];
+//                     linkURL = linkURL.replace(' ', '+');
+//                     linkURL = encodeURI(linkURL);
+//                 }
+//
+//                 paperHtml = paperHtml + "<tr>" +
+//                     "<td><a href='" + linkURL + "' target='_blank'>" + gPaperData[paperCounter][1] + "</a></td>" +
+//                     "<td><a href='" + linkURL + "' target='_blank'>" + gPaperData[paperCounter][2] + "</a></td>" +
+//                     "<td><a href='" + linkURL + "' target='_blank'>" + gPaperData[paperCounter][3] + "</a></td>" +
+//                     "<td><a href='" + linkURL + "' target='_blank'>" + journalString + "</a></td>" +
+//                     "</tr>\n";
+//             }
+//         }
+//         if (!firstPapersIteration) {
+//             paperHtml = paperHtml + "</tbody></table>\n"
+//         }
+//
+//         //add sample compendium link if exists
+//         var compendiumHtml = "";
+//         for (var compendiumCounter = 0; compendiumCounter < gGeoCompendiumData.length; compendiumCounter++) {
+//             if (gGeoCompendiumData[compendiumCounter][1].includes(sampleNumberArray[counter])) {
+//                 var compendiumSampleNumber = gGeoCompendiumData[compendiumCounter][0];
+//                 if (gGeoCompendiumData[compendiumCounter][2] === 'compendium') {
+//                     compendiumHtml = '<span> - <a href="https://curator.jsc.nasa.gov/lunar/lsc/' + compendiumSampleNumber + '.pdf" target="geoImage">Lunar Sample Compendium (PDF)</a></span>';
+//                 } else {
+//                     compendiumHtml = '<span> - <a href="https://curator.jsc.nasa.gov/lunar/catalogs/apollo11/' + compendiumSampleNumber + '.pdf" target="geoImage">Lunar Sample Information Catalog (PDF)</a></span>';
+//                 }
+//                 break;
+//             }
+//         }
+//
+//         var html = getGeosampleHTML(sampleNumberArray[counter], paperHtml, compendiumHtml);
+//         geosampleTable.append(html);
+//
+//         // remove papers element if no papers
+//         if (!papersFound) {
+//             var element = document.getElementById("geoPapers" + sampleNumberArray[counter]);
+//             element.remove();
+//         }
+//
+//         // if (compendiumHtml == "") {
+//         //     element = document.getElementById("geoSampleCompendium" + sampleNumberArray[counter]);
+//         //     element.remove();
+//         // }
+//
+//         //get sample images
+//         jQuery.ajax({
+//             url: './indexes/geosampledetails/' + sampleNumberArray[counter] + '.csv',
+//             success: function (data) {
+//                 if (data.isOk === false) {
+//                     alert(data.message);
+//                 }
+//                 var sampleID = this.url.substring(this.url.length - 9, this.url.length - 4);
+//                 var allImages = data.split('|');
+//                 var geoImagesDivSelector = $("#geoImages" + sampleID);
+//                 var html = '<div class="sampleimagessubtitle">Sample Photography</div>';
+//                 html = html + '<ul class="flex-container">';
+//
+//                 for (var i = 0; i < allImages.length; i++) {
+//                     html = html + '<li><a href="https://curator.jsc.nasa.gov/lunar/samplecatalog/photoinfo.cfm?photo=' + allImages[i] + '" target="geoImage"><img src="https://curator.jsc.nasa.gov/lunar/samplecatalog/photos/thumbs/' + allImages[i] + '.jpg"></a></li>';
+//                 }
+//                 html = html + "</ul>";
+//                 geoImagesDivSelector.html(html);
+//             },
+//             error: function () {
+//                 //remove images div if no images file containing image list is found
+//                 var sampleID = this.url.substring(this.url.length - 9, this.url.length - 4);
+//                 var element = document.getElementById("geoImages" + sampleID);
+//                 element.remove();
+//             },
+//             async: true
+//         });
+//
+//         // get moondb info into sampleinfotable
+//         jQuery.ajax({
+//             url: 'http://api.moondb.org/specimen/' + sampleNumberArray[counter],
+//             success: function (data) {
+//                 if (data.isOk === false) {
+//                     alert(data.message);
+//                 }
+//                 var sampleID = this.url.substring(this.url.length - 5, this.url.length);
+//                 var moondbDivSelector = $("#moondb" + sampleID);
+//                 // var moondbhtml = JSON.stringify(data);
+//                 var moondbhtml = "<table class='sampleinfotable'>" +
+//                     "<tr>" +
+//                     "<td>Specimen Name</td>" +
+//                     "<td>" + (data.specimenName != null ? data.specimenName : '') + "</td>" +
+//                     "<td>Lunar Station</td>" +
+//                     "<td>" + (data.lunarStation != null ? data.lunarStation : '') + "</td></tr>\n";
+//
+//                 moondbhtml = moondbhtml +
+//                     "<tr>" +
+//                     "<td>Specimen Type</td>" +
+//                     "<td>" + (data.specimenType != null ? data.specimenType : '') + "</td>" +
+//                     "<td>Return Container</td>" +
+//                     "<td>" + (data.returnContainer != null ? data.returnContainer : '') + "</td></tr>\n";
+//
+//                 moondbhtml = moondbhtml +
+//                     "<tr>" +
+//                     "<td>Sampling Technique</td>" +
+//                     "<td>" + (data.samplingTechnique != null ? data.samplingTechnique : '') + "</td>" +
+//                     "<td>Weight</td>" +
+//                     "<td>" + (data.weight != null ? data.weight : '') + "</td></tr>\n";
+//
+//                 moondbhtml = moondbhtml +
+//                     "<tr>" +
+//                     "<td>Landmark</td>" +
+//                     "<td>" + (data.landmark != null ? data.landmark : '') + "</td>" +
+//                     "<td>Pristinity</td>" +
+//                     "<td>" + (data.pristinity != null ? data.pristinity : '') + " (" + (data.pristinityDate != null ? data.pristinityDate : '') + ")</td></tr>\n";
+//
+//                 moondbhtml = moondbhtml +
+//                     "<tr>" +
+//                     "<td>Description</td>" +
+//                     "<td colspan='3'>" + (data.description != null ? data.description : '') + "</td>" +
+//                     "</tr>\n";
+//
+//                 moondbhtml = moondbhtml +
+//                     "<tr>" +
+//                     "<td>Child Specimens</td>" +
+//                     "<td colspan='3'>" + data.childSpecimens.join(" ") + "</td>" +
+//                     "</tr>\n";
+//                 moondbDivSelector.html(moondbhtml);
+//             },
+//             async: true
+//         });
+//     }
+//     var geosampleOverlaySelector = $('#geosample-overlay');
+//     geosampleOverlaySelector.fadeIn();
+// }
+//
+// function getGeosampleHTML(samplenumber, paperHtml, compendiumHtml) {
+//     //trace("getUtteranceObjectHTML():" + utteranceIndex);
+//     var html = $('#geosampleTemplate').html();
+//
+//     html = html.replace(/@samplenumber/g, samplenumber);
+//     html = html.replace(/@papers/g, paperHtml);
+//     html = html.replace(/@geocompendium/g, compendiumHtml);
+//     return html;
+// }
 
 
 
