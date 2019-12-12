@@ -5,16 +5,15 @@
 -001230|2|Comm checks
 -000015|2|Pre-Launch
 0000001|1|Lift-off
-0000043|2|Abort Mode 1B
-0000121|2|Maximum aerodynamic pressure
-0000200|2|Abort Mode 1C
-0000242|2|Four g's
-0000248|1|Staging and S-II ignition
-0000324|2|Abort Mode II
-0000532|1|Inboard engine premature shutdown
-0000950|2|Abort Mode IV
-0001000|1|Staging and S-IVB ignition
-0001231|1|Engine shutdown
+0000043|2|Mode 1B
+0000121|2|Max-Q
+0000200|2|Mode 1C
+0000248|1|S-II staging
+0000324|2|Mode II
+0000532|1|Inboard premature shutdown
+0000950|2|Mode IV
+0001000|1|S-IVB staging
+0001231|1|S-IVB shutdown
 0001506|2|'Great to be up here again'
 0003044|2|The Borman Specials
 0003148|2|Lovell's life belt on Apollo 8
@@ -40,27 +39,27 @@
 0112126|2|Hair - Aquarius
 0114157|2|Halls of Montezuma
 0120815|2|Starting to prepare for bed
-0130800|1|Crew in bed
-0135700|1|Change of shift to Gene Kranz' White Team
+0130800|1|Sleep period starts
+0135700|2|Change of shift to Gene Kranz' White Team
 0215500|2|Joe Kerwin takes over as CapCom
-0231114|1|Good Morning, 13
+0231114|1|Sleep period ends
 0231651|2|Sleep report
 0232350|2|Questions about the Saturn V booster
 0234700|1|Guidance platform realign
 0241615|2|News update about the Beatles and golf
 0241810|2|Teasing Swigert about his taxes
-0251135|1|Launch vehicle briefing
+0251135|2|Launch vehicle briefing
 0252423|2|Lovell compares Apollo 13 launch to Apollo 8
 0252700|2|Kerwin talks about the engine shutdown
 0275941|2|Space lunch
 0284911|1|Midcourse Correction 2 PAD
-0290000|1|The fourth navigational alignment results
+0290000|2|The fourth navigational alignment results
 0292300|2|Vance Brand takes over as CapCom
 0294546|2|Midcourse Correction 2 preparations continue
 0301404|2|Teasing Brand about Charlie Duke mistaking the Earth for the Moon on TV
 0302439|2|A pen on a string
 0303422|1|TV Transmission
-0303451|1|Going through the SPS checklist
+0303451|2|Going through the SPS checklist
 0304046|1|Engine burn for Midcourse Correction 2
 0304435|2|Fred talks about doing TV work at Fra Mauro
 0304636|2|Brand teases crew about beards and grooming
@@ -69,26 +68,27 @@
 0305726|2|Lovell talks about liquid wastes
 0305742|1|TV Transmission
 0305751|2|Haise and Lovell have fun with the sleeping hammock
-0310213|1|End of Day 2 television broadcast
+0310213|2|End of Day 2 television broadcast
 0310400|1|Milton Windler takes over from Glynn Lunney
-0310544|1|Discussing photography of Comet Bennett
-0313400|1|PAO update, Swigert's P23s
+0310544|2|Discussing photography of Comet Bennett
+0313400|2|PAO update, Swigert's P23s
 0315922|2|Brand talks about fuel cell temperatures
 0321056|1|Go to start observing Comet Bennett
-0321335|1|Crew gives up trying to spot Comet Bennett
+0321335|2|Crew gives up trying to spot Comet Bennett
 0321745|2|Haise questions Brand about Mattingly's possible illness
-0324728|1|Swigert writes down changes to the CMP Solo Book
+0324728|2|Swigert writes down changes to the CMP Solo Book
 0331130|1|Haise announces problem with cryogenics
 0331916|2|Ken Mattingly comes on the line to talk about the CMP Solo Book with Swigert
 0332037|2|Swigert and Mattingly joke
 0332415|2|Brand teases Swigert
-0335136|1|Brand teases Swigert about Big Brother watching
-0335357|1|PAD for lunar flyby in case of no lunar orbit insertion is read
+0335136|2|Brand teases Swigert about Big Brother watching
+0335357|2|PAD for lunar flyby in case of no lunar orbit insertion is read
 0345854|2|Swigert and Brand discuss whether course correction is needed
-0352707|1|Discussing the Supercritical helium pressure in the Lunar Module
+0352707|2|Discussing the Supercritical helium pressure in the Lunar Module
 0364210|2|Crew starts to get ready to sleep
 0370715|2|Jack Lousma takes over as CapCom
 0371209|2|Lousma and Lovell tease each other over CapCom duties
+0371227|1|Sleep period starts
 0434200|2|PAO announces Joe Kerwin taking over as CapCom
 0464318|1|Lovell announces crew wakeup
 046.4338|2|Kerwin declares "We're bored to tears down here"
@@ -97,24 +97,24 @@
 0464724|2|Kerwin teases the crew
 0473929|2|Consumables report and discussing O2 tank 2 quantity sensor failure
 0474119|2|Discussing a pressure problem in the hydrogen tank
-0474501|1|Kerwin and crew discusses changes to the flight plan
+0474501|2|Kerwin and crew discusses changes to the flight plan
 0475732|2|Kerwin and Swigert discuss a minor problem with Command Module optics
 0480004|2|Kerwin instructs on how to observe Comet Bennett
 0480625|2|O2 tank 2 sensor discussed again
 0490600|1|Gene Kranz takes over from Gerry Griffin as Flight Director with White Team
 0490817|2|Swigert talks about P52 realignment
-0494827|1|Kerwin and Swigert talk about the cryo tank problems
-0502655|1|Kerwin and Haise talk about the LM helium tank
+0494827|2|Kerwin and Swigert talk about the cryo tank problems
+0502655|2|Kerwin and Haise talk about the LM helium tank
 0510300|2|PAO notes Ken Mattingly is in Mission Control
-0510708|1|Kerwin orders the crew to stir the cryo tanks more frequently
-0520742|1|Vance Brand has taken over as CapCom
+0510708|2|Kerwin orders the crew to stir the cryo tanks more frequently
+0520742|2|Vance Brand has taken over as CapCom
 0520750|2|Brand and Lovell tease each other
 0521655|2|Brand teases Haise
 0540604|2|John Young teases the crew
 0542529|1|Haise has entered the LM
-0542658|1|Jack Lousma has taken over as CapCom
+0542658|2|Jack Lousma has taken over as CapCom
 0544934|2|Haise has a problem with LM displays
-0550512|1|Problems with the High Gain Antenna
+0550512|2|Problems with the High Gain Antenna
 0551413|1|TV Transmission
 0551640|2|Haise talks about the PLSS
 0552005|2|Haise and the fish scale
@@ -124,7 +124,7 @@
 0553504|2|Lovell teases Haise
 0553657|2|Haise talks about sleeping arrangements
 0554258|2|Lousma teases crew
-0554357|2|Music -  "Willow Weep for Me"
+0554357|2|Music - "Willow Weep for Me"
 0554415|2|Lovell talks about onboard music
 0554518|2|Haise scares Lovell with the repress valve
 0554630|2|TV show ends
@@ -133,21 +133,21 @@
 0555520|1|An Explosion onboard disables the spacecraft
 0555825|2|Main Bus A Undervolt
 0560035|2|Attempt to reconnect fuel cells
-0560624|2|Readings from onboard instrumentation
-0580857|2|O2 tanks 2 reads empty
+0560624|2|Instrumentation readings
+0560857|2|O2 tanks 2 reads empty
 0560907|1|Lovell says he can see the leak
 0561247|2|Gimbal lock warning
 0561608|1|Emergency powerdown ordered
-0562231|1|Swigert having trouble controlling the ship
-0562806|1|Lousma reassures the crew
-0563933|1|Trying to raise pressure in O2 tank 1
-0564806|1|Starting a survey of onboard displays
+0562231|2|Swigert having trouble controlling the ship
+0562806|2|Lousma reassures the crew
+0563933|2|Trying to raise pressure in O2 tank 1
+0564806|2|Starting a survey of onboard displays
 0565707|1|Close reactant valves on fuel cell 3
 0570612|2|Kranz accidentally on the comm loop. Lunney takes over
 0571504|1|Close reactant valves on fuel cell 1
-0572354|1|Swigert reports O2 tank pressure is falling
+0572354|2|Swigert reports O2 tank pressure is falling
 0573447|2|Lousma reads procedure to turn on LM power
-0574131|2|Lousma orders the crew to move into the LM
+0574131|1|Lousma orders the crew to move into the LM
 0575755|1|LM radio signal received
 0580039|2|Didn't think I'd be back in this soon.
 0580226|2|Haise and Lovell program LM computer
@@ -155,24 +155,24 @@
 0582759|2|Lousma overwhelmed by radio traffic
 0584012|1|Lovell reports Odyssey fully powered down
 0584425|2|LM navigational align
-0585212|1|LM Ascent Oxygen tank pressure issue discussed
+0585212|2|LM Ascent Oxygen tank pressure issue discussed
 0590142|2|Lousma reads up first PAD for PC+2 burn
 0591228|2|Crew's tense language prompts Lousma to suggest radio is on hot mike
-0591753|2|Lovell asks for home return time
+0591753|1|Lovell asks for home return time
 0594340|2|Lovell reports they can't see stars due to debris
 0602258|2|Lousma talks of plan for first course adjustment
 0602845|2|Haise and Lousma start going over burn checklist
 0603903|2|Lousma teases Haise
-0605258|1|Lousma reads up PAD for the course correction
+0605258|2|Lousma reads up PAD for the course correction
 0610528|2|Lousma teases Haise about the situation being a training simulation
 0612853|1|GO for the course correction burn
 0623357|2|Flight Plan updated
 0630535|2|PC+2 PAD update
-0640301|2|First mention of CO2 issues
+0640301|1|First mention of CO2 issues
 0643743|2|Joe Kerwin takes over as CapCom
 0644714|2|Trying to reconfigure the radio to low power
 0661300|1|Gerry Griffin takes over from Glynn Lunney
-0672300|1|Long PAO update on situation
+0672300|2|Long PAO update on situation
 0673800|2|President Nixon's reaction mentioned
 0680333|2|Lovell speculates on "last lunar mission for a long time."
 0710617|2|Haise and Kerwin joke about
@@ -186,11 +186,11 @@
 0752334|2|Lovell can finally recognize stars
 0752815|2|Brand gives a PC+2 PAD update
 0763031|2|Review of mission rules for PC+2 burn
-0765824|2|Lovell talks about importance of speeding return
+0765824|2|Lovell talks about importance of a speedy return
 0770808|1|Apollo 13 goes behind the Moon and loses radio contact
 0773350|1|Lovell greets Houston again
 0774448|2|Lovell rallies the crew
-0775246|1|Final updates for the PC+2 burn read by Brand
+0775246|2|Final updates for the PC+2 burn read by Brand
 0780225|2|Brand reports S-IVB impact with the Moon
 0790848|2|Lovell can see Mount Marilyn
 0792643|1|One minute to PC+2 burn
@@ -215,7 +215,7 @@
 0840124|2|Lousma and Haise joke with one another
 0844213|2|Lousma jokes about the last TV show
 0850829|2|Haise asks about the S-IVB impact results
-0870424|1|Lousma briefs Lovell on attitude control using the Earth as reference
+0870424|2|Lousma briefs Lovell on attitude control using the Earth as reference
 0871706|2|Lousma reads up manual midcourse instructions PAD
 0875137|2|Lovell and Lousma joke about the LRL quarantine
 0895823|1|Joe Kerwin takes over as CapCom
@@ -233,18 +233,18 @@
 0952402|2|Kerwin and Haise joke
 0962116|2|Kerwin reports A13 now at Earth's sphere of influence
 0965300|1|Brand takes over as CapCom
-0971426|1|Haise reports noise and 'snowflakes'
+0971426|2|Haise reports noise and 'snowflakes'
 0973607|2|Haise jokes with Brand about food
 0982946|2|Lovell jokes with Brand
-0990100|1|update, Griffin takes over as Flight Director
+0990100|1|Griffin takes over as Flight Director
 0994952|1|LM battery alarm
 1000038|2|Duke comes on line to talk about procedures
 1010603|1|Brand starts to read up CM power-up procedure
 1015531|2|Data received from Odyssey
-1021037|1|Deke Slayton questions about crew comfort
+1021037|2|Deke Slayton questions about crew comfort
 1043324|1|Lousma takes over as CapCom. Manual burn PAD read
 1051039|2|Lovell comments on the manual burn procedure
-1051729|2|One minute to burn
+1051729|1|One minute to burn
 1060200|1|Milton Windler takes over as Flight Director
 1061500|2|Long PAO update on the situation
 1082559|2|Lovell and Lousma tease each other

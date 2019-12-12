@@ -3484,7 +3484,7 @@
 0561621|PAO|Apollo Control, Houston. That last report from Lousma asked the 13 crew to reduce the electrical load on the spacecraft.|P
 0561703|CDR|Okay, Jack, say again that - ... for the powerdown; it's not in the pink pages, the 1-5.|T
 0561710|Lousma|Okay. We'd like you to go down that powerdown procedure until you get a Delta of 10 amps. Over.|C
-0561721|CDR|Roger ... [Long pause.|T
+0561721|CDR|Roger ...|T
 0561721|PAO|This is Apollo Control, Houston -|P
 0561750|Lousma|13, Houston. Did you copy our powerdown request?|C
 0561757|CMP|Roger, Jack. We're - yes, we're doing it right now.|T
@@ -3594,7 +3594,7 @@
 0565726|LMP|Are you saying fuel cell 1 and 2 - 1 and 2 are trying to hold up but we're leaking O<sub>2</sub> out of fuel cell 3? And you want me to shut the Reac valve on fuel cell 3? Did I hear you right?|T
 0565740|Lousma|That's affirmative. Close the Reac valve on fuel cell 3.|C
 0565748|LMP|Okay. I'll go to the SSR page. Do you want me to go through that whole smash for fuel cell shutdown? Is that correct?|T
-0565757|Lousma|Stand by. [Long pause.|C
+0565757|Lousma|Stand by.|C
 0565757|PAO|Apollo 13, now 180,098 nautical miles [333,541 km] from Earth. Velocity now reading 3,219 feet per second [981 m/s]. We're at 56 hours, 58 minutes now in the flight.|P
 0565824|Lousma|Okay, 13. We want you to turn the inline heaters off on fuel cell 1. Then we want you to go through the fuel cell shutdown procedure on fuel cell 3. Read back.|C
 0565840|CMP|Okay. Shut down the inline heater on fuel cell 1. We're proceeding with the shutdown, special subroutine, for fuel cell 3.|T
@@ -4260,7 +4260,7 @@
 0600600|Lousma|Aft Omni, Fred.|C
 0600607|LMP|You're down in the mud again, Jack. It appears that some other circuit is feeding through on there with you.|T
 0600614|Lousma|Roger. Aft Omni.|C
-0600642|Lousma|Aquarius, Aft Omni. [Long pause.|C
+0600642|Lousma|Aquarius, Aft Omni.|C
 0600642|PAO|This is Apollo Control. John Young sitting in at the Capcom console with Jack Lousma giving the benefit of his experience in Apollo 10.|P
 0600729|LMP|Okay. You're down in the mud again, Jack. Lots of background static.|T
 0600810|Lousma|Aft Omni, Aquarius.|C
@@ -4454,7 +4454,7 @@
 0610905|Lousma|Aquarius, Houston. We'd like you to recycle on the DAP load and change your DAP to 32021. Over.|C
 0610905|PAO|This is Apollo Control. We've got an ignition countdown clock running here now in Control Center showing 19 minutes, 19 seconds to ignition on the midcourse correction which will place Apollo 13 back on a free return trajectory. To recap the details of this maneuver, the ignition time would be at 61 hours, 29 minutes, 42 seconds Ground Elapsed Time. The velocity change would be 38 feet per second (11.6 m/s). Burn time, 30.7 seconds.|P
 0611105|Lousma|Okay, Aquarius. We're looking at your gimbal and we notice that we got a four-jet ullage loaded in the DAP and we gave you two jets on the PAD. But, let's go with what we've got loaded. It'll be a four-jet ullage.|C
-0611118|LMP|Okay. [Long pause.|T
+0611118|LMP|Okay.|T
 0611118|PAO|During this maneuver using the Descent Propulsion System, the throttle will be at 10 percent for the first 5 seconds of the burn and throttle up for the balance of the burn at 40 percent.|P
 0611140|LMP|Okay, Houston. How does the GDAs look now?|T
 0611145|Lousma|The GDAs are Go as they are. Press on.|C
@@ -4631,7 +4631,7 @@
 0631730|CDR|Hello, Houston; Aquarius.|T
 0631733|Lousma|Go ahead, Aquarius.|C
 0631736|CDR|Okay. I'm not ... you. I can monitor register 3. I can probably keep it out of ... - going into gimbal lock.|T
-0631749|Lousma|Roger. How are pitch and roll? [Long pause.|C
+0631749|Lousma|Roger. How are pitch and roll?|C
 0631749|PAO|This is Apollo Control.|P
 0631840|CDR|Okay. I think I can control the gimbal angles in 16 20 with the compressors the way they are, but I'll have to try Minimum Impulse - Just a minute.|T
 0631904|CMP|Okay, Jack. I've a question - one more question about Odyssey.|T
@@ -8680,7 +8680,7 @@
 1012642|CMP|Go ahead. You want - Repeat the one on panel 3 again, Vance.|T
 1012648|Brand|Okay. POWER AMPL, OFF.|C
 1012659|CMP|Okay. Go ahead.|T
-1012701|Brand|TRANSPONDER, OFF. AC INVERTER, 2, to OFF. Okay. Next, panel 250: CB BAT Bravo, POWER ENTRY/ POSTLANDING to open. Stand by 1. [Long pase]|C
+1012701|Brand|TRANSPONDER, OFF. AC INVERTER, 2, to OFF. Okay. Next, panel 250: CB BAT Bravo, POWER ENTRY/ POSTLANDING to open. Stand by 1.|C
 1012822|Brand|Okay, Jack. What I just gave you now on the backout is the only thing that's order critical. From here on, you can go to the steps for initiating the procedure, and backtrack. In other words, you should go to each of the panels that I read up and put the circuit breakers back to the base-line configuration - or the switches. Over.|C
 1012856|CMP|Okay, now here's - to accent, here's the sequence-critical steps: POWER AMFL, OFF; TRANSPONDER OFF; AC INVERTER, 2, OFF; and the last one on panel 250, CB BAT Baker POWER ENTRY/POSTLANDING, open; and then hit the steps in reverse order that you gave them to me, and back out, like then I would start on MDC 3 UP TELEMETRY, OFF - to OFF; and then AC INVERTER - AC1 BUS 1 to OFF; and then AC INVERTER, 2, OFF; AC INVERTER, 2, MAIN B to OFF. Is that the type of order that you want to back out of?|T
 1012959|Brand|That's affirm, but - just for kicks, let's go through these panels again, and I'll give you the - the position, just to make sure there can be no doubt.|C

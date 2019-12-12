@@ -3492,7 +3492,7 @@
 056:16:21|P|PAO|Apollo Control, Houston. That last report from Lousma asked the 13 crew to reduce the electrical load on the spacecraft.
 056:17:03|T|CDR|Okay, Jack, say again that - ... for the powerdown; it's not in the pink pages, the 1-5.
 056:17:10|C|Lousma|Okay. We'd like you to go down that powerdown procedure until you get a Delta of 10 amps. Over.
-056:17:21|T|CDR|Roger ... [Long pause.
+056:17:21|T|CDR|Roger ...
 056:17:21|P|PAO|This is Apollo Control, Houston -
 056:17:50|C|Lousma|13, Houston. Did you copy our powerdown request?
 056:17:57|T|CMP|Roger, Jack. We're - yes, we're doing it right now.
@@ -3602,7 +3602,7 @@
 056:57:26|T|LMP|Are you saying fuel cell 1 and 2 - 1 and 2 are trying to hold up but we're leaking O<sub>2</sub> out of fuel cell 3? And you want me to shut the Reac valve on fuel cell 3? Did I hear you right?
 056:57:40|C|Lousma|That's affirmative. Close the Reac valve on fuel cell 3.
 056:57:48|T|LMP|Okay. I'll go to the SSR page. Do you want me to go through that whole smash for fuel cell shutdown? Is that correct?
-056:57:57|C|Lousma|Stand by. [Long pause.
+056:57:57|C|Lousma|Stand by.
 056:57:57|P|PAO|Apollo 13, now 180,098 nautical miles [333,541 km] from Earth. Velocity now reading 3,219 feet per second [981 m/s]. We're at 56 hours, 58 minutes now in the flight.
 056:58:24|C|Lousma|Okay, 13. We want you to turn the inline heaters off on fuel cell 1. Then we want you to go through the fuel cell shutdown procedure on fuel cell 3. Read back.
 056:58:40|T|CMP|Okay. Shut down the inline heater on fuel cell 1. We're proceeding with the shutdown, special subroutine, for fuel cell 3.
@@ -4268,7 +4268,7 @@
 060:06:00|C|Lousma|Aft Omni, Fred.
 060:06:07|T|LMP|You're down in the mud again, Jack. It appears that some other circuit is feeding through on there with you.
 060:06:14|C|Lousma|Roger. Aft Omni.
-060:06:42|C|Lousma|Aquarius, Aft Omni. [Long pause.
+060:06:42|C|Lousma|Aquarius, Aft Omni.
 060:06:42|P|PAO|This is Apollo Control. John Young sitting in at the Capcom console with Jack Lousma giving the benefit of his experience in Apollo 10.
 060:07:29|T|LMP|Okay. You're down in the mud again, Jack. Lots of background static.
 060:08:10|C|Lousma|Aft Omni, Aquarius.
@@ -4462,7 +4462,7 @@
 061:09:05|C|Lousma|Aquarius, Houston. We'd like you to recycle on the DAP load and change your DAP to 32021. Over.
 061:09:05|P|PAO|This is Apollo Control. We've got an ignition countdown clock running here now in Control Center showing 19 minutes, 19 seconds to ignition on the midcourse correction which will place Apollo 13 back on a free return trajectory. To recap the details of this maneuver, the ignition time would be at 61 hours, 29 minutes, 42 seconds Ground Elapsed Time. The velocity change would be 38 feet per second (11.6 m/s). Burn time, 30.7 seconds.
 061:11:05|C|Lousma|Okay, Aquarius. We're looking at your gimbal and we notice that we got a four-jet ullage loaded in the DAP and we gave you two jets on the PAD. But, let's go with what we've got loaded. It'll be a four-jet ullage.
-061:11:18|T|LMP|Okay. [Long pause.
+061:11:18|T|LMP|Okay.
 061:11:18|P|PAO|During this maneuver using the Descent Propulsion System, the throttle will be at 10 percent for the first 5 seconds of the burn and throttle up for the balance of the burn at 40 percent.
 061:11:40|T|LMP|Okay, Houston. How does the GDAs look now?
 061:11:45|C|Lousma|The GDAs are Go as they are. Press on.
@@ -4639,7 +4639,7 @@
 063:17:30|T|CDR|Hello, Houston; Aquarius.
 063:17:33|C|Lousma|Go ahead, Aquarius.
 063:17:36|T|CDR|Okay. I'm not ... you. I can monitor register 3. I can probably keep it out of ... - going into gimbal lock.
-063:17:49|C|Lousma|Roger. How are pitch and roll? [Long pause.
+063:17:49|C|Lousma|Roger. How are pitch and roll?
 063:17:49|P|PAO|This is Apollo Control.
 063:18:40|T|CDR|Okay. I think I can control the gimbal angles in 16 20 with the compressors the way they are, but I'll have to try Minimum Impulse - Just a minute.
 063:19:04|T|CMP|Okay, Jack. I've a question - one more question about Odyssey.
@@ -8721,7 +8721,7 @@
 101:26:42|T|CMP|Go ahead. You want - Repeat the one on panel 3 again, Vance.
 101:26:48|C|Brand|Okay. POWER AMPL, OFF.
 101:26:59|T|CMP|Okay. Go ahead.
-101:27:01|C|Brand|TRANSPONDER, OFF. AC INVERTER, 2, to OFF. Okay. Next, panel 250: CB BAT Bravo, POWER ENTRY/ POSTLANDING to open. Stand by 1. [Long pase]
+101:27:01|C|Brand|TRANSPONDER, OFF. AC INVERTER, 2, to OFF. Okay. Next, panel 250: CB BAT Bravo, POWER ENTRY/ POSTLANDING to open. Stand by 1.
 101:28:22|C|Brand|Okay, Jack. What I just gave you now on the backout is the only thing that's order critical. From here on, you can go to the steps for initiating the procedure, and backtrack. In other words, you should go to each of the panels that I read up and put the circuit breakers back to the base-line configuration - or the switches. Over.
 101:28:56|T|CMP|Okay, now here's - to accent, here's the sequence-critical steps: POWER AMFL, OFF; TRANSPONDER OFF; AC INVERTER, 2, OFF; and the last one on panel 250, CB BAT Baker POWER ENTRY/POSTLANDING, open; and then hit the steps in reverse order that you gave them to me, and back out, like then I would start on MDC 3 UP TELEMETRY, OFF - to OFF; and then AC INVERTER - AC1 BUS 1 to OFF; and then AC INVERTER, 2, OFF; AC INVERTER, 2, MAIN B to OFF. Is that the type of order that you want to back out of?
 101:29:59|C|Brand|That's affirm, but - just for kicks, let's go through these panels again, and I'll give you the - the position, just to make sure there can be no doubt.
@@ -9383,7 +9383,7 @@
 110:09:15|C|Lousma|Yes. We're talking all that over now. We haven't decided.
 110:09:22|T|CDR|Okay.
 |P|PAO|"Jack Lousma was advising Lovell that we have - as I said before, about 161 hours of water on the LM ascent/descent stage based on current consumption rates and this does not include water in which we have available in the command and service module or in the portable life support systems, which would extend that margin somewhat beyond the 161 hours."
-|P|PAO|"And for some 45 minutes or so a fairly sizable group - about a dozen people or so, have been gathered around the flight director's console, discussing the procedures to be followed during reentry. Lovell just asked Jack Lousma what their procedure was being planned for the oxygen purge systems, the emergency oxygen supply carried with the backpack and lithium hydroxide canisters available. On these, Lousma told him that we haven't reached a conclusion on that. The meeting going on around the flight director's console at this time, is involved with that sort of thing. As well as what procedures to be followed as far as jettisoning the LM and service modules - all of these things being considered and discussed. At the present time Apollo 13 is 139,164 nautical miles from the Earth travelling at a speed of 4,745 feet per second. Also like to clarify again the situation with respect to the super critical helium tank and the burst disk which ruptured at about 180 <FONT color=#000080><I>[Should be 108]</I></FONT> hours - when the pressure got up to some 1937 pounds per square inch. This burst disk is in the tank for the express purpose of keeping pressure from going above levels which the tank can withstand. Had the disk failed to rupture, we had a backup procedure worked out whereby the tank would be vented manually. Of course, it was not necessary to put this backup into effect because the disk ruptured at about the level it was expected it would. With the burst disk rupturing, what we have effectively lost is the ability to resupply a pressure to the tanks as this pressure is drained off by burning the descent propulsion system engine. However, we do have what is called blow down capability in the engine. That's the pressurization that already exists and which is not lost by depressurizing the supercritical helium tank. This - the pressure that is in the propellant tanks remains there, is isolated from the supercritical helium tank and is not lost when the burst disk ruptures. With this pressurization we still have some 800 feet per second of DELTA V remaining and usable in the descent propulsion system engine."
+|P|PAO|"And for some 45 minutes or so a fairly sizable group - about a dozen people or so, have been gathered around the flight director's console, discussing the procedures to be followed during reentry. Lovell just asked Jack Lousma what their procedure was being planned for the oxygen purge systems, the emergency oxygen supply carried with the backpack and lithium hydroxide canisters available. On these, Lousma told him that we haven't reached a conclusion on that. The meeting going on around the flight director's console at this time, is involved with that sort of thing. As well as what procedures to be followed as far as jettisoning the LM and service modules - all of these things being considered and discussed. At the present time Apollo 13 is 139,164 nautical miles from the Earth travelling at a speed of 4,745 feet per second. Also like to clarify again the situation with respect to the super critical helium tank and the burst disk which ruptured at about 180 [Should be 108] hours - when the pressure got up to some 1937 pounds per square inch. This burst disk is in the tank for the express purpose of keeping pressure from going above levels which the tank can withstand. Had the disk failed to rupture, we had a backup procedure worked out whereby the tank would be vented manually. Of course, it was not necessary to put this backup into effect because the disk ruptured at about the level it was expected it would. With the burst disk rupturing, what we have effectively lost is the ability to resupply a pressure to the tanks as this pressure is drained off by burning the descent propulsion system engine. However, we do have what is called blow down capability in the engine. That's the pressurization that already exists and which is not lost by depressurizing the supercritical helium tank. This - the pressure that is in the propellant tanks remains there, is isolated from the supercritical helium tank and is not lost when the burst disk ruptures. With this pressurization we still have some 800 feet per second of DELTA V remaining and usable in the descent propulsion system engine."
 110:14:58|C|Lousma|Everything's running real smooth over in Timber Cove, Jim.
 110:15:05|T|CDR|Sounds pretty good. How about at El Lago?
 110:15:11|C|Lousma|Same. Everything's smooth there, too.
