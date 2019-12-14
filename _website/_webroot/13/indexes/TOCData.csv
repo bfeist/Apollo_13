@@ -1,6 +1,6 @@
 -351728|1|Countdown
 -230405|2|Press conference announcing crew change
--012957|1|PAO transcript begins
+-012957|1|PAO transcript begins - Maroon Team (Windler) on shift
 -005320|2|Ken Mattingly in Mission Control
 -001230|2|Comm checks
 -000015|2|Pre-Launch
@@ -15,6 +15,7 @@
 0001000|1|S-IVB staging
 0001231|1|S-IVB shutdown
 0001506|2|'Great to be up here again'
+0002524|2|Firing room speeches
 0003044|2|The Borman Specials
 0003148|2|Lovell's life belt on Apollo 8
 0005223|2|All balls
@@ -26,8 +27,9 @@
 0033825|2|Burnt smell in the LM tunnel
 0040054|1|Extracting the LM from S-IVB
 0045043|2|Pulling contrails
+0051633|2|Spiro Agnew speech
 0053013|2|Another navigational realignment
-0063600|1|Change of Shift to Gerry Griffin's Gold Team
+0063600|1|Gold Team (Griffin) relieves Maroon Team (Windler)
 0070938|2|Vance Brand takes over as CapCom
 0071705|2|Earth weather photography begins
 0080733|1|Discussing PTC problems
@@ -40,8 +42,9 @@
 0114157|2|Halls of Montezuma
 0120815|2|Starting to prepare for bed
 0130800|1|Sleep period starts
-0135700|2|Change of shift to Gene Kranz' White Team
+0135700|2|White Team (Kranz) relieves Gold Team (Griffin)
 0215500|2|Joe Kerwin takes over as CapCom
+0215520|1|Black Team (Lunney) relieves White Team (Kranz)
 0231114|1|Sleep period ends
 0231651|2|Sleep report
 0232350|2|Questions about the Saturn V booster
@@ -69,7 +72,7 @@
 0305742|1|TV Transmission
 0305751|2|Haise and Lovell have fun with the sleeping hammock
 0310213|2|End of Day 2 television broadcast
-0310400|1|Milton Windler takes over from Glynn Lunney
+0310400|1|Maroon Team (Windler) relieves Black Team (Lunney)
 0310544|2|Discussing photography of Comet Bennett
 0313400|2|PAO update, Swigert's P23s
 0315922|2|Brand talks about fuel cell temperatures
@@ -86,6 +89,7 @@
 0345854|2|Swigert and Brand discuss whether course correction is needed
 0352707|2|Discussing the Supercritical helium pressure in the Lunar Module
 0364210|2|Crew starts to get ready to sleep
+0365007|1|Gold Team (Griffin) relieves Maroon Team (Windler)
 0370715|2|Jack Lousma takes over as CapCom
 0371209|2|Lousma and Lovell tease each other over CapCom duties
 0371227|1|Sleep period starts
@@ -101,7 +105,7 @@
 0475732|2|Kerwin and Swigert discuss a minor problem with Command Module optics
 0480004|2|Kerwin instructs on how to observe Comet Bennett
 0480625|2|O2 tank 2 sensor discussed again
-0490600|1|Gene Kranz takes over from Gerry Griffin as Flight Director with White Team
+0490600|1|White Team (Kranz) relieves Gold Team (Griffin)
 0490817|2|Swigert talks about P52 realignment
 0494827|2|Kerwin and Swigert talk about the cryo tank problems
 0502655|2|Kerwin and Haise talk about the LM helium tank
@@ -148,6 +152,7 @@
 0572354|2|Swigert reports O2 tank pressure is falling
 0573447|2|Lousma reads procedure to turn on LM power
 0574131|1|Lousma orders the crew to move into the LM
+0574544|1|Black Team (Lunney) relieves White Team (Kranz)
 0575755|1|LM radio signal received
 0580039|2|Didn't think I'd be back in this soon.
 0580226|2|Haise and Lovell program LM computer
@@ -168,21 +173,22 @@
 0612853|1|GO for the course correction burn
 0623357|2|Flight Plan updated
 0630535|2|PC+2 PAD update
-0640301|1|First mention of CO2 issues
+0640301|2|First mention of CO2 issues
 0643743|2|Joe Kerwin takes over as CapCom
 0644714|2|Trying to reconfigure the radio to low power
-0661300|1|Gerry Griffin takes over from Glynn Lunney
+0661300|1|Gold Team (Griffin) relieves Black Team (Lunney)
 0672300|2|Long PAO update on situation
 0673800|2|President Nixon's reaction mentioned
 0680333|2|Lovell speculates on "last lunar mission for a long time."
 0710617|2|Haise and Kerwin joke about
-0722847|1|Charlie Duke comes on line to talk about operations
+0722847|2|Charlie Duke comes on line to talk about operations
 0722932|2|Haise and Duke joke about Duke's measles
 0730911|2|Haise inquires after Neil and Buzz
 0730937|2|Vance Brand takes over as CapCom
 0734125|2|Lovell concerned about the Sun check
 0740748|2|Gimbal lock threatens
-0745319|1|Charlie Duke talks about procedures
+0745300|1|White Team (Kranz) relieves Gold Team (Griffin)
+0745319|2|Charlie Duke talks about procedures
 0752334|2|Lovell can finally recognize stars
 0752815|2|Brand gives a PC+2 PAD update
 0763031|2|Review of mission rules for PC+2 burn
@@ -206,7 +212,7 @@
 0820104|1|Lousma takes over as CapCom
 0821628|1|Lovell and Swigert power down LM computer
 0822805|2|Lousma teases Swigert
-0823000|1|Milton Windler takes over as Flight Director
+0823000|1|Maroon Team (Windler) relieves White Team (Kranz)
 0823812|2|Swigert teases Lousma
 0824337|2|Lousma teases Haise
 0832829|1|Lousma gives the crew an update on mission plans
@@ -218,7 +224,8 @@
 0870424|2|Lousma briefs Lovell on attitude control using the Earth as reference
 0871706|2|Lousma reads up manual midcourse instructions PAD
 0875137|2|Lovell and Lousma joke about the LRL quarantine
-0895823|1|Joe Kerwin takes over as CapCom
+0890000|1|Black Team (Lunney) relieves Maroon Team (Windler)
+0895823|2|Joe Kerwin takes over as CapCom
 0900843|1|Kerwin starts to talk the crew through CO2 adapter build
 0902233|2|Kerwin jokes about Swigert's taxes
 0912106|2|Tom Stafford speaks to the crew
@@ -236,26 +243,27 @@
 0971426|2|Haise reports noise and 'snowflakes'
 0973607|2|Haise jokes with Brand about food
 0982946|2|Lovell jokes with Brand
-0990100|1|Griffin takes over as Flight Director
+0984900|1|Gold Team (Griffin) relieves Black Team (Lunney)
 0994952|1|LM battery alarm
 1000038|2|Duke comes on line to talk about procedures
-1010603|1|Brand starts to read up CM power-up procedure
+1010603|2|Brand starts to read up CM power-up procedure
 1015531|2|Data received from Odyssey
 1021037|2|Deke Slayton questions about crew comfort
-1043324|1|Lousma takes over as CapCom. Manual burn PAD read
+1043324|2|Lousma takes over as CapCom. Manual burn PAD read
 1051039|2|Lovell comments on the manual burn procedure
 1051729|1|One minute to burn
-1060200|1|Milton Windler takes over as Flight Director
+1060200|1|Maroon Team (Windler) relieves Gold Team (Griffin)
 1061500|2|Long PAO update on the situation
 1082559|2|Lovell and Lousma tease each other
 1085431|1|Supercritical helium bursts
 1091330|2|Spurious battery alarm
 1100053|2|Lovell banters to Lousma about sleeping arrangements in the LM
 1101458|2|Lovell and Lousma talk about home
-1105432|1|Lousma and Swigert talk about recharging CM batteries
+1105432|2|Lousma and Swigert talk about recharging CM batteries
 1113327|2|Swigert and Lousma tease each other
 1120736|2|Haise and Lousma banter about LM's record endurance
-1131346|1|Kerwin takes over as CapCom
+1125000|1|Black Team (Lunney) relieves Maroon Team (Windler)
+1131346|2|Kerwin takes over as CapCom
 1143059|2|Swigert and Kerwin talk about the CO2 adapter
 1150017|2|Swigert makes bathroom jokes to Kerwin
 1170545|2|Advance warning on LM water tank running low
@@ -265,7 +273,9 @@
 1185650|2|Lovell finds frozen hotdogs
 1202227|2|Kerwin reads up preliminary timeline
 1204236|2|Kerwin jokes about Deke Slayton
+1204600|1|    relieves Black Team (Lunney)
 1205513|1|Brand takes over as CapCom
+1210720|2|Famous footage of Fred Haise
 1215055|2|Brand reads up a stowage list
 1221804|2|Crew confesses to having removed their bio sensors
 1225810|2|Swigert talks about not having moon rock boxes
@@ -276,8 +286,41 @@
 1252754|2|Brand stalls the crew about the reentry checklist
 1254028|2|Deke Slayton distracts the crew
 1260640|1|Lovell demands time for the crew to learn the new checklist
-1261443|1|Ken Mattingly takes over the comm for checklist reading
+1261443|2|Ken Mattingly takes over the comm for checklist reading
+1273100|1|Maroon Team (Windler) relieves ______
+1280109|2|Lovell jokes with Mattingly and Slayton
+1281632|2|Slayton tells Haise and Lovell to sleep
+1282631|2|Brand reads LM Jettison checklist
+1285858|2|Lovell woken up by radio chatter
+1290826|2|Lovell demands a stop to checklist changes
+1294300|2|Long PAO update
+1303600|2|Long PAO update
+1322845|2|Lousma takes over as CapCom
+1323701|2|Swigert tells it’s too cold to sleep
+1325250|2|Slayton suggests the crew take stimulants for landing
+1332208|2|Lousma tells the crew to start activating LM
+1335350|2|Lovell and Lousma joke about Earth getting bigger
+1355500|1|White Team (Kranz) relieves Maroon Team (Windler)
+1345600|2|Long PAO update
+1350235|2|LM navigation restored
+1354721|2|Lovell still looking for Fra Mauro
+1360459|2|Kerwin takes over as CapCom, course correction PAD
+1361045|1|Swigert starts to power up Odyssey
+1364643|2|Kerwin teases Lovell
+1373950|2|Haise reports on the last course correction
+1374738|2|Slayton reminds crew of stimulants
 1380206|1|Service Module Jettison
+1381500|2|PAO lists guest present in Mission Control
+1382406|2|Kerwin teases Lovell
+1384029|2|Kerwin reads entry PAD
+1395045|2|Odyssey navigation discussed
+1400952|2|Odyssey back on internal power
+1405239|2|Swigert aligns CM platform
+1410222|2|Lovell is last to leave Aquarius
 1412833|1|LM Jettison
+1414812|2|Kerwin reads final entry PAD
+1422228|2|Swigert thanks Mission Control
+1423325|2|Swigert teases Kerwin
 1423836|1|Re-entering Earth's Atmosphere
 1425440|1|Recovering crew from spacecraft
+1433800|1|Crew onboard USS Iwo Jima

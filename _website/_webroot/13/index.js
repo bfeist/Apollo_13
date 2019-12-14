@@ -1362,7 +1362,7 @@ function updateDashboard(timeId) {
 
     //Display distance from Earth
     if (calculateDistanceFromEarth) {
-        if (timeIdInSeconds > 0 && timeIdInSeconds < timeStrToSeconds("195:18:18")) {
+        if (timeIdInSeconds > 0 && timeIdInSeconds < timeStrToSeconds("142:54:40")) {  //A13 splashdown time
             for (counter = 0; counter < gTelemetryData.length; counter++) {
                 if (timeStrToSeconds(gTelemetryData[counter][0]) < timeIdInSeconds) {
                     if (gTelemetryData[counter][2] !== "") {
@@ -1395,26 +1395,24 @@ function updateDashboard(timeId) {
         var dashDistanceEarth = '<span class="value">' + numberWithCommas(currentDistanceEarthNM) + '</span> nautical miles (<span class="value">' + numberWithCommas(currentDistanceEarthKM) + '</span> km)';
         $('#dashLunarOrbit').css('display', 'none');
 
-    } else { //in lunar orbit
-        dashDistanceEarth = '<span class="value">207,559</span> nautical miles (<span class="value">384,399.2</span> km) average';
-        //Display Mission Stage
-        for (counter = 0; counter < gOrbitData.length; counter ++) {
-            if (timeStrToSeconds(gOrbitData[counter][0]) <= timeIdInSeconds && timeStrToSeconds(gOrbitData[counter][2]) >= timeIdInSeconds) {
-                var orbitNum = gOrbitData[counter][1];
-                break;
-            }
-        }
-        var dashLunarOrbit = '<span class="value">In lunar orbit.</span> Orbit: <span class="value">' + orbitNum + '/31</span>';
-        var dashLunarOrbitSelector = $('#dashLunarOrbit');
-        dashLunarOrbitSelector.css('display', 'block');
-        dashLunarOrbitSelector.html(dashLunarOrbit);
     }
+    // Unneeded for 13
+    // else { //in lunar orbit
+    //     dashDistanceEarth = '<span class="value">207,559</span> nautical miles (<span class="value">384,399.2</span> km) average';
+    //     //Display Mission Stage
+    //     for (counter = 0; counter < gOrbitData.length; counter ++) {
+    //         if (timeStrToSeconds(gOrbitData[counter][0]) <= timeIdInSeconds && timeStrToSeconds(gOrbitData[counter][2]) >= timeIdInSeconds) {
+    //             var orbitNum = gOrbitData[counter][1];
+    //             break;
+    //         }
+    //     }
+    //     var dashLunarOrbit = '<span class="value">In lunar orbit.</span> Orbit: <span class="value">' + orbitNum + '/31</span>';
+    //     var dashLunarOrbitSelector = $('#dashLunarOrbit');
+    //     dashLunarOrbitSelector.css('display', 'block');
+    //     dashLunarOrbitSelector.html(dashLunarOrbit);
+    // }
     $('#dashDistanceEarth').html(dashDistanceEarth);
 
-    //attempts at formulaic velocity calculation. Doesn't work due to moon's gravitational influence on the parabola formula
-    //var dashDistanceNM = -1 * (8486888657 * Math.pow(timeIdInSeconds, 2) / 8820689674156545) + ((1881583668117446 * timeIdInSeconds) / 1764137934831309) + (811004768622602161 / 2940229891385515);
-    //left half
-    //var dashDistanceNM = -1 * (9987355187 * Math.pow(timeIdInSeconds, 2) / 3604494879727504) + ((5611270876937931 * timeIdInSeconds) / 3604494879727504) - (35715506986568310715 / 1802247439863752);
 }
 
 function manageOverlaysAutodisplay(timeId) {
@@ -1510,7 +1508,7 @@ function hideDashboardOverlay() {
 
 //app tab content
 function openMOCRviz() {
-    closeGeosampleOverlay();
+    // closeGeosampleOverlay(); //NA for 13
 
     var html = $('#MOCROverlayTemplate').html();
     html = html.replace(/@ch/g, gActiveChannel);
@@ -2002,14 +2000,14 @@ jQuery(function ($) {
     $("#photoTab").click(function(){
         ga('send', 'event', 'tab', 'click', 'photo');
         activateAppTab(this.id);
-        closeGeosampleOverlay();
+        // closeGeosampleOverlay(); // NA for 13
         closeMOCRviz();
     });
 
     $("#mocrTab").click(function(){
         ga('send', 'event', 'tab', 'click', 'mocr');
         activateAppTab(this.id);
-        closeGeosampleOverlay();
+        // closeGeosampleOverlay(); // NA for 13
         openMOCRviz();
     });
 
@@ -2017,7 +2015,14 @@ jQuery(function ($) {
         ga('send', 'event', 'tab', 'click', 'geosample');
         activateAppTab(this.id);
         closeMOCRviz();
-        openGeosampleOverlay();
+        // openGeosampleOverlay(); //NA for 13
+    });
+
+    $("#spacecraftTab").click(function(){
+        ga('send', 'event', 'tab', 'click', 'geosample');
+        activateAppTab(this.id);
+        closeMOCRviz();
+        openSpacecraftOverlay(); //NA for 13
     });
 });
 
