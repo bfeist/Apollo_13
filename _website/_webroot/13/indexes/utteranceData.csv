@@ -4957,7 +4957,7 @@
 0661310|Kerwin|Okay, Jim. How's the comm now?|C
 0661312|CDR|Function switch ... There's still a lot of background noise, Joe.|T
 0661321|Kerwin|Okay. We'll look at it some more. Your comm down to us is excellent now.|C
-0661321|PAO|This is Apollo Control. Hand over from the Black team headed up by Glynn Lunney to the Gold team headed up by Flight Director Gerry Griffin is under way at the moment. We're anticipating within the next several minutes, change of shift press briefing in the News Center Auditorium or News Center Briefing Room, which will be localized to the briefing room only. The Air-Ground will be left up on the PAO release circuit. We understand it will be in the big Auditorium. And further advice of the time and participants of this press conference will be forthcoming. This is Apollo Control standing by.|P
+0661700|PAO|This is Apollo Control. Hand over from the Black team headed up by Glynn Lunney to the Gold team headed up by Flight Director Gerry Griffin is under way at the moment. We're anticipating within the next several minutes, change of shift press briefing in the News Center Auditorium or News Center Briefing Room, which will be localized to the briefing room only. The Air-Ground will be left up on the PAO release circuit. We understand it will be in the big Auditorium. And further advice of the time and participants of this press conference will be forthcoming. This is Apollo Control standing by.|P
 0661827|CDR|Houston, Aquarius.|T
 0661831|Kerwin|Aquarius, Houston. Go ahead.|C
 0661836|CDR|The noise we're experiencing is similar to what we had sometime before when you switched stations.|T
@@ -4977,7 +4977,7 @@
 0663621|Kerwin|We are going to try to improve the comm and telemetry by temporarily breaking lock and reacquiring. You may hear some noise in your headset.|C
 0663633|CDR|Okay. Couldn't be any more noise than we're getting now.|T
 0663636|Kerwin|Right.|C
-0663636|PAO|This is Apollo Control at 66 hours, 37 minutes. Flight Director Glynn Lunney is still in the Control's PAO center. We will notify newsmen on this line when he leaves for the MSC Auditorium. Apollo 13 now is 197,424 nautical miles [365,629 km] from Earth. It's velocity is 2,953 feet per second [900 m/s].|P
+0663727|PAO|This is Apollo Control at 66 hours, 37 minutes. Flight Director Glynn Lunney is still in the Control's PAO center. We will notify newsmen on this line when he leaves for the MSC Auditorium. Apollo 13 now is 197,424 nautical miles [365,629 km] from Earth. It's velocity is 2,953 feet per second [900 m/s].|P
 0663856|CDR|Hello, Houston; Aquarius.|T
 0663859|Kerwin|Aquarius, Houston. Go ahead.|C
 0663903|CDR|Okay. Now that there's no noise, you can give ...|T
@@ -4989,7 +4989,8 @@
 0664026|Kerwin|Okay, why don't we stay where we are for a few minutes.|C
 0670242|CDR|Okay. Houston, Aquarius. We're deadbanding in the new attitude.|T
 0670248|Kerwin|Aquarius, Houston. Roger that, and your comm is good.|C
-0670248|PAO|This is Apollo Control at 67 hours, 23 minutes. Flight Director Glynn Lunney is still in the Mission Control Center. There has been considerable discussions and meetings on the floor here since his shift changed. He and Flight Director Gerry Griffin, Director of Flight Operations - Flight Crew Operations Deke Slayton, the Apollo Mission Director Chet Lee, the Apollo Program Director Rocco Petrone and other management officials have been holding some discussions. We have no estimate on when Mr. Lunney will be able to get away at this time. We will attempt to summarize for you some of the discussions that have been going on here. We are still leaning toward the burn at pericynthion plus 2 hours, that is the Descent Propulsion burn at 79 hours, 27 minutes; 850 feet per second [259 m/s] as an option. A number of people are taking a look at the - what is being termed as super fast return, would require a larger burn at pericynthion plus an hour and a half. This would bring us to a splash time of 118 hours vs. 142 hours. However, to accomplish this, we would have to jettison the Service Module. Preliminary data indicates that we may have a thermal problem on the way back without the Service Module. There are also some other aspects that need to be looked into. This option is being held open and is being worked and will be for the next several hours. However, as I say, all the officials here are still leaning toward the pericynthion plus 2 hours, with a 142-hour return. In connection with the super fast return, Astronaut Gene Cernan has been doing some work in the trainer on star visibility problems, manual reaction control, manual throttle work, and this option will be kept open for some time. Another problem with the super fast return is that we can't stand as much misalignment with the inertial platform on a long burn as we can with the 142-hour return. At the present time, we would feel more comfortable with the 142 hours return. We expect to be able to get a program 52 or a platform align, the program for aligning the inertial platform with the Alignment Optical Telescope in the Lunar Module, after the spacecraft arrives in the shadow of the Moon. There is a 30-minutes period where we can look at the spacecraft through telemetry and watch the - how the alignment goes prior to the time that we lose signal. We are 9 hours, 41 minutes away from LOS, but there is a half-hour period when the spacecraft will be in the shadow of the Moon and an alignment can be attempted. If we are unable to align, we think that we can do the burn with the present alignment. The result so far of tracking since the last Descent Propulsion burn indicates that the present alignment is good. We are looking at a plan now that after the burn, we would power down to 17 amps; that's a minimum power down. With that power down, we have enough water to last to 155 hours, Ground Elapsed Time. In addition to that, we would have the water from the Portable Life Support Systems. The water use rate at this 17-amp power usage would be 2.68 pounds per hour. These projections also include two power-ups for mid course corrections on their way home. And a procedure has been worked out to use the Command Module's lithium hydroxide cartridge for CO<sub>2</sub> removal and we are presently yawing manually 90 degrees every hour for Passive Thermal Control; after the burn, we may put a rate into the spacecraft, or roll rate into the spacecraft, and let it go and attempt to set up some type of Passive Thermal Control that does not require complete manual operation. The Flight Dynamics Officer reports that if the burn is a reasonable one, that they would schedule midcourse probably at 24 hours out, instead of 12 hours. That would be an elapsed time of 4 hours. Stand by please.|P
+0672337|PAO|This is Apollo Control at 67 hours, 23 minutes. Flight Director Glynn Lunney is still in the Mission Control Center. There has been considerable discussions and meetings on the floor here since his shift changed. He and Flight Director Gerry Griffin, Director of Flight Operations - Flight Crew Operations Deke Slayton, the Apollo Mission Director Chet Lee, the Apollo Program Director Rocco Petrone and other management officials have been holding some discussions. We have no estimate on when Mr. Lunney will be able to get away at this time. We will attempt to summarize for you some of the discussions that have been going on here. We are still leaning toward the burn at pericynthion plus 2 hours, that is the Descent Propulsion burn at 79 hours, 27 minutes; 850 feet per second [259 m/s] as an option. A number of people are taking a look at the - what is being termed as super fast return, would require a larger burn at pericynthion plus an hour and a half. This would bring us to a splash time of 118 hours vs. 142 hours. However, to accomplish this, we would have to jettison the Service Module. Preliminary data indicates that we may have a thermal problem on the way back without the Service Module. There are also some other aspects that need to be looked into. This option is being held open and is being worked and will be for the next several hours. However, as I say, all the officials here are still leaning toward the pericynthion plus 2 hours, with a 142-hour return. In connection with the super fast return, Astronaut Gene Cernan has been doing some work in the trainer on star visibility problems, manual reaction control, manual throttle work, and this option will be kept open for some time. Another problem with the super fast return is that we can't stand as much misalignment with the inertial platform on a long burn as we can with the 142-hour return. At the present time, we would feel more comfortable with the 142 hours return. We expect to be able to get a program 52 or a platform align, the program for aligning the inertial platform with the Alignment Optical Telescope in the Lunar Module, after the spacecraft arrives in the shadow of the Moon. There is a 30-minutes period where we can look at the spacecraft through telemetry and watch the - how the alignment goes prior to the time that we lose signal. We are 9 hours, 41 minutes away from LOS, but there is a half-hour period when the spacecraft will be in the shadow of the Moon and an alignment can be attempted. If we are unable to align, we think that we can do the burn with the present alignment. The result so far of tracking since the last Descent Propulsion burn indicates that the present alignment is good. We are looking at a plan now that after the burn, we would power down to 17 amps; that's a minimum power down. With that power down, we have enough water to last to 155 hours, Ground Elapsed Time. In addition to that, we would have the water from the Portable Life Support Systems. The water use rate at this 17-amp power usage would be 2.68 pounds per hour. These projections also include two power-ups for mid course corrections on their way home. And a procedure has been worked out to use the Command Module's lithium hydroxide cartridge for CO<sub>2</sub> removal and we are presently yawing manually 90 degrees every hour for Passive Thermal Control; after the burn, we may put a rate into the spacecraft, or roll rate into the spacecraft, and let it go and attempt to set up some type of Passive Thermal Control that does not require complete manual operation. The Flight Dynamics Officer reports that if the burn is a reasonable one, that they would schedule midcourse probably at 24 hours out, instead of 12 hours. That would be an elapsed time of 4 hours. Stand by please.|P
+0673010|PAO|And we expect communications to improve a little bit after S-IVB impact on the lunar surface; the S-IVB frequency is giving us a little trouble with communications. After the impact we will not have to turn the transponder in the spacecraft off, during handovers between tracking stations. That's the situation as it stands now; we will keep you advised as to Flight Director Lunney's availability. This is Mission Control Houston.|P
 0673209|Kerwin|Aquarius, Houston. Over.|C
 0673215|CDR|Go ahead, Houston.|T
 0673216|Kerwin|Okay, Jim. In order to save on an amp or 2 of power here, we'd like you to go to the Down Voice Backup comm configuration, which is pulling the power and circuit breaker and going to Down Voice Backup. If we get into a comm problem, all you have to do is reverse that configuration, and it should be good again. Over.|C
@@ -5009,7 +5010,7 @@
 0673630|CDR|Okay.|T
 0673635|CMP|...|T
 0673721|CMP|...|T
-0673721|PAO|This is Apollo Control at 67 hours, 38 minutes. President Nixon talked with NASA Administrator Dr. Thomas O. Paine at 7:45 am CST today. Dr. Paine, who arrived in Houston by NASA aircraft at 6:40 am CST from Washington, was in Mission Control and gave the President an update on the Apollo 13 Mission. Mission Control is in direct contact with the White House. We'll continue to stand by now for live air-to-ground transmissions.|P
+0673824|PAO|This is Apollo Control at 67 hours, 38 minutes. President Nixon talked with NASA Administrator Dr. Thomas O. Paine at 7:45 am CST today. Dr. Paine, who arrived in Houston by NASA aircraft at 6:40 am CST from Washington, was in Mission Control and gave the President an update on the Apollo 13 Mission. Mission Control is in direct contact with the White House. We'll continue to stand by now for live air-to-ground transmissions.|P
 0673819|CMP|...|T
 0673830|CDR|I guess they're going to take ...|T
 0673835|CMP|...|T
@@ -5030,7 +5031,7 @@
 0674108|CDR|... all three ...|T
 0674115|CMP|...|T
 0674125|CMP|Seems like ... the burn ...|T
-0674125|PAO|This is Apollo Control. It's 67 hours, 43 minutes. The Lunar Module is configured in a VOX mode of communication and what you are hearing is the crewmen talking among themselves. They are not calling Houston. We are not in air-to-ground transmission but you will be able to hear the crewmen talking among themselves when they are in this mode.|P
+0674357|PAO|This is Apollo Control. It's 67 hours, 43 minutes. The Lunar Module is configured in a VOX mode of communication and what you are hearing is the crewmen talking among themselves. They are not calling Houston. We are not in air-to-ground transmission but you will be able to hear the crewmen talking among themselves when they are in this mode.|P
 0674424|CDR|... ...|T
 0674501|CMP|...|T
 0674611|CMP|...|T
@@ -5069,7 +5070,9 @@
 0680827|CDR|Maybe it should reverse itself. I think ...|T
 0680831|CMP|...|T
 0680833|CDR|Yes.|T
-0680833|PAO|This is Apollo Control at 68 hours, 13 minutes. Flight Director Glynn Lunney and four of his Flight Controllers are on their way now to Building 1 for the News Conference. Flight Director Glynn Lunney and four of the flight controllers from his team are enroute to the Building 1 Auditorium for a News Conference. Accompanying Glynn Lunney will be Tom Weichel, the Retrofire Officer; Clint Burton, EECOM; Hal Loden, Control; and Merlin Merritt.|P
+0681324|PAO|This is Apollo Control at 68 hours, 13 minutes. Flight Director Glynn Lunney and four of his Flight Controllers are on their way now to Building 1 for the News Conference. Flight Director Glynn Lunney and four of the flight controllers from his team are enroute to the Building 1 Auditorium for a News Conference. Accompanying Glynn Lunney will be Tom Weichel, the Retrofire Officer; Clint Burton, EECOM; Hal Loden, Control; and Merlin Merritt.|P
+0681703|PAO|This is Apollo Control at 68 hours, 17 minutes. An additional participant of the news conference will be Major General David O. Jones, United States Air Force, who commands the Department of Defense Recovery Forces.|P
+0682123|PAO|This is Apollo Control at 68 hours, 21 minutes. Apollo 13's distance from Earth now is 200,396 nautical miles [371,133 km]. Velocity 2,919 feet per second [890 m/s].|P
 0682548|CDR|Aquarius, radio check.|T
 0682552|Kerwin|Aquarius, this is Houston. Go ahead.|C
 0682559|CDR|Maneuver complete.|T
@@ -5176,7 +5179,9 @@
 0694908|CDR|Yes. I'll ... that.|T
 0694934|LMP|Jim, that spacecraft's looking pretty close; a about 86 or ...|T
 0694950|CDR|Well, ...|T
-0694950|PAO|This is Apollo Control at 70 hours, 12 minutes. Apollo 13 now 203,670 nautical miles [377,197 km] from Earth; velocity, 2,910 feet per second [887 m/s]. We'll continue to stay up live for any air-to-ground transmissions.|P
+0701218|PAO|This is Apollo Control at 70 hours, 12 minutes. Apollo 13 now 203,670 nautical miles [377,197 km] from Earth; velocity, 2,910 feet per second [887 m/s]. We'll continue to stay up live for any air-to-ground transmissions.|P
+0702452|PAO|This is Apollo Control at 70 hours, 24 minutes. A decision has been made to perform the pericynthian plus 2-hour maneuver. This will be a DAP Descent Propulsion System burn of approximately 900 feet a second [274 m/s], and will bring landing in the Pacific Ocean at 142 hours elapsed time. We'll be passing up to the crew a procedure shortly for them to perform a Sun check in the alignment optical telescope of the Lunar Module so that we may better understand what the present LM inertial platform alignment is. If, as a result of this Sun check, the platform looks good, we will perform the maneuver without a platform realignment. If it does not look good and the limits on this have been defined as plus or minus 1 degree, we will do what is termed an Earth-Sun option alignment before going into the dark behind the Moon, and set up the attitude of the spacecraft so that the crew can mark on a good star while they're in the dark to check the Earth-Sun alignment that they will perform previously. Apollo 13 now is 203,957 nautical miles [377,728 km] from Earth; velocity is 2,894 feet per second [882 m/s]. Jim Lovell, the spacecraft commander, and Jack Swigert the Command Module Pilot have just started a 6-hour rest period. Lunar Module Pilot Fred Haise is awake at the present time. We will be passing information on this decision up to the crew very shortly. This is Mission Control, Houston."|P
+0703204|PAO|This is Apollo Control at 70 hours 32 minutes. The elapsed time of this planned Lunar Module engine manuever is approximately 79 hours, 25 minutes. We expect to do the Sun check at about 74 hours elapsed time. We're now 6 hours, 36 minutes away from Loss Of Signal, when the spacecraft will go behind the Moon. We'll stand by for any air-ground now.|P
 0705215|Kerwin|Aquarius, Houston. Over.|C
 0705220|LMP|Go ahead, Houston.|T
 0705223|Kerwin|Okay, Fred. I have a few words for you on some things we want to do in the next few hours, and in order to get good comm for that and also in order to give FIDO a few minutes of ranging, I want to have you put the Power Amplifier circuit breaker in panel 16 in, the Voice Function switch to Voice, and Ranging Function switch to Ranging. Over.|C
@@ -5225,7 +5230,7 @@
 0722851|Duke|Roger, Freddo. Reading you-|C
 0722852|LMP|Okay, Houston, Aquarius. Go ahead.|T
 0722854|Duke|Okay, Freddo. Reading you 5-by. The procedure I'm going to read up to you is a Sun check for the - to see if we're going to need an alignment or not. If you'll get out your G&amp;N dictionary and open it to P52, page 34, we'll start at the bottom. Over.|C
-0722854|PAO|The CapCom is Charlie Duke.|P
+0722921|PAO|The CapCom is Charlie Duke.|P
 0722923|LMP|Okay. Stand by 1.|T
 0722932|LMP|Sounds like you broke out, Charlie.|T
 0722936|Duke|Yes, finally, Freddo. I've no longer got the red spots.|C
@@ -5605,7 +5610,7 @@
 0741047|LMP|We're manually working our way around it, Vance.|T
 0741053|Brand|Okay.|C
 0741054|CDR|Pitch is 083.|T
-0741054|PAO|That's John Young talking to Apollo 13 now.|P
+0741100|PAO|That's John Young talking to Apollo 13 now.|P
 0741102|CDR|How do I work my way around it? I'm 58g's, and I want yaw 231, right? I think they screwed up on our - our numbers again.|T
 0741126|LMP|Zero out the needles; we're heading that way, and then we'll stop and talk about it.|T
 0741153|CDR|No. Pitch is 83. Pitch should be up here. ... ... What's the number, 552?|T
@@ -5706,7 +5711,7 @@
 0745210|Brand|And if you're ready to copy, Charlie is going to be on in a minute with some recommended checklist changes for your upcoming burn. Over.|C
 0745225|LMP|Okay. Stand by 1.|T
 0745226|CDR|I'm going to erase this.|T
-0745226|PAO|This is Apollo Control, Houston. It's 74 hours, 53 minutes. In Mission Control we've had a change of shift. Gene Kranz White Team now aboard. Presently our space digital display -|P
+0745300|PAO|This is Apollo Control, Houston. It's 74 hours, 53 minutes. In Mission Control we've had a change of shift. Gene Kranz White Team now aboard. Presently our space digital display -|P
 0745319|Duke|Hello, Aquarius; Houston. Do you read? Over.|C
 0745328|LMP|Yes. Stand by 1, Charlie.|T
 0745348|LMP|Okay. Which book are you going to give me some words in, Charlie?|T
@@ -5735,14 +5740,14 @@
 0750037|LMP|Yes. I'm still with you, Charlie; go ahead.|T
 0750039|Duke|Okay, Freddo, good show. On row 4, starting with ECS: Suit Fan 1, Close; Glycol Pump Auto Transfer, Close. Under comm: VHF B Transmitter, Open; VHF A Receiver, Open. Under PGNS: Signal Strength Display, Open; IMU Operate, Close. Under EPS, row 5: Cross Tie Bus, Open; and Inverter 1, Close. Over.|C
 0750135|LMP|Okay, stand by just 1.|T
-0750135|PAO|That's Charlie Duke at the capsule communicator's position, passing up contingent - changes to the contingency procedures to Fred Haise aboard Aquarius. We're at 75 hours, 2 minutes now into the flight; continuing to monitor. This is Apollo Control.|P
+0750141|PAO|That's Charlie Duke at the capsule communicator's position, passing up contingent - changes to the contingency procedures to Fred Haise aboard Aquarius. We're at 75 hours, 2 minutes now into the flight; continuing to monitor. This is Apollo Control.|P
 0750201|LMP|Okay, panel 11 configuration, top row: AC Bus B, I want the S-Band Antenna, Open, ORDEAL, Open; AC Bus A, Tape Recorder, Open. Second row, under RCS System A, I want Main SOV through Quad 1 TCA, all Closed. Commander's X-Pointer under Flight Displays, Open; COAS, Open; ORDEAL, Open. Third row: Rendezvous Radar Standby Heater, Open; Landing Radar Heater, Open. Under Stab/Control: Attitude Direct breaker, Closed; ED: Logic Power A, Open; Lighting: Utility, Open. Under ECS: Suit Fan 1, Closed; Auto Transfer, Closed. Under comm: VHF B Transmitter, Open; VHF A Receiver, Open. Under PGNS: Signal Strength Display, Open; IMU Operate, Closed. Bottom row, EPS: Cross Tie Bus, Open; Inverter 1, Closed.|T
 0750319|Duke|Roger, Fred. Good readback. Starting with panel 16. Under Flight Displays, row 1: SE Cross-Pointers, Open; RCS System Bravo - Quad 1 TCAs, Close; Quad 2, Close; Quad 3, Close; Quad 4, Close. Second row, under Lighting: Flood is your choice. You can either use them or not. Under ED: Logic Power Bravo, Open; ECS: Suit Flow Control, Open. Third row, under comm: Display, Open; VHF A Transmitter, Open; VHF B Receiver, Open; S-Band Antenna, Open. Fourth row, under Heaters: Display, Open; under EPS: Inverter 2, Open. And that's it. Readback. Over.|C
 0750452|LMP|Okay, panel 16, top row, Flight Displays: System Engineer Cross-Pointer, Open; RCS System B: QUADs 1 through 4 TCAs, all Closed. Second row, Lighting: Floods we'll probably have open - our choice. ED: Logic Power B, Open; ECS: Suit Flow Control, Open. Under comm: Display, Open; VHF A Transmitter, Open; VHF B Receiver, Open; S-Band Antenna, Open. Bottom row, Heaters: Display, Open. Under EPS: Inverter 2, Open.|T
 0750534|Duke|Roger. Good readback. Okay, continuing on. Nothing on page 6; nothing on page 7. Nothing on page 8 or 9. Nothing on page 10 or 11. On page 12, we want the - to perform -|C
 0750559|LMP|Hold it. Hold on just a minute, Charlie.|T
 0750601|Duke|Okay.|C
-0750601|PAO|We're now at 75 hours, 6 minutes; and show a distance away from the Moon of 5,828 nautical miles [10,793 km]. 13 now traveling at 4,497 feet per second [1,371 m/s] relative to the Moon.|P
+0750605|PAO|We're now at 75 hours, 6 minutes; and show a distance away from the Moon of 5,828 nautical miles [10,793 km]. 13 now traveling at 4,497 feet per second [1,371 m/s] relative to the Moon.|P
 0750618|LMP|Okay. Go ahead, page 12. I'm there.|T
 0750621|Duke|Okay Freddo. On page 12, we want the MSFN updates. We've got some vectors for you and a P30 PAD. And we'll - when you get to that state, we'll let you know when we want to uplink. Okay. Under &quot;AGS Activation and Self Test,&quot; perform the entire procedure. On page 13, under &quot;AGS Align,&quot; do step 1; under &quot;DAP Set, Gimbal/Throttle Test,&quot; do step 1 with the following change. Under &quot;Throttle Control,&quot; we want it &quot;Auto.&quot; Over.|C
 0750713|LMP|Okay. I'll catch up here. On page 12, you'll give us MSFN updates, some vectors, and a P30; and we're to do the entire &quot;AGS Activation and Self Test.&quot; On page 13, we'll do the &quot;AGS Align&quot; and under &quot;DAP Set, Gimbal/Throttle Test,&quot; step 1, I've changed &quot;Throttle Control Manual&quot; to &quot;Throttle Control Auto.|T
@@ -5777,7 +5782,7 @@
 0751716|Duke|That's negative. At this - this burn, we're looking at - not reaching 37 percent, so I don't think we'll have to perform that step. We will verify that for you. Okay. One other statement: &quot;At Engine Cutoff, if manual start, then at 30 feet per second to go, throttle to 40 percent. At Delta-V equals zero, stop pushbutton, push.&quot; Over.|C
 0751811|LMP|Okay, Charlie. If a manual start, that was throttle to 40 percent at - Was that 30 foot per second to go?|T
 0751819|Duke|That's affirmative. At 30 foot per second to go.|C
-0751819|PAO|This is Apollo Control, Houston -|P
+0751829|PAO|This is Apollo Control, Houston -|P
 0751830|LMP|Okay. Then it's stop pushbutton at V<sub>GO</sub> equals zero?|T
 0751836|Duke|That's affirmative. What we want to do, if we got a manual start, we're going to have to shut down manually, and, to get a better guided cutoff at 30 foot per second to go, we want you to throttle at 40 and acceleration is within reason there, and we feel like we can get a good manual cut-off. Over.|C
 0751856|LMP|Okay.|T
@@ -5791,7 +5796,7 @@
 0752154|LMP|Okay. The same comments. I'll start at the top again here. Okay. &quot;Balance Couple&quot; should be changed to &quot;Off.&quot; Under TTCA, it should be &quot;LMP TTCA&quot; to &quot;Jet.&quot; Scratch &quot;400 plus 1&quot; at minus 2; scratch &quot;Master Arm, On&quot; at minus 1. Add at minus 10 seconds &quot;Manual Ullage&quot;; add ignition - can add the comment about &quot;If no start, Start pushbutton, push; still no start, Descent Engine Command Override, On.&quot; At the plus 5-second point, scratch &quot;Descent Engine Command Override, On,&quot; and add &quot;TTCA to 40 percent,&quot; and the same comment applies at engine stop to perform.|T
 0752239|LMP|We really don't use this card at that time.|T
 0752242|Duke|Roger, Freddo. Now we aren't - also at minus 30 seconds, we aren't looking at an AGS burn so you can scratch &quot;Abort pushbutton, push,&quot; and at Delta-V equal to zero, scratch &quot;Abort pushbutton, reset.&quot; Over.|C
-0752242|PAO|We estimate the change of shift briefing to start in about 10 minutes. Dr. Paine will be available to meet with newsmen in the auditorium immediately after the change of shift briefing.|P
+0752258|PAO|We estimate the change of shift briefing to start in about 10 minutes. Dr. Paine will be available to meet with newsmen in the auditorium immediately after the change of shift briefing.|P
 0752302|LMP|Okay. Minus 30 for AGS burn, &quot;Abort pushbutton, push&quot; is scratched, and at Delta-V equals zero, &quot;Abort pushbutton, reset&quot; is scratched.|T
 0752311|Duke|Okay, you got it, babe. We'll have some mission rules for you momentarily, and the powerdown checklist and also a PTC setup. Over.|C
 0752324|LMP|Okay.|T
@@ -5802,7 +5807,7 @@
 0752356|LMP|Not very far apart. Put the card back up, Jim -|T
 0752401|CDR|It's better than Antares and Shaula.|T
 0752405|LMP|Yes. Sure is. That's right.|T
-0752405|PAO|That's Jim Lovell reporting star sightings through the eyepiece of, in the Lunar Module. We're at 75 hours, 24 minutes.|P
+0752406|PAO|That's Jim Lovell reporting star sightings through the eyepiece of, in the Lunar Module. We're at 75 hours, 24 minutes.|P
 0752416|CDR|We got pretty good ... I'll do an Auto P52 to Antares. That's the way I'll get it up there.|T
 0752423|Duke|Hey, Houston - correction - Aquarius, Houston. We're satisfied with our present alignment. We don't want you to waste any more RCS gas trying to do this P52, and be advised you guys are hot mike, if you haven't heard. Over.|T
 0752444|CDR|Okay, understand.|T
@@ -5819,7 +5824,7 @@
 0752548|LMP|PADs. You got the G&amp;N dictionary?|T
 0752551|CDR|I got 13 20 going now.|T
 0752557|LMP|Wait a minute.|T
-0752557|PAO|Apollo Control, Houston; 75 hours, 26 minutes. Apollo 13, now 4,968 nautical miles [9,201 km] out from the Moon; traveling at a speed of 4,631 feet per second [1,412 m/s].|P
+0752603|PAO|Apollo Control, Houston; 75 hours, 26 minutes. Apollo 13, now 4,968 nautical miles [9,201 km] out from the Moon; traveling at a speed of 4,631 feet per second [1,412 m/s].|P
 0752610|CDR|... Just a ... These are those 13 20 angles here. Up here. Right here.|T
 0752656|CDR|Hey, great.|T
 0752720|LMP|One on. And Houston, Aquarius.|T
@@ -5852,10 +5857,11 @@
 0753528|Brand|Roger; that's correct, Freddo. And we - now would like to get you in a configuration to uplink your state vector and target load. So, if you're ready to copy, I have some circuit breaker changes for you. Over.|C
 0753547|LMP|Okay, go ahead.|T
 0753550|Brand|Okay, circuit breaker panel 11 Updata Link, Close; Primary Power Ampl, panel 16, Close; Voice Function to Voice; Range - Rangine Function to Ranging; TM bit rate, Hi; and then P00 and Data.|C
-0753550|PAO|We have a reminder announcement, the change of shift briefing is be - ready to start right now. The participants are in the Auditorium. Ready to start right now.|P
+0753603|PAO|We have a reminder announcement, the change of shift briefing is be - ready to start right now. The participants are in the Auditorium. Ready to start right now.|P
 0753628|LMP|Okay, we're now in P00 and Data, and switches and breakers are configured. You got it.|T
 0753632|Brand|Okay, thank you. You're coming in loud and clear.|T
-0753632|PAO|Apollo Control, Houston; 75 hours, 37 minutes. That preliminary PC plus 2 hour PAD indicated a time of ignition for the DPS burn of 79 hours, 27 minutes, 40 seconds. Burn duration; 4 minutes, 20 seconds. Delta-V, 850 feet per second. Standing by, continuing to monitor; this is Apollo Control, Houston.|P
+0753708|PAO|Apollo Control, Houston; 75 hours, 37 minutes. That preliminary PC plus 2 hour PAD indicated a time of ignition for the DPS burn of 79 hours, 27 minutes, 40 seconds. Burn duration; 4 minutes, 20 seconds. Delta-V, 850 feet per second. Standing by, continuing to monitor; this is Apollo Control, Houston.|P
+0753832|PAO|Apollo Control, Houston, 75 hours, 38 minutes. Our LOS clock in Mission Control shows we're 1 hours, 29 minutes, 45 seconds from time of Loss Of Signal from 13 as the spacecraft passes over the back side of the Moon. This is Apollo Control, Houston; continuing to monitor.|P
 0754336|Brand|Aquarius, Houston. Over.|C
 0754342|CDR|Go ahead, Houston.|T
 0754344|Brand|Hey, Jim, I have about three things. First thing, the computer is yours again. The second thing, no PTC maneuvering will be required from now until burn, so you can just sit in the burn attitude. And the third thing is we'd like to back out of this procedure we just put you into to updata link, which would mean going from TM bit rate Hi back to Lo, Ranging to Off, Voice to Down Voice, Primary Power Ampl to Close.|C
@@ -5878,7 +5884,8 @@
 0754722|Brand|Okay. On this last readback, we'd just like to verify that the Primary Power Ampl was pulled opened. Over.|C
 0754737|LMP|That's affirm. I used the breaker on 16, Primary S-Band Power Ampl breaker is Open.|T
 0754744|Brand|Okay. Thank you.|C
-0754744|PAO|The program alarm 1106 is in the computer and it's for uplink too fast. The indication was there when Jim Lovell took over the computer that possibely he flipped a switch too fast. Looking at our DSKY - our computer displays in Mission Control, we noticed that a program alarm has been showing from an earlier event that occurred yesterday evening. It was not unexpected. We're at 75 hours, 48 minutes into the flight and this is Apollo Control, Houston.|P
+0754752|PAO|The program alarm 1106 is in the computer and it's for uplink too fast. The indication was there when Jim Lovell took over the computer that possibly he flipped a switch too fast. Looking at our DSKY - our computer displays in Mission Control, we noticed that a program alarm has been showing from an earlier event that occurred yesterday evening. It was not unexpected. We're at 75 hours, 48 minutes into the flight and this is Apollo Control, Houston.|P
+0754856|PAO|- 75 hours, 49 minutes; Apollo 13.|P
 0754900|CDR|Boy, we must be getting pretty close to the Moon.|T
 0754903|LMP|What's that?|T
 0754919|CDR|It's in a Att Hold.|T
@@ -5911,7 +5918,7 @@
 0755616|Brand|Okay. We got that. Intake hose screens.|C
 0755710|Brand|I guess that item isn't going to change your c.g. too much, Freddo.|C
 0755719|LMP|Let's hope not.|T
-0755719|PAO|This is Apollo Control, Houston; 75 hours, 58 minutes now into the flight. Apollo 13 presently at 3,573 nautical miles [6,617 km] out from the Moon, traveling at a velocity of 4,943 feet per second [1,507 m/s]. Our clock in Mission Control shows we're 1 hour, 10 minutes, 30 seconds away from time of Loss Of Signal as Aquarius and Odyssey pass above the backside of the Moon. 75 hours, 58 minutes; continuing to monitor. This is Apollo Control, Houston.|P
+0755737|PAO|This is Apollo Control, Houston; 75 hours, 58 minutes now into the flight. Apollo 13 presently at 3,573 nautical miles [6,617 km] out from the Moon, traveling at a velocity of 4,943 feet per second [1,507 m/s]. Our clock in Mission Control shows we're 1 hour, 10 minutes, 30 seconds away from time of Loss Of Signal as Aquarius and Odyssey pass above the backside of the Moon. 75 hours, 58 minutes; continuing to monitor. This is Apollo Control, Houston.|P
 0755825|CDR|... Command Module water.|T
 0755832|LMP|Yes. No, I haven't.|T
 0755859|LMP|Yes.|T
@@ -5979,9 +5986,9 @@
 0761702|Brand|Okay. We copy that.|C
 0761726|Brand|We're going to also get back with you shortly, Jim, for - with some burn guidelines for PC plus 2.|C
 0761738|CDR|All right. Very well.|T
-0761738|PAO|Apollo Control, Houston; 76 hours, 18 minutes. Apollo 13 now 2,623 nautical miles [4,858 km] away from the Moon. And traveling at a velocity of 5,277 feet per second [1,608 m/s]. Our display shows an altitude -|P
+0761832|PAO|Apollo Control, Houston; 76 hours, 18 minutes. Apollo 13 now 2,623 nautical miles [4,858 km] away from the Moon. And traveling at a velocity of 5,277 feet per second [1,608 m/s]. Our display shows an altitude -|P
 0761851|CDR|Have they powered up the mission timer - the event timer?|T
-0761851|PAO|- at a closest approach of 137.5 nautical miles [254.7 km].|P
+0761857|PAO|- at a closest approach of 137.5 nautical miles [254.7 km].|P
 0761857|LMP|...|T
 0761859|CDR|Oh, I see. Are they going to?|T
 0762213|Brand|Apollo 13, Houston.|C
@@ -6014,9 +6021,9 @@
 0763008|CMP|Write them right on - ...?|T
 0763010|CDR|Why don't you write them right in here?|T
 0763012|LMP|Okay.|T
-0763012|PAO|This is Apollo Control, Houston. 76 hours, 30 minutes now.|P
+0763019|PAO|This is Apollo Control, Houston. 76 hours, 30 minutes now.|P
 0763022|LMP|Okay. I'll start on that.|T
-0763022|PAO|We show 13 at 2,074 nautical miles [3,841 km] away.|P
+0763025|PAO|We show 13 at 2,074 nautical miles [3,841 km] away.|P
 0763025|CDR|Okay, Vance.|T
 0763027|LMP|Go ahead.|T
 0763028|CDR|We're all set to go.|T
@@ -6038,10 +6045,10 @@
 0763923|Brand|78.|C
 0763929|LMP|Okay. I'm sorry, 1 - Yes, 78 hours. It only seems like it's been that long.|T
 0763935|Brand|I can understand.|C
-0763935|PAO|This is Apollo Control, Houston; 76 hours, 39 minutes. You heard Capsule Communicator Vance Brand passing to Apollo 13 the mission rules worked out -|P
+0763942|PAO|This is Apollo Control, Houston; 76 hours, 39 minutes. You heard Capsule Communicator Vance Brand passing to Apollo 13 the mission rules worked out -|P
 0763954|Brand|Okay, Fred. Your readback was correct.|C
 0764000|LMP|Okay.|T
-0764000|PAO|- the mission rules for this burn worked out by Gene Kranz with his flight control team and support rooms in Mission Control. These rules are akin -|P
+0764003|PAO|- the mission rules for this burn worked out by Gene Kranz with his flight control team and support rooms in Mission Control. These rules are akin -|P
 0764016|LMP|Okay. And, Vance, did you ever have any LOS/AOS times, and - and a startup time for us to jump into this activation checklist?|T
 0764029|Brand|Okay. Let me - Let me poll the house again on that one.|C
 0764037|CDR|What?|T
@@ -6049,7 +6056,7 @@
 0764056|Brand|Okay. I guess then we ought to allow you a little more than that, huh?|C
 0764106|LMP|No, I was thinking that we don't have to do about four pages of it, that we probably need just about that, and that will make up for the difference of any added time we need maneuvering et cetera.|T
 0764119|Brand|Okay.|C
-0764119|PAO|The mentioned rules for the burn are akin to those on an LOI-1 with a Service Propulsion System Mode 1 abort assuming that we had no burn, no burn on the engine. We are at 76 hours, 42 minutes into the flight. This is Apollo Control, Houston.|P
+0764123|PAO|The mentioned rules for the burn are akin to those on an LOI-1 with a Service Propulsion System Mode 1 abort assuming that we had no burn, no burn on the engine. We are at 76 hours, 42 minutes into the flight. This is Apollo Control, Houston.|P
 0764207|CDR|We'll need a - Can I get a flashlight? You got a flashlight. We might need a spare flashlight - Yes. Okay. We might need a spare flashlight: have you got one? Okay. Okay. The Sun has gone ... down.|T
 0764231|CDR|Man, look at those stars. Houston.|T
 0764240|Brand|Go ahead, Aquarius.|C
@@ -6079,10 +6086,10 @@
 0764837|LMP|Yes. It looks like - looks like the light is coming from around those clouds.|T
 0764848|CDR|Well, you won't get AOS/LOS until 77.|T
 0764853|LMP|...|T
-0764853|PAO|Apollo Control, Houston; 76 hours, 49 minutes. Less than 20 minutes now away from LOS.|P
+0764912|PAO|Apollo Control, Houston; 76 hours, 49 minutes. Less than 20 minutes now away from LOS.|P
 0764918|CMP|Yes.|T
 0764919|CDR|...|T
-0764919|PAO|Apollo 13 now 1,184 nautical miles [2,193 km] away from the Moon traveling at a velocity of 6,218 feet per second [1,895 m/s].|P
+0764923|PAO|Apollo 13 now 1,184 nautical miles [2,193 km] away from the Moon traveling at a velocity of 6,218 feet per second [1,895 m/s].|P
 0764922|CMP|Yes.|T
 0764937|CDR|Let's see, AOS is at 2 hours before the burn?|T
 0764945|LMP|Just about.|T
@@ -6121,14 +6128,14 @@
 0765824|CDR|Well, you know what this burn is buying us; 10 hours.|T
 0765829|CMP|Yes.|T
 0765832|LMP|And how.|T
-0765832|PAO|Less than 10 minutes away now from predicted time of LOS. We're at 76 hours, 59 minutes into the mission and we see the velocity on our displays for Apollo 13 really building now. Now reading 6,736 feet per second [2,053 m/s] -|P
+0765837|PAO|Less than 10 minutes away now from predicted time of LOS. We're at 76 hours, 59 minutes into the mission and we see the velocity on our displays for Apollo 13 really building now. Now reading 6,736 feet per second [2,053 m/s] relative to the Moon. -|P
 0765854|CDR|Might be a good idea.|T
-0765854|PAO|- relative to the Moon. Apollo 13 now 750 nautical miles [1,389 km] away from the Moon.|P
+0765901|PAO|- Apollo 13 now 750 nautical miles [1,389 km] away from the Moon.|P
 0765941|CMP|Hey, that's pretty extensive, Jim. You can locate it and get it halfway through the ...|T
 0770025|CMP|Strange.|T
 0770053|CDR|It's on the AOT. Well, may be not.|T
 0770102|LMP|I don't think so.|T
-0770102|PAO|Seven minutes away now from Loss Of Signal. Gene Kranz going around the room checking with his flight controllers as to a status of systems. We now show 77 hours, 1 minute into the flight of Apollo 13. This is Apollo Control, Houston.|P
+0770107|PAO|Seven minutes away now from Loss Of Signal. Gene Kranz going around the room checking with his flight controllers as to a status of systems. We now show 77 hours, 1 minute into the flight of Apollo 13. This is Apollo Control, Houston.|P
 0770308|CDR|I know what that is. That might be the debris that was thrown out there.|T
 0770315|LMP|- into the cloud?|T
 0770319|CDR|It's all dark now.|T
@@ -6136,12 +6143,12 @@
 0770327|CDR|... we made a maneuver.|T
 0770330|CDR|No, from our explosion.|T
 0770332|LMP|Take a look. It covers a wide area.|T
-0770332|PAO|Less than 5 minutes away now from Loss Of Signal. 77 hours, 4 minutes into the flight.|P
+0770340|PAO|Less than 5 minutes away now from Loss Of Signal. 77 hours, 4 minutes into the flight.|P
 0770342|LMP|God, that dark cloud. ... Like a pair of contrails. Only if you switch the detent, they go on around. How long to LOS? Is that right?|T
 0770406|CDR|I'd sure like to try the detent 2, but I guess our damn platform's okay, isn't it?|T
 0770411|CMP|Yes.|T
 0770417|CDR|Yes.|T
-0770417|PAO|77 hours, 4 minutes, Apollo 13 526 nautical miles [974] away from the Moon, traveling at a speed of 7,122 feet per second [2,171 m/s]. Four minutes now from time of Loss Of Signal with Apollo 13 as it passes over the back side of the Moon.|P
+0770422|PAO|77 hours, 4 minutes, Apollo 13 526 nautical miles [974] away from the Moon, traveling at a speed of 7,122 feet per second [2,171 m/s]. Four minutes now from time of Loss Of Signal with Apollo 13 as it passes over the back side of the Moon.|P
 0770503|CMP|...|T
 0770538|CMP|...|T
 0770603|Brand|Aquarius, Houston. Over.|C
@@ -6149,10 +6156,11 @@
 0770611|Brand|Okay, Jim. We have a little over 2 minutes until LOS, and everything's looking good here.|C
 0770621|CDR|Roger. Yes. I take it that we don't have to start our activations until we receive AOS from you.|T
 0770639|Brand|Roger. That's correct.|C
-0770639|PAO|Apollo 13 now 421 nautical miles [780 km] above the Moon. Just a little over 1 minute now from time of Loss Of Signal with the spacecraft. This is Apollo Control, Houston; 77 hours, 7 minutes.|P
+0770713|PAO|Apollo 13 now 421 nautical miles [780 km] above the Moon. Just a little over 1 minute now from time of Loss Of Signal with the spacecraft. This is Apollo Control, Houston; 77 hours, 7 minutes.|P
 0770808|CDR|You ... up our edibles? ... water? ...|T
-0770808|PAO|We've had Loss Of Signal with Apollo 13 as it passes above the back side of the Moon. We're at 77 hours, 9 minutes now into the flight of Apollo 13.|P
-|PAO|Apollo Control, Houston. We're two minutes now from time of reacquiring Apollo 13. Meanwhile, we have an update in the impact of the third stage of the Saturn, the S-IVB. Our latest estimate indicates impact at 77 hours, 56 minutes, 27 seconds Ground Elapsed Time. The predicted coordinate for impact: 26 degrees, 57 minutes south longitude; latitude, 28 degrees, 27 minutes west. Coming up now on one minute to AOS. We'll stand by and continue to monitor. This is Apollo Control, Houston.|P
+0770845|PAO|We've had Loss Of Signal with Apollo 13 as it passes above the back side of the Moon. We're at 77 hours, 9 minutes now into the flight of Apollo 13.|P
+0773112|PAO|Apollo Control, Houston. We're two minutes now from time of reacquiring Apollo 13. Meanwhile, we have an update in the impact of the third stage of the Saturn, the S-IVB. Our latest estimate indicates impact at 77 hours, 56 minutes, 27 seconds Ground Elapsed Time. The predicted coordinate for impact: 26 degrees, 57 minutes south longitude; latitude, 28 degrees, 27 minutes west. Coming up now on one minute to AOS. We'll stand by and continue to monitor. This is Apollo Control, Houston.|P
+0773321|PAO|Standing by now for acquisition.|P
 0773350|CDR|Good morning, Houston. How do you read?|T
 0773406|LMP|...|T
 0773437|Brand|Aquarius, Houston. Over.|C
@@ -6164,10 +6172,10 @@
 0773553|LMP|Okay. I read you loud and clear, ...|T
 0773558|Brand|Roger.|C
 0773834|LMP|Jack, why don't you get the other ...?|T
-0773834|PAO|This is Apollo Control, Houston; 77 hours, 38 minutes into the flight. Apollo 13 has now rounded the corner, headed back towards Earth. We show a velocity of 7,062 feet per second [2,152 m/s] and a distance from the Moon of 566 nautical miles [1,048 km].|P
+0773822|PAO|This is Apollo Control, Houston; 77 hours, 38 minutes into the flight. Apollo 13 has now rounded the corner, headed back towards Earth. We show a velocity of 7,062 feet per second [2,152 m/s] and a distance from the Moon of 566 nautical miles [1,048 km].|P
 0773923|CDR|Well, go this way.|T
 0773931|CDR|All right. We're going up on Mare Smythii, now.|T
-0773931|PAO|77 hours, 40 minutes now into the flight. We show Apollo 13 at 630 nautical miles [1,167 km] away from the Moon. Our ignition clock shows 1 hour, 47 minutes time remaining until start of the Descent Propulsion System burn.|P
+0774016|PAO|77 hours, 40 minutes now into the flight. We show Apollo 13 at 630 nautical miles [1,167 km] away from the Moon. Our ignition clock shows 1 hour, 47 minutes time remaining until start of the Descent Propulsion System burn.|P
 0774055|CDR|We'll see where ... zooming off.|T
 0774102|CDR|Oh, yes, yes, we're no longer 139 miles. We're leaving.|T
 0774108|LMP|Yes, look at that curvature.|T
@@ -6194,8 +6202,8 @@
 0774502|Brand|Aquarius, Houston. Over.|C
 0774508|CDR|Go ahead, Houston.|T
 0774510|Brand|Jim, regarding the start time for the power-up, you mentioned an hour and 15 minutes. We think that is adequate. This is crew preference depending on how much time you think you need. We would go along with an hour and 15 minutes -|C
+0774538|PAO|That's the power-up activation time for the Descent Propulsion System engine burn. We're now at 77 hours, 46 minutes into the flight of Apollo 13. Apollo 13 now 872 nautical miles [1,615 km] away from the Moon. Meanwhile in Mission Control Center, one of our special purpose clocks is counting down to the predicted time of S-IVB impact. We show 10 minutes, 30 seconds remaining.|P
 0774546|CDR|Okay - Okay, sounds good.|T
-0774546|PAO|That's the power-up activation time for the Descent Propulsion System engine burn. We're now at 77 hours, 46 minutes into the flight of Apollo 13. Apollo 13 now 872 nautical miles [1,615 km] away from the Moon. Meanwhile in Mission Control Center, one of our special purpose clocks is counting down to the predicted time of S-IVB impact. We show 10 minutes, 30 seconds remaining.|P
 0774724|CDR|Okay, Freddo. You been through most of that checklist for an hour? Let's get it out and ...|T
 0774750|LMP|78 hours and ...|T
 0774756|CDR|Okay. Let's ...|T
@@ -6203,7 +6211,8 @@
 0774818|LMP|Okay. Page 1.|T
 0774819|CDR|Okay.|T
 0774822|LMP|Page 2, I'm going to power up the ...|T
-0774822|PAO|Apollo Control, Houston; at 77 hours, 49 minutes now into the mission. We presently show Apollo 13 at 1,007 nautical miles [1,865 km] away from the Moon, its velocity slowing down now relative to the Moon. Now reading 6,399 feet per second [1,950 m/s].|P
+0774856|PAO|Apollo Control, Houston; at 77 hours, 49 minutes now into the mission. We presently show Apollo 13 at 1,007 nautical miles [1,865 km] away from the Moon, its velocity slowing down now relative to the Moon. Now reading 6,399 feet per second [1,950 m/s].|P
+0775130|PAO|Apollo Control, Houston; 77 hours, 52 minutes now into the flight. We show five minutes away now from time of the predicted impact of the S-IVB.|P
 0775238|Brand|Aquarius, Houston. Over.|C
 0775243|CDR|Go ahead, Houston.|T
 0775246|Brand|Okay, Jim. We have about three items for you. We have a maneuver PAD, P30 LM maneuver, again; and the maneuver PAD for the CM for splashdown. We also have a checklist change with contingencies, - LM contingencies checklist. And, I'll stand by while you're gathering the books.|C
@@ -6238,11 +6247,11 @@
 0780316|Brand|Right. Just wanted to verify - We had poor reception when I was talking to you before - I wanted to verify that you understand that the Sun check you made earlier in the AOT was good, and that's what we're riding on. Anything that we told you in the past about looking at the Sun in the front left window or looking at stars, like Nunki through the AOT, why, we want to forget.|C
 0780350|CDR|Roger. Understand, Vance. I think Nunki would be kind of hard to see anyway with the Moon right here.|T
 0780358|Brand|Right.|C
-0780358|PAO|Apollo Control, Houston; 78 hours, 4 minutes. Apollo 13 now 1,704 nautical miles [3,156 km] away from the Moon. Velocity now reading 5,768 feet per second [1,758 m/s]. Vance Brand passed up a new PC plus 2-hour maneuver PAD which reflected a time of ignition of 79 hours, 27 minutes, 38 seconds -|P
+0780400|PAO|Apollo Control, Houston; 78 hours, 4 minutes. Apollo 13 now 1,704 nautical miles [3,156 km] away from the Moon. Velocity now reading 5,768 feet per second [1,758 m/s]. Vance Brand passed up a new PC plus 2-hour maneuver PAD which reflected a time of ignition of 79 hours, 27 minutes, 38 seconds -|P
 0780427|CDR|And, Vance, we plan to start powering up at 78:12. Is that a good time or do you think we ought to hold off a little longer?|T
 0780446|Brand|Jim, we think that's very good.|C
+0780452|PAO|The Descent Propulsion System burn should produce a posigrade Delta-V of 861 feet per second [262 m/s] with this PAD. Burn duration; 4 minutes, 24 seconds. We're at 78 hours, 5 minutes now into the flight. This is Apollo Control, Houston.|P
 0780453|CDR|Right.|T
-0780453|PAO|The Descent Propulsion System burn should produce a posigrade Delta-V of 861 feet per second [262 m/s] with this PAD. Burn duration; 4 minutes, 24 seconds. We're at 78 hours, 5 minutes now into the flight. This is Apollo Control, Houston.|P
 0780823|Brand|Apollo 13, Houst - Aquarius, Houston.|C
 0780831|LMP|Go ahead.|T
 0780833|Brand|Fred, after the burn, we'll get the powerdown instructions, or checklist changes to you. At the same time, we'd like to get a consumables status to you. All I'll say right now is that we think you look in reasonably good shape.|C
@@ -6255,15 +6264,15 @@
 0781804|Brand|That's - That's affirm, Jim. All we need is Updata Link circuit breaker closed on panel 11, and P00 and Accept and we can ship it up to you. P00 and Data.|C
 0781832|CDR|Okay, Vance. We're in Data and P00 and the circuit breaker's in. Go ahead.|T
 0781839|Brand|Okay. We'll ship her up to you.|C
-0781839|PAO|This is Apollo Control, Houston; 78 hours, 20 minutes into the flight of Apollo 13. At present the Apollo 13 spacecraft is 2,461 nautical miles [4,558 m/s] away from the Moon and traveling a speed of 5,343 feet per second [1,629 m/s]. We show one hour and 7 minutes away from time of ignition of the Descent Propulsion System burn.|P
+0781957|PAO|This is Apollo Control, Houston; 78 hours, 20 minutes into the flight of Apollo 13. At present the Apollo 13 spacecraft is 2,461 nautical miles [4,558 m/s] away from the Moon and traveling a speed of 5,343 feet per second [1,629 m/s]. We show one hour and 7 minutes away from time of ignition of the Descent Propulsion System burn.|P
 0782145|Brand|Aquarius, Houston.|C
 0782153|CDR|Go ahead, Houston.|T
 0782154|Brand|Jim, request verify Ranging Function switch is in Ranging. We need that, if it's not there now.|C
 0782214|CMP|You got it, Vance.|T
 0782215|Brand|Thank you.|C
-0782215|PAO|Apollo Control, Houston; at 78 hours, 23 minutes now into the flight. The crew of Apollo 13 continuing to proceed on their activation checklist.|P
+0782252|PAO|Apollo Control, Houston; at 78 hours, 23 minutes now into the flight. The crew of Apollo 13 continuing to proceed on their activation checklist.|P
 0782305|Brand|Aquarius, Houston. The computer is yours.|C
-0782305|PAO|Flight Dynamics advises Flight Director Gene Kranz that there will be no requirement to update the PC plus 2 hours maneuver PAD.|P
+0782415|PAO|Flight Dynamics advises Flight Director Gene Kranz that there will be no requirement to update the PC plus 2 hours maneuver PAD.|P
 0782815|Brand|Aquarius, Houston. Did you call?|C
 0782822|CDR|We didn't call, Houston.|T
 0782825|Brand|Okay.|C
@@ -6271,18 +6280,19 @@
 0782948|LMP|Houston, are you calling Aquarius?|T
 0782951|Brand|Roger, Fred. I would like to confirm that you are getting drinking water out of - potable water out of the Command Module and, if you can make any estimates of how much you use as time goes on, and how much you have used, we would appreciate it for our consumables analysis.|C
 0783012|LMP|Okay.|T
-0783012|PAO|This is Apollo Control, Houston, at 78 hours, 30 minutes. We now show Apollo 13 at 2,900 -|P
+0783021|PAO|This is Apollo Control, Houston, at 78 hours, 30 minutes. We now show Apollo 13 at 2,900 -|P
 0783026|LMP|Okay, Jack. Tried the procedure and out of that pressure, we got 10 drinks made. That's roughly 80 ounces.|T
-0783026|PAO|We now show Apollo 13 2,958 nautical miles [5,478 km] away ...|P
+0783053|PAO|We now show Apollo 13 2,958 nautical miles [5,478 km] away ...|P
 0783056|Brand|Okay, Fred, we had a little static on that one, but I think you said that 80 ounces of water has been used out of the CM. Is that right?|C
 0783108|LMP|Yes. Jack worked the procedure and filled as many of the drinks as he could, and he made up ten bags of approximately 8 ounces a bag.|T
 0783123|Brand|Okay. We copy that.|C
-0783123|PAO|Apollo 13, now traveling at a speed of 5,129 feet per second.|P
+0783137|PAO|Apollo 13, now traveling at a speed of 5,129 feet per second.|P
 0783606|Brand|Aquarius, Houston.|C
 0783614|CDR|Go ahead, Houston.|T
 0783616|Brand|Jim, just a bit of information, if for any reason you had to slip T<sub>IG</sub>, our people here feel it wouldn't do much harm if you slipped it up to 30 minutes. The procedure, of course as you know, is not to Pro on the flashing 99 and we thought you might like to be aware that T<sub>IG</sub> time isn't all that critical.|C
 0783643|CDR|Roger. Understand.|T
-0783643|PAO|That discussion between Vance Brand and Jim Lovell was concerned with the time of ignition for the pericynthion plus 2-hour burn. We're 78 hours, 37 minutes now in the flight of Apollo 13. This is Apollo Control in Houston.|P
+0783655|PAO|That discussion between Vance Brand and Jim Lovell was concerned with the time of ignition for the pericynthion plus 2-hour burn. We're 78 hours, 37 minutes now in the flight of Apollo 13. This is Apollo Control in Houston.|P
+0783744|PAO|At 78 hours, 38 minutes, we now show Apollo 13 at a distance of 3,268 nautical miles [6,052 km] away from the Moon and at a velocity of 5,030 feet per second [1,533 m/s]. Our countdown clock shows 49 minutes, 30 seconds from time of ignition. This is Apollo Control, Houston.|P
 0784107|LMP|Okay, Vance; Aquarius.|T
 0784110|Brand|Go, Fred.|C
 0784115|LMP|Okay. I think it's finally coming through to us here, what you said just a little while ago. Were you suggesting that we move the T<sub>IG</sub> up 30 minutes?|T
@@ -6297,7 +6307,8 @@
 0784539|Brand|Loud and clear, Fred.|C
 0784543|LMP|Okay. I had a change in the background noises, wondered if you were still there.|T
 0784547|Brand|Right.|C
-0784547|PAO|This is Apollo Control, Houston; at 78 hours, 46 minutes now into the flight. We're 41 minutes away from scheduled time of ignition on our pericynthion plus 2-hour burn of the Apollo 13. Apollo 13 now 3,664 nautical miles [6,749 km] out from the Moon. Velocity now reading 4,913 feet per second [1,497 m/s].|P
+0784621|PAO|This is Apollo Control, Houston; at 78 hours, 46 minutes now into the flight. We're 41 minutes away from scheduled time of ignition on our pericynthion plus 2-hour burn of the Apollo 13. Apollo 13 now 3,664 nautical miles [6,749 km] out from the Moon. Velocity now reading 4,913 feet per second [1,497 m/s].|P
+0785714|PAO|Apollo Control, Houston; at 78 hours, 57 minutes into the flight. Flight Director Gene Kranz just advising his team that he will come - go around the room at about minus 10 minutes for a final Go/No-Go for the burn. We now show Apollo 13 at 4,146 nautical miles [7,678 km] away from the Moon and at a velocity of 4,791 feet per second [1,460 m/s].|P
 0790625|Brand|Apollo 13, Houston.|C
 0790628|CDR|Houston, Aquarius. Go ahead, Houston.|T
 0790631|Brand|Okay, Aquarius. We have some new information regarding what you shoud see out the commander's window at T<sub>IG</sub>. Over.|C
@@ -6305,14 +6316,19 @@
 0790648|Brand|According to calculations - calculations, you should see the Moon. It'll be a full Moon. You should see most of the disk and it should be somewhere on your vertical LPD line, probably at about 14 on the LPD scale. Over. Roughly centered on 14.|C
 0790738|CDR|Okay, Houston. I concur. I'm looking at 14 on the LPD and the angle is just about centered. It's south of Crisium, but it's - The line is just slightly to the north of center.|T
 0790808|Brand|Okay, Jim. That sounds very good. We see that you have a slight yaw angle, so it should be north of center.|C
-0790808|PAO|Apollo Control, Houston; seventy -|P
+0790846|PAO|Apollo Control, Houston; seventy -|P
 0790848|CDR|I can even see Mount Marilyn from here.|T
-0790848|PAO|The reference that Jim Lovell made there was one of the mountains that he named during his flight on Apollo 8.|P
+0790919|PAO|The reference that Jim Lovell made there was one of the mountains that he named during his flight on Apollo 8.|P
+0790932|PAO|This is Apollo Control, Houston. We're 79 hours, 10 minutes now into the flight, 18 minutes away from time of scheduled ignition on our pericynthion plus 2-hour burn. This will be performed by computer program 40 aboard the Lunar Module, the DPS thrusting program using the primary navigation and guidance system. Lovell and Haise will be in Aquarius at the time of the burn with Jack Swigert in Odyssey. We'll stand by and continue to monitor. We now show Apollo 13 at 4,717 nautical miles [8,736 km] out from the Moon and traveling at a speed of 4,675 feet per second [1,425 m/s]. This is Apollo Control, Houston.|P
+0791306|PAO|Apollo Control, Houston; 79 hours, 13 minutes. Less than 15 minutes away now from time of scheduled ignition. We show 13 at a distance of 4,839 nautical miles [8,962 km] out from the Moon and at a velocity of 4,651 feet per second [1,418 m/s]. Within the next several minutes, Flight Director Gene Kranz is expected to go around the room for Go/No-Go status from each member of his flight control team. We're at 79 hours, 14 minutes into the flight; continuing to monitor. This is Apollo Control, Houston.|P
+0791733|PAO|Apollo Control, Houston; 79 hours, 17 minutes. Flight Director Gene Kranz now going around the room for Go/No-Go status from each member of his team. We're Go for the burn. Apollo 13 now 5,039 nautical miles [9,332 km] away from the Moon, traveling at a speed of 4,616 feet per second [1,407 m/s].|P
 0791807|Brand|Aquarius, Houston. Over.|C
 0791813|CDR|Go ahead, Houston.|T
 0791815|Brand|Jim, you are Go for the burn. Go for the burn.|C
 0791820|CDR|Roger. I understand. Go for the burn.|T
-0791820|PAO|This is Apollo Control, Houston. We're a little over 6 minutes now away from time of scheduled ignition. 79 hours, 21 minutes. Meanwhile at Mission Control, both the viewing room and the floor of Mission Operations Control Room have filled up with a considerable number of people. Among those here tonight are Dr. Thomas Paine, Nasa Administrator; Mr. George Low, Deputy Administrator of NASA; Frank Borman, who commanded the flight of Apollo 8 and Gemini 7 and had a flying companion named Jim Lovell; Ken Mattingly is here; Al Shepard, commander of Apollo 14, is on the MOCR floor at this time as is Ed Mitchell, the Lunar Module Pilot, along with Stu Roosa who is scheduled to fly in the Command Module on that flight. We're coming up on 5 minutes until scheduled time of ignition. Gene Kranz has checked with couple of his systems, or members of his flight control team who monitor systems. They indicate they are happy with the data they are looking at now. We're standing by and continuing to monitor, this is Apollo Control, Houston.|P
+0792108|PAO|This is Apollo Control, Houston. We're a little over 6 minutes now away from time of scheduled ignition. 79 hours, 21 minutes. Meanwhile at Mission Control, both the viewing room and the floor of Mission Operations Control Room have filled up with a considerable number of people. Among those here tonight are Dr. Thomas Paine, Nasa Administrator; Mr. George Low, Deputy Administrator of NASA; Frank Borman, who commanded the flight of Apollo 8 and Gemini 7 and had a flying companion named Jim Lovell; Ken Mattingly is here; Al Shepard, commander of Apollo 14, is on the MOCR floor at this time as is Ed Mitchell, the Lunar Module Pilot, along with Stu Roosa who is scheduled to fly in the Command Module on that flight. We're coming up on 5 minutes until scheduled time of ignition. Gene Kranz has checked with couple of his systems, or members of his flight control team who monitor systems. They indicate they are happy with the data they are looking at now. We're standing by and continuing to monitor, this is Apollo Control, Houston.|P
+0792257|PAO|79 hours, 23 minutes into the flight. We show Apollo 13 at 5,263 nautical miles [9,747 km] relative to the Moon, and traveling at a velocity of 4,578 feet per second [1,395 m/s].|P
+0792358|PAO|Apollo Control, Houston, less than 3 minutes away now from scheduled time of ignition as we look at one of our displays in the Mission Control Center, we see that Apollo 13's Lunar Module is now in program 40, that's the Descent Propulsion System thrusting program -|P
 0792416|Brand|Aquarius, 2 minutes and 40 seconds to go on the mark.|C
 0792419|Brand|Mark.|C
 0792422|Brand|Or that was - Stand by.|C
@@ -6320,39 +6336,47 @@
 0792426|Brand|Stand by. That was incorrect. Three minutes - Counting down to 3 minutes, and I'll give you a mark, and I'll take into consideration 2 seconds.|C
 0792437|Brand|Mark.|C
 0792441|CDR|Roger. We got you.|T
-0792441|PAO|79 hours, 25 minutes into the flight, Apollo 13 now at a distance of 5,349 nautical miles [9,906 km] away from the Moon. Velocity now reading 4,564 feet per second [1,391 m/s] relative to the Moon.|P
+0792453|PAO|79 hours, 25 minutes into the flight, Apollo 13 now at a distance of 5,349 nautical miles [9,906 km] away from the Moon. Velocity now reading 4,564 feet per second [1,391 m/s] relative to the Moon.|P
+0792544|PAO|Less than 2 minutes away now from scheduled time of ignition. Velocity reading 4,560 feet per second [1,390 m/s]; distance from the Moon, 5,383 nautical miles [9,969 km].|P
+0792641|PAO|One minute away now from scheduled time of ignition.|P
 0792643|LMP|One minute.|T
 0792646|Brand|Roger.|C
-0792646|PAO|Apollo 13 now 5,426 nautical miles [10,049 km] out from the Moon, traveling at a speed of 4,552 feet per second [1,387 m/s].|P
+0792649|PAO|Apollo 13 now 5,426 nautical miles [10,049 km] out from the Moon, traveling at a speed of 4,552 feet per second [1,387 m/s].|P
+0792712|PAO|Less than 30 seconds away.|P
+0792728|PAO|The engine is armed. Standing by.|P
+0792749|PAO|Ground confirms ignition.|P
 0792751|CDR|We're burning, 40 percent.|T
 0792754|Brand|Houston copies.|C
-0792754|PAO|Attitude looks good at this point.|P
+0792809|PAO|Attitude looks good at this point.|P
 0792809|CDR|One hundred percent.|T
 0792811|Brand|Roger.|C
 0792831|Brand|Aquarius, Houston. You're looking good.|C
 0792836|CDR|Roger.|T
-0792836|PAO|1 minute now into the burn.|P
+0792840|PAO|1 minute now into the burn.|P
+0792940|PAO|DPS is looking good, 2 minutes into the burn.|P
 0792952|Brand|Aquarius, you were looking good at 2 minutes. Still looking good.|C
 0792958|CDR|Two minutes. Roger.|T
-0792958|PAO|Velocity building up. Our DSKY shows we've gained 451 feet per second at this time.|P
+0793004|PAO|Velocity building up. Our DSKY shows we've gained 451 feet per second at this time.|P
+0793031|PAO|Reports to Flight Director Gene Kranz indicate all systems are looking good. Coming up on 3 minutes into the burn.|P
 0793043|Brand|Aquarius, you're Go at 3 minutes.|C
 0793049|CDR|Aquarius. Roger.|T
-0793049|PAO|The onboard display shows less than a minute to go on the burn now.|P
+0793113|PAO|The onboard display shows less than a minute to go on the burn now.|P
+0793138|PAO|Coming up on 4 minutes into the burn.|P
 0793146|Brand|Don't forget Descent Reg 1, off; 10 seconds to go.|C
 0793205|CDR|Shutdown.|T
 0793207|Brand|Roger. Shutdown.|C
-0793207|PAO|That was Commander Jim Lovell reporting shutdown, the engine is off. We're at 79 hours, 32 minutes into the flight.|P
+0793210|PAO|That was Commander Jim Lovell reporting shutdown, the engine is off. We're at 79 hours, 32 minutes into the flight.|P
 0793231|CDR|Are you reading our 16 40, Houston?|T
 0793236|Brand|Roger. We're reading it.|C
 0793241|CDR|We'll proceed. Here's our residuals.|T
 0793252|Brand|Roger. Very small.|C
-0793252|PAO|Apollo Control; 79 hours, 33 minutes, 5,707 nautical miles [10,569 km] out from the Moon at this time.|P
+0793304|PAO|Apollo Control; 79 hours, 33 minutes, 5,707 nautical miles [10,569 km] out from the Moon at this time.|P
 0793307|Brand|Good burn, Aquarius.|C
 0793312|CDR|Go ahead.|T
 0793313|Brand|I say, that was a good burn.|C
 0793318|CDR|Roger. And now we want to power down as soon as possible.|T
 0793323|Brand|Roger. Understand.|C
-0793323|PAO|We're at 79 hours -|P
+0793354|PAO|We're at 79 hours -|P
 0793356|CDR|Houston, Aquarius.|T
 0793358|Brand|Go ahead.|C
 0793402|CDR|Suggest maybe you just read off the circuit breakers you want us to power down. As you did yesterday, for us.|T
@@ -6363,16 +6387,17 @@
 0793603|Brand|Aquarius, Houston. Over.|C
 0793607|CDR|Go ahead.|T
 0793608|Brand|Slight delay here, Jim. It will be a couple of minutes before we read that up to you, and we're looking at the contingency checklist powerdown and that's on page 5. You might be getting that out while we get all ready to give it to you.|C
-0793608|PAO|Apollo Control, Houston; 79 hours, 37 minutes into the flight -|P
+0793658|PAO|Apollo Control, Houston; 79 hours, 37 minutes into the flight -|P
 0793703|LMP|Vance, could you give us that page number again. Page 5 doesn't make sense.|T
 0793714|Brand|Okay. Make that power 5 in the contingency checklist, Fred. And it's the -|C
 0793724|LMP|- that's better.|T
 0793725|Brand|- middle part of the page, it starts emergency powerdown, and we'll mark that up.|C
-0793725|PAO|We're at 79 hours, 37 minutes into the flight. Guidance has reported that the burn duration was literally right on the money.|P
+0793734|PAO|We're at 79 hours, 37 minutes into the flight. Guidance has reported that the burn duration was literally right on the money.|P
 0793742|LMP|Okay. I'm to 5, Emergency powerdown.|T
 0793748|Brand|Okay. But hold off on it because we might have to start PTC up again here. And that's the point that's being resolved right at the moment, so stand by.|C
 0793802|LMP|Okay.|T
-0793802|PAO|Apollo Control Houston. The term PTC, Passive Thermal Control is a bar-b-que mode which has been used on previous flights. There's a discussion in the control center as to whether or not we should continue it in that mode during the coast phase in. We're 79 hours, 39 minutes into the flight and continuing to monitor; this is Apollo Control, Houston.|P
+0793817|PAO|Apollo Control Houston. The term PTC, Passive Thermal Control is a bar-b-que mode which has been used on previous flights. There's a discussion in the control center as to whether or not we should continue it in that mode during the coast phase in. We're 79 hours, 39 minutes into the flight and continuing to monitor; this is Apollo Control, Houston.|P
+0793845|PAO|Apollo Control, Houston; 79 hours, 40 minutes into the mission. We show Apollo 13 at 6,003 nautical miles [11,118 km] out from the Moon. At this time, traveling at a speed of 4,980 feet per second [1,518 m/s].|P
 0794219|Brand|Aquarius, Houston. Over.|C
 0794225|CDR|Go ahead, Houston.|T
 0794226|Brand|Okay. We're ready to give you the procedure which will power you down a good bit, and after the PTC is going, maybe we can give you further information. Are you ready to copy? Starting at the middle of the page, power 5.|C
@@ -6391,12 +6416,12 @@
 0794952|Brand|Okay, Fred. One addition, third row. The S-Band Power Amp. Request that you pull that circuit breaker and leave the switch in Primary.|C
 0795010|LMP|Okay. Yes, that's the way we were doing it before. I'll pull the Power Amp CB, and then I'll go back to the first stage and put the Power Amp to Prime.|T
 0795022|Brand|That's correct; that should be changed back to Prime. And that's - That's it.|C
-0795022|PAO|Apollo Control, Houston; 79 hours -|P
+0795041|PAO|Apollo Control, Houston; 79 hours -|P
 0795042|CDR|Good work, Vance.|T
 0795046|Brand|Thank you.|C
-0795046|PAO|- 51 minutes into the flight. That was Vance Brand going through a checklist with the Apollo 13 crew for procedures in powering down the systems.|P
+0795048|PAO|- 51 minutes into the flight. That was Vance Brand going through a checklist with the Apollo 13 crew for procedures in powering down the systems.|P
 0795100|LMP|Reset, Off and Low. Okay. Lighting bus, Off; Exterior Lighting is Off. Okay. You want to get your breakers, Jim?|T
-0795100|PAO|We now show 13 at 6,515 nautical miles [12,066 km] out.|P
+0795114|PAO|We now show 13 at 6,515 nautical miles [12,066 km] out.|P
 0795116|LMP|We ought to probably go back to that wide deadband.|T
 0795124|CDR|Okay. The Bus Tie Inverters are coming off the line.|T
 0795128|LMP|Yes. Go ahead. Sorry, I put the switch off. That'll kill caution and warning.|T
@@ -6508,7 +6533,7 @@
 0802545|LMP|That does it.|T
 0802554|LMP|I'm glad, too.|T
 0802600|CDR|I don't know what caused it.|T
-0802600|PAO|Apollo Control, Houston; 80 hours, 27 minutes. Apollo 13 now 8,137 nautical miles [15,070 km] out from the Moon. And presently traveling at a speed of -|P
+0802725|PAO|Apollo Control, Houston; 80 hours, 27 minutes. Apollo 13 now 8,137 nautical miles [15,070 km] out from the Moon. And presently traveling at a speed of -|P
 0802736|CDR|Here we still have 67-percent fuel level. I wonder how come they didn't ... Delta-V curve?|T
 0802756|Brand|Aquarius, Houston.|C
 0802759|CDR|Go ahead.|T
@@ -6579,10 +6604,10 @@
 0804653|LMP|That didn't sound very good.|T
 0804705|CMP|Yes, hang on to that.|T
 0804901|CDR|...|T
-0804901|PAO|This is Apollo Control, Houston; at 80 hours, 49 minutes now into the flight. We show Apollo 13 at 9,118 nautical miles [16,887 km] away from the Moon -|P
+0804918|PAO|This is Apollo Control, Houston; at 80 hours, 49 minutes now into the flight. We show Apollo 13 at 9,118 nautical miles [16,887 km] away from the Moon -|P
 0804931|CDR|They're a hell of a long ways away.|T
 0804933|LMP|Right.|T
-0804933|PAO|- and traveling at a speed of 4,718 feet per second [1,438 m/s].|P
+0804934|PAO|- and traveling at a speed of 4,718 feet per second [1,438 m/s].|P
 0804938|CDR|Yes, we're not moving that fast to Earth.|T
 0804940|LMP|Not yet.|T
 0804940|PAO|Our revised Flight Plan shows a rest period of 6 hours for both spacecraft Commander Jim Lovell and Jack Swigert -|P

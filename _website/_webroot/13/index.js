@@ -1314,8 +1314,8 @@ function updateDashboard(timeId) {
     //     calculateVelocity = false;
     //     calculateDistanceFromEarth = false;
     // }
-    calculateVelocity = false;
-    calculateDistanceFromEarth = false;
+    calculateVelocity = true;
+    calculateDistanceFromEarth = true;
 
     //Display velocity
     if (calculateVelocity) {
