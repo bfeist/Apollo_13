@@ -3423,7 +3423,7 @@
 055:55:19|T|CDR|- Houston -
 055:55:20|T|CMP|I believe we've had a problem here.
 055:55:28|C|Lousma|This is Houston. Say again, please.
-055:55:35|T|CDR|Aaah, Houston, we've had a problem. We've had a Main B Bus Undervolt.
+055:55:35|T|CDR|Uh, Houston, we've had a problem. We've had a Main B Bus Undervolt.
 055:55:42|C|Lousma|Roger. Main B Undervolt.
 055:55:58|C|Lousma|Okay, stand by, 13. We're looking at it.
 055:56:10|T|LMP|Okay. Right now, Houston, the voltage is - is looking good. And we had a pretty large bang associated with the Caution and Warning there. And as I recall, Main B was the one that had had an amp spike on it once before.
@@ -3488,7 +3488,7 @@
 056:14:46|T|LMP|Omni Bravo.
 056:16:08|C|Lousma|Okay, 13; this is Houston. We'd like you to go to your G&amp;C checklist, the pink pages, 1-5. Do powerdown until we get a Delta of 10 amps. Over.
 056:16:21|T|LMP|All right.
-056:16:21|T|CDR|Roger.
+056:16:23|T|CDR|Roger.
 056:16:21|P|PAO|Apollo Control, Houston. That last report from Lousma asked the 13 crew to reduce the electrical load on the spacecraft.
 056:17:03|T|CDR|Okay, Jack, say again that - ... for the powerdown; it's not in the pink pages, the 1-5.
 056:17:10|C|Lousma|Okay. We'd like you to go down that powerdown procedure until you get a Delta of 10 amps. Over.

@@ -907,9 +907,11 @@ function getUtteranceObjectHTML(utteranceIndex, style) {
     html = html.replace("@who", who_modified);
     //html = html.replace("@words", "[" + utteranceIndex + "]" + words_modified);
     html = html.replace("@words", words_modified);
-    if (who_modified === "Public Affairs" || who_modified === "") {
+    // if (who_modified === "Public Affairs" || who_modified === "") {
+    if (utteranceObject[3] === "P" || who_modified === "") {
         var uttTypeStr = "utt_pao";
-    } else if (who_modified === "Mission Control") {
+    // } else if (who_modified === "Mission Control") {
+    } else if (utteranceObject[3] === "C") {
         uttTypeStr = "utt_capcom";
     } else {
         uttTypeStr = "utt_crew";
@@ -1040,9 +1042,10 @@ function getCommentaryObjectHTML(commentaryIndex) {
 
     var comId = commentaryObject[0];
 
-    var attribution = commentaryObject[1];
+    // var attribution = commentaryObject[1];
+    var attribution = '<a href="https://history.nasa.gov/afj/ap13fj/index.html" target="AFJ">AFJ</a>';
     var who_modified = commentaryObject[2];
-    var words_modified = commentaryObject[3];
+    var words_modified = commentaryObject[1];
 
     var html = $('#commentaryTemplate').html();
 
