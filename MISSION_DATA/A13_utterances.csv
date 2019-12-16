@@ -777,7 +777,7 @@
 000:58:24|T|CDR|And, Houston, we're beginning to see a beautiful sunrise here.
 000:58:29|C|Kerwin|Roger that, Jim.
 000:59:16|P|PAO|We've had Loss Of Signal now with the spacecraft through Carnarvon. Apollo 13 will be coming within range of the tracking antennas at the Honeysuckle Creek, Australia station in less then a minute. We'll stand by for reacquiring.
-000:00:09|P|PAO|And at 1 hour, 10 minutes into the flight of Apollo 13, we should be reacquiring radio contact with the spacecraft through Honeysuckle Creek momentarily. Recapping briefly the situation during the launch: We had a normal first stage burn. The second stage ignition was normal up through 5 minutes and 30 seconds at which time the inboard engine, engine No.5 shut down early. The center engine had been scheduled to shut down at about 7 minutes, 44 seconds Ground Elapsed Time. The cut-off on the second stage was at about 9 minutes, 48 seconds - about 30 seconds early, and the total excess burn time on the third stage was about 10 seconds. CapCom Joe Kerwin has just put in a call to the crew. We've had Acquisition Of Signal. We'll stand by for conversation with the spacecraft.
+001:00:09|P|PAO|And at 1 hour, 10 minutes into the flight of Apollo 13, we should be reacquiring radio contact with the spacecraft through Honeysuckle Creek momentarily. Recapping briefly the situation during the launch: We had a normal first stage burn. The second stage ignition was normal up through 5 minutes and 30 seconds at which time the inboard engine, engine No.5 shut down early. The center engine had been scheduled to shut down at about 7 minutes, 44 seconds Ground Elapsed Time. The cut-off on the second stage was at about 9 minutes, 48 seconds - about 30 seconds early, and the total excess burn time on the third stage was about 10 seconds. CapCom Joe Kerwin has just put in a call to the crew. We've had Acquisition Of Signal. We'll stand by for conversation with the spacecraft.
 001:00:51|C|Kerwin|13, Houston through Honeysuckle.
 001:01:10|C|Kerwin|Apollo 13, Houston through Honeysuckle.
 001:01:15|T|CDR|Roger, Houston; 13 here. Reading you loud and clear.
@@ -12663,7 +12663,7 @@
 142:23:51|P|PAO|We now show velocity of 27,553 feet per second at 142 hours, 24 minutes.
 142:24:34|C|Kerwin|Odyssey, Houston. Over.
 142:24:45|C|Kerwin|Odyssey, Houston. Over.
-142:24:57|P|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission - aboard Apollo 13 -
+142:24:57|P|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission -
 142:25:04|C|Kerwin|Odyssey, Houston. Over.
 142:25:13|C|Kerwin|Odyssey, Houston. Over.
 142:25:16|T|CMP|Go ahead.

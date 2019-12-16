@@ -775,7 +775,7 @@
 0005824|CDR|And, Houston, we're beginning to see a beautiful sunrise here.|T
 0005829|Kerwin|Roger that, Jim.|C
 0005916|PAO|We've had Loss Of Signal now with the spacecraft through Carnarvon. Apollo 13 will be coming within range of the tracking antennas at the Honeysuckle Creek, Australia station in less then a minute. We'll stand by for reacquiring.|P
-0000009|PAO|And at 1 hour, 10 minutes into the flight of Apollo 13, we should be reacquiring radio contact with the spacecraft through Honeysuckle Creek momentarily. Recapping briefly the situation during the launch: We had a normal first stage burn. The second stage ignition was normal up through 5 minutes and 30 seconds at which time the inboard engine, engine No.5 shut down early. The center engine had been scheduled to shut down at about 7 minutes, 44 seconds Ground Elapsed Time. The cut-off on the second stage was at about 9 minutes, 48 seconds - about 30 seconds early, and the total excess burn time on the third stage was about 10 seconds. CapCom Joe Kerwin has just put in a call to the crew. We've had Acquisition Of Signal. We'll stand by for conversation with the spacecraft.|P
+0010009|PAO|And at 1 hour, 10 minutes into the flight of Apollo 13, we should be reacquiring radio contact with the spacecraft through Honeysuckle Creek momentarily. Recapping briefly the situation during the launch: We had a normal first stage burn. The second stage ignition was normal up through 5 minutes and 30 seconds at which time the inboard engine, engine No.5 shut down early. The center engine had been scheduled to shut down at about 7 minutes, 44 seconds Ground Elapsed Time. The cut-off on the second stage was at about 9 minutes, 48 seconds - about 30 seconds early, and the total excess burn time on the third stage was about 10 seconds. CapCom Joe Kerwin has just put in a call to the crew. We've had Acquisition Of Signal. We'll stand by for conversation with the spacecraft.|P
 0010051|Kerwin|13, Houston through Honeysuckle.|C
 0010110|Kerwin|Apollo 13, Houston through Honeysuckle.|C
 0010115|CDR|Roger, Houston; 13 here. Reading you loud and clear.|T
@@ -11831,7 +11831,7 @@
 1361654|PAO|We copied Swigert entering the command module at 136 hours 10 minutes 49 seconds -|P
 1361658|Kerwin|And, Fred, the computer has your target load in.|C
 1361704|LMP|Okay.|T
-1361713|PAO|Joe Kerwin, by the way, is taking over the position as capsule communicator in the Mission Control Center. Well, in the command module Swigert will be warming up some of the systems. Throwing the circuit breakers and main bus B and some of the heaters for equipment onboard the command module. Almost at the same time as Swigert entered the command module, Ken Mattingly came in the control center still in an apparently spotless condition. We're at 136 hours 18 minutes into the flight. We show Apollo 13 at an altitude of 45,255 nautical miles, traveling at a speed of 92,222 feet per second. This is Apollo Control, Houston.|P
+1361713|PAO|Joe Kerwin, by the way, is taking over the position as capsule communicator in the Mission Control Center. Well, in the command module Swigert will be warming up some of the systems. Throwing the circuit breakers and main bus B and some of the heaters for equipment onboard the command module. Almost at the same time as Swigert entered the command module, Ken Mattingly came in the control center still in an apparently spotless condition. We're at 136 hours 18 minutes into the flight. We show Apollo 13 at an altitude of 45,255 nautical miles, traveling at a speed of 9,222 feet per second. This is Apollo Control, Houston.|P
 1361856|CDR|Houston, Aquarius.|T
 1361859|Kerwin|Go ahead, Aquarius.|C
 1361901|CDR|Okay. I just want to clarify one thing on the LM SEP PAD. It appears to me that in my configuration, I could probably use a VERB 49 loading in 622, yaw, pitch, and roll, in that order; and then being able to fly out at 5018 in roll, pitch, and yaw. Is that correct?|T
@@ -12022,7 +12022,8 @@
 1380105|PAO|Apollo Control Houston, 138 hours, 1 minutes into the flight; as you heard earlier, Joe Kerwin told Apollo 13 that they could separate at their convenience, that followed a time identified by Jim Lovell, which would be some 2 minutes after what we had earlier carried on the ground, we now show Apollo 13 at a distance of 35,729 nautical miles away from Earth, traveling at a speed of 10,400 feet per second. At 138 hours, 2 minutes, into the flight, this is Apollo Control Houston.|P
 1380206|CDR|SM SEP.|T
 1380209|Kerwin|Copy that.|C
-1380220|PAO|We copied that report from Jim Lovell, of service module separation at 138 hours, 2 minutes, 8 seconds. And as you heard, that was ahead of schedule. We presently show Apollo 13 at 35,611 nautical miles away from Earth.|P
+1380220|PAO|We copied that report from Jim Lovell, of service module separation at 138 hours, 2 minutes, 8 seconds.|P
+1380235|PAO|And as you heard, that was ahead of schedule. We presently show Apollo 13 at 35,611 nautical miles away from Earth.|P
 1380353|CDR|Do you see it, Jack?|T
 1380426|Kerwin|Okay, Aquarius; Houston. I recommend you terminate AVERAGE G. Over.|C
 1380433|CDR|Okay, I've got her, Houston.|T
@@ -12093,14 +12094,13 @@
 1381900|Kerwin|Okay. Copy that, Jim. Looks good. Do you know whether Jack got any pictures out of window 5? Was it still fogged up? Over.|C
 1381909|CDR|I don't think so. I think he came right down here, because I think he saw it first in the - in the LM.|T
 1381915|Kerwin|Okay. Good deal. And whenever you get cleaned up, we got the entry PAD and the landing area summary for you.|C
-1381915|PAO|Needless to say, all of these gentlemen.|P
 1381936|CMP|Okay, Vance. This is Jack.|T
 1381939|Kerwin|Go ahead.|C
 1381941|CMP|Okay. Doing a VERB 37, ENTER; does bring up the three balls 62 display, but I can't PROCEED on it on either DSKY and a VERB 33 doesn't work either.|T
 1381955|Kerwin|Okay.|C
 1381956|CMP|It's still just a flashing 5025 with a code 00062.|T
 1382003|Kerwin|Okay. Copy that, Jack. Stand by 1.|C
-1382022|PAO|Needless to say, all of the distinguished visitors in the Control Center were most interested in the report from Apollo 13 of the service module condition, as the 13 crew moved away following the jettison.|P
+1382020|PAO|Needless to say, all of the distinguished visitors in the Control Center were most interested in the report from Apollo 13 of the service module condition, as the 13 crew moved away following the jettison.|P
 1382039|Kerwin|Jack, Houston. How long did you hold PROCEED before you quit on it?|C
 1382049|CMP|Well, it was varying lengths. Is it suppose to be a long-time PROCEED?|T
 1382056|Kerwin|We think it may be, Jack. We think it may be 15 to 20 seconds, and our recommendation is that you PRO and hold it down for a good period of time, probably half a minute or more, and see if the DSKY blanks.|C
@@ -12255,7 +12255,7 @@
 1393730|Kerwin|Just like to mention that, even if, for some reason, we run out of time or something and don't complete the Moon-Sun P52, Jack will have a platform coarse align to the entry REFSMMAT, which we feel will be plenty good enough.|C
 1393746|CDR|Roger. That's my feelings, too.|T
 1393748|Kerwin|Okay.|C
-1394124|PAO|This is Apollo Control, Houston, 139 hours 42 minutes now into the flight. Apollo 13 is presently 25,227 nautical miles out from Earth, traveling at a velocity of about 12,307 feet per second. As you heard the earlier discussion, Jack Swigert having some difficulty seeing stars through the command module optics. These sightings are used as a reference in platform alignment - that's the computer platform. The problem is caused by sunlight reflecting off the surface of the lunar module and this reflection getting into the optics and washing out the view of the stars. If Command Module Pilot Swigert is unsuccessful in his star sighting efforts, Jim Lovell will maneuver with the lunar module to give him the opportunity to sight off the Sun and Moon. We're at 139 hours 42 minutes and continuing to monitor. This is Apollo Control, Houston.|P
+1394126|PAO|This is Apollo Control, Houston, 139 hours 42 minutes now into the flight. Apollo 13 is presently 25,227 nautical miles out from Earth, traveling at a velocity of about 12,307 feet per second. As you heard the earlier discussion, Jack Swigert having some difficulty seeing stars through the command module optics. These sightings are used as a reference in platform alignment - that's the computer platform. The problem is caused by sunlight reflecting off the surface of the lunar module and this reflection getting into the optics and washing out the view of the stars. If Command Module Pilot Swigert is unsuccessful in his star sighting efforts, Jim Lovell will maneuver with the lunar module to give him the opportunity to sight off the Sun and Moon. We're at 139 hours 42 minutes and continuing to monitor. This is Apollo Control, Houston.|P
 1395045|Kerwin|Aquarius, Houston.|C
 1395049|CDR|Hello there, Houston.|T
 1395050|Kerwin|Hi! Jim, we - We've gone ahead and computed the CSM coarse align gimbal angles based on your being at the service module SEP attitude at the time that Jack cranks up the computer and - and coarse aligns the IMU. That is, we assume that you're going to be at roll, 0; pitch, 091; yaw, 0; and, if you concur on that, I'd like to pass up the angles for - for Jack to have.|C
@@ -12298,7 +12298,7 @@
 1401700|Kerwin|(Laughter) The one MC.|C
 1401708|CDR|I've got Fred up there with Jack now helping to power up the CM, and I'm staying down in good old Aquarius.|T
 1401716|Kerwin|Understand, Jim.|C
-1401746|PAO|Apollo Control, Houston. We're 140 hours 18 minutes, now into the flight. That last report from spacecraft commander Jim Lovell, reporting that Fred Haise, now in the command module, helping Jack Swigert power up the systems. The nominal timeline called for Lovell and Haise is to transfer into the lunar module at about minus 1 hour 30 minutes from time of entry interface. So lunar module pilot, Haise has stepped ahead slightly in that timeline. We now show that we're 1 hour 22 minutes away from time of jettison of the lunar module. With 140 hours 19 minutes into the flight, this is Apollo Control Houston.|P
+1401745|PAO|Apollo Control, Houston. We're 140 hours 18 minutes, now into the flight. That last report from spacecraft commander Jim Lovell, reporting that Fred Haise, now in the command module, helping Jack Swigert power up the systems. The nominal timeline called for Lovell and Haise is to transfer into the lunar module at about minus 1 hour 30 minutes from time of entry interface. So lunar module pilot, Haise has stepped ahead slightly in that timeline. We now show that we're 1 hour 22 minutes away from time of jettison of the lunar module. With 140 hours 19 minutes into the flight, this is Apollo Control Houston.|P
 1402102|PAO|Apollo Control Houston at 140 hours 21 minutes now into the flight. We're receiving command module tracking data now and the data is looking good.|P
 1402113|Kerwin|Aquarius, Houston.|C
 1402116|CDR|Go ahead.|T
@@ -12651,7 +12651,7 @@
 1422351|PAO|We now show velocity of 27,553 feet per second at 142 hours, 24 minutes.|P
 1422434|Kerwin|Odyssey, Houston. Over.|C
 1422445|Kerwin|Odyssey, Houston. Over.|C
-1422457|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission - aboard Apollo 13 -|P
+1422457|PAO|Apollo Control Houston at 142 hours, 25 minutes now into the mission -|P
 1422504|Kerwin|Odyssey, Houston. Over.|C
 1422513|Kerwin|Odyssey, Houston. Over.|C
 1422516|CMP|Go ahead.|T

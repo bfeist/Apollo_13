@@ -1317,26 +1317,41 @@ function updateDashboard(timeId) {
     calculateVelocity = true;
     calculateDistanceFromEarth = true;
 
+
+    var velocityIndex;
+    var distanceIndex;
+    var FrameOfReferenceString;
+    if (timeIdInSeconds < timeStrToSeconds("075:06:08") || timeIdInSeconds > timeStrToSeconds("085:59:00")) { //earth reference range
+        velocityIndex = 1;
+        distanceIndex = 2;
+        FrameOfReferenceString = "(Earth Reference)"
+    } else { //moon reference
+        velocityIndex = 4;
+        distanceIndex = 3;
+        FrameOfReferenceString = "(Moon Reference)"
+    }
+    $('#frameOfReferenceSpan').html(FrameOfReferenceString);
+
     //Display velocity
     if (calculateVelocity) {
-        if (timeIdInSeconds < timeStrToSeconds("195:18:18")) { //splashdown time
+        if (timeIdInSeconds < timeStrToSeconds("142:54:40")) { //splashdown time
             for (counter = 0; counter < gTelemetryData.length; counter++) {
                 if (timeStrToSeconds(gTelemetryData[counter][0]) < timeIdInSeconds) {
-                    if (gTelemetryData[counter][1] !== "") {
+                    if (gTelemetryData[counter][velocityIndex] !== "") {
                         var prevVelocityTimestampObject = gTelemetryData[counter];
                     }
                 } else {
-                    if (gTelemetryData[counter][1] !== "") {
+                    if (gTelemetryData[counter][velocityIndex] !== "") {
                         var nextVelocityTimestampObject = gTelemetryData[counter];
                         break;
                     }
                 }
             }
             var startSeconds = timeStrToSeconds(prevVelocityTimestampObject[0]);
-            var startVelocity = parseInt(prevVelocityTimestampObject[1]);
+            var startVelocity = parseInt(prevVelocityTimestampObject[velocityIndex]);
 
             var endSeconds = timeStrToSeconds(nextVelocityTimestampObject[0]);
-            var endVelocity = parseInt(nextVelocityTimestampObject[1]);
+            var endVelocity = parseInt(nextVelocityTimestampObject[velocityIndex]);
             var secondsRange = endSeconds - startSeconds;
             var velocityRange = endVelocity - startVelocity;
             var currentPositionInSecondsRange = timeIdInSeconds - startSeconds;
@@ -1365,21 +1380,21 @@ function updateDashboard(timeId) {
         if (timeIdInSeconds > 0 && timeIdInSeconds < timeStrToSeconds("142:54:40")) {  //A13 splashdown time
             for (counter = 0; counter < gTelemetryData.length; counter++) {
                 if (timeStrToSeconds(gTelemetryData[counter][0]) < timeIdInSeconds) {
-                    if (gTelemetryData[counter][2] !== "") {
+                    if (gTelemetryData[counter][distanceIndex] !== "") {
                         var prevDistanceEarthTimestampObject = gTelemetryData[counter];
                     }
                 } else {
-                    if (gTelemetryData[counter][2] !== "") {
+                    if (gTelemetryData[counter][distanceIndex] !== "") {
                         var nextDistanceEarthTimestampObject = gTelemetryData[counter];
                         break;
                     }
                 }
             }
             startSeconds = timeStrToSeconds(prevDistanceEarthTimestampObject[0]);
-            var startDistanceEarth = parseFloat(prevDistanceEarthTimestampObject[2]);
+            var startDistanceEarth = parseFloat(prevDistanceEarthTimestampObject[distanceIndex]);
 
             endSeconds = timeStrToSeconds(nextDistanceEarthTimestampObject[0]);
-            var endDistanceEarth = parseFloat(nextDistanceEarthTimestampObject[2]);
+            var endDistanceEarth = parseFloat(nextDistanceEarthTimestampObject[distanceIndex]);
             secondsRange = endSeconds - startSeconds;
             var distanceEarthRange = endDistanceEarth - startDistanceEarth;
             currentPositionInSecondsRange = timeIdInSeconds - startSeconds;
