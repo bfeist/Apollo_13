@@ -554,8 +554,17 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     var historicalDate = new Date(timeidDate.getTime()); //for display only
     $(".historicalDate").text(historicalDate.toDateString());
 
+    var timezoneOffset = -(new Date().getTimezoneOffset() / 60);
+    var timezoneOffsetString = timezoneOffset.toString();
+    var timezoneOffsetPaddingAmount = 3 - timezoneOffsetString.length;
+    for (var i = 0; i <= timezoneOffsetPaddingAmount; i++) {
+        timezoneOffsetString = timezoneOffsetString + "0";
+    }
+
+    console.log("Timezone offset: " + timezoneOffsetString);
+
     var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-    $(".historicalTime").text(historicalDate.toLocaleTimeString('en-US', options));
+    $(".historicalTime").text(historicalDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
     //$(".historicalTime").text(historicalDate.toLocaleTimeString().match(/^[^:]+(:\d\d){2} *(am|pm)\b/i)[0]);  //.replace(/([AP]M)$/, ""));
     //$(".historicalTimeAMPM").text(historicalDate.toLocaleTimeString().match(/([AP]M)/)[0])
 
@@ -1327,13 +1336,14 @@ function updateDashboard(timeId) {
     if (timeIdInSeconds < timeStrToSeconds("075:06:08") || timeIdInSeconds > timeStrToSeconds("085:59:00")) { //earth reference range
         velocityIndex = 1;
         distanceIndex = 2;
-        FrameOfReferenceString = "(Earth Reference)"
+        FrameOfReferenceString = "Earth";
     } else { //moon reference
         velocityIndex = 4;
         distanceIndex = 3;
-        FrameOfReferenceString = "(Moon Reference)"
+        FrameOfReferenceString = "Moon";
     }
-    $('#frameOfReferenceSpan').html(FrameOfReferenceString);
+    $('#frameOfReferenceVelocitySpan').html(FrameOfReferenceString);
+    $('#frameOfReferenceDistanceSpan').html(FrameOfReferenceString);
 
     //Display velocity
     if (calculateVelocity) {

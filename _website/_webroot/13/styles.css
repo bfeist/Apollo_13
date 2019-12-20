@@ -1635,7 +1635,7 @@ header {
 }
 .info-wrapper .content .date {
   /*font-size: .8em;*/
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .info-wrapper .content .time {
   border-left: 1px solid #444;

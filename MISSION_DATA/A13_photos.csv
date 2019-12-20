@@ -107,7 +107,7 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 011:37:20|AS13-60-8600|||Eastern Pacific Ocean, Australia, China Sea and Korea|||
 026:10:00|AS13-60-8601|||Distant view of Earth, North America, Caribbean Sea|||
 026:11:00|AS13-60-8602|||Distant view of Earth, North America, Caribbean Sea|||
-076:05:10|AS13-60-8603|||Attempted view of the nearside terminator and lunar limb. No detail.|||
+076:05:00|AS13-60-8603|||Attempted view of the nearside terminator and lunar limb. No detail.|||
 076:05:20|AS13-60-8604|||Very faint lunar limb and neraside terminator-Arzachel, Thebit and  Purbach|||
 076:05:40|AS13-60-8605|||Very faint lunar limb and nearside terminator-Arzachel, Thebit and  Purbach|||
 076:06:00|AS13-60-8606|||Very faint lunar limb and nearside terminator-Rupes Recta, Purbach, Arzachel and Alphonsus|||
@@ -174,51 +174,51 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 077:44:47|AS13-60-8667|||Mendeleev, Hoffmiester, Tsu Chung-Chi, Leonov|||
 077:44:57|AS13-60-8668|||King, Ibn, Firnas, Gregory, Green|||
 077:45:12|AS13-60-8669|||High Oblique across Mare Australe|||
-079:48:00|AS13-60-8670|||Mare Crisium, Mare Marginis, Joliot, Hubble, Goddard, Al-Biruni|||
-079:48:15|AS13-60-8671|||Mare Crisium, Mare Marginis, Mare Smythii, Joliot, Hubble, Goddard, Al-Biruni, Plutarch, Neper|||
-079:48:30|AS13-60-8672|||Mare Tranquillitatis, Serenitatis, Prolocus, Taruntius, Goclenius, Picard|||
-079:48:45|AS13-60-8673|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Picard, Prolocus, Cleomedes|||
-079:49:00|AS13-60-8674|||Mare Humboldtianum, Endymion, Lacus Spie, Atlas, Hercules, Lacus, Somniorum|||
-079:49:15|AS13-60-8675|||Joliot, Lomonosov, Compton, Giordano Bruno, Hubble, Mare Marginis|||
-079:49:30|AS13-60-8676|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper|||
-079:49:40|AS13-60-8677|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper|||
-080:37:30|AS13-60-8678|||Langrenus, Mare Fecunditatis, Mare Tranquillitatis, Mare Nectaris, Goclenius|||
-080:37:40|AS13-60-8679|||Langrenus, Mare Nectaris, Mare Fecunditatis, Vallis Snellius|||
-080:37:50|AS13-60-8680|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Prolocus, Taruntius, Lacus Somniorum|||
-080:38:05|AS13-60-8681|||Tsiolkovsky, Sklodowska, Mare Australe|||
-080:38:20|AS13-60-8682|||Giordano Bruno. Mare Crisium and Mare Humoldtianum, Joliot|||
-080:49:15|AS13-60-8683|||Mare Crisium, Mare Tranquillitatis, Mare Fecunditatis, Mare Serenitatis, Langrenus|||
-080:49:25|AS13-60-8684|||Mare Crisium, Mare Tranquillitatis, Mare Fecunditatis, Mare Serenitatis, Langrenus|||
-080:49:38|AS13-60-8685|||Mare Crisium, Mare Marginius, Mare Fecunditatis, Mare Tranquillitatis, Mare Undarum, Proclus|||
-080:49:52|AS13-60-8686|||Humboldt, Langrrenus, Mare Fecundatatis, Mare Nectaris and Mare Australe|||
-080:50:05|AS13-60-8687|||Langrenus, Mare Fecunditatis, Mare Tranquillitatis, Mare Nectaris, Goclenius, Taruntius|||
-080:50:20|AS13-60-8688|||Mare Australe, Humboldt, Mare Nectaris, Vallis Snellius|||
-080:50:33|AS13-60-8689|||Mare Nectaris, Fracastorius|||
-080:50:44|AS13-60-8690|||Mare Tranquillitatis, Dionysius|||
-080:50:57|AS13-60-8691|||Mare Smythii, Mare Marginis, Mare Crisium, Goddard, Langrenus|||
-080:51:10|AS13-60-8692|||Mare Serenitatis, Mare Humboldtianum, Joliot|||
-080:51:30|AS13-60-8693|||Mare Crisium, Mare Fecunditatis, Mare Tranquillitatis, Mare Serenitatis, Mare Vaporum|||
-080:51:47|AS13-60-8694|||Mare Crisium, Mare Marginis, Mare Smythii, Giordano Bruno|||
-080:52:01|AS13-60-8695|||Mare Nectaris, Fracastoriuss|||
-080:52:16|AS13-60-8696|||Mare Crisium, Mare Fecunditatis, Mare Tranquillitatis, Mare Serenitatis, Mare Vaporum|||
-080:52:33|AS13-60-8697|||Mare Crisium, Lacus Somniorum, Mare Huboldtianum, Mare Marginis, Joloit|||
-081:12:05|AS13-60-8698|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Marginis|||
-081:12:15|AS13-60-8699|||Tsiolkovsky, Mare Marginis, Mare Smythii, Goddard|||
-081:43:45|AS13-60-8700|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Marginis, Mare Nectaris|||
-081:44:05|AS13-60-8701|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Serenitatis, Mare Nectaris|||
-081:55:40|AS13-60-8702|||Mare Australe, Mare Fecunditatis, Mare Nectaris, Mare Tranquillitatis, Langrenus|||
-081:56:00|AS13-60-8703|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window|||
-081:56:20|AS13-60-8704|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window|||
-081:56:40|AS13-60-8705|||Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, Mare Marginis, Mare Smythii, through the LMP LM window|||
-083:18:40|AS13-60-8707|||Moon eastern hemisphere|||
-083:19:00|AS13-60-8708|||Moon eastern hemisphere|||
-083:19:20|AS13-60-8709|||Moon eastern hemisphere|||
-083:19:40|AS13-60-8710|||Moon eastern hemisphere|||
-083:20:00|AS13-60-8711|||Moon eastern hemisphere|||
-083:20:20|AS13-60-8712|||Moon eastern hemisphere|||
-083:20:40|AS13-60-8713|||Moon eastern hemisphere|||
-083:21:00|AS13-60-8714|||Moon eastern hemisphere|||
-083:21:20|AS13-60-8715|||Moon eastern hemisphere|||
+077:48:00|AS13-60-8670|||Mare Crisium, Mare Marginis, Joliot, Hubble, Goddard, Al-Biruni|||
+077:48:15|AS13-60-8671|||Mare Crisium, Mare Marginis, Mare Smythii, Joliot, Hubble, Goddard, Al-Biruni, Plutarch, Neper|||
+077:48:30|AS13-60-8672|||Mare Tranquillitatis, Serenitatis, Prolocus, Taruntius, Goclenius, Picard|||
+077:48:45|AS13-60-8673|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Picard, Prolocus, Cleomedes|||
+077:49:00|AS13-60-8674|||Mare Humboldtianum, Endymion, Lacus Spie, Atlas, Hercules, Lacus, Somniorum|||
+077:49:15|AS13-60-8675|||Joliot, Lomonosov, Compton, Giordano Bruno, Hubble, Mare Marginis|||
+077:49:30|AS13-60-8676|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper|||
+077:49:40|AS13-60-8677|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper|||
+078:37:30|AS13-60-8678|||Langrenus, Mare Fecunditatis, Mare Tranquillitatis, Mare Nectaris, Goclenius|||
+078:37:40|AS13-60-8679|||Langrenus, Mare Nectaris, Mare Fecunditatis, Vallis Snellius|||
+078:37:50|AS13-60-8680|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Prolocus, Taruntius, Lacus Somniorum|||
+078:38:05|AS13-60-8681|||Tsiolkovsky, Sklodowska, Mare Australe|||
+078:38:20|AS13-60-8682|||Giordano Bruno. Mare Crisium and Mare Humoldtianum, Joliot|||
+078:49:15|AS13-60-8683|||Mare Crisium, Mare Tranquillitatis, Mare Fecunditatis, Mare Serenitatis, Langrenus|||
+078:49:25|AS13-60-8684|||Mare Crisium, Mare Tranquillitatis, Mare Fecunditatis, Mare Serenitatis, Langrenus|||
+078:49:38|AS13-60-8685|||Mare Crisium, Mare Marginius, Mare Fecunditatis, Mare Tranquillitatis, Mare Undarum, Proclus|||
+078:49:52|AS13-60-8686|||Humboldt, Langrrenus, Mare Fecundatatis, Mare Nectaris and Mare Australe|||
+078:50:05|AS13-60-8687|||Langrenus, Mare Fecunditatis, Mare Tranquillitatis, Mare Nectaris, Goclenius, Taruntius|||
+078:50:20|AS13-60-8688|||Mare Australe, Humboldt, Mare Nectaris, Vallis Snellius|||
+078:50:33|AS13-60-8689|||Mare Nectaris, Fracastorius|||
+078:50:44|AS13-60-8690|||Mare Tranquillitatis, Dionysius|||
+078:50:57|AS13-60-8691|||Mare Smythii, Mare Marginis, Mare Crisium, Goddard, Langrenus|||
+078:51:10|AS13-60-8692|||Mare Serenitatis, Mare Humboldtianum, Joliot|||
+078:51:30|AS13-60-8693|||Mare Crisium, Mare Fecunditatis, Mare Tranquillitatis, Mare Serenitatis, Mare Vaporum|||
+078:51:47|AS13-60-8694|||Mare Crisium, Mare Marginis, Mare Smythii, Giordano Bruno|||
+078:52:01|AS13-60-8695|||Mare Nectaris, Fracastoriuss|||
+078:52:16|AS13-60-8696|||Mare Crisium, Mare Fecunditatis, Mare Tranquillitatis, Mare Serenitatis, Mare Vaporum|||
+078:52:33|AS13-60-8697|||Mare Crisium, Lacus Somniorum, Mare Huboldtianum, Mare Marginis, Joloit|||
+079:12:05|AS13-60-8698|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Marginis|||
+079:12:15|AS13-60-8699|||Tsiolkovsky, Mare Marginis, Mare Smythii, Goddard|||
+079:43:45|AS13-60-8700|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Marginis, Mare Nectaris|||
+079:44:05|AS13-60-8701|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Serenitatis, Mare Nectaris|||
+079:55:40|AS13-60-8702|||Mare Australe, Mare Fecunditatis, Mare Nectaris, Mare Tranquillitatis, Langrenus|||
+079:56:00|AS13-60-8703|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window|||
+079:56:20|AS13-60-8704|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window|||
+079:56:40|AS13-60-8705|||Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, Mare Marginis, Mare Smythii, through the LMP LM window|||
+081:18:40|AS13-60-8707|||Moon eastern hemisphere|||
+081:19:00|AS13-60-8708|||Moon eastern hemisphere|||
+081:19:20|AS13-60-8709|||Moon eastern hemisphere|||
+081:19:40|AS13-60-8710|||Moon eastern hemisphere|||
+081:20:00|AS13-60-8711|||Moon eastern hemisphere|||
+081:20:20|AS13-60-8712|||Moon eastern hemisphere|||
+081:20:40|AS13-60-8713|||Moon eastern hemisphere|||
+081:21:00|AS13-60-8714|||Moon eastern hemisphere|||
+081:21:20|AS13-60-8715|||Moon eastern hemisphere|||
 083:30:15|AS13-60-8716|||Earth with cloud cover Pacific|||
 083:30:35|AS13-60-8717|||Earth with cloud cover Pacific|||
 083:38:10|AS13-60-8718|||Moon eastern hemisphere|||
