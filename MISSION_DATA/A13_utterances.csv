@@ -150,8 +150,8 @@
 000:05:04|O|CMP|Okay. Watching 8.
 000:05:30|P|PAO|And at 5 minutes 30 seconds into the launch, we continue to look very good on the second stage.
 000:05:32|T|CDR|Inboard.
-000:05:35|P|PAO|Jim Lovell just reported the inboard engine has shut down as scheduled.
 000:05:32|O|CMP|Inboard.
+000:05:35|P|PAO|Jim Lovell just reported the inboard engine has shut down as scheduled.
 000:05:36|C|Kerwin|Rog. We confirm inboard out.
 000:05:38|O|CDR|That shouldn't have happened.
 000:05:40|O|CMP|No. That's 7:42. That's 2 minutes early.
@@ -205,7 +205,7 @@
 000:08:19|O|CDR|Yes. Hey, I got a - We got a funny vibration
 000:08:27|O|LMP|Yes. Yes, there was a bit of noise, there. Yes.
 000:08:31|O|CMP|...
-000:08:31|P|PAO|At 8 minutes, 35 seconds; continuing to burn on the second stage. All four remaining engines looking good at this point.
+000:08:35|P|PAO|At 8 minutes, 35 seconds; continuing to burn on the second stage. All four remaining engines looking good at this point.
 000:08:45|C|Kerwin|Apollo 13, Houston. Mark, level sense arm.
 000:08:48|T|CDR|Mark level sense arm. Roger.
 000:08:58|C|Kerwin|Apollo 13, Houston. At 9 minutes, you're Go; the CMC is Go.
@@ -713,7 +713,7 @@
 000:50:46|O|CDR|Once you get one of them in -
 000:50:53|O|LMP|How you doing, Jack? ... all right down there?
 000:50:56|O|CMP|Oh, yes. No problems yet. ... kind of worried ... 12.1 down ...
-000:50:00|O|CMP|Jim, do you need a TSB?
+000:51:00|O|CMP|Jim, do you need a TSB?
 000:51:07|O|CDR|Well, I wouldn't worry about it now. ... go down yet. You're not getting those breakers; that's what you're forgetting.
 000:51:16|O|LMP|The - Okay, now where - those - you want those where?
 000:51:20|O|CMP|In front of the L-shaped bag, isn't it?
@@ -764,7 +764,7 @@
 000:55:43|O|LMP|You get done, you're hooking up the cable. You got to do that part, though. We can't ... right there.
 000:55:48|O|CMP|All right. And I'll verify the CB power is off -
 000:55:50|O|LMP|... off.
-000:55:53|O|CDR|I'm going to go back into the - ..., Jack; and look at ...
+000:55:53|O|CDR|I'm going to go back into the computer ..., Jack; and look at ...
 000:55:59|O|CMP|Okay.
 000:56:00|O|CDR|...
 000:56:02|O|CMP|Freddo, you - How about a bracket?
@@ -941,7 +941,7 @@
 001:53:41|T|CDR|Roger. AOS at Carnarvon 2 plus 25 plus 50.
 001:53:45|C|Kerwin|That's affirm.
 001:55:57|C|Kerwin|Apollo 13, Houston. LOS in about 1 minute. At LOS we'd like Command Reset and then Normal.
-001:55:06|T|CDR|Roger.
+001:56:06|T|CDR|Roger.
 001:56:42|P|PAO|We've lost contact now with the spacecraft through the Canary Islands Tracking Station. We'll be reacquiring in a little less than 30 minutes, at a Ground Elapsed Time of 2 hours, 26 minutes; when the spacecraft comes within range of the tracking antennas at Carnarvon Australia. During the pass over the United States, and out over the Atlantic, CapCom Joe Kerwin gave the crew a preliminary go ahead for Translunar Injection. We have adequate propellant margins on the Saturn third stage, and despite the some 10 seconds of additional burn in getting into orbit due to the early shutdown of the second stage center engine. It is not expected that the somewhat later injection time will have any significant effect on the Flight Plan; the preliminary time for the beginning of the Translunar Injection burn is 2 hours, 35 minutes, 27 seconds. The Flight Dynamics Officer is in the process now of updating that time but we don't expect a significant change. At 1 hour, 57 minutes, 55 seconds; this is Mission Control, Houston.
 002:24:58|P|PAO|This is Apollo Control at 2 hours, 25 minutes. Apollo 13 is now about 10 minutes away from the scheduled ignition of the S-IVB engine to start the spacecraft on its way to the Moon. The Flight Dynamics Officer advises that the planned time for the beginning of that burn will be 2 hours and 35 minutes, 44 seconds Ground Elapsed Time. Our network controller reports that we've just had Acquisition Of Signal with the spacecraft from Carnarvon and during this pass, flight controllers will be looking at the spacecraft and the launch vehicle - the S-IVB - one last time before Translunar Injection.
 002:25:38|C|Kerwin|Apollo 13, Houston through Carnarvon.
@@ -1010,7 +1010,7 @@
 002:38:09|P|PAO|Jim Lovell just reported that everything looks good with that burn. We're still about 7 minutes away from reacquiring the spacecraft through the station in Hawaii at which time we'll get our first good look at the trajectory as a result of this burn.
 002:38:17|O|CMP|Right on ... Right on H-dot; we're right on 8.
 002:38:27|T|CDR|They are off - at 38.
-002:38:31|O|CMP|Three minutes -
+002:38:31|O|CMP|Three minutes - 
 002:38:47|O|CMP|...
 002:38:48|O|CDR|All right.
 002:39:02|O|CMP|3:30, Jim. 3.4.
@@ -1056,7 +1056,7 @@
 002:41:42|C|Kerwin|Houston. Copy. Engine off.
 002:41:44|O|LMP|Freeze the DSKY.
 002:41:45|O|CMP|I did.
-002:41:46|O|LMP|Okay, and now we'll ...
+002:41:46|O|LMP|Okay, and  now we'll ...
 002:41:49|O|LMP|Okay, Jim, it's SCS TVC Servo Power 1, Off.
 002:41:52|O|CDR|It's Off.
 002:41:53|O|LMP|PCM Bit Rate, I got Low. EMS Mode - Wait, let Jack get it. Minus 3.0.
@@ -1086,7 +1086,7 @@
 002:42:38|O|CDR|How does that look, Jack?
 002:42:40|O|CMP|Looks good.
 002:42:44|P|PAO|Our communications continuing to come to us relayed through the ARIA aircraft. CapCom Joe Kerwin advised Lovell and the Apollo 13 crew that we'll be reacquiring a little less than three minutes from now through Hawaii at which time we should get good solid S-band communications and also our first look at the trajectory of Apollo 13 following the burn.
-002:42:45|O|LMP|Okay, it's a Verb 66 Enter, Jack, after you get - after you get the P00. Wait until you get that.
+002:42:45|O|LMP|Okay,  it's a Verb 66 Enter, Jack, after you get - after you get the P00. Wait until you get that.
 002:42:52|O|CMP|...
 002:42:57|O|LMP|Okay, now you all switch - En route, Jack, you got to do a couple of things.
 002:43:07|O|CDR|In Hawaii, we'll get their ... -
@@ -1449,8 +1449,8 @@
 006:16:10|C|Kerwin|Roger. Stand by a minute, Jim. Our signal strength is getting a little low. We may have a recommendation.
 006:16:21|C|Kerwin|13, Houston. Are you in Manual or Auto in High Gain?
 006:16:26|T|CDR|Stand by.  We're in Auto Track, Joe, and High Gain.
-006:16:37|C|Kerwin|Roger.
 006:16:34|P|PAO|This is Apollo Control at 6 hours, 17 minutes into the mission. The change of shift news briefing time has been advanced. We're anticipating the change of shift news briefing to begin in approximately ten minutes. Approximately ten minutes, in the news center briefing room.
+006:16:37|C|Kerwin|Roger.
 006:38:50|P|PAO|This is Apollo Control at 6 hours, 38 minutes. The Flight Director Gerry Griffin has been taking status reports from each of his flight controllers. Everyone reports all spacecraft systems looking good. The Flight Surgeon reports the biomedical instrumentation looks excellent - very clean data. He thinks that, when this crew completes this long day, that they'll be tired and get a good night's sleep. They have about another six and a half hours before bedtime today. Booster systems engineer reports the S-IVB has been safed, retaining attitude control and midcourse capability, but that all pressure spheres have been dumped. He also reports to the Flight Director that the second midcourse correction for the S-IVB may be later than Ground Elapsed Time of 9 hours. He wants to get a good tracking vector to use for this final maneuver and he's not quite sure whether he'll do the maneuver at 9 hours or a little bit later after he refines his tracking data. He reports the S-IVB still has 372 seconds of burn time remaining, plus enough fuel in the APS after that to maintain attitude until 12 hours Elapsed Time. The guidance officer is watching Command Module Pilot Jack Swigert perform cislunar navigation tasks. Through telemetry, he's monitoring Swigert's marking stars with the sextant. He's very complimentary of Swigert's ability in this task. On his P23, says this procedure going very smoothly. At 6 hours, 41 minutes; this is Mission Control, Houston.
 006:44:30|T|CMP|Okay, Houston. You copy 13?
 006:44:39|T|CDR|Hello, Houston; Apollo 13. Over.
@@ -1601,7 +1601,7 @@
 009:03:09|T|LMP|3, 2, 1 -
 009:03:12|T|LMP|Mark.
 009:03:17|C|Brand|Okay, we got it.
-009:24:58|C|Brand|Apollo 13, Houston.
+009:23:58|C|Brand|Apollo 13, Houston.
 009:24:08|T|CDR|Go ahead, Houston.
 009:24:11|C|Brand|Jim, Houston here. Two items: first of all, your PTC is looking very good and it should carry you through the night; second point, have a procedure to give you, if you're ready to copy. We'd like to set three bits in the computer, and I'll explain why.
 009:24:43|T|LMP|Go ahead, Vance, we're ready to copy.
@@ -2089,7 +2089,7 @@
 026:43:54|C|Kerwin|Okay.
 027:20:02|P|PAO|This is Apollo Control at 27 hours, 20 minutes Ground Elapsed Time. The crew, rather quiet during this period. Still in the Passive Thermal Control barbecue mode. Velocity now 4,991 feet per second [1,521 m/s]. Coming up, in slightly over 20 seconds, on the midpoint in distance, and at which time the spacecraft will be equally far from the Earth and from the Moon. The distance at this time will be 128,880.5 statute miles [207,413.1 km]. Coming up -  
 027:20:50|P|PAO|Mark. That computes out to 112,070 nautical miles [207,554 km].
-026:43:54|P|PAO|Continuing to leave the circuit live, as we anticipate further discussions. And later on today, the midcourse correction burn number 2 which will take Apollo 13 out of the free return trajectory into the so called hybrid trajectory, which would not necessarily return to the vicinity of the Earth. The closest approach would be something in the nature of 40,000 miles coming back from the non-free return trajectory. At 27 hours, 21 minutes Ground Elapsed Time and standing by; this is Apollo Control.
+027:21:04|P|PAO|Continuing to leave the circuit live, as we anticipate further discussions. And later on today, the midcourse correction burn number 2 which will take Apollo 13 out of the free return trajectory into the so called hybrid trajectory, which would not necessarily return to the vicinity of the Earth. The closest approach would be something in the nature of 40,000 miles coming back from the non-free return trajectory. At 27 hours, 21 minutes Ground Elapsed Time and standing by; this is Apollo Control.
 027:59:41|T|CDR|Hello, Houston; Apollo 13.
 027:59:49|C|Kerwin|13, Houston. Go ahead.
 027:59:54|T|CDR|Just a passing comment, Joe. We're having lunch right now, and I just made myself a hotdog sandwich with catsup. Very tasty and almost unheard of in the old days.
@@ -2231,8 +2231,8 @@
 030:30:22|T|CDR|Vance, how do you -
 030:30:23|C|Brand|Roger. Read you loud and clear, Jim.
 030:30:28|T|CDR|Okay. We'll - what we'll do - We'll be on VOX for the remainder of the burn and preburn countdown.
-030:30:38|T|CDR|[Garbled.]
-030:30:40|T|CDR|[Garbled.] And what we're waiting for is 54 minutes on our counter or 20 which would be minus -
+030:30:38|T|CDR|...
+030:30:40|T|CDR|... And what we're waiting for is 54 minutes on our counter or 20 which would be minus -
 030:30:58|C|Brand|Jim, we hear clipping on your VOX. Could you adjust it so that you're coming in continuously all the time?
 030:31:08|T|CDR|Okay. Stand by 1.
 030:31:17|T|CDR|l, 2, 3, 4, 5. How's that, Vance?
@@ -3489,7 +3489,7 @@
 056:16:08|C|Lousma|Okay, 13; this is Houston. We'd like you to go to your G&amp;C checklist, the pink pages, 1-5. Do powerdown until we get a Delta of 10 amps. Over.
 056:16:21|T|LMP|All right.
 056:16:23|T|CDR|Roger.
-056:16:21|P|PAO|Apollo Control, Houston. That last report from Lousma asked the 13 crew to reduce the electrical load on the spacecraft.
+056:16:54|P|PAO|Apollo Control, Houston. That last report from Lousma asked the 13 crew to reduce the electrical load on the spacecraft.
 056:17:03|T|CDR|Okay, Jack, say again that - ... for the powerdown; it's not in the pink pages, the 1-5.
 056:17:10|C|Lousma|Okay. We'd like you to go down that powerdown procedure until you get a Delta of 10 amps. Over.
 056:17:21|T|CDR|Roger ...
@@ -3545,7 +3545,7 @@
 056:35:26|T|CDR|All Delta thrusters on Main A and all Bravo thrusters Off. Roger.
 056:35:55|C|Lousma|13, Houston. Turn Battery A, Off -
 056:35:56|T|CDR|Okay, Jack, ...
-056:35:57|T|Unknown speaker|[Garbled.]
+056:35:57|T|SC|...
 056:35:59|T|CMP|That's right; we were pulling current all the time.
 056:36:00|T|CDR|Battery A, Off. Roger.
 056:36:05|T|CMP|Now you're ... up.
@@ -3846,8 +3846,8 @@
 058:12:19|C|Lousma|Odyssey, Houston. We need a command reset on your - on your Comm, and then we'd like you to power down to CMC, power down the IMU, heaters off on the IMU, but leave the battery A on.
 058:12:43|T|CMP|Yes.
 058:12:58|C|Lousma|Odyssey, Houston.
-058:12:07|T|CMP|... Read me? Are you reading, Houston?
-058:13:08|T|LMP|Ask him if he's [Garbled
+058:13:07|T|CMP|... Read me? Are you reading, Houston?
+058:13:08|T|LMP|Ask him if he's ...
 058:13:10|T|CDR|Yes.
 058:13:11|T|LMP|Are you ...?
 058:13:12|T|CDR|Yes.
@@ -3923,7 +3923,7 @@
 058:27:12|T|CDR|Well, that's my question. We're not - Our 16 20 doesn't match our eight-ball here. We went to FDAIs On, and we don't have our balls completely powered up. There may be a ... and our angles don't look the same and we don't want to go into gimbal lock.
 058:27:28|C|Lousma|Roger. How far are you from RCS power up - RCS pressurization?
 058:27:45|T|LMP|Okay, Jack. I'm right up to where it's Master Arm, On; RCS, Fire; -
-058:27:49|T|Multiple speakers|[Garbled
+058:27:49|T|SC|...
 058:27:50|T|LMP|- both Logic Powers out ... goes into normal circuit-breaker ... Do you want A in and then I'll fire them?
 058:27:59|C|Lousma|Okay, 13. You're both talking at once. One at a time, please.
 058:28:10|T|CMP|Okay. Who's first?
@@ -3951,7 +3951,7 @@
 058:33:08|C|Lousma|And, Odyssey, request you coordinate with Aquarius on attitude control.
 058:33:16|T|CMP|Okay.
 058:33:17|T|CDR|Roger.
-058:33:19|T|CDR|Okay. I don't see where you're firing these things [Garbled
+058:33:19|T|CDR|Okay. I don't see where you're firing these things
 058:33:22|T|CDR|Oh?
 058:33:27|T|CDR|Are you firing anything?
 058:33:28|T|CMP|I don't think so.
@@ -3977,7 +3977,7 @@
 058:35:34|C|Lousma|Roger.
 058:35:38|T|CDR|I like that sound like I got back there.
 058:35:59|C|Lousma|Odyssey, Houston. I've got a procedure for you.
-058:36:05|T|CMP|Okay, Jack. I'm [Garbled
+058:36:05|T|CMP|Okay, Jack. I'm ...
 058:36:09|T|CDR|I want to go up this way to get away from that - the radios are powered, huh?
 058:36:16|T|CMP|Yes.
 058:36:33|T|CDR|Check your antenna?
@@ -4146,7 +4146,7 @@
 059:08:40|T|LMP|Okay. Heaters Display, EPS Display Open. And I've long since had all the lights off, floods, et cetera.
 059:08:55|T|CDR|Where are those bags? Where are those bags for weighing water in the PLSS?
 059:09:02|T|LMP|Why?
-059:09:03|T|CDR|We're going to fill up Command Module water. We'll [Garbled
+059:09:03|T|CDR|We're going to fill up Command Module water. We'll ...
 059:09:09|T|LMP|Hell, do you need a QD [clipped] Jim. No way to get ours in there. I don't think.
 059:09:37|T|LMP|Hey, Jim.
 059:09:44|T|CDR|I wonder if one of our water ... jet is. Okay, let's control - What else can we fill up there?
@@ -4331,9 +4331,9 @@
 060:35:41|C|Lousma|Copy.
 060:35:45|T|LMP|Okay, under the fourth - fourth row, we got all the Quad Heater breakers, In. Suit Fan 1. Under ECS, Glycol 1 and 2; and under Comm, we have Commander Audio, In, and PGNSs LGC/DSKY, IMU Standby, IMU Operate, and that's it. Okay, in the bottom row, EPS, we have the BAT Feed Tie both In, and we have the Cross Tie Balance Loads, In, the X Lunar Bus Tie, Descent ECA Control, Descent ECA, and the DC Bus Volts breaker.
 060:36:38|C|Lousma|Roger. We copy.  -
-060:36:39|T|LMP|That completes it for panel 11.
-060:36:38|C|Lousma|Okay. Stand by.
-060:36:38|T|LMP|Okay.
+060:36:38|T|LMP|That completes it for panel 11.
+060:36:40|C|Lousma|Okay. Stand by.
+060:36:45|T|LMP|Okay.
 060:36:54|T|LMP|As I see it, some of the short ones are - we need the DECA GIMBAL, In, sooner or later.
 060:37:00|C|Lousma|That's affirmed. Close the DECA Gimbal.
 060:37:01|T|LMP|And probably - Okay, DECA Gimbal, and sooner or later, we're going to need DECA Power, I guess, also.
@@ -5018,8 +5018,8 @@
 067:36:30|T|CDR|Okay.
 067:36:35|T|CMP|...
 067:37:21|T|CMP|...
-067:38:24|P|PAO|This is Apollo Control at 67 hours, 38 minutes. President Nixon talked with NASA Administrator Dr. Thomas O. Paine at 7:45 am CST today. Dr. Paine, who arrived in Houston by NASA aircraft at 6:40 am CST from Washington, was in Mission Control and gave the President an update on the Apollo 13 Mission. Mission Control is in direct touch with the White House. We'll continue to stand by now for live air-to-ground transmissions.
 067:38:19|T|CMP|...
+067:38:24|P|PAO|This is Apollo Control at 67 hours, 38 minutes. President Nixon talked with NASA Administrator Dr. Thomas O. Paine at 7:45 am CST today. Dr. Paine, who arrived in Houston by NASA aircraft at 6:40 am CST from Washington, was in Mission Control and gave the President an update on the Apollo 13 Mission. Mission Control is in direct touch with the White House. We'll continue to stand by now for live air-to-ground transmissions.
 067:38:30|T|CDR|I guess they're going to take ...
 067:38:35|T|CMP|...
 067:39:12|T|CMP|Well, there's another good one ...
@@ -6097,8 +6097,8 @@
 076:49:12|P|PAO|Apollo Control, Houston; 76 hours, 49 minutes. Less than 20 minutes now away from LOS.
 076:49:18|T|CMP|Yes.
 076:49:19|T|CDR|...
-076:49:23|P|PAO|Apollo 13 now 1,184 nautical miles [2,193 km] away from the Moon traveling at a velocity of 6,218 feet per second [1,895 m/s].
 076:49:22|T|CMP|Yes.
+076:49:23|P|PAO|Apollo 13 now 1,184 nautical miles [2,193 km] away from the Moon traveling at a velocity of 6,218 feet per second [1,895 m/s].
 076:49:37|T|CDR|Let's see, AOS is at 2 hours before the burn?
 076:49:45|T|LMP|Just about.
 076:50:01|C|Brand|Apollo 13, Houston.
@@ -6179,9 +6179,8 @@
 077:35:49|C|Brand|Okay, Fred. Reading you fairly well now. How do you read?
 077:35:53|T|LMP|Okay. I read you loud and clear, ...
 077:35:58|C|Brand|Roger.
-077:38:34|T|LMP|Jack, why don't you get the other ...?
 077:38:22|P|PAO|This is Apollo Control, Houston; 77 hours, 38 minutes into the flight. Apollo 13 has now rounded the corner, headed back towards Earth. We show a velocity of 7,062 feet per second [2,152 m/s] and a distance from the Moon of 566 nautical miles [1,048 km].
-077:39:23|T|CDR|Well, go this way.
+077:39:21|T|CDR|Well, go this way.
 077:39:31|T|CDR|All right. We're going up on Mare Smythii, now.
 077:40:16|P|PAO|77 hours, 40 minutes now into the flight. We show Apollo 13 at 630 nautical miles [1,167 km] away from the Moon. Our ignition clock shows 1 hour, 47 minutes time remaining until start of the Descent Propulsion System burn.
 077:40:55|T|CDR|We'll see where ... zooming off.
@@ -9652,7 +9651,7 @@
 112:10:25|C|Lousma|Is the command - service module still venting?
 112:10:36|T|LMP|Jack said it was just before he went up. Right now, the Sun's over there, and I can't really tell  -
 112:10:42|C|Lousma|And -
-112:10:36|T|LMP|-  I'll look again in a minute.
+112:10:42|T|LMP|-  I'll look again in a minute.
 112:10:44|C|Lousma|We asked him a long time ago if he was able to see any stars out the optics. I don't think we ever got an answer.
 112:10:52|T|LMP|Okay.
 112:11:04|T|LMP|That's a pretty good sleep station I had rigged up, Jack. I took one of the sleep restraints out of the command module, zipped up in it, and then hooked the tie, right at the top of the zipper, onto the LM upper hatch handle. So it kind of held me there, and then just drifted up in the tunnel upside down with my face toward the hatch, so the sunlight didn't get in my eyes and that worked pretty good.
@@ -10284,7 +10283,7 @@
 123:32:12|T|CMP|All right, go ahead.
 123:36:29|T|CMP|Okay, Vance. The volt 39.3, amp 1.3.
 123:36:38|C|Brand|Roger. Copy 39.3 and 1.3.
-123:38:56|C|Brand|Aquarius, Houston. Over.
+123:37:56|C|Brand|Aquarius, Houston. Over.
 123:38:01|T|CMP|Go ahead, Vance.
 123:38:03|C|Brand|Jack, looks like the LM suit release valve has been bumped to AUTO again; request it  -
 123:38:12|T|CMP|Okay.
@@ -10402,7 +10401,7 @@
 125:19:12|T|CDR|Okay. We have no more water in the potable tank. We tried to get some more out a few minutes ago, and there isn't any.
 125:19:21|C|Brand|Okay. Understand you ran out of water in the CM potable tank.
 125:19:27|T|CDR|Affirmative.
-125:25:28|P|PAO|This is Apollo Control at 125 hours, 24 minutes. We have an update now on the lunar module consumables lifetime. These figures include powering up the LM at 136 hours, 15 minutes elapse time. Including that power up we have enough water for 30.7 more hours. The - enough oxygen for 140 -
+125:24:28|P|PAO|This is Apollo Control at 125 hours, 24 minutes. We have an update now on the lunar module consumables lifetime. These figures include powering up the LM at 136 hours, 15 minutes elapse time. Including that power up we have enough water for 30.7 more hours. The - enough oxygen for 140 -
 125:25:17|C|Brand|Aquarius, Houston. Over.
 125:25:38|P|PAO| - enough oxygen for 146 hours, and - 
 125:25:50|C|Brand|Aquarius, Houston. Over.
@@ -11106,7 +11105,7 @@
 128:23:50|C|Brand|Okay, Fred. Two - three things. First thing is we need a docking angle check as soon as you can conveniently get it. Second point, you're free to drink all the descent stage water you want, if that wasn't clear before. And the third point, if you have a piece of paper, stand by to get writer's cramps. We have something to give you here.
 128:24:21|T|LMP|Okay. You want the - again a look at the docking tunnel index?
 128:24:27|C|Brand|Why don't you go ahead and look at that  -
-128:24:28|T|LMP|[Garbledl]  -
+128:24:28|T|LMP|... -
 128:24:31|C|Brand|Look at that first, yes.
 128:24:34|T|LMP|Okay.
 128:24:43|P|PAO|This is Apollo Control at 128 hours -
@@ -11982,8 +11981,8 @@
 137:39:50|T|LMP|Yes. It looks like we had a minus 0.2 bias at 470. We're burning.
 137:39:54|C|Kerwin|Copy that, Fred.
 137:40:01|P|PAO|Fred Haise reporting that the burn is underway. We're at 137 hours, 40 minutes into the flight.
-137:40:28|P|PAO|We've shut down.
 137:40:24|C|Kerwin|Good show, Aquarius.
+137:40:28|P|PAO|We've shut down.
 137:40:29|T|CDR|We're tweaking now, Joe.
 137:40:31|C|Kerwin|Roger. Aquarius, Houston. You're good right where you are.
 137:40:40|T|CDR|Okay. That's it.
@@ -12154,8 +12153,8 @@
 138:36:46|T|CMP|Okay. Okay, can you think of anything else you want to get turned off to lighten load on MAIN A?
 138:37:01|C|Mattingly|Okay. We're perusing that subject right now, Jack. It's really not that big a thing, just something we wanted to dress up.
 138:37:11|T|CMP|Okay.
-138:37:57|C|Mattingly|Okay, Aquarius; Houston.
 138:37:52|P|PAO|Apollo Control Houston 138 hours 38 minutes into the flight -
+138:37:57|C|Mattingly|Okay, Aquarius; Houston.
 138:38:00|T|CDR|Go ahead.
 138:38:01|C|Mattingly|Say, Jim, as something to try, you might have Jack turn off the RING 1's AUTO coils, which are probably on MAIN A. Have him turn those off and take a look at the readings.
 138:38:13|T|CDR|Okay.
@@ -12175,8 +12174,8 @@
 138:46:08|T|CDR|Moon check on 30-degree window mark.
 138:46:11|C|Kerwin|That's 36-degree window mark, Jim.
 138:46:14|T|CDR|Three six. Roger.
-138:45:56|C|Kerwin|Okay. Readback correct.
-138:46:05|C|Kerwin|And, Aquarius; Houston. If you want me to read you the landing area summary, I'll do that.
+138:46:16|C|Kerwin|Okay. Readback correct.
+138:46:23|C|Kerwin|And, Aquarius; Houston. If you want me to read you the landing area summary, I'll do that.
 138:46:31|T|CDR|Sounds good.
 138:46:33|C|Kerwin|Okay. In the mid-Pacific landing area, the weather is good. The cloud cover is 2000, scattered; visibility, 10; winds 060 at 10; wave heights are 4 feet, and the altimeter 2986, if you care. Scattered showers less than 10 percent of the area. Recovery forces are as follows: the Iwo Jima will be at the touchdown point, the aircraft call sign will be Recovery 1, on station with swimmers on board. The - we have the constant g backup reentry area covered with the USS Hall, the Good Liberty Ship, and the other recovery aircraft whose call signs you may hear are Samoa Rescue C-130s.
 138:47:31|T|CDR|Okay, fine. We have the Iwo Jima as the prime recovery ship.
@@ -12368,9 +12367,9 @@
 140:36:56|C|Kerwin|Odyssey, Houston. The uplink is going well. We have one more load to get in.
 140:37:02|T|LMP|Okay. Real fine.
 140:39:09|T|CMP|Is the computer mine now, Joe?
-140:36:58|C|Kerwin|Standby one second.
-140:37:02|T|CMP|Okay.
-140:40:02|C|Kerwin|Okay, Jack. We'd like the VERB 74 ENTER, and it'll take less than a minute for E-MOD dump.
+140:39:12|C|Kerwin|Standby one second.
+140:39:16|T|CMP|Okay.
+140:40:01|C|Kerwin|Okay, Jack. We'd like the VERB 74 ENTER, and it'll take less than a minute for E-MOD dump.
 140:40:10|T|CMP|Coming down.
 140:40:20|C|Kerwin|And, Jack, Houston. It'll be 100 seconds on that.
 140:40:26|T|CMP|Okay. Can I go to BLOCK on the UP TELEMETRY?
@@ -12556,14 +12555,14 @@
 141:26:43|C|Kerwin|Okay, Jack. We copy and we concur.
 141:26:55|P|PAO|That was Jack Swigert indicating that they plan to jettison the lunar module in about 3 minutes from this time.
 141:27:43|P|PAO|Apollo Control Houston 141 hours 28 minutes into the flight, Apollo 13 now 11,590 nautical miles away from Earth. For reentry the 3 crewmen will be traveling in shirt sleeve environment, not in their space suits. We're standing by now for reports of jettison of the lunar module. At 141 hours 28 minutes this is Apollo Control Houston.
-141:28:12|T|CMP|Okay, Houston. Do we have a go for PYRO ARM?
-141:28:24|C|Kerwin|Odyssey, Houston. We can give you a GO if you'll put the LOGIC ON momentarily for us.
-141:28:12|T|CMP|Okay. The SECS LOGIC is on.
-141:28:33|C|Kerwin|Okay. Just copied that, and you are GO for PYRO ARM.
-141:28:37|T|CMP|Real fine.
-141:29:43|T|CMP|10 seconds.
-141:29:48|T|CDR|5 -
-141:29:54|T|CDR|LM jettison.
+141:28:21|T|CMP|Okay, Houston. Do we have a go for PYRO ARM?
+141:28:34|C|Kerwin|Odyssey, Houston. We can give you a GO if you'll put the LOGIC ON momentarily for us.
+141:28:41|T|CMP|Okay. The SECS LOGIC is on.
+141:28:42|C|Kerwin|Okay. Just copied that, and you are GO for PYRO ARM.
+141:28:46|T|CMP|Real fine.
+141:29:51|T|CMP|10 seconds.
+141:29:56|T|CDR|5 -
+141:30:03|T|CDR|LM jettison.
 141:30:05|C|Kerwin|Okay, copy that. Farewell, Aquarius, and we thank you.
 141:30:21|C|Kerwin|Watch gimbal lock there, Jack.
 141:30:24|T|CMP|Yeah, we did.
@@ -12628,7 +12627,7 @@
 142:09:03|C|Kerwin|Okay. We'd like the S-BAND POWER AMPLIFIER to OFF, center, at this time, Jim.
 142:09:11|T|CDR|OFF, center, is done
 142:09:14|C|Kerwin|Okay. You're still looking real fat on power. We show you having over 30 amps on the water. If you do get into a bind and don't come up - that's amp-hours - don't come up with Recovery, you can always power down and you can always put the pyro batteries on the line if you need them after you're down.
-142:09:35 |T|CDR|Okay.
+142:09:35|T|CDR|Okay.
 142:13:40|P|PAO|This is Apollo Control, Houston. 142 hours 14 minutes now into the mission. Apollo 13 presently 4,075 nautical miles out from Earth. Velocity now showing 24,619 feet per second. We're less than 27 minutes now from time of entry into the Earth's atmosphere.
 142:16:57|P|PAO|Apollo Control Houston, 142 hours, 17 minutes now into the mission - our digital display at present shows Apollo 13 at 3,505 nautical miles away from Earth, now travelingat a speed of 25,693 feet per second. Jack Swigert confirms that the EMS check went well, which provides a good backup monitor for checking the guidance and navigation system performance; we are at 142 hours, 18 minutes into the flight, and this is Apollo Control Houston.
 142:17:54|T|CMP|Joe, are you planning to run this all the way down without the suit compressor?
@@ -12837,8 +12836,8 @@
 143:07:40|P|PAO|The flotation collar will be pulled around the command module with a bungee cord."
 143:08:15|C|Recovery|One section of the bungee is being attached to the sea anchor attachment ring; it appears to be satisfactorily connected; the second section of the bungee is approximately 90 percent around the command module.
 143:08:15|P|PAO|The flotation collar will be hooked to a bungee line, by a line with rings on the flotation collar, and will be pulled around before it is inflated."
-143:08:12|C|Recovery|Inflation collar has commenced. It is approximately 20 percent around the command module.
-143:08:12|C|Recovery|The flotation collar is approximately 60 percent deployed around the command module
+143:09:12|C|Recovery|Inflation collar has commenced. It is approximately 20 percent around the command module.
+143:09:12|C|Recovery|The flotation collar is approximately 60 percent deployed around the command module
 143:09:18|C|Recovery 1|There is no apparent drift of the command module at this time.
 143:09:18|P|PAO|And after the collar is secured the two 7-man life rafts will be dropped with sea anchors attached to the bottom. This is done to keep the rafts from turning over from helicopter backwash."
 143:09:43|C|Recovery 1|Inflation collar's progressing normally.
