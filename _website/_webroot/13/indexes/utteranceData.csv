@@ -69,7 +69,7 @@
 0000140|LMP|Cabin's looking good.|O
 0000143|CDR|2&frac12; g's and we're looking good in alpha.|O
 0000150|CDR|40,000.|O
-0000155|Kerwin|13, Houston. Stand by for Mode I Charlie.|C
+0000155|Kerwin|13, Ho uston. Stand by for Mode I Charlie.|C
 0000157|CDR|Roger.|O
 0000158|Kerwin|Mark.|C
 0000159|Kerwin|You're I Charlie.|C
@@ -88,7 +88,7 @@
 0000229|CDR|Roger.|T
 0000236|PAO|Coming up on 30 miles altitude.|P
 0000242|CDR|Coming up on 4 g.|O
-0000245|CMP|Got a little flash out the window.|O
+0000246|CMP|Got a little flash out the window.|O
 0000248|CDR|S-II ignition.|T
 0000250|CMP|...|O
 0000251|LMP|Yes.|O
@@ -112,7 +112,7 @@
 0000332|LMP|That plume!|O
 0000332|PAO|Launch vehicle  -|P
 0000333|CDR|Guidance initiate.|T
-0000334|LMP|That plume! Boy, is she boiling. That really -|O
+0000334|LMP|That's smooth! Boy, is she boiling. That really -|O
 0000338|CMP|Here.|O
 0000339|LMP|- points away, there. Window is not too bad.|O
 0000339|PAO|And Lovell reports that the Guidance System is correcting the small errors.|P
@@ -146,7 +146,8 @@
 0000455|Kerwin|13, Houston. Coming up 5 minutes. You're looking perfect. Over.|C
 0000459|CDR|13; Roger.|T
 0000501|PAO|And EECOM reports that cabin pressure is sealed at 6.1 pound, which is normal. We are now 250 miles downrange, altitude 81 nautical miles.|P
-0000504|CMP|Okay. Watching 8.|O
+0000504|CDR|... gimbal motors.|O
+0000505|CMP|Okay. Watching 8.|O
 0000530|PAO|And at 5 minutes 30 seconds into the launch, we continue to look very good on the second stage.|P
 0000532|CDR|Inboard.|T
 0000532|CMP|Inboard.|O
@@ -204,7 +205,7 @@
 0000819|CDR|Yes. Hey, I got a - We got a funny vibration|O
 0000827|LMP|Yes. Yes, there was a bit of noise, there. Yes.|O
 0000831|CMP|...|O
-0000831|PAO|At 8 minutes, 35 seconds; continuing to burn on the second stage. All four remaining engines looking good at this point.|P
+0000835|PAO|At 8 minutes, 35 seconds; continuing to burn on the second stage. All four remaining engines looking good at this point.|P
 0000845|Kerwin|Apollo 13, Houston. Mark, level sense arm.|C
 0000848|CDR|Mark level sense arm. Roger.|T
 0000858|Kerwin|Apollo 13, Houston. At 9 minutes, you're Go; the CMC is Go.|C
@@ -734,7 +735,7 @@
 0005211|LMP|Look at me, Jack; I show gain.|O
 0005213|CMP|You show gain?|O
 0005214|LMP|Yes.|O
-0005216|CMP|Houston, how do you read 13?|T
+0005216|CMP|Hou ston, how do you read 13?|T
 0005220|Kerwin|13, Houston. Loud and clear.|C
 0005223|CMP|Okay, Joe. Everything is going good. We're proceeding on the time line in good fashion. I've got a P52 done. I can give you the torquing angles.|T
 0005233|Kerwin|I'm ready for them, Jack.|C
@@ -762,7 +763,7 @@
 0005543|LMP|You get done, you're hooking up the cable. You got to do that part, though. We can't ... right there.|O
 0005548|CMP|All right. And I'll verify the CB power is off -|O
 0005550|LMP|... off.|O
-0005553|CDR|I'm going to go back into the - ..., Jack; and look at ...|O
+0005553|CDR|I'm going to go back into the computer ..., Jack; and look at ...|O
 0005559|CMP|Okay.|O
 0005600|CDR|...|O
 0005602|CMP|Freddo, you - How about a bracket?|O
@@ -1007,7 +1008,7 @@
 0023809|PAO|Jim Lovell just reported that everything looks good with that burn. We're still about 7 minutes away from reacquiring the spacecraft through the station in Hawaii at which time we'll get our first good look at the trajectory as a result of this burn.|P
 0023817|CMP|Right on ... Right on H-dot; we're right on 8.|O
 0023827|CDR|They are off - at 38.|T
-0023831|CMP|Three minutes -|O
+0023831|CMP|Three minutes - |O
 0023847|CMP|...|O
 0023848|CDR|All right.|O
 0023902|CMP|3:30, Jim. 3.4.|O
@@ -1053,7 +1054,7 @@
 0024142|Kerwin|Houston. Copy. Engine off.|C
 0024144|LMP|Freeze the DSKY.|O
 0024145|CMP|I did.|O
-0024146|LMP|Okay, and now we'll ...|O
+0024146|LMP|Okay, and  now we'll ...|O
 0024149|LMP|Okay, Jim, it's SCS TVC Servo Power 1, Off.|O
 0024152|CDR|It's Off.|O
 0024153|LMP|PCM Bit Rate, I got Low. EMS Mode - Wait, let Jack get it. Minus 3.0.|O
@@ -1083,7 +1084,7 @@
 0024238|CDR|How does that look, Jack?|O
 0024240|CMP|Looks good.|O
 0024244|PAO|Our communications continuing to come to us relayed through the ARIA aircraft. CapCom Joe Kerwin advised Lovell and the Apollo 13 crew that we'll be reacquiring a little less than three minutes from now through Hawaii at which time we should get good solid S-band communications and also our first look at the trajectory of Apollo 13 following the burn.|P
-0024245|LMP|Okay, it's a Verb 66 Enter, Jack, after you get - after you get the P00. Wait until you get that.|O
+0024245|LMP|Okay,  it's a Verb 66 Enter, Jack, after you get - after you get the P00. Wait until you get that.|O
 0024252|CMP|...|O
 0024257|LMP|Okay, now you all switch - En route, Jack, you got to do a couple of things.|O
 0024307|CDR|In Hawaii, we'll get their ... -|O
@@ -11987,7 +11988,7 @@
 1374359|Kerwin|Okay. Recommend you terminate P41.|C
 1374408|CDR|Okay.|T
 1374738|Slayton|Hey, Jim, have you broken into the medical kit per my recommendation a few hours ago?|C
-1374746|CDR|Yes. Everything is taken care of Deke.|T
+1374746|CDR|Yes. Everything is taken care of, Deke.|T
 1374749|Slayton|Okay, fine. You might hit it again in about 2 hours.|C
 1374755|CDR|Okay.|T
 1374809|PAO|Apollo Control Houston, 137 hours, 48 minutes. That was Donald K. Slayton on the line talking to Jim Lovell; the recommendation he referred to was the recommendation he made earlier in the morning that the Apollo 13 crew take Dexedrine tablets. We now show Apollo 13 in an altitude of 36,969 nautical miles.|P
@@ -12721,227 +12722,239 @@
 1425014|Kerwin|Got you on television, babe.|C
 1425016|CMP|...|T
 1425023|PAO|Extremely loud applause as Apollo 13 on main chutes comes through loud and clear on the television display here.|P
-1425026|Swimmer 2|Iwo Jima Control, this is Swim 2. I have a visual bearing 182.|C
-1425034|USS Iwo Jima|Iwo Jima; Roger.|C
+1425026|Swim 2|Iwo Jima Control, this is Swim 2. I have a visual bearing 182.|C
+1425034|Iwo Jima|Iwo Jima; Roger.|C
 1425039|Recovery|Iwo Jima Control, this is ... Recovery. I have a visual bearing 190. Over.|C
-1425044|USS Iwo Jima|Iwo Jima; Roger.|C
-1425052|Swimmer 1|Iwo Jima, Swim I has a visual at 110. ...|C
-1425057|USS Iwo Jima|Iwo Jima; Roger.|C
+1425043|Iwo Jima|Iwo Jima; Roger.|C
+1425052|Swim 1|Iwo Jima, Swim 1 has a visual at 110. ...|C
+1425057|Iwo Jima|Iwo Jima; Roger.|C
 1425059|Recovery|Apollo 13, Apollo 13, this is Recovery. Over.|C
-1425059|PAO|A recovery helicopter has just put in a call to Apollo 13.|P
+1425111|PAO|A recovery helicopter has just put in a call to Apollo 13.|P
 1425118|Recovery|Apollo 13, Apollo 13, this is Recovery. Over.|C
-1425118|PAO|We have a report from the Iwo Jima that Apollo 13 at a distance of 4 miles from the ship.|P
+1425143|PAO|We have a report from the Iwo Jima that Apollo 13 at a distance of 4 miles from the ship.|P
 1425147|Recovery|Apollo 13  -|C
 1425149|CMP|Go ahead.|T
-1425149|PAO|The smoke you see is venting of RCS propellants, a reaction control system propellants.|P
+1425151|PAO|The smoke you see is venting of RCS propellants, a reaction control system propellants.|P
 1425155|CMP|-  see you loud and clear going through 5000.|T
 1425159|Recovery|Roger, Apollo 13. This is Recovery and your chutes look good.|C
-1425211|Recovery|Apollo 13, this is Recovery. We observed your RCS burn. Over.|C
-1425211|PAO|You heard the conversation between the recovery helicopter and the crew of Apollo 13. The floor of the Mission Operations Control Room now crowded and there are visible smiles on the faces of the flight controllers and astronauts in this room.|P
+1425210|Recovery|Apollo 13, this is Recovery. We observed your RCS burn. Over.|C
+1425236|PAO|You heard the conversation between the recovery helicopter and the crew of Apollo 13. The floor of the Mission Operations Control Room now crowded and there are visible smiles on the faces of the flight controllers and astronauts in this room.|P
 1425338|Recovery|This is Recovery. Apollo 13 is descending through 2000 feet.|C
-1425342|USS Iwo Jima|Okay. Our altimeter concurs.|C
-1425347|USS Iwo Jima|Iwo Jima; Roger. Out.|C
-1425347|PAO|A report from the Iwo Jima that Apollo 13 is descending at a point 4 miles due south of the ship.|P
+1425342|CMP|Okay. Our altimeter concurs.|C
+1425346|Iwo Jima|Iwo Jima; Roger. Out.|C
+1425351|PAO|A report from the Iwo Jima that Apollo 13 is descending at a point 4 miles due south of the ship.|P
 1425409|Recovery|Apollo 13 and Recovery passing through 1000 feet.|C
-1425414|USS Iwo Jima|Iwo Jima; Roger.|C
+1425414|Iwo Jima|Iwo Jima; Roger.|C
 1425434|Recovery|Through 500 feet.|C
-1425438|Swimmer 1|Swim 1 on station.|C
-1425440|Swimmer 2|-  2 is on station.|C
+1425438|Swim 1|Swim 1 on station.|C
+1425440|Swim 2|-  2 is on station.|C
 1425444|Photo|Photo 1's on station. Photo 1 observes splashdown at this time.|C
-1425448|USS Iwo Jima|1 ... pickup ...|C
-1425449|Swimmer 1|Roger.|C
-1425449|PAO|Another cheer in the control room as we had splashdown.|P
-1425456|Photo|Photo-1. Splashdown at this time. The three chutes are displaced. They're in the water.|C
-1425512|Recovery|... Recovery, I have a clock  -|C
-1425515|Recovery 1|... 3-1/2 miles Iwo Jima.|C
-1425524|Speaker|Iwo Jima, Roger.|C
-1425526|Speaker|Iwo Jima, Roger.|C
-1425543|Recovery|Recovery ... main chutes.|C
-1425543|PAO|The spacecraft splashed in Stable 1. That's with the apex cover up, out of the water.|P
-1425612|Recovery 1|The vertical axis are approximately 15 degrees.|C
-1425632|Recovery|Recovery is maneuvering to grab hold of the main chute the 2 other chutes are still visible in the water. Swim 1, you are clear to move up to position to retrieve the other chutes.|C
-1425639|Swimmer 1|Swim 1. Roger.|C
-1425650|Photo|This is photo 1, I observe the flashing light on top of the Command Module.|C
+1425448|Iwo Jima|1 ... pickup ...|C
+1425450|Swim 1|Roger.|C
+1425452|PAO|Another cheer in the control room as we had splashdown.|P
+1425455|Photo 1|Photo-1. Splashdown at this time. The three chutes are displaced. They're in the water.|C
+1425512|Recovery|... Recovery, I have a clock ... MARK. 0 degrees magnetic; 3-1/2 miles, Iwo Jima.|C
+1425524|Iwo Jima|Iwo Jima, Roger.|C
+1425526|Photo 1|This is Photo 1, the Command Module is stable 1 at this time. They are riding comfortably.|C
+1425543|Recovery|And recovery ... the main chutes.|C
+1425604|PAO|The spacecraft splashed in Stable 1. That's with the apex cover up, out of the water.|P
+1425606|Photo 1|This is Photo 1, the Command module is riding comfortably. The oscillations around the vertical axis are approximately 15 degrees.|C
+1425631|Recovery|Recovery is maneuvering to grapple the main chute the 2 other chutes are still visible in the water. Swim 1, you are clear to move up to position to retrieve the other chutes.|C
+1425644|Swim 1|Swim 1. Roger.|C
+1425649|Photo|This is photo 1, I observe the flashing light on top of the Command Module.|C
 1425703|Recovery|1 on 270.|C
-1425716|Recovery|Warm present ... Winds in the area from 270 magnetic to approximately 6 knots.|C
-1425716|PAO|Recovery 1 will be the - will perform the pickup of the crew.|P
-1425739|Recovery|Recovery beacon antenna atop the command Module.|C
-1425800|Recovery|This is photo 1. The Mylar covering above the exterior of the Command Module has been removed in the area opposite the crew exit hatch. ]|C
-1425816|ARIA|ARIA, our recovery has been one of the main chutes ... has deployed a raft, just opened. ... ... ]|C
-1425838|Recovery 1|... in the Command Module there's swells 3 to 5 feet from the vehicle. Sea is approximately 1 to 2 feet. ]|C
-1425858|Iwo Jima|Photo, this is Iwo Jima. Interrogative astronaut condition ordered.|C
-1425903|Recovery|41, Roger. Brings Apollo 13 a crew condition, okay. Over.|C
-1425910|Recovery 1|...|C
-1425914|Recovery 1|Roger. Copy, Iwo Jima.|C
-1425917|Iwo Jima|Iwo Jima, copy.|C
-1425925|Iwo Jima|This is for a ... conditions in a recovery area, approximately 6/10, cloud cover, carbonation high sirius and low stratos.|C
-1425941|Recovery 4|Iwo Jima, this is recovery. I am assuming Odyssey commander just fine, unless otherwise directed commence a retrieval operation in one minute. Over.|C
-1425954|Iwo Jima|This is Iwo Jima, Roger.|C
-1425958|Recovery 1|Continue retrieval of that magnitude 12 to 2. You're clear, got you ready for mission. Recovery is taking backup for the gentlemen. ]|C
-1430019|Recovery 1|This is photo 1 presently unable to see the third main chute. But Swim 1 is grapling the second main chute.|C
-1430034|Speaker|...|C
-1430041|Kerwin|Okay, Jack you got 13's drift.|C
-1430044|Recovery|The Command Module is very slight at this time in the direction of and a 1 to 10 magnetic.|C
-1430122|Recovery|Presently Swim 1 is still attempting to make connection with the second main chute.|C
-1430142|Recovery|Swim 4 unable to grab it at ... before we could graple.|C
-1430148|Recovery|This is recovery, roger, understand.|C
-1430151|SWIM 1|Swim 1 stand by for a hit.|C
-1430155|SWIM 1|Swim 1, Over. ... Over.|C
-1430207|SWIM 1|Roger, swim 1 should ... so speeds to the apex cover and the ...|C
-1430218|Recovery|Swim 2, this is Recovery. You're clear to deploy a swimmer at sea anchor.|C
-1430224|SWIM 2|Roger.|C
-1430246|Recovery 1|This is photo 1, observe the uprighting bags are partially inflated at this time.|C
-1430246|PAO|We copied the report and see it visually; the uprighting bags inflated.|P
-1430307|Photo 1|This is PHOTO 1 estimates uprighting bags are approximately 1/3 inflated. I can see partial inflation on all 3 uprighting bags.|C
-1430326|Recovery 1|Apollo 13, This is RECOVERY.|C
-1430328|CDR|Go ahead.|C
-1430330|Recovery 1|Roger 13, this is RECOVERY will you confirm a successful RCS dump; over.|C
-1430336|CDR|That's affirmative; we had a successful dump.|T
-1430339|Recovery 1|We ...|C
-1430349|Photo 1|This is PHOTO 1; the first swimmer has been deployed. The signals are thumbs up in the water; in good condition.|C
-1430403|Photo 1|He is making his way to the Command Module.|C
-1430414|Photo 1|Inflation of the uprighting bags estimated to be 40 percent. 40 percent.|C
-1430428|Photo 1|The first swimmer is at the Command Module. They will commence to anchor an attachment shortly.|C
-1430438|Recovery 1|Apollo 13, this is RECOVERY; over.|C
-1430445|CDR|Go ahead RECOVERY; 13 here.|T
-1430448|Recovery|Roger; this RECOVERY; do you have lap to go on ... formula?|C
-1430456|CMP|No sir; we closed the display, and were helping Houston copy it; we didn't let it out over the air.|T
-1430503|Recovery|... Roger out.|C
-1430507|CMP|Will you give us our distance to the ship?|T
-1430509|Recovery|It appears from RECOVERY your present distance from the ship 1 mile - 3002; you're splash down point 3 -  3 miles from the Iwo Jima.|C
-1430524|CMP|Thank you.|T
-1430528|Photo|This is PHOTO 1; the sea anchor has been attached, and have done ... observed a thumbs up from the swimmers.|C
-1430535|Recovery|Swim 2, This is RECOVERY. You are clear to deploy two swimmers and the flotation collar; over.|C
-1430543|Photo|Roger, roger.|C
-1430543|PAO|The sea anchor attached to a pad eye on the side of the Apollo 13 command module.|P
-1430552|Recovery|We're getting thumbs up. Everything progressing satisfactorily.|C
-1430552|PAO|This done to slow down the drift."|P
-1430601|Recovery|Has oriented the command module in the customary manner.|C
-1430625|Recovery|SWIM 2 is moving in; to deploy the flotation collar and two additional swimmers. SWIM 1 has deployed a smoke in the area, and is attempting to restrain the accessories.|C
-1430649|Recovery|SWIM 1 has deployed a swimmer in the water. SWIM 2 has deployed 2 swimmers. I see a thumbs up, and the flotation collar is deployed.|C
-1430705|Recovery|The uprighting bags are inflated approximately 90 percent at this time. The swimmers are working the flotation collar in, to the command module.|C
-1430740|Recovery|The flotation collar is at the command module; the front seat is bein extracted, and it is being pulled around the command module.|C
-1430740|PAO|The flotation collar will be pulled around the command module with a bungee cord."|P
-1430815|Recovery|One section of the bungee is being attached to the sea anchor attachment ring; it appears to be satisfactorily connected; the second section of the bungee is approximately 90 percent around the command module.|C
-1430815|PAO|The flotation collar will be hooked to a bungee line, by a line with rings on the flotation collar, and will be pulled around before it is inflated."|P
-1430912|Recovery|Inflation collar has commenced. It is approximately 20 percent around the command module.|C
-1430918|Recovery 1|There is no apparent drift of the command module at this time.|C
-1430918|PAO|And after the collar is secured the two 7-man life rafts will be dropped with sea anchors attached to the bottom. This is done to keep the rafts from turning over from helicopter backwash."|P
-1430943|Recovery 1|Inflation collar's progressing normally.|C
-1430950|Recovery 1|... completed around the command module.|C
-1430956|Recovery 1|We are standing by for inflation.|C
-1431034|Kerwin|... to Iwo Jima. Request your pass to Apollo. Turn off recovery beacon. Over.|C
-1431040|Recovery 1|Roger, Break Apollo 13 do you copy?|C
-1431043|CDR|Roger, ... will turn off.|T
-1431044|Kerwin|Roger.|C
-1431052|Recovery|Inflation of the flotation collar presently normal. Standing by for inflation. Our ... flotation taking place at this time. Recovery is 60 percent complete. Flotation of - inflation of the flotation colar appears complete at this time.|C
-1431140|Recovery|Apollo 13 appears to be riding a little more comfortably at this time. The axis is negligible.|C
-1431159|Recovery|The swimmer is installing securing straps. This has ... to the power bolt on the upper deck. Efforts are made and he gives the signal for deployment of the egress raft.|C
-1431216|Recovery 1|... this is recovery. You are clear to deploy the egress raft ... backup position. Recovery goes to ready position.|C
-1431226|Unknown Speaker|Ready, roger.|C
-1431228|Recovery|... One further adjustment is being made for the securing straps.|C
-1431235|Unknown Speaker|Situation is normal.|C
-1431314|Recovery|Swimmer 2 has commenced his maneuvering for deploy of the egress raft.|C
-1431332|Recovery|Swimmer 2 is in position. The crewmen are standing by at the hatch. The egress raft is in the water now approximately 10 feet from the command module.|C
-1431350|Recovery|Two swimmers have the raft ... and are swimming it to the command module.|C
-1431415|Recovery|The raft is at the command module. The swimmers are opening it.|C
-1431415|PAO|The next step in our sequence is to open the hatch.|P
-1431425|Recovery|Inflation has begun of the egress raft.|C
-1431439|Recovery|The inflation appears to be satisfactory.|C
-1431455|Recovery|The swimmers are working to secure the egress raft to the flotation collar.|C
-1431512|Recovery|We presently have three swimmers in the water and I observe the signal, assembly here.|C
-1431521|Recovery|The Recovery is making approach to the deploy from the ...|C
-1431542|Recovery|Swim leader is in the water, comes up. Good condition. Stand by.|C
-1431557|Recovery|Swim leader approaching the command module. At this time, the inflation of the platform of the egress raft has been completed and is satisfactory.|C
-1431627|Recovery|The situation static at this time presently has two swimmers in the egress raft, and two swimmers standing by in the water. The swim leader is standing on the flotation colar checking the interior of the command module.|C
-1431647|Unknown speaker|... go ahead for ...|C
-1431707|Recovery|A swim leader is standing on the flotation colar appearing in the forward viewing windows.|C
-1431737|Recovery|Recovery is trying to approach to deploy the astronaut's flotation equipment.|C
-1431754|Recovery|Recovery is moving into position; the rescue net is halfway down.|C
-1431823|Recovery|Recovery is maneuvering to place the rescue net in the egress raft. A swim leader, has the rescue net in hand and it is in the egress raft. The equipment is being removed ... Now the rescue net is on its way back.|C
-1431914|Recovery|The swim leader is at the crew access hatch. He appears to be getting ready to open the access hatch. He is checking into the forward viewing window.|C
-1431933|Tracking Ship|Roger sir. Iwo Jima repeat one more time on item Papa ... minus 113 USB.|C
-1431947|Tracking Ship|Over.|C
-1431956|Tracking Ship|Roger. Copy. Minus 113 dBm signal strength.|C
-1432002|Relay|Photo 1. The crew hatch is open. The equipment is being passed to the astronauts. The hatch is closed again. ...|C
-1432015|Tracking Ship|Roger. Copy all.|C
-1432025|Relay|Situation static at this time. The two swimmers are standing by in safety position in two the water. The two swimmers have the egress raft.|C
-1432034|Tracking Ship|Roger, sir. We copy and their picking it up ...|C
-1432034|PAO|The 3 Apollo 13 crewmembers will be hoisted up into the RECOVERY 1 helicopter by the Billie Pugh net, the device you see that looks much like a half birdcage. For the first time, there are stifters in this net, the Billie Pugh net has been used on previous recoveries. These made out of aluminum to provide ridgility to the net. The 3 Apollo crewmembers will exit the spacecraft into the egress raft. The Billie Pugh net, by the way, has a center of gravity, which is forward of the center line toward the open end to assure that - "|P
-1432155|Relay|The situation is nominal at this time. Standing by while the astronauts make their preparations inside the command module.|C
-1432210|Unknown|ARIA, to MC ARIA Control.|C
-1432210|PAO|This forward center of gravity is designed to assure that an individual being picked up would not tumble out."|P
-1432224|Relay|The swim leader is opening the crew access hatch. It is completely open.|C
-1432232|Unknown|Roger ... okay.|C
-1432241|Relay|The first astronaut is climbing out of the command module, and is in the egress raft.|C
-1432249|Unknown|ARIA to ARIA control ...|C
-1432254|Relay|The second is now on his way out, assisted by swin leaders.|C
-1432301|Iwo Jima|And you want that on all the third astronauts on the Iwo Jima raft third astronaut is standing on flotation collar egress raft ...|C
-1432345|Relay|Swim leader is making his final check prior to closing the access hatch. The hatch is closed. He is securing it with the hatch ...|C
-1432416|Relay|We have three swimmers in the safety position in the water. Swim leader is giving the signal for the rescue net.|C
-1432435|Relay|Recovery is manuevering for position to commence receive the astronauts.|C
-1432452|Relay|The rescue net is half way down.|C
-1432506|Unknown|One, two, three, four, five, one, two, three, two, one. One, two, three, four, five.|C
-1432511|Unknown|Okay.|C
-1432516|Relay|The rescue net is in hand resting on the platform. The first astronaut is climbing aboard, the signal is given, ready for lift.|C
-1432532|Relay|The first astronaut is on his way up, next one ... wait.|C
-1432544|Relay|The first astronaut is half way up.|C
-1432559|Relay|The first astronaut is at the cargo hatch and is safely aboard the helicopter.|C
-1432622|Helicopter 1|Recovery I have astronaut Haise aboard and his condition is excellent.|C
-1432628|Iwo Jima|Iwo Jima copy.|C
-1432649|Relay|Recovery is in position for second retrieval. Rescue net is being positioned in the egress raft.|C
-1432722|Relay|The rescue net is in the raft.|C
-1432731|Relay|It's positioned on the platform. The second astronaut is climbing aboard. The signal is given for arise. He is on his way up.|C
-1432755|Relay|The second astronaut is half way up. Half point pickup, no oscillation.|C
-1432811|Relay|The rescue net is at the cargo hatch, and the second astronaut is safely aboard.|C
-1432820|RECOVERY|This is Recovery. I have astronaut Swigert onboard. He reports he feels fine.|C
-1432828|Iwo Jima|Iwo Jima, copy.|C
-1432852|Relay|Recovery is manuevering for position. For the third retrival.|C
-1432908|Relay|Swim leader has the rescue net. It is positioned aboard the platform.|C
-1432922|Relay|The third astronaut is climbing aboard, it is thumbs up, ready to lift.|C
-1432936|Relay|The third astronaut is on his way up.|C
-1432948|Relay|The third astronaut is half way up.|C
-1432959|Relay|The third astronaut is nearing the cargo hatch. He is safely aboard.|C
-1433015|Recovery|This is recovery. I have Capt. Lovell aboard. He reports he feels fine. Over.|C
-1433020|Iwo Jima|Iwo Jima, Copy. ...|C
-1433023|Recovery|... starboard ...|C
-1433209|Recovery|... this is Recovery. You are clear to deploy your ... one.|C
-1433212|Recovery|Roger, roger.|C
-1433249|Iwo Jima|Recovery and Photo, this is Iwo Jima towers. Report your gear and you have charlie on spots 3 and 5. Your wind is 10 starboard and at 10 knots.|C
-1433300|Recovery|This is Recovery. Roger. Copied. Be advised I'll make a wide circle in order to allow the passengers to get into their flight suits.|C
-1433310|Iwo Jima|Roger Recovery.|C
-1433512|Unknown speaker|... FAO.|C
-1433514|Unknown speaker|Hey, I'd like to update this ...|C
-1433529|Recovery|Iwo tower, this is ... We - this is Recovery. We estimate we'll be ready to touch down in 4 minutes, 4 minutes away.|C
-1433539|Iwo Jima|Recovery, tower. Roger.|C
-1433624|Iwo Jima|Recovery, this is Iwo Jima tower. Pass to Captain Lovell that we will have a brief ceremony on the flight deck then they will be talking to their wives ... in sick bay. Over.|C
-1433636|Recovery|Iwo Tower, Recovery, roger will do.|C
-1433636|PAO|Here in the Mission Control Center the tempo of conversation has picked up considerably. That's one thing you normally do not hear, is loud voices but they are certainly loud and happy voices at this point.|P
-1433748|Recovery|... Apollo 13.|C
-1433755|Iwo Jima|Roger, you're at ... Charlie at 3 by ... to Recovery to 11.|C
-1433801|Recovery|Recovery, roger out.|C
-1433802|Unknown speaker|... photo wants to ...|C
-1433804|Iwo Jima|Iwo tower, roger, your charlie ... your ...|C
-1433804|PAO|As we look around the room we see a large representation of the astronaut corps. Donald K. Slayton of course is here. He's been here all night. Alan Shepard, Commander for Apollo 14, and Joe Engle is here, Tom Stafford, Chief of the Astronaut Office, Vance Brand, who served as a support crew member for Apollo 13.|P
-1433843|Iwo Jima|Which swim aircraft remains out?|C
-1433847|Recovery|This is Recovery. Negative ...|C
-1433851|Iwo Jima|Roger, Swim 1, we're moving in. You babies ready?|C
-1433856|Unknown speaker|...|C
-1433856|PAO|Gene Cernan, backup Commander for Apollo 14 is here, Tony England, who served as the scientist for the Apollo 13 crew is in the room at this time as is John Young.|P
-1433924|Iwo Jima|... Rescue 1.|C
-1433946|Unknown speaker|to give you a hearty "well done".|C
-1434035|Iwo Jima|... 13.|C
-1434039|Recovery|Roger out.|C
-1434103|Unknown speaker|...|C
-1434103|PAO|The applause you just heard in the Mission Control Center came from a message delivered by Administrator Thomas Paine over the flight director's loop congratulating - from the President of the United States congratulating the team of Apollo 13.|P
-1434117|Unknown Speaker|...|C
-1434126|Unknown Speaker|... net 1. Over.|C
-1434254|Iwo Jima|I want to commend you on your navigation. Welcome onboard the Iwo Jima.|C
-1434302|Iwo Jima|I would like to ask the Chaplain to say a real brief prayer of thanks.|C
-1434308|Chaplain Jerauld|Let us pray. Oh Lord, we joyfully welcome back to Earth astronauts Lovell, Haise, and Swigert. Who by your grace, their skill, and the skill of many men survived the dangers encountered in their mission and returned to Earth, safe and whole. We offer our humble thanksgiving for the successful recovery. Amen.|C
-1434341|Photo|Now for some additional picture taking. Might not only be professional phographers aboard but also a good many  -|C
-1434357|Speaker|...|C
-1434502|Speaker|Down into the sick bay, medical facility now for 3 hours, of physical examinations. Now they're on the elevator there now. Joking about those beards. Jim Lovell seemed to be having some fun there with his beard. A momentary wait on the elevator here while the photographers get a few more pictures. This is an elaborate medical facility the Iwo Jima has onboard. And, as we said, there will be nine doctors down there awaiting Jim Lovell, John Swigert and Fred Haise. That's 3 doctors to an astronaut. And the first two flip samples, the findings medically speaking will be flown off as soon as possible, to the laboratories. I've been getting a look from the hangar deck of the elevator, whose down from top side. The elevator they use of course to transport the helicopters from hangar deck to flight deck. Once they get down they'll have a fairly shot walk, maybe 30 or 40 yards over into the - an opening leading up the medical facility. Sick bay, which may be a misnomer in this case. It does not appear anybody is sick. That's Captain Kirkemo - I know that is. And of course there will be some fast telephone calls we assume to some waiting wives at home. I wouldn't be surprised to see those phones ringing very shortly. There they go. Into the entrance of the medical facility and that should be all we see of them now for the next 3 hours or so, and possibly get an early medical report on what their conditions indeed are. But - the Apollo 13 men home safely aboard the carrier Iwo Jima out here; a perfect recovery; it couldn't have been better - it couldn't  -|C
-1434502|PAO|This is Apollo Control, Houston, at the Mission Operations Control Room; there must be almost 200 people at this point and it appears as though everybody is talking, shaking hands, the cigars have been passed out - |P
-1435008|Iwo Jima|... on display down here now. I have here with me right now Commander Spiuey. I'm prepared to put Commander Spiuey on the air as soon as he gets here in a couple of minutes. I would - we appreciate - ...|C
-1435008|PAO|The plaque for Apollo 13 has just been placed on the wall in the Mission Control Room; that brought about this loud applause we just heard. (cheering and applause).|P
+1425714|Photo 1|This is Photo 1, presently winds in the area from 270 magnetic of approximately 6 knots.|C
+1425734|PAO|Recovery 1 will be the - will perform the pickup of the crew.|P
+1425738|Photo 1|This is Photo 1. I can see the recovery beacon antenna atop the Command Module.|C
+1425758|Photo 1|This is photo 1. The Mylar covering above the exterior of the Command Module has been removed in the area opposite the crew exit hatch.|C
+1425815|ARIA|ARIA -|C
+1425817|Photo 1|Recovery has ... one of the main chutes ... has deployed a raft, just opened. ... port side ...|C
+1425836|Recovery|... in the Command Module there's swells 3 to 5 feet from the vehicle. Sea is approximately 1 to 2 feet.|C
+1425856|Iwo Jima|Photo, this is Iwo Jima. Interrogative astronaut condition ordered.|C
+1425900|Photo 1|Photo 1, Roger. Break; Apollo 13, is crew condition, okay? Over.|C
+1425907|CDR|We're in good shape ...|C
+1425912|Photo 1|Roger. Copy, Iwo Jima?|C
+1425915|Iwo Jima|Iwo Jima, copied.|C
+1425923|Photo 1|This Photo 1. Cloud conditions in a recovery area, approximately 6/10, cloud cover, carbonation high sirius and low stratos.|C
+1425938|Recovery|... this is recovery. I am assuming Odyssey command at this time, unless otherwise directed, intend to commence a retrieval operation in one minute. Over.|C
+1425951|Iwo Jima|This is Iwo Jima, Roger out.|C
+1425955|Recovery|Swim 1 - continue retrieval of that main chute. Swim 2; you're cleared into ready position. Recovery is taking backup for this, gentlemen.|C
+1430016|Photo 1|This is photo 1 presently unable to see the third main chute. But Swim 1 is grapling the second main chute.|C
+1430031|SC|...|C
+1430037|Kerwin|Okay, Jack you got 13's drift.|C
+1430040|Photo 1|The Command Module is very slight at this time in the direction of 110 magnetic.|C
+1430119|Recovery|Presently Swim 1 is still attempting to make connection with the second main chute.|C
+1430139|Swim 1|Swim 1 unable to grab it ... before with the graple.|C
+1430145|Recovery|This is recovery, roger, understand. Swim 1 stand-by for ...|C
+1430151|Swim 1|Swim 1, Roger; out.|C
+1430155|SC|... one mile. Over.|C
+1430201|Recovery|Roger, swim 1 detach ... to the apex cover and attempt retrieval. Over.|C
+1430208|Swim 1|Swim 1, roger.|C
+1430213|Recovery|Swim 2, this is Recovery. You're clear to deploy one swimmer at sea anchor. Over.|C
+1430219|Swim 2|Roger roger.|C
+1430241|Photo 1|This is photo 1, observe the uprighting bags are partially inflated at this time.|C
+1430252|PAO|We copied the report and see it visually; the uprighting bags inflating.|P
+1430302|Photo 1|This is PHOTO 1 estimates uprighting bags are approximately 1/3 inflated. I can see partial inflation on all 3 uprighting bags.|C
+1430321|Recovery|Apollo 13, This is Recovery. Over.|C
+1430324|CDR|Go ahead.|C
+1430325|Recovery|Roger 13, this is Recovery. Will you confirm a successful RCS dump; over.|C
+1430331|CDR|That's affirmative; we had a successful dump.|T
+1430334|Recovery|Roger. We will advise the swimmers.|C
+1430338|Swim 2|... swimmers advised.|C
+1430343|Photo 1|This is Photo 1; the first swimmer has been deployed. They signaled a thumbs up in the water; in good condition.|C
+1430358|Photo 1|He is making his way to the Command Module.|C
+1430408|Photo 1|Inflation of the uprighting bags estimated to be 40 percent. 40 percent.|C
+1430422|Photo 1|The first swimmer is at the Command Module. They will commence the anchor attachment shortly.|C
+1430432|Recovery|Apollo 13, this is Recovery; over.|C
+1430440|CDR|Go ahead Recovery; 13 here.|T
+1430441|Recovery|Roger 13; this Recovery; do you have a LAT/LONG and some ranges to go for me ...?|C
+1430450|CMP|No sir; we closed the display, and were hoping Houston would copy it; we didn't read it out over the air.|T
+1430457|Recovery|Thank you sir. Recovery; roger out.|C
+1430501|CMP|Could you give us our distance to the ship?|T
+1430503|Recovery|This is Recovery. Your present distance from the ship 1 mile, bearing 300 to the ship; you're splash down point 3 - 3 miles from Iwo Jima.|C
+1430518|CMP|Thank you.|T
+1430521|Photo 1|This is Photo 1; the sea anchor has been attached, observe a thumbs up from the swimmers.|C
+1430529|Recovery|Swim 2, This is Recovery. You are clear to deploy two swimmers and the flotation collar; over.|C
+1430536|Swim 2|Roger, roger.|C
+1430538|PAO|The sea anchor attached to a pad eye on the side of the Apollo 13 command module.|P
+1430546|Photo 1|This is Photo 1. Swimmer is in; getting thumbs up. Everything progressing satisfactorily.|C
+1430553|PAO|This done to slow down the drift.|P
+1430553|Photo 1|The sea anchor appears to be holding nicely; has oriented the command module in the customary manner.|C
+1430619|Photo 1|Swim 2 is moving in to deploy the flotation collar and two additional swimmers. Swim 1 has deployed a smoke in the area, and is attempting to restrain the accessories.|C
+1430643|Photo 1|Swim 1 has deployed a swimmer in the water. Swim 2 has deployed 2 swimmers. I see a thumbs up, and the flotation collar is deployed.|C
+1430658|Photo 1|The uprighting bags are inflated approximately 90 percent at this time. The swimmers are working the flotation collar in to the command module.|C
+1430733|Photo 1|The flotation collar is at the command module; the front seat is bein extracted, and it is being pulled around the command module.|C
+1430746|PAO|The flotation collar will be pulled around the command module with a bungee cord.|P
+1430807|Photo 1|One section of the bungee is being attached to the sea anchor attachment ring. It appears to be satisfactorily connected. The second section of the bungee is approximately 90 percent around the command module.|C
+1430827|PAO|The flotation collar will be hooked to a bungee line, by a line with rings on the flotation collar, and will be pulled around before it is inflated.|P
+1430830|Photo 1|And the bungee appears to be firmly attached.|C
+1430837|Photo 1|Deployment of the inflation collar has commenced. It is approximately 20 percent around the command module.|C
+1430859|Photo 1|The flotation collar is approximately 60 percent deployed around the command module|C
+1430910|Photo 1|There is no apparent drift of the command module at this time.|C
+1430925|PAO|And after the collar is secured the two 7-man life rafts will be dropped with sea anchors attached to the bottom. This is done to keep the rafts from turning over from helicopter backwash.|P
+1430935|Photo 1|Inflation collar installation progressing normally.|C
+1430941|Photo 1|Appears to be completed around the command module.|C
+1430948|Photo 1|We are standing by for inflation.|C
+1431025|Iwo Jima|... this is Iwo Jima. Request you pass to Apollo: turn off recovery beacon. Over.|C
+1431031|Recovery|Roger, Break Apollo 13 do you copy?|C
+1431034|CDR|Roger, ... will turn off.|T
+1431036|Recovery|Roger.|C
+1431043|Photo 1|Inflation of the flotation collar presently nominal. Standing by for inflation. Observe flotation taking place at this time. Inflation 60 percent complete. Flotation [sic] of - inflation of the flotation colar appears complete at this time.|C
+1431121|Photo 1|Apollo 13 appears to be riding a little more comfortably at this time. The pitch about the vertical axis is negligible.|C
+1431149|Photo 1|The swimmer is installing securing straps. This has ... to the power bolt on the upper deck. Efforts are made and he gives the signal for deployment of the egress raft.|C
+1431206|Recovery|Swim 2, this is recovery. You are cleared to deploy the egress raft upon completion take backup position. Recovery goes to ready position.|C
+1431216|Swim 2|Roger, roger.|C
+1431218|Photo 1|... Photo 1. Further adjustment is being made ... securing straps.|C
+1431225|Photo 1|Situation normal.|C
+1431304|Photo 1|Swim 2 has commenced his maneuvering to deploy the egress raft.|C
+1431321|Photo 1|Swim 2 is in position. The crewmen are standing by at the hatch. The egress raft is in the water now approximately 10 feet from the command module.|C
+1431339|Photo 1|Two swimmers have the raft in hand, and are swimming it to the command module.|C
+1431404|Photo 1|The raft is at the command module. The swimmers are opening it.|C
+1431412|PAO|The next step in our sequence is to open the hatch.|P
+1431415|Photo 1|Inflation has begun of the egress raft.|C
+1431428|Photo 1|The inflation appears to be satisfactory.|C
+1431443|Photo 1|The swimmers are working to secure the egress raft to the flotation collar.|C
+1431501|Photo 1|We presently have three swimmers in the water and I observe the signal from swim leader.|C
+1431510|Recovery|This is Recovery. Commencing approach to the deploy the swim leader.|C
+1431531|Photo 1|Swim leader is in the water. Thumbs up. Good condition.|C
+1431538|SC|Stand by.|C
+1431544|Photo 1|Swim leader approaching the command module at this time. The inflation of the platform of the egress raft has been completed and is satisfactory.|C
+1431615|Photo 1|The situation static at this time presently have two swimmers in the egress raft, and two swimmers standing by in the water. The swim leader is standing on the flotation colar checking the interior of the command module.|C
+1431634|SC|... go ahead for ...|C
+1431654|Photo 1|Swim leader is standing on the flotation colar appearing in the forward viewing windows.|C
+1431725|Recovery|Recovery is commencing to approach to deploy the astronaut's flotation equipment.|C
+1431741|Photo 1|Recovery is moving into position; the rescue net is halfway down.|C
+1431810|Photo 1|Recovery is maneuvering to place the rescue net in the egress raft. A swim leader, has the rescue net in hand and it is in the egress raft. The equipment is being removed. Thumbs up. Now the rescue net is on its way back.|C
+1431900|Photo 1|The swim leader is at the crew access hatch. He appears to be getting ready to open the access hatch. He is checking into the forward viewing window.|C
+1431920|SC|Roger sir. Would you repeat one more time on item Papa ... minus 113 USB.|C
+1431933|SC|Over.|C
+1431942|SC|Roger. Copy. Minus 113 dBm signal strength.|C
+1431946|Photo 1|- Photo 1. The crew access hatch is open and the equipment is being passed to the astronauts. The hatch is closed again. Swim leader is observing crew activity through the forward viewing window.|C
+1432006|SC|Roger. Copy all.|C
+1432025|Photo 1|Situation is static at this time. Have two swimmers are standing by in safety position in the water. Have two swimmers have the egress raft.|C
+1432019|SC|Roger, sir. We copy and their picking it up now ...|C
+1432034|PAO|The three Apollo 13 crewmembers will be hoisted up into the Recovery 1 helicopter by the Billie Pugh net, the device you see that looks much like a half a birdcage. For the first time, there are stifters in this net, the Billie Pugh net has been used on previous recoveries. These made out of aluminum to provide ridgility to the net. The three Apollo crewmembers will exit the spacecraft into the egress raft. The Billie Pugh net, by the way, has a center of gravity, which is forward of the center line toward the open end to assure that -|P
+1432140|Photo 1|This is Photo 1. The situation is nominal at this time. Are standing by while the astronauts make their preparations inside the command module.|C
+1432155|SC|ARIA 2 MC, ARIA Control.|C
+1432158|PAO|This forward center of gravity is designed to assure that an individual being picked up would not tumble out.|P
+1432209|Photo 1|Swim leader is opening the crew access hatch. It is completely open.|C
+1432210|SC|Roger ... itinerary ... if that's okay.|C
+1432226|Photo 1|The first astronaut is climbing out of the command module, and is in the egress raft.|C
+1432234|SC|ARIA to ARIA control ...|C
+1432238|Photo 1|The second astronaut is on his way out, being assisted by swim leader standing on the floatation colar, and is in the egress raft. Followed by the third astronaut ...|C
+1432307|Photo 1|The third astronaut is standing on flotation collar. And is ... the egress raft.|C
+1432328|Photo 1|Swim leader is making a final check prior to closing the access hatch. The hatch is closed. He is securing it with the hatch tool.|C
+1432401|Photo 1|We have three swimmers in the safety position in the water. Swim leader is giving the signal for the rescue net.|C
+1432419|Photo 1|Recovery is manuevering for position to commence retrieval of the astronauts.|C
+1432435|Photo 1|The rescue net is half way down.|C
+1432450|SC|Test. One, two, three, four, five, five, four, three, two, one. One, two, three, four, five.|C
+1432455|Unknown|Okay.|C
+1432459|Photo 1|The rescue net is in hand resting on the platform. The first astronaut is climbing aboard, the signal has been given, ready for lift.|C
+1432516|Photo 1|The first astronaut is on his way up. Excellent pickup; no oscillations.|C
+1432527|Photo 1|The first astronaut is half way up.|C
+1432542|Photo 1|The first astronaut is at the cargo hatch and is safely aboard the helicopter.|C
+1432605|Recovery|This is Recovery. I have astronaut Haise aboard; his condition is excellent.|C
+1432612|Iwo Jima|Iwo Jima copy.|C
+1432631|Photo 1|Recovery is in position for second retrieval. The rescue net is being positioned in the egress raft.|C
+1432704|Photo 1|The rescue net is in the raft.|C
+1432713|Photo 1|It's positioned on the platform. The second astronaut is climbing aboard. The signal is given for arise. He is on his way up.|C
+1432736|Photo 1|The second astronaut is half way up. Excellent pickup; no oscillation.|C
+1432752|Photo 1|The rescue net is at the cargo hatch, and the second astronaut is safely aboard.|C
+1432702|Recovery|This is Recovery. I have astronaut Swigert onboard. He reports he feels fine.|C
+1432809|Iwo Jima|Iwo Jima, copy.|C
+1432833|Photo 1|Recovery is manuevering for position. For the third retrival.|C
+1432850|Photo 1|Swim leader has the rescue net. It is positioned aboard the platform.|C
+1432903|Photo 1|The third astronaut is climbing aboard, it is thumbs up, ready for lift.|C
+1432917|Photo 1|The third astronaut is on his way up.|C
+1432929|Photo 1|The third astronaut is half way up.|C
+1432940|Photo 1|The third astronaut is nearing the cargo hatch. And he is safely aboard 66.|C
+1432956|Recovery|This is recovery. I have Capt. Lovell aboard here. Reports he feels fine. Over.|C
+1433001|Iwo Jima|Iwo Jima, Copy.|C
+1433004|Recovery|We are moving left. Photo, you're cleared in for your documentary photography. ...|C
+1433137|Recovery|Photo ... starboard ...|C
+1433149|Recovery|- 2 this is Recovery. You are cleared to deploy your smoke ... one.|C
+1433152|Swim 2|Roger, roger.|C
+1433228|Iwo Jima|Recovery and Photo, this is Iwo Jima towers. Report your gear and you have charlie on spots 3 and 5. Your wind is 10 starboard and at 10 knots.|C
+1433239|Recovery|This is Recovery. Roger. Copied. Be advised I'll make a wide circle in order to allow the passengers to get into their flight suits.|C
+1433249|Iwo Jima|Roger Recovery.|C
+1433450|SC|Okay, FAO.|C
+1433553|SC speaker|Hey, I'd like to update this ...|C
+1433507|Recovery|Iwo tower, this is primary. We - this is Recovery. We estimate we'll be ready to touch down in 4 minutes, 4 minutes. Over.|C
+1433516|Iwo Jima|Recovery, tower. Roger.|C
+1433601|Iwo Jima|Recovery, this is Iwo Jima tower. Pass to Captain Lovell that we will have a brief ceremony on the flight deck then they will be talking to their wives and the president in sick bay. Over.|C
+1433613|Recovery|This is Recovery, roger wilco.|C
+1433713|PAO|Here in the Mission Control Center the tempo of conversation has picked up considerably. That's one thing you normally do not hear, is loud voices but they are certainly loud and happy voices at this point.|P
+1433725|Recovery|Iwo tower, this is Recovery. I'm inbound on final. Gear checks down and locked ... with Apollo 13.|C
+1433732|Iwo Jima|Roger, you have a sigma charlie. Spot 3 by winds 10 starboard at 11.|C
+1433738|Recovery|Recovery, roger out.|C
+1433739|Photo 1|This is Photo 1. Gear's down and locked.|C
+1433741|Iwo Jima|Photo 1, roger, your charlie spot 5. Your winds 10 starboard at 12.|C
+1433751|PAO|As we look around the room we see a large representation of the astronaut corps. Donald K. Slayton of course is here. He's been here all night. Alan Shepard, Commander for Apollo 14, and Joe Engle is here, Tom Stafford, Chief of the Astronaut Office, Vance Brand, who served as a support crew member for Apollo 13.|P
+1433819|Iwo Jima|Recovery, do you have any desire of which swim aircraft remains out?|C
+1433823|Recovery|This is Recovery. Negative, no preference.|C
+1433828|Iwo Jima|Roger, Swim 1, we will have you babysitting.|C
+1433833|Swim 1|- roger.|C
+1433838|PAO|Gene Cernan, backup Commander for Apollo 14 is here, Tony England, who served as the scientist for the Apollo 13 crew is in the room at this time as is John Young.|P
+1433857|Paine|This is doctor Paine speaking. I'd like to pass a message to all hands of Mission Control that has just come in to me from the president of the United States. He wishes to tell all of you as number 66 comes in to final approach, tremendous appreciation that he has, and the entire nation has for the wonderful teamwork that you have shown here in mission control, and to give you a hearty "well done".|C
+1433900|Iwo Jima|... Rescue 1.|C
+1434011|Iwo Jima|... 12.|C
+1434015|Recovery|Roger out.|C
+1434138|Swim 2|This is swim lead, over.|C
+1434140|PAO|The applause you just heard in the Mission Control Center came from a message delivered by Administrator Thomas Paine over the flight director's loop congratulating - from the President of the United States congratulating the team of Apollo 13.|P
+1434052|SC|... swim lead, over.|C
+1434101|Swim 1|... Swim 1. Over.|C
+1434115|SC|... Out.|C
+1434123|Swim 1|... Swim 1. Over.|C
+1434132|Iwo Jima|Apollo 13 arriving.|C
+1434200|CDR|Glad to be aboard again.|T
+1434209|Davidson|I want to say ... recovery forces ... millions and millions of people from all over the world. ... has to be one of the most ... universally happy moments. We're glad you could make it, boys.|C
+1434230|Iwo Jima|I want to commend you on your navigation. Welcome onboard Iwo Jima.|C
+1434236|Iwo Jima|I would like to ask the Chaplain to say a real brief prayer of thanks.|C
+1434242|Jerauld|Let us pray. Oh Lord, we joyfully welcome back to Earth astronauts Lovell, Haise, and Swigert. Who by your grace, their skill, and the skill of many men survived the dangers encountered in their mission and returned to us safe and whole. We offer our humble thanksgiving for the successful recovery. Amen.|C
+1434315|Reporter|Now for some additional picture taking. Might not only be professional photographers aboard but also a good many -|C
+1434330|SC|...|C
+1434434|Reporter|Down into the sick bay, medical facility now for 3 hours of physical examinations. Now they're on the elevator there now. Joking about those beards. Jim Lovell seemed to be having some fun there with his beard. A momentary wait on the elevator here while the photographers get a few more pictures. This is an elaborate medical facility the Iwo Jima has onboard. And, as we said, there will be nine doctors down there awaiting Jim Lovell, John Swigert and Fred Haise. That's 3 doctors to an astronaut. And the first two flip samples, the findings medically speaking will be flown off as soon as possible, to the laboratories. I've been getting a look from the hangar deck of the elevator, whose down from top side. The elevator they use of course to transport the helicopters from hangar deck to flight deck. Once they get down they'll have a fairly shot walk, maybe 30 or 40 yards over into the - an opening leading up the medical facility. Sick bay, which may be a misnomer in this case. It does not appear anybody is sick. That's Captain Kirkemo - I know that is. And of course there will be some fast telephone calls we assume to some waiting wives at home. I wouldn't be surprised to see those phones ringing very shortly. There they go. Into the entrance of the medical facility and that should be all we see of them now for the next 3 hours or so, and possibly get an early medical report on what their conditions indeed are. But - the Apollo 13 men home safely aboard the carrier Iwo Jima out here; a perfect recovery; it couldn't have been better - it couldn't  -|C
+1434512|PAO|This is Apollo Control, Houston, in the Mission Operations Control Room; there must be almost 200 people at this point and it appears as though everybody is talking, shaking hands, the cigars have been passed out -|P
+1434938|Iwo Jima|... on display down here now. I have here with me right now Commander Spiuey. I'm prepared to put Commander Spiuey on the air with O'Brien as soon as he gets here in a couple of minutes. I would - we appreciate - ...|C
+1435045|PAO|The plaque for Apollo 13 has just been placed on the wall in the Mission Control Room; that brought about this loud applause we just heard.|P
+1435042|PAO|This is Apollo Control, Houston; we expect to have 3 news conferences picking up shortly in the Bldg. 1 auditorium, the first starting in aproximately 30 minutes with NASA Administrator Thomas Paine and Deputy Administrator George Low, this will be followed approximately 30 minutes later involving Dale Myers, Associate Administrator for Manned Spaceflight, and Dr. Gilruth, Robert Gillruth, Director of the Manned Spacecraft Center, Mr. Rocco Petrone, Apollo Program Director, Jim McDivitt, Manager of the Apollo Spacecraft Program Office at the Manned Spacecraft Center in Houston, and Mr. Chris Kraft, Deputy Director at MSC. Following that will be a third news conference with Mission Director Chet Lee, Director of Flight Operations, Sig Sjoberg, and Lead Flight Director for this mission, Milt Windler, and Mr. Ozzie [Ozro] Covington, of the Goddard Space Flight Center. We copied splashdown at 142 hours, 54 minutes, 44 seconds from liftoff, and this is Apollo Control, Houston, signing off at this time.|P
