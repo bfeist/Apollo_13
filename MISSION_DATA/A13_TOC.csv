@@ -21,12 +21,13 @@
 000:52:23|2|All balls
 001:07:27|2|Firing room press conference
 001:32:16|2|TLI instructions PAD
-001:38:22|1|TV Transmission
+001:38:22|2|TV Transmission
 002:35:51|1|Translunar Injection (TLI)
 002:41:40|1|Engine off
 003:01:33|1|Transposition and Docking starts
 003:38:25|2|Burnt smell in the LM tunnel
-004:00:54|1|Extracting the LM from S-IVB
+004:00:54|2|Extracting the LM from S-IVB
+004:08:15|2|TV transmission
 004:50:43|2|Pulling contrails
 005:16:33|2|Spiro Agnew speech
 005:30:13|2|Another navigational realignment
@@ -62,7 +63,7 @@
 029:45:46|2|Midcourse Correction 2 preparations continue
 030:14:04|2|Teasing Brand about Charlie Duke mistaking the Earth for the Moon on TV
 030:24:39|2|A pen on a string
-030:34:22|1|TV Transmission
+030:34:22|2|TV Transmission
 030:34:51|2|Going through the SPS checklist
 030:40:46|1|Engine burn for Midcourse Correction 2
 030:44:35|2|TV work at Fra Mauro
@@ -70,7 +71,7 @@
 030:47:34|2|Jack Swigert - hello to 'all the girls'
 030:48:12|2|More golf scores
 030:57:26|2|Lovell talks about liquid wastes
-030:57:42|1|TV Transmission
+030:57:42|2|TV Transmission
 031:02:13|2|End of Day 2 television broadcast
 031:04:00|1|Maroon Team (Windler) relieves Black Team (Lunney)
 031:05:44|2|Discussing photography of Comet Bennett
@@ -191,7 +192,7 @@
 074:53:19|2|Charlie Duke talks about procedures
 075:23:34|2|Lovell can finally recognize stars
 075:28:15|2|Brand gives a PC+2 PAD update
-075:43:15|2|Press conference
+075:43:15|2|Change of shift press conference
 076:30:31|2|Review of mission rules for PC+2 burn
 076:58:24|2|Lovell talks about importance of a speedy return
 077:08:38|1|Apollo 13 goes behind the Moon and loses radio contact
@@ -216,6 +217,7 @@
 082:30:00|1|Maroon Team (Windler) relieves White Team (Kranz)
 082:38:12|2|Swigert teases Lousma
 082:43:37|2|Lousma teases Haise
+083:20:57|2|Change of shift press conference (video)
 083:28:29|1|Lousma gives the crew an update on mission plans
 083:32:21|2|Haise jokes with Lousma
 083:51:48|2|Lousma talks about the CO2 adapter
@@ -260,6 +262,7 @@
 105:17:29|1|One minute to burn
 106:02:00|1|Maroon Team (Windler) relieves Gold Team (Griffin)
 106:15:00|2|Long PAO update on the situation
+106:57:00|2|Change of shift press conference (no audio yet)
 108:25:59|2|Lovell and Lousma tease each other
 108:54:31|1|Supercritical helium bursts
 109:13:30|2|Spurious battery alarm
