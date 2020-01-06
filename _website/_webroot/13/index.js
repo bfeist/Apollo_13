@@ -561,7 +561,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         timezoneOffsetString = timezoneOffsetString + "0";
     }
 
-    console.log("Timezone offset: " + timezoneOffsetString);
+    // console.log("Timezone offset: " + timezoneOffsetString);
 
     var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
     $(".historicalTime").text(historicalDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);

@@ -42,7 +42,7 @@
 0113720|AS13-60-8600|||Eastern Pacific Ocean, Australia, China Sea and Korea
 0261000|AS13-60-8601|||Distant view of Earth, North America, Caribbean Sea
 0261100|AS13-60-8602|||Distant view of Earth, North America, Caribbean Sea
-0680010|AS13-62-8880|||LM interior out of focus. Reflection of ascent engine cover
+0680000|AS13-62-8880|||LM interior out of focus. Reflection of ascent engine cover
 0680015|AS13-62-8881|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
 0680030|AS13-62-8882|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
 0680045|AS13-62-8883|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
@@ -62,7 +62,7 @@
 0680710|AS13-62-8897|||Faint image of Moon taken through the LMP LM window
 0682000|AS13-62-8898|||LM interior very dark, panel 1 and the CDR window
 0682200|AS13-62-8899|||LM interior dark looking over to CDR station and the docking window
-0682205|AS13-62-8900|||LM interior dark looking over to CDR station and the docking window
+0682210|AS13-62-8900|||LM interior dark looking over to CDR station and the docking window
 0760500|AS13-60-8603|||Attempted view of the nearside terminator and lunar limb. No detail.
 0760520|AS13-60-8604|||Very faint lunar limb and neraside terminator-Arzachel, Thebit and  Purbach
 0760540|AS13-60-8605|||Very faint lunar limb and nearside terminator-Arzachel, Thebit and  Purbach
@@ -194,8 +194,8 @@
 0774816|AS13-61-8763|||Mare Crisium, Mare Fecunditatis, Mare Smythii, Mare Marginis, Mare Humboldtanium, Tsiolkovsky
 0774820|AS13-61-8764|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Tsiolkovsky
 0774823|AS13-61-8765|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Mare Australe
-0774826|AS13-61-8766|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis
-0774830|AS13-60-8672|||Mare Tranquillitatis, Serenitatis, Prolocus, Taruntius, Goclenius, Picard
+0774834|AS13-60-8672|||Mare Tranquillitatis, Serenitatis, Prolocus, Taruntius, Goclenius, Picard
+0774841|AS13-61-8766|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis
 0774845|AS13-60-8673|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Picard, Prolocus, Cleomedes
 0774846|AS13-61-8767|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Tsiolkovsky
 0774850|AS13-61-8768|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis
@@ -255,8 +255,8 @@
 0775114|AS13-61-8810|||Eastern hemisphere of the Moon
 0775116|AS13-61-8811|||Eastern hemisphere of the Moon
 0775119|AS13-61-8812|||Eastern hemisphere of the Moon
-0775710|AS13-61-8813|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
-0775720|AS13-61-8813a|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
+0775700|AS13-61-8813|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
+0775710|AS13-61-8813a|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
 0775959|AS13-61-8814|||Moon
 0780002|AS13-61-8815|||Moon
 0780006|AS13-61-8816|||Moon
@@ -270,8 +270,8 @@
 0780048|AS13-61-8823|||Moon through LMP LM window
 0780053|AS13-61-8824|||Moon through LMP LM window
 0780057|AS13-61-8825|||Moon through LMP LM window
-0780408|AS13-61-8825a|||Underexposed photo of distant Earth
-0780410|AS13-61-8825b|||Underexposed photo of distant Earth
+0780400|AS13-61-8825a|||Underexposed photo of distant Earth
+0780405|AS13-61-8825b|||Underexposed photo of distant Earth
 0780412|AS13-61-8826|||Earth through CDR LM window
 0780416|AS13-61-8827|||Earth through CDR LM window
 0780421|AS13-61-8828|||Earth through CDR LM window
@@ -338,7 +338,7 @@
 0803814|AS13-61-8861|||Moon
 0804500|AS13-61-8862|||Very under exposed photo of the LM docking window
 0804510|AS13-61-8862a|||Very under exposed photo of the LM docking window
-0804511|AS13-61-8862b|||Very under exposed photo of the LM docking window
+0804520|AS13-61-8862b|||Very under exposed photo of the LM docking window
 0804918|AS13-61-8863|||Moon
 0805226|AS13-61-8864|||Earth through LMP LM window
 0805518|AS13-61-8865|||Lunar disc-accidental exposure
@@ -371,16 +371,16 @@
 0914135|AS13-62-8927|||Moon
 0914155|AS13-62-8928|||Moon
 0941900|AS13-62-8929|||Interior of Spacecraft. Emergency rig lithium hydroxide unit
-0941905|AS13-62-8930|||Interior of Spacecraft. Emergency rig lithium hydroxide unit
+0941910|AS13-62-8930|||Interior of Spacecraft. Emergency rig lithium hydroxide unit
 0944500|AS13-60-8720|||Earth, North Africa and the Atlantic Ocean
 0945200|AS13-60-8721|||Earth, North Africa and the Atlantic Ocean
 0945620|AS13-60-8722|||Moon eastern hemisphere
 0945640|AS13-60-8723|||Moon eastern hemisphere
 0945700|AS13-60-8724|||Moon eastern hemisphere
 0950000|AS13-61-8876|||Assembled CO2 scrubber canister, mounted on the ECS in the LM
-0950002|AS13-61-8877|||Assembled CO2 scrubber canister, mounted on the ECS in the LM
-0950004|AS13-61-8878|||Assembled CO2 scrubber canister in the LM docking tunnel
-0950006|AS13-61-8879|||Assembled CO2 scrubber canister in the LM docking tunnel
+0950010|AS13-61-8877|||Assembled CO2 scrubber canister, mounted on the ECS in the LM
+0950020|AS13-61-8878|||Assembled CO2 scrubber canister in the LM docking tunnel
+0950030|AS13-61-8879|||Assembled CO2 scrubber canister in the LM docking tunnel
 0955920|AS13-62-8931|||LM panels 1 & 2
 0955930|AS13-62-8932|||LM panels 1 & 2
 0960055|AS13-62-8933|||Moon
@@ -457,7 +457,7 @@
 1132830|AS13-62-9002|||Distant Moon
 1154200|AS13-62-9003|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS
 1154210|AS13-62-9004|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS
-1154320|AS13-62-9005|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS
+1154300|AS13-62-9005|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS
 1184322|AS13-62-9006|||Distant Moon
 1184346|AS13-62-9007|||Distant Moon
 1184405|AS13-62-9008|||Distant Moon
@@ -482,9 +482,9 @@
 1192626|AS13-62-9027|||Earth, Eastern Atlantic Ocean
 1193117|AS13-62-9028|||Earth, Eastern Atlantic Ocean
 1195700|AS13-62-9029|||CM through the LM docking window
-1195705|AS13-62-9030|||CM through the LM docking window
-1195710|AS13-62-9031|||CM through the LM docking window
-1195815|AS13-62-9032|||CM through the LM docking window
+1195710|AS13-62-9030|||CM through the LM docking window
+1195720|AS13-62-9031|||CM through the LM docking window
+1195800|AS13-62-9032|||CM through the LM docking window
 1200014|AS13-62-9033|||Earth Atlantic Ocean
 1200820|AS13-62-9034|||Earth Atlantic Ocean
 1200909|AS13-62-9035|||Very distant Moon

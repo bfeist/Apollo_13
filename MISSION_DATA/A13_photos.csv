@@ -1,3 +1,4 @@
+skip|LPI filename|ALSJ filename|Custom URL|Description|||
 skip|69-HC-1268||||||
 -35:10:08|69-HC-1269|ap13-69-HC-1269HR.jpg||On the pad waiting for fuelling|||
 -45:00:00|70-HC-289|ap13-70-HC-289.jpg|||||
@@ -176,7 +177,7 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 077:45:12|AS13-60-8669|||High Oblique across Mare Australe|||
 077:48:00|AS13-60-8670|||Mare Crisium, Mare Marginis, Joliot, Hubble, Goddard, Al-Biruni|||
 077:48:15|AS13-60-8671|||Mare Crisium, Mare Marginis, Mare Smythii, Joliot, Hubble, Goddard, Al-Biruni, Plutarch, Neper|||
-077:48:30|AS13-60-8672|||Mare Tranquillitatis, Serenitatis, Prolocus, Taruntius, Goclenius, Picard|||
+077:48:34|AS13-60-8672|||Mare Tranquillitatis, Serenitatis, Prolocus, Taruntius, Goclenius, Picard|||
 077:48:45|AS13-60-8673|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Picard, Prolocus, Cleomedes|||
 077:49:00|AS13-60-8674|||Mare Humboldtianum, Endymion, Lacus Spie, Atlas, Hercules, Lacus, Somniorum|||
 077:49:15|AS13-60-8675|||Joliot, Lomonosov, Compton, Giordano Bruno, Hubble, Mare Marginis|||
@@ -269,7 +270,7 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 077:48:16|AS13-61-8763|||Mare Crisium, Mare Fecunditatis, Mare Smythii, Mare Marginis, Mare Humboldtanium, Tsiolkovsky|||
 077:48:20|AS13-61-8764|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Tsiolkovsky|||
 077:48:23|AS13-61-8765|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Mare Australe|||
-077:48:26|AS13-61-8766|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
+077:48:41|AS13-61-8766|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
 077:48:46|AS13-61-8767|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Tsiolkovsky|||
 077:48:50|AS13-61-8768|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
 077:48:53|AS13-61-8769|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
@@ -324,8 +325,8 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 077:51:14|AS13-61-8810|||Eastern hemisphere of the Moon|||
 077:51:16|AS13-61-8811|||Eastern hemisphere of the Moon|||
 077:51:19|AS13-61-8812|||Eastern hemisphere of the Moon|||
-077:57:10|AS13-61-8813|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed|||
-077:57:20|AS13-61-8813a|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed|||
+077:57:00|AS13-61-8813|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed|||
+077:57:10|AS13-61-8813a|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed|||
 077:59:59|AS13-61-8814|||Moon|||
 078:00:02|AS13-61-8815|||Moon|||
 078:00:06|AS13-61-8816|||Moon|||
@@ -339,8 +340,8 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 078:00:48|AS13-61-8823|||Moon through LMP LM window|||
 078:00:53|AS13-61-8824|||Moon through LMP LM window|||
 078:00:57|AS13-61-8825|||Moon through LMP LM window|||
-078:04:08|AS13-61-8825a|||Underexposed photo of distant Earth|||
-078:04:10|AS13-61-8825b|||Underexposed photo of distant Earth|||
+078:04:00|AS13-61-8825a|||Underexposed photo of distant Earth|||
+078:04:05|AS13-61-8825b|||Underexposed photo of distant Earth|||
 078:04:12|AS13-61-8826|||Earth through CDR LM window|||
 078:04:16|AS13-61-8827|||Earth through CDR LM window|||
 078:04:21|AS13-61-8828|||Earth through CDR LM window|||
@@ -379,7 +380,7 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 080:38:14|AS13-61-8861|||Moon|||
 080:45:00|AS13-61-8862|||Very under exposed photo of the LM docking window|||
 080:45:10|AS13-61-8862a|||Very under exposed photo of the LM docking window|||
-080:45:11|AS13-61-8862b|||Very under exposed photo of the LM docking window|||
+080:45:20|AS13-61-8862b|||Very under exposed photo of the LM docking window|||
 080:49:18|AS13-61-8863|||Moon|||
 080:52:26|AS13-61-8864|||Earth through LMP LM window|||
 080:55:18|AS13-61-8865|||Lunar disc-accidental exposure|||
@@ -394,10 +395,10 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 090:15:48|AS13-61-8874|||Lunar disc through the CDR LM window|||
 090:15:56|AS13-61-8875|||Lunar disc through the CDR LM window|||
 095:00:00|AS13-61-8876|||Assembled CO2 scrubber canister, mounted on the ECS in the LM|||
-095:00:02|AS13-61-8877|||Assembled CO2 scrubber canister, mounted on the ECS in the LM|||
-095:00:04|AS13-61-8878|||Assembled CO2 scrubber canister in the LM docking tunnel|||
-095:00:06|AS13-61-8879|||Assembled CO2 scrubber canister in the LM docking tunnel|||
-068:00:10|AS13-62-8880|||LM interior out of focus. Reflection of ascent engine cover|||
+095:00:10|AS13-61-8877|||Assembled CO2 scrubber canister, mounted on the ECS in the LM|||
+095:00:20|AS13-61-8878|||Assembled CO2 scrubber canister in the LM docking tunnel|||
+095:00:30|AS13-61-8879|||Assembled CO2 scrubber canister in the LM docking tunnel|||
+068:00:00|AS13-62-8880|||LM interior out of focus. Reflection of ascent engine cover|||
 068:00:15|AS13-62-8881|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. |||
 068:00:30|AS13-62-8882|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. |||
 068:00:45|AS13-62-8883|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. |||
@@ -417,7 +418,7 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 068:07:10|AS13-62-8897|||Faint image of Moon taken through the LMP LM window|||
 068:20:00|AS13-62-8898|||LM interior very dark, panel 1 and the CDR window|||
 068:22:00|AS13-62-8899|||LM interior dark looking over to CDR station and the docking window|||
-068:22:05|AS13-62-8900|||LM interior dark looking over to CDR station and the docking window|||
+068:22:10|AS13-62-8900|||LM interior dark looking over to CDR station and the docking window|||
 076:10:05|AS13-62-8901|||Very distant Earth Crescent|||
 076:10:20|AS13-62-8902|||Very distant Earth Crescent|||
 076:10:35|AS13-62-8903|||Very distant Earth Crescent|||
@@ -447,7 +448,7 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 091:41:35|AS13-62-8927|||Moon|||
 091:41:55|AS13-62-8928|||Moon|||
 094:19:00|AS13-62-8929|||Interior of Spacecraft. Emergency rig lithium hydroxide unit|||
-094:19:05|AS13-62-8930|||Interior of Spacecraft. Emergency rig lithium hydroxide unit|||
+094:19:10|AS13-62-8930|||Interior of Spacecraft. Emergency rig lithium hydroxide unit|||
 095:59:20|AS13-62-8931|||LM panels 1 & 2|||
 095:59:30|AS13-62-8932|||LM panels 1 & 2|||
 096:00:55|AS13-62-8933|||Moon|||
@@ -522,7 +523,7 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 113:28:30|AS13-62-9002|||Distant Moon|||
 115:42:00|AS13-62-9003|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|||
 115:42:10|AS13-62-9004|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|||
-115:43:20|AS13-62-9005|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|||
+115:43:00|AS13-62-9005|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|||
 118:43:22|AS13-62-9006|||Distant Moon|||
 118:43:46|AS13-62-9007|||Distant Moon|||
 118:44:05|AS13-62-9008|||Distant Moon|||
@@ -547,9 +548,9 @@ skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
 119:26:26|AS13-62-9027|||Earth, Eastern Atlantic Ocean|||
 119:31:17|AS13-62-9028|||Earth, Eastern Atlantic Ocean|||
 119:57:00|AS13-62-9029|||CM through the LM docking window|||
-119:57:05|AS13-62-9030|||CM through the LM docking window|||
-119:57:10|AS13-62-9031|||CM through the LM docking window|||
-119:58:15|AS13-62-9032|||CM through the LM docking window|||
+119:57:10|AS13-62-9030|||CM through the LM docking window|||
+119:57:20|AS13-62-9031|||CM through the LM docking window|||
+119:58:00|AS13-62-9032|||CM through the LM docking window|||
 120:00:14|AS13-62-9033|||Earth Atlantic Ocean|||
 120:08:20|AS13-62-9034|||Earth Atlantic Ocean|||
 120:09:09|AS13-62-9035|||Very distant Moon|||
@@ -576,7 +577,6 @@ skip|KSC-70C-1499|||Apollo 13 Saturn V viewed from the Mobile Service Structure 
 -23:15:00|KSC-70PC-176|ap13-KSC-70PC-176HR.jpg||Apollo 13 Saturn V spotlit on the launch pad|||
 000:00:00|KSC-70PC-178|ap13-KSC-70PC-178HR.jpg||Launch|||
 -23:35:00|KSC-70PC-43|ap13-KSC-70PC-43HR.jpg||Apollo 13 Saturn V on the launch pad at sunset|||
-skip|LPI filename|ALSJ filename|Custom URL|Description|||
 |S70-15523|||Recovery|||
 -22:55:00|S70-32990|ap13-S70-32990HR.jpg||Apollo 13 on the pad at night|||
 000:00:08|S70-34747|ap13-S70-34747HR.jpg||Launch|||
@@ -586,4 +586,52 @@ skip|LPI filename|ALSJ filename|Custom URL|Description|||
 |S70-35644|||Recovery|||
 |S70-35645|||Recovery|||
 |S70-35651|||Recovery|||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
+|||||||
 |||||||
