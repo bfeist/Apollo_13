@@ -2,10 +2,8 @@ trace("INIT: Loading index.js");
 //app control flags
 var cStopCache = false;
 
-// var cCdnRoot = 'https://media.apolloinrealtime.org/mp3';
-var cCdnRoot = 'https://keycdn.apolloinrealtime.org/mp3';
-// var cCdnRoot = 'https://apollomedia.sfo2.cdn.digitaloceanspaces.com/mp3';
-// var cCdnRoot = 'https://apollomedia.sfo2.digitaloceanspaces.com/mp3';
+var cCdnRoot = 'https://media.apolloinrealtime.org/A13';
+// var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
@@ -13,13 +11,14 @@ var cWebCdnRoot = '';
 var cYouTubeSDorHD = 0; //0 for SD  1 for HD
 
 //constants
-var cMissionDurationSeconds = 518400;
+// var cMissionDurationSeconds = 518400;
+var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cDefaultStartTimeId = '-000102';
 var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
-var cLaunchDateModern = Date.parse("2019-04-11 19:13 -000");
+var cLaunchDateModern = Date.parse("2020-04-11 19:13 -000");
 var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
-var cCountdownStartDateModern = Date.parse("2019-04-10 7:55:50 -000");
+var cCountdownStartDateModern = Date.parse("2020-04-10 7:55:50 -000");
 
 var cBackground_color_active = "#1e1e1e";
 
@@ -313,7 +312,7 @@ function findClosestUtterance(secondsSearch) {
     //}
     var timeId = secondsToTimeId(secondsSearch);
     var scrollTimeId = gUtteranceIndex[gUtteranceIndex.length - 1];
-    for (var i = 0; i < gUtteranceIndex.length; ++i) {
+    for (var i = 1; i < gUtteranceIndex.length; ++i) {
         if (timeId < parseInt(gUtteranceIndex[i])) {
             scrollTimeId = gUtteranceIndex[i - 1];
             break;
@@ -332,7 +331,7 @@ function scrollToClosestTOC(secondsSearch) {
     }
     var timeId = secondsToTimeId(secondsSearch);
     var scrollTimeId = gTOCIndex[gTOCIndex.length - 1];
-    for (var i = 0; i < gTOCIndex.length; ++i) {
+    for (var i = 1; i < gTOCIndex.length; ++i) {
         if (timeId < parseInt(gTOCIndex[i])) {
             scrollTimeId = gTOCIndex[i - 1];
             break;
@@ -351,7 +350,7 @@ function findClosestCommentary(secondsSearch) {
     }
     var timeId = secondsToTimeId(secondsSearch);
     var scrollTimeId = gCommentaryIndex[gCommentaryIndex.length - 1];
-    for (var i = 0; i < gCommentaryIndex.length; ++i) {
+    for (var i = 1; i < gCommentaryIndex.length; ++i) {
         if (timeId < parseInt(gCommentaryIndex[i])) {
             scrollTimeId = gCommentaryIndex[i - 1];
             break;
@@ -1110,8 +1109,8 @@ function populatePhotoGallery() {
             var imgNum = RegExp.$2;
             // var imageURL = 'http://tothemoon.ser.asu.edu/data_a70/AS11/extra/'  + photoObject[1] + '.thumb.png';
             var imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
-        } else if (photoObject[3] !== '') { //if custom image URL in datafile
-            imageURL = photoObject[3];
+        } else if (photoObject[3] !== '') { //if media.apolloinrealtime.org filename is in datafile
+            imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
         } else {
             imageURL = 'https://www.hq.nasa.gov/alsj/a13/' + photoObject[2];
         }
@@ -2227,7 +2226,7 @@ function getTapeActivityRanges(activeSec) {
 function ajaxGetTapesActivityDataRange(tapesActivityFilename) {
     trace("ajaxGetTapesActivityDataRange()main: "  + tapesActivityFilename.toString());
 
-    var tapeActivityDataPath = cCdnRoot + '/A13/tape_activity/';
+    var tapeActivityDataPath = cCdnRoot + '/MOCR_audio/tape_activity/';
     var tapeActivity;
     gTapesActivityRangeArray = [];
     $.when(

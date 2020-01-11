@@ -2,10 +2,8 @@ var cMissionDurationSeconds = 518400;
 var cCountdownSeconds = 127048;
 var cAppStartGET = -102;
 
-var cCdnRoot = 'https://media.apolloinrealtime.org/mp3/A13';
-// var cCdnRoot = 'https://keycdn.apolloinrealtime.org/mp3';
-// var cCdnRoot = 'https://apollomedia.sfo2.cdn.digitaloceanspaces.com/mp3';
-// var cCdnRoot = 'https://apollomedia.sfo2.digitaloceanspaces.com/mp3';
+var cCdnRoot = 'https://media.apolloinrealtime.org/A13/MOCR_audio';
+// var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13/MOCR_audio';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';

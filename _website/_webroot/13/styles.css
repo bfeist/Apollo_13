@@ -1119,7 +1119,7 @@ body.splash-loaded .splash-content {
   width: 1px;
 }
 .splash-content .patch {
-  background-image: url("img/Apollo_11_insignia_200.png");
+  background-image: url("img/Apollo_13-insignia200.png");
   width: 7em;
   height: 7em;
   background-size: contain;
@@ -1632,10 +1632,10 @@ header {
   display: inline-block;
   font-family: 'Oswald', sans-serif;
   line-height: 1;
+  font-size: 0.9em;
 }
 .info-wrapper .content .date {
   /*font-size: .8em;*/
-  font-size: 0.9em;
 }
 .info-wrapper .content .time {
   border-left: 1px solid #444;

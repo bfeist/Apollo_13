@@ -1,11 +1,12 @@
-skip|LPI filename|ALSJ filename|Custom URL|Description|||
+skip|LPI filename|ALSJ filename|media.apolloinrealtime.org filename|Description|||
 skip|69-HC-1268||||||
 -35:10:08|69-HC-1269|ap13-69-HC-1269HR.jpg||On the pad waiting for fuelling|||
 -45:00:00|70-HC-289|ap13-70-HC-289.jpg|||||
 -23:05:00|70-HC-291|ap13-70-HC-291HR.jpg||Nighttime view of Apollo 13 Saturn V on pad|||
 -10:10:08|70-HC-351|ap13-70-HC-351HR.jpg||On the pad waiting for fuelling|||
 skip|70-HC-537|||The Apollo 13 stack from the Mobile Service Structure|||
-|Apollo13_splashdown|||Splashdown|||
+skip|70-HC-482|ap13-70-HC-482HR.jpg||Navy helicopters lowers net to pick up rescue swimmers of U.S. Navy Underwater Demolition team.|||
+skip|70-H-652|ap13-70-H-652HR.jpg||Navy helicopters lowers net to pick up rescue swimmers of U.S. Navy Underwater Demolition team.|||
 138:08:26|AS13-58-8456|||SM following jettison taken by CMP through left hand LM window|||
 138:08:29|AS13-58-8457|||SM following jettison taken by CMP through left hand LM window|||
 138:08:42|AS13-58-8458|||SM following jettison taken by CMP through left hand LM window|||
@@ -577,16 +578,31 @@ skip|KSC-70C-1499|||Apollo 13 Saturn V viewed from the Mobile Service Structure 
 -23:15:00|KSC-70PC-176|ap13-KSC-70PC-176HR.jpg||Apollo 13 Saturn V spotlit on the launch pad|||
 000:00:00|KSC-70PC-178|ap13-KSC-70PC-178HR.jpg||Launch|||
 -23:35:00|KSC-70PC-43|ap13-KSC-70PC-43HR.jpg||Apollo 13 Saturn V on the launch pad at sunset|||
-|S70-15523|||Recovery|||
+143:27:51|KSC-70PC-256|ap13-KSC-70PC-256.jpg||Jack Swigert is raised to the recovery helicopter after splashdown.|||
+143:41:46|KSC-70PC-0130|ap13-KSC-70PC-0130.jpg||Fred Haise (left), Jim Lovell, and Jack Swigert emerge from the recovery helicopter on-board the aircraft carrier Iwo Jima.|||
+144:00:00|S70-15501|ap13-S70-15501.jpg||Jim Lovell reads a newspaper account of the Apollo 13 recovery.|||
+skip|S70-15507|ap13-S70-15507.jpg||Jack Swigert (left) and Jim Lovell examine the Command Module aboard the Iwo Jima.|||
+144:43:28|S70-15511|ap13-S70-15511.jpg||U. S. President Richard Nixon (right) welcomes the Apollo 13 crew safely home. Jack Swigert is at the left, then Fred Haise, and Jim Lovell. 18 April 1970.|||
+143:57:03|S70-15520|ap13-S70-15520.jpg||Jim Lovell (left), Fred Haise, and Jack Swigert receive a phone call on board the Iwo Jima. The fact that it is a group call and that a photo was taken suggest that the call is from President Nixon.|||
+143:23:51|S70-15523||S70-15523.jpg|Recovery|||
+144:48:02|S70-15526|ap13-S70-15526.jpg||Fred Haise (left), Jim Lovell, President Nixon, and Jack Swigert at Hickham Air Force Base, Hawaii. 18 April 1970.|||
+143:56:31|S70-15531|ap13-S70-15531.jpg||The Apollo 13 Command Module after being hosted aboard the Iwo Jima.|||
+143:52:59|S70-15653|ap13-S70-15653.jpg||Navy divers pose with the Command Module before it is hoisted aboard the Iwo Jima.|||
+skip|S70-15762|ap13-S70-15762.jpg||Jim Lovell (left), Jack Swigert, and Fred Haise at Hickham Air Force Base, Hawaii. 18 April 1970.|||
+143:53:09|S70-15841|ap13-S70-15841.jpg||Navy divers pose with the Command Module before it is hoisted aboard the Iwo Jima.|||
+143:53:15|S70-16000|ap13-S70-16000.jpg||Navy divers prepare the Command Module for hoisting. |||
 -22:55:00|S70-32990|ap13-S70-32990HR.jpg||Apollo 13 on the pad at night|||
 000:00:08|S70-34747|ap13-S70-34747HR.jpg||Launch|||
 000:00:04|S70-34853|ap13-S70-34853.jpg||Launch|||
 000:00:11|S70-34855|ap13-S70-34855HR.jpg||Launch|||
-|S70-35631|||Recovery|||
-|S70-35644|||Recovery|||
-|S70-35645|||Recovery|||
-|S70-35651|||Recovery|||
-|||||||
+143:42:08|S70-35145|ap13-S70-35145HR.jpg||Mission Control in Houston celebrates the safe return of the Apollo 13 crew. Gene Kranz is smoking a celebratory cigar at the right while Deke Slayton, in front of the mission patch, shakes hands.|||
+143:43:29|S70-35606|ap13-S70-35606HR.jpg||Rear Admiral Donald C. Davis (USN), Recovery Task Force Commander, welcomes Fred Haise (left), Jack Swigert, and Jim Lovell aboard the U.S. Iwo Jima after their safe return to Earth.|||
+143:24:59|S70-35631|ap13-S70-35631.jpg||Recovery|||
+143:54:32|S70-35632|ap13-S70-35632.jpg||The Apollo 13 Command Module being hosted aboard the Iwo Jima. 17 April 1970.|||
+142:54:52|S70-35644||S70-35644.jpg|Recovery|||
+143:27:49|S70-35645||S70-35645.jpg|Recovery|||
+143:25:15|S70-35651||S70-35651.jpg|Recovery|||
+142:54:43|Apollo13_splashdown.jpg||Apollo13_splashdown.jpg||||
 |||||||
 |||||||
 |||||||
