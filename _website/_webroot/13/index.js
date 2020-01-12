@@ -1172,12 +1172,12 @@ function loadPhotoHtml(photoIndex) {
             var imageURL = 'https://www.hq.nasa.gov/alsj/a11/' + photoObject[2];
             // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
         } else if (photoObject[3] !== '') { //if custom image URL in datafile
-            imageURL = photoObject[3];
+            imageURL = cCdnRoot + '/images/flight/' + photoObject[3];
         } else {
             imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
         }
     } else if (photoObject[3] !== '') { //if custom image URL in datafile
-        imageURL = photoObject[3];
+        imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
     } else {
         imageURL = 'https://www.hq.nasa.gov/alsj/a13/' + photoObject[2];
         // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
