@@ -1103,11 +1103,10 @@ function populatePhotoGallery() {
         var html = $('#photoGalleryTemplate').html();
 
         var photoName = photoObject[1];
-        var filetypematch = photoName.match(/AS13-(\d\d)-(\d\d\d\d)/g);
+        var filetypematch = photoName.match(/AS13-(\d\d)-(\d\d\d\d.?)/g);
         if (filetypematch !== null) {
             var rollNum = RegExp.$1;
             var imgNum = RegExp.$2;
-            // var imageURL = 'http://tothemoon.ser.asu.edu/data_a70/AS11/extra/'  + photoObject[1] + '.thumb.png';
             var imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
         } else if (photoObject[3] !== '') { //if media.apolloinrealtime.org filename is in datafile
             imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
@@ -1164,7 +1163,7 @@ function loadPhotoHtml(photoIndex) {
 
     var photoTimeId = photoObject[0];
     var photoName = photoObject[1];
-    var filetypematch = photoName.match(/AS13-(\d\d)-(\d\d\d\d)/g);
+    var filetypematch = photoName.match(/AS13-(\d\d)-(\d\d\d\d.?)/g);
     if (filetypematch !== null) {
         var rollNum = RegExp.$1;
         var imgNum = RegExp.$2;
