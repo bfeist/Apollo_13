@@ -30,8 +30,8 @@ skip|70-H-652|ap13-70-H-652HR.jpg||Navy helicopters lowers net to pick up rescue
 138:10:11|AS13-58-8476|||SM following jettison taken by CMP through left hand LM window|||
 138:10:20|AS13-58-8478|||SM following jettison taken by CMP through left hand LM window|||
 138:10:23|AS13-58-8479|||SM following jettison taken by CMP through left hand LM window|||
-138:10:27|AS13-58-8480|||SM following jettison taken by CMP through left hand LM window|||
-138:10:31|AS13-58-8481|||SM following jettison taken by CMP through left hand LM window|||
+138:10:28|AS13-58-8480|||SM following jettison taken by CMP through left hand LM window|||
+138:10:32|AS13-58-8481|||SM following jettison taken by CMP through left hand LM window|||
 138:08:01|AS13-59-8526|||SM following jettison and distant Moon taken by CDR through LM right window|||
 138:08:05|AS13-59-8527|||SM following jettison and distant Moon taken by CDR through LM right window|||
 138:08:18|AS13-59-8528|||SM following jettison and distant Moon taken by CDR through LM right window|||
@@ -51,7 +51,7 @@ skip|70-H-652|ap13-70-H-652HR.jpg||Navy helicopters lowers net to pick up rescue
 138:10:10|AS13-59-8542|||SM following jettison and distant Moon taken by CDR through LM right window|||
 138:10:15|AS13-59-8543|||SM following jettison and distant Moon taken by CDR through LM right window|||
 138:10:21|AS13-59-8544|||SM following jettison and distant Moon taken by CDR through LM right window|||
-138:10:27|AS13-59-8545|||SM following jettison and distant Moon taken by CDR through LM right window|||
+138:10:25|AS13-59-8545|||SM following jettison and distant Moon taken by CDR through LM right window|||
 138:10:38|AS13-59-8546|||SM following jettison and distant Moon taken by CDR through LM right window|||
 138:10:45|AS13-59-8547|||SM following jettison and distant Moon taken by CDR through LM right window|||
 138:10:54|AS13-59-8548|||SM following jettison and distant Moon taken by CDR through LM right window|||
@@ -184,7 +184,7 @@ skip|70-H-652|ap13-70-H-652HR.jpg||Navy helicopters lowers net to pick up rescue
 077:49:07|AS13-60-8675|||Joliot, Lomonosov, Compton, Giordano Bruno, Hubble, Mare Marginis|||
 077:49:16|AS13-60-8676|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper|||
 077:49:22|AS13-60-8677|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper|||
-077:49:28|AS13-60-8678|||Langrenus, Mare Fecunditatis, Mare Tranquillitatis, Mare Nectaris, Goclenius|||
+077:49:26|AS13-60-8678|||Langrenus, Mare Fecunditatis, Mare Tranquillitatis, Mare Nectaris, Goclenius|||
 077:49:39|AS13-60-8679|||Langrenus, Mare Nectaris, Mare Fecunditatis, Vallis Snellius|||
 077:49:52|AS13-60-8680|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Prolocus, Taruntius, Lacus Somniorum|||
 077:50:28|AS13-60-8681|||Tsiolkovsky, Sklodowska, Mare Australe|||
@@ -281,10 +281,10 @@ skip|70-H-652|ap13-70-H-652HR.jpg||Navy helicopters lowers net to pick up rescue
 077:49:06|AS13-61-8773|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Mare Australe|||
 077:49:09|AS13-61-8774|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis, and Tsiolkovsky|||
 077:49:13|AS13-61-8775|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
-077:49:16|AS13-61-8776|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
+077:49:18|AS13-61-8776|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
 077:49:19|AS13-61-8777|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
-077:49:23|AS13-61-8778|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
-077:49:26|AS13-61-8779|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
+077:49:22|AS13-61-8778|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
+077:49:25|AS13-61-8779|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis|||
 077:49:28|AS13-61-8779a|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed|||
 077:49:29|AS13-61-8779b|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed|||
 077:49:30|AS13-61-8779c|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed|||
@@ -310,8 +310,8 @@ skip|70-H-652|ap13-70-H-652HR.jpg||Navy helicopters lowers net to pick up rescue
 077:50:22|AS13-61-8794|||Eastern limb of the Moon|||
 077:50:31|AS13-61-8795|||Eastern hemisphere of the Moon|||
 077:50:34|AS13-61-8796|||Eastern hemisphere of the Moon|||
-077:50:38|AS13-61-8797|||Eastern hemisphere of the Moon|||
-077:50:41|AS13-61-8798|||Eastern hemisphere of the Moon|||
+077:50:37|AS13-61-8797|||Eastern hemisphere of the Moon|||
+077:50:40|AS13-61-8798|||Eastern hemisphere of the Moon|||
 077:50:44|AS13-61-8799|||Eastern hemisphere of the Moon|||
 077:50:47|AS13-61-8800|||Eastern hemisphere of the Moon|||
 077:50:49|AS13-61-8801|||Eastern hemisphere of the Moon|||

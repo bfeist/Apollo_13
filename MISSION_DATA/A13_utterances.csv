@@ -12884,7 +12884,7 @@
 143:19:46|C|Photo 1|- Photo 1. The crew access hatch is open and the equipment is being passed to the astronauts. The hatch is closed again. Swim leader is observing crew activity through the forward viewing window.
 143:20:06|C|SC|Roger. Copy all.
 143:20:25|C|Photo 1|Situation is static at this time. Have two swimmers are standing by in safety position in the water. Have two swimmers have the egress raft.
-143:20:19|C|SC|Roger, sir. We copy and their picking it up now ...
+143:20:29|C|SC|Roger, sir. We copy and their picking it up now ...
 143:20:34|P|PAO|The three Apollo 13 crewmembers will be hoisted up into the Recovery 1 helicopter by the Billie Pugh net, the device you see that looks much like a half a birdcage. For the first time, there are stifters in this net, the Billie Pugh net has been used on previous recoveries. These made out of aluminum to provide ridgility to the net. The three Apollo crewmembers will exit the spacecraft into the egress raft. The Billie Pugh net, by the way, has a center of gravity, which is forward of the center line toward the open end to assure that -
 143:21:40|C|Photo 1|This is Photo 1. The situation is nominal at this time. Are standing by while the astronauts make their preparations inside the command module.
 143:21:55|C|SC|ARIA 2 MC, ARIA Control.
@@ -12912,7 +12912,7 @@
 143:27:13|C|Photo 1|It's positioned on the platform. The second astronaut is climbing aboard. The signal is given for arise. He is on his way up.
 143:27:36|C|Photo 1|The second astronaut is half way up. Excellent pickup; no oscillation.
 143:27:52|C|Photo 1|The rescue net is at the cargo hatch, and the second astronaut is safely aboard.
-143:27:02|C|Recovery|This is Recovery. I have astronaut Swigert onboard. He reports he feels fine.
+143:28:02|C|Recovery|This is Recovery. I have astronaut Swigert onboard. He reports he feels fine.
 143:28:09|C|Iwo Jima|Iwo Jima, copy.
 143:28:33|C|Photo 1|Recovery is manuevering for position. For the third retrival.
 143:28:50|C|Photo 1|Swim leader has the rescue net. It is positioned aboard the platform.
@@ -12930,7 +12930,7 @@
 143:32:39|C|Recovery|This is Recovery. Roger. Copied. Be advised I'll make a wide circle in order to allow the passengers to get into their flight suits.
 143:32:49|C|Iwo Jima|Roger Recovery.
 143:34:50|C|SC|Okay, FAO.
-143:35:53|C|SC speaker|Hey, I'd like to update this ...
+143:34:53|C|SC speaker|Hey, I'd like to update this ...
 143:35:07|C|Recovery|Iwo tower, this is primary. We - this is Recovery. We estimate we'll be ready to touch down in 4 minutes, 4 minutes. Over.
 143:35:16|C|Iwo Jima|Recovery, tower. Roger.
 143:36:01|C|Iwo Jima|Recovery, this is Iwo Jima tower. Pass to Captain Lovell that we will have a brief ceremony on the flight deck then they will be talking to their wives and the president in sick bay. Over.
@@ -12951,8 +12951,8 @@
 143:39:00|C|Iwo Jima|... Rescue 1.
 143:40:11|C|Iwo Jima|... 12.
 143:40:15|C|Recovery|Roger out.
-143:41:38|C|Swim 2|This is swim lead, over.
-143:41:40|P|PAO|The applause you just heard in the Mission Control Center came from a message delivered by Administrator Thomas Paine over the flight director's loop congratulating - from the President of the United States congratulating the team of Apollo 13.
+143:40:38|C|Swim 2|This is swim lead, over.
+143:40:40|P|PAO|The applause you just heard in the Mission Control Center came from a message delivered by Administrator Thomas Paine over the flight director's loop congratulating - from the President of the United States congratulating the team of Apollo 13.
 143:40:52|C|SC|... swim lead, over.
 143:41:01|C|Swim 1|... Swim 1. Over.
 143:41:15|C|SC|... Out.
@@ -12969,4 +12969,4 @@
 143:45:12|P|PAO|This is Apollo Control, Houston, in the Mission Operations Control Room; there must be almost 200 people at this point and it appears as though everybody is talking, shaking hands, the cigars have been passed out -
 143:49:38|C|Iwo Jima|... on display down here now. I have here with me right now Commander Spiuey. I'm prepared to put Commander Spiuey on the air with O'Brien as soon as he gets here in a couple of minutes. I would - we appreciate - ...
 143:50:45|P|PAO|The plaque for Apollo 13 has just been placed on the wall in the Mission Control Room; that brought about this loud applause we just heard.
-143:50:42|P|PAO|This is Apollo Control, Houston; we expect to have 3 news conferences picking up shortly in the Bldg. 1 auditorium, the first starting in aproximately 30 minutes with NASA Administrator Thomas Paine and Deputy Administrator George Low, this will be followed approximately 30 minutes later involving Dale Myers, Associate Administrator for Manned Spaceflight, and Dr. Gilruth, Robert Gillruth, Director of the Manned Spacecraft Center, Mr. Rocco Petrone, Apollo Program Director, Jim McDivitt, Manager of the Apollo Spacecraft Program Office at the Manned Spacecraft Center in Houston, and Mr. Chris Kraft, Deputy Director at MSC. Following that will be a third news conference with Mission Director Chet Lee, Director of Flight Operations, Sig Sjoberg, and Lead Flight Director for this mission, Milt Windler, and Mr. Ozzie [Ozro] Covington, of the Goddard Space Flight Center. We copied splashdown at 142 hours, 54 minutes, 44 seconds from liftoff, and this is Apollo Control, Houston, signing off at this time.
+143:51:42|P|PAO|This is Apollo Control, Houston; we expect to have 3 news conferences picking up shortly in the Bldg. 1 auditorium, the first starting in aproximately 30 minutes with NASA Administrator Thomas Paine and Deputy Administrator George Low, this will be followed approximately 30 minutes later involving Dale Myers, Associate Administrator for Manned Spaceflight, and Dr. Gilruth, Robert Gillruth, Director of the Manned Spacecraft Center, Mr. Rocco Petrone, Apollo Program Director, Jim McDivitt, Manager of the Apollo Spacecraft Program Office at the Manned Spacecraft Center in Houston, and Mr. Chris Kraft, Deputy Director at MSC. Following that will be a third news conference with Mission Director Chet Lee, Director of Flight Operations, Sig Sjoberg, and Lead Flight Director for this mission, Milt Windler, and Mr. Ozzie [Ozro] Covington, of the Goddard Space Flight Center. We copied splashdown at 142 hours, 54 minutes, 44 seconds from liftoff, and this is Apollo Control, Houston, signing off at this time.

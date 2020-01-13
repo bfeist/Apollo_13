@@ -1674,6 +1674,11 @@ header {
   height: 90%;
   /*padding-bottom: 2em;*/
 }
+
+.logo-wrapper img:hover {
+
+}
+
 .navigator-wrapper {
   display: block;
   overflow: hidden;

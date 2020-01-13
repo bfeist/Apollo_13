@@ -5,6 +5,9 @@ var cStopCache = false;
 var cCdnRoot = 'https://media.apolloinrealtime.org/A13';
 // var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
 
+var cLPICdnRoot = 'https://www.lpi.usra.edu';
+// var cLPICdnRoot = 'https://lpicache-26f5.kxcdn.com';
+
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
 
@@ -1107,7 +1110,7 @@ function populatePhotoGallery() {
         if (filetypematch !== null) {
             var rollNum = RegExp.$1;
             var imgNum = RegExp.$2;
-            var imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
+            var imageURL = cLPICdnRoot + '/resources/apollo/images/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
         } else if (photoObject[3] !== '') { //if media.apolloinrealtime.org filename is in datafile
             imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
         } else {
@@ -1173,7 +1176,8 @@ function loadPhotoHtml(photoIndex) {
         } else if (photoObject[3] !== '') { //if custom image URL in datafile
             imageURL = cCdnRoot + '/images/flight/' + photoObject[3];
         } else {
-            imageURL = 'https://www.lpi.usra.edu/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
+            imageURL = cLPICdnRoot + '/resources/apollo/images/browse/AS13/' + rollNum + '/' + imgNum + '.jpg';
+            // imageURL = cLPICdnRoot + '/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
         }
     } else if (photoObject[3] !== '') { //if custom image URL in datafile
         imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
