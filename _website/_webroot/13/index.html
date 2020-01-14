@@ -65,8 +65,8 @@
 
 <!-- app -->
 <section class="app">
-    <header>
-        <div class="logo-wrapper"><a onclick="fadeInSplash()"><img src="img/Apollo_13-insignia100.png"></a></div>
+    <div class="header-wrapper">
+        <div class="logo-wrapper" onclick="fadeInSplash()"></div>
 
         <div class="info-wrapper">
             <div class="content">
@@ -79,13 +79,12 @@
             </div>
         </div>
 
-        <div class="monitor">
-            <!-- navigator -->
-            <div id="navigator" class="navigator-wrapper">
+        <div class="navigator-wrapper">
+            <div id="navigator" class="navigator">
                 <canvas id="navCanvas" resize keepalive="true"></canvas>
             </div>
         </div>
-    </header>
+    </div>
 
     <div class="body">
         <div class="video-block">
@@ -328,14 +327,13 @@
               Included real-time elements:
               <ul>
                   <li>All mission control film footage</li>
-                  <li>All TV transmissions and onboard film footage</li>
-                  <li>2,000 photographs</li>
-                  <li>11,000 hours of Mission Control audio</li>
-                  <li>240 hours of space-to-ground audio</li>
+                  <li>All onboard television and film footage</li>
+                  <li>600+ photographs</li>
+                  <li>7,200 hours of restored Mission Control audio</li>
+                  <li>144 hours of space-to-ground audio</li>
                   <li>All onboard recorder audio</li>
-                  <li>15,000 searchable utterances</li>
+                  <li>13,000 searchable utterances</li>
                   <li>Post-mission commentary</li>
-                  <li>Astromaterials sample data</li>
               </ul>
 
               <a class="splash-btn credits subdued" id="aboutSplashBtn" style="cursor:help;">
@@ -437,12 +435,12 @@
                   </p>
                   <div class="section-header">Thanks</div>
                   <p>
+                      <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>. More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
+                      <br>
+                      <br>
                       <span class="accent">Todd Miller</span> Director, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
                       <br>
                       <span class="accent">Tom Petersen</span> Producer, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
-                      <br>
-                      <br>
-                      <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>. More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
                       <br>
                       <br>
                       <span class="section-subheader">Lunar and Planetary Institute</span>

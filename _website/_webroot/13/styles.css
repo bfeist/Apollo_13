@@ -906,17 +906,7 @@ canvas[resize] {
 .app-wrapper {
   height: 100%;
 }
-/*.thumbs-wrapper {*/
-  /*height: 180px;*/
-  /*overflow: auto;*/
-  /*width: 70%;*/
-/*}*/
-.badge-row {
-  background-position: center right;
-  background-image: url("img/Apollo_11-insignia100.png");
-  background-repeat: no-repeat;
-  background-size: contain;
-}
+
 .isloading-overlay {
   background-position: center center !important;
   background-image: url("img/ajax-loader.gif") !important;
@@ -936,9 +926,7 @@ section.app {
     right: 0;
     left: 0;
 }
-/*.page-wrapper {*/
-/*display: none;*/
-/*}*/
+
 section.app {
     /*display: none;*/
     opacity: 0;
@@ -1603,9 +1591,45 @@ div.body:after {
 header {
   display: table;
 }
+
+.header-wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.logo-wrapper {
+    margin-left: 9px;
+    margin-right: 9px;
+    margin-top: 9px;
+    width: 100px;
+    height: 100px;
+    white-space: nowrap;
+    display: inline-block;
+    vertical-align: middle;
+    flex: none;
+    /*height: 90%;*/
+    /*padding-bottom: 2em;*/
+    background: url('img/Apollo_13-insignia100.png');
+}
+
+.logo-wrapper img:hover {
+
+}
+
 .info-wrapper {
   font-family: 'Michroma', sans-serif;
+    flex: none;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    padding-right: 9px;
+    padding-left: 4px;
+    white-space: nowrap;
+    vertical-align: middle;
 }
+
 .info-wrapper .content {
   font-size: 20px;
   position: relative;
@@ -1650,40 +1674,19 @@ header {
   font-family: 'Oswald', sans-serif;
   margin-top: 2px;
 }
-.logo-wrapper,
-.info-wrapper,
-.navigator-wrapper/*,
-.buttons-wrapper*/ {
-  display: table-cell;
-  vertical-align: middle;
-  /*float: left;
-  padding: 20px;*/
-}
-.logo-wrapper,
-.info-wrapper/*,
-.buttons-wrapper*/ {
-  padding: 9px;
-  width: 1%;
-  white-space: nowrap;
-}
-/*header .monitor {
-  width: 100%;
-}*/
-.logo-wrapper img {
-  display: block;
-  height: 90%;
-  /*padding-bottom: 2em;*/
-}
-
-.logo-wrapper img:hover {
-
-}
 
 .navigator-wrapper {
+    flex: none;
+    flex-grow: 1;
+    margin-right: 5px;
+}
+
+.navigator {
   display: block;
   overflow: hidden;
-  /*width: 100%;*/
+  vertical-align: middle;
 }
+
 .video-block,
 .app-with-tabs-block,
 .thirtytrack-block {
