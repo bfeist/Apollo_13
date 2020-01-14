@@ -1601,22 +1601,23 @@ header {
 }
 
 .logo-wrapper {
-    margin-left: 9px;
-    margin-right: 9px;
-    margin-top: 9px;
-    width: 100px;
-    height: 100px;
+    margin: 9px;
+    width: 90px;
+    /*height: 90px;*/
     white-space: nowrap;
     display: inline-block;
     vertical-align: middle;
     flex: none;
     /*height: 90%;*/
     /*padding-bottom: 2em;*/
-    background: url('img/Apollo_13-insignia100.png');
+    background-image: url('img/Apollo_13-insignia100.png');
+    background-repeat: no-repeat;
+    background-size: 90px;
+    background-position: center;
 }
 
-.logo-wrapper img:hover {
-
+.logo-wrapper:hover {
+    background-image: url('../img/apollo_program_patch_100.png');
 }
 
 .info-wrapper {
