@@ -2,11 +2,11 @@ trace("INIT: Loading index.js");
 //app control flags
 var cStopCache = false;
 
-var cCdnRoot = 'https://media.apolloinrealtime.org/A13';
-// var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
+// var cCdnRoot = 'https://media.apolloinrealtime.org/A13';
+var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
 
-var cLPICdnRoot = 'https://www.lpi.usra.edu';
-// var cLPICdnRoot = 'https://lpicache-26f5.kxcdn.com';
+// var cLPICdnRoot = 'https://www.lpi.usra.edu';
+var cLPICdnRoot = 'https://lpicache-26f5.kxcdn.com';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
@@ -1176,8 +1176,8 @@ function loadPhotoHtml(photoIndex) {
         } else if (photoObject[3] !== '') { //if custom image URL in datafile
             imageURL = cCdnRoot + '/images/flight/' + photoObject[3];
         } else {
-            imageURL = cLPICdnRoot + '/resources/apollo/images/browse/AS13/' + rollNum + '/' + imgNum + '.jpg';
-            // imageURL = cLPICdnRoot + '/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
+            // imageURL = cLPICdnRoot + '/resources/apollo/images/browse/AS13/' + rollNum + '/' + imgNum + '.jpg';
+            imageURL = cLPICdnRoot + '/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
         }
     } else if (photoObject[3] !== '') { //if custom image URL in datafile
         imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
