@@ -1,11 +1,11 @@
 //constants
-var cMissionDurationSeconds = 713311;
-var cCountdownSeconds = 74768;
-var cDefaultStartTimeId = '-000109';
-var cLaunchDate = Date.parse("1969-07-16 9:32 -400");
-var cLaunchDateModern = Date.parse("2019-07-16 9:32 -400");
-var cCountdownStartDate = Date.parse("1969-07-15 1:46:57 -400");
-var cCountdownStartDateModern = Date.parse("2019-07-15 1:46:57 -400");
+var cMissionDurationSeconds = 547200; //152 hours
+var cCountdownSeconds = 127048;
+var cDefaultStartTimeId = '-000102';
+var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
+var cLaunchDateModern = Date.parse("2020-04-11 19:13 -000");
+var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse("2020-04-10 7:55:50 -000");
 
 var gCurrMissionTime = '';
 var gActiveChannel = 14;
