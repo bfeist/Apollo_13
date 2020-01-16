@@ -1117,6 +1117,11 @@ body.splash-loaded .splash-content {
     margin-right: 20px;
 }
 
+
+.splash-content .patch:hover {
+    background-image: url('../img/apollo_program_patch_200.png');
+}
+
 .splash-content .patch-right {
     flex: none;
 }
