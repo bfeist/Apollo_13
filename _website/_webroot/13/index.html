@@ -39,6 +39,10 @@
     </script>
     <script type="text/javascript" src="lib/webfontloader.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
     <script type="text/javascript" src="lib/jquery_plugins.js"></script>
     <script type="text/javascript" src="lib/jquery.fullscreen.js"></script>
     <script type="text/javascript" src='lib/jquery.lazyload.js'></script>
@@ -148,7 +152,6 @@
                 <div class="button-row-small-container">
                     <div class="button-row small">
                         <a class="splash-btn subdued" id="searchBtn" title="Search transcripts and samples"><span class="sr-only">Search transcripts and samples</span></a>
-                        <a class="splash-btn subdued pause" id="playPauseBtn" title="Play/Pause"><span class="sr-only">Play/Pause</span></a>
                         <a class="splash-btn subdued" id="realtimeBtn" title="Sync to today's clock"><span class="sr-only">Sync to today's clock</span></a>
                         <a class="splash-btn subdued" id="aboutBtn" title="About this website" style="cursor:help;"><span class="sr-only">About this website</span></a>
                     </div>
@@ -156,7 +159,19 @@
                         <a class="splash-btn subdued" id="dashboardBtn" title="Show Dashboard"><span class="sr-only">Show Mission Status</span></a>
                         <a class="splash-btn subdued" id="soundBtn" title="Sound On/Off"><span class="sr-only">Sound On/Off</span></a>
                         <a class="splash-btn subdued fullscreenBtn" title="Toggle Fullscreen"><span class="sr-only">Fullscreen</span></a>
-                        <a class="splash-btn subdued" id="shareBtn" title="Share this moment on Twitter"><span class="sr-only">Share this moment on Twitter</span></a>
+
+                    </div>
+                </div>
+                <div class="button-row-medium-container">
+                    <div class="button-row medium">
+                        <a class="splash-btn subdued" id="shareBtn" title="Share this moment on Twitter">
+                            <span id="shareBtnLabel">SHARE</span>
+                            <span class="sr-only">Share this moment on Twitter</span>
+                        </a>
+                        <a class="splash-btn subdued pause" id="playPauseBtn" title="Play/Pause">
+                            <span id="playPauseBtnLabel">PAUSE</span>
+                            <span class="sr-only">Play/Pause</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -268,219 +283,214 @@
 </section>
 
 <!-- splash content -->
-  <div class="splash-content">
-      <div class="about">
-          <div class="content-wrapper">
-              <div class="patch" onclick="goToURL('/')"></div>
-              <div class="patch-right">
-                  <div class="heading-wrapper">
-                      <div class="heading">APOLLO 13</div>
-                      <div class="heading-realtime">IN REAL TIME</div>
-                  </div>
-                  <div class="subheading1">A real-time journey through the Apollo 13 mission.</div>
-                  <div class="subheading2">This website consists entirely of original historical mission material</div>
+<div class="splash-content">
+  <div class="about">
+      <div class="content-wrapper">
+          <div class="patch" onclick="goToURL('/')"></div>
+          <div class="patch-right">
+              <div class="heading-wrapper">
+                  <div class="heading">APOLLO 13</div>
+                  <div class="heading-realtime">IN REAL TIME</div>
               </div>
+              <div class="subheading1">A real-time journey through the Apollo 13 mission.</div>
+              <div class="subheading2">This website consists entirely of original historical mission material</div>
+          </div>
+      </div>
+  </div>
+
+  <div class="actions">
+
+      <div class="section">
+          <a data-loading-text="Loading..." class="splash-btn simplemodal-close primary" role="button" onclick="oneMinuteToLaunchButtonClick(); return false;" >
+              <span class="splash-btn-title">T-MINUS 1M</span>
+          </a>
+          <div>Join at 1  minute to launch</div>
+      </div>
+
+      <div class="section now">
+          <a class="splash-btn simplemodal-close" role="button" onclick="historicalButtonClick(); return false;">
+              <span id="labelRealtime" class="splash-btn-title">NOW</span>
+          </a>
+          <div>
+              Join in-progress
+              <br>
+              <div class="histtime">
+                  Using time of day
+                  <div class="historicalDate date">Thu Dec 07 1972</div>
+                  <div class="historicalTime time">12:32:00 AM</div>
+              </div>
+              <small><span class="historicalSubtext"></span></small>
           </div>
       </div>
 
-      <div class="actions">
-
-          <div class="section">
-              <a data-loading-text="Loading..." class="splash-btn simplemodal-close primary" role="button" onclick="oneMinuteToLaunchButtonClick(); return false;" >
-                  <span class="splash-btn-title">T-MINUS 1M</span>
-              </a>
-              <div>Join at 1  minute to launch</div>
+      <div class="section fullscreen" style="display: flex">
+          <div class="button-row small" style="flex: 1; width: 40px;" >
+              <a class="splash-btn fullscreenBtn fullscreenBtnSplash" style="width: 40px; min-height: 40px; min-width: 40px;" title="Toggle Fullscreen"><span class="sr-only">Fullscreen</span></a>
           </div>
+          <div style="flex: 10; padding-left: 20px;">Fullscreen<BR><small>(recommended)</small></div>
+      </div>
 
-          <div class="section now">
-              <a class="splash-btn simplemodal-close" role="button" onclick="historicalButtonClick(); return false;">
-                  <span id="labelRealtime" class="splash-btn-title">NOW</span>
-              </a>
-              <div>
-                  Join in-progress
-                  <br>
-                  <div class="histtime">
-                      Using time of day
-                      <div class="historicalDate date">Thu Dec 07 1972</div>
-                      <div class="historicalTime time">12:32:00 AM</div>
-                  </div>
-                  <small><span class="historicalSubtext"></span></small>
-              </div>
-          </div>
+      <div class="section introduction">
+          Included real-time elements:
+          <ul>
+              <li>All mission control film footage</li>
+              <li>All onboard television and film footage</li>
+              <li>600+ photographs</li>
+              <li>7,200 hours of restored Mission Control audio</li>
+              <li>144 hours of space-to-ground audio</li>
+              <li>All onboard recorder audio</li>
+              <li>13,000 searchable utterances</li>
+              <li>Post-mission commentary</li>
+          </ul>
 
-          <div class="section fullscreen" style="display: flex">
-              <div class="button-row small" style="flex: 1; width: 40px;" >
-                  <a class="splash-btn fullscreenBtn fullscreenBtnSplash" style="width: 40px; min-height: 40px; min-width: 40px;" title="Toggle Fullscreen"><span class="sr-only">Fullscreen</span></a>
-              </div>
-              <div style="flex: 10; padding-left: 20px;">Fullscreen<BR><small>(recommended)</small></div>
-          </div>
-
-          <div class="section introduction">
-              Included real-time elements:
-              <ul>
-                  <li>All mission control film footage</li>
-                  <li>All onboard television and film footage</li>
-                  <li>600+ photographs</li>
-                  <li>7,200 hours of restored Mission Control audio</li>
-                  <li>144 hours of space-to-ground audio</li>
-                  <li>All onboard recorder audio</li>
-                  <li>13,000 searchable utterances</li>
-                  <li>Post-mission commentary</li>
-              </ul>
-
-              <a class="splash-btn credits subdued" id="aboutSplashBtn" style="cursor:help;">
-                  <span>Instructions / Credits</span>
-              </a>
-          </div>
-          <div class="section introduction">
-              Lunar imagery courtesy of<br>
-              Lunar and Planetary Institute<br>
-              <a href="https://www.lpi.usra.edu/" target="_blank"><img width="50" src="https://www.lpi.usra.edu/assets/images/lpi-white.png"></a>
-          </div>
-
+          <a class="splash-btn credits subdued" id="aboutSplashBtn" style="cursor:help;">
+              <span>Instructions / Credits</span>
+          </a>
+      </div>
+      <div class="section introduction">
+          Lunar imagery courtesy of<br>
+          Lunar and Planetary Institute<br>
+          <a href="https://www.lpi.usra.edu/" target="_blank"><img width="50" src="https://www.lpi.usra.edu/assets/images/lpi-white.png"></a>
       </div>
 
   </div>
 
+</div>
 
-  <!-- help about -->
-  <div class="help-content">
-
-      <div class="help-overlay body" data-js-class="HelpOverlayManager" data-overlay-target=".app" data-force-bottom="true" data-force-right="true">
-
-          <a href="#" class="close-btn">Close</a>
-
-          <div class="content-wrapper">
-              <div class="headline">A real-time journey through the Apollo 13 mission</div>
-              <div class="quote">
-                  <div class="section-header">Introduction</div>
-                  <div class="intro">
-                      <p>
-                          This website replays the Apollo 13 mission as it happened, 50 years ago. It consists entirely of historical material, all timed to Ground Elapsed Time--the master mission clock. Footage of Mission Control, film shot by the astronauts, and television broadcasts transmitted from space have been painstakingly placed to the very moments they were shot during the mission, as has every photograph taken, and every word spoken.
-                      </p>
-                      <p>
-                          <span style="color: white;">This projects includes 50 channels of mission control audio that were digitized specifically for this project. They include the time surrounding the onboard explosion and haven't been heard since the accident investigation in 1970.</span>
-                      </p>
-                  </div>
-                  <div class="section-header">Interface</div>
-                  <div class="intro">
-                      <p>
-                          Upon starting the application, select whether to begin one minute before launch, or click "Now" to drop in exactly 50 years ago, to-the-second during the mission anniversary.
-                      </p>
-                      <p>
-                          Navigate to any moment of the mission using the time navigator at the top of the screen. The top bar is the entire mission with two bars below it providing magnification. Clicking transcript items, photos, commentary items, or guided tour moments also jumps the mission time to those events.
-                      </p>
-                      <p>
-                          Main mission audio consists of space-to-ground (left ear), capcom loop (right ear), and on-board recorder (center, when available). Selecting a Mission Control audio channel mutes the main audio, opens the Mission Control audio panel, and plays the "live" audio of each selected Mission Control position. Change channels by selecting the seats in Mission Control. Closing the Mission Control audio panel will unmute the main audio and continue mission playback.
-                      </p>
-                      <p>
-                          These 50 channels of Mission Control audio spanning the entire mission have only recently been digitized and restored, and are made publicly available here for the first time. They total over 9,000 hours in length.
-                      </p>
-                      <p>
-                          Please contact <a href="http://benfeist.com" target="_blank">Ben Feist</a> for any inquiries.
-                      </p>
-                  </div>
-                  <div class="callouts"><img src="img/help_callouts.jpg"/></div>
-                  <div class="callouts"><img src="img/navigator_key.jpg"/></div>
-                  <div class="text">"I could put my thumb up to a window and completely hide the Earth. I thought, 'Everything I've ever known is behind my thumb."</div>
-                  <div class="attribution">
-                      &mdash; Jim Lovell<br>
-                      Commander, Apollo 13
-                  </div>
-                  <BR>
-                  <div class="text">"My biggest emotion on Apollo 13 after the oxygen tank explosion was disappointment that we had lost the landing."</div>
-                  <div class="attribution">
-                      &mdash; Fred Haise<br>
-                      Lunar Module Pilot, Apollo 13
-                  </div>
-                  <BR>
-                  <div class="text">"Okay, Houston, we've had a problem here."</div>
-                  <div class="attribution">
-                      &mdash; Jack Swigert<br>
-                      Command Module Pilot, Apollo 13
-                  </div>
-              </div>
-
-
-              <span class="credits">
-                  <div class="section-header">Credits</div>
-
+<!-- help about -->
+<div class="help-content">
+  <div class="help-overlay body" data-js-class="HelpOverlayManager" data-overlay-target=".app" data-force-bottom="true" data-force-right="true">
+      <a href="#" class="close-btn">Close</a>
+      <div class="content-wrapper">
+          <div class="headline">A real-time journey through the Apollo 13 mission</div>
+          <div class="quote">
+              <div class="section-header">Introduction</div>
+              <div class="intro">
                   <p>
-                      <span class="accent">Ben Feist</span> Concept, research, mission data restoration, audio restoration, video, software architecture and programming. Follow <a href="https://twitter.com/benfeist" target="_blank" style="color: yellow;">@BenFeist</a> for updates.
-                      <br>
-                      <br>
-                      <span class="accent">Stephen Slater</span> Archive Producer, historical audio/footage synchronization
-                      <br>
-                      <span class="accent">David Charney</span> Visual design
-                      <br>
-                      <span class="accent">Chris Bennett</span> Visual design, interface styling and programming
-                      <br>
-                      <span class="accent">Jeremy Cooper</span> Audio restoration programming
-                      <br>
-                      <span class="accent">Johannes Kemppanen</span> Transcript corrections, mission events <a target="_blank" href="https://history.nasa.gov/afj/ap13fj/index.html">Apollo 13 Flight Journal</a>
-                      <br>
-                      <span class="accent">Robin Wheeler</span> Photography timing, transcript corrections <a target="_blank" href="https://history.nasa.gov/afj/ap10fj">Apollo 10 Flight Journal</a>
-                      <br>
-                      <span class="accent">Greg Wiseman</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>, NASA JSC
-                      <br>
-                      <span class="accent">Ernie Wright</span> Trajectory Animation <a target="_blank" href="https://svs.gsfc.nasa.gov/">Scientific Visualization Studio</a>, NASA Goddard
+                      This website replays the Apollo 13 mission as it happened, 50 years ago. It consists entirely of historical material, all timed to Ground Elapsed Time--the master mission clock. Footage of Mission Control, film shot by the astronauts, and television broadcasts transmitted from space have been painstakingly placed to the very moments they were shot during the mission, as has every photograph taken, and every word spoken.
                   </p>
-                  <div class="section-header">Thanks</div>
                   <p>
-                      <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>. More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
-                      <br>
-                      <br>
-                      <span class="accent">Todd Miller</span> Director, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
-                      <br>
-                      <span class="accent">Tom Petersen</span> Producer, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
-                      <br>
-                      <br>
-                      <span class="section-subheader">Lunar and Planetary Institute</span>
-                      <br>
-                      <span class="accent">Jamie Shumbera</span> Operations Manager
-                      <br>
-                      <br>
-                      <span class="section-subheader">NASA Headquarters</span>
-                      <br>
-                      <span class="accent">Dr. Bill Barry</span> Chief Historian, NASA HQ
-                      <br>
-                      <span class="accent">Dr. Jacob Bleacher</span> Chief Exploration Scientist, NASA HQ
-                      <br>
-                      <br>
-                      <span class="section-subheader">NASA Johnson Space Center</span>
+                      <span style="color: white;">This projects includes 50 channels of mission control audio that were digitized specifically for this project. They include the time surrounding the onboard explosion and haven't been heard since the accident investigation in 1970.</span>
+                  </p>
+              </div>
+              <div class="section-header">Interface</div>
+              <div class="intro">
+                  <p>
+                      Upon starting the application, select whether to begin one minute before launch, or click "Now" to drop in exactly 50 years ago, to-the-second during the mission anniversary.
+                  </p>
+                  <p>
+                      Navigate to any moment of the mission using the time navigator at the top of the screen. The top bar is the entire mission with two bars below it providing magnification. Clicking transcript items, photos, commentary items, or guided tour moments also jumps the mission time to those events.
+                  </p>
+                  <p>
+                      Main mission audio consists of space-to-ground (left ear), capcom loop (right ear), and on-board recorder (center, when available). Selecting a Mission Control audio channel mutes the main audio, opens the Mission Control audio panel, and plays the "live" audio of each selected Mission Control position. Change channels by selecting the seats in Mission Control. Closing the Mission Control audio panel will unmute the main audio and continue mission playback.
+                  </p>
+                  <p>
+                      These 50 channels of Mission Control audio spanning the entire mission have only recently been digitized and restored, and are made publicly available here for the first time. They total over 9,000 hours in length.
+                  </p>
+                  <p>
+                      Please contact <a href="http://benfeist.com" target="_blank">Ben Feist</a> for any inquiries.
+                  </p>
+              </div>
+              <div class="callouts"><img src="img/help_callouts.jpg"/></div>
+              <div class="callouts"><img src="img/navigator_key.jpg"/></div>
+              <div class="text">"I could put my thumb up to a window and completely hide the Earth. I thought, 'Everything I've ever known is behind my thumb."</div>
+              <div class="attribution">
+                  &mdash; Jim Lovell<br>
+                  Commander, Apollo 13
+              </div>
+              <BR>
+              <div class="text">"My biggest emotion on Apollo 13 after the oxygen tank explosion was disappointment that we had lost the landing."</div>
+              <div class="attribution">
+                  &mdash; Fred Haise<br>
+                  Lunar Module Pilot, Apollo 13
+              </div>
+              <BR>
+              <div class="text">"Okay, Houston, we've had a problem here."</div>
+              <div class="attribution">
+                  &mdash; Jack Swigert<br>
+                  Command Module Pilot, Apollo 13
+              </div>
+          </div>
+
+          <span class="credits">
+              <div class="section-header">Credits</div>
+              <p>
+                  <span class="accent">Ben Feist</span> Concept, research, mission data restoration, audio restoration, video, software architecture and programming. Follow <a href="https://twitter.com/benfeist" target="_blank" style="color: yellow;">@BenFeist</a> for updates.
+                  <br>
+                  <br>
+                  <span class="accent">Stephen Slater</span> Archive Producer, historical audio/footage synchronization
+                  <br>
+                  <span class="accent">David Charney</span> Visual design
+                  <br>
+                  <span class="accent">Chris Bennett</span> Visual design, interface styling and programming
+                  <br>
+                  <span class="accent">Jeremy Cooper</span> Audio restoration programming
+                  <br>
+                  <span class="accent">Johannes Kemppanen</span> Transcript corrections, mission events <a target="_blank" href="https://history.nasa.gov/afj/ap13fj/index.html">Apollo 13 Flight Journal</a>
+                  <br>
+                  <span class="accent">Robin Wheeler</span> Photography timing, transcript corrections <a target="_blank" href="https://history.nasa.gov/afj/ap10fj">Apollo 10 Flight Journal</a>
+                  <br>
+                  <span class="accent">Greg Wiseman</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>, NASA JSC
+                  <br>
+                  <span class="accent">Ernie Wright</span> Lunar LRO Animations <a target="_blank" href="https://svs.gsfc.nasa.gov/">Scientific Visualization Studio</a>, NASA Goddard
+              </p>
+              <div class="section-header">Thanks</div>
+              <p>
+                  <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>. More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
+                  <br>
+                  <br>
+                  <span class="accent">Todd Miller</span> Director, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
+                  <br>
+                  <span class="accent">Tom Petersen</span> Producer, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
+                  <br>
+                  <br>
+                  <span class="section-subheader">Lunar and Planetary Institute</span>
+                  <br>
+                  <span class="accent">Jamie Shumbera</span> Operations Manager
+                  <br>
+                  <br>
+                  <span class="section-subheader">NASA Headquarters</span>
+                  <br>
+                  <span class="accent">Dr. Bill Barry</span> Chief Historian, NASA HQ
+                  <br>
+                  <span class="accent">Dr. Jacob Bleacher</span> Chief Exploration Scientist, NASA HQ
+                  <br>
+                  <br>
+                  <span class="section-subheader">NASA Johnson Space Center</span>
 <!--                      <br>-->
 <!--                      <span class="accent">Dr. Cindy Evans</span> Division Chief, Astromaterials Research and Exploration Science (ARES) Division, NASA JSC-->
-                      <br>
-                      <span class="accent">Dan Garrison</span> Jacobs Technology, NASA JSC
-                      <br>
-                      <span class="accent">Dr. Ryan Zeigler</span> Manager, Apollo Curator, ARES, NASA JSC
-                      <br>
-                      <span class="accent">Dr. Paul Niles</span> Assistant Chief Scientist, ARES NASA JSC
-                      <br>
-                      <span class="accent">Sandra Tetley</span> Real Property Officer, Historic Preservation Officer, NASA JSC
-                      <br>
-                      <br>
-                      <span class="section-subheader">NASA Goddard Space Flight Center</span>
-                      <br>
-                      <span class="accent">Dr. Noah Petro</span> Project Scientist, Lunar Reconnaissance Orbiter. Planetary Geology, Geochemistry and Geophysics Lab, NASA Goddard
-                      <br>
-                      <br>
-                      <span class="accent">David Woods</span> Author, <a href="http://www.hafttm.com/" target="_blank">How Apollo Flew to the Moon</a>
-                      <br>
-                      <a href="http://history.nasa.gov/afj/" target="_blank">NASA Apollo Flight Journal</a>
-                      <br>
-                      <span class="accent"><a href="https://www.hq.nasa.gov/alsj/" target="_blank">NASA Apollo Lunar Surface Journal</a></span>
-                      <br>
-                      <span class="accent"><a href="https://archive.org" target="_blank">Internet Archive</a></span>
-                      <br>
-                      <a href="http://keycdn.com" target="_blank"><span class="section-subheader">Web hosting by</span>
-                      <span><img src="https://logos.keycdn.com/keycdn-logo-white.png" width="90px"></a></span>
-                      <br>
-                      <span class="accent">The crew of Apollo 13</span>
-                      <br>
-                      <span class="accent">The men and women of Mission Control</span>
-                      <br>
-                      <br>
+                  <br>
+                  <span class="accent">Dan Garrison</span> Jacobs Technology, NASA JSC
+                  <br>
+                  <span class="accent">Dr. Ryan Zeigler</span> Manager, Apollo Curator, ARES, NASA JSC
+                  <br>
+                  <span class="accent">Dr. Paul Niles</span> Assistant Chief Scientist, ARES NASA JSC
+                  <br>
+                  <span class="accent">Sandra Tetley</span> Real Property Officer, Historic Preservation Officer, NASA JSC
+                  <br>
+                  <br>
+                  <span class="section-subheader">NASA Goddard Space Flight Center</span>
+                  <br>
+                  <span class="accent">Dr. Noah Petro</span> Project Scientist, Lunar Reconnaissance Orbiter. Planetary Geology, Geochemistry and Geophysics Lab, NASA Goddard
+                  <br>
+                  <br>
+                  <span class="accent">David Woods</span> Author, <a href="http://www.hafttm.com/" target="_blank">How Apollo Flew to the Moon</a>
+                  <br>
+                  <a href="http://history.nasa.gov/afj/" target="_blank">NASA Apollo Flight Journal</a>
+                  <br>
+                  <span class="accent"><a href="https://www.hq.nasa.gov/alsj/" target="_blank">NASA Apollo Lunar Surface Journal</a></span>
+                  <br>
+                  <span class="accent"><a href="https://archive.org" target="_blank">Internet Archive</a></span>
+                  <br>
+                  <a href="http://keycdn.com" target="_blank"><span class="section-subheader">Web hosting by</span>
+                    <span><img src="https://logos.keycdn.com/keycdn-logo-white.png" width="90px"></span>
+                  </a>
+                  <br>
+                  <span class="accent">The crew of Apollo 13</span>
+                  <br>
+                  <span class="accent">The men and women of Mission Control</span>
+                  <br>
+                  <br>
 <!--                      <span class="section-subheader">Beta Testers</span>-->
 <!--                      <br><span class="accent">Mike Dinn</span>-->
 <!--                      <br><span class="accent">Jacqueline Poole</span>-->
@@ -496,18 +506,32 @@
 <!--                      <br><span class="accent">Kevin Spencer</span>-->
 <!--                      <br>-->
 <!--                      <br>-->
-                      THIS WEBSITE IS THE COPYRIGHT OF BEN FEIST &copy;2020.<br><br>
-                      THE ARCHIVE MATERIAL ON THIS WEBSITE COMPRISES NASA AUDIO RESTORED BY BEN FEIST AND NASA SYNCHRONISED AUDIO/VISUAL MATERIAL PROVIDED BY STEPHEN SLATER.<br><br>
-                      ANY SYNCHRONISED FOOTAGE MAY ONLY BE REPRODUCED AND UTILISED WITH THE PRIOR WRITTEN PERMISSION OF STEPHEN SLATER. ALL RIGHTS IN THE SYNCHRONISED FOOTAGE ARE EXPRESSLY RESERVED TO STEPHEN SLATER.
-                  </p>
-
-              </div>
-
-          </div>
+                  THIS WEBSITE IS THE COPYRIGHT OF BEN FEIST &copy;2020.<br><br>
+                  THE ARCHIVE MATERIAL ON THIS WEBSITE COMPRISES NASA AUDIO RESTORED BY BEN FEIST AND NASA SYNCHRONISED AUDIO/VISUAL MATERIAL PROVIDED BY STEPHEN SLATER.<br><br>
+                  ANY SYNCHRONISED FOOTAGE MAY ONLY BE REPRODUCED AND UTILISED WITH THE PRIOR WRITTEN PERMISSION OF STEPHEN SLATER. ALL RIGHTS IN THE SYNCHRONISED FOOTAGE ARE EXPRESSLY RESERVED TO STEPHEN SLATER.
+              </p>
+          </span>
       </div>
-
   </div>
 
+</div>
+
+<div id="shareModal" class="modal">
+    <div class="shareModalWrapper">
+        <div class="headline">
+            Share Mission Moment
+        </div>
+        <div class="body">
+            Ground Elapsed Time: <span id="shareModelGET"></span><br>
+            Audio Channel: <span id="shareModelChannel">Main space-to-ground</span><br>
+            <br>
+            Link to share:<br>
+            <textarea id="shareURL"></textarea><br><br>
+<!--            <span id="shareModalCopyLinkAction" onclick="copyShareURL()">COPY LINK</span>-->
+            <a class="splash-btn primary" id="shareModalCopyLinkAction" onclick="copyShareURL()">COPY LINK</a>
+        </div>
+    </div>
+</div>
 
 </body>
 

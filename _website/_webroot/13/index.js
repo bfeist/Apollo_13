@@ -155,6 +155,7 @@ function onPlayerStateChange(event) {
     if (event.data === YT.PlayerState.PLAYING) {
         //trace("onPlayerStateChange():PLAYER PLAYING");
         playPauseBtn.addClass('pause');
+        $("#playPauseBtnLabel").text("PAUSE");
         if (playPauseBtn.hasClass("blink_me_orange")) {
             playPauseBtn.removeClass("blink_me_orange");
         }
@@ -185,6 +186,7 @@ function onPlayerStateChange(event) {
         gIntervalID = null;
         gPlaybackState = "paused";
         playPauseBtn.removeClass('pause');
+        $("#playPauseBtnLabel").text("PLAY");
         if (!playPauseBtn.hasClass("blink_me_orange")) {
             playPauseBtn.addClass("blink_me_orange");
         }
@@ -1908,6 +1910,21 @@ function numberWithCommas(x) {
 
 // </editor-fold>
 
+function copyShareURL() {
+    /* Get the text field */
+    var copyText = document.getElementById("shareURL");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    $('#shareModalCopyLinkAction').text('LINK COPIED');
+}
+
 // <editor-fold desc="document event handlers -------------------------------------------------">
 
 //on doc init
@@ -1951,11 +1968,13 @@ jQuery(function ($) {
             if ($("#playPauseBtn").hasClass('pause')) {
                 ga('send', 'event', 'button', 'click', 'pause');
                 player.pauseVideo();
+                $("#playPauseBtnLabel").text("PLAY");
                 $('#playPauseBtn').addClass("blink_me_orange");
 
             } else {
                 ga('send', 'event', 'button', 'click', 'play');
                 player.playVideo();
+                $("#playPauseBtnLabel").text("PAUSE");
                 $('#playPauseBtn').removeClass("blink_me_orange");
             }
         });
@@ -2007,17 +2026,26 @@ jQuery(function ($) {
         .click(function(){
             ga('send', 'event', 'button', 'click', 'share');
             if (gMOCRToggled) {
-                var url = "https://apolloinrealtime.org/13/?t=" + gCurrMissionTime + "%26ch=" + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel;
-                var text = "%23Apollo11 in Real-time. Mission control audio channel " + $('#MOCRvizIframe')[0].contentWindow.cTrackInfo['ch' + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel][0] + " at " + gCurrMissionTime + " %23NASA";
+                var url = "https://apolloinrealtime.org/13/?t=" + gCurrMissionTime + "&ch=" + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel;
+                // var text = "%23Apollo11 in Real-time. Mission control audio channel " + $('#MOCRvizIframe')[0].contentWindow.cTrackInfo['ch' + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel][0] + " at " + gCurrMissionTime + " %23NASA";
+                var channel = $('#MOCRvizIframe')[0].contentWindow.cTrackInfo['ch' + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel][0];
             } else {
                 var sharedUtteranceArray = gUtteranceData[gUtteranceDataLookup[findClosestUtterance(timeStrToSeconds(gCurrMissionTime))]];
                 // url = "https://apolloinrealtime.org/13/?t=" + timeIdToTimeStr(sharedUtteranceArray[0]);
                 url = "https://apolloinrealtime.org/13/?t=" + gCurrMissionTime;
-                text = "%23Apollo11 in Real-time: " + timeIdToTimeStr(sharedUtteranceArray[0]) + " " + sharedUtteranceArray[1] + ": " + sharedUtteranceArray[2].substr(0, 67) + "... ";
+                // text = "%23Apollo11 in Real-time: " + timeIdToTimeStr(sharedUtteranceArray[0]) + " " + sharedUtteranceArray[1] + ": " + sharedUtteranceArray[2].substr(0, 67) + "... ";
+                channel = 'Main space-to-ground';
             }
             var hashtags = 'nasa';
-            var twitterWindow = window.open('https://twitter.com/share?url=' + url + '&text=' + text + '&hashtags=' + hashtags, 'twitter-popup', 'height=350,width=600');
-            if(twitterWindow.focus) { twitterWindow.focus(); }
+            // var twitterWindow = window.open('https://twitter.com/share?url=' + url + '&text=' + text + '&hashtags=' + hashtags, 'twitter-popup', 'height=350,width=600');
+            // if(twitterWindow.focus) { twitterWindow.focus(); }
+
+
+            $('#shareModelGET').text(gCurrMissionTime);
+            $('#shareModelChannel').text(channel);
+            $('#shareURL').text(url);
+
+            $('#shareModal').modal();
         });
 
     //content tab button events
