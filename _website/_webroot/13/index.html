@@ -40,9 +40,8 @@
     <script type="text/javascript" src="lib/webfontloader.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
-
+    <script type="text/javascript" src="lib/jquery.modal.min.js"></script>
+    <link rel="lib/jquery.modal.min.css" />
     <script type="text/javascript" src="lib/jquery_plugins.js"></script>
     <script type="text/javascript" src="lib/jquery.fullscreen.js"></script>
     <script type="text/javascript" src='lib/jquery.lazyload.js'></script>
@@ -522,8 +521,8 @@
             Share Mission Moment
         </div>
         <div class="body">
-            Ground Elapsed Time: <span id="shareModelGET"></span><br>
-            Audio Channel: <span id="shareModelChannel">Main space-to-ground</span><br>
+            Ground Elapsed Time: <span id="shareModelGET" class="valueItem"></span><br>
+            Audio Channel: <span id="shareModelChannel" class="valueItem">Main space-to-ground</span><br>
             <br>
             Link to share:<br>
             <textarea id="shareURL"></textarea><br><br>
