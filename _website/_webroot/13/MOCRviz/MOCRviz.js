@@ -1224,8 +1224,8 @@ function getTapeActivityRanges(activeSec) {
     var tapesActivity2filename = "tape_activity_" + nearestStart.toString() + "-" + (nearestStart + 999).toString() + ".json";
 
     var nearestEnd = Math.ceil(activeSec/1000)*1000;
-    if (nearestEnd + 1000 > 645444) {  //if greater than total length of tape activity data
-        var endRange = 645444;
+    if (nearestEnd + 1000 > 645438) {  //if greater than total length of tape activity data
+        var endRange = 645438;
     } else {
         endRange = nearestEnd + 1000;
     }

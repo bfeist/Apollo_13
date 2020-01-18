@@ -324,7 +324,7 @@ function findClosestUtterance(secondsSearch) {
             break;
         }
     }
-    //trace("findClosestUtterance(): searched utterance array, found closest: timeid" + gUtteranceIndex[i - 1] + " after " + i + " searches");
+    trace("findClosestUtterance(): searched utterance array, found closest: timeid" + gUtteranceIndex[i - 1] + " after " + i + " searches");
     return scrollTimeId;
 }
 
@@ -796,7 +796,7 @@ function repopulateUtterances(timeId) {
     var endIndex = startIndex + 100;
     startIndex = startIndex < 0 ? 0 : startIndex;
     endIndex = endIndex >= gUtteranceIndex.length ? gUtteranceIndex.length - 1 : endIndex;
-    for (var i = startIndex; i <= endIndex; i++) {
+    for (var i = startIndex; i < endIndex; i++) {
         utteranceTable.append(getUtteranceObjectHTML(i));
     }
     gUtteranceDisplayStartIndex = startIndex;

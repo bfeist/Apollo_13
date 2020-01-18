@@ -1569,6 +1569,7 @@ left: 50%;
 }
 
 #shareModal {
+    display: none;
     background: #0f0f0f;
     border: 2px solid #5E92A6;
 }
