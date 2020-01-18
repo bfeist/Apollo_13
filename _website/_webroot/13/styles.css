@@ -1407,23 +1407,18 @@ body.app-ready .splash-btn.activated.selected {
 }
 
 .button-row .splash-btn {
-  /*display: table-cell;
-  width: 33.3%;
-  margin: 0;*/
-
-  padding: .65em .65em 0 .65em;
-  text-align: left;
-  min-height: 38px;
-  font-size: 12px;
-  /*white-space: nowrap;*/
-  /*min-width: 120px;*/
-
-  /*width: 90%;*/
-  min-width: 0px;
-  width: 100%;
-  margin: 1px 1%;
-  display: block;
-  flex: 1;
+    display: block;
+    flex: 1;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: 2px;
+    margin-right: 0;
+    padding: .65em .65em 0 .65em;
+    text-align: left;
+    min-height: 38px;
+    font-size: 12px;
+    min-width: 0px;
+    width: 100%;
 }
 .button-row-small-container {
     flex: 1;
@@ -1526,13 +1521,16 @@ left: 50%;
 }
 
 .app-button-row .splash-btn {
+    display: block;
+    margin-bottom: 1px;
+    margin-top: 1px;
+    margin-left: 2px;
+    margin-right: 0;
     padding: .65em .65em 0 .65em;
     text-align: left;
-    min-height: 37px;
-    font-size: 12px;
     width: 140px;
-    margin-right: 7px;
-    display: block;
+    min-height: 38px;
+    font-size: 12px;
 }
 
 #searchBtn {

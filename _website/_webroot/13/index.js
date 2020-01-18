@@ -2025,6 +2025,7 @@ jQuery(function ($) {
     $("#shareBtn")
         .click(function(){
             ga('send', 'event', 'button', 'click', 'share');
+            $('#shareModalCopyLinkAction').text('COPY LINK');
             if (gMOCRToggled) {
                 var url = "https://apolloinrealtime.org/13/?t=" + gCurrMissionTime + "&ch=" + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel;
                 // var text = "%23Apollo11 in Real-time. Mission control audio channel " + $('#MOCRvizIframe')[0].contentWindow.cTrackInfo['ch' + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel][0] + " at " + gCurrMissionTime + " %23NASA";

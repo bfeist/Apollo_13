@@ -114,19 +114,21 @@ function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" bu
     // histDate.setYear(cCountdownStartDateModern.getYear());
 
     var dayOfMonth = 0;
-    if (nowDate.getDate() < 9) {
-        dayOfMonth = nowDate.getDate() + 15;
-    } else if (nowDate.getDate() >= 9 && nowDate.getDate() < 15) {
-        dayOfMonth = nowDate.getDate() + 9;
-    } else if (nowDate.getDate() > 24) {
-        dayOfMonth = nowDate.getDate() - 9;
-    } else {
+    if (nowDate.getDate() <= 4) {
+        dayOfMonth = nowDate.getDate() + 10;
+    } else if (nowDate.getDate() > 4 && nowDate.getDate() <= 10) {
+        dayOfMonth = nowDate.getDate() + 7;
+    } else if (nowDate.getDate() >= 10 && nowDate.getDate() <= 17) {
         dayOfMonth = nowDate.getDate()
+    } else if (nowDate.getDate() > 17 && nowDate.getDate() <= 24) {
+        dayOfMonth = nowDate.getDate() - 7;
+    } else if (nowDate.getDate() > 24 && nowDate.getDate() <= 31) {
+        dayOfMonth = nowDate.getDate() - 14;
     }
     histDate.setDate(dayOfMonth);
 
     if (histDate < cCountdownStartDate) { //bump to same time next day if in the few hours on the 15th before recording starts
-        histDate.setDate(16);
+        histDate.setDate(11);
     }
 
     // Convert dates to milliseconds
