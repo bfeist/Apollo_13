@@ -18,10 +18,10 @@ var cYouTubeSDorHD = 0; //0 for SD  1 for HD
 var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cDefaultStartTimeId = '-000102';
-var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
-var cLaunchDateModern = Date.parse("2020-04-11 19:13 -000");
-var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
-var cCountdownStartDateModern = Date.parse("2020-04-10 7:55:50 -000");
+var cLaunchDate = Date.parse("1970-04-11 14:13 -500");
+var cLaunchDateModern = Date.parse("2020-04-11 14:13 -500");
+var cCountdownStartDate = Date.parse("1970-04-10 2:55:50 -500"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse("2020-04-10 2:55:50 -500");
 
 var cBackground_color_active = "#1e1e1e";
 
@@ -1925,6 +1925,21 @@ function copyShareURL() {
     $('#shareModalCopyLinkAction').text('LINK COPIED');
 }
 
+function copyShareWebsiteURL() {
+    /* Get the text field */
+    var copyText = document.getElementById("shareWebsiteURL");
+
+    /* Select the text field */
+    copyText.select();
+    copyText.setSelectionRange(0, 99999); /*For mobile devices*/
+
+    /* Copy the text inside the text field */
+    document.execCommand("copy");
+
+    /* Alert the copied text */
+    $('#shareModalCopyWebsiteLinkAction').text('LINK COPIED');
+}
+
 // <editor-fold desc="document event handlers -------------------------------------------------">
 
 //on doc init
@@ -2025,6 +2040,7 @@ jQuery(function ($) {
     $("#shareBtn")
         .click(function(){
             ga('send', 'event', 'button', 'click', 'share');
+            $('#shareModalCopyWebsiteLinkAction').text('COPY LINK');
             $('#shareModalCopyLinkAction').text('COPY LINK');
             if (gMOCRToggled) {
                 var url = "https://apolloinrealtime.org/13/?t=" + gCurrMissionTime + "&ch=" + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel;

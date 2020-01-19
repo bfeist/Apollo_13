@@ -2,10 +2,10 @@
 var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cDefaultStartTimeId = '-000102';
-var cLaunchDate = Date.parse("1970-04-11 19:13 -000");
-var cLaunchDateModern = Date.parse("2020-04-11 19:13 -000");
-var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 -000"); //35 hours, 17 minutes, 10 seconds before launch
-var cCountdownStartDateModern = Date.parse("2020-04-10 7:55:50 -000");
+var cLaunchDate = Date.parse("1970-04-11 14:13 -500");
+var cLaunchDateModern = Date.parse("2020-04-11 14:13 -500");
+var cCountdownStartDate = Date.parse("1970-04-10 2:55:50 -500"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse("2020-04-10 2:55:50 -500");
 
 var gCurrMissionTime = '';
 var gActiveChannel = 14;

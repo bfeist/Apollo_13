@@ -526,15 +526,20 @@
 <div id="shareModal" class="modal">
     <div class="shareModalWrapper">
         <div class="headline">
-            Share Mission Moment
+            Share Website
+        </div>
+        <div class="body">
+            <textarea class="monitor" id="shareWebsiteURL">https://apolloinrealtime.org/13</textarea><br><br>
+            <a class="splash-btn primary" id="shareModalCopyWebsiteLinkAction" onclick="copyShareWebsiteURL()">COPY LINK</a>
+        </div>
+        <div class="headline">
+            Share this Mission Moment
         </div>
         <div class="body">
             Ground Elapsed Time: <span id="shareModelGET" class="valueItem"></span><br>
             Audio Channel: <span id="shareModelChannel" class="valueItem">Main space-to-ground</span><br>
             <br>
-            Link to share:<br>
-            <textarea id="shareURL"></textarea><br><br>
-<!--            <span id="shareModalCopyLinkAction" onclick="copyShareURL()">COPY LINK</span>-->
+            <textarea class="monitor" id="shareURL"></textarea><br><br>
             <a class="splash-btn primary" id="shareModalCopyLinkAction" onclick="copyShareURL()">COPY LINK</a>
         </div>
     </div>
