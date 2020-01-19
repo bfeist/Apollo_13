@@ -1514,7 +1514,7 @@ left: 50%;
 }
 
 .app-button-row {
-    padding-left: 10px;
+    padding-left: 4px;
     font-size: 1.25em;
     text-transform: uppercase;
     display: flex;
