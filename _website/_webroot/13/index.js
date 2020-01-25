@@ -1183,8 +1183,8 @@ function loadPhotoHtml(photoIndex) {
         } else if (photoObject[3] !== '') { //if custom image URL in datafile
             imageURL = cCdnRoot + '/images/flight/' + photoObject[3];
         } else {
-            // imageURL = cLPICdnRoot + '/resources/apollo/images/browse/AS13/' + rollNum + '/' + imgNum + '.jpg';
-            imageURL = cLPICdnRoot + '/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
+            imageURL = cLPICdnRoot + '/resources/apollo/images/browse/AS13/' + rollNum + '/' + imgNum + '.jpg';
+            // imageURL = cLPICdnRoot + '/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
         }
     } else if (photoObject[3] !== '') { //if custom image URL in datafile
         imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
