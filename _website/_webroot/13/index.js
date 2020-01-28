@@ -5,8 +5,12 @@ var cStopCache = false;
 // var cCdnRoot = 'https://media.apolloinrealtime.org/A13';
 var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
 
-// var cLPICdnRoot = 'https://www.lpi.usra.edu';
-var cLPICdnRoot = 'https://lpicache-26f5.kxcdn.com';
+// var cLPIImageRoot = 'https://www.lpi.usra.edu/resources/apollo/images';
+// var cLPIImageRoot = 'https://lpicache-26f5.kxcdn.com/resources/apollo/images';
+var cLPIImageRoot = cCdnRoot + '/images/lpi_mirror';
+
+// var cALSJImageRoot = 'https://www.hq.nasa.gov/alsj/a13';
+var cALSJImageRoot = cCdnRoot + '/images/alsj';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
@@ -1117,11 +1121,11 @@ function populatePhotoGallery() {
         if (filetypematch !== null) {
             var rollNum = RegExp.$1;
             var imgNum = RegExp.$2;
-            var imageURL = cLPICdnRoot + '/resources/apollo/images/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
-        } else if (photoObject[3] !== '') { //if media.apolloinrealtime.org filename is in datafile
+            var imageURL = cLPIImageRoot + '/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
+        } else if (photoObject[3] !== '') { //if 'supporting' filename is in datafile then use AIRT image
             imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
         } else {
-            imageURL = 'https://www.hq.nasa.gov/alsj/a13/' + photoObject[2];
+            imageURL = cALSJImageRoot + '/' + photoObject[2];
         }
 
         html = html.replace(/@imageURL/g , imageURL);
@@ -1153,7 +1157,7 @@ function showPhotoByTimeId(timeId) {
         var photoGalleryImageTimeId = "#gallerytimeid" + gPhotoData[gPhotoDataLookup[timeId]][0];
         $(photoGalleryImageTimeId).addClass('selected');
 
-        var scrollDest = photoGalleryDiv.scrollTop() + $(photoGalleryImageTimeId).offset().top - gNavigatorHeight - 70; //added offset for ted design
+        var scrollDest = photoGalleryDiv.scrollTop() + $(photoGalleryImageTimeId).offset().top - gNavigatorHeight - 75; //added offset for ted design
         photoGalleryDiv.animate({scrollTop: scrollDest}, 500, 'swing', function() {
             //trace('Finished animating gallery: ' + scrollDest);
         });
@@ -1177,19 +1181,13 @@ function loadPhotoHtml(photoIndex) {
     if (filetypematch !== null) {
         var rollNum = RegExp.$1;
         var imgNum = RegExp.$2;
-        if (photoObject[2] !== '') {
-            var imageURL = 'https://www.hq.nasa.gov/alsj/a11/' + photoObject[2];
-            // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
-        } else if (photoObject[3] !== '') { //if custom image URL in datafile
-            imageURL = cCdnRoot + '/images/flight/' + photoObject[3];
-        } else {
-            imageURL = cLPICdnRoot + '/resources/apollo/images/browse/AS13/' + rollNum + '/' + imgNum + '.jpg';
-            // imageURL = cLPICdnRoot + '/resources/apollo/images/print/AS13/' + rollNum + '/' + imgNum + '.jpg';
-        }
+        // var imageURL = cLPIImageRoot + '/browse/AS13/' + rollNum + '/' + imgNum + '.jpg'; //low res images
+        var imageURL = cLPIImageRoot + '/medium/AS13/' + rollNum + '/' + imgNum + '.jpg'; //medium res images
+        // var imageURL = cLPIImageRoot + '/print/AS13/' + rollNum + '/' + imgNum + '.jpg'; //high res images
     } else if (photoObject[3] !== '') { //if custom image URL in datafile
         imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
     } else {
-        imageURL = 'https://www.hq.nasa.gov/alsj/a13/' + photoObject[2];
+        imageURL = cALSJImageRoot + '/' + photoObject[2];
         // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
     }
     var source = "LPI";
