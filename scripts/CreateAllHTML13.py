@@ -1,6 +1,7 @@
 import csv
 import operator
 from quik import FileLoader
+import re
 
 # -------------------- Write Utterance Data
 output_utterance_data_file_name_and_path = "../_website/_webroot/13/indexes/utteranceData.csv"
@@ -9,15 +10,15 @@ output_utterance_data_file.write("")
 output_utterance_data_file.close()
 output_utterance_data_file = open(output_utterance_data_file_name_and_path, "a")
 
-# WRITE ALL UTTERANCE BODY ITEMS
+# Read all utterances into a list
 cur_row = 0
 input_file_path = "../MISSION_DATA/A13_utterances.csv"
 utterance_reader = csv.reader(open(input_file_path, "rU"), delimiter='|')
 lasttimestamp = ''
 lastwho = ''
+utteranceLines = []
 for utterance_row in utterance_reader:
     cur_row += 1
-    # timeid = "timeid" + utterance_row[0].replace(":", "")
     timeline_index_id = utterance_row[0].replace(":", "")
     if utterance_row[1] != "":  # if not a TAPE change or title row
         words_modified = utterance_row[3]
@@ -25,13 +26,54 @@ for utterance_row in utterance_reader:
         if timeline_index_id == lasttimestamp and who_modified == lastwho:
             pass
         else:
-            output_utterance_data_file.write(timeline_index_id + "|" + who_modified + "|" + words_modified + '|' + utterance_row[1] + "\n")
+            utteranceLines.append(timeline_index_id + "|" + who_modified + "|" + words_modified + '|' + utterance_row[1] + "\n")
         lasttimestamp = timeline_index_id
         lastwho = who_modified
     # print(cur_row)
+
+# Read all FD loop utterances into a similar list
+fdFile = open("../MISSION_DATA/flight-director-loop.txt", "r")
+fdLines = []
+whoWhenGathered = False
+timeline_index_id = ''
+who_modified = ''
+# counter = 0
+for fdLine in fdFile:
+    # counter += 1
+    # if counter == 356:
+    #     print('break here')
+    if fdLine[0:1] != ">" and fdLine[1:2] != '>':  #filter out comments.
+        fdLine.replace('[- ', '[') #convert timestamps that only have concluding times to make those the utterance times
+        match = re.search(r'\[(\d\d \d\d \d\d).*?\] (.*)', fdLine)
+        if match is not None:  #if on when / who line
+            timeline_index_id = '0' + match.group(1).replace(" ", "")
+            who_modified = match.group(2)
+        elif len(fdLine) > 1:
+            words_modified = fdLine.strip()
+            fdLines.append(timeline_index_id + "|" + who_modified + "|" + words_modified + '|' + 'F' + "\n")
+
+
+# turn timestamps into integers for sorting (to accomodate negative numbers)
+all_utterances_list = utteranceLines.copy() + fdLines.copy()
+sortableUtteranceList = []
+for line in all_utterances_list:
+    tempList = []
+    if line.split('|')[0] != '':
+        timestampInt = int(line.split('|')[0])
+    else:
+        print('empty timestamp on line: ' + line)
+    tempList.append(timestampInt)
+    tempList.append(line)
+    sortableUtteranceList.append(tempList.copy())
+
+# merge two utterances and FD utterances into one list, sort it, and write to file
+sortableUtteranceList.sort(key = lambda x: x[0]) #sort using first element of nest list (the integer timestamp)
+for item in sortableUtteranceList:
+    output_utterance_data_file.write(item[1])
 output_utterance_data_file.close()
 
-# WRITE ALL commentary ITEMS
+
+# -------------------- WRITE ALL commentary ITEMS
 output_commentary_data_file_name_and_path = "../_website/_webroot/13/indexes/commentaryData.csv"
 output_commentary_data_file = open(output_commentary_data_file_name_and_path, "w")
 output_commentary_data_file.write("")

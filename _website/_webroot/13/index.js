@@ -10,7 +10,7 @@ var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
 var cLPIImageRoot = cCdnRoot + '/images/lpi_mirror';
 
 // var cALSJImageRoot = 'https://www.hq.nasa.gov/alsj/a13';
-var cALSJImageRoot = cCdnRoot + '/images/alsj';
+var cALSJImageRoot = cCdnRoot + '/images/alsj_mirror';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
@@ -935,6 +935,8 @@ function getUtteranceObjectHTML(utteranceIndex, style) {
     // } else if (who_modified === "Mission Control") {
     } else if (utteranceObject[3] === "C") {
         uttTypeStr = "utt_capcom";
+    } else if (utteranceObject[3] === "F") {
+        uttTypeStr = "utt_mocr";
     } else {
         uttTypeStr = "utt_crew";
     }
