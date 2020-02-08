@@ -2320,13 +2320,13 @@ transition(height 250ms ease-in-out);
     font-size: 1.45em;
 }
 
-#spacecraft-overlay .introduction .text {
-    /*font-size: 24px;*/
-    color: #DDDDDD;
-    /*line-height: 37px;*/
-    font-size: 0.8em;
-    line-height: 1.4;
+#spacecraft-overlay .introduction .section-subheader {
+    /*color: #FFF;*/
+    color: #5E92A6;
+    /*font-size: 18px;*/
+    font-size: 1.2em;
 }
+
 #spacecraft-overlay .introduction .attribution {
     /*font-size: 20px;*/
     color: #999999;
@@ -2344,15 +2344,6 @@ transition(height 250ms ease-in-out);
     font-style: normal;
     font-size: 1em;
     line-height: 1.2;
-}
-
-#spacecraft-overlay .sampleimagessubtitle {
-    font-size: 1.1em;
-    color: #eeeeee;
-    /*color: #84b8d9;*/
-    border-bottom: 2px solid #4A4A4A;
-    padding: 5px;
-    text-align: center;
 }
 
 

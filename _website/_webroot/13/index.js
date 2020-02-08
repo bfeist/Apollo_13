@@ -2,15 +2,16 @@ trace("INIT: Loading index.js");
 //app control flags
 var cStopCache = false;
 
-// var cCdnRoot = 'https://media.apolloinrealtime.org/A13';
-var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
+// DON'T FORGET TO CHANGE MOCRviz too!
+var cMediaCdnRoot = 'https://media.apolloinrealtime.org/A13';
+// var cTapeCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
 
 // var cLPIImageRoot = 'https://www.lpi.usra.edu/resources/apollo/images';
 // var cLPIImageRoot = 'https://lpicache-26f5.kxcdn.com/resources/apollo/images';
-var cLPIImageRoot = cCdnRoot + '/images/lpi_mirror';
+var cLPIImageRoot = cMediaCdnRoot + '/images/lpi_mirror';
 
 // var cALSJImageRoot = 'https://www.hq.nasa.gov/alsj/a13';
-var cALSJImageRoot = cCdnRoot + '/images/alsj_mirror';
+var cALSJImageRoot = cMediaCdnRoot + '/images/alsj_mirror';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
@@ -1125,7 +1126,7 @@ function populatePhotoGallery() {
             var imgNum = RegExp.$2;
             var imageURL = cLPIImageRoot + '/thumb/AS13/' + rollNum + '/' + imgNum + '.jpg';
         } else if (photoObject[3] !== '') { //if 'supporting' filename is in datafile then use AIRT image
-            imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
+            imageURL = cMediaCdnRoot + '/images/supporting/' + photoObject[3];
         } else {
             imageURL = cALSJImageRoot + '/' + photoObject[2];
         }
@@ -1187,7 +1188,7 @@ function loadPhotoHtml(photoIndex) {
         var imageURL = cLPIImageRoot + '/medium/AS13/' + rollNum + '/' + imgNum + '.jpg'; //medium res images
         // var imageURL = cLPIImageRoot + '/print/AS13/' + rollNum + '/' + imgNum + '.jpg'; //high res images
     } else if (photoObject[3] !== '') { //if custom image URL in datafile
-        imageURL = cCdnRoot + '/images/supporting/' + photoObject[3];
+        imageURL = cMediaCdnRoot + '/images/supporting/' + photoObject[3];
     } else {
         imageURL = cALSJImageRoot + '/' + photoObject[2];
         // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
@@ -1587,6 +1588,28 @@ function openSpacecraftDetails() {
     var html = $('#spacecraftDescription').html();
 
     spacecraftContainer.html(html);
+
+    //set auto loop with delay
+    document.getElementById('spacecraftVideo').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        setTimeout(function(){
+            document.getElementById('spacecraftVideo').play();
+        }, 5000);
+    }
+
+    //set start delay
+    setTimeout(function(){
+        document.getElementById('spacecraftVideo').play();
+    }, 5000);
+
+    //play on click
+    document.getElementById('spacecraftVideo').onclick = function (){
+        if (this.playing) {
+            document.getElementById('spacecraftVideo').pause();
+        } else {
+            document.getElementById('spacecraftVideo').play();
+        }
+    };
 
     var spacecraftOverlaySelector = $('#spacecraft-overlay');
     spacecraftOverlaySelector.fadeIn();
@@ -2313,7 +2336,7 @@ function getTapeActivityRanges(activeSec) {
 function ajaxGetTapesActivityDataRange(tapesActivityFilename) {
     trace("ajaxGetTapesActivityDataRange()main: "  + tapesActivityFilename.toString());
 
-    var tapeActivityDataPath = cCdnRoot + '/MOCR_audio/tape_activity/';
+    var tapeActivityDataPath = cMediaCdnRoot + '/MOCR_audio/tape_activity/';
     var tapeActivity;
     gTapesActivityRangeArray = [];
     $.when(
@@ -2368,6 +2391,13 @@ $(document).ready(function() {
         channelButtons[i].addEventListener('mouseover', thirtyButtons_hover);
         channelButtons[i].addEventListener('mouseleave', thirtyButtons_mouseleave);
     }
+
+    //creates a "playing" object to check for spacecraft video animation
+    Object.defineProperty(HTMLMediaElement.prototype, 'playing', {
+        get: function(){
+            return !!(this.currentTime > 0 && !this.paused && !this.ended && this.readyState > 2);
+        }
+    });
 
     gApplicationReadyIntervalID = setApplicationReadyPoller();
 

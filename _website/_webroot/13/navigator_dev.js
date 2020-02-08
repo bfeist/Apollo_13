@@ -1,10 +1,10 @@
 trace("INIT: Loading index.js");
 var cStopCache = false;
 
-// var cCdnRoot = 'https://media.apolloinrealtime.org/mp3';
+// var cTapeCdnRoot = 'https://media.apolloinrealtime.org/mp3';
 var cCdnRoot = 'https://keycdn.apolloinrealtime.org/mp3';
-// var cCdnRoot = 'https://apollomedia.sfo2.cdn.digitaloceanspaces.com/mp3';
-// var cCdnRoot = 'https://apollomedia.sfo2.digitaloceanspaces.com/mp3';
+// var cTapeCdnRoot = 'https://apollomedia.sfo2.cdn.digitaloceanspaces.com/mp3';
+// var cTapeCdnRoot = 'https://apollomedia.sfo2.digitaloceanspaces.com/mp3';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';

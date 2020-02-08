@@ -2,8 +2,9 @@ var cMissionDurationSeconds = 518400;
 var cCountdownSeconds = 127048;
 var cAppStartGET = -102;
 
-var cCdnRoot = 'https://media.apolloinrealtime.org/A13/MOCR_audio';
-// var cCdnRoot = 'https://keycdn.apolloinrealtime.org/A13/MOCR_audio';
+var cTapeCdnRoot = parent.cMediaCdnRoot + '/MOCR_audio';
+// var cTapeCdnRoot = 'https://media.apolloinrealtime.org/A13/MOCR_audio';
+// var cTapeCdnRoot = 'https://keycdn.apolloinrealtime.org/A13/MOCR_audio';
 
 var cWebCdnRoot = '';
 // var cWebCdnRoot = 'https://apollort-26f5.kxcdn.com';
@@ -71,8 +72,8 @@ var cTrackInfo = {
     ch54: ['MOCR DYN LOOP', 'Comm line.'],
     ch55: ['GOSS CONF LOOP', 'Ground Operational Support System (GOSS) - Comm line.'],
     ch56: ['GOSS 4 LOOP', 'Ground Operational Support System (GOSS) - Comm line.'],
-    ch57: ['LM GNC', 'Lunar Module Guidance, Navigation, and Controls Systems Engineer.'], //LM GNC ENGINEER
-    ch58: ['LM EECOM', 'Lunar Module Electrical, Environmental and Consumables Management Engineer.'], //LM EECOM ENGINEER
+    ch57: ['LM GNC', '(CONTROL) Lunar Module Guidance, Navigation, and Controls Systems Engineer.'], //LM GNC ENGINEER
+    ch58: ['TELMU', '(LM EECOM) Lunar Module Electrical, Environmental and Consumables Management Engineer.'], //LM EECOM ENGINEER
     ch59: ['EXPMT ACTIVITIES OFSR', 'Experiments Officer.'],
     ch60: ['HR2 VOICE ANNOTATION', '']
 };
@@ -494,8 +495,8 @@ function loadChannelSoundfile() {
         gActiveTape = tapeData[0];
         var channel = (gActiveChannel > 30) ? gActiveChannel - 30 : gActiveChannel;
         var filename = "DA13_" + tapeData[0] + "_" + tapeData[1] + "_CH" + channel;
-        var datFile = cCdnRoot + "/" + "DA13_" + tapeData[0] + "_" + tapeData[1] + "_16khz_mp3_16/audiowaveform_512/" + filename + '.dat';
-        var audioFile = cCdnRoot + "/" + "DA13_" + tapeData[0] + "_" + tapeData[1] + "_16khz_mp3_16/" + filename + '.mp3';
+        var datFile = cTapeCdnRoot + "/" + "DA13_" + tapeData[0] + "_" + tapeData[1] + "_16khz_mp3_16/audiowaveform_512/" + filename + '.dat';
+        var audioFile = cTapeCdnRoot + "/" + "DA13_" + tapeData[0] + "_" + tapeData[1] + "_16khz_mp3_16/" + filename + '.mp3';
 
         if (gPlayer.src.substr(gPlayer.src.length - 20) !== audioFile.substr(audioFile.length - 20)) {
             trace("loading tape: " + audioFile + " :datFile: " + datFile);
@@ -751,7 +752,7 @@ function positionChannelButtons() {
     $('#btn-ch18').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
     buttonWidth = buttonWidth + 20;
-    $('#btndiv-ch58').css({"left": x + "px", "top": y + "px"}); //LM EECOM
+    $('#btndiv-ch58').css({"left": x + "px", "top": y + "px"}); //LM EECOM (TELMU)
     $('#btn-ch58').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
     $('#btndiv-ch57').css({"left": x + "px", "top": y + "px"}); //LM GNC
@@ -1033,7 +1034,7 @@ function positionIsometricElements() {
     isoSelector.append("<span id='dot14' class='isometric_dot' style='left:" + 279 + "px;top:" + 231 + "px'>C</span>"); //CAPCOM
     isoSelector.append("<span id='dot17' class='isometric_dot' style='left:" + 366 + "px;top:" + 166 + "px'>PE</span>"); //POS EECOM
     isoSelector.append("<span id='dot18' class='isometric_dot' style='left:" + 416 + "px;top:" + 136 + "px'>CG</span>"); //CSM GNC
-    isoSelector.append("<span id='dot58' class='isometric_dot' style='left:" + 469 + "px;top:" + 105 + "px'>LE</span>"); //LM EECOM
+    isoSelector.append("<span id='dot58' class='isometric_dot' style='left:" + 469 + "px;top:" + 105 + "px'>T</span>"); //LM EECOM (TELMU)
     isoSelector.append("<span id='dot57' class='isometric_dot' style='left:" + 528 + "px;top:" + 71 + "px'>LG</span>"); //LM GNC
 
     isoSelector.append("<span id='dot16' class='isometric_dot' style='left:" + 217 + "px;top:" + 366 + "px'>CE</span>"); //CSM EECOM
@@ -1244,7 +1245,7 @@ function getTapeActivityRanges(activeSec) {
 function ajaxGetTapesActivityDataRange(tapesActivityFilenames) {
     gActiveTapesActivityFilenames = tapesActivityFilenames;
 
-    var tapeActivityDataPath = cCdnRoot + '/tape_activity/';
+    var tapeActivityDataPath = cTapeCdnRoot + '/tape_activity/';
 
     var tapeActivity1;
     var tapeActivity2;
