@@ -1579,6 +1579,24 @@ function closeMOCRviz() {
     gMOCRToggled = false;
 }
 
+function openSpacecraftDetails() {
+    closeMOCRviz();
+
+    var spacecraftContainer = $('#spacecraftDiv');
+    spacecraftContainer.html('');
+    var html = $('#spacecraftDescription').html();
+
+    spacecraftContainer.html(html);
+
+    var spacecraftOverlaySelector = $('#spacecraft-overlay');
+    spacecraftOverlaySelector.fadeIn();
+}
+
+function closeSpacecraftDetails() {
+    var spacecraftOverlaySelector = $('#spacecraft-overlay');
+    spacecraftOverlaySelector.fadeOut();
+}
+
 //none on 13
 // function openGeosampleOverlay() {
 //     closeMOCRviz();
@@ -2095,6 +2113,7 @@ jQuery(function ($) {
         ga('send', 'event', 'tab', 'click', 'photo');
         activateAppTab(this.id);
         // closeGeosampleOverlay(); // NA for 13
+        closeSpacecraftDetails();
         closeMOCRviz();
     });
 
@@ -2102,21 +2121,22 @@ jQuery(function ($) {
         ga('send', 'event', 'tab', 'click', 'mocr');
         activateAppTab(this.id);
         // closeGeosampleOverlay(); // NA for 13
+        closeSpacecraftDetails();
         openMOCRviz();
     });
 
-    $("#geosampleTab").click(function(){
-        ga('send', 'event', 'tab', 'click', 'geosample');
-        activateAppTab(this.id);
-        closeMOCRviz();
-        // openGeosampleOverlay(); //NA for 13
-    });
+    // $("#geosampleTab").click(function(){
+    //     ga('send', 'event', 'tab', 'click', 'geosample');
+    //     activateAppTab(this.id);
+    //     closeMOCRviz();
+    //     // openGeosampleOverlay(); //NA for 13
+    // });
 
     $("#spacecraftTab").click(function(){
         ga('send', 'event', 'tab', 'click', 'geosample');
         activateAppTab(this.id);
         closeMOCRviz();
-        openSpacecraftOverlay(); //NA for 13
+        openSpacecraftDetails();
     });
 });
 

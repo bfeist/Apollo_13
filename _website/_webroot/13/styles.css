@@ -2231,6 +2231,131 @@ img.aspect-holder {
 }
 
 
+#spacecraftContainer {
+    overflow-y: scroll;
+    position: relative;
+    height: 90%;
+}
+
+#spacecraftDiv {
+    border-collapse: collapse;
+    font-size: 0.9em;
+}
+
+#spacecraftMediaContainer {
+    overflow: hidden;
+}
+
+#spacecraftImageContainer img {
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+#spacecraftVideoContainer video {
+    /*height: 100%;*/
+    width: 100%;
+    /*object-fit: contain;*/
+}
+
+#spacecraft-overlay {
+    display: none;
+    position:absolute;
+    top:0;
+    left:0;
+    height:100%;
+    width:100%;
+    /*background: #ffd923;*/
+    background: #000000;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    /*border: 2px solid rgba(140, 140, 140, 1);*/
+    /*border: 2px solid rgba(215, 160, 108, 1);*/
+    /*border: 2px solid rgba(255,255,255,.1);*/
+    overflow: hidden;
+    padding: 5px;
+transition(height 250ms ease-in-out);
+    opacity: 1;
+    z-index: 1000;
+}
+
+#spacecraft-overlay .title {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5em;
+    /*color: rgba(215, 160, 108, 1);*/
+    color: #FFFFFF;
+    margin-bottom: 10px;
+}
+
+#spacecraft-overlay hr {
+    /*margin-top: 10px;*/
+    margin-bottom: 10px;
+    border: 0;
+    /*border-top: 2px solid rgba(215, 160, 108, 1);*/
+    border-top: 2px solid #aaaaaa;
+}
+
+#spacecraft-overlay .close-btn {
+    background-color: #FFFFFF;
+}
+#spacecraft-overlay .close-btn:hover,
+#spacecraft-overlay .close-btn:active {
+    /*background-color: #FFC688;*/
+    background-color: #FFFFFF;
+}
+
+#spacecraft-overlay .introduction {
+    padding: 0 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+#spacecraft-overlay .introduction .section-header {
+    /*color: #FFF;*/
+    color: #5E92A6;
+    /*font-size: 18px;*/
+    font-size: 1.45em;
+}
+
+#spacecraft-overlay .introduction .text {
+    /*font-size: 24px;*/
+    color: #DDDDDD;
+    /*line-height: 37px;*/
+    font-size: 0.8em;
+    line-height: 1.4;
+}
+#spacecraft-overlay .introduction .attribution {
+    /*font-size: 20px;*/
+    color: #999999;
+    margin-top: 5px;
+    /*line-height: 29px;*/
+    font-style: normal;
+    font-size: 0.8em;
+    line-height: 1.2;
+}
+#spacecraft-overlay .introduction .copy p {
+    /*font-size: 20px;*/
+    color: #999999;
+    margin-top: 5px;
+    /*line-height: 29px;*/
+    font-style: normal;
+    font-size: 1em;
+    line-height: 1.2;
+}
+
+#spacecraft-overlay .sampleimagessubtitle {
+    font-size: 1.1em;
+    color: #eeeeee;
+    /*color: #84b8d9;*/
+    border-bottom: 2px solid #4A4A4A;
+    padding: 5px;
+    text-align: center;
+}
+
+
 table.sampleinfotable {
     font-family: 'Roboto Mono', sans-serif;
     font-size: 1em;

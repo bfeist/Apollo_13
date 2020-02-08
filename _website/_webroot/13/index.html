@@ -261,19 +261,17 @@
                 <div class="app-wrapper">
                     <div id="photoGallery"></div>
                     <div id="photodiv"></div>
-<!--                    <div id="geosample-overlay">-->
-<!--                        <div style="display: flex; flex-direction: row;">-->
-<!--                            <span class="title">Astromaterial Sample Information <span id="bagnum"></span></span>-->
-<!--&lt;!&ndash;                            <span class="close-btn" onclick="toggleGeosampleOverlay();">Close</span>&ndash;&gt;-->
-<!--                        </div>-->
-<!--                        <hr>-->
-<!--                        <div id="geosampleDiv">-->
-<!--                            <div id="geosampleTable">-->
+                    <div id="spacecraft-overlay">
+                        <div style="display: flex; flex-direction: row;">
+                            <span class="title">The Apollo 13 Spacecraft</span>
+                        </div>
+                        <hr>
+                        <div id="spacecraftContainer">
+                            <div id="spacecraftDiv">
 
-<!--                            </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-                    <div id="spacecraftdiv"></div>
+                            </div>
+                        </div>
+                    </div>
                     <div id="thirtytrackplaceholder"></div>
                 </div>
             </div>
@@ -640,49 +638,35 @@
     </div>
 </script>
 
-<script type="text/html" id="geosampleSplash">
+<script type="text/html" id="spacecraftDescription">
+
+    <div id="spacecraftMediaContainer">
+        <div id="spacecraftVideoContainer">
+            <video id="spacecraftVideo" src="https://media.apolloinrealtime.org/A13/apollo13_rotate6.mp4" muted autoplay loop></video>
+        </div>
+    </div>
     <div class="introduction">
-        <div class="section-header">Apollo 11 Lunar Samples</div>
+        <div class="section-header">The Apollo 13 Spacecraft</div>
         <div class="copy">
             <p>
-                Apollo 11 carried the first geologic samples from the Moon to Earth. The crew collected 22 kilograms of geologic material, including 50 rocks, samples of the fine-grained lunar regolith, and two core tubes that included material from up to 13 centimeters below the lunar surface. In addition to these samples, a solar wind collection experiment was deployed on the surface and returned by the crew. The rock samples contain no water and provide no evidence for living organisms at any time in the Moon's history. Two primary types of rocks, basalts and breccias, were found at the Apollo 11 landing site. The lunar samples collected by the Apollo 11 crew were deposited in bulk into sample containers for return to Earth.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo odio felis, sed pulvinar tortor mattis ut. Maecenas imperdiet urna odio, in aliquet ante ultrices sit amet. Curabitur eu nulla sit amet massa facilisis imperdiet eget nec est. Nulla nec pulvinar augue. Sed porta neque vel leo aliquam eleifend. Donec in mattis justo, vel tincidunt urna. Vestibulum pulvinar ornare nisl, in luctus elit tempor id.
             </p>
 
         </div>
-        <div class="section-header">Jump to Sample Collection Moments:</div>
+        <div class="section-header">The Command and Service Module</div>
         <div class="copy">
             <p>
-                The table below contains links to the moment each sample container was being filled, referencing the sample numbers that were assigned when the samples were returned to Earth.
+                Duis massa tortor, tempus vel lorem sit amet, dictum hendrerit justo. Phasellus sed rutrum turpis, gravida sollicitudin lacus. Sed ut lacus commodo, molestie lorem ut, volutpat tellus. Donec sed facilisis nunc. Proin libero metus, maximus ac ante vitae, viverra volutpat quam. Nam rhoncus eu sapien sed tincidunt. Nulla et leo ac nibh posuere tempus eu eu augue. Nam cursus sem a odio eleifend lobortis. Donec tempor in dolor at semper. Proin quis tortor et odio placerat tempor. Nam ante lorem, pellentesque quis turpis eget, lobortis porta leo. Vivamus non orci vitae urna rutrum eleifend. Curabitur vehicula tortor non maximus tempus.
             </p>
         </div>
-        <div id="samplecontainersframe" class="sampleframe">
-            <div class="externallinks">
-                <table class='samplecontainerstable'>
-                    <tr>
-                        <td>Time</td>
-                        <td>Container</td>
-                        <td>Sample Numbers</td>
-                    </tr>
-                    @samplerows
-                </table>
-            </div>
-        </div>
-    </div>
-    <div class="introduction">
-        <div class="section-header">Lunar Sample Curation</div>
-        <div style="float: right;"><img src="img/ares2.jpg"/></div>
+        <div class="section-header">The Lunar Module</div>
         <div class="copy">
             <p>
-                Geologic samples returned from the Moon by the six Apollo lunar surface exploration missions (1969-1972), along with associated data records, are physically protected, environmentally preserved, and scientifically processed by NASA's <a href="https://ares.jsc.nasa.gov/" target="_blank">Astromaterials Research and Exploration Science</a> Division in building 31N, a special building dedicated for that purpose, at Johnson Space Center in Houston, Texas. A total of 382 kilograms of lunar material, comprising 2200 individual specimens returned from the Moon, has been processed to meet scientific requirements into more than 110,000 individually cataloged samples.
-            </p>
-            <p>
-                Building 31N was constructed from 1977 to 1979 and opened in 1979 to provide for permanent storage of the lunar sample collection in a physically secure and non-contaminating environment. The purpose of the facility is to maintain in pristine condition the lunar samples that comprise a priceless national and scientific resource while making the samples available to approved scientists and educators.
-            </p>
-            <p>
-                The study of samples from the Moon continues to yield useful information about the early history of the Moon, the Earth, and the Solar System. Computer models indicate that the Moon could have been formed from the debris resulting from the Earth being struck a glancing blow by a planetary body about the size of Mars. The chemical composition of the Moon, derived from studies of lunar rocks, is compatible with this theory of the origin of the Moon. We have learned that a crust formed on the Moon ~4.4 billion years ago. This crust formation, the intense meteorite bombardment occurring afterward, and subsequent lava outpourings are recorded in the rocks. Radiation spewed out by the Sun since the formation of the Moon's crust, was trapped in the lunar soil as a permanent record of solar activity throughout this time.
+                Donec suscipit, augue vel consequat aliquam, augue enim condimentum nisl, id tincidunt tellus metus sit amet nunc. In vitae orci a nulla efficitur placerat eu at risus. Donec ac dapibus quam. Maecenas maximus lobortis ligula quis suscipit. Pellentesque velit elit, sollicitudin sit amet tempor et, vehicula nec lorem. Pellentesque malesuada rhoncus velit eget fringilla. Donec non leo facilisis, euismod nunc vitae, pellentesque quam.
             </p>
         </div>
     </div>
+
 </script>
 
 <script type="text/html" id="MOCROverlayTemplate">

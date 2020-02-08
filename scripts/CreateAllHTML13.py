@@ -40,10 +40,12 @@ who_modified = ''
 # counter = 0
 for fdLine in fdFile:
     # counter += 1
-    # if counter == 356:
+    # if counter == 931:
     #     print('break here')
     if fdLine[0:1] != ">" and fdLine[1:2] != '>':  #filter out comments.
-        fdLine.replace('[- ', '[') #convert timestamps that only have concluding times to make those the utterance times
+        fdLine = fdLine.replace('[- ', '[') #convert timestamps that only have concluding times to make those the utterance times
+        fdLine = fdLine.replace('{', '') #remove references
+        fdLine = fdLine.replace('}', '') #remove references
         match = re.search(r'\[(\d\d \d\d \d\d).*?\] (.*)', fdLine)
         if match is not None:  #if on when / who line
             timeline_index_id = '0' + match.group(1).replace(" ", "")
@@ -56,6 +58,7 @@ for fdLine in fdFile:
 # turn timestamps into integers for sorting (to accomodate negative numbers)
 all_utterances_list = utteranceLines.copy() + fdLines.copy()
 sortableUtteranceList = []
+timestampInt = 0
 for line in all_utterances_list:
     tempList = []
     if line.split('|')[0] != '':
