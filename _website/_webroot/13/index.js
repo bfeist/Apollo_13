@@ -2,9 +2,8 @@ trace("INIT: Loading index.js");
 //app control flags
 var cStopCache = false;
 
-// DON'T FORGET TO CHANGE MOCRviz too!
 var cMediaCdnRoot = 'https://media.apolloinrealtime.org/A13';
-// var cTapeCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
+// var cMediaCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
 
 // var cLPIImageRoot = 'https://www.lpi.usra.edu/resources/apollo/images';
 // var cLPIImageRoot = 'https://lpicache-26f5.kxcdn.com/resources/apollo/images';
@@ -1457,32 +1456,40 @@ function manageOverlaysAutodisplay(timeId) {
     //trace("manageOverlaysAutodisplay()");
     //look to see if the current time is within a video segment
     var inVideoSegment = false;
-    var dashboardOverlay = $('.dashboard-overlay');
+    var dashboardOverlaySelector = $('.dashboard-overlay');
+    var LROOverlaySelector = $('#LRO-overlay');
     for (var counter = 0; counter < gVideoSegments.length; counter ++) {
         if (timeStrToSeconds(gVideoSegments[counter][0]) <= timeIdToSeconds(timeId) && timeStrToSeconds(gVideoSegments[counter][1]) >= timeIdToSeconds(timeId)) {
             inVideoSegment = true;
             //Fade in LRO message if it hasn't been displayed in this video segment yet
-            if (gVideoSegments[counter][2] == "3D") {
-                if (gLastLROOverlaySegment != gVideoSegments[counter][0]) {
-                    gLastLROOverlaySegment = gVideoSegments[counter][0];
-                    trace("manageOverlaysAutodisplay():In LRO segment");
-                    $('#LRO-overlay').fadeIn();
-                    setTimeout(function () {
-                        $('#LRO-overlay').fadeOut();
-                    }, 8000);
-                }
-            } else { //when on non-3D video segment
-                gLastLROOverlaySegment = ''; //reset LRO overlay rule. This causes LRO overlay to show after jumping back onto a different video, then playing into LRO segment
+            if (gVideoSegments[counter][2] === "3D") {
+                // if (gLastLROOverlaySegment != gVideoSegments[counter][0]) {
+                //     gLastLROOverlaySegment = gVideoSegments[counter][0];
+                //     trace("manageOverlaysAutodisplay():In LRO segment");
+                //     $('#LRO-overlay').fadeIn();
+                //     setTimeout(function () {
+                //         $('#LRO-overlay').fadeOut();
+                //     }, 8000);
+                // }
+                // } else { //when on non-3D video segment
+                //     gLastLROOverlaySegment = ''; //reset LRO overlay rule. This causes LRO overlay to show after jumping back onto a different video, then playing into LRO segment
+                if (LROOverlaySelector.is(':hidden'))
+                    // $('#LRO-overlay').css('display', 'block');
+                LROOverlaySelector.fadeIn();
+            } else {
+                if (LROOverlaySelector.is(':visible'))
+                    // $('#LRO-overlay').css('display', 'none');
+                    LROOverlaySelector.fadeOut();
             }
             //hide dashboard overlay if it is displayed (once per video segment)
-            if (dashboardOverlay.css('display').toLowerCase() !== 'none' && gLastVideoSegmentDashboardHidden !== gVideoSegments[counter][0] && !gDashboardManuallyToggled) {
+            if (dashboardOverlaySelector.css('display').toLowerCase() !== 'none' && gLastVideoSegmentDashboardHidden !== gVideoSegments[counter][0] && !gDashboardManuallyToggled) {
                 gLastVideoSegmentDashboardHidden = gVideoSegments[counter][0];
                 hideDashboardOverlay();
             }
             break;
         }
     }
-    if (!inVideoSegment && dashboardOverlay.css('display').toLowerCase() === 'none' && !gDashboardManuallyToggled) {
+    if (!inVideoSegment && dashboardOverlaySelector.css('display').toLowerCase() === 'none' && !gDashboardManuallyToggled) {
         showDashboardOverlay();
         gLastLROOverlaySegment = '';
         gLastVideoSegmentDashboardHidden = '';
