@@ -19,15 +19,15 @@ lastwho = ''
 utteranceLines = []
 for utterance_row in utterance_reader:
     cur_row += 1
-    timeline_index_id = utterance_row[0].replace(":", "")
+    timeId = utterance_row[0].replace(":", "")
     if utterance_row[1] != "":  # if not a TAPE change or title row
         words_modified = utterance_row[3]
         who_modified = utterance_row[2]
-        if timeline_index_id == lasttimestamp and who_modified == lastwho:
+        if timeId == lasttimestamp and who_modified == lastwho:
             pass
         else:
-            utteranceLines.append(timeline_index_id + "|" + who_modified + "|" + words_modified + '|' + utterance_row[1] + "\n")
-        lasttimestamp = timeline_index_id
+            utteranceLines.append(timeId + "|" + who_modified + "|" + words_modified + '|' + utterance_row[1] + "\n")
+        lasttimestamp = timeId
         lastwho = who_modified
     # print(cur_row)
 
@@ -35,7 +35,7 @@ for utterance_row in utterance_reader:
 fdFile = open("../MISSION_DATA/flight-director-loop.txt", "r")
 fdLines = []
 whoWhenGathered = False
-timeline_index_id = ''
+timeId = ''
 who_modified = ''
 # counter = 0
 for fdLine in fdFile:
@@ -48,11 +48,11 @@ for fdLine in fdFile:
         fdLine = fdLine.replace('}', '') #remove references
         match = re.search(r'\[(\d\d \d\d \d\d).*?\] (.*)', fdLine)
         if match is not None:  #if on when / who line
-            timeline_index_id = '0' + match.group(1).replace(" ", "")
+            timeId = '0' + match.group(1).replace(" ", "")
             who_modified = match.group(2)
         elif len(fdLine) > 1:
             words_modified = fdLine.strip()
-            fdLines.append(timeline_index_id + "|" + who_modified + "|" + words_modified + '|' + 'F' + "\n")
+            fdLines.append(timeId + "|" + who_modified + "|" + words_modified + '|' + 'F' + "\n")
 
 
 # turn timestamps into integers for sorting (to accomodate negative numbers)
@@ -168,7 +168,7 @@ csv.register_dialect('pipes', delimiter='|', doublequote=True, escapechar='\\')
 reader = csv.reader(open(inputFilePath, "rU"), dialect='pipes')
 for row in reader:
     timestamp = row[0]
-    timeline_index_id = row[0].replace(":", "")
+    timeId = row[0].replace(":", "")
     item_depth = row[1]
     if int(item_depth) < int(prev_depth):
         depth_comparison = "true"
@@ -182,7 +182,7 @@ for row in reader:
         {'timestamp': timestamp, 'itemDepth': item_depth, 'prevDepth': prev_depth, 'itemTitle': item_title,
          'itemURL': item_URL, "depthComparison": depth_comparison}, loader=template_loader).encode('utf-8'))
     prev_depth = item_depth
-    output_TOC_index_file.write(timeline_index_id + "|" + item_depth + "|" + item_title + "\n")
+    output_TOC_index_file.write(timeId + "|" + item_depth + "|" + item_title + "\n")
 
 # WRITE FOOTER
 template = template_loader.load_template('template_TOC_footer.html')

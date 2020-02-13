@@ -3,10 +3,11 @@ trace("INIT: Loading index.js");
 var cStopCache = false;
 
 var cMediaCdnRoot = 'https://media.apolloinrealtime.org/A13';
-// var cMediaCdnRoot = 'https://keycdn.apolloinrealtime.org/A13';
+// var cMediaCdnRoot = 'https://keycdnmedia.apolloinrealtime.org/A13'; //keycdn pulling from dreamhost
+// var cMediaCdnRoot = 'https://keycdnmediado.apolloinrealtime.org/A13';  //keycdn pulling from digitalocean space
 
 // var cLPIImageRoot = 'https://www.lpi.usra.edu/resources/apollo/images';
-// var cLPIImageRoot = 'https://lpicache-26f5.kxcdn.com/resources/apollo/images';
+// var cLPIImageRoot = 'https://keycdnlpicache.apolloinrealtime.org/resources/apollo/images';
 var cLPIImageRoot = cMediaCdnRoot + '/images/lpi_mirror';
 
 // var cALSJImageRoot = 'https://www.hq.nasa.gov/alsj/a13';
@@ -334,11 +335,12 @@ function findClosestUtterance(secondsSearch) {
 
 function scrollToClosestTOC(secondsSearch) {
     trace("findClosestTOC():" + secondsSearch);
-    if (gCurrVideoStartSeconds === 230400) {
-        if (secondsSearch > 230400 + 3600) { //if at 065:00:00 or greater, add 000:02:40 to time
-            secondsSearch = secondsSearch + 9600;
-        }
-    }
+    // UNNEEDED FOR 13
+    // if (gCurrVideoStartSeconds === 230400) {
+    //     if (secondsSearch > 230400 + 3600) { //if at 065:00:00 or greater, add 000:02:40 to time
+    //         secondsSearch = secondsSearch + 9600;
+    //     }
+    // }
     var timeId = secondsToTimeId(secondsSearch);
     var scrollTimeId = gTOCIndex[gTOCIndex.length - 1];
     for (var i = 1; i < gTOCIndex.length; ++i) {
@@ -353,11 +355,11 @@ function scrollToClosestTOC(secondsSearch) {
 
 function findClosestCommentary(secondsSearch) {
     //trace("scrollToClosestCommentary():" + secondsSearch);
-    if (gCurrVideoStartSeconds === 230400) {
-        if (secondsSearch > 230400 + 3600) { //if at 065:00:00 or greater, add 000:02:40 to time
-            secondsSearch = secondsSearch + 9600;
-        }
-    }
+    // if (gCurrVideoStartSeconds === 230400) {
+    //     if (secondsSearch > 230400 + 3600) { //if at 065:00:00 or greater, add 000:02:40 to time
+    //         secondsSearch = secondsSearch + 9600;
+    //     }
+    // }
     var timeId = secondsToTimeId(secondsSearch);
     var scrollTimeId = gCommentaryIndex[gCommentaryIndex.length - 1];
     for (var i = 1; i < gCommentaryIndex.length; ++i) {
@@ -1475,7 +1477,7 @@ function manageOverlaysAutodisplay(timeId) {
                 //     gLastLROOverlaySegment = ''; //reset LRO overlay rule. This causes LRO overlay to show after jumping back onto a different video, then playing into LRO segment
                 if (LROOverlaySelector.is(':hidden'))
                     // $('#LRO-overlay').css('display', 'block');
-                LROOverlaySelector.fadeIn();
+                    LROOverlaySelector.fadeIn();
             } else {
                 if (LROOverlaySelector.is(':visible'))
                     // $('#LRO-overlay').css('display', 'none');
