@@ -11,6 +11,7 @@ for d in $ROOTDIR ; do
 			extension="${filename##*.}"
 			filename="${filename%.*}"
 
+      # this is used for display on the web
 			mkdir -p $d/audiowaveform_512
 			if [ ! -f $d/audiowaveform_512/$filename.dat ] ; then
 			    echo "No dat found...generating."
@@ -20,6 +21,7 @@ for d in $ROOTDIR ; do
 				echo "dat already generated...skipping."
 			fi
 
+      # this is used for activity calculations
 			mkdir -p $d/audiowaveform_256_json
 			if [ ! -f $d/audiowaveform_256_json/$filename.json ] ; then
 			    echo "No json found...generating."

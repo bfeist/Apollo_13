@@ -18,15 +18,15 @@
 0000011|S70-34855|ap13-S70-34855HR.jpg||Launch
 0011028|AS13-60-8577|||Cloud covered Pacific Ocean
 0013110|AS13-60-8578|||Baja California
-0031626|AS13-60-8579|||LM & S-IVB during Transposition and Docking
-0031648|AS13-60-8580|||LM & S-IVB during Transposition and Docking
-0031710|AS13-60-8581|||LM & S-IVB during Transposition and Docking
-0040920|AS13-60-8582|||S-IVB over the LM following separation
-0040932|AS13-60-8583|||S-IVB over the LM following separation
-0040938|AS13-60-8584|||S-IVB over the LM following separation
-0041200|AS13-60-8585|||S-IVB over the LM following separation
-0041204|AS13-60-8586|||S-IVB over the LM following separation
-0041607|AS13-60-8587|||S-IVB following separation
+0031255|AS13-60-8579|||LM & S-IVB during Transposition and Docking
+0031310|AS13-60-8580|||LM & S-IVB during Transposition and Docking
+0031336|AS13-60-8581|||LM & S-IVB during Transposition and Docking
+0041012|AS13-60-8582|||S-IVB over the LM following separation
+0041055|AS13-60-8583|||S-IVB over the LM following separation
+0041115|AS13-60-8584|||S-IVB over the LM following separation
+0041210|AS13-60-8585|||S-IVB over the LM following separation
+0041231|AS13-60-8586|||S-IVB over the LM following separation
+0041551|AS13-60-8587|||S-IVB following separation
 0042141|AS13-60-8588|||North & central America and the Pacific Ocean
 0043906|AS13-60-8589|||Distant view of the S-IVB venting
 0070745|AS13-60-8590|||Earth  terminator off west coast of US storm cloud formation
@@ -45,13 +45,13 @@
 0680002|AS13-62-8880|||LM interior out of focus. Reflection of ascent engine cover
 0680015|AS13-62-8881|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
 0680030|AS13-62-8882|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
-0680044|AS13-62-8883|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
+0680045|AS13-62-8883|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
 0680100|AS13-62-8884|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
 0680115|AS13-62-8885|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. 
 0680320|AS13-62-8886|||Earth taken through the CDR LM window, Africa and Europe
 0680335|AS13-62-8887|||Earth taken through the CDR LM window, Africa and Europe
 0680350|AS13-62-8888|||Earth taken through the CDR LM window, Africa and Europe
-0680409|AS13-62-8889|||Earth taken through the CDR LM window, Africa and Europe
+0680410|AS13-62-8889|||Earth taken through the CDR LM window, Africa and Europe
 0680500|AS13-62-8890|||Transfer tunnel to LM, dark
 0680504|AS13-62-8891|||Transfer tunnel to LM, dark
 0680510|AS13-62-8892|||Transfer tunnel to LM, dark
@@ -208,55 +208,47 @@
 0782609|AS13-61-8779|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis
 0782740|AS13-60-8670|||Mare Crisium, Mare Marginis, Joliot, Hubble, Goddard, Al-Biruni
 0782801|AS13-60-8671|||Mare Crisium, Mare Marginis, Mare Smythii, Joliot, Hubble, Goddard, Al-Biruni, Plutarch, Neper
-0782810|AS13-61-8779a|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
 0782814|AS13-60-8672|||Mare Tranquillitatis, Serenitatis, Prolocus, Taruntius, Goclenius, Picard
-0782825|AS13-61-8779b|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
-0782841|AS13-61-8779c|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
 0782848|AS13-60-8673|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Picard, Prolocus, Cleomedes
-0782856|AS13-61-8779d|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
 0782903|AS13-60-8674|||Mare Humboldtianum, Endymion, Lacus Spie, Atlas, Hercules, Lacus, Somniorum
-0782911|AS13-61-8779e|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
-0782927|AS13-61-8779f|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
 0782946|AS13-60-8675|||Joliot, Lomonosov, Compton, Giordano Bruno, Hubble, Mare Marginis
-0782950|AS13-61-8779g|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
 0782956|AS13-60-8676|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper
 0783005|AS13-60-8677|||Mare Smythii, Mare Marginis, Goddard, Lomonosov, Neper
 0783012|AS13-60-8678|||Langrenus, Mare Fecunditatis, Mare Tranquillitatis, Mare Nectaris, Goclenius
-0783015|AS13-61-8779h|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
 0783020|AS13-60-8679|||Langrenus, Mare Nectaris, Mare Fecunditatis, Vallis Snellius
-0783707|AS13-61-8780|||Eastern limb of the Moon
-0783730|AS13-61-8781|||Eastern limb of the Moon
-0783741|AS13-61-8782|||Eastern limb of the Moon
-0783752|AS13-61-8783|||Eastern limb of the Moon
-0783805|AS13-61-8784|||Eastern limb of the Moon
-0783816|AS13-61-8785|||Eastern limb of the Moon
-0783828|AS13-61-8786|||Eastern limb of the Moon
-0783840|AS13-61-8787|||Eastern limb of the Moon
-0783852|AS13-61-8788|||Eastern limb of the Moon
-0783904|AS13-61-8789|||Eastern limb of the Moon
-0783916|AS13-61-8790|||Eastern limb of the Moon
-0783928|AS13-61-8791|||Eastern limb of the Moon
-0783940|AS13-61-8792|||Eastern limb of the Moon
-0783952|AS13-61-8793|||Eastern limb of the Moon
-0784004|AS13-61-8794|||Eastern limb of the Moon
-0784017|AS13-61-8795|||Eastern hemisphere of the Moon
-0784028|AS13-61-8796|||Eastern hemisphere of the Moon
-0784040|AS13-61-8797|||Eastern hemisphere of the Moon
-0784052|AS13-61-8798|||Eastern hemisphere of the Moon
-0784105|AS13-61-8799|||Eastern hemisphere of the Moon
-0784117|AS13-61-8800|||Eastern hemisphere of the Moon
-0784129|AS13-61-8801|||Eastern hemisphere of the Moon
-0784142|AS13-61-8802|||Eastern hemisphere of the Moon
-0784151|AS13-61-8803|||Eastern hemisphere of the Moon
-0784203|AS13-61-8804|||Eastern hemisphere of the Moon
-0784215|AS13-61-8805|||Eastern hemisphere of the Moon
-0784227|AS13-61-8806|||Eastern hemisphere of the Moon
-0784239|AS13-61-8807|||Eastern hemisphere of the Moon
-0784251|AS13-61-8808|||Eastern hemisphere of the Moon
-0784302|AS13-61-8809|||Eastern hemisphere of the Moon
-0784317|AS13-61-8810|||Eastern hemisphere of the Moon
-0784331|AS13-61-8811|||Eastern hemisphere of the Moon
-0784342|AS13-61-8812|||Eastern hemisphere of the Moon
+0783707|AS13-61-8779a|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783730|AS13-61-8779b|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783741|AS13-61-8779c|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783752|AS13-61-8779d|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783805|AS13-61-8779e|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783816|AS13-61-8779f|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783828|AS13-61-8779g|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783840|AS13-61-8779h|||Mare Crisium, Mare Fecunditatis, Mare Marginis and Mare Smythii, Mare Tranquillitatis, Mare Nectaris, Mare Serenitatis-underexposed
+0783852|AS13-61-8780|||Eastern limb of the Moon
+0783904|AS13-61-8781|||Eastern limb of the Moon
+0783916|AS13-61-8782|||Eastern limb of the Moon
+0783928|AS13-61-8783|||Eastern limb of the Moon
+0783940|AS13-61-8784|||Eastern limb of the Moon
+0783952|AS13-61-8785|||Eastern limb of the Moon
+0784004|AS13-61-8786|||Eastern limb of the Moon
+0784017|AS13-61-8787|||Eastern limb of the Moon
+0784028|AS13-61-8788|||Eastern limb of the Moon
+0784040|AS13-61-8789|||Eastern limb of the Moon
+0784052|AS13-61-8790|||Eastern limb of the Moon
+0784105|AS13-61-8791|||Eastern limb of the Moon
+0784117|AS13-61-8792|||Eastern limb of the Moon
+0784129|AS13-61-8793|||Eastern limb of the Moon
+0784142|AS13-61-8794|||Eastern limb of the Moon
+0784151|AS13-61-8795|||Eastern hemisphere of the Moon
+0784203|AS13-61-8796|||Eastern hemisphere of the Moon
+0784215|AS13-61-8797|||Eastern hemisphere of the Moon
+0784227|AS13-61-8798|||Eastern hemisphere of the Moon
+0784239|AS13-61-8799|||Eastern hemisphere of the Moon
+0784251|AS13-61-8800|||Eastern hemisphere of the Moon
+0784302|AS13-61-8801|||Eastern hemisphere of the Moon
+0784317|AS13-61-8802|||Eastern hemisphere of the Moon
+0784331|AS13-61-8803|||Eastern hemisphere of the Moon
+0784342|AS13-61-8804|||Eastern hemisphere of the Moon
 0784344|AS13-60-8680|||Mare Crisium, Mare Tranquillitatis, Mare Serenitatis, Prolocus, Taruntius, Lacus Somniorum
 0784358|AS13-60-8681|||Tsiolkovsky, Sklodowska, Mare Australe
 0784414|AS13-60-8682|||Giordano Bruno. Mare Crisium and Mare Humoldtianum, Joliot
@@ -270,8 +262,8 @@
 0785136|AS13-60-8690|||Mare Tranquillitatis, Dionysius
 0785222|AS13-60-8691|||Mare Smythii, Mare Marginis, Mare Crisium, Goddard, Langrenus
 0790002|AS13-60-8692|||Mare Serenitatis, Mare Humboldtianum, Joliot
-0791216|AS13-61-8813|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
-0791225|AS13-61-8813a|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
+0791216|AS13-61-8805|||Eastern hemisphere of the Moon
+0791225|AS13-61-8806|||Eastern hemisphere of the Moon
 0791342|AS13-60-8693|||Mare Crisium, Mare Fecunditatis, Mare Tranquillitatis, Mare Serenitatis, Mare Vaporum
 0791355|AS13-60-8694|||Mare Crisium, Mare Marginis, Mare Smythii, Giordano Bruno
 0791418|AS13-60-8695|||Mare Nectaris, Fracastorius
@@ -279,107 +271,115 @@
 0794854|AS13-60-8697|||Mare Crisium, Lacus Somniorum, Mare Huboldtianum, Mare Marginis, Joloit
 0801808|AS13-60-8698|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Marginis
 0801820|AS13-60-8699|||Tsiolkovsky, Mare Marginis, Mare Smythii, Goddard
-0802406|AS13-61-8814|||Moon
-0802410|AS13-61-8815|||Moon
-0802414|AS13-61-8816|||Moon
-0802418|AS13-61-8817|||Moon
-0802422|AS13-61-8818|||Moon
-0802427|AS13-61-8819|||Moon
-0802444|AS13-61-8819a|||LM interior, probably the CDR window. Very under exposed
-0802510|AS13-61-8820|||Moon through LMP LM window
-0802522|AS13-61-8821|||Triple Exposure of the Moon through the LMP LM window
-0802526|AS13-61-8822|||Moon through LMP LM window
-0802540|AS13-61-8823|||Moon through LMP LM window
-0802551|AS13-61-8824|||Moon through LMP LM window
-0802557|AS13-61-8825|||Moon through LMP LM window
-0802812|AS13-61-8825a|||Underexposed photo of distant Earth
-0802816|AS13-61-8825b|||Underexposed photo of distant Earth
-0803402|AS13-61-8826|||Earth through CDR LM window
-0803406|AS13-61-8827|||Earth through CDR LM window
-0803410|AS13-61-8828|||Earth through CDR LM window
-0803415|AS13-61-8829|||Earth through CDR LM window
-0803419|AS13-61-8830|||Earth through CDR LM window
-0803424|AS13-61-8831|||Earth through CDR LM window
-0803428|AS13-61-8832|||Earth through CDR LM window
-0803433|AS13-61-8833|||Earth through CDR LM window
-0803438|AS13-61-8834|||Earth through CDR LM window
-0803443|AS13-61-8835|||Earth through CDR LM window
-0803449|AS13-61-8836|||Earth through CDR LM window
-0803820|AS13-61-8837|||Moon
-0803824|AS13-61-8838|||Moon
-0803832|AS13-61-8839|||Moon
-0803837|AS13-61-8840|||Moon
-0803841|AS13-61-8841|||Moon
-0804008|AS13-61-8842|||Earth
-0804014|AS13-61-8843|||Earth
-0804021|AS13-61-8844|||Earth
-0804026|AS13-61-8845|||Earth
-0804349|AS13-61-8846|||Sliver of Moon
-0804357|AS13-61-8847|||Moon
-0804406|AS13-61-8848|||Moon
-0804414|AS13-61-8849|||Moon
-0804422|AS13-61-8850|||Moon
-0804431|AS13-61-8851|||Moon
-0804440|AS13-61-8852|||Moon
-0804448|AS13-61-8853|||Moon
-0804455|AS13-61-8854|||Moon
-0805458|AS13-60-8700|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Marginis, Mare Nectaris
-0805522|AS13-60-8701|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Serenitatis, Mare Nectaris
-0805546|AS13-60-8702|||Mare Australe, Mare Fecunditatis, Mare Nectaris, Mare Tranquillitatis, Langrenus
-0805612|AS13-60-8703|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window
-0805626|AS13-60-8704|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window
-0805637|AS13-60-8705|||Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, Mare Marginis, Mare Smythii, through the LMP LM window
+0802406|AS13-61-8807|||Eastern hemisphere of the Moon
+0802410|AS13-61-8808|||Eastern hemisphere of the Moon
+0802414|AS13-61-8809|||Eastern hemisphere of the Moon
+0802418|AS13-61-8810|||Eastern hemisphere of the Moon
+0802422|AS13-61-8811|||Eastern hemisphere of the Moon
+0802427|AS13-61-8812|||Eastern hemisphere of the Moon
+0802444|AS13-61-8813|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
+0802510|AS13-61-8813a|||Exhaust hose from ECS, mounted by the LMP LM window. Very under exposed
+0802522|AS13-61-8814|||Moon
+0802526|AS13-61-8815|||Moon
+0802540|AS13-61-8816|||Moon
+0802551|AS13-61-8817|||Moon
+0802557|AS13-61-8818|||Moon
+0802812|AS13-61-8819|||Moon
+0802816|AS13-61-8819a|||LM interior, probably the CDR window. Very under exposed
+0803402|AS13-61-8820|||Moon through LMP LM window
+0803406|AS13-61-8821|||Triple Exposure of the Moon through the LMP LM window
+0803410|AS13-61-8822|||Moon through LMP LM window
+0803415|AS13-61-8823|||Moon through LMP LM window
+0803419|AS13-61-8824|||Moon through LMP LM window
+0803424|AS13-61-8825|||Moon through LMP LM window
+0803428|AS13-61-8825a|||Underexposed photo of distant Earth
+0803433|AS13-61-8825b|||Underexposed photo of distant Earth
+0803438|AS13-61-8826|||Earth through CDR LM window
+0803443|AS13-61-8827|||Earth through CDR LM window
+0803449|AS13-61-8828|||Earth through CDR LM window
+0803633|AS13-61-8829|||Earth through CDR LM window
+0803637|AS13-61-8830|||Earth through CDR LM window
+0803645|AS13-61-8831|||Earth through CDR LM window
+0803650|AS13-61-8832|||Earth through CDR LM window
+0803654|AS13-61-8833|||Earth through CDR LM window
+0804008|AS13-61-8834|||Earth through CDR LM window
+0804014|AS13-61-8835|||Earth through CDR LM window
+0804021|AS13-61-8836|||Earth through CDR LM window
+0804026|AS13-61-8837|||Moon
+0804349|AS13-61-8838|||Moon
+0804357|AS13-61-8839|||Moon
+0804406|AS13-61-8840|||Moon
+0804414|AS13-61-8841|||Moon
+0804422|AS13-61-8842|||Earth
+0804431|AS13-61-8843|||Earth
+0804440|AS13-61-8844|||Earth
+0804448|AS13-61-8845|||Earth
+0804455|AS13-61-8846|||Sliver of Moon
+0805158|AS13-60-8700|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Marginis, Mare Nectaris
+0805220|AS13-60-8701|||Mare Australe, Mare Fecunditatis, Mare Crisium, Mare Smythii, Mare Serenitatis, Mare Nectaris
+0805237|AS13-60-8702|||Mare Australe, Mare Fecunditatis, Mare Nectaris, Mare Tranquillitatis, Langrenus
+0805259|AS13-60-8703|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window
+0805322|AS13-60-8704|||Mare Frigoris, Mare Serenitatis, Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, through the LMP LM window
+0805340|AS13-60-8705|||Mare Tranquillitatis, Mare Crisium, Mare Nectaris, Mare Fecunditatis, Mare Marginis, Mare Smythii, through the LMP LM window
 0813140|AS13-60-8707|||Moon eastern hemisphere
 0813200|AS13-60-8708|||Moon eastern hemisphere
 0813220|AS13-60-8709|||Moon eastern hemisphere
 0813239|AS13-60-8710|||Moon eastern hemisphere
 0813300|AS13-60-8711|||Moon eastern hemisphere
 0813318|AS13-60-8712|||Moon eastern hemisphere
-0813323|AS13-61-8855|||Moon
-0813332|AS13-61-8856|||Moon
-0813340|AS13-61-8857|||Moon
+0813323|AS13-61-8847|||Moon
+0813332|AS13-61-8848|||Moon
+0813340|AS13-61-8849|||Moon
 0813342|AS13-60-8713|||Moon eastern hemisphere
-0813354|AS13-61-8858|||Moon
+0813354|AS13-61-8850|||Moon
 0813404|AS13-60-8714|||Moon eastern hemisphere
-0813414|AS13-61-8859|||Moon
+0813414|AS13-61-8851|||Moon
 0813418|AS13-60-8715|||Moon eastern hemisphere
-0813438|AS13-61-8860|||Moon
-0813455|AS13-61-8861|||Moon
-0813722|AS13-61-8862|||Very under exposed photo of the LM docking window
-0813736|AS13-61-8862a|||Very under exposed photo of the LM docking window
-0813745|AS13-61-8862b|||Very under exposed photo of the LM docking window
-0814220|AS13-61-8863|||Moon
-0814526|AS13-61-8864|||Earth through LMP LM window
-0814818|AS13-61-8865|||Moon-accidental exposure
-0814829|AS13-61-8866|||Moon
-0821321|AS13-61-8867|||Earth through LMP LM window
-0823003|AS13-61-8868|||Moon through the CDR LM window
-0823115|AS13-61-8869|||Moon through the CDR LM window
+0813430|AS13-61-8852|||Moon
+0813441|AS13-61-8853|||Moon
+0813508|AS13-61-8854|||Moon
+0813520|AS13-61-8855|||Moon
+0813602|AS13-61-8856|||Moon
+0814318|AS13-61-8857|||Moon
+0814329|AS13-61-8858|||Moon
+0821321|AS13-61-8859|||Moon
+0823003|AS13-61-8860|||Moon
+0823115|AS13-61-8861|||Moon
+0825353|AS13-61-8862|||Very under exposed photo of the LM docking window
 0825353|AS13-61-8870|||Moon through the CDR LM window
+0825401|AS13-61-8862a|||Very under exposed photo of the LM docking window
 0825401|AS13-61-8871|||Moon through the CDR LM window
+0825410|AS13-61-8862b|||Very under exposed photo of the LM docking window
 0825410|AS13-61-8872|||Moon through the CDR LM window
+0825418|AS13-61-8863|||Moon
 0825418|AS13-61-8873|||Moon through the CDR LM window
-0833015|AS13-60-8716|||Earth with cloud cover Pacific Ocean
-0833035|AS13-60-8717|||Earth with cloud cover Pacific Ocean
-0833810|AS13-60-8718|||Moon eastern hemisphere
-0833830|AS13-60-8719|||Moon eastern hemisphere
+0832515|AS13-60-8716|||Earth with cloud cover Pacific Ocean
+0832535|AS13-60-8717|||Earth with cloud cover Pacific Ocean
+0833110|AS13-60-8718|||Moon eastern hemisphere
+0833128|AS13-60-8719|||Moon eastern hemisphere
+0901548|AS13-61-8864|||Earth through LMP LM window
 0901548|AS13-61-8874|||Moon through the CDR LM window
+0901556|AS13-61-8865|||Moon-accidental exposure
 0901556|AS13-61-8875|||Moon through the CDR LM window
 0913935|AS13-62-8924|||Moon
 0913955|AS13-62-8925|||Moon
 0914015|AS13-62-8926|||Moon
 0914135|AS13-62-8927|||Moon
 0914155|AS13-62-8928|||Moon
-0941903|AS13-62-8929|||Interior of Spacecraft. Emergency rig lithium hydroxide unit
-0941911|AS13-62-8930|||Interior of Spacecraft. Emergency rig lithium hydroxide unit
+0941906|AS13-62-8929|||Interior of Spacecraft. Emergency rig lithium hydroxide unit
+0941928|AS13-62-8930|||Interior of Spacecraft. Emergency rig lithium hydroxide unit
 0944500|AS13-60-8720|||Earth, North Africa and the Atlantic Ocean
 0945200|AS13-60-8721|||Earth, North Africa and the Atlantic Ocean
 0945620|AS13-60-8722|||Moon eastern hemisphere
 0945640|AS13-60-8723|||Moon eastern hemisphere
 0945700|AS13-60-8724|||Moon eastern hemisphere
+0955047|AS13-61-8866|||Moon
 0955047|AS13-61-8876|||Assembled CO2 scrubber canister, mounted on the ECS in the LM
+0955058|AS13-61-8867|||Earth through LMP LM window
 0955058|AS13-61-8877|||Assembled CO2 scrubber canister, mounted on the ECS in the LM
+0955220|AS13-61-8868|||Moon through the CDR LM window
 0955220|AS13-61-8878|||Assembled CO2 scrubber canister in the LM docking tunnel
+0955232|AS13-61-8869|||Moon through the CDR LM window
 0955232|AS13-61-8879|||Assembled CO2 scrubber canister in the LM docking tunnel
 0955920|AS13-62-8931|||LM panels 1 & 2
 0955930|AS13-62-8932|||LM panels 1 & 2
@@ -393,6 +393,7 @@
 0962525|AS13-62-8940|||Moon
 0971552|AS13-62-8941|||LM RCS Thruster
 0971610|AS13-62-8942|||Possibly a shot trying to show later venting
+0983901|AS13-62-8959|||CM from LM docking window
 0984121|AS13-62-8943|||Earth Caribbean Sea & North America
 0984333|AS13-62-8944|||Fred Haise looking out of the CDR LM window
 0984416|AS13-62-8945|||View of CM Main hatch seen from the LM docking window
@@ -408,28 +409,27 @@
 0985221|AS13-62-8955|||Sun and CM seen through the LM docking window
 0985239|AS13-62-8956|||Earth Caribbean Sea & North America
 0985612|AS13-62-8957|||Earth Caribbean Sea & North America
-0994615|AS13-60-8725|||Earth, North America
-0994804|AS13-60-8726|||Earth, North America
-1002731|AS13-62-8958|||CM from LM docking window
-1002747|AS13-62-8959|||CM from LM docking window
-1002816|AS13-62-8960|||CM, LM and Earth, North America and Pacific Ocean
-1003621|AS13-62-8961|||CM, LM and Earth, North America and Pacific Ocean
-1004655|AS13-62-8962|||Moon
-1004715|AS13-62-8963|||Moon
-1004735|AS13-62-8964|||Moon
+0991515|AS13-60-8725|||Earth, North America
+0991704|AS13-60-8726|||Earth, North America
+0993846|AS13-62-8958|||CM from LM docking window
+0993928|AS13-62-8960|||CM, LM and Earth, North America and Pacific Ocean
+0994032|AS13-62-8961|||CM, LM and Earth, North America and Pacific Ocean
+1005455|AS13-62-8962|||Moon
+1005515|AS13-62-8963|||Moon
+1005536|AS13-62-8964|||Moon
 1015738|AS13-62-8965|||Exterior of CM through the LM docking window.
 1015825|AS13-62-8966|||Moon through the LM docking window also showing the CSM EVA light extended
 1015850|AS13-62-8967|||Moon through the LM docking window also showing the CSM EVA light extended
-1020825|AS13-62-8968|||Earth Pacific Ocean
-1020845|AS13-62-8969|||Earth Pacific Ocean
-1020906|AS13-62-8970|||Earth Pacific Ocean and CM exterior 
-1020924|AS13-62-8971|||Earth Pacific Ocean and CM exterior 
-1020947|AS13-62-8972|||Earth Pacific Ocean
-1021014|AS13-62-8973|||View of CM with bright sun reflection through LM docking window
-1021023|AS13-62-8974|||View of CM with bright sun reflection through LM docking window
-1021118|AS13-62-8975|||Possibly LM window shade rolled up
-1021331|AS13-62-8976|||CM main hatch through the LM docking window
-1021836|AS13-62-8977|||Earth Pacific Ocean
+1021625|AS13-62-8968|||Earth Pacific Ocean
+1021646|AS13-62-8969|||Earth Pacific Ocean
+1021706|AS13-62-8970|||Earth Pacific Ocean and CM exterior 
+1021724|AS13-62-8971|||Earth Pacific Ocean and CM exterior 
+1021747|AS13-62-8972|||Earth Pacific Ocean
+1021814|AS13-62-8973|||View of CM with bright sun reflection through LM docking window
+1021823|AS13-62-8974|||View of CM with bright sun reflection through LM docking window
+1021918|AS13-62-8975|||Possibly LM window shade rolled up
+1022131|AS13-62-8976|||CM main hatch through the LM docking window
+1022520|AS13-62-8977|||Earth Pacific Ocean
 1130409|AS13-62-8978|||Moon
 1130812|AS13-62-8979|||Earth India, Indian Ocean
 1130854|AS13-62-8980|||Earth India, Indian Ocean
@@ -490,8 +490,8 @@
 1200909|AS13-62-9035|||Very distant Moon
 1201023|AS13-62-9036|||Earth, Atlantic Ocean
 1201211|AS13-62-9037|||Earth, Atlantic Ocean
-1202404|AS13-62-9038|||Earth, Atlantic Ocean
-1202551|AS13-62-9039|||Blurred imagery of LM docking window frame
+1201942|AS13-62-9038|||Earth, Atlantic Ocean
+1202005|AS13-62-9039|||Blurred imagery of LM docking window frame
 1344400|AS13-59-8482|||Haise in the LM Aquarius talking to Lovell
 1344408|AS13-59-8483|||Haise in the LM Aquarius talking to Lovell
 1344420|AS13-59-8484|||Lovell in the LM Aquarius
@@ -502,14 +502,14 @@
 1344436|AS13-59-8489|||Lovell in the LM Aquarius
 1344440|AS13-59-8490|||Lovell in the LM Aquarius
 1354507|AS13-59-8491|||Lovell in the LM Aquarius
-1361956|AS13-59-8492|||Earth , India, S E Asia, Indian Ocean
-1362015|AS13-59-8493|||Earth , India, S E Asia, Indian Ocean
-1362028|AS13-59-8494|||Earth , India, S E Asia, Indian Ocean
-1362042|AS13-59-8495|||Earth , India, S E Asia, Indian Ocean
-1362058|AS13-59-8496|||Earth , India, S E Asia, Indian Ocean
-1362112|AS13-59-8497|||Earth , India, S E Asia, Indian Ocean
-1362128|AS13-59-8498|||Earth , India, S E Asia, Indian Ocean
-1362140|AS13-59-8499|||Earth , India, S E Asia, Indian Ocean
+1361756|AS13-59-8492|||Earth , India, S E Asia, Indian Ocean
+1361815|AS13-59-8493|||Earth , India, S E Asia, Indian Ocean
+1361828|AS13-59-8494|||Earth , India, S E Asia, Indian Ocean
+1361842|AS13-59-8495|||Earth , India, S E Asia, Indian Ocean
+1361858|AS13-59-8496|||Earth , India, S E Asia, Indian Ocean
+1361912|AS13-59-8497|||Earth , India, S E Asia, Indian Ocean
+1361928|AS13-59-8498|||Earth , India, S E Asia, Indian Ocean
+1361940|AS13-59-8499|||Earth , India, S E Asia, Indian Ocean
 1380413|AS13-58-8456|||SM following jettison taken by CMP through left hand LM window
 1380415|AS13-58-8457|||SM following jettison taken by CMP through left hand LM window
 1380428|AS13-58-8458|||SM following jettison taken by CMP through left hand LM window
@@ -530,31 +530,31 @@
 1380513|AS13-59-8508|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
 1380514|AS13-58-8465|||SM following jettison taken by CMP through left hand LM window
 1380516|AS13-58-8466|||SM following jettison taken by CMP through left hand LM window
-1380523|AS13-59-8509|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
-1380525|AS13-59-8510|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
 1380526|AS13-58-8467|||SM following jettison taken by CMP through left hand LM window
 1380527|AS13-58-8468|||SM following jettison taken by CMP through left hand LM window
 1380529|AS13-58-8469|||SM following jettison taken by CMP through left hand LM window
-1380533|AS13-59-8511|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
 1380535|AS13-58-8470|||SM following jettison taken by CMP through left hand LM window
-1380536|AS13-59-8512|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
-1380538|AS13-59-8513|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
 1380539|AS13-58-8471|||SM following jettison taken by CMP through left hand LM window
-1380540|AS13-59-8514|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
-1380542|AS13-59-8515|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
-1380546|AS13-59-8516|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380542|AS13-59-8509|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380544|AS13-59-8510|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
 1380547|AS13-58-8472|||SM following jettison taken by CMP through left hand LM window
 1380548|AS13-58-8473|||SM following jettison taken by CMP through left hand LM window
-1380549|AS13-58-8474|||SM following jettison taken by CMP through left hand LM window
-1380550|AS13-58-8475|||SM following jettison taken by CMP through left hand LM window
-1380551|AS13-58-8476|||SM following jettison taken by CMP through left hand LM window
-1380553|AS13-58-8477|||SM following jettison taken by CMP through left hand LM window
-1380554|AS13-58-8478|||SM following jettison taken by CMP through left hand LM window
-1380555|AS13-58-8479|||SM following jettison taken by CMP through left hand LM window
-1380556|AS13-58-8480|||SM following jettison taken by CMP through left hand LM window
-1380558|AS13-58-8481|||SM following jettison taken by CMP through left hand LM window
-1380641|AS13-59-8517|||Service Module and distant Moon taken by CDR through LM right window
-1380643|AS13-59-8518|||Service Module and distant Moon taken by CDR through LM right window
+1380549|AS13-59-8511|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380551|AS13-59-8512|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380553|AS13-58-8474|||SM following jettison taken by CMP through left hand LM window
+1380555|AS13-59-8513|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380556|AS13-58-8475|||SM following jettison taken by CMP through left hand LM window
+1380558|AS13-59-8514|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380559|AS13-59-8515|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380601|AS13-58-8476|||SM following jettison taken by CMP through left hand LM window
+1380603|AS13-58-8477|||SM following jettison taken by CMP through left hand LM window
+1380604|AS13-58-8478|||SM following jettison taken by CMP through left hand LM window
+1380605|AS13-58-8479|||SM following jettison taken by CMP through left hand LM window
+1380607|AS13-59-8516|||Edge of Command Module with small Lunar Disc and SM on extreme left of frame, taken by CDR through the LM docking window as pich up continues
+1380608|AS13-58-8480|||SM following jettison taken by CMP through left hand LM window
+1380610|AS13-58-8481|||SM following jettison taken by CMP through left hand LM window
+1380642|AS13-59-8517|||Service Module and distant Moon taken by CDR through LM right window
+1380644|AS13-59-8518|||Service Module and distant Moon taken by CDR through LM right window
 1380647|AS13-59-8519|||Service Module and distant Moon taken by CDR through LM right window
 1380649|AS13-59-8520|||Service Module and distant Moon taken by CDR through LM right window
 1380652|AS13-59-8521|||Service Module and distant Moon taken by CDR through LM right window
@@ -602,22 +602,22 @@
 1413006|AS13-59-8557|||LM from the CM just prior to jettison
 1413007|AS13-59-8558|||Jettison of the LM from the CM
 1413009|AS13-59-8559|||Jettison of the LM from the CM
-1413012|AS13-59-8560|||Jettison of the LM from the CM
-1413014|AS13-59-8561|||Jettison of the LM from the CM
-1413015|AS13-59-8562|||Jettison of the LM from the CM
-1413016|AS13-59-8563|||Jettison of the LM from the CM
-1413021|AS13-59-8564|||Jettison of the LM from the CM
-1413022|AS13-59-8565|||Jettison of the LM from the CM
+1413011|AS13-59-8560|||Jettison of the LM from the CM
+1413013|AS13-59-8561|||Jettison of the LM from the CM
+1413014|AS13-59-8562|||Jettison of the LM from the CM
+1413015|AS13-59-8563|||Jettison of the LM from the CM
+1413019|AS13-59-8564|||Jettison of the LM from the CM
+1413020|AS13-59-8565|||Jettison of the LM from the CM
+1413021|AS13-59-8566|||Jettison of the LM from the CM
 1413022|AS13-59-8571|||Jettison of the LM from the CM
-1413023|AS13-59-8566|||Jettison of the LM from the CM
 1413023|AS13-59-8572|||Jettison of the LM from the CM
-1413036|AS13-59-8567|||Jettison of the LM from the CM
+1413030|AS13-59-8567|||Jettison of the LM from the CM
+1413031|AS13-59-8568|||Jettison of the LM from the CM
+1413032|AS13-59-8569|||Jettison of the LM from the CM
+1413033|AS13-59-8570|||Jettison of the LM from the CM
 1413036|AS13-59-8573|||Jettison of the LM from the CM
-1413037|AS13-59-8568|||Jettison of the LM from the CM
 1413037|AS13-59-8574|||LM falling behind after jettison
-1413038|AS13-59-8569|||Jettison of the LM from the CM
 1413038|AS13-59-8575|||LM falling behind after jettison
-1413040|AS13-59-8570|||Jettison of the LM from the CM
 1413040|AS13-59-8576|||LM falling behind after jettison
 1425004|S70-35652||S70-35652.jpg|On the mains
 1425443|Apollo13_splashdown.jpg||Apollo13_splashdown.jpg|Splashdown

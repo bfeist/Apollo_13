@@ -2,6 +2,29 @@ import csv
 import operator
 from quik import FileLoader
 import re
+import math
+
+def TimestampBySeconds(seconds):
+    hours = int(math.fabs(seconds / 3600))
+    minutes = int(math.fabs(seconds / 60)) % 60 % 60
+    seconds = math.floor(int(math.fabs(seconds)) % 60)
+
+    return str(hours).zfill(3) + ":" + str(minutes).zfill(2) + ":" + str(seconds).zfill(2)
+
+
+def SecondsByTimestamp(timestamp_val):
+    val_list = timestamp_val.split(":")
+    if val_list[0][0:1] == "-":
+        hours = int(val_list[0][1:4])
+        signToggle = -1
+    else:
+        hours = int(val_list[0])
+        signToggle = 1
+    minutes = int(val_list[1])
+    seconds = int(val_list[2])
+
+    totalSeconds = round(signToggle * ((abs(hours) * 60 * 60) + (minutes * 60) + seconds))
+    return totalSeconds
 
 # -------------------- Write Utterance Data
 output_utterance_data_file_name_and_path = "../_website/_webroot/13/indexes/utteranceData.csv"
@@ -37,18 +60,26 @@ fdLines = []
 whoWhenGathered = False
 timeId = ''
 who_modified = ''
-# counter = 0
+counter = 0
 for fdLine in fdFile:
-    # counter += 1
-    # if counter == 931:
-    #     print('break here')
+    counter += 1
+    if counter == 10000:
+        print('break here')
     if fdLine[0:1] != ">" and fdLine[1:2] != '>':  #filter out comments.
         fdLine = fdLine.replace('[- ', '[') #convert timestamps that only have concluding times to make those the utterance times
         fdLine = fdLine.replace('{', '') #remove references
         fdLine = fdLine.replace('}', '') #remove references
         match = re.search(r'\[(\d\d \d\d \d\d).*?\] (.*)', fdLine)
         if match is not None:  #if on when / who line
-            timeId = '0' + match.group(1).replace(" ", "")
+            timeStr = '0' + match.group(1).replace(" ", ":")
+
+            # # fudge: subtract time to account for drift during transcription. 1 second at beginning and 2 seconds at the end
+            # # divide counter by 10000 and round to get this second adjustment
+            # secondsToPad = 1 + round(counter/10000)
+            # timestampSeconds = SecondsByTimestamp(timeStr)
+            # timestampSeconds += secondsToPad
+            # timeStr = TimestampBySeconds(timestampSeconds)
+            timeId = timeStr.replace(":", "")
             who_modified = match.group(2)
         elif len(fdLine) > 1:
             words_modified = fdLine.strip()
@@ -113,6 +144,7 @@ photo_list = []
 tempRecord = []
 input_file_path = "../MISSION_DATA/A13_photos.csv"
 photos_reader = csv.reader(open(input_file_path, "rU"), delimiter='|')
+# photocounter = 0
 for photo_row in photos_reader:
     tempRecord.clear()
     if photo_row[0] != "" and photo_row[0] != "skip":  # if timestamp not blank and photo not marked to skip
@@ -127,6 +159,8 @@ for photo_row in photos_reader:
             caption = photo_row[4]
         tempRecord.append(caption)
         photo_list.append(tempRecord.copy())
+    # print('Photo counter: ' + str(photocounter))
+    # photocounter += 1
 
 sorted_list = sorted(photo_list, key=operator.itemgetter(0))
 
