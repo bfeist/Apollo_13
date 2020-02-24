@@ -63,8 +63,8 @@ who_modified = ''
 counter = 0
 for fdLine in fdFile:
     counter += 1
-    if counter == 10000:
-        print('break here')
+    # if counter == 10000:
+    #     print('break here')
     if fdLine[0:1] != ">" and fdLine[1:2] != '>':  #filter out comments.
         fdLine = fdLine.replace('[- ', '[') #convert timestamps that only have concluding times to make those the utterance times
         fdLine = fdLine.replace('{', '') #remove references

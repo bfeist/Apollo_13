@@ -1248,15 +1248,19 @@ function getSearchResultHTML(searchArrayIndex) {
     html = html.replace("@timestamp", timeIdToTimeStr(searchObject[0]));
     html = html.replace("@who", who_modified);
     html = html.replace("@words", words_modified);
-    if (who_modified === "Public Affairs" || who_modified === "") {
+    if (searchObject[4] === "P" || who_modified === "") {
         var uttTypeStr = "utt_pao";
-    } else if (who_modified === "Mission Control") {
+        // } else if (who_modified === "Mission Control") {
+    } else if (searchObject[4] === "C") {
         uttTypeStr = "utt_capcom";
+    } else if (searchObject[4] === "F") {
+        uttTypeStr = "utt_mocr";
     } else {
         uttTypeStr = "utt_crew";
     }
     html = html.replace(/@uttType/g, uttTypeStr);
-    if (searchObject[4] === 0) { //0 for utterance
+
+    if (searchObject[5] === 0) { //0 for utterance
         html = html.replace(/@entrytypevar/g, "transcript");
         html = html.replace(/@entrytype/g, "");
     } else if (searchObject[4] === 1) { //1 for commentary

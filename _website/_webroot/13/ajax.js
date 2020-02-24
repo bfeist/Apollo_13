@@ -312,12 +312,13 @@ function createSearchData() {
         tmpItem[1] = "";
         tmpItem[2] = gUtteranceData[counter][1];
         tmpItem[3] = gUtteranceData[counter][2].replace(/(<([^>]+)>)/ig,""); //strip HTML tags
-        tmpItem[4] = 0;
+        tmpItem[4] = gUtteranceData[counter][3];
+        tmpItem[5] = 0;
         gSearchData.push(tmpItem);
     }
     for (counter = 0; counter < gCommentaryData.length; counter++) {
         tmpItem = gCommentaryData[counter];
-        tmpItem[4] = 1;
+        tmpItem[5] = 1;
         gSearchData.push(tmpItem);
     }
     // for (counter = 0; counter < gGeoData.length; counter++) {
@@ -341,7 +342,8 @@ function createSearchData() {
         tmpItem[1] = "";
         tmpItem[2] = "";
         tmpItem[3] = "Photo: " + filename + "; Description: " + description;
-        tmpItem[4] = 3; //type 3 is photo
+        tmpItem[4] = "";
+        tmpItem[5] = 3; //type 3 is photo
         gSearchData.push(tmpItem);
     }
 
