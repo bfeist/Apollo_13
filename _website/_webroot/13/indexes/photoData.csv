@@ -1,4 +1,3 @@
--450000|70-HC-289|ap13-70-HC-289.jpg||
 -351008|69-HC-1269|ap13-69-HC-1269HR.jpg||On the pad waiting for fuelling
 -235000|KSC-70C-1491|ap13-KSC-70C-1491HR.jpg||Apollo 13 Saturn V on the pad at dusk
 -234500|KSC-70C-1490|ap13-KSC-70C-1490HR.jpg||Apollo 13 silhouetted by sunset following MSS pullback
@@ -8,6 +7,7 @@
 -225500|S70-32990|ap13-S70-32990HR.jpg||Apollo 13 on the pad at night
 -121300|KSC-70C-1049|ap13-KSC-70C-1049HR.jpg||The Apollo 13 CSM and Escape Tower from the Mobile Service Structure
 -101008|70-HC-351|ap13-70-HC-351HR.jpg||On the pad waiting for fuelling
+-034957|70-HC-289|ap13-70-HC-289.jpg||On the pad, fueled and venting
 -003000|KSC-70PC-104|ap13-KSC-70PC-104HR.jpg||Apollo 13 ready for launch
 0000000|KSC-70PC-178|ap13-KSC-70PC-178HR.jpg||Launch
 0000003|KSC-70PC-160|ap13-KSC-70PC-160HR.jpg||Launch
@@ -620,7 +620,7 @@
 1413038|AS13-59-8575|||LM falling behind after jettison
 1413040|AS13-59-8576|||LM falling behind after jettison
 1425004|S70-35652||S70-35652.jpg|On the mains
-1425443|Apollo13_splashdown.jpg||Apollo13_splashdown.jpg|Splashdown
+1425443|Apollo13_splashdown||Apollo13_splashdown.jpg|Splashdown
 1425446|KSC-70PC-121||KSC-70PC-121.jpg|Splashdown
 1425452|S70-35644||S70-35644.jpg|Recovery
 1432351|S70-15523||S70-15523.jpg|Recovery

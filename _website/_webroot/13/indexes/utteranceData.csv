@@ -1448,7 +1448,7 @@
 0054513|PAO|This is Apollo Control at 5 hours, 45 minutes. Our Booster systems engineers just reported that the first midcourse correction opportunity with the S-IVB, the midcourse correction designed to put the S-IVB on the proper impacting trajectory with the Moon, will be required and it is expected that this maneuver will be a 217-second burn of the two Auxiliary Propulsion System modules on the S-IVB. These modules each produce 70 pounds of thrust [311 newtons] for a total thrust of 140 pounds [623 N]. The Booster engineer also reported that it would probably be required to utilize the second S-IVB midcourse correction opportunity at 9 hours to assure the proper trajectory. Midcourse correction 1 for the spacecraft, the Command and Service Modules, is not expected to be needed. The first midcourse correction opportunity which we would anticipate the possibility of having to make a small midcourse correction would be for midcourse correction number 2 at the scheduled time in the Flight Plan. At 5 hours, 47 minutes; this is Mission Control, Houston.|P
 0055445|Kerwin|Apollo 13, Houston.|C
 0055448|CDR|Go ahead, Joe.|T
-0055450|Kerwin|Rog. We'd like to have the Attitude Set switch back to GDC, if you're finished with your align. It gives G&amp;C down here a telemetry problem.|C
+0055450|Kerwin|Rog. We'd like to have the Attitude Set switch back to GDC, if you're finished with your align. It gives GNC down here a telemetry problem.|C
 0055501|CMP|Yeah; okay.|T
 0055502|Kerwin|Thank you.|C
 0055510|CMP|I'm just going to give them one more align here.|T
@@ -1629,7 +1629,7 @@
 0092639|Brand|Roger. We copy, Fred.|C
 0092654|CMP|Okay, Vance; we've completed that procedure, and let me know if everything was okay.|T
 0092659|Brand|Okay, thank you. We'll let you know if anything isn't okay. I'm sure it's good now.|C
-0092715|LMP|Tell G&amp;C and Guido thanks a lot for keeping good track of me, there.|T
+0092715|LMP|Tell GNC and Guido thanks a lot for keeping good track of me, there.|T
 0092721|Brand|Rog. They're right on the ball.|C
 0092736|Brand|And, 13, Houston. If you would like, we can let you know about every 2 minutes before the Earth should be coming into your window. We think we've got it pegged down pretty well now, and you won't have to look for it so much. Do you want that?|C
 0092754|LMP|Yeah. That would be fine, Vance.|T
@@ -1909,10 +1909,10 @@
 0232035|CMP|Yeah, Joe. We did and - kind of looked like we might have had a little stratification because right after we put them on, we had a Cryo Press light.|T
 0232045|Kerwin|Okay. EECOM told me that might happen, and he was right.|C
 0232154|CMP|Okay, Joe. We're ready to copy a Flight Plan update and your consumables.|T
-0232200|Kerwin|Okay, Jack.  The Flight Plan update has a couple of items in it, and the first one we'd like to do is to update the T<sub>ephem</sub> values in the G&amp;C checklist on page G/9-2. These are fairly small changes, but in case you need them, we'd like you to have the exact numbers. Over.|C
+0232200|Kerwin|Okay, Jack.  The Flight Plan update has a couple of items in it, and the first one we'd like to do is to update the T<sub>ephem</sub> values in the GNC checklist on page G/9-2. These are fairly small changes, but in case you need them, we'd like you to have the exact numbers. Over.|C
 0232225|CMP|Okay. Just a minute. I'll get it out.|T
-0232256|CMP|Joe, was that the G&amp;C checklist, page 9-2?|T
-0232300|Kerwin|That's affirmative. G&amp;C, page G/9-2.|C
+0232256|CMP|Joe, was that the GNC checklist, page 9-2?|T
+0232300|Kerwin|That's affirmative. GNC, page G/9-2.|C
 0232308|CMP|Okay. Go ahead.|T
 0232309|Kerwin|Okay. On that page in line 04, column B, change the number from 03366 to 05253. Over.|C
 0232330|CMP|... 53.|T
@@ -2981,7 +2981,7 @@
 0490120|CMP|Houston, Apollo 13.|T
 0490122|Kerwin|Hey, 13; Houston. Go ahead.|C
 0490126|CMP|Okay, Joe. I've started into P52 here. I've proceeded on option 3, and on the dis - 1520 - 1525 display, I've called up 16 91. I'm going to let you observe and see while the - the shaft angle while the Optics are still in zero.|T
-0490147|Kerwin|Okay. Roger that, Jack. We're looking at it, and I'll give you a mark as soon as G&amp;C is happy.|C
+0490147|Kerwin|Okay. Roger that, Jack. We're looking at it, and I'll give you a mark as soon as GNC is happy.|C
 0490155|CMP|Okay. Real fine.|T
 0490212|PAO|That was Jack Swigert, Command Module Pilot. He's aligning his spacecraft platform at this time.|P
 0490226|Kerwin|13 Houston. Jack, could you give us a readout on your counter now?|C
@@ -3020,7 +3020,7 @@
 0494244|CMP|Okay, Joe. I got into P52 about 49:34. We loaded the planet - or Bennett Comet vectors into the planet option, and P52 tracked it all the way across except that it was always occulted by the LM, and we're in a roll angle of 155 now.|T
 0494309|Kerwin|Roger. We're copying your roll angles. At what roll angle were you able to start tracking it, Jack?|C
 0494324|CMP|Okay. At the time we entered it there, we were about 66 degrees roll, so either we started too late, or maybe somehow we got a wrong calculation on the roll angle.|T
-0494340|Kerwin|Okay. Let me have G&amp;C comment on that. I suspect that the roll angles we gave you were calculated for exactly 90 degrees pitch, and you're probably wobbling enough that they're not exactly correct.|C
+0494340|Kerwin|Okay. Let me have GNC comment on that. I suspect that the roll angles we gave you were calculated for exactly 90 degrees pitch, and you're probably wobbling enough that they're not exactly correct.|C
 0494402|CDR|Yes, I think you - You probably got the right idea.|T
 0494524|Kerwin|13, Houston. Over.|C
 0494529|CMP|Go ahead.|T
@@ -3037,7 +3037,7 @@
 0495009|CMP|Okay. We lost you again. Here's our heater configuration now. H<sub>2</sub> Heaters 1, Off; 2, Auto. Both O<sub>2</sub> Heaters are in Auto.|T
 0495023|Kerwin|Okay. That's the configuration we want you in, and here's what we're thinking about. When we went to tank 1 Auto, tank 2 Off; we found that the heater cycle had a tank 1 pressure of about 233 psi, which is well above the caution and warning limit, and if we go to that configuration for sleep, we'll keep from getting Caution and Warning lights during the sleep cycle. Okay. In order to do that comfortably, we want to spend the rest of the day using more H<sub>2</sub> out of tank number 2, so as to get an unbalance in favor of tank 1, so at the end of the sleep cycle it'll all come out even. And that's why we have you in tank 1 Off, tank 2 Auto, now. We expect to get about a 3-percent unbalance over the next 10 hours; and prior to sleep, we'll call you to reverse the configuration again. Now the only disadvantage here is that, during the day, you will probably get a few Caution and Warnings, and we just figured it would be better to get them now than while you were sacked out. Over.|C
 0495135|CDR|I'll buy that 100 percent.|T
-0495137|Kerwin|Okay. Good deal. One other detail for you, Jack; G&amp;C tells us that the Optics jitter is very similar to what we had on Apollo 12. It's no problem, but when you're not using the Optics, we recommend that you turn the Optics Power switch to Off to guard against a possible degradation as the flight progresses. Over.|C
+0495137|Kerwin|Okay. Good deal. One other detail for you, Jack; GNC tells us that the Optics jitter is very similar to what we had on Apollo 12. It's no problem, but when you're not using the Optics, we recommend that you turn the Optics Power switch to Off to guard against a possible degradation as the flight progresses. Over.|C
 0495209|CMP|Okay. Will do.|T
 0495223|Kerwin|Okay. Apollo 13, Houston. I have one more little update for you, and it's another update to the erasable memory onboard crew charts on page G/9-2. Over.|C
 0495248|CDR|Houston, 13. We're ready to copy.|T
@@ -3834,7 +3834,7 @@
 0561601|FLIGHT|- I want to get our major problems sorted out now.|F
 0561602|CAPCOM|You want - you still want 1-5 down to 10 amps?|F
 0561604|FLIGHT|1-5 power down a delta of 10 amps, CAPCOM.|F
-0561608|Lousma|Okay, 13; this is Houston. We'd like you to go to your G&amp;C checklist, the pink pages, 1-5. Do powerdown until we get a Delta of 10 amps. Over.|C
+0561608|Lousma|Okay, 13; this is Houston. We'd like you to go to your GNC checklist, the pink pages, 1-5. Do powerdown until we get a Delta of 10 amps. Over.|C
 0561621|LMP|All right.|T
 0561623|CDR|Roger.|T
 0561632|FLIGHT|EECOM, from FLIGHT.|F

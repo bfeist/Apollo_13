@@ -63,7 +63,7 @@ var gCommentaryDisplayEndIndex;
 var gCurrentHighlightedCommentaryIndex;
 var gDashboardManuallyToggled = false;
 var gNextVideoStartTime = -1; //used to track when one video ends to ensure next plays from 0 (needed because youtube bookmarks where you left off in videos without being asked to)
-var gMissionTimeParamSent = 0;
+var gParamSent = false;
 var gLastLROOverlaySegment = '';
 
 var gActiveChannel;
@@ -299,7 +299,7 @@ function setApplicationReadyPoller() {
 
         if (gApplicationReady >= 4) {
             trace("APPREADY = 4! App Ready!");
-            if (gMissionTimeParamSent !== 0) {
+            if (gParamSent) {
                 fadeOutSplash();
                 initializePlayback();
             }
@@ -427,23 +427,22 @@ function oneMinuteToLaunchButtonClick() {
 
 function initializePlayback() {
     trace("initializePlayback()");
-    if (gMissionTimeParamSent === 0) {
-        //repopulateUtterances(findClosestUtterance(timeIdToSeconds(cDefaultStartTimeId))); //jump to default start time (usually 1 minute to launch)
-        //repopulateCommentary(findClosestCommentary(timeIdToSeconds(cDefaultStartTimeId)));
-        seekToTime(cDefaultStartTimeId);
-    } else {
-        var paramMissionTime = $.getUrlVar('t'); //code to detect jump-to-timecode parameter
-        paramMissionTime = decodeURIComponent(paramMissionTime);
-        if (paramMissionTime === 'rt') {
-            historicalButtonClick();
-        } else {
-            window.clearInterval(gIntroInterval);
-            gIntroInterval = null;
-            //repopulateUtterances(findClosestUtterance(timeStrToSeconds(paramMissionTime)));
-            //repopulateCommentary(findClosestCommentary(timeStrToSeconds(paramMissionTime)));
-            seekToTime(timeStrToTimeId(paramMissionTime));
+    var paramMissionTime = '';
+    var timeIdToSeekTo = cDefaultStartTimeId;
+    if (gParamSent) {
+        if (typeof $.getUrlVar('t') !== "undefined") {
+            paramMissionTime = $.getUrlVar('t'); //code to detect jump-to-timecode parameter
+            paramMissionTime = decodeURIComponent(paramMissionTime);
+            if (paramMissionTime === 'rt') {
+                historicalButtonClick();
+            } else {
+                window.clearInterval(gIntroInterval);
+                gIntroInterval = null;
+                //repopulateUtterances(findClosestUtterance(timeStrToSeconds(paramMissionTime)));
+                //repopulateCommentary(findClosestCommentary(timeStrToSeconds(paramMissionTime)));
+                timeIdToSeekTo = timeStrToTimeId(paramMissionTime);
+            }
         }
-
         if (typeof $.getUrlVar('ch') !== "undefined") {
             //open mocr channel
             var paramMOCRchannel = $.getUrlVar('ch');
@@ -455,6 +454,18 @@ function initializePlayback() {
                    player.pauseVideo();
                }, 3000);
         }
+        if (typeof $.getUrlVar('img') !== "undefined") {
+            var paramImagename = $.getUrlVar('img');
+            paramImagename = decodeURIComponent(paramImagename);
+            for (var i = 0; i < gPhotoData.length; i++) {
+                if (paramImagename === gPhotoData[i][1]) {
+                    timeIdToSeekTo = gPhotoData[i][0];
+                }
+            }
+        }
+    }
+    if (paramMissionTime !== 'rt') {
+        seekToTime(timeIdToSeekTo);
     }
     clearInterval(gApplicationReadyIntervalID);
     gApplicationReadyIntervalID = null;
@@ -2004,10 +2015,10 @@ function copyShareWebsiteURL() {
 //on doc init
 jQuery(function ($) {
     trace("INIT: jQuery(function ($)");
-    if (typeof $.getUrlVar('t') !== "undefined") {
-        gMissionTimeParamSent = 1;
+    if (typeof $.getUrlVar('t') !== "undefined" || typeof $.getUrlVar('img') !== "undefined") {
+        gParamSent = true;
     } else {
-        gMissionTimeParamSent = 0;
+        gParamSent = false;
     }
     activateContentTab('transcriptTab');
     //buttons
