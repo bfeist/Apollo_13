@@ -1491,6 +1491,11 @@ function manageOverlaysAutodisplay(timeId) {
             break;
         }
     }
+
+    if (!inVideoSegment && LROOverlaySelector.is(':visible'))
+        // $('#LRO-overlay').css('display', 'none');
+        LROOverlaySelector.fadeOut();
+
     if (!inVideoSegment && dashboardOverlaySelector.css('display').toLowerCase() === 'none' && !gDashboardManuallyToggled) {
         showDashboardOverlay();
         gLastLROOverlaySegment = '';
