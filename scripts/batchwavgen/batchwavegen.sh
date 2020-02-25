@@ -1,5 +1,6 @@
 #!/bin/bash
-ROOTDIR=/mnt/h/A13_mp3/*
+#ROOTDIR=/mnt/h/A13_mp3/*
+ROOTDIR=/mnt/o/Apollo_13_30-Track/44.1/A13_mp3/*
 for d in $ROOTDIR ; do
     echo "$d"
     

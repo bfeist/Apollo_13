@@ -16,7 +16,7 @@ def getsec(s):
 
 # root_path = "F:/mp3/"
 # root_path = "H:/A13_mp3/"
-root_path = "O:/Apollo 13 30-Track/44.1/A13_mp3/"
+root_path = "O:/Apollo_13_30-Track/44.1/A13_mp3/"
 
 # load and sort tape ranges per HR
 HR1_tape_ranges = []

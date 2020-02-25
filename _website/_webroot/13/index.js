@@ -1590,16 +1590,17 @@ function hideDashboardOverlay() {
 //app tab content
 function openMOCRviz() {
     // closeGeosampleOverlay(); //NA for 13
-
-    var html = $('#MOCROverlayTemplate').html();
-    html = html.replace(/@ch/g, gActiveChannel);
-    $('#thirtytrackplaceholder').append(html);
-    $('#soundBtn').removeClass('mute');
-    player.mute();
-    gMOCRToggled = true;
-    $('#MOCRvizIframe').load(function () {
-        console.log('MOCR iframe loaded successfully');
-    });
+    if (!gMOCRToggled) {
+        var html = $('#MOCROverlayTemplate').html();
+        html = html.replace(/@ch/g, gActiveChannel);
+        $('#thirtytrackplaceholder').append(html);
+        $('#soundBtn').removeClass('mute');
+        player.mute();
+        gMOCRToggled = true;
+        $('#MOCRvizIframe').load(function () {
+            console.log('MOCR iframe loaded successfully');
+        });
+    }
 }
 
 function closeMOCRviz() {

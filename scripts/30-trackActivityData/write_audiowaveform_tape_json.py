@@ -17,8 +17,8 @@ def getsec(s):
         return int(l[0]) * 3600 + (int(l[1]) * 60 * -1) + (int(l[2]) * -1)
 
 # wave_root_path = "F:/mp3/"
-root_path = "H:/A13_mp3/"
-# root_path = "O:/Apollo 13 30-Track/44.1/A13_mp3"
+# root_path = "H:/A13_mp3/"
+root_path = "O:/Apollo_13_30-Track/44.1/A13_mp3/"
 
 for tapeName in os.listdir(root_path):
     directory = root_path + tapeName + '/noiseranges'

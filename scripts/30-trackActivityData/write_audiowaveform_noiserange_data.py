@@ -18,7 +18,8 @@ peakvals_per_second = 62.5
 silent_seconds_before_closing_noise_range = 12
 
 # wave_root_path = "F:/mp3/"
-root_path = "H:/A13_mp3/"
+# root_path = "H:/A13_mp3/"
+root_path = "O:/Apollo_13_30-Track/44.1/A13_mp3/"
 
 
 def getMedian(numericValues):
