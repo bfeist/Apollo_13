@@ -1205,8 +1205,10 @@ function loadPhotoHtml(photoIndex) {
         imageURL = cALSJImageRoot + '/' + photoObject[2];
         // var imageURL = 'https://keycdn.apolloinrealtime.org/NASA_photos/' + photoObject[2];
     }
-    var source = "LPI";
     var caption = photoObject[4];
+
+    var source = photoObject[5] !== '' ? photoObject[5] : "LPI";
+    // var source = "LPI";
 
     html = html.replace(/@imageURL/g , imageURL);
     html = html.replace(/@photo_name/g , photoName);

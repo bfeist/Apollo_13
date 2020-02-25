@@ -158,6 +158,7 @@ for photo_row in photos_reader:
         else:
             caption = photo_row[4]
         tempRecord.append(caption)
+        tempRecord.append(photo_row[5])  #source attribution
         photo_list.append(tempRecord.copy())
     # print('Photo counter: ' + str(photocounter))
     # photocounter += 1
@@ -166,7 +167,7 @@ sorted_list = sorted(photo_list, key=operator.itemgetter(0))
 
 
 for list_item in sorted_list:
-    outputLine = '{0}|{1}|{2}|{3}|{4}\n'.format(list_item[1], list_item[2], list_item[3], list_item[4], list_item[5])
+    outputLine = '{0}|{1}|{2}|{3}|{4}|{5}\n'.format(list_item[1], list_item[2], list_item[3], list_item[4], list_item[5], list_item[6])
     output_photo_index_file.write(outputLine)
 output_photo_index_file.close()
 
