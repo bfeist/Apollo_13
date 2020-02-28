@@ -5439,7 +5439,7 @@
 073:32:06|T|CDR|Roger. We'll start the maneuver at this time. Okay. Let's go.
 073:32:12|T|LMP|Okay. SPS ... -
 073:32:13|T|CDR|If we don't keep working, we'll never develop it.
-073:32:2o|T|LMP|... flight plan ... now, Power up your FDAI.
+073:32:20|T|LMP|... flight plan ... now, Power up your FDAI.
 073:32:31|T|CDR|All right.
 073:32:34|T|LMP|Okay. CB 16 Inverter 2. And panel 11 Flight displays.
 073:32:42|T|CDR|Yes.
@@ -12977,4 +12977,4 @@
 143:49:38|C|Iwo Jima|... not quite where I wanted it. We are prepared to come back on, he is now on his way down here now. I have here with me right now Commander Spiuey. I'm prepared to put Commander Spiuey on the air with O'Brien as soon as he gets here in a couple of minutes. I would - we appreciate - ... talk about the recovery.
 143:50:45|P|PAO|The plaque for Apollo 13 has just been placed on the wall in the Mission Control Room; that brought about this loud applause we just heard.
 143:51:42|P|PAO|This is Apollo Control, Houston; we expect to have 3 news conferences picking up shortly in the Bldg. 1 auditorium, the first starting in aproximately 30 minutes with NASA Administrator Thomas Paine and Deputy Administrator George Low, this will be followed approximately 30 minutes later involving Dale Myers, Associate Administrator for Manned Spaceflight, and Dr. Gilruth, Robert Gillruth, Director of the Manned Spacecraft Center, Mr. Rocco Petrone, Apollo Program Director, Jim McDivitt, Manager of the Apollo Spacecraft Program Office at the Manned Spacecraft Center in Houston, and Mr. Chris Kraft, Deputy Director at MSC. Following that will be a third news conference with Mission Director Chet Lee, Director of Flight Operations, Sig Sjoberg, and Lead Flight Director for this mission, Milt Windler, and Mr. Ozzie [Ozro] Covington, of the Goddard Space Flight Center. We copied splashdown at 142 hours, 54 minutes, 44 seconds from liftoff, and this is Apollo Control, Houston, signing off at this time.
-152:00:00|P||End of mission
+152:00:00|P|PAO|End of mission

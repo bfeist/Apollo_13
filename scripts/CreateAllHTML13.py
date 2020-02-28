@@ -90,7 +90,10 @@ for fdLine in fdFile:
 all_utterances_list = utteranceLines.copy() + fdLines.copy()
 sortableUtteranceList = []
 timestampInt = 0
+# cur_row = 0
 for line in all_utterances_list:
+    # cur_row += 1
+    # print(str(cur_row) + " " + str(line))
     tempList = []
     if line.split('|')[0] != '':
         timestampInt = int(line.split('|')[0])
