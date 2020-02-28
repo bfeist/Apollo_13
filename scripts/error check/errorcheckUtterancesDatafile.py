@@ -18,7 +18,7 @@ tsObj = PrevTimestamp(0,0,"")
 for _ in range(0, numPrevTimestampsToTrack):
     prevRowTimestamps.append(tsObj)
 
-for curFile in [ "A13_utterances.csv" ]:
+for curFile in [ "Robin_A13_utterances.csv" ]:
     inputFilePath = "..\..\MISSION_DATA\\" + curFile
     reader = csv.reader(open(inputFilePath, "rU"), delimiter='|')
     for row in reader:

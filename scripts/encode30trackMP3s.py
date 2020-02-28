@@ -1,8 +1,9 @@
 import os
 
 inputRoot = 'E:\\Apollo_13_Data_Delivery\\44.1\\defluttered\\'
+# inputRoot = 'H:\\A13_mp3\\'
 # outputRoot = 'H:\\A13_mp3\\'
-outputRoot = 'O:\\Apollo 13 30-Track\\44.1\\A13_mp3\\'
+outputRoot = 'O:\\Apollo_13_30-Track\\44.1\\A13_mp3\\'
 
 # inputRoot = 'E:/Apollo_13_Data_Delivery/44.1/defluttered/'
 # outputRoot = 'H:/A13_mp3/'
