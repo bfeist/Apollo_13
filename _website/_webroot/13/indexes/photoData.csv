@@ -48,10 +48,6 @@
 0680045|AS13-62-8883|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. |NASA
 0680100|AS13-62-8884|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. |NASA
 0680115|AS13-62-8885|||Moon crescent taken through LMP LM window. Ptolemaeus & Alphonsus can just been seen near the sunrise terminator. RCS thruster in foreground. |NASA
-0680320|AS13-62-8886|||Earth taken through the CDR LM window, Africa and Europe|NASA
-0680335|AS13-62-8887|||Earth taken through the CDR LM window, Africa and Europe|NASA
-0680350|AS13-62-8888|||Earth taken through the CDR LM window, Africa and Europe|NASA
-0680410|AS13-62-8889|||Earth taken through the CDR LM window, Africa and Europe|NASA
 0680500|AS13-62-8890|||Transfer tunnel to LM, dark|NASA
 0680504|AS13-62-8891|||Transfer tunnel to LM, dark|NASA
 0680510|AS13-62-8892|||Transfer tunnel to LM, dark|NASA
@@ -63,6 +59,10 @@
 0682021|AS13-62-8898|||LM interior very dark, panel 1 and the CDR window|NASA
 0682213|AS13-62-8899|||LM interior dark looking over to CDR station and the docking window|NASA
 0682223|AS13-62-8900|||LM interior dark looking over to CDR station and the docking window|NASA
+0751721|AS13-62-8886|||Earth taken through the CDR LM window, Africa and Europe|NASA
+0751735|AS13-62-8887|||Earth taken through the CDR LM window, Africa and Europe|NASA
+0751747|AS13-62-8888|||Earth taken through the CDR LM window, Africa and Europe|NASA
+0751802|AS13-62-8889|||Earth taken through the CDR LM window, Africa and Europe|NASA
 0760510|AS13-60-8603|||Attempted view of the nearside terminator and lunar limb. No detail.|NASA
 0760520|AS13-60-8604|||Very faint lunar limb and neraside terminator-Arzachel, Thebit and  Purbach|NASA
 0760540|AS13-60-8605|||Very faint lunar limb and nearside terminator-Arzachel, Thebit and  Purbach|NASA
@@ -354,29 +354,27 @@
 0825410|AS13-61-8872|||Moon through the CDR LM window|NASA
 0825418|AS13-61-8863|||Moon|NASA
 0825418|AS13-61-8873|||Moon through the CDR LM window|NASA
-0832515|AS13-60-8716|||Earth with cloud cover Pacific Ocean|NASA
-0832535|AS13-60-8717|||Earth with cloud cover Pacific Ocean|NASA
 0833110|AS13-60-8718|||Moon eastern hemisphere|NASA
 0833128|AS13-60-8719|||Moon eastern hemisphere|NASA
-0901548|AS13-61-8864|||Earth through LMP LM window|NASA
+0874715|AS13-60-8716|||Earth with cloud cover Pacific Ocean|NASA
+0874727|AS13-60-8717|||Earth with cloud cover Pacific Ocean|NASA
 0901548|AS13-61-8874|||Moon through the CDR LM window|NASA
-0901556|AS13-61-8865|||Moon-accidental exposure|NASA
 0901556|AS13-61-8875|||Moon through the CDR LM window|NASA
+0910215|AS13-61-8864|||Earth through LMP LM window|NASA
+0913254|AS13-61-8867|||Earth through LMP LM window|NASA
 0913935|AS13-62-8924|||Moon|NASA
 0913955|AS13-62-8925|||Moon|NASA
 0914015|AS13-62-8926|||Moon|NASA
 0914135|AS13-62-8927|||Moon|NASA
 0914155|AS13-62-8928|||Moon|NASA
+0914440|AS13-61-8865|||Moon-accidental exposure|NASA
+0914456|AS13-61-8866|||Moon|NASA
 0941502|AS13-62-8929|||Interior of Spacecraft. Emergency rig lithium hydroxide unit|NASA
 0941548|AS13-62-8930|||Interior of Spacecraft. Emergency rig lithium hydroxide unit|NASA
-0944500|AS13-60-8720|||Earth, North Africa and the Atlantic Ocean|NASA
-0945200|AS13-60-8721|||Earth, North Africa and the Atlantic Ocean|NASA
 0945620|AS13-60-8722|||Moon eastern hemisphere|NASA
 0945640|AS13-60-8723|||Moon eastern hemisphere|NASA
 0945700|AS13-60-8724|||Moon eastern hemisphere|NASA
-0955047|AS13-61-8866|||Moon|NASA
 0955049|AS13-61-8876|||Assembled CO2 scrubber canister, mounted on the ECS in the LM|NASA
-0955058|AS13-61-8867|||Earth through LMP LM window|NASA
 0955101|AS13-61-8877|||Assembled CO2 scrubber canister, mounted on the ECS in the LM|NASA
 0955220|AS13-61-8868|||Moon through the CDR LM window|NASA
 0955220|AS13-61-8878|||Assembled CO2 scrubber canister in the LM docking tunnel|NASA
@@ -393,106 +391,108 @@
 0962514|AS13-62-8939|||Moon|NASA
 0962525|AS13-62-8940|||Moon|NASA
 0971552|AS13-62-8941|||LM RCS Thruster|NASA
-0971610|AS13-62-8942|||Possibly a shot trying to show later venting|NASA
-0983901|AS13-62-8959|||CM from LM docking window|NASA
-0984121|AS13-62-8943|||Earth Caribbean Sea & North America|NASA
-0984333|AS13-62-8944|||Fred Haise looking out of the CDR LM window|NASA
-0984416|AS13-62-8945|||View of CM Main hatch seen from the LM docking window|NASA
-0984428|AS13-62-8946|||View of CM Main hatch seen from the LM docking window|NASA
-0984540|AS13-62-8947|||Earth Caribbean Sea & North America|NASA
-0984621|AS13-62-8948|||Earth Caribbean Sea & North America|NASA
-0984803|AS13-62-8949|||Earth Caribbean Sea & North America|NASA
-0984926|AS13-62-8950|||Moon|NASA
-0984950|AS13-62-8951|||Moon|NASA
-0985017|AS13-62-8952|||Moon|NASA
-0985041|AS13-62-8953|||Moon|NASA
-0985206|AS13-62-8954|||Earth Caribbean Sea & North America through LMP LM window|NASA
-0985221|AS13-62-8955|||Sun and CM seen through the LM docking window|NASA
-0985239|AS13-62-8956|||Earth Caribbean Sea & North America|NASA
-0985612|AS13-62-8957|||Earth Caribbean Sea & North America|NASA
-0991515|AS13-60-8725|||Earth, North America|NASA
-0991704|AS13-60-8726|||Earth, North America|NASA
-0993846|AS13-62-8958|||CM from LM docking window|NASA
-0993928|AS13-62-8960|||CM, LM and Earth, North America and Pacific Ocean|NASA
-0994032|AS13-62-8961|||CM, LM and Earth, North America and Pacific Ocean|NASA
-1005455|AS13-62-8962|||Moon|NASA
-1005515|AS13-62-8963|||Moon|NASA
-1005536|AS13-62-8964|||Moon|NASA
-1015738|AS13-62-8965|||Exterior of CM through the LM docking window.|NASA
-1015825|AS13-62-8966|||Moon through the LM docking window also showing the CSM EVA light extended|NASA
-1015850|AS13-62-8967|||Moon through the LM docking window also showing the CSM EVA light extended|NASA
-1021625|AS13-62-8968|||Earth Pacific Ocean|NASA
-1021646|AS13-62-8969|||Earth Pacific Ocean|NASA
-1021706|AS13-62-8970|||Earth Pacific Ocean and CM exterior |NASA
-1021724|AS13-62-8971|||Earth Pacific Ocean and CM exterior |NASA
-1021747|AS13-62-8972|||Earth Pacific Ocean|NASA
-1021814|AS13-62-8973|||View of CM with bright sun reflection through LM docking window|NASA
-1021823|AS13-62-8974|||View of CM with bright sun reflection through LM docking window|NASA
-1021918|AS13-62-8975|||Possibly LM window shade rolled up|NASA
-1022131|AS13-62-8976|||CM main hatch through the LM docking window|NASA
-1022520|AS13-62-8977|||Earth Pacific Ocean|NASA
+0971858|AS13-62-8942|||Possibly a shot trying to show later venting|NASA
+1004716|AS13-60-8720|||Earth, North Africa and the Atlantic Ocean|NASA
+1004948|AS13-60-8721|||Earth, North Africa and the Atlantic Ocean|NASA
+1044558|AS13-60-8725|||Earth, North America|NASA
+1044620|AS13-60-8726|||Earth, North America|NASA
+1045721|AS13-62-8943|||Earth Caribbean Sea & North America|NASA
+1045933|AS13-62-8944|||Fred Haise looking out of the CDR LM window|NASA
+1050016|AS13-62-8945|||View of CM Main hatch seen from the LM docking window|NASA
+1050028|AS13-62-8946|||View of CM Main hatch seen from the LM docking window|NASA
+1050140|AS13-62-8947|||Earth Caribbean Sea & North America|NASA
+1050221|AS13-62-8948|||Earth Caribbean Sea & North America|NASA
+1050403|AS13-62-8949|||Earth Caribbean Sea & North America|NASA
+1050526|AS13-62-8950|||Moon|NASA
+1050550|AS13-62-8951|||Moon|NASA
+1050617|AS13-62-8952|||Moon|NASA
+1050641|AS13-62-8953|||Moon|NASA
+1050806|AS13-62-8954|||Earth Caribbean Sea & North America through LMP LM window|NASA
+1050821|AS13-62-8955|||Sun and CM seen through the LM docking window|NASA
+1050839|AS13-62-8956|||Earth Caribbean Sea & North America|NASA
+1051212|AS13-62-8957|||Earth Caribbean Sea & North America|NASA
+1055446|AS13-62-8958|||CM from LM docking window|NASA
+1055501|AS13-62-8959|||CM from LM docking window|NASA
+1055528|AS13-62-8960|||CM, LM and Earth, North America and Pacific Ocean|NASA
+1055632|AS13-62-8961|||CM, LM and Earth, North America and Pacific Ocean|NASA
+1071055|AS13-62-8962|||Moon|NASA
+1071115|AS13-62-8963|||Moon|NASA
+1071136|AS13-62-8964|||Moon|NASA
+1071238|AS13-62-8965|||Exterior of CM through the LM docking window.|NASA
+1071325|AS13-62-8966|||Moon through the LM docking window also showing the CSM EVA light extended|NASA
+1071350|AS13-62-8967|||Moon through the LM docking window also showing the CSM EVA light extended|NASA
+1071350|AS13-62-8968|||Earth Pacific Ocean|NASA
+1083247|AS13-62-8969|||Earth Pacific Ocean|NASA
+1083255|AS13-62-8970|||Earth Pacific Ocean and CM exterior |NASA
+1083304|AS13-62-8971|||Earth Pacific Ocean and CM exterior |NASA
+1083312|AS13-62-8972|||Earth Pacific Ocean|NASA
+1084227|AS13-62-8973|||View of CM with bright sun reflection through LM docking window|NASA
+1084235|AS13-62-8974|||View of CM with bright sun reflection through LM docking window|NASA
+1084245|AS13-62-8975|||Possibly LM window shade rolled up|NASA
+1084253|AS13-62-8976|||CM main hatch through the LM docking window|NASA
+1090227|AS13-62-8977|||Earth Pacific Ocean|NASA
 1130409|AS13-62-8978|||Moon|NASA
-1130812|AS13-62-8979|||Earth India, Indian Ocean|NASA
-1130854|AS13-62-8980|||Earth India, Indian Ocean|NASA
-1131009|AS13-62-8981|||Earth India, Indian Ocean|NASA
-1131048|AS13-62-8982|||Earth India, Indian Ocean|NASA
-1131206|AS13-62-8983|||Earth India, Indian Ocean|NASA
-1131336|AS13-62-8984|||Earth India, Indian Ocean|NASA
-1131513|AS13-62-8985|||Earth India, Indian Ocean|NASA
-1131608|AS13-62-8986|||Moon|NASA
-1131616|AS13-62-8987|||Moon|NASA
-1132701|AS13-62-8988|||Lovell resting at his station in the LM|NASA
-1132718|AS13-62-8989|||Lovell resting at his station in the LM|NASA
-1132732|AS13-62-8990|||Lovell resting at his station in the LM|NASA
-1132837|AS13-62-8991|||Moon|NASA
-1132848|AS13-62-8992|||Moon|NASA
-1133025|AS13-62-8993|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
-1133448|AS13-62-8994|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
-1133511|AS13-62-8995|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
-1133552|AS13-62-8996|||Earth overexposed|NASA
-1133559|AS13-62-8997|||Earth overexposed|NASA
-1133607|AS13-62-8998|||Earth overexposed|NASA
-1133736|AS13-62-8999|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
-1133821|AS13-62-9000|||Distant Moon|NASA
-1133826|AS13-62-9001|||Distant Moon|NASA
-1133830|AS13-62-9002|||Distant Moon|NASA
-1154200|AS13-62-9003|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|NASA
-1154219|AS13-62-9004|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|NASA
-1154320|AS13-62-9005|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|NASA
-1184322|AS13-62-9006|||Distant Moon|NASA
-1184346|AS13-62-9007|||Distant Moon|NASA
-1184405|AS13-62-9008|||Distant Moon|NASA
-1184424|AS13-62-9009|||Distant Moon|NASA
-1184442|AS13-62-9010|||Distant Moon|NASA
-1184712|AS13-62-9011|||Earth, Western Africa|NASA
-1185002|AS13-62-9012|||Earth, Western Africa|NASA
-1185208|AS13-62-9013|||Earth, Western Africa|NASA
-1185424|AS13-62-9014|||Earth, Western Africa|NASA
-1190520|AS13-62-9015|||Distant Moon|NASA
-1190538|AS13-62-9016|||Distant Moon|NASA
-1190601|AS13-62-9017|||Distant Moon|NASA
-1190848|AS13-62-9018|||Earth, Western Africa|NASA
-1191050|AS13-62-9019|||Earth, Western Africa|NASA
-1191246|AS13-62-9020|||Earth, Western Africa|NASA
-1191702|AS13-62-9021|||Distant Moon|NASA
-1191726|AS13-62-9022|||Distant Moon|NASA
-1191755|AS13-62-9023|||Distant Moon|NASA
-1192205|AS13-62-9024|||Earth, Eastern Atlantic Ocean|NASA
-1192336|AS13-62-9025|||Earth, Eastern Atlantic Ocean|NASA
-1192412|AS13-62-9026|||Earth, Eastern Atlantic Ocean|NASA
-1192626|AS13-62-9027|||Earth, Eastern Atlantic Ocean|NASA
-1193117|AS13-62-9028|||Earth, Eastern Atlantic Ocean|NASA
-1195702|AS13-62-9029|||CM through the LM docking window|NASA
-1195718|AS13-62-9030|||CM through the LM docking window|NASA
-1195740|AS13-62-9031|||CM through the LM docking window|NASA
-1195812|AS13-62-9032|||CM through the LM docking window|NASA
-1200014|AS13-62-9033|||Earth, Atlantic Ocean|NASA
-1200820|AS13-62-9034|||Earth, Atlantic Ocean|NASA
-1200909|AS13-62-9035|||Very distant Moon|NASA
-1201023|AS13-62-9036|||Earth, Atlantic Ocean|NASA
-1201211|AS13-62-9037|||Earth, Atlantic Ocean|NASA
-1201942|AS13-62-9038|||Earth, Atlantic Ocean|NASA
-1202005|AS13-62-9039|||Blurred imagery of LM docking window frame|NASA
+1185416|AS13-62-8979|||Earth India, Indian Ocean|NASA
+1185455|AS13-62-8980|||Earth India, Indian Ocean|NASA
+1185520|AS13-62-8981|||Earth India, Indian Ocean|NASA
+1185542|AS13-62-8982|||Earth India, Indian Ocean|NASA
+1185559|AS13-62-8983|||Earth India, Indian Ocean|NASA
+1185613|AS13-62-8984|||Earth India, Indian Ocean|NASA
+1185623|AS13-62-8985|||Earth India, Indian Ocean|NASA
+1190010|AS13-62-8986|||Moon|NASA
+1190016|AS13-62-8987|||Moon|NASA
+1191602|AS13-62-8988|||Lovell resting at his station in the LM|NASA
+1191607|AS13-62-8989|||Lovell resting at his station in the LM|NASA
+1191613|AS13-62-8990|||Lovell resting at his station in the LM|NASA
+1191630|AS13-62-8991|||Moon|NASA
+1191636|AS13-62-8992|||Moon|NASA
+1191957|AS13-62-8993|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
+1192008|AS13-62-8994|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
+1192017|AS13-62-8995|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
+1192024|AS13-62-8996|||Earth overexposed|NASA
+1192031|AS13-62-8997|||Earth overexposed|NASA
+1192040|AS13-62-8998|||Earth overexposed|NASA
+1192051|AS13-62-8999|||Earth, India, Indian Ocean, Asia and Saudi Arabia|NASA
+1192317|AS13-62-9000|||Distant Moon|NASA
+1192325|AS13-62-9001|||Distant Moon|NASA
+1192332|AS13-62-9002|||Distant Moon|NASA
+1193600|AS13-62-9003|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|NASA
+1193603|AS13-62-9004|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|NASA
+1193608|AS13-62-9005|||Swigert & Lovell working on air lines in LM. Double LioH cannister by ECS|NASA
+1220812|AS13-62-9006|||Distant Moon|NASA
+1220820|AS13-62-9007|||Distant Moon|NASA
+1220827|AS13-62-9008|||Distant Moon|NASA
+1220833|AS13-62-9009|||Distant Moon|NASA
+1220841|AS13-62-9010|||Distant Moon|NASA
+1244621|AS13-62-9011|||Earth, Western Africa|NASA
+1244646|AS13-62-9013|||Earth, Western Africa|NASA
+1244700|AS13-62-9012|||Earth, Western Africa|NASA
+1244700|AS13-62-9014|||Earth, Western Africa|NASA
+1244958|AS13-62-9015|||Distant Moon|NASA
+1245009|AS13-62-9016|||Distant Moon|NASA
+1245017|AS13-62-9017|||Distant Moon|NASA
+1245208|AS13-62-9018|||Earth, Western Africa|NASA
+1245215|AS13-62-9019|||Earth, Western Africa|NASA
+1245224|AS13-62-9020|||Earth, Western Africa|NASA
+1245516|AS13-62-9021|||Distant Moon|NASA
+1245524|AS13-62-9022|||Distant Moon|NASA
+1245533|AS13-62-9023|||Distant Moon|NASA
+1270726|AS13-62-9024|||Earth, Eastern Atlantic Ocean|NASA
+1270740|AS13-62-9025|||Earth, Eastern Atlantic Ocean|NASA
+1270751|AS13-62-9026|||Earth, Eastern Atlantic Ocean|NASA
+1270805|AS13-62-9027|||Earth, Eastern Atlantic Ocean|NASA
+1270826|AS13-62-9028|||Earth, Eastern Atlantic Ocean|NASA
+1271813|AS13-62-9029|||CM through the LM docking window|NASA
+1271821|AS13-62-9030|||CM through the LM docking window|NASA
+1271830|AS13-62-9031|||CM through the LM docking window|NASA
+1271847|AS13-62-9032|||CM through the LM docking window|NASA
+1272242|AS13-62-9033|||Earth, Atlantic Ocean|NASA
+1272255|AS13-62-9034|||Earth, Atlantic Ocean|NASA
+1272636|AS13-62-9035|||Very distant Moon|NASA
+1273145|AS13-62-9036|||Earth, Atlantic Ocean|NASA
+1273158|AS13-62-9037|||Earth, Atlantic Ocean|NASA
+1273216|AS13-62-9038|||Earth, Atlantic Ocean|NASA
+1273225|AS13-62-9039|||Blurred imagery of LM docking window frame|NASA
 1344400|AS13-59-8482|||Haise in the LM Aquarius talking to Lovell|NASA
 1344408|AS13-59-8483|||Haise in the LM Aquarius talking to Lovell|NASA
 1344420|AS13-59-8484|||Lovell in the LM Aquarius|NASA
@@ -511,6 +511,12 @@
 1361912|AS13-59-8497|||Earth , India, S E Asia, Indian Ocean|NASA
 1361928|AS13-59-8498|||Earth , India, S E Asia, Indian Ocean|NASA
 1361940|AS13-59-8499|||Earth , India, S E Asia, Indian Ocean|NASA
+1371554|AS13-63-9040|||Earth with reflections in the LM window|NASA
+1371610|AS13-63-9041|||Earth with reflections in the LM window|NASA
+1371622|AS13-63-9042|||Earth with reflections in the LM window|NASA
+1371638|AS13-63-9043|||Earth with reflections in the LM window|NASA
+1371652|AS13-63-9044|||Earth with reflections in the LM window|NASA
+1371704|AS13-63-9045|||Earth with reflections in the LM window|NASA
 1380444|AS13-59-8500|||Service Module, with Moon in distant background|NASA
 1380447|AS13-59-8501|||Service Module, with Moon in distant background|NASA
 1380452|AS13-59-8502|||Edge of Command Module taken by the CDR through the LM docking window whilst the LM pitch up was being initiated|NASA
@@ -586,12 +592,6 @@
 1381201|AS13-59-8546|||SM following jettison and distant Moon taken by CDR through LM right window|NASA
 1381203|AS13-59-8547|||SM following jettison and distant Moon taken by CDR through LM right window|NASA
 1381206|AS13-59-8548|||SM following jettison and distant Moon taken by CDR through LM right window|NASA
-1392002|AS13-63-9040|||Earth with reflections in the LM window|NASA
-1392017|AS13-63-9041|||Earth with reflections in the LM window|NASA
-1392033|AS13-63-9042|||Earth with reflections in the LM window|NASA
-1392042|AS13-63-9043|||Earth with reflections in the LM window|NASA
-1392051|AS13-63-9044|||Earth with reflections in the LM window|NASA
-1392102|AS13-63-9045|||Earth with reflections in the LM window|NASA
 1412944|AS13-59-8549|||LM from the CM just prior to jettison|NASA
 1412947|AS13-59-8550|||LM from the CM just prior to jettison|NASA
 1412949|AS13-59-8551|||LM from the CM just prior to jettison|NASA
@@ -637,7 +637,7 @@
 1434332|S70-35629||S70-35629.jpg||NASA
 1435259|S70-15653|ap13-S70-15653.jpg||Navy divers pose with the Command Module before it is hoisted aboard the Iwo Jima.|NASA
 1435309|S70-15841|ap13-S70-15841.jpg||Navy divers pose with the Command Module before it is hoisted aboard the Iwo Jima.|NASA
-1435315|S70-16000|ap13-S70-16000.jpg||Navy divers prepare the Command Module for hoisting.ï¿½|NASA
+1435315|S70-16000|ap13-S70-16000.jpg||Navy divers prepare the Command Module for hoisting. |NASA
 1435432|S70-35632|ap13-S70-35632.jpg||The Apollo 13 Command Module being hosted aboard the Iwo Jima. 17 April 1970.|NASA
 1435631|S70-15531|ap13-S70-15531.jpg||The Apollo 13 Command Module after being hosted aboard the Iwo Jima.|NASA
 1435734|S70-15520|ap13-S70-15520.jpg||Jim Lovell (left), Fred Haise, and Jack Swigert receive a phone call on board the Iwo Jima. The fact that it is a group call and that a photo was taken suggest that the call is from President Nixon.|NASA

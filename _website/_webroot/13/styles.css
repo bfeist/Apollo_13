@@ -1731,6 +1731,22 @@ header {
   margin-top: 2px;
 }
 
+.info-wrapper .content #GETButtonLabel {
+    position: absolute;
+    top: 0;
+}
+
+input[name='missionElapsedTime'] {
+    background-color: #1e1e1e;
+    color: #999999;
+    border: 1px;
+    margin: 3px;
+    padding-right: 4px;
+    padding-left: 4px;
+    text-align: center;
+    width: 92px;
+}
+
 .navigator-wrapper {
     flex: none;
     flex-grow: 1;
@@ -1944,7 +1960,25 @@ img.aspect-holder {
     background-repeat: no-repeat;
     overflow: hidden;
     padding: 5px;
+    cursor: pointer;
     transition(height 250ms ease-in-out);
+}
+
+#graph-overlay {
+    display: none;
+    position:absolute;
+    bottom:6px;
+    left:0;
+    height:42px;
+    width:100%;
+    /*background: #ffd923;*/
+    /*background: #000000;*/
+    background-image: url("img/graph_overlay_450.png");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 5px;
+    cursor: pointer;
+transition(height 250ms ease-in-out);
 }
 
 .give{

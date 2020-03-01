@@ -71,7 +71,19 @@
                 <div class="subtitle">Real-Time Mission Experience</div>
                 <div class="historicalDate date">Thu Dec 07 1972</div>
                 <div class="historicalTime time">12:32:00 AM</div>
-                <div id="missionTime">Mission Elapsed Time: <span class="missionElapsedTime">000:00:00</span></div>
+                <div class="GETWrapper" id="missionTime" style="display: flex;">
+                    <div style="flex: 1;">Ground Elapsed Time (GET):</div>
+                    <div style="flex: 1;">
+                        <input type="text" size="9" id="missionElapsedTime" name="missionElapsedTime" value="000:00:00">
+                    </div>
+                    <div class="button-row small" style="flex: 1;">
+                        <a class="splash-btn subdued" id="GETBtn" title="Jump to GET">
+                            <span id="GETButtonLabel">GO</span>
+                            <span class="sr-only">Jump to Ground Elapsed Time</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -89,7 +101,8 @@
                     <!-- video -->
                     <img src="img/4x3.png" class="aspect-holder">
                     <div class="player-wrapper">
-                        <div id="LRO-overlay" onclick='window.open("https://lunar.gsfc.nasa.gov/about.html");'></div>
+                        <div id="LRO-overlay"></div>
+                        <div id="graph-overlay"></div>
                         <div class="search-overlay">
                             <div style="display: flex; flex-direction: row;">
                                 <span class="title">Search</span>
@@ -166,7 +179,7 @@
                     <div class="button-row medium">
                         <a class="splash-btn subdued" id="shareBtn" title="Share this moment on Twitter">
                             <span id="shareBtnLabel">SHARE</span>
-                            <span class="sr-only">Share this moment on Twitter</span>
+                            <span class="sr-only">Share this moment</span>
                         </a>
                         <a class="splash-btn subdued pause" id="playPauseBtn" title="Play/Pause">
                             <span id="playPauseBtnLabel">PAUSE</span>

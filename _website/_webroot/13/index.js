@@ -235,8 +235,8 @@ function setAutoScrollPoller() {
         gCurrMissionTime = secondsToTimeStr(totalSec);
 
         if (gCurrMissionTime !== gLastTimeIdChecked) {
-            if (parseInt(totalSec) % 10 === 0) { //every 10 seconds, fire a playing event
-                // ga('send', 'event', 'playback', 'playing', gCurrMissionTime);
+            if (parseInt(totalSec) % 30 === 0) { //every 30 seconds, fire a playing event
+                ga('send', 'event', 'playback', 'playing', gCurrMissionTime);
             }
 
             var timeId = timeStrToTimeId(gCurrMissionTime);
@@ -582,8 +582,12 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
 
     var timezoneOffset = -(new Date().getTimezoneOffset() / 60);
     var timezoneOffsetString = timezoneOffset.toString();
-    var timezoneOffsetPaddingAmount = 3 - timezoneOffsetString.length;
-    for (var i = 0; i <= timezoneOffsetPaddingAmount; i++) {
+    var absTimezoneOffset = Math.abs(parseInt(timezoneOffsetString)).toString();
+    if (timezoneOffsetString === absTimezoneOffset) { //if positive timezone offset, add a +
+        timezoneOffsetString = '+' + timezoneOffsetString;
+    }
+    var timezoneOffsetPaddingAmount = 3 - absTimezoneOffset.length;
+    for (var i = 0; i < timezoneOffsetPaddingAmount; i++) {
         timezoneOffsetString = timezoneOffsetString + "0";
     }
 
@@ -594,7 +598,10 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     //$(".historicalTime").text(historicalDate.toLocaleTimeString().match(/^[^:]+(:\d\d){2} *(am|pm)\b/i)[0]);  //.replace(/([AP]M)$/, ""));
     //$(".historicalTimeAMPM").text(historicalDate.toLocaleTimeString().match(/([AP]M)/)[0])
 
-    $(".missionElapsedTime").text(gCurrMissionTime);
+
+    if (document.getElementById('missionElapsedTime') !== document.activeElement) {
+        $('input[name=missionElapsedTime]').val(gCurrMissionTime);
+    }
 }
 
 function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" button
@@ -1477,27 +1484,21 @@ function manageOverlaysAutodisplay(timeId) {
     var inVideoSegment = false;
     var dashboardOverlaySelector = $('.dashboard-overlay');
     var LROOverlaySelector = $('#LRO-overlay');
+    var graphOverlaySelector = $('#graph-overlay');
     for (var counter = 0; counter < gVideoSegments.length; counter ++) {
         if (timeStrToSeconds(gVideoSegments[counter][0]) <= timeIdToSeconds(timeId) && timeStrToSeconds(gVideoSegments[counter][1]) >= timeIdToSeconds(timeId)) {
             inVideoSegment = true;
             //Fade in LRO message if it hasn't been displayed in this video segment yet
             if (gVideoSegments[counter][2] === "3D") {
-                // if (gLastLROOverlaySegment != gVideoSegments[counter][0]) {
-                //     gLastLROOverlaySegment = gVideoSegments[counter][0];
-                //     trace("manageOverlaysAutodisplay():In LRO segment");
-                //     $('#LRO-overlay').fadeIn();
-                //     setTimeout(function () {
-                //         $('#LRO-overlay').fadeOut();
-                //     }, 8000);
-                // }
-                // } else { //when on non-3D video segment
-                //     gLastLROOverlaySegment = ''; //reset LRO overlay rule. This causes LRO overlay to show after jumping back onto a different video, then playing into LRO segment
                 if (LROOverlaySelector.is(':hidden'))
-                    // $('#LRO-overlay').css('display', 'block');
+                    graphOverlaySelector.fadeOut();
                     LROOverlaySelector.fadeIn();
+            } else if (gVideoSegments[counter][2] === "graph") {
+                LROOverlaySelector.fadeOut();
+                graphOverlaySelector.fadeIn();
             } else {
                 if (LROOverlaySelector.is(':visible'))
-                    // $('#LRO-overlay').css('display', 'none');
+                    graphOverlaySelector.fadeOut();
                     LROOverlaySelector.fadeOut();
             }
             //hide dashboard overlay if it is displayed (once per video segment)
@@ -1512,6 +1513,9 @@ function manageOverlaysAutodisplay(timeId) {
     if (!inVideoSegment && LROOverlaySelector.is(':visible'))
         // $('#LRO-overlay').css('display', 'none');
         LROOverlaySelector.fadeOut();
+    if (!inVideoSegment && graphOverlaySelector.is(':visible'))
+        // $('#LRO-overlay').css('display', 'none');
+        graphOverlaySelector.fadeOut();
 
     if (!inVideoSegment && dashboardOverlaySelector.css('display').toLowerCase() === 'none' && !gDashboardManuallyToggled) {
         showDashboardOverlay();
@@ -2026,6 +2030,16 @@ jQuery(function ($) {
     activateContentTab('transcriptTab');
     //buttons
 
+    $('#GETBtn')
+        .click(function(){
+            ga('send', 'event', 'button', 'click', 'GET');
+            try {
+                seekToTime(timeStrToTimeId($('input[name=missionElapsedTime]').val()));
+            } catch(err) {
+                trace("GET seek error: " + err.message);
+            }
+        });
+
     $("#searchBtn")
         .click(function(){
             ga('send', 'event', 'button', 'click', 'search');
@@ -2193,6 +2207,17 @@ jQuery(function ($) {
         closeMOCRviz();
         openSpacecraftDetails();
     });
+
+    $("#LRO-overlay").click(function(){
+        ga('send', 'event', 'tab', 'click', 'LRO-overlay');
+        window.open('https://lunar.gsfc.nasa.gov/about.html', '_blank')
+    });
+
+    $("#graph-overlay").click(function(){
+        ga('send', 'event', 'tab', 'click', 'LRO-overlay');
+        window.open(cMediaCdnRoot + '/documents/A13_Mission_Ops_Report_lowres_courtesy_Andy_Anderson_v3.pdf', '_blank')
+    });
+
 });
 
 function activateContentTab(tabId) {

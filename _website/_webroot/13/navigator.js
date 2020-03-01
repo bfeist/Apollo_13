@@ -454,7 +454,7 @@ function drawTier1() {
         var rectTop = (gTier1Top + gTier1Height) - gTier1Height / gHeightVideoRectDenominator;
         var rectHeight = gTier1Height / gHeightVideoRectDenominator;
         var vidRect = new paper.Path.Rectangle(rectStartX, rectTop, rectWidth, rectHeight);
-        if (gVideoSegments[i][2] === "3D") {
+        if (gVideoSegments[i][2] !== '') { //if 3D or graph
             vidRect.fillColor = gColorVideo3DRenderRegionStroke;
             vidRect.strokeColor = gColorVideo3DRenderRegionStroke;
         } else {
@@ -690,7 +690,7 @@ function drawTier2(forceRefresh) {
                 var rectTop = (gTier2Top + gTier2Height) - gTier2Height / gHeightVideoRectDenominator;
                 var rectHeight = gTier2Height / gHeightVideoRectDenominator - 2;
                 var vidRect = new paper.Path.Rectangle(rectStartX, rectTop, rectWidth, rectHeight);
-                if (gVideoSegments[i][2] === "3D") {
+                if (gVideoSegments[i][2] !== '') { //if 3D or graph
                     vidRect.fillColor = gColorVideo3DRenderRegionStroke;
                     vidRect.strokeColor = gColorVideo3DRenderRegionStroke;
                 } else {
@@ -1054,7 +1054,7 @@ function drawTier3(forceRefresh, drawForwardForScrolling) {
                 var rectTop = (gTier3Top + gTier3Height) - gTier3Height / gHeightVideoRectDenominator;
                 var rectHeight = gTier3Height / gHeightVideoRectDenominator - 2;
                 var vidRect = new paper.Path.Rectangle(rectStartX, rectTop, rectWidth, rectHeight);
-                if (gVideoSegments[i][2] === "3D") {
+                if (gVideoSegments[i][2] !== '') { //if 3D or graph
                     vidRect.fillColor = gColorVideo3DRenderRegionBackground;
                     vidRect.strokeColor = gColorVideo3DRenderRegionStroke;
                 } else {
