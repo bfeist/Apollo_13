@@ -1498,8 +1498,9 @@ function manageOverlaysAutodisplay(timeId) {
                 graphOverlaySelector.fadeIn();
             } else {
                 if (LROOverlaySelector.is(':visible'))
-                    graphOverlaySelector.fadeOut();
                     LROOverlaySelector.fadeOut();
+                if (graphOverlaySelector.is(':visible'))
+                    graphOverlaySelector.fadeOut();
             }
             //hide dashboard overlay if it is displayed (once per video segment)
             if (dashboardOverlaySelector.css('display').toLowerCase() !== 'none' && gLastVideoSegmentDashboardHidden !== gVideoSegments[counter][0] && !gDashboardManuallyToggled) {

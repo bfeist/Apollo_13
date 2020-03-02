@@ -93,7 +93,7 @@ for i in range(len(HR1_complete_activity)):
     complete_activity_item = HR1_complete_activity[i] + HR2_nested_item
     complete_activity.append(complete_activity_item.copy())
 
-os.makedirs(root_path + 'tape_activity')
+# os.makedirs(root_path + 'tape_activity')
 
 lastIterativeItem = 0
 for i in range(1000, len(complete_activity), 1000):
