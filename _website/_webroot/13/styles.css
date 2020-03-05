@@ -2359,6 +2359,14 @@ transition(height 250ms ease-in-out);
     color: #5E92A6;
     /*font-size: 18px;*/
     font-size: 1.2em;
+    margin-top: 1em;
+}
+
+#spacecraft-overlay .introduction .section-subheader2 {
+    /*color: #FFF;*/
+    color: #5E92A6;
+    /*font-size: 18px;*/
+    font-size: 1.1em;
 }
 
 #spacecraft-overlay .introduction .attribution {

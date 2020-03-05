@@ -1,4 +1,4 @@
-var cMissionDurationSeconds = 518400;
+var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cAppStartGET = -102;
 
@@ -312,8 +312,8 @@ function mainApplication() {
         }
         gCurrGETSeconds = gCurrGETSeconds + mouseGEToffset;
         gCurrGETSeconds = gCurrGETSeconds < cCountdownSeconds * -1 ? cCountdownSeconds * -1 : gCurrGETSeconds;
-        if (gCurrGETSeconds > (cMissionDurationSeconds - cCountdownSeconds)) {
-            gCurrGETSeconds = cMissionDurationSeconds - cCountdownSeconds;
+        if (gCurrGETSeconds > (cMissionDurationSeconds + cCountdownSeconds)) {
+            gCurrGETSeconds = cMissionDurationSeconds + cCountdownSeconds;
         }
         gLastRoundedGET = Math.round(gCurrGETSeconds);
 
