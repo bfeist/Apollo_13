@@ -150,6 +150,8 @@ window.onload = function() {
     document.getElementById('myCanvas').addEventListener("mouseleave", function(event) {
         trace("canvas mouseleave triggered");
         gTooltipGroup.removeChildren();
+        channelButtons_mouseleave();
+        isometric_dots_mouseleave();
     });
 
     var channelButtons = document.querySelectorAll('.btn-channel');
