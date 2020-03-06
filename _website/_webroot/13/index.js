@@ -580,7 +580,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     var historicalDate = new Date(timeidDate.getTime()); //for display only
     $(".historicalDate").text(historicalDate.toDateString());
 
-    var timezoneOffset = -(new Date().getTimezoneOffset() / 60);
+    var timezoneOffset = -(new Date(cLaunchDate).getTimezoneOffset() / 60);
     var timezoneOffsetString = timezoneOffset.toString();
     var absTimezoneOffset = Math.abs(parseInt(timezoneOffsetString)).toString();
     if (timezoneOffsetString === absTimezoneOffset) { //if positive timezone offset, add a +
@@ -2035,7 +2035,9 @@ jQuery(function ($) {
         .click(function(){
             ga('send', 'event', 'button', 'click', 'GET');
             try {
-                seekToTime(timeStrToTimeId($('input[name=missionElapsedTime]').val()));
+                var GETinput = $('input[name=missionElapsedTime]').val();
+                GETinput = padZeros(GETinput, 9);
+                seekToTime(timeStrToTimeId(GETinput));
             } catch(err) {
                 trace("GET seek error: " + err.message);
             }
