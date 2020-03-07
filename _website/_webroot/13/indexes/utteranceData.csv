@@ -13349,7 +13349,7 @@
 1060433|LMP|About how far out are we now, Jack?|T
 1060449|Lousma|Okay, Aquarius. You're 150,000 miles and you're coming in at 4,500 feet a second. That's from the Earth.|C
 1060501|LMP|Okay. We're at 100 - Yes. 150 K, 4500 feet a second.|T
-1060501|PAO|This is Apollo Control. Our LM control officer reports that - |P
+1060523|PAO|This is Apollo Control. Our LM control officer reports that -|P
 1060527|Lousma|And, Aquarius, how much TTCA control did you have to do in the burn?|C
 1060534|LMP|How much - What was that, Jack?|T
 1060536|Lousma|How much control of the TTCA did you have to do during the burn?|C
@@ -14158,7 +14158,8 @@
 1191241|Kerwin|Go ahead, Jim.|C
 1191244|CDR|Volt 39.4, amp 1.26.|T
 1191249|Kerwin|Okay. Roger that. And, Jim, we ought to have a - an entry time line to discuss with you in one hour.|C
-1191249|PAO|This is Apollo Control 119 hours 17 minutes ground elapsed time. Spacecraft position 112,224 nautical miles out from Earth. Velocity continuing to build up. Now 5,478 feet per second. Looking now at entry interface time of 142 hours 40 minutes 42 seconds which according to the count down clock is some 23 hours 22 minutes from now. Got a midcourse correction burn something less than 2 feet per second which may or may not be done some 18 hours 22 minutes from now which is entry minus 5 hours. Cabin pressure aboard Aquarius holding around 4.7 pounds. Communication still rather scratchy, from time to time spacecraft Communicator Joe Kerwin requests the crew to give amp pressure and voltage readouts on the battery charge going on and has been underway since about 112 hours. At 119 hours 19 minutes ground elapsed time this is Apollo Control.|P
+1191721|PAO|This is Apollo Control 119 hours 17 minutes ground elapsed time. Spacecraft position 112,224 nautical miles out from Earth. Velocity continuing to build up. Now 5,478 feet per second. Looking now at entry interface time of 142 hours 40 minutes 42 seconds which according to the count down clock is some 23 hours 22 minutes from now. Got a midcourse correction burn something less than 2 feet per second which may or may not be done some 18 hours 22 minutes from now which is entry minus 5 hours. Cabin pressure aboard Aquarius holding around 4.7 pounds. Communication still rather scratchy, from time to time spacecraft Communicator Joe Kerwin requests the crew to give amp pressure and voltage readouts on the battery charge going on and has been underway since about 112 hours. At 119 hours 19 minutes ground elapsed time this is Apollo Control.|P
+1194405|PAO|This is Apollo Control 119 hours 44 minutes ground elapsed time. 22 hours 56 minutes to entry interface 400,000 feet. 17 hours 56 minutes to next midcourse correction, if it is indeed performed. Cabin pressure in the Lunar Module holding at 4.94 pounds per square inch. Partial pressure of carbon dioxide in the cabin 1/10 of a millimeter of mercury. And in the consumables for the Lunar Module, the remaining lifetime of various consumables, total usable remaining water 111.4 pounds. The present usage rate is 2-1/2 pounds an hour and the time remaining at this present rate 163 hours ground elapsed time when the water would be defunct. Oxygen aboard 33.43 pounds, using 0.26 pounds per hour. This oxygen would run out at 247 hours. Electrical power total usable remaining amp hours 974, using about 17.9 amp hours or amps at the present time. This would be exhausted at 173 hours ground elapsed time. Lithium hydroxide cartridges total remaining 180 hours. This is for the Lunar Module standard consumables, does not include the life time on the portable life support systems. At 119 hours 46 minutes ground elapsed time and standing by this is Apollo Control.|P
 1195932|Kerwin|Aquarius, Houston. Over.|C
 1195936|CDR|Go ahead.|T
 1195938|Kerwin|Guess what.|C
@@ -14180,7 +14181,7 @@
 1201808|Kerwin|Roger. No sweat. Jim, in a few minutes I'm going to be coming at you with the - with the overall time line for tomorrow morning. You might want to think about taking a few notes, although we don't have detailed procedures for you at this time. Maybe you want to have Fred or Jack listen. Over.|C
 1201833|CDR|Right. We're all set to copy.|T
 1201835|Kerwin|Okay.|C
-1201835|PAO|This is Apollo Control. 120 hours 20 minutes Apollo 13 is 108,867 nautical miles from Earth. Velocity 5,585 feet per second. We're drawing an average of 18 to 19 amps from the descent stage batteries now that we continue to charge the Battery A in the Command Module. Lunar Module cabin temperature 51.|P
+1202014|PAO|This is Apollo Control. 120 hours 20 minutes Apollo 13 is 108,867 nautical miles from Earth. Velocity 5,585 feet per second. We're drawing an average of 18 to 19 amps from the descent stage batteries now that we continue to charge the Battery A in the Command Module. Lunar Module cabin temperature 51.|P
 1202100|Kerwin|Aquarius, Houston. Over.|C
 1202103|CDR|Go ahead.|T
 1202105|Kerwin|For our benefit while we do this briefing, Jim, we'd like to have the, the COMM better, and we can sure spare the power; so we'd like you on panel 16 to close the POWER AMPLIFIER circuit breaker, and on panel 12 we'd like you to move the VOICE FUNCTION switch to VOICE. Over.|C
@@ -14245,12 +14246,12 @@
 1204605|Kerwin|6.50 degrees. And, Jim, Houston. I guess, as a last item we expect that it will take us about an hour to update your checklist and your time lines sometime later on today, and we'd just like you to consider that. I expect it'll be 3 or 4 hours before we have all that stuff ready.|C
 1204632|CDR|Okay. We'll be standing by for that, and now POWER AMPLIFIER switch is going to go off, and then we'll be going to DOWN VOICE BACKUP.|T
 1204639|Kerwin|Okay.|C
-1204639|PAO|This is Apollo Control at 120 hours 47 minutes. Flight Director, Glynn Lunney, of the Black Team is on his way to the MSC Auditorium for a change of shift news conference. Glynn Lunney is on his way to the MSC Auditorium for a news conference.|P
+1204715|PAO|This is Apollo Control at 120 hours 47 minutes. Flight Director, Glynn Lunney, of the Black Team is on his way to the MSC Auditorium for a change of shift news conference. Glynn Lunney is on his way to the MSC Auditorium for a news conference.|P
 1205513|Brand|Aquaris, Houston.|C
+1205652|PAO|This is Apollo Control, the change of shift news conference will begin momentarily.|P
 1205658|CDR|Houston, Aquarius.|T
-1205658|PAO|This is Apollo Control, the change of shift news conference will begin momentarily.|P
 1205707|Brand|Aquarius, Houston. Go ahead.|C
-1205707|PAO|Capcom now is Astronaut Vance Brand.|P
+1205715|PAO|The Capcom now is Astronaut Vance Brand.|P
 1205727|CDR|Houston, Aquarius.|T
 1205728|Brand|Roger, Jim. We're receiving you now. Go ahead.|C
 1205734|CDR|Okay. I thought you were calling, but I guess we had a ground switching problem down there.|T
@@ -14261,7 +14262,7 @@
 1205913|Brand|Go ahead, Jim.|C
 1205916|CDR|Okay. Volts are 39.5; amps, 1.25.|T
 1205923|Brand|Roger. Copy 39.5 and 1.25. Thank you.|C
-1205923|PAO|This is Apollo Control, the Neil Armstrong News Conference will begin momentarily in the MSC auditorium.|P
+1214637|PAO|This is Apollo Control, the Neil Armstrong News Conference will begin momentarily in the MSC auditorium.|P
 1214731|Brand|Aqurius, Houston. Over.|C
 1214737|CDR|Aquarius, here. Go ahead Houston.|T
 1214740|Brand|Say, Jim, could you give us another reading on the Battery A voltage and bat charger current on the CSM please.|C
@@ -14318,7 +14319,7 @@
 1221930|CDR|Vance, you might be interested - the way we're - the way we got this thing arranged, we have one helmet attached to the COMM lines attached to the LM hoses, and the guy that's got the duty wears the helmet, so the other people are free to maneuver.|T
 1221948|Brand|Right. That's understandable. One guy's on the leash, huh?|C
 1221958|CDR|Yes. ...|T
-1221958|PAO|This is Apollo Control at 122 hours, 24 minutes. We plan to take another telemetered look at the command module before too long. Readout the thermo parameters. Apollo 13 is 102,019 nautical miles from Earth; velocity 5,819 feet per second. Current load now is about 19 amps. Cabin pressure is 4.98 pounds per square inch. Temperature 52 degrees.|P
+1222416|PAO|This is Apollo Control at 122 hours, 24 minutes. We plan to take another telemetered look at the command module before too long. Readout the thermo parameters. Apollo 13 is 102,019 nautical miles from Earth; velocity 5,819 feet per second. Current load now is about 19 amps. Cabin pressure is 4.98 pounds per square inch. Temperature 52 degrees.|P
 1222510|Brand|Aquarius, Houston.|C
 1222515|CDR|Go ahead.|T
 1222517|Brand|Jim, when you get finished moving your stowage around and it's convenient, we'd like to terminate the battery charge for a little while to bring up the CM TM so we can take a look at the temperatures again, like we did yesterday. Advise that right now on your batteries, you have 111 amp-hours; and, eventually, we hope to have them up - peaked up to about 116. One other point, we - we can either read that procedure up again which involves cranking up the telemetry, or, if Jack still has it, we can use his notes and - but I have one or two changes to - to make on them. Over.|C
@@ -14404,14 +14405,14 @@
 1225839|Brand|Okay. We copy that, and we owe you an answer on your last question.|C
 1225846|CMP|Okay. And I'm in work, going to give you some telemetry.|T
 1225851|Brand|Okay.|C
-1225851|PAO|This is Apollo Control at 123 hours, 2 minutes. Apollo 13 is less than 100,000 miles from Earth now, 99,868 nautical miles. Velocity 5,897 feet per second.|P
+1230227|PAO|This is Apollo Control at 123 hours, 2 minutes. Apollo 13 is less than 100,000 miles from Earth now, 99,868 nautical miles. Velocity 5,897 feet per second.|P
 1230621|Brand|Aquarius, Houston. We're receiving CSM data now.|C
 1230627|LMP|Roger.|T
 1230908|Brand|Aquarius, Houston.|C
 1230915|LMP|Say again, Vance.|T
 1230917|Brand|Fred, we just lost data on Aquar - on Jack. Would you have him select best OMNI, please?|C
 1230927|LMP|Okay.|T
-1230927|PAO|This is Apollo Control at 123 hours 9 minutes. We are using LM power for this Command and Service Module telemetry check. The current is up now to 24 amps.|P
+1230956|PAO|This is Apollo Control at 123 hours 9 minutes. We are using LM power for this Command and Service Module telemetry check. The current is up now to 24 amps.|P
 1231134|Brand|Aquarius, Houston.|C
 1231139|LMP|Go ahead, Houston.|T
 1231141|Brand|Fred, we have enough data; recommend that Jack take off the TM and power back down again, using his backout procedure. Just let us know when he does it.|C
@@ -14498,7 +14499,7 @@
 1234639|CMP|Just for curiosity's sake, are we still holding entry angle at 6.25?|T
 1234659|Brand|Okay. Jack, right now we're told that it's closer to 6, and - But they would like to track it some more. Looks like your next midcourse will be in the order of 2 to 3 foot per second.|C
 1234716|CMP|Okay.|T
-1234716|PAO|This is Apollo Control at 123 hours 48 minutes. Apollo 13 is 97,232 nautical miles from Earth, velocity 5,996 feet per second. We are 18 hours 52 minutes away from entry at 400,000 feet. And if the crew is satisfied with the integrity of the Command Module tunnel hatch, they will make this reentry unsuited.|P
+1234820|PAO|This is Apollo Control at 123 hours 48 minutes. Apollo 13 is 97,232 nautical miles from Earth, velocity 5,996 feet per second. We are 18 hours 52 minutes away from entry at 400,000 feet. And if the crew is satisfied with the integrity of the Command Module tunnel hatch, they will make this reentry unsuited.|P
 1235403|CMP|I just got a good view of the Southern Cross, Alpha and Beta Centauri, and Atria.|T
 1235640|CMP|Houston, 13.|T
 1235645|Brand|Go ahead, Jack.|C
@@ -14529,7 +14530,7 @@
 1240601|CMP|Okay, Vance. We've withdrawn - oh, about 8 ounces of water.|T
 1240609|Brand|Okay, Jack. How's it taste?|C
 1240618|CMP|It's - good. It's not quite as gaseous as that in the command module.|T
-1240618|PAO|This is Apollo Control at 124 hours 15 minutes. Apollo 13 now 95,638 nautical miles from Earth; velocity 6,057 feet per second. The temperature in the LM cabin now reading 51 degrees, pressure 4.98 pounds per square inch; carbon dioxide partial pressure 2/10ths of a millimeter of mercury.|P
+1241548|PAO|This is Apollo Control at 124 hours 15 minutes. Apollo 13 now 95,638 nautical miles from Earth; velocity 6,057 feet per second. The temperature in the LM cabin now reading 51 degrees, pressure 4.98 pounds per square inch; carbon dioxide partial pressure 2/10ths of a millimeter of mercury.|P
 1241716|Brand|Apollo 13, Houston - or rather, Aquarius, Houston. Over.|C
 1241723|CMP|Go ahead.|T
 1241725|Brand|Hey, Jack, we need another reading. Volts and amps.|C
@@ -14570,7 +14571,7 @@
 1244748|Brand|That's right, Jim.|C
 1244752|CDR|Okay. My procedure, now, after service module JETT is going to be to pitch up, in order to try to get the service module into the - to get the center window in view of the service module, which we are going to have somebody there - to photograph. Why do you think window 5 will be it?|T
 1244835|Brand|Okay. Stand by on that one. This is a question of geometry, and I'll get right back.|C
-1244835|PAO|This is Apollo Control at 124 hours 55 minutes. Apollo 13 now 93,329 nautical miles from Earth, velocity 6,148 feet per second. We're 12 hours 45 minutes away from the planned last midcourse correction. Tracking to date indicates that would be about a 3.4 feet per second DELTA-V. If it stays around that number, it will probably be done with the reaction control system, it would be a 25 second duration burn with reaction control system. Capcom Vance Brand will pass up more information here shortly on the photography task as the Service Module separates and we will stand by for that.|P
+1245505|PAO|This is Apollo Control at 124 hours 55 minutes. Apollo 13 now 93,329 nautical miles from Earth, velocity 6,148 feet per second. We're 12 hours 45 minutes away from the planned last midcourse correction. Tracking to date indicates that would be about a 3.4 feet per second DELTA-V. If it stays around that number, it will probably be done with the reaction control system, it would be a 25 second duration burn with reaction control system. Capcom Vance Brand will pass up more information here shortly on the photography task as the Service Module separates and we will stand by for that.|P
 1245810|Brand|Aquarius, Houston. Over.|C
 1245814|CDR|Go ahead, Houston.|T
 1245816|Brand|Jim, regarding window 5, I have a drawing here; and, when you're docked, you have approximately a 60-degree angle between the Z-axes of the two spacecraft. It appears that peering out window 5, you would be looking at the rendezvous radar on top of the LM which would, if you pitched, more or less give you a view of the service module. That is, if you pitched, so - from - and I think that this has been run by quite a few folks here; so, offhand, I can't see where any other window would be as good or perhaps even possible.|C
@@ -14590,7 +14591,7 @@
 1251912|CDR|Okay. We have no more water in the potable tank. We tried to get some more out a few minutes ago, and there isn't any.|T
 1251921|Brand|Okay. Understand you ran out of water in the CM potable tank.|C
 1251927|CDR|Affirmative.|T
-1252428|PAO|This is Apollo Control at 125 hours, 24 minutes. We have an update now on the lunar module consumables lifetime. These figures include powering up the LM at 136 hours, 15 minutes elapse time. Including that power up we have enough water for 30.7 more hours. The - enough oxygen for 140 -|P
+1252429|PAO|This is Apollo Control at 125 hours, 24 minutes. We have an update now on the lunar module consumables lifetime. These figures include powering up the LM at 136 hours, 15 minutes elapse time. Including that power up we have enough water for 30.7 more hours. The - enough oxygen for 140 -|P
 1252517|Brand|Aquarius, Houston. Over.|C
 1252538|PAO| - enough oxygen for 146 hours, and - |P
 1252550|Brand|Aquarius, Houston. Over.|C
