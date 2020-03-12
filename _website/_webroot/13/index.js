@@ -2,8 +2,8 @@ trace("INIT: Loading index.js");
 //app control flags
 var cStopCache = false;
 
-var cMediaCdnRoot = 'https://media.apolloinrealtime.org/A13';
-// var cMediaCdnRoot = 'https://keycdnmedia.apolloinrealtime.org/A13'; //keycdn pulling from dreamhost
+// var cMediaCdnRoot = 'https://media.apolloinrealtime.org/A13';
+var cMediaCdnRoot = 'https://keycdnmedia.apolloinrealtime.org/A13'; //keycdn pulling from dreamhost
 // var cMediaCdnRoot = 'https://keycdnmediado.apolloinrealtime.org/A13';  //keycdn pulling from digitalocean space
 
 // var cLPIImageRoot = 'https://www.lpi.usra.edu/resources/apollo/images';

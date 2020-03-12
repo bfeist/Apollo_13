@@ -2,8 +2,8 @@ var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cAppStartGET = -102;
 
-var cTapeCdnRoot = 'https://media.apolloinrealtime.org/A13/MOCR_audio';
-// var cTapeCdnRoot = 'https://keycdnmedia.apolloinrealtime.org/A13/MOCR_audio'; //keycdn pulling from dreamhost
+// var cTapeCdnRoot = 'https://media.apolloinrealtime.org/A13/MOCR_audio';
+var cTapeCdnRoot = 'https://keycdnmedia.apolloinrealtime.org/A13/MOCR_audio'; //keycdn pulling from dreamhost
 // var cTapeCdnRoot = 'https://keycdnmediado.apolloinrealtime.org/A13/MOCR_audio';  //keycdn pulling from digitalocean space
 // var cTapeCdnRoot = parent.cMediaCdnRoot + '/MOCR_audio';
 
@@ -1232,6 +1232,9 @@ function getTapeActivityRanges(activeSec) {
         var endRange = 645438;
     } else {
         endRange = nearestEnd + 1000;
+    }
+    if (nearestStart > nearestEnd) {
+        trace("!!!!!!!!!!! getTapeActivityRanges bug")
     }
     var tapesActivity3filename = "tape_activity_" + nearestEnd.toString() + "-" + (endRange - 1).toString() + ".json";
 
