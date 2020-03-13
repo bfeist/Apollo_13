@@ -802,7 +802,7 @@
 001:01:10|C|Kerwin|Apollo 13, Houston through Honeysuckle.
 001:01:15|T|CDR|Roger, Houston; 13 here. Reading you loud and clear.
 001:01:19|C|Kerwin|Okay. S-band sounds good, Jim.
-001:03:21|T|LMP|[Very weak.] Ah, Houston, 13.
+001:03:21|T|LMP|Ah, Houston, 13.
 001:03:24|C|Kerwin|Go ahead, 13.
 001:03:26|T|LMP|Would it be okay if I crank up the FM after we leave Honeysuckle here?
 001:03:37|C|Kerwin|You're coming in weak. I didn't quite copy it.
@@ -875,7 +875,7 @@
 001:19:06|P|PAO|<b>Kapryan:</b> Let me check here. Here it is. It was 600 milliseconds late.
 001:19:33|P|PAO|<b>King:</b>2:13.00.6
 001:19:40|P|PAO|<b>King:</b> Okay, thank you very much. That completes the conference. We should be coming back up on acquisition in about 10 minutes.
-001:19:48|P|PAO|<b>Kapryan:</b> [Mumbling to PAO.] There's on thing I said that I'm not sure I knew ... what it does to the timeline -
+001:19:48|P|PAO|<b>Kapryan:</b>There's on thing I said that I'm not sure I knew ... what it does to the timeline -
 001:28:01|P|PAO|This is Apollo Control at 1 hour, 28 minutes. We'll be re-establishing radio communications with Apollo 13 in about 40 seconds as the spaceship comes within range of the Guaymas, Mexico tracking station. During the launch phase, the medic reports the following heart rates. These are maximum heart rates for the three crewmen. Commander Jim Lovell had a maximum heart rate during the launch of 116; the Command Module Pilot Jack Swigert had a maximum heart rate of 102; and the Lunar Module Pilot Fred Haise also had a maximum heart rate of 102.
 001:28:40|C|Kerwin|Apollo 13, Houston through Guaymas. Over.
 001:28:44|P|PAO|CapCom Joe Kerwin has just put in a call to the crew through Guaymas. We'll stand by.
@@ -1244,7 +1244,7 @@
 003:21:49|C|Kerwin|No, Fred, it's not. We've got a bright spot where the window is. The rest of you are semi-silhouetted. It's a pretty impressive picture.
 003:22:36|C|Kerwin|Apollo 13, Houston.
 003:22:38|T|CMP|Go ahead, Joe.
-003:22:40|C|Kerwin|For Fred. The IOS [?] has caught you with the fuel cell reactant values in latch again.
+003:22:40|C|Kerwin|For Fred. The IOS has caught you with the fuel cell reactant values in latch again.
 003:22:52|T|CDR|Touch&eacute;.
 003:22:54|C|Kerwin|And we have word that the propellant usage for T&D was nominal.
 003:23:01|T|CMP|Okay, what is nominal, please?
@@ -1706,7 +1706,7 @@
 010:31:43|T|CMP|Yeah, about half of it's covered with clouds.
 010:35:03|T|S/C|[Music.]
 010:37:27|P|PAO|This is Apollo Control at 10 hours, 37 minutes. Apollo 13 is 52,141 nautical miles [96,565 km] from Earth. Velocity, 8,250 feet per second [2,515 m/s].
-010:39:21|T|CMP|[Faint.] Houston, 13.
+010:39:21|T|CMP|Houston, 13.
 010:39:25|T|CMP|Houston, Apollo 13.
 010:39:28|C|Brand|This is Houston. Go ahead.
 010:39:30|T|CMP|Okay, Vance. Are you copying the torquing angles of the P52 option 3?
@@ -1714,7 +1714,7 @@
 010:39:51|T|CMP|Okay.
 010:39:56|C|Brand|Okay. We've got 'em. Go ahead and torque 'em, Jack.
 010:40:01|T|CMP|Okay. That was stars 20 and 27 and star-angle difference is five balls, and the time at torquing would be 10 hours, 40 minutes, 15 seconds.
-010:40:15|C|Brand|1 hour [means 10 hours], 40 minutes and 15 seconds; 20 and 27 stars; and five balls. Roger.
+010:40:15|C|Brand|1 hour , 40 minutes and 15 seconds; 20 and 27 stars; and five balls. Roger.
 010:51:33|C|Brand|Apollo 13, Houston.
 010:51:37|T|CMP|Go ahead, Vance.
 010:51:40|C|Brand|Time to look out your window for us again.
