@@ -30,12 +30,12 @@ outputFile.close()
 outputFile = open(outputFilePath, "a")
 
 for url in urlArray:
-    # request = requests.get('https://history.nasa.gov/afj/ap13fj/' + url)
-    # pageAscii = request.text.encode('ascii', 'ignore').decode('ascii')
-    # lines = pageAscii.split("\r\n")
-    data = open('../ap13fj/' + url, 'r')
-    pageAscii = data.read()
-    lines = pageAscii.split("\n")
+    request = requests.get('https://history.nasa.gov/afj/ap13fj/' + url)
+    pageAscii = request.text.encode('ascii', 'ignore').decode('ascii')
+    lines = pageAscii.split("\r\n")
+    # data = open('../ap13fj/' + url, 'r')
+    # pageAscii = data.read()
+    # lines = pageAscii.split("\n")
 
     timestamp = ''
     commentary = ''
