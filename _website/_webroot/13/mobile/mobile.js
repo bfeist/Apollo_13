@@ -2,10 +2,10 @@
 var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cDefaultStartTimeId = '-000102';
-var cLaunchDate = Date.parse("1970-04-11 14:13 -500");
-var cLaunchDateModern = Date.parse("2020-04-11 14:13 -500");
-var cCountdownStartDate = Date.parse("1970-04-10 2:55:50 -500"); //35 hours, 17 minutes, 10 seconds before launch
-var cCountdownStartDateModern = Date.parse("2020-04-10 2:55:50 -500");
+var cLaunchDate = Date.parse("1970-04-11 19:13:00 GMT");
+var cLaunchDateModern = Date.parse("2020-04-11 19:13:00 GMT");
+var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 GMT"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse("2020-04-10 7:55:50 GMT");
 
 var gCurrMissionTime = '';
 var gActiveChannel = 14;
@@ -164,7 +164,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         conversionMultiplier = -1;
     }
 
-    var timeidDate = new Date(cLaunchDate.getTime());
+    var timeidDate = new Date(cLaunchDateModern.getTime());
 
     timeidDate.add({
         hours: hours * conversionMultiplier,
@@ -172,11 +172,28 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         seconds: seconds * conversionMultiplier
     });
 
-    var historicalDate = new Date(timeidDate.getTime()); //for display only
-    $(".historicalDate").text(historicalDate.toDateString());
+    // var historicalDate = new Date(timeidDate.getTime()); //for display only
+    // $(".historicalDate").text(historicalDate.toDateString());
+
+    var month_names_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+    $(".historicalDate").text(days[timeidDate.getDay()] + ' ' + month_names_short[timeidDate.getMonth()] + " " + timeidDate.getDate() + " " + cLaunchDate.getFullYear() + " ");
+
+    var timezoneOffset = -(new Date(cLaunchDateModern).getTimezoneOffset() / 60);
+    var timezoneOffsetString = timezoneOffset.toString();
+    var absTimezoneOffset = Math.abs(parseInt(timezoneOffsetString)).toString();
+    if (timezoneOffsetString === absTimezoneOffset) { //if positive timezone offset, add a +
+        timezoneOffsetString = '+' + timezoneOffsetString;
+    }
+    var timezoneOffsetPaddingAmount = 3 - absTimezoneOffset.length;
+    for (var i = 0; i < timezoneOffsetPaddingAmount; i++) {
+        timezoneOffsetString = timezoneOffsetString + "0";
+    }
+
+    // console.log("Timezone offset: " + timezoneOffsetString);
 
     var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-    $(".historicalTime").text(historicalDate.toLocaleTimeString('en-US', options));
+    $(".historicalTime").text(timeidDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
 
     // $(".missionElapsedTime").text(gCurrMissionTime);
 }

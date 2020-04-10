@@ -23,10 +23,10 @@ var cYouTubeSDorHD = 0; //0 for SD  1 for HD
 var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cDefaultStartTimeId = '-000102';
-var cLaunchDate = Date.parse("1970-04-11 14:13 -500");
-var cLaunchDateModern = Date.parse("2020-04-11 14:13 -500");
-var cCountdownStartDate = Date.parse("1970-04-10 2:55:50 -500"); //35 hours, 17 minutes, 10 seconds before launch
-var cCountdownStartDateModern = Date.parse("2020-04-10 2:55:50 -500");
+var cLaunchDate = Date.parse("1970-04-11 19:13:00 GMT");
+var cLaunchDateModern = Date.parse("2020-04-11 19:13:00 GMT");
+var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 GMT"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse("2020-04-10 7:55:50 GMT");
 
 var cBackground_color_active = "#1e1e1e";
 
@@ -569,7 +569,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         conversionMultiplier = -1;
     }
 
-    var timeidDate = new Date(cLaunchDate.getTime());
+    var timeidDate = new Date(cLaunchDateModern.getTime());
 
     timeidDate.add({
         hours: hours * conversionMultiplier,
@@ -577,10 +577,21 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         seconds: seconds * conversionMultiplier
     });
 
-    var historicalDate = new Date(timeidDate.getTime()); //for display only
-    $(".historicalDate").text(historicalDate.toDateString());
+    // var historicalDate = new Date(timeidDate.getTime()); //for display only
 
-    var timezoneOffset = -(new Date(cLaunchDate).getTimezoneOffset() / 60);
+    // //DST kludge
+    // historicalDate.add({
+    //     hours: 1,
+    //     minutes: 0,
+    //     seconds: 0
+    // });
+
+    var month_names_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+    $(".historicalDate").text(days[timeidDate.getDay()] + ' ' + month_names_short[timeidDate.getMonth()] + " " + timeidDate.getDate() + " " + cLaunchDate.getFullYear() + " ");
+
+    var timezoneOffset = -(new Date(cLaunchDateModern).getTimezoneOffset() / 60);
     var timezoneOffsetString = timezoneOffset.toString();
     var absTimezoneOffset = Math.abs(parseInt(timezoneOffsetString)).toString();
     if (timezoneOffsetString === absTimezoneOffset) { //if positive timezone offset, add a +
@@ -594,7 +605,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     // console.log("Timezone offset: " + timezoneOffsetString);
 
     var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-    $(".historicalTime").text(historicalDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
+    $(".historicalTime").text(timeidDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
     //$(".historicalTime").text(historicalDate.toLocaleTimeString().match(/^[^:]+(:\d\d){2} *(am|pm)\b/i)[0]);  //.replace(/([AP]M)$/, ""));
     //$(".historicalTimeAMPM").text(historicalDate.toLocaleTimeString().match(/([AP]M)/)[0])
 
