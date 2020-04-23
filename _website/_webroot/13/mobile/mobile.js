@@ -124,6 +124,8 @@ function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" bu
         dayOfMonth = nowDate.getDate() - 7;
     } else if (nowDate.getDate() > 24 && nowDate.getDate() <= 31) {
         dayOfMonth = nowDate.getDate() - 14;
+    } else {
+        dayOfMonth = nowDate.getDate();
     }
     histDate.setDate(dayOfMonth);
 

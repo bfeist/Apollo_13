@@ -643,6 +643,8 @@ function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" bu
         dayOfMonth = nowDate.getDate() - 7;
     } else if (nowDate.getDate() > 24 && nowDate.getDate() <= 31) {
         dayOfMonth = nowDate.getDate() - 14;
+    } else {
+        dayOfMonth = nowDate.getDate();
     }
     histDate.setDate(dayOfMonth);
 
@@ -2309,7 +2311,7 @@ function setSplashHistoricalSubtext() {
         //$('.section.now').css('display', '');
        // $('.historicalSubtext').html("<b>Mission Anniversary</b><BR>Exactly 50 years ago");
    // } else {
-        $('.historicalSubtext').text("50 years ago");  //todo make this calculate how many years ago
+        $('.historicalSubtext').text("~50 years ago");  //todo make this calculate how many years ago
    //      $('.historicalSubtext').text("49 years, 11 months ago");  //todo make this calculate how many years ago
    // }
 }

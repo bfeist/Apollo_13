@@ -156,12 +156,12 @@
 0563933|2|Trying to raise pressure in O2 tank 1
 0564806|2|Starting a survey of onboard displays
 0565707|2|Close reactant valves on fuel cell 3
-0570612|2|Kranz accidentally on the comm loop. Lunney takes over
+0570612|2|Kranz accidentally on the comm loop.
+0570615|1|Black Team (Lunney) relieves White Team (Kranz)
 0571504|2|Close reactant valves on fuel cell 1
-0572354|2|Swigert reports O2 tank pressure is falling
+0572412|2|Considering "LM Lifeboat"
 0573447|2|Lousma reads procedure to turn on LM power
 0574131|1|Lousma orders the crew to move into the LM
-0574544|1|Black Team (Lunney) relieves White Team (Kranz)
 0575755|1|LM radio signal received
 0580039|2|Didn't think I'd be back in this soon.
 0580226|2|Haise and Lovell program LM computer
@@ -354,7 +354,7 @@
 1423936|1|Reentering Earth's Atmosphere
 1425440|1|Recovering crew from spacecraft
 1433800|1|Crew onboard USS Iwo Jima
-1435857|2|Paine repeats president's congratulations
+1433857|2|Paine repeats president's congratulations
 1434132|2|Apollo 13 crew arrives on Iwo Jima
 1435020|2|Mission plaque hung in mission control
 1435708|2|Crew phone call with the president
@@ -364,8 +364,8 @@
 1441859|1|Post-flight press conferences (Paine)
 1442129|2|White team press conference
 1442610|2|Paine interview
-1443630|2|Non-realtime: Medal of freedom presentation to Mission Control in Houston (April 16, 1970)
-1450306|2|Non-realtime: Medal of freedom presentation in Hawaii (April 18, 1970)
+1443630|2|Non-realtime: Medal of freedom presentation to Mission Control in Houston (April 18, 1970)
+1450306|2|Non-realtime: Medal of freedom presentation in Hawaii (April 19, 1970)
 1453226|2|Non-realtime: Post-flight crew press conference
 1463645|2|Non-realtime: Investigation press conference (April 21, 1970)
 1465336|2|Non-realtime: News clips of public during mission (silent)

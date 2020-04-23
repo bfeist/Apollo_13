@@ -2083,7 +2083,7 @@ transition(height 250ms ease-in-out);
     /*border: 2px solid rgba(140, 140, 140, 1);*/
     /*border: 2px solid rgba(215, 160, 108, 1);*/
     border: 2px solid #5E92A6;
-    overflow: hidden;
+    overflow: scroll;
     padding: 5px;
     transition(height 250ms ease-in-out);
 
