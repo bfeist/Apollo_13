@@ -3,8 +3,8 @@ trace("INIT: Loading index.js");
 var cStopCache = false;
 
 // var cMediaCdnRoot = 'https://media.apolloinrealtime.org/A13';
-// var cMediaCdnRoot = 'https://keycdnmedia.apolloinrealtime.org/A13'; //keycdn pulling from dreamhost
-var cMediaCdnRoot = 'https://keycdnmediado.apolloinrealtime.org/A13';  //keycdn pulling from digitalocean space
+var cMediaCdnRoot = 'https://keycdnmedia.apolloinrealtime.org/A13'; //keycdn pulling from dreamhost
+// var cMediaCdnRoot = 'https://keycdnmediado.apolloinrealtime.org/A13';  //keycdn pulling from digitalocean space
 
 // var cLPIImageRoot = 'https://www.lpi.usra.edu/resources/apollo/images';
 // var cLPIImageRoot = 'https://keycdnlpicache.apolloinrealtime.org/resources/apollo/images';
@@ -569,7 +569,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         conversionMultiplier = -1;
     }
 
-    var timeidDate = new Date(cLaunchDateModern.getTime());
+    var timeidDate = new Date(cLaunchDate.getTime());
 
     timeidDate.add({
         hours: hours * conversionMultiplier,
