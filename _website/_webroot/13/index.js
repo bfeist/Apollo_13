@@ -570,6 +570,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     }
 
     var timeidDate = new Date(cLaunchDate.getTime());
+    var timeidDateModern = new Date(cLaunchDateModern.getTime());
 
     timeidDate.add({
         hours: hours * conversionMultiplier,
@@ -577,14 +578,11 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         seconds: seconds * conversionMultiplier
     });
 
-    // var historicalDate = new Date(timeidDate.getTime()); //for display only
-
-    // //DST kludge
-    // historicalDate.add({
-    //     hours: 1,
-    //     minutes: 0,
-    //     seconds: 0
-    // });
+    timeidDateModern.add({
+        hours: hours * conversionMultiplier,
+        minutes: minutes * conversionMultiplier,
+        seconds: seconds * conversionMultiplier
+    });
 
     var month_names_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
@@ -605,10 +603,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     // console.log("Timezone offset: " + timezoneOffsetString);
 
     var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-    $(".historicalTime").text(timeidDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
-    //$(".historicalTime").text(historicalDate.toLocaleTimeString().match(/^[^:]+(:\d\d){2} *(am|pm)\b/i)[0]);  //.replace(/([AP]M)$/, ""));
-    //$(".historicalTimeAMPM").text(historicalDate.toLocaleTimeString().match(/([AP]M)/)[0])
-
+    $(".historicalTime").text(timeidDateModern.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
 
     if (document.getElementById('missionElapsedTime') !== document.activeElement) {
         $('input[name=missionElapsedTime]').val(gCurrMissionTime);
@@ -616,21 +611,10 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
 }
 
 function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" button
-
-    //var nowDate = Date.parse("2015-12-06 10:00pm -500");
-
     var nowDate = Date.now();
     var histDate = new Date(nowDate.getTime());
 
-    // var nowDate = Date.now();
-    // //var histDate=new Date(nowDate.getTime());
-    // var dateAsString = nowDate.toUTCString();
-    // var histDateAsUTCString = dateAsString.substr(5,7) + cCountdownStartDate.getYear().toString() + " " + dateAsString.substr(16);
-    // //var histDate=nowDate.toUTCString
-    // var histDate=Date.parse(histDateAsUTCString);
-
     histDate.setMonth(cCountdownStartDateModern.getMonth());
-    // histDate.setYear(cCountdownStartDateModern.getYear());
 
     var dayOfMonth = 0;
     if (nowDate.getDate() <= 4) {
@@ -2311,7 +2295,7 @@ function setSplashHistoricalSubtext() {
         //$('.section.now').css('display', '');
        // $('.historicalSubtext').html("<b>Mission Anniversary</b><BR>Exactly 50 years ago");
    // } else {
-        $('.historicalSubtext').text("~50 years ago");  //todo make this calculate how many years ago
+   //      $('.historicalSubtext').text("~50 years ago");  //todo make this calculate how many years ago
    //      $('.historicalSubtext').text("49 years, 11 months ago");  //todo make this calculate how many years ago
    // }
 }
