@@ -620,7 +620,7 @@ function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" bu
     var dayOfMonth = 0;
     if (nowDate.getDate() <= 4) {
         dayOfMonth = nowDate.getDate() + 10;
-    } else if (nowDate.getDate() > 4 && nowDate.getDate() <= 10) {
+    } else if (nowDate.getDate() > 4 && nowDate.getDate() < 10) {
         dayOfMonth = nowDate.getDate() + 7;
     } else if (nowDate.getDate() >= 10 && nowDate.getDate() <= 17) {
         dayOfMonth = nowDate.getDate()
