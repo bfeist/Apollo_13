@@ -156,12 +156,12 @@
 056:39:33|2|Trying to raise pressure in O2 tank 1
 056:48:06|2|Starting a survey of onboard displays
 056:57:07|2|Close reactant valves on fuel cell 3
-057:06:12|2|Kranz accidentally on the comm loop. Lunney takes over
+057:06:12|2|Kranz accidentally on the comm loop.
+057:06:15|1|Black Team (Lunney) relieves White Team (Kranz)
 057:15:04|2|Close reactant valves on fuel cell 1
-057:23:54|2|Swigert reports O2 tank pressure is falling
+057:24:12|2|Considering "LM Lifeboat"
 057:34:47|2|Lousma reads procedure to turn on LM power
 057:41:31|1|Lousma orders the crew to move into the LM
-057:45:44|1|Black Team (Lunney) relieves White Team (Kranz)
 057:57:55|1|LM radio signal received
 058:00:39|2|"Didn't think I'd be back in this soon."
 058:02:26|2|Haise and Lovell program LM computer
@@ -191,7 +191,7 @@
 066:13:00|1|Gold Team (Griffin) relieves Black Team (Lunney)
 067:23:37|2|Mission control considers 'super fast' return
 067:38:00|2|President Nixon's reaction mentioned
-067:39:36|2|Change of shift press conference (audio only)
+067:39:36|2|Change of shift press conference
 068:03:33|2|Lovell speculates on "last lunar mission for a long time."
 072:28:47|2|Charlie Duke comes on line to talk about operations
 072:29:32|2|Haise and Duke joke about Duke's measles
@@ -259,7 +259,7 @@
 095:00:49|2|Fred talks about training for Apollo 8 backup crew
 095:12:48|1|Kerwin reads up a procedure for transferring LM power to CM
 095:24:02|2|Kerwin and Haise joke about doing an EVA
-096:19:48|2|Slayton Q&A with the press (video)
+096:19:48|2|Deke Slayton Q&A with the press (video)
 096:21:16|2|Kerwin reports A13 now at Earth's sphere of influence
 096:53:00|1|Brand takes over as CapCom
 097:14:26|2|Haise reports noise and 'snowflakes'
@@ -354,24 +354,24 @@
 142:39:36|1|Reentering Earth's Atmosphere
 142:54:40|1|Recovering crew from spacecraft
 143:38:00|1|Crew onboard USS Iwo Jima
-143:58:57|2|Paine repeats president's congratulations
+143:38:57|2|Paine repeats president's congratulations
 143:41:32|2|Apollo 13 crew arrives on Iwo Jima
 143:50:20|2|Mission plaque hung in mission control
-143:57:38|2|Crew phone call with the president
+143:57:08|2|Crew phone call with the president
 144:01:11|2|Italian media reporter
 144:10:08|2|French media reporter
 144:14:25|2|Spanish media reporter
 144:18:59|1|Post-flight press conferences (Paine)
 144:21:29|2|White team press conference
 144:26:10|2|Paine interview
-144:36:46|2|Non-realtime: Medal of freedom presentation in Hawaii (April 18, 1970)
-145:06:06|2|Non-realtime: Post-flight crew press conference
-146:10:26|2|Non-realtime: Investigation press conference (April 21, 1970)
-146:27:17|2|Non-realtime: News clips of public during mission (silent)
-147:55:51|2|Non-realtime: Crew arrival at Elington AFB (silent)
-148:36:53|2|Non-realtime: 25th anniversary commemoration (1995)
-149:30:30|2|Non-realtime: Lovell and Haise Lunar EVA training
-149:56:36|2|Non-realtime: Assembly of Apollo 13's Saturn V
+144:36:30|2|Non-realtime: Medal of freedom presentation to Mission Control in Houston (April 18, 1970)
+145:03:06|2|Non-realtime: Medal of freedom presentation in Hawaii (April 19, 1970)
+145:32:26|2|Non-realtime: Post-flight crew press conference
+146:36:45|2|Non-realtime: Investigation press conference (April 21, 1970)
+146:53:36|2|Non-realtime: News clips of public during mission (silent)
+148:22:09|2|Non-realtime: Crew arrival at Elington AFB (silent)
+149:03:12|2|Non-realtime: 25th anniversary commemoration (1995)
+150:05:51|2|Non-realtime: Assembly of Apollo 13's Saturn V
 150:11:11|2|Non-realtime: Altitute chamber test
 150:16:48|2|Non-realtime: Lovell, Mattingly, Haise Lunar EVA training
 150:39:41|2|Non-realtime: Lovell and Haise outdoor Lunar EVA training

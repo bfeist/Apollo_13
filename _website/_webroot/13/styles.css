@@ -974,8 +974,6 @@ body.splash-loaded .splash-content {
     height: 100%;
     position: absolute;
 }
-
-
 .splash-content .about {
   position: relative;
   /*background-color: rgba(255,255,255,.2);*/
@@ -988,27 +986,6 @@ body.splash-loaded .splash-content {
     padding: 2em 3em 0 2em;
     float: left;
 }
-/*.splash-content h3 span {*/
-  /*margin: 0 1em;*/
-/*}*/
-/*.splash-content h1,*/
-/*.splash-content h2,*/
-/*.splash-content h3 {*/
-  /*margin-top: 1.75rem;*/
-/*}*/
-/*.splash-content h1 {*/
-  /*font-size: 2em;*/
-  /*color: #FFF;*/
-  /*line-height: 1;*/
-/*}*/
-/*.splash-content h2 {*/
-  /*color: #FFF;*/
-  /*font-size: 1.1em;*/
-/*}*/
-/*.splash-content h3 {*/
-  /*font-size: .8em;*/
-  /*color: #5E92A6;*/
-/*}*/
 
 .splash-content .actions {
     float: left;
@@ -1220,6 +1197,25 @@ body.splash-loaded .splash-content {
     font-weight: 700;
 }
 
+.splash-btn.credits {
+    display: block;
+    float: left;
+    width: 10em;
+    height: 1em;
+    font-size: 1em;
+    /*font-family: 'Michroma', sans-serif;*/
+    font-family: 'Oswald', sans-serif;
+    /*font-family: 'Roboto Mono', sans-serif;*/
+    /*font-weight: 700;*/
+    border-right: 1px solid rgba(130, 130, 130, .65);
+    border-bottom: 1px solid rgba(130, 130, 130, .65);
+    background-color: #828282;
+    /*background-color: rgba(130, 130, 130, .8);*/
+    box-shadow: inset -1px -1px 7px 3px #515151;
+    padding: 1em 1em 2.3em 1em;
+    margin-top: 2em;
+}
+
 body.app-ready .splash-btn,
 body.app-ready .splash-btn:visited,
 body.app-ready .splash-btn:hover,
@@ -1280,26 +1276,6 @@ body.app-ready .splash-btn.activated:active,
 body.app-ready .splash-btn.activated.selected {
     background-color: #c0c0c0;
 }
-
-.splash-btn.credits {
-    display: block;
-    float: left;
-    width: 10em;
-    height: 1em;
-    font-size: 1em;
-    /*font-family: 'Michroma', sans-serif;*/
-    font-family: 'Oswald', sans-serif;
-    /*font-family: 'Roboto Mono', sans-serif;*/
-    /*font-weight: 700;*/
-    border-right: 1px solid rgba(130, 130, 130, .65);
-    border-bottom: 1px solid rgba(130, 130, 130, .65);
-    background-color: #828282;
-    /*background-color: rgba(130, 130, 130, .8);*/
-    box-shadow: inset -1px -1px 7px 3px #515151;
-    padding: 1em 1em 2.3em 1em;
-    margin-top: 2em;
-}
-
 
 .blink_me {
     animation: blinker 0.2s step-start infinite;
@@ -2083,7 +2059,7 @@ transition(height 250ms ease-in-out);
     /*border: 2px solid rgba(140, 140, 140, 1);*/
     /*border: 2px solid rgba(215, 160, 108, 1);*/
     border: 2px solid #5E92A6;
-    overflow: hidden;
+    overflow: scroll;
     padding: 5px;
     transition(height 250ms ease-in-out);
 
@@ -2641,101 +2617,12 @@ table.geoPapersTable th:first-child {
   flex: 4 0 auto;
 }
 
-/*@media only screen and (max-width: 767px) {*/
-  /*.splash-content:before {*/
-    /*!*padding-bottom: 25em;*!*/
-    /*!*opacity: .25;*!*/
-    /*height: 15rem;*/
-    /*background-position: center bottom;*/
-    /*bottom: auto;*/
-  /*}*/
-  /*.splash-content .about {*/
-    /*width: auto;*/
-    /*padding: 1.5em 1.5em 0 1.5em;*/
-  /*}*/
-  /*.splash-content .actions {*/
-    /*width: auto;*/
-    /*padding: 1em 1.5em 1em 1.5em;*/
-  /*}*/
-  /*.splash-btn {*/
-    /*font-size: .7em;*/
-    /*padding-right: .5em;*/
-  /*}*/
-  /*.splash-content .content-wrapper:after {*/
-    /*display: none;*/
-  /*}*/
-  /*.splash-content .content-wrapper {*/
-    /*padding-right: 0;*/
-    /*border-bottom: 1px solid #CCC;*/
-    /*padding-bottom: 1em;*/
-    /*margin-bottom: 1.25em;*/
-  /*}*/
-  /*.splash-content .actions .section div {*/
-    /*font-size: .85em;*/
-  /*}*/
-  /*.splash-content h1 {*/
-    /*font-size: 1.3em;*/
-    /*min-height: 13rem;*/
-    /*line-height: 1.4;*/
-  /*}*/
-  /*.splash-content h2 {*/
-    /*font-size: .9em;*/
-  /*}*/
-  /*.splash-content h3 {*/
-    /*font-size: .75em;*/
-  /*}*/
-  /*.splash-content h2,*/
-  /*.splash-content h3 {*/
-    /*margin-bottom: 1rem;*/
-  /*}*/
-  /*.patch-overlay {*/
-    /*display: none;*/
-  /*}*/
-/*}*/
 
 @media only screen and (max-width: 1225px) {
     .splash-content .actions {
         top: 150px;
     }
 }
-
-/*@media only screen and (min-width: 768px) and (max-width: 1023px) {*/
-    /*.splash-content {*/
-        /*font-size: 17.5px;*/
-    /*}*/
-    /*.splash-content .content-wrapper:after {*/
-        /*display: none;*/
-    /*}*/
-    /*.splash-content .about {*/
-        /*width: auto;*/
-        /*padding-right: 0;*/
-        /*padding: 3.5em 2.5em 0 2.5em;*/
-    /*}*/
-
-    /*.splash-content .content-wrapper {*/
-        /*padding-right: 0;*/
-    /*}*/
-
-    /*.splash-content .actions {*/
-        /*width: auto;*/
-        /*padding: 1em 2.5em 0 2.5em;*/
-    /*}*/
-    /*.splash-content .actions .section {*/
-        /*float: left;*/
-        /*width: 50%;*/
-        /*clear: none;*/
-        /*margin-top: 0 !important;*/
-        /*font-size: 0.8em;*/
-    /*}*/
-
-    /*.splash-content .actions .section:before, .splash-content .actions .section:after {*/
-        /*display: none;*/
-    /*}*/
-    /*.splash-content .actions .section:after {*/
-        /*clear: none;*/
-    /*}*/
-/*}*/
-
 @media only screen and (min-width: 1024px) and (max-width: 1279px) {
   .splash-content {
     font-size: 16px;

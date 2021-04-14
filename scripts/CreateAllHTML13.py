@@ -36,7 +36,7 @@ output_utterance_data_file = open(output_utterance_data_file_name_and_path, "a")
 # Read all utterances into a list
 cur_row = 0
 input_file_path = "../MISSION_DATA/A13_utterances.csv"
-utterance_reader = csv.reader(open(input_file_path, "rU"), delimiter='|')
+utterance_reader = csv.reader(open(input_file_path, "r"), delimiter='|')
 lasttimestamp = ''
 lastwho = ''
 utteranceLines = []
@@ -119,7 +119,7 @@ output_commentary_data_file = open(output_commentary_data_file_name_and_path, "a
 
 cur_row = 0
 input_file_path = "../MISSION_DATA/A13_commentary.csv"
-commentary_reader = csv.reader(open(input_file_path, "rU"), delimiter='|')
+commentary_reader = csv.reader(open(input_file_path, "r"), delimiter='|')
 for commentary_row in commentary_reader:
     cur_row += 1
     timeid = commentary_row[0].replace(":", "")
@@ -146,7 +146,7 @@ output_photo_index_file = open(output_photo_index_file_name_and_path, "a")
 photo_list = []
 tempRecord = []
 input_file_path = "../MISSION_DATA/A13_photos.csv"
-photos_reader = csv.reader(open(input_file_path, "rU"), delimiter='|')
+photos_reader = csv.reader(open(input_file_path, "r"), delimiter='|')
 # photocounter = 0
 for photo_row in photos_reader:
     tempRecord.clear()

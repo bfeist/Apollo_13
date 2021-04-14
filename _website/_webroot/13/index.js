@@ -23,10 +23,10 @@ var cYouTubeSDorHD = 0; //0 for SD  1 for HD
 var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
 var cDefaultStartTimeId = '-000102';
-var cLaunchDate = Date.parse("1970-04-11 14:13 -500");
-var cLaunchDateModern = Date.parse("2020-04-11 14:13 -500");
-var cCountdownStartDate = Date.parse("1970-04-10 2:55:50 -500"); //35 hours, 17 minutes, 10 seconds before launch
-var cCountdownStartDateModern = Date.parse("2020-04-10 2:55:50 -500");
+var cLaunchDate = Date.parse("1970-04-11 19:13:00 GMT");
+var cLaunchDateModern = Date.parse(Date.now().getFullYear().toString() + "-04-11 19:13:00 GMT");
+var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 GMT"); //35 hours, 17 minutes, 10 seconds before launch
+var cCountdownStartDateModern = Date.parse(Date.now().getFullYear().toString() + "-04-10 7:55:50 GMT");
 
 var cBackground_color_active = "#1e1e1e";
 
@@ -132,7 +132,8 @@ function onYouTubeIframeAPIReady() {
             autohide: 1,
             rel: 0,
             'controls': 0,
-            fs: 0
+            fs: 0,
+            playsinline: 1
         },
         events: {
             'onReady': onPlayerReady,
@@ -570,6 +571,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     }
 
     var timeidDate = new Date(cLaunchDate.getTime());
+    var timeidDateModern = new Date(cLaunchDateModern.getTime());
 
     timeidDate.add({
         hours: hours * conversionMultiplier,
@@ -577,10 +579,18 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
         seconds: seconds * conversionMultiplier
     });
 
-    var historicalDate = new Date(timeidDate.getTime()); //for display only
-    $(".historicalDate").text(historicalDate.toDateString());
+    timeidDateModern.add({
+        hours: hours * conversionMultiplier,
+        minutes: minutes * conversionMultiplier,
+        seconds: seconds * conversionMultiplier
+    });
 
-    var timezoneOffset = -(new Date(cLaunchDate).getTimezoneOffset() / 60);
+    var month_names_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
+
+    $(".historicalDate").text(days[timeidDate.getDay()] + ' ' + month_names_short[timeidDate.getMonth()] + " " + timeidDate.getDate() + " " + cLaunchDate.getFullYear() + " ");
+
+    var timezoneOffset = -(new Date(cLaunchDateModern).getTimezoneOffset() / 60);
     var timezoneOffsetString = timezoneOffset.toString();
     var absTimezoneOffset = Math.abs(parseInt(timezoneOffsetString)).toString();
     if (timezoneOffsetString === absTimezoneOffset) { //if positive timezone offset, add a +
@@ -594,10 +604,7 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
     // console.log("Timezone offset: " + timezoneOffsetString);
 
     var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-    $(".historicalTime").text(historicalDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
-    //$(".historicalTime").text(historicalDate.toLocaleTimeString().match(/^[^:]+(:\d\d){2} *(am|pm)\b/i)[0]);  //.replace(/([AP]M)$/, ""));
-    //$(".historicalTimeAMPM").text(historicalDate.toLocaleTimeString().match(/([AP]M)/)[0])
-
+    $(".historicalTime").text(timeidDateModern.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
 
     if (document.getElementById('missionElapsedTime') !== document.activeElement) {
         $('input[name=missionElapsedTime]').val(gCurrMissionTime);
@@ -605,26 +612,15 @@ function displayHistoricalTimeDifferenceByTimeId(timeId) {
 }
 
 function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" button
-
-    //var nowDate = Date.parse("2015-12-06 10:00pm -500");
-
     var nowDate = Date.now();
     var histDate = new Date(nowDate.getTime());
 
-    // var nowDate = Date.now();
-    // //var histDate=new Date(nowDate.getTime());
-    // var dateAsString = nowDate.toUTCString();
-    // var histDateAsUTCString = dateAsString.substr(5,7) + cCountdownStartDate.getYear().toString() + " " + dateAsString.substr(16);
-    // //var histDate=nowDate.toUTCString
-    // var histDate=Date.parse(histDateAsUTCString);
-
     histDate.setMonth(cCountdownStartDateModern.getMonth());
-    // histDate.setYear(cCountdownStartDateModern.getYear());
 
     var dayOfMonth = 0;
     if (nowDate.getDate() <= 4) {
         dayOfMonth = nowDate.getDate() + 10;
-    } else if (nowDate.getDate() > 4 && nowDate.getDate() <= 10) {
+    } else if (nowDate.getDate() > 4 && nowDate.getDate() < 10) {
         dayOfMonth = nowDate.getDate() + 7;
     } else if (nowDate.getDate() >= 10 && nowDate.getDate() <= 17) {
         dayOfMonth = nowDate.getDate()
@@ -632,6 +628,8 @@ function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" bu
         dayOfMonth = nowDate.getDate() - 7;
     } else if (nowDate.getDate() > 24 && nowDate.getDate() <= 31) {
         dayOfMonth = nowDate.getDate() - 14;
+    } else {
+        dayOfMonth = nowDate.getDate();
     }
     histDate.setDate(dayOfMonth);
 
@@ -2298,7 +2296,7 @@ function setSplashHistoricalSubtext() {
         //$('.section.now').css('display', '');
        // $('.historicalSubtext').html("<b>Mission Anniversary</b><BR>Exactly 50 years ago");
    // } else {
-        $('.historicalSubtext').text("50 years ago");  //todo make this calculate how many years ago
+   //      $('.historicalSubtext').text("~50 years ago");  //todo make this calculate how many years ago
    //      $('.historicalSubtext').text("49 years, 11 months ago");  //todo make this calculate how many years ago
    // }
 }
