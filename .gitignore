@@ -2,6 +2,11 @@
 ap13fj/
 .idea/
 Adobe Premiere Pro Auto-Save
+Adobe Premiere Pro Audio Previews
+Adobe Premiere Pro Video Previews
+From Stephen
 .DS_Store
-
+support
 _website/_webroot/11mp3
+venv/*
+**/spacecraft_dev
