@@ -1,583 +1,647 @@
 <html>
-    <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-    <meta http-equiv="Pragma" content="no-cache" />
-    <meta http-equiv="Expires" content="0" />
-    <link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
 
-    <title>Apollo 13 in Real Time</title>
-    <link rel="image_src" href="https://apolloinrealtime.org/13/img/13home_screengrab.jpg" />
-    <meta name="description" content="A real-time interactive journey through the third lunar landing attempt. Relive every moment as it occurred in 1970." />
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
+  <link rel="copyright" href="http://creativecommons.org/licenses/by-nc-sa/3.0/" />
 
-    <meta property="fb:app_id" content="1505071169657863" />
-    <meta property="og:title" content="Apollo 13 in Real Time" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://apolloinrealtime.org/13/img/13home_screengrab.jpg" />
-    <meta property="og:url" content="https://apolloinrealtime.org/13/" />
-    <meta property="og:description" content="A real-time interactive journey through the third lunar landing attempt. Relive every moment as it occurred in 1970." />
-    <meta property="og:site_name" content="Apollo 13 in Real Time" />
+  <title>Apollo 13 in Real Time</title>
+  <link rel="image_src" href="https://apolloinrealtime.org/13/img/13home_screengrab.jpg" />
+  <meta name="description"
+    content="A real-time interactive journey through the third lunar landing attempt. Relive every moment as it occurred in 1970." />
 
-    <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
-    <link rel="manifest" href="favicons/site.webmanifest">
+  <meta property="fb:app_id" content="1505071169657863" />
+  <meta property="og:title" content="Apollo 13 in Real Time" />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://apolloinrealtime.org/13/img/13home_screengrab.jpg" />
+  <meta property="og:url" content="https://apolloinrealtime.org/13/" />
+  <meta property="og:description"
+    content="A real-time interactive journey through the third lunar landing attempt. Relive every moment as it occurred in 1970." />
+  <meta property="og:site_name" content="Apollo 13 in Real Time" />
 
-    <meta name="robots" content="index,follow" />
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="manifest" href="favicons/site.webmanifest">
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    
-    <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-                m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+  <meta name="robots" content="index,follow" />
 
-        ga('create', 'UA-37086725-6', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <script type="text/javascript" src="lib/webfontloader.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+  <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date(); a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-    <script type="text/javascript" src="lib/jquery_plugins.js"></script>
-    <script type="text/javascript" src="lib/jquery.fullscreen.js"></script>
-    <script type="text/javascript" src='lib/jquery.lazyload.js'></script>
-    <script type="text/javascript" src="lib/paper-full.min.js"></script>
-    <script type="text/javascript" src="lib/date.js"></script>
-    <script type="text/javascript" src='lib/jquery.waitforimages.min.js'></script>
-    <script type="text/javascript" src='lib/size_manager.js'></script>
-    <script type="text/javascript" src='lib/help_overlay_manager.js'></script>
-    <script type="text/javascript" src='lib/modemizr.js'></script>
-    <script type="text/javascript" src="navigator.js"></script>
-    <script type="text/javascript" src="index.js"></script>
-    <script type="text/javascript" src="ajax.js"></script>
+    ga('create', 'UA-37086725-6', 'auto');
+    ga('send', 'pageview');
+  </script>
+  <script type="text/javascript" src="lib/webfontloader.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
+
+  <script type="text/javascript" src="lib/jquery_plugins.js"></script>
+  <script type="text/javascript" src="lib/jquery.fullscreen.js"></script>
+  <script type="text/javascript" src='lib/jquery.lazyload.js'></script>
+  <script type="text/javascript" src="lib/paper-full.min.js"></script>
+  <script type="text/javascript" src="lib/date.js"></script>
+  <script type="text/javascript" src='lib/jquery.waitforimages.min.js'></script>
+  <script type="text/javascript" src='lib/size_manager.js'></script>
+  <script type="text/javascript" src='lib/help_overlay_manager.js'></script>
+  <script type="text/javascript" src='lib/modemizr.js'></script>
+  <script type="text/javascript" src="navigator.js"></script>
+  <script type="text/javascript" src="index.js"></script>
+  <script type="text/javascript" src="ajax.js"></script>
 
 </head>
+
 <body>
 
-<!-- app -->
-<section class="app">
+  <!-- app -->
+  <section class="app">
     <div class="header-wrapper">
-        <div class="logo-wrapper" onclick="goToURL('/')"></div>
+      <div class="logo-wrapper" onclick="goToURL('/')"></div>
 
-        <div class="info-wrapper">
-            <div class="content">
-                <div class="pre-title">The Third Lunar Landing Attempt</div>
-                <div class="title">Apollo 13</div>
-                <div class="subtitle">Real-Time Mission Experience</div>
-                <div class="historicalDate date">Thu Dec 07 1972</div>
-                <div class="historicalTime time">12:32:00 AM</div>
-                <div class="GETWrapper" id="missionTime" style="display: flex;">
-                    <div style="flex: 1;">Ground Elapsed Time (GET):</div>
-                    <div style="flex: 1;">
-                        <input type="text" size="9" id="missionElapsedTime" name="missionElapsedTime" value="000:00:00">
-                    </div>
-                    <div class="button-row small" style="flex: 1;">
-                        <a class="splash-btn subdued" id="GETBtn" title="Jump to GET">
-                            <span id="GETButtonLabel">GO</span>
-                            <span class="sr-only">Jump to Ground Elapsed Time</span>
-                        </a>
-                    </div>
-                </div>
-
+      <div class="info-wrapper">
+        <div class="content">
+          <div class="pre-title">The Third Lunar Landing Attempt</div>
+          <div class="title">Apollo 13</div>
+          <div class="subtitle">Real-Time Mission Experience</div>
+          <div class="historicalDate date">Thu Dec 07 1972</div>
+          <div class="historicalTime time">12:32:00 AM</div>
+          <div class="GETWrapper" id="missionTime" style="display: flex;">
+            <div style="flex: 1;">Ground Elapsed Time (GET):</div>
+            <div style="flex: 1;">
+              <input type="text" size="9" id="missionElapsedTime" name="missionElapsedTime" value="000:00:00">
             </div>
-        </div>
-
-        <div class="navigator-wrapper monitor">
-            <div id="navigator" class="navigator">
-                <canvas id="navCanvas" hidpi="off" resize keepalive="true"></canvas>
+            <div class="button-row small" style="flex: 1;">
+              <a class="splash-btn subdued" id="GETBtn" title="Jump to GET">
+                <span id="GETButtonLabel">GO</span>
+                <span class="sr-only">Jump to Ground Elapsed Time</span>
+              </a>
             </div>
+          </div>
+
         </div>
+      </div>
+
+      <div class="navigator-wrapper monitor">
+        <div id="navigator" class="navigator">
+          <canvas id="navCanvas" hidpi="off" resize keepalive="true"></canvas>
+        </div>
+      </div>
     </div>
 
     <div class="body">
-        <div class="video-block">
-            <div class="monitor video-monitor">
-                <div class="video-wrapper">
-                    <!-- video -->
-                    <img src="img/4x3.png" class="aspect-holder">
-                    <div class="player-wrapper">
-                        <div id="LRO-overlay"></div>
-                        <div id="graph-overlay"></div>
-                        <div class="search-overlay">
-                            <div style="display: flex; flex-direction: row;">
-                                <span class="title">Search</span>
-                                <input style="flex-grow: 1;" type="text" id="searchInputField">
-                                <span class="close-btn" onclick="toggleSearchOverlay();">Close</span>
-                            </div>
-                            <hr>
-                            <div id="searchResultsDiv">
-                                <table id="searchResultsTable"></table>
-                            </div>
-                        </div>
-                        <div class="dashboard-overlay">
-                            <div style="display: flex; flex-direction: row;">
-                                <div style="flex-grow: 1;" class="title">Mission Status</div>
-                                <span class="close-btn" onclick="toggleDashboardOverlay();">Close</span>
-                            </div>
-                            <HR>
-                            <div id="dashboardContent" data-bps="1200">
-                                <p>
-                                <div>Mission Day: <span class="value"><span id="dashMissionDay"></span>/7</span></div>
-                                </p>
-                                <p>
-                                <div>Mission Phase:</div>
-                                <div class="value"><span id="dashMissionStage"></span></div>
-                                </p>
-                                <p>
-                                <div>Crew Status:</div>
-                                <div id="dashCrewStatus"></div>
-                                </p>
-                                <div id="dashVelocityDiv">
-                                    <p>
-                                    <div>Current velocity (<span id="frameOfReferenceVelocitySpan"></span> reference):</div>
-                                    <div id="dashVelocity"></div>
-                                    </p>
-                                </div>
-                                <div id="dashDistanceEarthDiv">
-                                    <p>
-                                    <div>Command Module:</div>
-                                    <div id="dashLunarOrbit"></div>
-                                    <div class="value">Distance from <span id="frameOfReferenceDistanceSpan"></span>:</div>
-                                    <div id="dashDistanceEarth"></div>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div id="player-iframe-wrapper">
-                            <div id="player"></div>
-                        </div>
-                    </div>
+      <div class="video-block">
+        <div class="monitor video-monitor">
+          <div class="video-wrapper">
+            <!-- video -->
+            <img src="img/4x3.png" class="aspect-holder">
+            <div class="player-wrapper">
+              <div id="LRO-overlay"></div>
+              <div id="graph-overlay"></div>
+              <div class="search-overlay">
+                <div style="display: flex; flex-direction: row;">
+                  <span class="title">Search</span>
+                  <input style="flex-grow: 1;" type="text" id="searchInputField">
+                  <span class="close-btn" onclick="toggleSearchOverlay();">Close</span>
                 </div>
+                <hr>
+                <div id="searchResultsDiv">
+                  <table id="searchResultsTable"></table>
+                </div>
+              </div>
+              <div class="dashboard-overlay">
+                <div style="display: flex; flex-direction: row;">
+                  <div style="flex-grow: 1;" class="title">Mission Status</div>
+                  <span class="close-btn" onclick="toggleDashboardOverlay();">Close</span>
+                </div>
+                <HR>
+                <div id="dashboardContent" data-bps="1200">
+                  <p>
+                  <div>Mission Day: <span class="value"><span id="dashMissionDay"></span>/7</span></div>
+                  </p>
+                  <p>
+                  <div>Mission Phase:</div>
+                  <div class="value"><span id="dashMissionStage"></span></div>
+                  </p>
+                  <p>
+                  <div>Crew Status:</div>
+                  <div id="dashCrewStatus"></div>
+                  </p>
+                  <div id="dashVelocityDiv">
+                    <p>
+                    <div>Current velocity (<span id="frameOfReferenceVelocitySpan"></span> reference):</div>
+                    <div id="dashVelocity"></div>
+                    </p>
+                  </div>
+                  <div id="dashDistanceEarthDiv">
+                    <p>
+                    <div>Command Module:</div>
+                    <div id="dashLunarOrbit"></div>
+                    <div class="value">Distance from <span id="frameOfReferenceDistanceSpan"></span>:</div>
+                    <div id="dashDistanceEarth"></div>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div id="player-iframe-wrapper">
+                <div id="player"></div>
+              </div>
             </div>
-
-            <div class="tabs-wrapper">
-                <div class="button-row">
-                    <a id="transcriptTab" class="splash-btn content-tab subdued" title="Every word spoken on the mission"><SPAN>Transcript</SPAN></a>
-                    <a id="tocTab" class="splash-btn content-tab subdued" title="Points of interest throughout the mission"><SPAN>Mission Milestones</SPAN></a>
-                    <a id="commentaryTab" class="splash-btn content-tab subdued" title="Description of events and post-mission interviews with the crew"><SPAN>Commentary</SPAN></a>
-                </div>
-
-                <div class="button-row-small-container">
-                    <div class="button-row small">
-                        <a class="splash-btn subdued" id="searchBtn" title="Search mission"><span class="sr-only">Search mission</span></a>
-                        <a class="splash-btn subdued" id="realtimeBtn" title="Sync to today's clock"><span class="sr-only">Sync to today's clock</span></a>
-                        <a class="splash-btn subdued" id="aboutBtn" title="About this website" style="cursor:help;"><span class="sr-only">About this website</span></a>
-                    </div>
-                    <div class="button-row small">
-                        <a class="splash-btn subdued" id="dashboardBtn" title="Show Dashboard"><span class="sr-only">Show Mission Status</span></a>
-                        <a class="splash-btn subdued" id="soundBtn" title="Sound On/Off"><span class="sr-only">Sound On/Off</span></a>
-                        <a class="splash-btn subdued fullscreenBtn" title="Toggle Fullscreen"><span class="sr-only">Fullscreen</span></a>
-                    </div>
-                </div>
-                <div class="button-row-medium-container">
-                    <div class="button-row medium">
-                        <a class="splash-btn subdued" id="shareBtn" title="Generate a link to this moment">
-                            <span id="shareBtnLabel">SHARE</span>
-                            <span class="sr-only">Generate a link to this moment</span>
-                        </a>
-                        <a class="splash-btn subdued pause" id="playPauseBtn" title="Play/Pause">
-                            <span id="playPauseBtnLabel">PAUSE</span>
-                            <span class="sr-only">Play/Pause</span>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="monitor" data-js-class="SizeManager" data-sm-parent=".video-block" data-sm-min-height="160" data-sm-buddy-max-height="480" data-sm-buddy=".video-monitor">
-                <div class="output-wrapper">
-                    <div id="transcriptWrapper" class="text-wrapper">
-                        <div id="utteranceDiv">
-                            <table class="utteranceTable" id="utteranceTable"></table>
-                        </div>
-                    </div>
-                    <div id="tocWrapper" class="text-wrapper">
-                        <iframe src="TOC.html" class="iFrameClass" id="iFrameTOC" name="iFrameTOC" scrolling="yes" height="100%" width="100%"></iframe>
-                    </div>
-                    <div id="commentaryWrapper" class="text-wrapper">
-                        <div id="commentaryDiv">
-                            <table class="commentaryTable" id="commentaryTable"></table>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+          </div>
         </div>
-        <div class="thirtytrack-block">
-            <div id="thirtytrack-title">Mission Control Channels</div>
-            <div id="thirtytrack-container">
-                <div class="buttondiv"><button id="btn-ch2" class="thirtybtn-channel">FOD</button></div>
-                <div class="buttondiv"><button id="btn-ch3" class="thirtybtn-channel">MSN DIR</button></div>
-                <div class="buttondiv"><button id="btn-ch50" class="thirtybtn-channel">FLIGHT</button></div>
-                <div class="buttondiv"><button id="btn-ch7" class="thirtybtn-channel">FLIGHT-L</button></div>
-                <div class="buttondiv"><button id="btn-ch8" class="thirtybtn-channel">FLIGHT-R</button></div>
-                <div class="buttondiv"><button id="btn-ch14" class="thirtybtn-channel">CAPCOM</button></div>
-                <div class="buttondiv"><button id="btn-ch15" class="thirtybtn-channel">CAPCOM-R</button></div>
-                <div class="buttondiv"><button id="btn-ch47" class="thirtybtn-channel">BOOSTER</button></div>
-                <div class="buttondiv"><button id="btn-ch48" class="thirtybtn-channel">BOOSTER-C</button></div>
-                <div class="buttondiv"><button id="btn-ch49" class="thirtybtn-channel">BOOSTER-R</button></div>
-                <div class="buttondiv"><button id="btn-ch19" class="thirtybtn-channel">RETRO</button></div>
-                <div class="buttondiv"><button id="btn-ch20" class="thirtybtn-channel">FIDO</button></div>
-                <div class="buttondiv"><button id="btn-ch21" class="thirtybtn-channel">GUIDO</button></div>
-                <div class="buttondiv"><button id="btn-ch22" class="thirtybtn-channel">GUIDO-R</button></div>
-                <div class="buttondiv"><button id="btn-ch12" class="thirtybtn-channel">SURGEON</button></div>
-                <div class="buttondiv"><button id="btn-ch13" class="thirtybtn-channel">SURGEON-R</button></div>
-                <div class="buttondiv"><button id="btn-ch16" class="thirtybtn-channel">CSM EECOM</button></div>
-                <div class="buttondiv"><button id="btn-ch17" class="thirtybtn-channel">POS EECOM</button></div>
-                <div class="buttondiv"><button id="btn-ch58" class="thirtybtn-channel">TELMU</button></div>
-                <div class="buttondiv"><button id="btn-ch18" class="thirtybtn-channel">CSM GNC</button></div>
-                <div class="buttondiv"><button id="btn-ch57" class="thirtybtn-channel">LM GNC</button></div>
-                <div class="buttondiv"><button id="btn-ch5" class="thirtybtn-channel">PROCEDURES</button></div>
-                <div class="buttondiv"><button id="btn-ch9" class="thirtybtn-channel">FAO</button></div>
-                <div class="buttondiv"><button id="btn-ch6" class="thirtybtn-channel">ASST FD</button></div>
-                <div class="buttondiv"><button id="btn-ch11" class="thirtybtn-channel">NETWORK</button></div>
-                <div class="buttondiv"><button id="btn-ch42" class="thirtybtn-channel">COMM TECH</button></div>
-                <div class="buttondiv"><button id="btn-ch43" class="thirtybtn-channel">COMM CTRL</button></div>
-                <div class="buttondiv"><button id="btn-ch28" class="thirtybtn-channel">TRACK</button></div>
-                <div class="buttondiv"><button id="btn-ch29" class="thirtybtn-channel">TRACK-R</button></div>
-                <div class="buttondiv"><button id="btn-ch32" class="thirtybtn-channel">RECOVERY</button></div>
-                <div class="buttondiv"><button id="btn-ch33" class="thirtybtn-channel">RCVY ASST</button></div>
-                <div class="buttondiv"><button id="btn-ch34" class="thirtybtn-channel">RCVY STUS</button></div>
-                <div class="buttondiv"><button id="btn-ch35" class="thirtybtn-channel">RCVY ST 2</button></div>
-                <div class="buttondiv"><button id="btn-ch51" class="thirtybtn-channel">AFD CONF</button></div>
-                <div class="buttondiv"><button id="btn-ch52" class="thirtybtn-channel">GOSS 2</button></div>
-                <div class="buttondiv"><button id="btn-ch53" class="thirtybtn-channel">INCO</button></div>
-                <div class="buttondiv"><button id="btn-ch54" class="thirtybtn-channel">MOCR DYN</button></div>
-                <div class="buttondiv"><button id="btn-ch55" class="thirtybtn-channel">GOSS CONF</button></div>
-                <div class="buttondiv"><button id="btn-ch56" class="thirtybtn-channel">GOSS 4</button></div>
-                <div class="buttondiv"><button id="btn-ch23" class="thirtybtn-channel">CCATS LD</button></div>
-                <div class="buttondiv"><button id="btn-ch24" class="thirtybtn-channel">CCATS RTC</button></div>
-                <div class="buttondiv"><button id="btn-ch25" class="thirtybtn-channel">CCATS CMD</button></div>
-                <div class="buttondiv"><button id="btn-ch26" class="thirtybtn-channel">CCATS TIC</button></div>
-                <div class="buttondiv"><button id="btn-ch27" class="thirtybtn-channel">CCATS TM</button></div>
-                <div class="buttondiv"><button id="btn-ch59" class="thirtybtn-channel">EXPMT AO</button></div>
-                <div class="buttondiv"><button id="btn-ch44" class="thirtybtn-channel">SPACE ENV</button></div>
-                <div class="buttondiv"><button id="btn-ch45" class="thirtybtn-channel">COMP SUP</button></div>
-                <div class="buttondiv"><button id="btn-ch46" class="thirtybtn-channel">SPAN</button></div>
-            </div>
-        </div>
-        <div class="app-with-tabs-block">
-            <div class="app-tabs">
-                <div class="app-button-row">
-                    <a id="photoTab" class="splash-btn app-tab subdued selected" title="Photography"><SPAN>Photography</SPAN></a>
-                    <a id="mocrTab" class="splash-btn app-tab subdued" title="Mission Control Audio"><SPAN>Mission Control Audio</SPAN></a>
-<!--                    <a id="geosampleTab" class="splash-btn app-tab subdued" title="Astromaterial Samples"><SPAN>Astromaterial Samples</SPAN></a>-->
-                    <a id="spacecraftTab" class="splash-btn app-tab subdued" title="Spacecraft"><SPAN>Spacecraft Details</SPAN></a>
-                </div>
-            </div>
-            <div class="app-block" data-js-class="SizeManager" data-sm-parent=".app-with-tabs-block">
-                <!-- photo -->
-                <div class="app-wrapper">
-                    <div id="photoGallery"></div>
-                    <div id="photodiv"></div>
-                    <div id="spacecraft-overlay">
-                        <div style="display: flex; flex-direction: row;">
-                            <span class="title">The Apollo 13 Spacecraft</span>
-                        </div>
-                        <hr>
-                        <div id="spacecraftContainer">
-                            <div id="spacecraftDiv">
 
-                            </div>
-                        </div>
-                    </div>
-                    <div id="thirtytrackplaceholder"></div>
-                </div>
+        <div class="tabs-wrapper">
+          <div class="button-row">
+            <a id="transcriptTab" class="splash-btn content-tab subdued"
+              title="Every word spoken on the mission"><SPAN>Transcript</SPAN></a>
+            <a id="tocTab" class="splash-btn content-tab subdued"
+              title="Points of interest throughout the mission"><SPAN>Mission Milestones</SPAN></a>
+            <a id="commentaryTab" class="splash-btn content-tab subdued"
+              title="Description of events and post-mission interviews with the crew"><SPAN>Commentary</SPAN></a>
+          </div>
+
+          <div class="button-row-small-container">
+            <div class="button-row small">
+              <a class="splash-btn subdued" id="searchBtn" title="Search mission"><span class="sr-only">Search
+                  mission</span></a>
+              <a class="splash-btn subdued" id="realtimeBtn" title="Sync to today's clock"><span class="sr-only">Sync to
+                  today's clock</span></a>
+              <a class="splash-btn subdued" id="aboutBtn" title="About this website" style="cursor:help;"><span
+                  class="sr-only">About this website</span></a>
             </div>
+            <div class="button-row small">
+              <a class="splash-btn subdued" id="dashboardBtn" title="Show Dashboard"><span class="sr-only">Show Mission
+                  Status</span></a>
+              <a class="splash-btn subdued" id="soundBtn" title="Sound On/Off"><span class="sr-only">Sound
+                  On/Off</span></a>
+              <a class="splash-btn subdued fullscreenBtn" title="Toggle Fullscreen"><span
+                  class="sr-only">Fullscreen</span></a>
+            </div>
+          </div>
+          <div class="button-row-medium-container">
+            <div class="button-row medium">
+              <a class="splash-btn subdued" id="shareBtn" title="Generate a link to this moment">
+                <span id="shareBtnLabel">SHARE</span>
+                <span class="sr-only">Generate a link to this moment</span>
+              </a>
+              <a class="splash-btn subdued pause" id="playPauseBtn" title="Play/Pause">
+                <span id="playPauseBtnLabel">PAUSE</span>
+                <span class="sr-only">Play/Pause</span>
+              </a>
+            </div>
+          </div>
         </div>
+        <div class="monitor" data-js-class="SizeManager" data-sm-parent=".video-block" data-sm-min-height="160"
+          data-sm-buddy-max-height="480" data-sm-buddy=".video-monitor">
+          <div class="output-wrapper">
+            <div id="transcriptWrapper" class="text-wrapper">
+              <div id="utteranceDiv">
+                <table class="utteranceTable" id="utteranceTable"></table>
+              </div>
+            </div>
+            <div id="tocWrapper" class="text-wrapper">
+              <iframe src="TOC.html" class="iFrameClass" id="iFrameTOC" name="iFrameTOC" scrolling="yes" height="100%"
+                width="100%"></iframe>
+            </div>
+            <div id="commentaryWrapper" class="text-wrapper">
+              <div id="commentaryDiv">
+                <table class="commentaryTable" id="commentaryTable"></table>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="thirtytrack-block">
+        <div id="thirtytrack-title">Mission Control Channels</div>
+        <div id="thirtytrack-container">
+          <div class="buttondiv"><button id="btn-ch2" class="thirtybtn-channel">FOD</button></div>
+          <div class="buttondiv"><button id="btn-ch3" class="thirtybtn-channel">MSN DIR</button></div>
+          <div class="buttondiv"><button id="btn-ch50" class="thirtybtn-channel">FLIGHT</button></div>
+          <div class="buttondiv"><button id="btn-ch7" class="thirtybtn-channel">FLIGHT-L</button></div>
+          <div class="buttondiv"><button id="btn-ch8" class="thirtybtn-channel">FLIGHT-R</button></div>
+          <div class="buttondiv"><button id="btn-ch14" class="thirtybtn-channel">CAPCOM</button></div>
+          <div class="buttondiv"><button id="btn-ch15" class="thirtybtn-channel">CAPCOM-R</button></div>
+          <div class="buttondiv"><button id="btn-ch47" class="thirtybtn-channel">BOOSTER</button></div>
+          <div class="buttondiv"><button id="btn-ch48" class="thirtybtn-channel">BOOSTER-C</button></div>
+          <div class="buttondiv"><button id="btn-ch49" class="thirtybtn-channel">BOOSTER-R</button></div>
+          <div class="buttondiv"><button id="btn-ch19" class="thirtybtn-channel">RETRO</button></div>
+          <div class="buttondiv"><button id="btn-ch20" class="thirtybtn-channel">FIDO</button></div>
+          <div class="buttondiv"><button id="btn-ch21" class="thirtybtn-channel">GUIDO</button></div>
+          <div class="buttondiv"><button id="btn-ch22" class="thirtybtn-channel">GUIDO-R</button></div>
+          <div class="buttondiv"><button id="btn-ch12" class="thirtybtn-channel">SURGEON</button></div>
+          <div class="buttondiv"><button id="btn-ch13" class="thirtybtn-channel">SURGEON-R</button></div>
+          <div class="buttondiv"><button id="btn-ch16" class="thirtybtn-channel">CSM EECOM</button></div>
+          <div class="buttondiv"><button id="btn-ch17" class="thirtybtn-channel">POS EECOM</button></div>
+          <div class="buttondiv"><button id="btn-ch58" class="thirtybtn-channel">TELMU</button></div>
+          <div class="buttondiv"><button id="btn-ch18" class="thirtybtn-channel">CSM GNC</button></div>
+          <div class="buttondiv"><button id="btn-ch57" class="thirtybtn-channel">LM GNC</button></div>
+          <div class="buttondiv"><button id="btn-ch5" class="thirtybtn-channel">PROCEDURES</button></div>
+          <div class="buttondiv"><button id="btn-ch9" class="thirtybtn-channel">FAO</button></div>
+          <div class="buttondiv"><button id="btn-ch6" class="thirtybtn-channel">ASST FD</button></div>
+          <div class="buttondiv"><button id="btn-ch11" class="thirtybtn-channel">NETWORK</button></div>
+          <div class="buttondiv"><button id="btn-ch42" class="thirtybtn-channel">COMM TECH</button></div>
+          <div class="buttondiv"><button id="btn-ch43" class="thirtybtn-channel">COMM CTRL</button></div>
+          <div class="buttondiv"><button id="btn-ch28" class="thirtybtn-channel">TRACK</button></div>
+          <div class="buttondiv"><button id="btn-ch29" class="thirtybtn-channel">TRACK-R</button></div>
+          <div class="buttondiv"><button id="btn-ch32" class="thirtybtn-channel">RECOVERY</button></div>
+          <div class="buttondiv"><button id="btn-ch33" class="thirtybtn-channel">RCVY ASST</button></div>
+          <div class="buttondiv"><button id="btn-ch34" class="thirtybtn-channel">RCVY STUS</button></div>
+          <div class="buttondiv"><button id="btn-ch35" class="thirtybtn-channel">RCVY ST 2</button></div>
+          <div class="buttondiv"><button id="btn-ch51" class="thirtybtn-channel">AFD CONF</button></div>
+          <div class="buttondiv"><button id="btn-ch52" class="thirtybtn-channel">GOSS 2</button></div>
+          <div class="buttondiv"><button id="btn-ch53" class="thirtybtn-channel">INCO</button></div>
+          <div class="buttondiv"><button id="btn-ch54" class="thirtybtn-channel">MOCR DYN</button></div>
+          <div class="buttondiv"><button id="btn-ch55" class="thirtybtn-channel">GOSS CONF</button></div>
+          <div class="buttondiv"><button id="btn-ch56" class="thirtybtn-channel">GOSS 4</button></div>
+          <div class="buttondiv"><button id="btn-ch23" class="thirtybtn-channel">CCATS LD</button></div>
+          <div class="buttondiv"><button id="btn-ch24" class="thirtybtn-channel">CCATS RTC</button></div>
+          <div class="buttondiv"><button id="btn-ch25" class="thirtybtn-channel">CCATS CMD</button></div>
+          <div class="buttondiv"><button id="btn-ch26" class="thirtybtn-channel">CCATS TIC</button></div>
+          <div class="buttondiv"><button id="btn-ch27" class="thirtybtn-channel">CCATS TM</button></div>
+          <div class="buttondiv"><button id="btn-ch59" class="thirtybtn-channel">EXPMT AO</button></div>
+          <div class="buttondiv"><button id="btn-ch44" class="thirtybtn-channel">SPACE ENV</button></div>
+          <div class="buttondiv"><button id="btn-ch45" class="thirtybtn-channel">COMP SUP</button></div>
+          <div class="buttondiv"><button id="btn-ch46" class="thirtybtn-channel">SPAN</button></div>
+        </div>
+      </div>
+      <div class="app-with-tabs-block">
+        <div class="app-tabs">
+          <div class="app-button-row">
+            <a id="photoTab" class="splash-btn app-tab subdued selected"
+              title="Photography"><SPAN>Photography</SPAN></a>
+            <a id="mocrTab" class="splash-btn app-tab subdued" title="Mission Control Audio"><SPAN>Mission Control
+                Audio</SPAN></a>
+            <!--                    <a id="geosampleTab" class="splash-btn app-tab subdued" title="Astromaterial Samples"><SPAN>Astromaterial Samples</SPAN></a>-->
+            <a id="spacecraftTab" class="splash-btn app-tab subdued" title="Spacecraft"><SPAN>Spacecraft
+                Details</SPAN></a>
+          </div>
+        </div>
+        <div class="app-block" data-js-class="SizeManager" data-sm-parent=".app-with-tabs-block">
+          <!-- photo -->
+          <div class="app-wrapper">
+            <div id="photoGallery"></div>
+            <div id="photodiv"></div>
+            <div id="spacecraft-overlay">
+              <div style="display: flex; flex-direction: row;">
+                <span class="title">The Apollo 13 Spacecraft</span>
+              </div>
+              <hr>
+              <div id="spacecraftContainer">
+                <div id="spacecraftDiv">
+
+                </div>
+              </div>
+            </div>
+            <div id="thirtytrackplaceholder"></div>
+          </div>
+        </div>
+      </div>
     </div>
 
-</section>
+  </section>
 
-<!-- splash content -->
-<div class="splash-content">
-  <div class="about">
+  <!-- splash content -->
+  <div class="splash-content">
+    <div class="about">
       <div class="content-wrapper">
-          <div class="patch" onclick="goToURL('/')"></div>
-          <div class="patch-right">
-              <div class="heading-wrapper">
-                  <div class="heading">APOLLO 13</div>
-                  <div class="heading-realtime">IN REAL TIME</div>
-              </div>
-              <div class="subheading1">A real-time journey through the third lunar landing attempt.</div>
-              <div class="subheading2">This multimedia project consists entirely of original historical mission material</div>
-              <div class="subheading2">Relive the mission as it occurred in 1970</div>
+        <div class="patch" onclick="goToURL('/')"></div>
+        <div class="patch-right">
+          <div class="heading-wrapper">
+            <div class="heading">APOLLO 13</div>
+            <div class="heading-realtime">IN REAL TIME</div>
           </div>
+          <div class="subheading1">A real-time journey through the third lunar landing attempt.</div>
+          <div class="subheading2">This multimedia project consists entirely of original historical mission material
+          </div>
+          <div class="subheading2">Relive the mission as it occurred in 1970</div>
+        </div>
       </div>
-  </div>
+    </div>
 
-  <div class="actions">
+    <div class="actions">
 
       <div class="section">
-          <a data-loading-text="Loading..." class="splash-btn simplemodal-close primary" role="button" onclick="oneMinuteToLaunchButtonClick(); return false;" >
-              <span class="splash-btn-title">T-MINUS 1M</span>
-          </a>
-          <div>Join at 1  minute to launch</div>
+        <a data-loading-text="Loading..." class="splash-btn simplemodal-close primary" role="button"
+          onclick="oneMinuteToLaunchButtonClick();">
+          <span class="splash-btn-title">T-MINUS 1M</span>
+        </a>
+        <div>Join at 1 minute to launch</div>
       </div>
 
       <div class="section now">
-          <a class="splash-btn simplemodal-close" role="button" onclick="historicalButtonClick(); return false;">
-              <span id="labelRealtime" class="splash-btn-title">NOW</span>
-          </a>
-          <div>
-              Join in-progress
-              <small>Exactly 52 years ago</small>
-              <div class="histtime">
-                  Using time of day
-                  <div class="historicalDate date">Thu Dec 07 1972</div>
-                  <div class="historicalTime time">12:32:00 AM</div>
-              </div>
-              <small><span class="historicalSubtext">Current time in 1970</span></small>
+        <a class="splash-btn simplemodal-close" role="button" onclick="historicalButtonClick();">
+          <span id="labelRealtime" class="splash-btn-title">NOW</span>
+        </a>
+        <div>
+          Join in-progress
+          <small>~52 years ago</small>
+          <div class="histtime">
+            Using time of day
+            <div class="historicalDate date">Thu Dec 07 1972</div>
+            <div class="historicalTime time">12:32:00 AM</div>
           </div>
+          <small><span class="historicalSubtext">Current time in 1970</span></small>
+        </div>
       </div>
 
       <div class="section fullscreen" style="display: flex">
-          <div class="button-row small" style="flex: 1; width: 40px;" >
-              <a class="splash-btn fullscreenBtn fullscreenBtnSplash" style="width: 40px; min-height: 40px; min-width: 40px;" title="Toggle Fullscreen"><span class="sr-only">Fullscreen</span></a>
-          </div>
-          <div style="flex: 10; padding-left: 20px;">Fullscreen<BR><small>(recommended)</small></div>
+        <div class="button-row small" style="flex: 1; width: 40px;">
+          <a class="splash-btn fullscreenBtn fullscreenBtnSplash"
+            style="width: 40px; min-height: 40px; min-width: 40px;" title="Toggle Fullscreen"><span
+              class="sr-only">Fullscreen</span></a>
+        </div>
+        <div style="flex: 10; padding-left: 20px;">Fullscreen<BR><small>(recommended)</small></div>
       </div>
 
       <div class="section introduction">
-          Included real-time elements:
-          <ul>
-              <li>All mission control film footage</li>
-              <li>All on-board television and film footage</li>
-              <li>All Mission Control audio (7,200 hours)</li>
-              <li>144 hours of space-to-ground audio</li>
-              <li>All on-board recorder audio</li>
-              <li>Press conferences as they happened</li>
-              <li>600+ photographs</li>
-              <li>12,900 searchable utterances</li>
-              <li>Post-mission commentary</li>
-              <li>Onboard view reconstructed using Lunar Reconnaissance Orbiter data</li>
-          </ul>
+        Included real-time elements:
+        <ul>
+          <li>All mission control film footage</li>
+          <li>All on-board television and film footage</li>
+          <li>All Mission Control audio (7,200 hours)</li>
+          <li>144 hours of space-to-ground audio</li>
+          <li>All on-board recorder audio</li>
+          <li>Press conferences as they happened</li>
+          <li>600+ photographs</li>
+          <li>12,900 searchable utterances</li>
+          <li>Post-mission commentary</li>
+          <li>Onboard view reconstructed using Lunar Reconnaissance Orbiter data</li>
+        </ul>
 
-          <a class="splash-btn credits subdued" id="aboutSplashBtn" style="cursor:help;">
-              <span>Instructions / Credits</span>
-          </a>
+        <a class="splash-btn credits subdued" id="aboutSplashBtn" style="cursor:help;">
+          <span>Instructions / Credits</span>
+        </a>
       </div>
       <div class="section introduction">
-          Join our Forum:
-          <ul>
-              <li>Share and discover moments of interest at <a href='https://forum.apolloinrealtime.org' target="_blank">forum.apolloinrealtime.org</a></li>
-          </ul>
+        Join our Forum:
+        <ul>
+          <li>Share and discover moments of interest at <a href='https://forum.apolloinrealtime.org'
+              target="_blank">forum.apolloinrealtime.org</a></li>
+        </ul>
       </div>
-<!--      <div class="section introduction">-->
-<!--          Lunar imagery courtesy of<br>-->
-<!--          Lunar and Planetary Institute<br>-->
-<!--          <a href="https://www.lpi.usra.edu/" target="_blank"><img width="50" src="https://www.lpi.usra.edu/assets/images/lpi-white.png"></a>-->
-<!--      </div>-->
+      <!--      <div class="section introduction">-->
+      <!--          Lunar imagery courtesy of<br>-->
+      <!--          Lunar and Planetary Institute<br>-->
+      <!--          <a href="https://www.lpi.usra.edu/" target="_blank"><img width="50" src="https://www.lpi.usra.edu/assets/images/lpi-white.png"></a>-->
+      <!--      </div>-->
+
+    </div>
 
   </div>
 
-</div>
 
+  <!-- help about -->
+  <div class="help-content">
 
-<!-- help about -->
-<div class="help-content">
-
-    <div class="help-overlay body" data-js-class="HelpOverlayManager" data-overlay-target=".app" data-force-bottom="true" data-force-right="true">
+    <div class="help-overlay body" data-js-class="HelpOverlayManager" data-overlay-target=".app"
+      data-force-bottom="true" data-force-right="true">
 
       <a href="#" class="close-btn">Close</a>
 
       <div class="content-wrapper">
-          <div class="headline">A real-time journey through the Apollo 13 mission</div>
-          <div class="quote">
-              <div class="section-header">Introduction</div>
-              <div class="intro">
-                  <p>
-                      This website replays the Apollo 13 mission as it happened, 50 years ago. It consists entirely of historical material, all timed to Ground Elapsed Time--the master mission clock. Footage of Mission Control, film shot by the astronauts, and television broadcasts transmitted from space have been painstakingly placed to the very moments they were shot during the mission, as has every photograph taken, and every word spoken.
-                  </p>
-                  <p>
-                      <span style="color: white;">This project includes newly digitized and restored mission control audio. The last tapes of these recordings were discovered in the National Archives fall of 2019 and were digitized in February, 2020 and contain the time surrounding the onboard explosion. These recordings haven't been heard since the accident investigation in 1970.</span>
-                  </p>
-              </div>
-              <div class="section-header">Interface</div>
-              <div class="intro">
-                  <p>
-                      Upon starting the application, select whether to begin one minute before launch, or click "Now" to drop in to the mission using today's date and time.
-                  </p>
-                  <p>
-                      Navigate to any moment of the mission using the time navigator at the top of the screen. The top bar is the entire mission with two bars below it providing magnification. Clicking transcript items, photos, commentary items, or guided tour moments also jumps the mission time to those events.
-                  </p>
-                  <p>
-                      Main mission audio consists of space-to-ground (left ear), capcom loop (right ear), and on-board recorder (center, when available). Selecting a Mission Control audio channel mutes the main audio, opens the Mission Control audio panel, and plays the "live" audio of each selected Mission Control position. Change channels by selecting the seats in Mission Control. Closing the Mission Control audio panel will unmute the main audio and continue mission playback.
-                  </p>
-                  <p>
-                      These 50 channels of Mission Control audio spanning the entire mission have only recently been digitized and restored, and are made publicly available here for the first time. They total over 7,200 hours in length.
-                  </p>
-                  <p>
-                      Please contact <a href="http://benfeist.com" target="_blank">Ben Feist</a> for any inquiries.
-                  </p>
-              </div>
-              <div class="callouts"><img src="img/help_callouts.jpg"/></div>
-              <div class="callouts"><img src="img/navigator_key.jpg"/></div>
-              <div class="text">"I could put my thumb up to a window and completely hide the Earth. I thought, 'Everything I've ever known is behind my thumb."</div>
-              <div class="attribution">
-                  &mdash; Jim Lovell<br>
-                  Commander, Apollo 13
-              </div>
-              <BR>
-              <div class="text">"My biggest emotion on Apollo 13 after the oxygen tank explosion was disappointment that we had lost the landing."</div>
-              <div class="attribution">
-                  &mdash; Fred Haise<br>
-                  Lunar Module Pilot, Apollo 13
-              </div>
-              <BR>
-              <div class="text">"Okay, Houston, we've had a problem here."</div>
-              <div class="attribution">
-                  &mdash; Jack Swigert<br>
-                  Command Module Pilot, Apollo 13
-              </div>
+        <div class="headline">A real-time journey through the Apollo 13 mission</div>
+        <div class="quote">
+          <div class="section-header">Introduction</div>
+          <div class="intro">
+            <p>
+              This website replays the Apollo 13 mission as it happened, 50 years ago. It consists entirely of
+              historical material, all timed to Ground Elapsed Time--the master mission clock. Footage of Mission
+              Control, film shot by the astronauts, and television broadcasts transmitted from space have been
+              painstakingly placed to the very moments they were shot during the mission, as has every photograph taken,
+              and every word spoken.
+            </p>
+            <p>
+              <span style="color: white;">This project includes newly digitized and restored mission control audio. The
+                last tapes of these recordings were discovered in the National Archives fall of 2019 and were digitized
+                in February, 2020 and contain the time surrounding the onboard explosion. These recordings haven't been
+                heard since the accident investigation in 1970.</span>
+            </p>
           </div>
-
-
-          <div class="credits">
-              <div class="section-header">Credits</div>
-
-              <p>
-                  <span class="accent">Ben Feist</span> Concept, research, mission data restoration, audio restoration, video editing, software architecture and programming. Follow <a href="https://twitter.com/benfeist" target="_blank" style="color: yellow;">@BenFeist</a> for updates.
-                  <br>
-                  <br>
-                  <span class="accent">Stephen Slater</span> Archive research and production, historical audio/film synchronization
-                  <br>
-                  <span class="accent">David Charney</span> Visual design, 3D modeling
-                  <br>
-                  <span class="accent">Jeremy Cooper</span> Audio restoration programming
-                  <br>
-                  <span class="accent">Johannes Kemppanen</span> Transcript corrections, additional historical research <a target="_blank" href="https://history.nasa.gov/afj/ap13fj/index.html">Editor of the Apollo 13 Flight Journal</a>
-                  <br>
-                  <span class="accent">Robin Wheeler</span> Photography timing, transcript corrections <a target="_blank" href="https://history.nasa.gov/afj/ap10fj">Editor of the Apollo 10 Flight Journal</a>
-                  <br>
-                  <span class="accent">Greg Wiseman</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>, NASA JSC
-                  <br>
-                  <span class="accent">Ernie Wright</span> Lunar LRO Animations <a target="_blank" href="https://svs.gsfc.nasa.gov/">Scientific Visualization Studio</a>, NASA Goddard
-                  <br>
-                  <span class="accent">Issa Tseng</span> Flight Director loop audio transcription <a target="_blank" href="http://apollo13realtime.org/">apollo13realtime.org</a>
-                  <br>
-                  <span class="accent">Chris Bennett</span> Visual design, interface styling and programming
-                  <br>
-
-              </p>
-              <div class="section-header">Thanks</div>
-              <p>
-                  <span class="accent">Dan Rooney</span> Supervisory Archivist, Special Media Archives Services Division, National Archives
-                  <br>
-                  <br>
-                  <span class="section-subheader">NASA Headquarters</span>
-                  <br>
-                  <span class="accent">Dr. Bill Barry</span> Chief Historian, NASA HQ
-                  <br>
-                  <span class="accent">Dr. Jacob Bleacher</span> Chief Exploration Scientist, NASA HQ
-                  <br>
-                  <br>
-                  <span class="section-subheader">NASA Johnson Space Center</span>
-<!--                      <br>-->
-<!--                      <span class="accent">Dr. Cindy Evans</span> Division Chief, Astromaterials Research and Exploration Science (ARES) Division, NASA JSC-->
-                  <br>
-                  <span class="accent">Sandra Tetley</span> Real Property Officer, Historic Preservation Officer, NASA JSC
-                  <br>
-                  <span class="accent">John Stoll</span> Public Affairs Audio Control Room, NASA JSC
-                  <br>
-                  <span class="accent">Dan Garrison</span> Jacobs Technology, NASA JSC
-                  <br>
-                  <span class="accent">Dr. Ryan Zeigler</span> Manager, Apollo Curator, ARES, NASA JSC
-                  <br>
-                  <span class="accent">Dr. Paul Niles</span> Assistant Chief Scientist, ARES NASA JSC
-                  <br>
-                  <br>
-                  <span class="section-subheader">NASA Goddard Space Flight Center</span>
-                  <br>
-                  <span class="accent">Dr. Noah Petro</span> Project Scientist, Lunar Reconnaissance Orbiter. Planetary Geology, Geophysics, and Geochemistry Lab, NASA GSFC
-                  <br>
-                  <br>
-                  <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>. More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
-                  <br>
-                  <br>
-                  <span class="accent">Todd Miller</span> Director, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
-                  <br>
-                  <span class="accent">Tom Petersen</span> Producer, <a href="https://www.apollo11movie.com/" target="_blank">Apollo 11</a> film
-                  <br>
-                  <br>
-                  <span class="section-subheader">Lunar and Planetary Institute</span>
-                  <br>
-                  <span class="accent">Jamie Shumbera</span> Operations Manager
-                  <br>
-                  <br>
-                  <span class="accent">David Woods</span> Author, <a href="http://www.hafttm.com/" target="_blank">How Apollo Flew to the Moon</a>
-                  <br>
-                  <a href="http://history.nasa.gov/afj/" target="_blank">NASA Apollo Flight Journal</a>
-                  <br>
-                  <span class="accent"><a href="https://www.hq.nasa.gov/alsj/" target="_blank">NASA Apollo Lunar Surface Journal</a></span>
-                  <br>
-                  <span class="accent"><a href="https://archive.org" target="_blank">Internet Archive</a></span>
-                  <br>
-                  <a href="http://keycdn.com" target="_blank">
-                      <span class="section-subheader">Web hosting by</span>
-                      <span><img src="https://logos.keycdn.com/keycdn-logo-white.png" width="90px"></span>
-                  </a>
-                  <br>
-                  <span class="accent">The crew of Apollo 13</span>
-                  <br>
-                  <span class="accent">The men and women of Mission Control</span>
-                  <br>
-                  <br>
-<!--                      <span class="section-subheader">Beta Testers</span>-->
-<!--                      <br><span class="accent">Mike Dinn</span>-->
-<!--                      <br><span class="accent">Jacqueline Poole</span>-->
-<!--                      <br><span class="accent">Todd Green</span>-->
-<!--                      <br><span class="accent">Ian House</span>-->
-<!--                      <br><span class="accent">Joey Schwartz</span>-->
-<!--                      <br><span class="accent">David Charney</span>-->
-<!--                      <br><span class="accent">Sammy Goldberg</span>-->
-<!--                      <br><span class="accent">Robin Wheeler</span>-->
-<!--                      <br><span class="accent">Joe Davenport</span>-->
-<!--                      <br><span class="accent">Linden Sims</span>-->
-<!--                      <br><span class="accent">Suzanne Molina</span>-->
-<!--                      <br><span class="accent">Kevin Spencer</span>-->
-<!--                      <br>-->
-<!--                      <br>-->
-                  THIS WEBSITE IS THE COPYRIGHT OF BEN FEIST &copy;2020.<br><br>
-                  THE ARCHIVE MATERIAL ON THIS WEBSITE COMPRISES NASA AUDIO RESTORED BY BEN FEIST AND NASA SYNCHRONISED AUDIO/VISUAL MATERIAL PROVIDED BY STEPHEN SLATER.<br><br>
-                  ANY SYNCHRONISED FOOTAGE MAY ONLY BE REPRODUCED AND UTILISED WITH THE PRIOR WRITTEN PERMISSION OF STEPHEN SLATER. ALL RIGHTS IN THE SYNCHRONISED FOOTAGE ARE EXPRESSLY RESERVED TO STEPHEN SLATER.
-              </p>
+          <div class="section-header">Interface</div>
+          <div class="intro">
+            <p>
+              Upon starting the application, select whether to begin one minute before launch, or click "Now" to drop in
+              to the mission using today's date and time.
+            </p>
+            <p>
+              Navigate to any moment of the mission using the time navigator at the top of the screen. The top bar is
+              the entire mission with two bars below it providing magnification. Clicking transcript items, photos,
+              commentary items, or guided tour moments also jumps the mission time to those events.
+            </p>
+            <p>
+              Main mission audio consists of space-to-ground (left ear), capcom loop (right ear), and on-board recorder
+              (center, when available). Selecting a Mission Control audio channel mutes the main audio, opens the
+              Mission Control audio panel, and plays the "live" audio of each selected Mission Control position. Change
+              channels by selecting the seats in Mission Control. Closing the Mission Control audio panel will unmute
+              the main audio and continue mission playback.
+            </p>
+            <p>
+              These 50 channels of Mission Control audio spanning the entire mission have only recently been digitized
+              and restored, and are made publicly available here for the first time. They total over 7,200 hours in
+              length.
+            </p>
+            <p>
+              Please contact <a href="http://benfeist.com" target="_blank">Ben Feist</a> for any inquiries.
+            </p>
           </div>
+          <div class="callouts"><img src="img/help_callouts.jpg" /></div>
+          <div class="callouts"><img src="img/navigator_key.jpg" /></div>
+          <div class="text">"I could put my thumb up to a window and completely hide the Earth. I thought, 'Everything
+            I've ever known is behind my thumb."</div>
+          <div class="attribution">
+            &mdash; Jim Lovell<br>
+            Commander, Apollo 13
+          </div>
+          <BR>
+          <div class="text">"My biggest emotion on Apollo 13 after the oxygen tank explosion was disappointment that we
+            had lost the landing."</div>
+          <div class="attribution">
+            &mdash; Fred Haise<br>
+            Lunar Module Pilot, Apollo 13
+          </div>
+          <BR>
+          <div class="text">"Okay, Houston, we've had a problem here."</div>
+          <div class="attribution">
+            &mdash; Jack Swigert<br>
+            Command Module Pilot, Apollo 13
+          </div>
+        </div>
+
+
+        <div class="credits">
+          <div class="section-header">Credits</div>
+
+          <p>
+            <span class="accent">Ben Feist</span> Concept, research, mission data restoration, audio restoration, video
+            editing, software architecture and programming. Follow <a href="https://twitter.com/benfeist"
+              target="_blank" style="color: yellow;">@BenFeist</a> for updates.
+            <br>
+            <br>
+            <span class="accent">Stephen Slater</span> Archive research and production, historical audio/film
+            synchronization
+            <br>
+            <span class="accent">David Charney</span> Visual design, 3D modeling
+            <br>
+            <span class="accent">Jeremy Cooper</span> Audio restoration programming
+            <br>
+            <span class="accent">Johannes Kemppanen</span> Transcript corrections, additional historical research <a
+              target="_blank" href="https://history.nasa.gov/afj/ap13fj/index.html">Editor of the Apollo 13 Flight
+              Journal</a>
+            <br>
+            <span class="accent">Robin Wheeler</span> Photography timing, transcript corrections <a target="_blank"
+              href="https://history.nasa.gov/afj/ap10fj">Editor of the Apollo 10 Flight Journal</a>
+            <br>
+            <span class="accent">Greg Wiseman</span> 30-track Mission Control <a target="_blank"
+              href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>, NASA JSC
+            <br>
+            <span class="accent">Ernie Wright</span> Lunar LRO Animations <a target="_blank"
+              href="https://svs.gsfc.nasa.gov/">Scientific Visualization Studio</a>, NASA Goddard
+            <br>
+            <span class="accent">Issa Tseng</span> Flight Director loop audio transcription <a target="_blank"
+              href="http://apollo13realtime.org/">apollo13realtime.org</a>
+            <br>
+            <span class="accent">Chris Bennett</span> Visual design, interface styling and programming
+            <br>
+
+          </p>
+          <div class="section-header">Thanks</div>
+          <p>
+            <span class="accent">Dan Rooney</span> Supervisory Archivist, Special Media Archives Services Division,
+            National Archives
+            <br>
+            <br>
+            <span class="section-subheader">NASA Headquarters</span>
+            <br>
+            <span class="accent">Dr. Bill Barry</span> Chief Historian, NASA HQ
+            <br>
+            <span class="accent">Dr. Jacob Bleacher</span> Chief Exploration Scientist, NASA HQ
+            <br>
+            <br>
+            <span class="section-subheader">NASA Johnson Space Center</span>
+            <!--                      <br>-->
+            <!--                      <span class="accent">Dr. Cindy Evans</span> Division Chief, Astromaterials Research and Exploration Science (ARES) Division, NASA JSC-->
+            <br>
+            <span class="accent">Sandra Tetley</span> Real Property Officer, Historic Preservation Officer, NASA JSC
+            <br>
+            <span class="accent">John Stoll</span> Public Affairs Audio Control Room, NASA JSC
+            <br>
+            <span class="accent">Dan Garrison</span> Jacobs Technology, NASA JSC
+            <br>
+            <span class="accent">Dr. Ryan Zeigler</span> Manager, Apollo Curator, ARES, NASA JSC
+            <br>
+            <span class="accent">Dr. Paul Niles</span> Assistant Chief Scientist, ARES NASA JSC
+            <br>
+            <br>
+            <span class="section-subheader">NASA Goddard Space Flight Center</span>
+            <br>
+            <span class="accent">Dr. Noah Petro</span> Project Scientist, Lunar Reconnaissance Orbiter. Planetary
+            Geology, Geophysics, and Geochemistry Lab, NASA GSFC
+            <br>
+            <br>
+            <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a
+              target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>.
+            More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
+            <br>
+            <br>
+            <span class="accent">Todd Miller</span> Director, <a href="https://www.apollo11movie.com/"
+              target="_blank">Apollo 11</a> film
+            <br>
+            <span class="accent">Tom Petersen</span> Producer, <a href="https://www.apollo11movie.com/"
+              target="_blank">Apollo 11</a> film
+            <br>
+            <br>
+            <span class="section-subheader">Lunar and Planetary Institute</span>
+            <br>
+            <span class="accent">Jamie Shumbera</span> Operations Manager
+            <br>
+            <br>
+            <span class="accent">David Woods</span> Author, <a href="http://www.hafttm.com/" target="_blank">How Apollo
+              Flew to the Moon</a>
+            <br>
+            <a href="http://history.nasa.gov/afj/" target="_blank">NASA Apollo Flight Journal</a>
+            <br>
+            <span class="accent"><a href="https://www.hq.nasa.gov/alsj/" target="_blank">NASA Apollo Lunar Surface
+                Journal</a></span>
+            <br>
+            <span class="accent"><a href="https://archive.org" target="_blank">Internet Archive</a></span>
+            <br>
+            <a href="http://keycdn.com" target="_blank">
+              <span class="section-subheader">Web hosting by</span>
+              <span><img src="https://logos.keycdn.com/keycdn-logo-white.png" width="90px"></span>
+            </a>
+            <br>
+            <span class="accent">The crew of Apollo 13</span>
+            <br>
+            <span class="accent">The men and women of Mission Control</span>
+            <br>
+            <br>
+            <!--                      <span class="section-subheader">Beta Testers</span>-->
+            <!--                      <br><span class="accent">Mike Dinn</span>-->
+            <!--                      <br><span class="accent">Jacqueline Poole</span>-->
+            <!--                      <br><span class="accent">Todd Green</span>-->
+            <!--                      <br><span class="accent">Ian House</span>-->
+            <!--                      <br><span class="accent">Joey Schwartz</span>-->
+            <!--                      <br><span class="accent">David Charney</span>-->
+            <!--                      <br><span class="accent">Sammy Goldberg</span>-->
+            <!--                      <br><span class="accent">Robin Wheeler</span>-->
+            <!--                      <br><span class="accent">Joe Davenport</span>-->
+            <!--                      <br><span class="accent">Linden Sims</span>-->
+            <!--                      <br><span class="accent">Suzanne Molina</span>-->
+            <!--                      <br><span class="accent">Kevin Spencer</span>-->
+            <!--                      <br>-->
+            <!--                      <br>-->
+            THIS WEBSITE IS THE COPYRIGHT OF BEN FEIST &copy;2020.<br><br>
+            THE ARCHIVE MATERIAL ON THIS WEBSITE COMPRISES NASA AUDIO RESTORED BY BEN FEIST AND NASA SYNCHRONISED
+            AUDIO/VISUAL MATERIAL PROVIDED BY STEPHEN SLATER.<br><br>
+            ANY SYNCHRONISED FOOTAGE MAY ONLY BE REPRODUCED AND UTILISED WITH THE PRIOR WRITTEN PERMISSION OF STEPHEN
+            SLATER. ALL RIGHTS IN THE SYNCHRONISED FOOTAGE ARE EXPRESSLY RESERVED TO STEPHEN SLATER.
+          </p>
+        </div>
       </div>
+    </div>
+
   </div>
 
-</div>
-
-<div id="shareModal" class="modal">
+  <div id="shareModal" class="modal">
     <div class="shareModalWrapper">
-        <div class="headline">
-            Share Website
-        </div>
-        <div class="body">
-            <textarea class="monitor" id="shareWebsiteURL">https://apolloinrealtime.org/13</textarea><br><br>
-            <a class="splash-btn primary" id="shareModalCopyWebsiteLinkAction" onclick="copyShareWebsiteURL()">COPY LINK</a>
-        </div>
-        <div class="headline">
-            Share this Mission Moment
-        </div>
-        <div class="body">
-            Ground Elapsed Time: <span id="shareModelGET" class="valueItem"></span><br>
-            Audio Channel: <span id="shareModelChannel" class="valueItem">Main space-to-ground</span><br>
-            <br>
-            <textarea class="monitor" id="shareURL"></textarea><br><br>
-            <a class="splash-btn primary" id="shareModalCopyLinkAction" onclick="copyShareURL()">COPY LINK</a>
-        </div>
-        <div class="headline">
-            Join our Forum
-        </div>
-        <div class="body">
-            Share and discuss moments of interest on this mission at <a href='https://forum.apolloinrealtime.org' target="_blank">forum.apolloinrealtime.org</a>
-        </div>
+      <div class="headline">
+        Share Website
+      </div>
+      <div class="body">
+        <textarea class="monitor" id="shareWebsiteURL">https://apolloinrealtime.org/13</textarea><br><br>
+        <a class="splash-btn primary" id="shareModalCopyWebsiteLinkAction" onclick="copyShareWebsiteURL()">COPY LINK</a>
+      </div>
+      <div class="headline">
+        Share this Mission Moment
+      </div>
+      <div class="body">
+        Ground Elapsed Time: <span id="shareModelGET" class="valueItem"></span><br>
+        Audio Channel: <span id="shareModelChannel" class="valueItem">Main space-to-ground</span><br>
+        <br>
+        <textarea class="monitor" id="shareURL"></textarea><br><br>
+        <a class="splash-btn primary" id="shareModalCopyLinkAction" onclick="copyShareURL()">COPY LINK</a>
+      </div>
+      <div class="headline">
+        Join our Forum
+      </div>
+      <div class="body">
+        Share and discuss moments of interest on this mission at <a href='https://forum.apolloinrealtime.org'
+          target="_blank">forum.apolloinrealtime.org</a>
+      </div>
     </div>
-</div>
+  </div>
 
 </body>
 
