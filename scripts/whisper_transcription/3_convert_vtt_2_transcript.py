@@ -1,5 +1,6 @@
-import re, os
 
+import re
+import os
 import tape_info
 
 
