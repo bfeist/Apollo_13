@@ -144,7 +144,7 @@ workingPath = "K:/tempK/whisper/"
 for root, dirs, files in os.walk(inputPath):
    for dir in dirs:
       for file in os.listdir(os.path.join(root, dir)):
-        if file.endswith(".wav") and not "CH1.wav" in file and not "CH01.wav" in file and not "CH30.wav" in file:
+        if file.endswith(".wav") and not "CH1.wav" in file and not "CH01.wav" in file:
             inputFilename = file          
             inputFilenameWithPath = os.path.join(root, dir, inputFilename)
 

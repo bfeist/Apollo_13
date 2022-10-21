@@ -30,7 +30,7 @@ for root, tapes, files in os.walk(workingPath):
           lastStart = 0
           stopAfterThis = False
           while 1 == 1:
-              end = lastStart + 8
+              end = lastStart + 15
               if end > len(wavs):
                   end = len(wavs)
                   stopAfterThis = True
@@ -42,7 +42,7 @@ for root, tapes, files in os.walk(workingPath):
                   whisperCommand,
                   shell=True,
               )
-              lastStart += 8
+              lastStart += 15
               print(f"Transcribed ({lastStart}-{lastStart+8}/{len(wavs)})")
               if stopAfterThis:
                   break

@@ -6,18 +6,36 @@ import tape_info
 
 def secondsFromGET(timestamp):
     values = re.split(":", timestamp)
-    hours = int(values[0])
+    negative = False
+    hourStr = values[0]
+    # if the first character is a 1, remove it
+    if hourStr[0] == "-":
+        negative = True
+        hourStr = hourStr[1:]
+      
+    hours = int(hourStr)
     minutes = int(values[1])
     seconds = int(values[2])
-    return (hours * 60 * 60) + (minutes * 60) + seconds
+    totalSeconds = (hours * 60 * 60) + (minutes * 60) + seconds
+    if negative:
+        totalSeconds = totalSeconds * -1
+    return totalSeconds
 
 
 def GETFromSeconds(seconds):
-    hours = seconds // (60 * 60)
-    seconds %= 60 * 60
-    minutes = seconds // 60
-    seconds %= 60
-    return "%03i:%02i:%02i" % (hours, minutes, seconds)
+  negative = False
+  if seconds < 0:
+    negative = True
+    seconds = seconds * -1
+    
+  hours = seconds // (60 * 60)
+  seconds %= 60 * 60
+  minutes = seconds // 60
+  seconds %= 60
+  timestamp = "%03i:%02i:%02i" % (hours, minutes, seconds)
+  if negative:
+    timestamp = "-" + timestamp
+  return timestamp
 
 
 def nearestSecondFromVTTTimestamp(timestamp):
@@ -33,19 +51,31 @@ def showUtteranceGET(tapeStart, wavStart, vttTimestamp):
     return GETFromSeconds(secondsFromGET(tapeStart) + wavStart + nearestSecondFromVTTTimestamp(vttTimestamp))
 
 
-inputPath = "F:/tempF/temp_transcripts/"
+inputPath = "K:/tempK/whisper/"
 
 vtts = []
-for filename in os.listdir(inputPath):
-    if filename.endswith(".vtt"):
-        vtts.append(f"{filename}")
+for tape in os.listdir(inputPath):
+  if os.path.isdir(os.path.join(inputPath,tape)):  
+    print("Processing Tape: " + tape)
+    if not "HR2" in tape:
+      continue
+    
+    for trackFolder in os.listdir(os.path.join(inputPath, tape)):
+      if not "CH20" in trackFolder:
+        continue
+      else:        
+        for filename in os.listdir(os.path.join(inputPath, tape, trackFolder, "transcripts")):
+            if filename.endswith(".vtt"):
+                filenameWithPath = os.path.join(inputPath, tape, trackFolder, "transcripts", filename)
+                vtts.append(f"{filenameWithPath}")
 
-tapeStart = tape_info.getTapeStartByFilename(vtts[0])
+
 
 transcriptArr = []
 for vtt in vtts:
+    tapeStart = tape_info.getTapeStartByFilename(vtt)
     # vtt = "DA13_T709_HR2L_CH20__9851_9864.wav.vtt"
-    with open(f"{inputPath}{vtt}", "r", encoding="utf-8") as f:
+    with open(f"{vtt}", "r", encoding="utf-8") as f:
         print(f"Processing {vtt}")
         lines = f.readlines()
 
@@ -73,12 +103,12 @@ for vtt in vtts:
                     utterance = ""
 
 # sort the transcriptArr by the timestamp
-transcriptArr.sort(key=lambda x: x.split("||")[0])
+transcriptArr.sort(key=lambda x: int(x.split("||")[0]))
 
 # convert the timestamp in the transcriptArr to a GET
 for i in range(len(transcriptArr)):
     transcriptArr[i] = transcriptArr[i].replace(transcriptArr[i].split("||")[0], GETFromSeconds(int(transcriptArr[i].split("||")[0])))
 
 # write the transcript to a file
-with open(f"{inputPath}_transcript.csv", "w", encoding="utf-8") as out:
+with open(f"{inputPath}_CH20_transcript.csv", "w", encoding="utf-8") as out:
     out.write("\n".join(transcriptArr))
