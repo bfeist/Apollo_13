@@ -36,7 +36,8 @@ def _getActivityFromFFmpegSilenceOutput(ffmpegOutputText):
                     match = re.search(r"silence_duration: (.*?)$", line)
                     if match:
                         duration_secs = float(match.group(1))
-            silence = {"start_secs": start_secs, "end_secs": end_secs, "duration_secs": duration_secs}
+            silence = {"start_secs": start_secs,
+                       "end_secs": end_secs, "duration_secs": duration_secs}
     silences.append(silence)
 
     # loop through the duration of the file and create an object opposite of the ranges in the silence_array
@@ -46,7 +47,8 @@ def _getActivityFromFFmpegSilenceOutput(ffmpegOutputText):
     sound_start_secs = 0
     sound_stop_secs = 0
     active_sounds = []
-    total_duration_secs = duration_vals[0] * 3600 + duration_vals[1] * 60 + duration_vals[2]
+    total_duration_secs = duration_vals[0] * \
+        3600 + duration_vals[1] * 60 + duration_vals[2]
     # if there are no silences, assume the whole file is sound
     if silences[0] == {}:
         active_sounds.append(
@@ -94,17 +96,20 @@ def _getActivityFromFFmpegSilenceOutput(ffmpegOutputText):
 
 
 def detectRegionsOfActivityInCoverageVideo(path):
-  # if the file length is 0 bytes then skip it
-  if os.path.getsize(path) == 0:
-    return []  
+    # if the file length is 0 bytes then skip it
+    if os.path.getsize(path) == 0:
+        return []
 
-  utils.log(f"Detecting audio activity ranges utilizing ffmpeg silence detection in file {path}")
-  ffmpegCommand = f"ffmpeg -i {path} -nostats -af silencedetect=noise=-28dB:d={os.environ['SILENCE_DURATION_THRESHOLD']} -f null pipe:1"
-  pipe = subprocess.run(ffmpegCommand, stdout=subprocess.PIPE, stderr=subprocess.PIPE, bufsize=10 ** 8, shell=True)
-  silence_ffmpeg_output = pipe.stderr.decode().replace("\r\n", "\n").replace("\n\r", "\n").replace("\r", "\n")
-  activityRanges = _getActivityFromFFmpegSilenceOutput(silence_ffmpeg_output)
-  utils.log("Activity ranges detected")
-  return activityRanges
+    utils.log(
+        f"Detecting audio activity ranges utilizing ffmpeg silence detection in file {path}")
+    ffmpegCommand = f"ffmpeg -i {path} -nostats -af silencedetect=noise=-28dB:d={os.environ['SILENCE_DURATION_THRESHOLD']} -f null pipe:1"
+    pipe = subprocess.run(ffmpegCommand, stdout=subprocess.PIPE,
+                          stderr=subprocess.PIPE, bufsize=10 ** 8, shell=True)
+    silence_ffmpeg_output = pipe.stderr.decode().replace(
+        "\r\n", "\n").replace("\n\r", "\n").replace("\r", "\n")
+    activityRanges = _getActivityFromFFmpegSilenceOutput(silence_ffmpeg_output)
+    utils.log("Activity ranges detected")
+    return activityRanges
 
 
 # encode this coverage video's audio regions of activity into aac files for transcription
@@ -112,7 +117,7 @@ def encodeWAVFilesForTranscriptionFromActivityRange(workingPath, inputFilename, 
 
     utils.log(f"Encoding WAV audio segments")
     os.makedirs(outputPath, exist_ok=True)
-    
+
     # if the number of activity ranges is the same as the number of wav files in the output folder, skip encoding
     if len(activityRanges) == len(os.listdir(outputPath)):
         utils.log(f"WAV audio segments already encoded")
@@ -126,9 +131,10 @@ def encodeWAVFilesForTranscriptionFromActivityRange(workingPath, inputFilename, 
         inputFilePath = os.path.join(workingPath, inputFilename)
         # if audioOutputFilePath already exists, skip this file
         if os.path.exists(audioOutputFilePath):
-          utils.log(f"Skipping {audioOutputFilePath} because it already exists")
-          continue
-        
+            utils.log(
+                f"Skipping {audioOutputFilePath} because it already exists")
+            continue
+
         ffmpegCommand = f"ffmpeg -y -i {inputFilePath} -ss {soundStartSecs} -to {soundStopSecs} -vn -acodec pcm_s16le {audioOutputFilePath}"
         subprocess.call(
             ffmpegCommand,
@@ -138,20 +144,26 @@ def encodeWAVFilesForTranscriptionFromActivityRange(workingPath, inputFilename, 
         )
         utils.log("Encoded " + audioOutputFilePath)
 
+
 inputPath = "O:/Apollo_13_30-Track/44.1/defluttered/"
-workingPath = "K:/tempK/whisper/"
+workingPath = "E:/A13_MOCR_transcription/"
 
 for root, dirs, files in os.walk(inputPath):
-   for dir in dirs:
-      for file in os.listdir(os.path.join(root, dir)):
-        if file.endswith(".wav") and not "CH1.wav" in file and not "CH01.wav" in file:
-            inputFilename = file          
-            inputFilenameWithPath = os.path.join(root, dir, inputFilename)
+    for dir in dirs:
+        for file in os.listdir(os.path.join(root, dir)):
+            if file.endswith(".wav") and not "CH1.wav" in file and not "CH01.wav" in file:
+                inputFilename = file
+                inputFilenameWithPath = os.path.join(root, dir, inputFilename)
 
-            outputPath = os.path.join(workingPath, dir.replace("_16khz", ""), file, "wavs")
+                outputPath = os.path.join(
+                    workingPath, dir.replace("_16khz", ""), file, "wavs")
 
-            os.makedirs(outputPath, exist_ok=True)
-            print("Processing " + inputFilename)
-            activityRanges = detectRegionsOfActivityInCoverageVideo(inputFilenameWithPath)
-            encodeWAVFilesForTranscriptionFromActivityRange(inputPath + dir, inputFilename, outputPath, activityRanges)
-            
+                if not os.path.exists(outputPath):
+                    os.makedirs(outputPath, exist_ok=True)
+                    print("Processing " + inputFilename)
+                    activityRanges = detectRegionsOfActivityInCoverageVideo(
+                        inputFilenameWithPath)
+                    encodeWAVFilesForTranscriptionFromActivityRange(
+                        inputPath + dir, inputFilename, outputPath, activityRanges)
+                else:
+                    print(f"Skipping {outputPath} because it already exists")
