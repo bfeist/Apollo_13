@@ -709,24 +709,24 @@ function positionChannelButtons() {
     var y = 0;
     var xsub = 0;
 
-    $('#btndiv-ch47').css({"left": x + "px", "top": y + "px"}); //BOOSTER
+    $('#btndiv-ch47').css({"left": x + "px", "top": y + "px", "display": "none"}); //BOOSTER
     $('#btn-ch47').css({"width": buttonWidth + "px"});
         xsub = x;
-        $('#btndiv-ch48').css({"left": xsub + "px", "top": y + buttonHeight + "px"}); //[C]
+        $('#btndiv-ch48').css({"left": xsub + "px", "top": y + buttonHeight + "px", "display": "none"}); //[C]
         $('#btn-ch48').css({"width": buttonWidth / 2 - 1 + "px"});
-        $('#btndiv-ch49').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px"}); //[R]
+        $('#btndiv-ch49').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px", "display": "none"}); //[R]
         $('#btn-ch49').css({"width": buttonWidth / 2 + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch19').css({"left": x + "px", "top": y + "px"}); //RETRO
+    $('#btndiv-ch19').css({"left": x + "px", "top": y + "px", "display": "none"}); //RETRO
     $('#btn-ch19').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + aisleGap;
-    $('#btndiv-ch20').css({"left": x + "px", "top": y + "px"}); //FIDO
+    $('#btndiv-ch20').css({"left": x + "px", "top": y + "px", "display": "none"}); //FIDO
     $('#btn-ch20').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch21').css({"left": x + "px", "top": y + "px"}); //GUIDO
+    $('#btndiv-ch21').css({"left": x + "px", "top": y + "px", "display": "none"}); //GUIDO
     $('#btn-ch21').css({"width": buttonWidth + "px"});
         xsub = x;
-        $('#btndiv-ch22').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px"}); //[R]
+        $('#btndiv-ch22').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px", "display": "none"}); //[R]
         $('#btn-ch22').css({"width": buttonWidth / 2 + "px"});
 
     y = y + rowGap;
@@ -734,79 +734,80 @@ function positionChannelButtons() {
     //row 2
     x = 50;
     aisleGap = 40;
-    $('#btndiv-ch12').css({"left": x + "px", "top": y + "px"}); //SURGEON
+    $('#btndiv-ch12').css({"left": x + "px", "top": y + "px", "display": "none"}); //SURGEON
     $('#btn-ch12').css({"width": buttonWidth + "px"});
         xsub = x;
-        $('#btndiv-ch13').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px"}); //[R]
+        $('#btndiv-ch13').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px", "display": "none"}); //[R]
         $('#btn-ch13').css({"width": buttonWidth / 2 + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch14').css({"left": x + "px", "top": y + "px"}); //CAPCOM
+    $('#btndiv-ch14').css({"left": x + "px", "top": y + "px", "display": "none"}); //CAPCOM
     $('#btn-ch14').css({"width": buttonWidth + "px"});
         xsub = x;
-        $('#btndiv-ch15').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px"}); //[R]
+        $('#btndiv-ch15').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px", "display": "none"}); //[R]
         $('#btn-ch15').css({"width": buttonWidth / 2 + "px"});
     x = x + buttonWidth + aisleGap;
     buttonWidth = buttonWidth - 10;
-    $('#btndiv-ch17').css({"left": x + "px", "top": y + "px"}); //POS EECOM
+    $('#btndiv-ch17').css({"left": x + "px", "top": y + "px", "display": "none"}); //POS EECOM
     $('#btn-ch17').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
     buttonWidth = buttonWidth - 20;
-    $('#btndiv-ch18').css({"left": x + "px", "top": y + "px"}); //CSM GNC
+    $('#btndiv-ch18').css({"left": x + "px", "top": y + "px", "display": "none"}); //CSM GNC
     $('#btn-ch18').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
     buttonWidth = buttonWidth + 20;
-    $('#btndiv-ch58').css({"left": x + "px", "top": y + "px"}); //LM EECOM (TELMU)
+    $('#btndiv-ch58').css({"left": x + "px", "top": y + "px", "display": "none"}); //LM EECOM (TELMU)
     $('#btn-ch58').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch57').css({"left": x + "px", "top": y + "px"}); //LM GNC
+    $('#btndiv-ch57').css({"left": x + "px", "top": y + "px", "display": "none"}); //LM GNC
     $('#btn-ch57').css({"width": buttonWidth + "px"});
 
     y = y + rowGap;
     //row 3
     x = 0;
-    $('#btndiv-ch16').css({"left": x + "px", "top": y + "px"}); //CSM EECOM
+    $('#btndiv-ch16').css({"left": x + "px", "top": y + "px", "display": "none"}); //CSM EECOM
     $('#btn-ch16').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch5').css({"left": x + "px", "top": y + "px"}); //PRO
+    $('#btndiv-ch5').css({"left": x + "px", "top": y + "px", "display": "none"}); //PRO
     $('#btn-ch5').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch6').css({"left": x + "px", "top": y + "px"}); //AFD
+    $('#btndiv-ch6').css({"left": x + "px", "top": y + "px", "display": "none"}); //AFD
     $('#btn-ch6').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + aisleGap;
     buttonWidth = buttonWidth + 10;
-    $('#btndiv-ch50').css({"left": x + "px", "top": y + "px"}); //FLIGHT
+    $('#btndiv-ch50').css({"left": x + "px", "top": y + "px", "display": "none"}); //FLIGHT
     $('#btn-ch50').css({"width": buttonWidth + "px"});
         xsub = x;
-        $('#btndiv-ch7').css({"left": xsub + "px", "top": y + buttonHeight + "px"}); //FLIGHT L
+        $('#btndiv-ch7').css({"left": xsub + "px", "top": y + buttonHeight + "px", "display": "none"}); //FLIGHT L
         $('#btn-ch7').css({"width": buttonWidth / 2 - 1 + "px"});
-        $('#btndiv-ch8').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px"}); //FLIGHT R
+        $('#btndiv-ch8').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px", "display": "none"}); //FLIGHT R
         $('#btn-ch8').css({"width": buttonWidth / 2 + "px"});
 
     x = x + buttonWidth + aisleGap;
     xsub = x;
-    $('#btndiv-ch9').css({"left": x + "px", "top": y + "px"}); //FAO
+    $('#btndiv-ch9').css({"left": x + "px", "top": y + "px", "display": "none"}); //FAO
     $('#btn-ch9').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch11').css({"left": x + "px", "top": y + "px"}); //NETWORK
+    $('#btndiv-ch11').css({"left": x + "px", "top": y + "px", "display": "none"}); //NETWORK
     $('#btn-ch11').css({"width": buttonWidth + "px"});
         xsub = x;
-        $('#btndiv-ch42').css({"left": xsub + "px", "top": y + buttonHeight + "px"}); //COMM TECH
+        $('#btndiv-ch42').css({"left": xsub + "px", "top": y + buttonHeight + "px", "display": "none"}); //COMM TECH
         $('#btn-ch42').css({"width": buttonWidth / 2 - 1 + "px"});
-        $('#btndiv-ch43').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px"}); //COMM CTRLR
+        $('#btndiv-ch43').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px", "display": "none"}); //COMM CTRLR
         $('#btn-ch43').css({"width": buttonWidth / 2 + "px"});
 
     y = y + rowGap;
     //row 4
     x = 271;
-    $('#btndiv-ch2').css({"left": x + "px", "top": y + "px"}); //DIR FLIGHT OPS
+    $('#btndiv-ch2').css({"left": x + "px", "top": y + "px", "display": "none"}); //DIR FLIGHT OPS
     $('#btn-ch2').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + aisleGap;
-    $('#btndiv-ch3').css({"left": x + "px", "top": y + "px"}); //MISSION DIR
+    $('#btndiv-ch3').css({"left": x + "px", "top": y + "px", "display": "none"}); //MISSION DIR
     $('#btn-ch3').css({"width": buttonWidth + "px"});
 
 
     y = y + rowGap;
     //backrooms 1
+    buttonWidth = 75;
     x = 0;
     $('#btndiv-ch44').css({"left": x + "px", "top": y + "px"}); //SPACE ENV
     $('#btn-ch44').css({"width": buttonWidth + "px"});
@@ -820,19 +821,14 @@ function positionChannelButtons() {
     $('#btndiv-ch59').css({"left": x + "px", "top": y + "px"}); //EXPMT
     $('#btn-ch59').css({"width": buttonWidth + "px"});
     x = x + buttonWidth + buttonGap;
-    $('#btndiv-ch53').css({"left": x + "px", "top": y + "px"}); //INCO
+    $('#btndiv-ch53').css({"left": x + "px", "top": y + "px", "display": "none"}); //INCO
     $('#btn-ch53').css({"width": buttonWidth + "px"});
 
     y = y + rowGap / 2 - 2;
     //backrooms 2
-    buttonWidth = 96;
+    buttonWidth = 85;
     x = 0;
-    $('#btndiv-ch28').css({"left": x + "px", "top": y + "px"}); //TRACK
-    $('#btn-ch28').css({"width": buttonWidth + "px"});
-        xsub = x;
-        $('#btndiv-ch29').css({"left": xsub + buttonWidth / 2 + "px", "top": y + buttonHeight + "px"}); //[R]
-        $('#btn-ch29').css({"width": buttonWidth / 2 + "px"});
-    x = x + buttonWidth + buttonGap;
+    
     $('#btndiv-ch32').css({"left": x + "px", "top": y + "px"}); //RCVY
     $('#btn-ch32').css({"width": buttonWidth + "px"});
         xsub = x;
@@ -867,6 +863,14 @@ function positionChannelButtons() {
         $('#btn-ch55').css({"width": buttonWidth / 4 - 1 + "px"});
         $('#btndiv-ch56').css({"left": xsub + (buttonWidth / 4) * 3 + "px", "top": y + buttonHeight + "px"}); //TM
         $('#btn-ch56').css({"width": buttonWidth / 4 + "px"});
+    x = x + buttonWidth + buttonGap;
+    buttonWidth = 55;
+    $('#btndiv-ch28').css({"left": x + "px", "top": y + "px"}); //TRACK
+        $('#btn-ch28').css({"width": buttonWidth + "px"});
+            xsub = x;
+            $('#btndiv-ch29').css({"left": xsub  + "px", "top": y + buttonHeight + "px"}); //[R]
+            $('#btn-ch29').css({"width": buttonWidth / 2 + "px"});
+        x = x + buttonWidth + buttonGap;
 
     gChannelbuttonsHeight = y + buttonHeight;
 }
@@ -992,7 +996,7 @@ function positionIsometricElements() {
     if (parent.gMobileSite !== true) {
         var leftPosition = offset.left + btnSelector.width() + 20;
         //position the background image
-        isoSelector.css({"left": leftPosition + "px"});
+        // isoSelector.css({"left": leftPosition + "px"});
         var isoWidth = isometricImageSelector.width();
         var screenRemainderWidth = Math.round($(window).width()) - leftPosition;
         var scalePercentage = ((100 * screenRemainderWidth) / isoWidth) / 100;
@@ -1000,7 +1004,6 @@ function positionIsometricElements() {
         scalePercentage = scalePercentage > 0.6 ? 0.6 : scalePercentage;
         isoSelector.css('transform', 'scale(' + scalePercentage + ')');
 
-        $('#controller-details').css('top', '610px');
     } else { //if on mobile site
         isoSelector.css({"top": "305px"});
         isoWidth = isometricImageSelector.width();
@@ -1029,12 +1032,16 @@ function positionIsometricElements() {
     // transform-origin: 0 0;
 
     isoSelector.append("<span id='dot47' class='isometric_dot' style='left:" + 35 + "px;top:" + 245 + "px'>B</span>"); //BOOSTER
+    isoSelector.append("<span id='dot48' class='isometric_dot isometric_dot_small' style='left:" + 50 + "px;top:" + 290 + "px'>C</span>"); //BOOSTER C
+    isoSelector.append("<span id='dot49' class='isometric_dot isometric_dot_small' style='left:" + 80 + "px;top:" + 275 + "px'>R</span>"); //BOOSTER C
     isoSelector.append("<span id='dot19' class='isometric_dot' style='left:" + 127 + "px;top:" + 195 + "px'>R</span>"); //RETRO
     isoSelector.append("<span id='dot20' class='isometric_dot' style='left:" + 218 + "px;top:" + 151 + "px'>FI</span>"); //FIDO
     isoSelector.append("<span id='dot21' class='isometric_dot' style='left:" + 307 + "px;top:" + 102 + "px'>G</span>"); //GUIDO
 
     isoSelector.append("<span id='dot12' class='isometric_dot' style='left:" + 196 + "px;top:" + 280 + "px'>S</span>"); //SURGEON
+    isoSelector.append("<span id='dot13' class='isometric_dot isometric_dot_small' style='left:" + 240 + "px;top:" + 305 + "px'>R</span>"); //SURGEON
     isoSelector.append("<span id='dot14' class='isometric_dot' style='left:" + 279 + "px;top:" + 231 + "px'>C</span>"); //CAPCOM
+    isoSelector.append("<span id='dot15' class='isometric_dot isometric_dot_small' style='left:" + 320 + "px;top:" + 260 + "px'>R</span>"); //CAPCOM
     isoSelector.append("<span id='dot17' class='isometric_dot' style='left:" + 366 + "px;top:" + 166 + "px'>PE</span>"); //POS EECOM
     isoSelector.append("<span id='dot18' class='isometric_dot' style='left:" + 416 + "px;top:" + 136 + "px'>CG</span>"); //CSM GNC
     isoSelector.append("<span id='dot58' class='isometric_dot' style='left:" + 469 + "px;top:" + 105 + "px'>T</span>"); //LM EECOM (TELMU)
@@ -1044,13 +1051,17 @@ function positionIsometricElements() {
     isoSelector.append("<span id='dot5' class='isometric_dot' style='left:" + 286 + "px;top:" + 323 + "px'>P</span>"); //PRO
     isoSelector.append("<span id='dot6' class='isometric_dot' style='left:" + 344 + "px;top:" + 291 + "px'>A</span>"); //AFD
     isoSelector.append("<span id='dot50' class='isometric_dot' style='left:" + 454 + "px;top:" + 214 + "px'>FD</span>"); //FLIGHT
+    isoSelector.append("<span id='dot7' class='isometric_dot isometric_dot_small' style='left:" + 470 + "px;top:" + 260 + "px'>L</span>"); //FLIGHT
+    isoSelector.append("<span id='dot8' class='isometric_dot isometric_dot_small' style='left:" + 500 + "px;top:" + 240 + "px'>R</span>"); //FLIGHT
     isoSelector.append("<span id='dot9' class='isometric_dot' style='left:" + 538 + "px;top:" + 161 + "px'>FA</span>"); //FAO
     isoSelector.append("<span id='dot11' class='isometric_dot' style='left:" + 581 + "px;top:" + 130 + "px'>N</span>"); //NETWORK
+    isoSelector.append("<span id='dot42' class='isometric_dot isometric_dot_small' style='left:" + 600 + "px;top:" + 170 + "px'>T</span>"); //NETWORK TECH
+    isoSelector.append("<span id='dot43' class='isometric_dot isometric_dot_small' style='left:" + 623 + "px;top:" + 152 + "px'>C</span>"); //NETWORK CONTROLLER
 
     isoSelector.append("<span id='dot61' class='isometric_dot' style='left:" + 456 + "px;top:" + 316 + "px'></span>"); //unused
     isoSelector.append("<span id='dot2' class='isometric_dot' style='left:" + 550 + "px;top:" + 247 + "px'>FO</span>"); //DIR FLIGHT OPS
     isoSelector.append("<span id='dot3' class='isometric_dot' style='left:" + 645 + "px;top:" + 182 + "px'>M</span>"); //MISSION DIRECTOR
-    isoSelector.append("<span id='dot8' class='isometric_dot' style='left:" + 686 + "px;top:" + 155 + "px'>FR</span>"); //FD R
+    isoSelector.append("<span id='dot53' class='isometric_dot' style='left:" + 686 + "px;top:" + 155 + "px'>I</span>"); //FD R
 
     //set alt text
     for (var counter = 1; counter < 60; counter++) {

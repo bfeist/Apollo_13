@@ -1,188 +1,216 @@
 body {
-    background-color: #000000;
-    color: #DDDDDD;
+  background-color: #000000;
+  color: #dddddd;
 }
 
-canvas{
-    /*border:1px solid  blue;*/
-    /*width: 100%;*/
+canvas {
+  /*border:1px solid  blue;*/
+  /*width: 100%;*/
 }
 
 button {
-    margin: 0;
-    font-family: inherit;
-    font-size: inherit;
-    line-height: inherit;
-    padding: 1px 6px;
+  margin: 0;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  padding: 1px 6px;
 }
 
 #canvasContainer {
-    position: fixed;
-    z-index: 5;
+  position: fixed;
+  z-index: 5;
+}
+
+#left {
+  width: 500px;
 }
 
 .close-btn {
-    position: absolute;
-    top: 0px;
-    right: 5px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    /*background-color: rgba(215, 160, 108, 1);*/
-    /*background-color: #5E92A6;*/
-    background-color: #FFFFFF;
-    text-indent: -999px;
-    overflow: hidden;
-    transition: background-color .25s ease-in-out;
-    z-index: 6;
+  position: absolute;
+  top: 0px;
+  right: 5px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  /*background-color: rgba(215, 160, 108, 1);*/
+  /*background-color: #5E92A6;*/
+  background-color: #ffffff;
+  text-indent: -999px;
+  overflow: hidden;
+  transition: background-color 0.25s ease-in-out;
+  z-index: 6;
 
-    background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Circled_cross' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M10,1.6c-4.639,0-8.4,3.761-8.4,8.4s3.761,8.4,8.4,8.4s8.4-3.761,8.4-8.4S14.639,1.6,10,1.6z M14.789,13.061 L13.06,14.79L10,11.729l-3.061,3.06L5.21,13.06L8.272,10L5.211,6.939L6.94,5.211L10,8.271l3.061-3.061l1.729,1.729L11.728,10 L14.789,13.061z'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Circled_cross' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M10,1.6c-4.639,0-8.4,3.761-8.4,8.4s3.761,8.4,8.4,8.4s8.4-3.761,8.4-8.4S14.639,1.6,10,1.6z M14.789,13.061 L13.06,14.79L10,11.729l-3.061,3.06L5.21,13.06L8.272,10L5.211,6.939L6.94,5.211L10,8.271l3.061-3.061l1.729,1.729L11.728,10 L14.789,13.061z'/%3E%3C/svg%3E");
 
-    /*background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Squared_cross' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M16,2H4C2.9,2,2,2.9,2,4v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V4C18,2.9,17.1,2,16,2z M13.061,14.789 L10,11.729l-3.061,3.06L5.21,13.061L8.271,10l-3.06-3.061L6.94,5.21L10,8.271l3.059-3.061l1.729,1.729L11.729,10l3.06,3.061 L13.061,14.789z'/%3E%3C/svg%3E");*/
+  /*background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Squared_cross' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M16,2H4C2.9,2,2,2.9,2,4v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V4C18,2.9,17.1,2,16,2z M13.061,14.789 L10,11.729l-3.061,3.06L5.21,13.061L8.271,10l-3.06-3.061L6.94,5.21L10,8.271l3.059-3.061l1.729,1.729L11.729,10l3.06,3.061 L13.061,14.789z'/%3E%3C/svg%3E");*/
 }
 
 #channelbuttons {
-    position: fixed;
-    font-size: 0.7em;
-    font-weight: bold;
-    top: 350px;
-    width: 100%;
-    transform-origin: left top;
-    z-index: 5;
+  position: absolute;
+  font-size: 0.7em;
+  font-weight: bold;
+  top: 135px;
+  width: 100%;
+  transform-origin: left top;
+  z-index: 5;
 }
 
 .buttondiv {
-    position: absolute;
+  position: absolute;
 }
 
 .btn-channel {
-    border: none;
-    /*width: 100px;*/
-    border-radius: 3px;
-    font-family: "Roboto Mono", sans-serif;
-    font-weight: bold;
-    white-space:nowrap;
-    background-color: #292929;
-    box-shadow: inset -1px -1px 7px 3px rgba(0, 0, 0, 0.25);
-    border-right: 1px solid #292929;
-    border-bottom: 1px solid #292929;
-    color: #595959;
+  border: none;
+  /*width: 100px;*/
+  border-radius: 3px;
+  font-family: "Roboto Mono", sans-serif;
+  font-weight: bold;
+  white-space: nowrap;
+  background-color: #292929;
+  box-shadow: inset -1px -1px 7px 3px rgba(0, 0, 0, 0.25);
+  border-right: 1px solid #292929;
+  border-bottom: 1px solid #292929;
+  color: #595959;
 }
 
 .btn-active {
-    background-color: #636363;
-    color: #000000;
-    border-right: 1px solid #636363;
-    border-bottom: 1px solid #636363;
+  background-color: #636363;
+  color: #000000;
+  border-right: 1px solid #636363;
+  border-bottom: 1px solid #636363;
 }
 
 .btn-inactive {
-    /*background-color: #292929;*/
-    /*color: #595959;*/
+  /*background-color: #292929;*/
+  /*color: #595959;*/
 }
 
 .btn-selected {
-    background-color: #7cb7e0;
-    color: #000000;
-    border-right: 1px solid rgb(93, 153, 177);
-    border-bottom: 1px solid rgb(93, 153, 177);
+  background-color: #7cb7e0;
+  color: #000000;
+  border-right: 1px solid rgb(93, 153, 177);
+  border-bottom: 1px solid rgb(93, 153, 177);
 }
 
 .btn-hover {
-    background-color: #7cb7e0;
-    color: #000000;
-    border-right: 1px solid rgb(93, 153, 177);
-    border-bottom: 1px solid rgb(93, 153, 177);
+  background-color: #7cb7e0;
+  color: #000000;
+  border-right: 1px solid rgb(93, 153, 177);
+  border-bottom: 1px solid rgb(93, 153, 177);
 }
 
 .secondary {
-    font-size: 0.8em;
-    width: 33px;
+  font-size: 0.8em;
+  width: 33px;
 }
 
 .hidden {
-    display: none;
+  display: none;
 }
 
 #playButton {
-    display: block;
-    position: fixed;
-    top: 100px;
-    z-index: 6;
+  display: block;
+  position: fixed;
+  top: 100px;
+  z-index: 6;
 }
 
-
 #audioDiv {
-    display: none;
-    position: fixed;
-    top: 600px;
+  display: none;
+  position: absolute;
+  right: 0px;
+  top: 400px;
+}
+
+#isoAndButtons {
+  position: fixed;
+  top: 280px;
+  height: 380px;
 }
 
 #isometric {
-    position: fixed;
-    /*transform: scale(0.5);*/
-    transform-origin: left top;
-    top: 315px;
-    z-index: 4;
+  position: absolute;
+  /*transform: scale(0.5);*/
+  transform-origin: left top;
+  top: 0;
+  z-index: 4;
 }
 
 #isometricImage {
-    display: none;
+  display: none;
 }
 
-
 .isometric_dot {
-    font-family: "Roboto Mono";
-    height: 44px;
-    width: 44px;
-    background-color: #292929;
-    color: #595959;
-    border-radius: 50%;
-    font-size:25px;
-    font-weight: bold;
-    line-height:44px;
-    text-align:center;
-    display: inline-block;
-    position: absolute;
-    cursor: default;
+  display: inline-block;
+  position: absolute;
+  font-family: "Roboto Mono";
+  height: 44px;
+  width: 44px;
+  background-color: #292929;
+  color: #595959;
+  border-radius: 50%;
+  font-size: 25px;
+  font-weight: bold;
+  line-height: 44px;
+  text-align: center;
+  cursor: default;
+}
+
+.isometric_dot_small {
+  display: inline-block;
+  position: absolute;
+  font-family: "Roboto Mono";
+  height: 30px;
+  width: 30px;
+  background-color: #292929;
+  color: #595959;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 30px;
+  text-align: center;
+  cursor: default;
 }
 
 .dot-active {
-    background-color: #636363;
-    color: #000000;
+  background-color: #636363;
+  color: #000000;
 }
 
 .dot-inactive {
-    background-color: #292929;
-    color: #595959;
+  background-color: #292929;
+  color: #595959;
 }
 
 .dot-selected {
-    background-color: #7cb7e0;
-    color: #000000;
+  background-color: #7cb7e0;
+  color: #000000;
 }
 
 .dot-hover {
-    background-color: #7cb7e0;
-    color: #000000;
+  background-color: #7cb7e0;
+  color: #000000;
 }
 
-#dot61 { /*unused MOCR position*/
-    background-color: #000000;
+#dot61 {
+  /*unused MOCR position*/
+  background-color: #000000;
 }
 
 #controller-details {
-    position: fixed;
-    font-family: 'Roboto Mono', sans-serif;
-    font-size: 13px;
-    line-height: 100%;
+  position: fixed;
+  top: 630px;
+  width: 450px;
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 13px;
+  line-height: 100%;
 }
 
 #controller-name {
-    color: #7cb7e0;
-    font-weight: bold;
+  color: #7cb7e0;
+  font-weight: bold;
 }
 
 #controller-description {
-    color: #636363;
+  color: #636363;
 }
