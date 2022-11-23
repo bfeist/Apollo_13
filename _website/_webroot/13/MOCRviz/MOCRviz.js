@@ -194,8 +194,8 @@ $(window).on('resize', function(e) {
 
 function resizeAndRedrawCanvas() {
     var canvas = document.getElementById('myCanvas');
-    var desiredWidth = $(window).width(); // For instance: $(window).width();
-    var desiredHeight = cCanvasHeight; // For instance $('#canvasContainer').height();
+    var desiredWidth = $(window).width(); 
+    var desiredHeight = cCanvasHeight; 
 
     canvas.width = desiredWidth;
     canvas.height = desiredHeight;
@@ -330,9 +330,9 @@ function mainApplication() {
     };
 
     // hide player element if in iframe
-    // if (!parent.gCurrMissionTime !== undefined) {
-    //     $('#audioDiv').show();
-    // }
+    if (parent.gCurrMissionTime === undefined) {
+        $('#audioDiv').show();
+    }
 
     // On video playing toggle values
     gPlayer.onplaying = function() {

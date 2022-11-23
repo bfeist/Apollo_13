@@ -69,9 +69,9 @@ for tapeType in ["HR1", "HR2"]:
     print("Processing " + tapeType + " tapes")
     for track in range(2, 31):
         # if the transcript for this track already exists, skip it
-        if os.path.exists(f"{inputPath}_raw_transcripts/{tapeType}_CH{track}_transcript.txt"):
-            print(f"Transcript for {tapeType} CH{track} already exists, skipping")
-            continue
+        # if os.path.exists(f"{inputPath}_raw_transcripts/{tapeType}_CH{track}_transcript.txt"):
+        #     print(f"Transcript for {tapeType} CH{track} already exists, skipping")
+        #     continue
         print("Processing " + tapeType + " track " + str(track))
 
         vtts = []
@@ -96,13 +96,16 @@ for tapeType in ["HR1", "HR2"]:
                         vtts.append(f"{filenameWithPath}")
 
         print(f"Total VTT transcript files for {tapeType} CH{track} across mission: {len(vtts)}\n")
+        if len(vtts) == 0:
+            print("No VTT files found, skipping")
+            continue
 
-        # Process all vtts for this track across all tapes of tapeType
+        print("Process all vtts for this track across all tapes of tapeType")
         transcriptArr = []
         for vtt in vtts:
             tapeStart = tape_info.getTapeStartByFilename(vtt)
             with open(f"{vtt}", "r", encoding="utf-8") as f:
-                print(f"Processing {vtt}")
+                # print(f"Processing {vtt}")
                 lines = f.readlines()
 
                 wavStart = int(re.search(r"__(\d*)_", vtt).group(1))
@@ -118,12 +121,15 @@ for tapeType in ["HR1", "HR2"]:
                     else:
                         if len(utterance) > 0:
                             utterance = utterance + " " + line.rstrip()
+
                         else:
                             uttStart = currentStart
                             utterance = line.rstrip()
 
-                        # if the current line ends with a punctuation mark, then it's the end of the utterance. Write the line to the output file.
-                        if re.match(r".*[.?!…]$", line):
+                        # if the current line ends with a punctuation mark
+                        # Or if the line is over 500 characters long
+                        # Write the line to the output file.
+                        if re.match(r".*[.?!…]$", line) or len(utterance) > 500:
                             seconds = secondsFromGET(tapeStart) + wavStart + nearestSecondFromVTTTimestamp(uttStart)
                             transcriptArr.append(f"{seconds}||{utterance}")
                             utterance = ""

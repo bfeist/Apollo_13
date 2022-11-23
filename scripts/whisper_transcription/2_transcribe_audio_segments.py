@@ -6,6 +6,8 @@ workingPath = "E:/A13_MOCR_transcription/"
 for tape in os.listdir(workingPath):
     if not os.path.isdir(os.path.join(workingPath, tape)):
         continue
+    if not ("HR1" in tape or "HR2" in tape):
+        continue
 
     print("Processing Tape: " + tape)
 
