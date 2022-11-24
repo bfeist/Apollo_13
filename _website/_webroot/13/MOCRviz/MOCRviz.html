@@ -1,141 +1,647 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="MOCRviz.css" />
 
     <script>
-        (function (i, s, o, g, r, a, m) {
-            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-                (i[r].q = i[r].q || []).push(arguments)
-            }, i[r].l = 1 * new Date(); a = s.createElement(o),
-                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-        })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      (function (i, s, o, g, r, a, m) {
+        i["GoogleAnalyticsObject"] = r;
+        (i[r] =
+          i[r] ||
+          function () {
+            (i[r].q = i[r].q || []).push(arguments);
+          }),
+          (i[r].l = 1 * new Date());
+        (a = s.createElement(o)), (m = s.getElementsByTagName(o)[0]);
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m);
+      })(window, document, "script", "https://www.google-analytics.com/analytics.js", "ga");
 
-        ga('create', 'UA-37086725-6', 'auto');
-        ga('send', 'pageview');
+      ga("create", "UA-37086725-6", "auto");
+      ga("send", "pageview");
     </script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"
+    ></script>
     <script src="js/jquery_plugins.js"></script>
     <script src="js/peaks.js"></script>
     <script src="js/paper-full.js"></script>
     <script src="js/waveform-data.js"></script>
     <script src="MOCRviz.js"></script>
-</head>
+  </head>
 
-<body>
-    <div class="timediv" style='display: none;'>
-        <span class="h4 timespan">GET: <span id="missionTimeDisplay">-20:45:06</span></span>
+  <body>
+    <div class="timediv" style="display: none">
+      <span class="h4 timespan">GET: <span id="missionTimeDisplay">-20:45:06</span></span>
     </div>
     <span class="close-btn" onclick="closeMOCRviz();">Close</span>
-    <div id='canvasContainer'>
-        <canvas id="myCanvas"></canvas>
-    </div>
-    <!--<div class="" id="channelDescription">-->
-    <!--Spacecraft Communicator – or Capsule Communicator - An astronaut who provided all the voice communications between the ground and the spacecraft. (left seat)-->
-    <!--</div>-->
-    <div id="left">
-        <div id="isoAndButtons">
+    <div id="bodyContainer">
+      <canvas id="myCanvas"></canvas>
+      <!--<div class="" id="channelDescription">-->
+      <!--Spacecraft Communicator – or Capsule Communicator - An astronaut who provided all the voice communications between the ground and the spacecraft. (left seat)-->
+      <!--</div>-->
+      <div id="bottomBodyContainer">
+        <div id="left">
+          <div id="isoAndButtons">
             <div id="channelbuttons">
-                <div id="btndiv-ch2" class="buttondiv"><button id="btn-ch2" class="btn-channel">FOD</button></div>
-                <div id="btndiv-ch3" class="buttondiv"><button id="btn-ch3" class="btn-channel">M DIR</button></div>
-                <div id="btndiv-ch5" class="buttondiv"><button id="btn-ch5" class="btn-channel">PRO</button></div>
-                <div id="btndiv-ch6" class="buttondiv"><button id="btn-ch6" class="btn-channel">AFD</button></div>
-                <div id="btndiv-ch7" class="buttondiv"><button id="btn-ch7" class="btn-channel secondary">[L]</button>
-                </div>
-                <div id="btndiv-ch8" class="buttondiv"><button id="btn-ch8" class="btn-channel secondary">[R]</button>
-                </div>
-                <div id="btndiv-ch9" class="buttondiv"><button id="btn-ch9" class="btn-channel">FAO</button></div>
-                <div id="btndiv-ch11" class="buttondiv"><button id="btn-ch11" class="btn-channel">NETWORK</button></div>
-                <div id="btndiv-ch12" class="buttondiv"><button id="btn-ch12" class="btn-channel">SURGEON</button></div>
-                <div id="btndiv-ch13" class="buttondiv"><button id="btn-ch13" class="btn-channel secondary">[R]</button>
-                </div>
-                <div id="btndiv-ch14" class="buttondiv"><button id="btn-ch14" class="btn-channel">CAPCOM</button></div>
-                <div id="btndiv-ch15" class="buttondiv"><button id="btn-ch15" class="btn-channel secondary">[R]</button>
-                </div>
-                <div id="btndiv-ch16" class="buttondiv"><button id="btn-ch16" class="btn-channel">C-EECOM</button></div>
-                <div id="btndiv-ch17" class="buttondiv"><button id="btn-ch17" class="btn-channel">P-EECOM</button></div>
-                <div id="btndiv-ch18" class="buttondiv"><button id="btn-ch18" class="btn-channel">C-GNC</button></div>
-                <div id="btndiv-ch19" class="buttondiv"><button id="btn-ch19" class="btn-channel">RETRO</button></div>
-                <div id="btndiv-ch20" class="buttondiv"><button id="btn-ch20" class="btn-channel">FIDO</button></div>
-                <div id="btndiv-ch21" class="buttondiv"><button id="btn-ch21" class="btn-channel">GUIDO</button></div>
-                <div id="btndiv-ch22" class="buttondiv"><button id="btn-ch22" class="btn-channel secondary">[R]</button>
-                </div>
-                <div id="btndiv-ch23" class="buttondiv"><button id="btn-ch23" class="btn-channel">CCATS LOAD</button>
-                </div>
-                <div id="btndiv-ch24" class="buttondiv"><button id="btn-ch24" class="btn-channel secondary">RTC</button>
-                </div>
-                <div id="btndiv-ch25" class="buttondiv"><button id="btn-ch25" class="btn-channel secondary">CMD</button>
-                </div>
-                <div id="btndiv-ch26" class="buttondiv"><button id="btn-ch26" class="btn-channel secondary">TIC</button>
-                </div>
-                <div id="btndiv-ch27" class="buttondiv"><button id="btn-ch27" class="btn-channel secondary">TM</button>
-                </div>
-                <div id="btndiv-ch28" class="buttondiv"><button id="btn-ch28" class="btn-channel">TRACK</button></div>
-                <div id="btndiv-ch29" class="buttondiv"><button id="btn-ch29" class="btn-channel secondary">[R]</button>
-                </div>
-                <div id="btndiv-ch32" class="buttondiv"><button id="btn-ch32" class="btn-channel">RECOVERY</button>
-                </div>
-                <div id="btndiv-ch33" class="buttondiv"><button id="btn-ch33"
-                        class="btn-channel secondary">ASST</button>
-                </div>
-                <div id="btndiv-ch34" class="buttondiv"><button id="btn-ch34"
-                        class="btn-channel secondary">STUS</button>
-                </div>
-                <div id="btndiv-ch35" class="buttondiv"><button id="btn-ch35"
-                        class="btn-channel secondary">EVAL</button>
-                </div>
-                <div id="btndiv-ch42" class="buttondiv"><button id="btn-ch42"
-                        class="btn-channel secondary">TECH</button>
-                </div>
-                <div id="btndiv-ch43" class="buttondiv"><button id="btn-ch43"
-                        class="btn-channel secondary">CTRLR</button>
-                </div>
-                <div id="btndiv-ch44" class="buttondiv"><button id="btn-ch44" class="btn-channel">SPACE ENV</button>
-                </div>
-                <div id="btndiv-ch45" class="buttondiv"><button id="btn-ch45" class="btn-channel">COMP SUP</button>
-                </div>
-                <div id="btndiv-ch46" class="buttondiv"><button id="btn-ch46" class="btn-channel">SPAN</button></div>
-                <div id="btndiv-ch47" class="buttondiv"><button id="btn-ch47" class="btn-channel">BOOSTER</button></div>
-                <div id="btndiv-ch48" class="buttondiv"><button id="btn-ch48" class="btn-channel secondary">[C]</button>
-                </div>
-                <div id="btndiv-ch49" class="buttondiv"><button id="btn-ch49" class="btn-channel secondary">[R]</button>
-                </div>
-                <div id="btndiv-ch50" class="buttondiv"><button id="btn-ch50" class="btn-channel">FLIGHT</button></div>
-                <div id="btndiv-ch51" class="buttondiv"><button id="btn-ch51" class="btn-channel">CONF LOOP</button>
-                </div>
-                <div id="btndiv-ch52" class="buttondiv"><button id="btn-ch52" class="btn-channel secondary">GS2</button>
-                </div>
-                <div id="btndiv-ch53" class="buttondiv"><button id="btn-ch53" class="btn-channel">INCO</button></div>
-                <div id="btndiv-ch54" class="buttondiv"><button id="btn-ch54" class="btn-channel secondary">DYN</button>
-                </div>
-                <div id="btndiv-ch55" class="buttondiv"><button id="btn-ch55" class="btn-channel secondary">CON</button>
-                </div>
-                <div id="btndiv-ch56" class="buttondiv"><button id="btn-ch56" class="btn-channel secondary">GS4</button>
-                </div>
-                <div id="btndiv-ch57" class="buttondiv"><button id="btn-ch57" class="btn-channel">LM GNC</button></div>
-                <div id="btndiv-ch58" class="buttondiv"><button id="btn-ch58" class="btn-channel">TELMU</button></div>
-                <div id="btndiv-ch59" class="buttondiv"><button id="btn-ch59" class="btn-channel">EXPMT AO</button>
-                </div>
+              <div id="btndiv-ch2" class="buttondiv">
+                <button id="btn-ch2" class="btn-channel">FOD</button>
+              </div>
+              <div id="btndiv-ch3" class="buttondiv">
+                <button id="btn-ch3" class="btn-channel">M DIR</button>
+              </div>
+              <div id="btndiv-ch5" class="buttondiv">
+                <button id="btn-ch5" class="btn-channel">PRO</button>
+              </div>
+              <div id="btndiv-ch6" class="buttondiv">
+                <button id="btn-ch6" class="btn-channel">AFD</button>
+              </div>
+              <div id="btndiv-ch7" class="buttondiv">
+                <button id="btn-ch7" class="btn-channel secondary">[L]</button>
+              </div>
+              <div id="btndiv-ch8" class="buttondiv">
+                <button id="btn-ch8" class="btn-channel secondary">[R]</button>
+              </div>
+              <div id="btndiv-ch9" class="buttondiv">
+                <button id="btn-ch9" class="btn-channel">FAO</button>
+              </div>
+              <div id="btndiv-ch11" class="buttondiv">
+                <button id="btn-ch11" class="btn-channel">NETWORK</button>
+              </div>
+              <div id="btndiv-ch12" class="buttondiv">
+                <button id="btn-ch12" class="btn-channel">SURGEON</button>
+              </div>
+              <div id="btndiv-ch13" class="buttondiv">
+                <button id="btn-ch13" class="btn-channel secondary">[R]</button>
+              </div>
+              <div id="btndiv-ch14" class="buttondiv">
+                <button id="btn-ch14" class="btn-channel">CAPCOM</button>
+              </div>
+              <div id="btndiv-ch15" class="buttondiv">
+                <button id="btn-ch15" class="btn-channel secondary">[R]</button>
+              </div>
+              <div id="btndiv-ch16" class="buttondiv">
+                <button id="btn-ch16" class="btn-channel">C-EECOM</button>
+              </div>
+              <div id="btndiv-ch17" class="buttondiv">
+                <button id="btn-ch17" class="btn-channel">P-EECOM</button>
+              </div>
+              <div id="btndiv-ch18" class="buttondiv">
+                <button id="btn-ch18" class="btn-channel">C-GNC</button>
+              </div>
+              <div id="btndiv-ch19" class="buttondiv">
+                <button id="btn-ch19" class="btn-channel">RETRO</button>
+              </div>
+              <div id="btndiv-ch20" class="buttondiv">
+                <button id="btn-ch20" class="btn-channel">FIDO</button>
+              </div>
+              <div id="btndiv-ch21" class="buttondiv">
+                <button id="btn-ch21" class="btn-channel">GUIDO</button>
+              </div>
+              <div id="btndiv-ch22" class="buttondiv">
+                <button id="btn-ch22" class="btn-channel secondary">[R]</button>
+              </div>
+              <div id="btndiv-ch23" class="buttondiv">
+                <button id="btn-ch23" class="btn-channel">CCATS LOAD</button>
+              </div>
+              <div id="btndiv-ch24" class="buttondiv">
+                <button id="btn-ch24" class="btn-channel secondary">RTC</button>
+              </div>
+              <div id="btndiv-ch25" class="buttondiv">
+                <button id="btn-ch25" class="btn-channel secondary">CMD</button>
+              </div>
+              <div id="btndiv-ch26" class="buttondiv">
+                <button id="btn-ch26" class="btn-channel secondary">TIC</button>
+              </div>
+              <div id="btndiv-ch27" class="buttondiv">
+                <button id="btn-ch27" class="btn-channel secondary">TM</button>
+              </div>
+              <div id="btndiv-ch28" class="buttondiv">
+                <button id="btn-ch28" class="btn-channel">TRACK</button>
+              </div>
+              <div id="btndiv-ch29" class="buttondiv">
+                <button id="btn-ch29" class="btn-channel secondary">[R]</button>
+              </div>
+              <div id="btndiv-ch32" class="buttondiv">
+                <button id="btn-ch32" class="btn-channel">RECOVERY</button>
+              </div>
+              <div id="btndiv-ch33" class="buttondiv">
+                <button id="btn-ch33" class="btn-channel secondary">ASST</button>
+              </div>
+              <div id="btndiv-ch34" class="buttondiv">
+                <button id="btn-ch34" class="btn-channel secondary">STUS</button>
+              </div>
+              <div id="btndiv-ch35" class="buttondiv">
+                <button id="btn-ch35" class="btn-channel secondary">EVAL</button>
+              </div>
+              <div id="btndiv-ch42" class="buttondiv">
+                <button id="btn-ch42" class="btn-channel secondary">TECH</button>
+              </div>
+              <div id="btndiv-ch43" class="buttondiv">
+                <button id="btn-ch43" class="btn-channel secondary">CTRLR</button>
+              </div>
+              <div id="btndiv-ch44" class="buttondiv">
+                <button id="btn-ch44" class="btn-channel">SPACE ENV</button>
+              </div>
+              <div id="btndiv-ch45" class="buttondiv">
+                <button id="btn-ch45" class="btn-channel">COMP SUP</button>
+              </div>
+              <div id="btndiv-ch46" class="buttondiv">
+                <button id="btn-ch46" class="btn-channel">SPAN</button>
+              </div>
+              <div id="btndiv-ch47" class="buttondiv">
+                <button id="btn-ch47" class="btn-channel">BOOSTER</button>
+              </div>
+              <div id="btndiv-ch48" class="buttondiv">
+                <button id="btn-ch48" class="btn-channel secondary">[C]</button>
+              </div>
+              <div id="btndiv-ch49" class="buttondiv">
+                <button id="btn-ch49" class="btn-channel secondary">[R]</button>
+              </div>
+              <div id="btndiv-ch50" class="buttondiv">
+                <button id="btn-ch50" class="btn-channel">FLIGHT</button>
+              </div>
+              <div id="btndiv-ch51" class="buttondiv">
+                <button id="btn-ch51" class="btn-channel">CONF LOOP</button>
+              </div>
+              <div id="btndiv-ch52" class="buttondiv">
+                <button id="btn-ch52" class="btn-channel secondary">GS2</button>
+              </div>
+              <div id="btndiv-ch53" class="buttondiv">
+                <button id="btn-ch53" class="btn-channel">INCO</button>
+              </div>
+              <div id="btndiv-ch54" class="buttondiv">
+                <button id="btn-ch54" class="btn-channel secondary">DYN</button>
+              </div>
+              <div id="btndiv-ch55" class="buttondiv">
+                <button id="btn-ch55" class="btn-channel secondary">CON</button>
+              </div>
+              <div id="btndiv-ch56" class="buttondiv">
+                <button id="btn-ch56" class="btn-channel secondary">GS4</button>
+              </div>
+              <div id="btndiv-ch57" class="buttondiv">
+                <button id="btn-ch57" class="btn-channel">LM GNC</button>
+              </div>
+              <div id="btndiv-ch58" class="buttondiv">
+                <button id="btn-ch58" class="btn-channel">TELMU</button>
+              </div>
+              <div id="btndiv-ch59" class="buttondiv">
+                <button id="btn-ch59" class="btn-channel">EXPMT AO</button>
+              </div>
             </div>
             <div id="isometric">
-                <img id="isometricImage" src="img/MOCR_consoles_dark_faded.png">
+              <img id="isometricImage" src="img/MOCR_consoles_dark_faded.png" />
             </div>
-        </div>
-        <div id="controller-details">
+          </div>
+          <div id="controller-details">
             <span id="controller-name"></span>: <span id="controller-description"></span>
+          </div>
+          <div id="audioDiv">
+            <audio id="audio-element" controls="controls">
+              <source id="track" type="audio/mpeg" />
+            </audio>
+          </div>
         </div>
+        <div id="middle">
+          <div class="button-column-container">
+            <div class="button-column-item">
+              <a class="icon-btn selected" id="textBtn" title="Channel transcript">
+                <span>SPEECH</span>
+              </a>
+            </div>
+            <div class="button-column-item">
+              <a class="icon-btn" id="searchBtn" title="Search this channel transcript">
+                <span>SEARCH</span>
+              </a>
+            </div>
+            <div class="button-column-item">
+              <a class="icon-btn" id="aboutBtn" title="About these transcripts">
+                <span>ABOUT</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div id="right">
+          <div class="monitor">
+            <div class="output-wrapper">
+              <div id="utteranceDiv">
+                <table class="utteranceTable" id="utteranceTable">
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                  <tr
+                    class="utterance utt_30track"
+                    id="uttid"
+                    style=""
+                    onclick="seekToTime('@uttid')"
+                  >
+                    <td class="timestamp">@timestamp</td>
+                    <td class="spokenwords @uttType">
+                      Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+                      doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+                      veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim
+                      ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                      consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque
+                      porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur,
+                      adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et
+                      dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis
+                      nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex
+                      ea commodi consequatur?
+                    </td>
+                  </tr>
+                </table>
+              </div>
+              <div id="searchDiv">
+                <div style="display: flex; flex-direction: row">
+                  <span class="title">Search</span>
+                  <input style="flex-grow: 1" type="text" id="searchInputField" />
+                  <span class="close-btn" onclick="toggleSearchOverlay();">Close</span>
+                </div>
+                <hr />
+                <div id="searchResultsDiv">
+                  <table id="searchResultsTable"></table>
+                </div>
+              </div>
+              <div id="aboutDiv">About</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <div id="right"></div>
+  </body>
 
-    <div id="audioDiv">
-        <audio id="audio-element" controls=controls>
-            <source id="track" type="audio/mpeg" />
-        </audio>
-    </div>
-</body>
-
+  <script type="text/html" id="utteranceTemplate">
+    <tr
+      class="utterance utt_pao uttid@uttid"
+      id="uttid@uttid"
+      style="@style"
+      onclick="seekToTime('@uttid')"
+    >
+      <td class="timestamp">@timestamp</td>
+      <td class="spokenwords @uttType">@words</td>
+    </tr>
+  </script>
 </html>

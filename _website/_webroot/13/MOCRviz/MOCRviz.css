@@ -1,11 +1,12 @@
 body {
   background-color: #000000;
   color: #dddddd;
+  height: 100vh;
+  overflow: hidden;
 }
 
 canvas {
-  /*border:1px solid  blue;*/
-  /*width: 100%;*/
+  flex: 0 0 350px;
 }
 
 button {
@@ -16,13 +17,26 @@ button {
   padding: 1px 6px;
 }
 
-#canvasContainer {
-  position: fixed;
-  z-index: 5;
+#bodyContainer {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
 }
-
+#bottomBodyContainer {
+  flex: 1 1 auto;
+  display: flex;
+  z-index: 10;
+  height: 0;
+  margin-bottom: 40px;
+}
 #left {
-  width: 500px;
+  flex: 0 0 450px;
+  height: 100%;
+}
+#right {
+  flex: 1 1 auto;
+  width: 100%;
+  height: 100%;
 }
 
 .close-btn {
@@ -49,10 +63,8 @@ button {
   position: absolute;
   font-size: 0.7em;
   font-weight: bold;
-  top: 135px;
-  width: 100%;
+  top: 60px;
   transform-origin: left top;
-  z-index: 5;
 }
 
 .buttondiv {
@@ -118,26 +130,26 @@ button {
 #audioDiv {
   display: none;
   position: absolute;
-  right: 0px;
-  top: 400px;
+  left: 0px;
+  top: 500px;
 }
 
 #isoAndButtons {
-  position: fixed;
-  top: 280px;
-  height: 380px;
+  position: relative;
+  height: 275px;
 }
 
 #isometric {
   position: absolute;
   /*transform: scale(0.5);*/
   transform-origin: left top;
-  top: 0;
-  z-index: 4;
+  top: -75px;
 }
 
 #isometricImage {
   display: none;
+  position: absolute;
+  top: 68px;
 }
 
 .isometric_dot {
@@ -198,8 +210,7 @@ button {
 }
 
 #controller-details {
-  position: fixed;
-  top: 630px;
+  position: relative;
   width: 450px;
   font-family: "Roboto Mono", sans-serif;
   font-size: 13px;
@@ -213,4 +224,203 @@ button {
 
 #controller-description {
   color: #636363;
+}
+
+/* ----------------- transcript -----------------*/
+.monitor {
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  background-color: #000;
+  margin: 5px;
+  padding: 5px;
+  margin-bottom: 20px;
+  transition: height 250ms ease-in-out;
+  height: 100%;
+}
+
+.output-wrapper {
+  font-family: "Roboto Mono", sans-serif;
+  height: 100%;
+  display: flex;
+}
+
+#utteranceDiv {
+  overflow-y: scroll;
+  position: relative;
+  flex: 1 1 auto;
+}
+.utteranceTable {
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+tr.utterance {
+  cursor: pointer;
+  vertical-align: top;
+}
+tr.utterance:nth-child(odd) {
+  background-color: #000;
+}
+tr.utterance:nth-child(even) {
+  background-color: #0a0a0a;
+}
+
+tr.utterance:hover {
+  /*background-color: #B5B4A4;*/
+  background-color: #1e1e1e;
+}
+tr.utterance > td {
+  padding: 3px;
+  font-size: 0.9em;
+  line-height: 1.3;
+}
+
+.utt_30track {
+  color: grey;
+}
+.spokenwords {
+  font-weight: normal;
+}
+.timestamp {
+  font-weight: normal;
+}
+
+/* ----------------- search -----------------*/
+#searchDiv {
+  display: none;
+  overflow-y: scroll;
+  position: relative;
+  flex: 1 1 auto;
+}
+/* ----------------- about -----------------*/
+#aboutDiv {
+  display: none;
+  overflow-y: scroll;
+  position: relative;
+  flex: 1 1 auto;
+}
+/* ----------------- BUTTONS  -----------------*/
+.button-column-container {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  align-content: stretch;
+  margin-top: 5px;
+}
+
+.button-column-item {
+  flex: 1 1 0;
+}
+
+.button-column-item .icon-btn {
+  position: relative;
+  display: block;
+  float: left;
+
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 0.9em;
+  text-align: center;
+
+  padding: 0.2em 0 20px 0;
+  border-right: 1px solid rgba(130, 130, 130, 0.65);
+  border-bottom: 1px solid rgba(130, 130, 130, 0.65);
+  border-radius: 4px;
+  margin-bottom: 2px;
+
+  color: #444;
+
+  width: 50px;
+  background-size: 15px;
+  background-color: #828282;
+  background-repeat: no-repeat;
+  background-position: 50% 85%;
+  background-origin: border-box;
+  box-shadow: inset -1px -1px 2px 1px #515151;
+
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+.button-column-item .icon-btn.selected,
+.button-column-item .icon-btn:hover {
+  /* background-color: #ffc688; */
+  background-color: rgb(93, 153, 177);
+  text-decoration: none;
+  border-right: 1px solid rgb(93, 153, 177);
+  border-bottom: 1px solid rgb(93, 153, 177);
+}
+
+#searchBtn {
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Magnifying_glass" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"> <path d="M17.545,15.467l-3.779-3.779c0.57-0.935,0.898-2.035,0.898-3.21c0-3.417-2.961-6.377-6.378-6.377 C4.869,2.1,2.1,4.87,2.1,8.287c0,3.416,2.961,6.377,6.377,6.377c1.137,0,2.2-0.309,3.115-0.844l3.799,3.801 c0.372,0.371,0.975,0.371,1.346,0l0.943-0.943C18.051,16.307,17.916,15.838,17.545,15.467z M4.004,8.287 c0-2.366,1.917-4.283,4.282-4.283c2.366,0,4.474,2.107,4.474,4.474c0,2.365-1.918,4.283-4.283,4.283 C6.111,12.76,4.004,10.652,4.004,8.287z"/> </svg>');
+}
+#aboutBtn {
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Help_circled" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" enable-background="new 0 0 20 20" xml:space="preserve"> <path d="M10,0.4c-5.302,0-9.6,4.298-9.6,9.6s4.298,9.6,9.6,9.6c5.301,0,9.6-4.298,9.6-9.601C19.6,4.698,15.301,0.4,10,0.4z M9.849,15.599H9.798c-0.782-0.023-1.334-0.6-1.311-1.371c0.022-0.758,0.587-1.309,1.343-1.309l0.046,0.002 c0.804,0.023,1.35,0.594,1.327,1.387C11.18,15.068,10.625,15.599,9.849,15.599z M13.14,9.068c-0.184,0.26-0.588,0.586-1.098,0.983 l-0.562,0.387c-0.308,0.24-0.494,0.467-0.563,0.688c-0.056,0.174-0.082,0.221-0.087,0.576v0.09H8.685l0.006-0.182 c0.027-0.744,0.045-1.184,0.354-1.547c0.485-0.568,1.555-1.258,1.6-1.287c0.154-0.115,0.283-0.246,0.379-0.387 c0.225-0.311,0.324-0.555,0.324-0.793c0-0.334-0.098-0.643-0.293-0.916c-0.188-0.266-0.545-0.398-1.061-0.398 c-0.512,0-0.863,0.162-1.072,0.496c-0.216,0.341-0.325,0.7-0.325,1.067v0.092H6.386L6.39,7.841c0.057-1.353,0.541-2.328,1.435-2.897 C8.388,4.583,9.089,4.4,9.906,4.4c1.068,0,1.972,0.26,2.682,0.772c0.721,0.519,1.086,1.297,1.086,2.311 C13.673,8.05,13.494,8.583,13.14,9.068z"/> </svg>');
+}
+
+#textBtn {
+  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve"><path d="M8,9.9c-0.3,0.3-0.9,0-0.9-0.4v-1C6.7,8.2,6.4,7.7,6.4,7.2V5.3c0-0.9,0.7-1.6,1.6-1.6h3.6c0.9,0,1.6,0.7,1.6,1.6v1.8 c0,0.9-0.7,1.6-1.6,1.6H9.4L8,9.9z M8.8,7.8c0.1-0.1,0.2-0.1,0.3-0.1h2.4c0.3,0,0.5-0.2,0.5-0.5V5.3c0-0.3-0.2-0.5-0.5-0.5H7.9	c-0.3,0-0.5,0.2-0.5,0.5v1.8c0,0.2,0.2,0.4,0.4,0.5C8,7.7,8.2,7.9,8.2,8.2v0.2L8.8,7.8z M5.6,13.1c-0.3,0-0.5-0.2-0.5-0.5 c0-0.3,0.2-0.5,0.5-0.5h8.3c0.3,0,0.5,0.2,0.5,0.5c0,0.3-0.2,0.5-0.5,0.5H5.6z M3,2.2v16c0,0.3-0.2,0.5-0.5,0.5	c-0.3,0-0.5-0.2-0.5-0.5V1.7c0-0.3,0.2-0.5,0.5-0.5H17c0.3,0,0.5,0.2,0.5,0.5v16.5c0,0.3-0.2,0.5-0.5,0.5c-0.3,0-0.5-0.2-0.5-0.5 v-16H3z M5.6,15.9c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h8.3c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5H5.6z M5.6,18.8 c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5h4.1c0.3,0,0.5,0.2,0.5,0.5c0,0.3-0.2,0.5-0.5,0.5H5.6z"/></svg>');
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* ----------------- SCROLLBAR -----------------*/
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-button {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  /*background: #c0c0c0;*/
+  background: #0f0f0f;
+  /*border: 0px none #ff2c20;*/
+  border: 1px solid #84b8d9;
+  border-radius: 0px;
+}
+::-webkit-scrollbar-thumb:hover {
+  /*background: lightgrey;*/
+  /*background: lightgrey;*/
+}
+::-webkit-scrollbar-thumb:active {
+  /*background: lightgrey;*/
+  /*background: lightgrey;*/
+}
+::-webkit-scrollbar-track {
+  background: #000000;
+  /*border: 1px solid #c0c0c0;*/
+  border: 1px solid #070707;
+  /*border: 1px solid #000000;*/
+  border-radius: 0px;
+}
+::-webkit-scrollbar-track:hover {
+  /*background: #2e2e2e;*/
+  /*background: #000000;*/
+}
+::-webkit-scrollbar-track:active {
+  /*background: #717171;*/
+  /*background: #0f0f0f;*/
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+#photoGallery::-webkit-scrollbar-thumb {
+  /*background: #c0c0c0;*/
+  background: #0f0f0f;
+  /*border: 0px none #ff2c20;*/
+  border: 1px solid green;
+  border-radius: 0px;
 }
