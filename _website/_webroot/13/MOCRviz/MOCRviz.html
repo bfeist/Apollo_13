@@ -618,7 +618,6 @@
                 <div style="display: flex; flex-direction: row">
                   <span class="title">Search</span>
                   <input style="flex-grow: 1" type="text" id="searchInputField" />
-                  <span class="close-btn" onclick="toggleSearchOverlay();">Close</span>
                 </div>
                 <hr />
                 <div id="searchResultsDiv">
@@ -639,6 +638,17 @@
       id="uttid@uttid"
       style="@style"
       onclick="seekToTime('@uttid')"
+    >
+      <td class="timestamp">@timestamp</td>
+      <td class="spokenwords @uttType">@words</td>
+    </tr>
+  </script>
+
+  <script type="text/html" id="searchResultTemplate">
+    <tr
+      class="utterance utt_pao"
+      style="@style"
+      onclick="searchResultClick('@searchResultid', '@entrytypevar')"
     >
       <td class="timestamp">@timestamp</td>
       <td class="spokenwords @uttType">@words</td>

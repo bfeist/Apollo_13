@@ -55,8 +55,6 @@ button {
   z-index: 6;
 
   background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Circled_cross' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M10,1.6c-4.639,0-8.4,3.761-8.4,8.4s3.761,8.4,8.4,8.4s8.4-3.761,8.4-8.4S14.639,1.6,10,1.6z M14.789,13.061 L13.06,14.79L10,11.729l-3.061,3.06L5.21,13.06L8.272,10L5.211,6.939L6.94,5.211L10,8.271l3.061-3.061l1.729,1.729L11.728,10 L14.789,13.061z'/%3E%3C/svg%3E");
-
-  /*background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='utf-8'?%3E%3C!-- Generator: Adobe Illustrator 18.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) --%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Squared_cross' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 20 20' enable-background='new 0 0 20 20' xml:space='preserve'%3E%3Cpath fill='%23000000' d='M16,2H4C2.9,2,2,2.9,2,4v12c0,1.1,0.9,2,2,2h12c1.1,0,2-0.9,2-2V4C18,2.9,17.1,2,16,2z M13.061,14.789 L10,11.729l-3.061,3.06L5.21,13.061L8.271,10l-3.06-3.061L6.94,5.21L10,8.271l3.059-3.061l1.729,1.729L11.729,10l3.06,3.061 L13.061,14.789z'/%3E%3C/svg%3E");*/
 }
 
 #channelbuttons {
@@ -92,11 +90,6 @@ button {
   border-bottom: 1px solid #636363;
 }
 
-.btn-inactive {
-  /*background-color: #292929;*/
-  /*color: #595959;*/
-}
-
 .btn-selected {
   background-color: #7cb7e0;
   color: #000000;
@@ -129,9 +122,9 @@ button {
 
 #audioDiv {
   display: none;
-  position: absolute;
+  position: relative;
   left: 0px;
-  top: 500px;
+  top: 100px;
 }
 
 #isoAndButtons {
@@ -292,7 +285,72 @@ tr.utterance > td {
   overflow-y: scroll;
   position: relative;
   flex: 1 1 auto;
+
+  background: #000000;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  /*border: 2px solid rgba(140, 140, 140, 1);*/
+  /* border: 2px solid rgba(215, 160, 108, 1); */
+  border: 2px solid rgb(93, 153, 177);
+  overflow: hidden;
+  padding: 5px;
+  transition: height 250ms ease-in-out;
+  opacity: 0.9;
+  z-index: 10;
 }
+
+#searchDiv .title {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(93, 153, 177);
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+
+#searchDiv hr {
+  border: 0;
+  border-top: 2px solid rgb(93, 153, 177);
+}
+
+#searchInputField {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 0 10px;
+  margin-left: 10px;
+  overflow: hidden;
+  border: none;
+  font-family: "Roboto Mono", sans-serif;
+  color: rgba(255, 255, 255, 1);
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  background: rgba(40, 40, 40, 0.4);
+  -webkit-box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+  box-shadow: 1px 1px 2px 0 rgba(0, 0, 0, 0.5) inset;
+  -webkit-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -moz-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  -o-transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+  transition: all 502ms cubic-bezier(0.68, -0.75, 0.265, 1.75);
+}
+
+#searchResultsDiv {
+  overflow-y: scroll;
+  position: relative;
+  height: 90%;
+}
+
+#searchResultsTable {
+  border-collapse: collapse;
+  font-size: 0.9em;
+}
+
+.searchResultHighlight {
+  font-weight: bold;
+  color: rgba(215, 160, 108, 1);
+}
+
 /* ----------------- about -----------------*/
 #aboutDiv {
   display: none;
@@ -335,7 +393,7 @@ tr.utterance > td {
   background-size: 15px;
   background-color: #828282;
   background-repeat: no-repeat;
-  background-position: 50% 85%;
+  background-position: 50% 80%;
   background-origin: border-box;
   box-shadow: inset -1px -1px 2px 1px #515151;
 
@@ -360,7 +418,7 @@ tr.utterance > td {
 }
 
 #textBtn {
-  background-image: url('data:image/svg+xml;utf8,<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve"><path d="M8,9.9c-0.3,0.3-0.9,0-0.9-0.4v-1C6.7,8.2,6.4,7.7,6.4,7.2V5.3c0-0.9,0.7-1.6,1.6-1.6h3.6c0.9,0,1.6,0.7,1.6,1.6v1.8 c0,0.9-0.7,1.6-1.6,1.6H9.4L8,9.9z M8.8,7.8c0.1-0.1,0.2-0.1,0.3-0.1h2.4c0.3,0,0.5-0.2,0.5-0.5V5.3c0-0.3-0.2-0.5-0.5-0.5H7.9	c-0.3,0-0.5,0.2-0.5,0.5v1.8c0,0.2,0.2,0.4,0.4,0.5C8,7.7,8.2,7.9,8.2,8.2v0.2L8.8,7.8z M5.6,13.1c-0.3,0-0.5-0.2-0.5-0.5 c0-0.3,0.2-0.5,0.5-0.5h8.3c0.3,0,0.5,0.2,0.5,0.5c0,0.3-0.2,0.5-0.5,0.5H5.6z M3,2.2v16c0,0.3-0.2,0.5-0.5,0.5	c-0.3,0-0.5-0.2-0.5-0.5V1.7c0-0.3,0.2-0.5,0.5-0.5H17c0.3,0,0.5,0.2,0.5,0.5v16.5c0,0.3-0.2,0.5-0.5,0.5c-0.3,0-0.5-0.2-0.5-0.5 v-16H3z M5.6,15.9c-0.3,0-0.5-0.2-0.5-0.5s0.2-0.5,0.5-0.5h8.3c0.3,0,0.5,0.2,0.5,0.5s-0.2,0.5-0.5,0.5H5.6z M5.6,18.8 c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5h4.1c0.3,0,0.5,0.2,0.5,0.5c0,0.3-0.2,0.5-0.5,0.5H5.6z"/></svg>');
+  background-image: url('data:image/svg+xml;utf8,<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17.76 16.07"><path d="M15.65,0H2.11C1.55,0,1.02,.22,.62,.62,.22,1.02,0,1.55,0,2.11V15.65c0,.17,.1,.33,.26,.39,.16,.07,.34,.03,.46-.09l3.26-3.26H15.65c.56,0,1.1-.22,1.49-.62,.4-.4,.62-.93,.62-1.49V2.11c0-.56-.22-1.1-.62-1.49-.4-.4-.93-.62-1.49-.62h0Zm1.27,10.57c0,.34-.13,.66-.37,.9-.24,.24-.56,.37-.9,.37H3.81c-.11,0-.22,.04-.3,.12L.85,14.63V2.11c0-.34,.13-.66,.37-.9,.24-.24,.56-.37,.9-.37H15.65c.34,0,.66,.13,.9,.37,.24,.24,.37,.56,.37,.9V10.57Zm-2.54-6.77c0,.11-.04,.22-.12,.3-.08,.08-.19,.12-.3,.12H3.81c-.23,0-.42-.19-.42-.42s.19-.42,.42-.42H13.96c.11,0,.22,.04,.3,.12,.08,.08,.12,.19,.12,.3h0Zm0,2.54c0,.11-.04,.22-.12,.3-.08,.08-.19,.12-.3,.12H3.81c-.23,0-.42-.19-.42-.42s.19-.42,.42-.42H13.96c.11,0,.22,.04,.3,.12,.08,.08,.12,.19,.12,.3h0Zm0,2.54c0,.11-.04,.22-.12,.3-.08,.08-.19,.12-.3,.12H3.81c-.23,0-.42-.19-.42-.42s.19-.42,.42-.42H13.96c.11,0,.22,.04,.3,.12,.08,.08,.12,.19,.12,.3h0Z"/></svg>');
 }
 
 .sr-only {
@@ -390,28 +448,12 @@ tr.utterance > td {
   border: 1px solid #84b8d9;
   border-radius: 0px;
 }
-::-webkit-scrollbar-thumb:hover {
-  /*background: lightgrey;*/
-  /*background: lightgrey;*/
-}
-::-webkit-scrollbar-thumb:active {
-  /*background: lightgrey;*/
-  /*background: lightgrey;*/
-}
 ::-webkit-scrollbar-track {
   background: #000000;
   /*border: 1px solid #c0c0c0;*/
   border: 1px solid #070707;
   /*border: 1px solid #000000;*/
   border-radius: 0px;
-}
-::-webkit-scrollbar-track:hover {
-  /*background: #2e2e2e;*/
-  /*background: #000000;*/
-}
-::-webkit-scrollbar-track:active {
-  /*background: #717171;*/
-  /*background: #0f0f0f;*/
 }
 ::-webkit-scrollbar-corner {
   background: transparent;

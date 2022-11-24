@@ -30,6 +30,10 @@ for file in os.listdir(inputPath):
                 transcript.append(f"{timestamp}||{scrubbedContent}")
 
     # create the output file
-    with open(f"{outputPath}{file}", "w", encoding="utf-8") as f:
+    fileNumber = int(file.split("_")[1].split("CH")[1])
+    if file.split("_")[0] == "HR2":
+        fileNumber = fileNumber + 30
+    
+    with open(f"{outputPath}CH{fileNumber}_transcript.txt", "w", encoding="utf-8") as f:
         for line in transcript:
             f.write("\n" + line)
