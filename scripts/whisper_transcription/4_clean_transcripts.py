@@ -4,7 +4,7 @@ import mod_scrub_content
 
 
 inputPath = "E:/A13_MOCR_transcription/_raw_transcripts/"
-outputPath = "E:/A13_MOCR_transcription/_transcripts/"
+outputPath = "N:/Projects/Apollo/media.apolloinrealtime.org/A13/MOCR_audio/transcripts/"
 
 for file in os.listdir(inputPath):
     if not file.endswith(".txt"):
@@ -20,14 +20,22 @@ for file in os.listdir(inputPath):
         prevcontent = ""
         for line in lines:
             [timestamp, content] = line.split("||")
+            
+            # convert timestamp to timeId
+            timeId = timestamp.replace(":", "")
+            # if the first char of timeId is "-", replace the first zero in the 3 digit hour with the negative sign.
+            # This is timeId format use in AiRT.
+            if timeId[0] == "-":
+                timeId = "-" + timeId[2:]
 
             # remove duplicate lines
             if content == prevcontent:
                 continue
-            prevcontent = content
+            
             scrubbedContent, skip = itemgetter("content", "skip")(mod_scrub_content.scrubContent(content.strip()))
             if not skip:
-                transcript.append(f"{timestamp}||{scrubbedContent}")
+                transcript.append(f"{timeId}|{scrubbedContent}")
+            prevcontent = content
 
     # create the output file
     fileNumber = int(file.split("_")[1].split("CH")[1])

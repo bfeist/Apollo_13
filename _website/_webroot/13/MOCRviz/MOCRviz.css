@@ -39,6 +39,17 @@ button {
   height: 100%;
 }
 
+#rightTitle {
+  font-family: "Roboto Mono", sans-serif;
+  font-size: 0.9em;
+  margin-left: 15px;
+}
+
+#rightTitleText {
+  margin-left: 5px;
+  color: rgb(93, 153, 177);
+}
+
 .close-btn {
   position: absolute;
   top: 0px;
@@ -239,37 +250,37 @@ button {
   display: flex;
 }
 
-#utteranceDiv {
+#transcriptDiv {
   overflow-y: scroll;
   position: relative;
   flex: 1 1 auto;
 }
-.utteranceTable {
+.transcriptTable {
   border-collapse: collapse;
   font-size: 0.9em;
 }
-tr.utterance {
+tr.trItem {
   cursor: pointer;
   vertical-align: top;
 }
-tr.utterance:nth-child(odd) {
+tr.trItem:nth-child(odd) {
   background-color: #000;
 }
-tr.utterance:nth-child(even) {
+tr.trItem:nth-child(even) {
   background-color: #0a0a0a;
 }
 
-tr.utterance:hover {
+tr.trItem:hover {
   /*background-color: #B5B4A4;*/
   background-color: #1e1e1e;
 }
-tr.utterance > td {
+tr.trItem > td {
   padding: 3px;
   font-size: 0.9em;
   line-height: 1.3;
 }
 
-.utt_30track {
+.trans_30track {
   color: grey;
 }
 .spokenwords {

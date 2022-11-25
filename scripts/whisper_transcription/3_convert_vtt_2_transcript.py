@@ -118,6 +118,8 @@ for tapeType in ["HR1", "HR2"]:
                         continue
                     if re.match(r"((\d\d:)?\d\d:\d\d.\d\d\d) --> ((\d\d:)?\d\d:\d\d.\d\d\d)", line):
                         currentStart = line.split(" --> ")[0]
+                        # currentEnd = line.split(" --> ")[1]
+                        # duration = round(nearestSecondFromVTTTimestamp(currentEnd) - nearestSecondFromVTTTimestamp(currentStart))
                     else:
                         if len(utterance) > 0:
                             utterance = utterance + " " + line.rstrip()
@@ -129,6 +131,7 @@ for tapeType in ["HR1", "HR2"]:
                         # if the current line ends with a punctuation mark
                         # Or if the line is over 500 characters long
                         # Write the line to the output file.
+                        # if re.match(r".*[.?!…]$", line) or duration > 1:
                         if re.match(r".*[.?!…]$", line) or len(utterance) > 500:
                             seconds = secondsFromGET(tapeStart) + wavStart + nearestSecondFromVTTTimestamp(uttStart)
                             transcriptArr.append(f"{seconds}||{utterance}")

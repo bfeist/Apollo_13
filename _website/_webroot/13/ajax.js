@@ -212,11 +212,10 @@ function processTOCData(allText) {
 function processUtteranceData(allText) {
   //console.log("processUtteranceData");
   var allTextLines = allText.split(/\r\n|\n/);
-  var curRow = 0;
   for (var i = 0; i < allTextLines.length; i++) {
     var data = allTextLines[i].split("|");
     if (data[0] !== "") {
-      gUtteranceDataLookup[data[0]] = curRow;
+      gUtteranceDataLookup[data[0]] = i;
       gUtteranceIndex[i] = data[0];
       data[1] = data[1].replace(/CDR/g, "Lovell");
       data[1] = data[1].replace(/CMP/g, "Swigert");
@@ -233,7 +232,6 @@ function processUtteranceData(allText) {
       data[2] = data[2].replace(/VGY /g, "V<sub>gy</sub> ");
       data[2] = data[2].replace(/VGZ /g, "V<sub>gz</sub> ");
       gUtteranceData.push(data);
-      curRow++;
     }
   }
 }

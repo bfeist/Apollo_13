@@ -823,22 +823,22 @@ function scrollTranscriptToTimeId(timeId) {
 
     //check if utteranceDiv is empty
     if (typeof gUtteranceDisplayStartIndex === "undefined") {
-      repopulateUtterances(timeId);
+      repopulateTranscript(timeId);
       //check if timeId is already loaded into utterance div
     } else if (gUtteranceDataLookup[timeId] < gUtteranceDisplayStartIndex + 49) {
       //prepend - always have 50 lines above current time
       var prependCount = gUtteranceDisplayStartIndex - gUtteranceDataLookup[timeId] + 50;
       if (prependCount > 50) {
-        repopulateUtterances(timeId);
+        repopulateTranscript(timeId);
       } else {
         prependCount = 50;
-        prependUtterances(prependCount);
+        prependTranscript(prependCount);
       }
     } else if (gUtteranceDataLookup[timeId] > gUtteranceDisplayEndIndex - 49) {
       //append - always have 50 lines below current time
       var appendCount = gUtteranceDataLookup[timeId] - gUtteranceDisplayEndIndex + 50;
       if (appendCount > 50) {
-        repopulateUtterances(timeId);
+        repopulateTranscript(timeId);
       } else {
         appendCount = 50;
         appendUtterances(appendCount);
@@ -877,7 +877,7 @@ function flashTab(tabName) {
 
 // <editor-fold desc="utterance and commentary chunking code------------------------------------------------">
 
-function repopulateUtterances(timeId) {
+function repopulateTranscript(timeId) {
   var utteranceIndex = gUtteranceDataLookup[timeId]; //must be a timeId that exists in the transcripts
   var utteranceTable = $("#utteranceTable");
   utteranceTable.html("");
@@ -899,7 +899,7 @@ function repopulateUtterances(timeId) {
   $("#utteranceDiv").scrollTop("#uttid" + timeId);
 }
 
-function prependUtterances(count, atTop) {
+function prependTranscript(count, atTop) {
   atTop = atTop || false;
   var utteranceDiv = $("#utteranceDiv");
   var utteranceTable = $("#utteranceTable");
@@ -2667,7 +2667,7 @@ $(document).ready(function () {
       var utteranceDiv = $("#utteranceDiv");
       if (utteranceDiv.scrollTop() < 300) {
         //trace("top of utteranceDiv reached");
-        prependUtterances(25, true);
+        prependTranscript(25, true);
       } else if (
         utteranceDiv.scrollTop() + utteranceDiv.innerHeight() >=
         parseInt(utteranceDiv[0].scrollHeight) - 300
