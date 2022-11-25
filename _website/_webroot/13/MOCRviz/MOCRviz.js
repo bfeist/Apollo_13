@@ -1536,6 +1536,7 @@ function isometric_dots_mouseleave() {
 function setControllerDetails() {
   $("#controller-name").text(cTrackInfo["ch" + gActiveChannel][0]);
   $("#controller-description").text(cTrackInfo["ch" + gActiveChannel][1]);
+  $("#rightTitleText").text(cTrackInfo["ch" + gActiveChannel][0]);
 }
 
 function getTapeByGETseconds(seconds, channel) {

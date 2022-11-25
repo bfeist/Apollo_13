@@ -47,7 +47,8 @@ button {
 
 #rightTitleText {
   margin-left: 5px;
-  color: rgb(93, 153, 177);
+  font-weight: bold;
+  color: #7cb7e0;
 }
 
 .close-btn {
@@ -258,6 +259,7 @@ button {
 .transcriptTable {
   border-collapse: collapse;
   font-size: 0.9em;
+  width: 100%;
 }
 tr.trItem {
   cursor: pointer;
@@ -369,7 +371,7 @@ tr.trItem > td {
   position: relative;
   flex: 1 1 auto;
 }
-/* ----------------- BUTTONS  -----------------*/
+/* ----------------- NAV BUTTONS  -----------------*/
 .button-column-container {
   display: flex;
   flex-direction: column;
@@ -389,7 +391,7 @@ tr.trItem > td {
 
   font-family: "Oswald", sans-serif;
   font-weight: 500;
-  font-size: 0.9em;
+  font-size: 0.8em;
   text-align: center;
 
   padding: 0.2em 0 20px 0;
@@ -398,7 +400,7 @@ tr.trItem > td {
   border-radius: 4px;
   margin-bottom: 2px;
 
-  color: #444;
+  color: #111;
 
   width: 50px;
   background-size: 15px;
@@ -406,7 +408,7 @@ tr.trItem > td {
   background-repeat: no-repeat;
   background-position: 50% 80%;
   background-origin: border-box;
-  box-shadow: inset -1px -1px 2px 1px #515151;
+  box-shadow: inset -1px -1px 7px 3px rgba(0, 0, 0, 0.25);
 
   cursor: pointer;
   transition: all 0.1s ease-in-out;
