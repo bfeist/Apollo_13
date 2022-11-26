@@ -213,6 +213,7 @@ var gTapesActivityRangeArray = [];
 var gTapesActivityStartIndex;
 var gActiveTapesActivityFilenames = ["", "", ""];
 var gGettingTapeActivity = false;
+var gCurrentlyPlayingTape = "";
 
 var gCurrGETSeconds = cAppStartGET;
 var gLastRoundedGET = cAppStartGET;
@@ -298,6 +299,12 @@ window.onload = function () {
     handleDisplayTabButtonClick("aboutBtn");
   });
 
+  $("#searchInputField").keyup(
+    $.throttle(function () {
+      performSearch();
+    }, 100)
+  );
+
   if (parent.gMobileSite === true && parent.gCurrMissionTime !== undefined) {
     $(".close-btn").css("display", "none");
   }
@@ -349,6 +356,7 @@ function handleDisplayTabButtonClick(buttonId) {
     $("#transcriptDiv").css("display", "none");
     $("#searchDiv").css("display", "block");
     $("#aboutDiv").css("display", "none");
+    $("#searchInputField").focus();
   } else if (buttonId === "aboutBtn") {
     $("#textBtn").removeClass("selected");
     $("#searchBtn").removeClass("selected");
@@ -800,6 +808,10 @@ function playFromCurrGET(syncWithParent) {
     }
   }
   var tapeData = getTapeByGETseconds(gCurrGETSeconds, gActiveChannel);
+  if (tapeData[0] !== gCurrentlyPlayingTape) {
+    gCurrentlyPlayingTape = tapeData[0];
+    loadChannelSoundfile();
+  }
   var tapeCueTimeSeconds = gCurrGETSeconds - timeStrToSeconds(tapeData[2]);
 
   // trace("playFromCurrGET(): gWaitForPlayer: " + tapeCueTimeSeconds);
@@ -1615,23 +1627,6 @@ function processTapeRangeData(allText) {
   gTapeRangesHR2 = gTapeRangesHR2.sort(Comparator);
 }
 
-// function ajaxGetTapesActivityData() {
-//     trace("ajaxGetTapeActivityData()");
-//     return $.ajax({
-//         type: "GET",
-//         url: "/11mp3/tape_activity.json",
-//         dataType: "json",
-//         async: false,
-//         success: function(data) {
-//             trace ("ajaxGetTapeActivityData returned data");
-//             gTapesActivityArray = data;
-//         },
-//         error: function(xhr, ajaxOptions, thrownError){
-//             alert(xhr.status);
-//         }
-//     });
-// }
-
 function getTapeActivityRanges(activeSec) {
   // trace("getTapeActivityRanges: " + activeSec);
   activeSec = activeSec + cCountdownSeconds;
@@ -1733,7 +1728,7 @@ function ajaxGetWaveData(url) {
   xhr.send();
 }
 
-// transcript functions
+// ------------------------------- transcript functions --------------------------------
 
 function ajaxGetTranscript() {
   var urlStr = `${cTapeCdnRoot}/transcripts/CH${gActiveChannel}_transcript.txt`;
@@ -1777,7 +1772,12 @@ function resetAndLoadTranscript() {
 
 function transcriptClick(timeId) {
   gCurrGETSeconds = timeStrToSeconds(timeIdToTimeStr(timeId));
-  playFromCurrGET(false);
+  playFromCurrGET(true);
+
+  // scroll the transcript
+  var timeId = timeStrToTimeId(secondsToTimeStr(gCurrGETSeconds));
+  scrollTranscriptToTimeId(timeId);
+
   refreshTapeActivityDisplay(true);
   gWaveformRefresh = true;
   setControllerDetails();
@@ -1870,8 +1870,8 @@ function trimTranscript() {
   var numberToRemove = gTranscriptDisplayEndIndex - gTranscriptDisplayStartIndex - 150;
   if (numberToRemove > 0) {
     trace("trimTranscript():" + numberToRemove);
-    var currDistFromStart = ggCurrentHighlightedTranscriptIndex - gTranscriptDisplayStartIndex;
-    var currDistFromEnd = gTranscriptDisplayEndIndex - ggCurrentHighlightedTranscriptIndex;
+    var currDistFromStart = gCurrentHighlightedTranscriptIndex - gTranscriptDisplayStartIndex;
+    var currDistFromEnd = gTranscriptDisplayEndIndex - gCurrentHighlightedTranscriptIndex;
     trace("trimTranscript(): currDistFromStart: " + currDistFromStart);
     trace("trimTranscript(): currDistFromEnd: " + currDistFromEnd);
     if (currDistFromStart > currDistFromEnd) {
@@ -1915,7 +1915,7 @@ function trimTranscript() {
     }
     var transcriptDiv = $("#transcriptDiv");
     var currElement = $(
-      "#transid" + timeStrToTimeId(gTranscriptData[ggCurrentHighlightedTranscriptIndex][0])
+      "#transid" + timeStrToTimeId(gTranscriptData[gCurrentHighlightedTranscriptIndex][0])
     );
     var newScrollDestination =
       transcriptDiv.scrollTop() + currElement.offset().top - transcriptDiv.offset().top;
@@ -1935,63 +1935,6 @@ function getTranscriptObjectHTML(transcriptIndex, style) {
   html = html.replace("@timestamp", timeIdToTimeStr(transcriptObject[0]));
   html = html.replace("@words", transcriptObject[1]);
   return html;
-}
-
-function trimTranscript() {
-  var numberToRemove = gTranscriptDisplayEndIndex - gTranscriptDisplayStartIndex - 150;
-  if (numberToRemove > 0) {
-    trace("trimTranscript():" + numberToRemove);
-    var currDistFromStart = gCurrentHighlightedTranscriptIndex - gTranscriptDisplayStartIndex;
-    var currDistFromEnd = gTranscriptDisplayEndIndex - gCurrentHighlightedTranscriptIndex;
-    trace("trimTranscript(): currDistFromStart: " + currDistFromStart);
-    trace("trimTranscript(): currDistFromEnd: " + currDistFromEnd);
-    if (currDistFromStart > currDistFromEnd) {
-      //trim items from top of transcript div
-      var counter = 0;
-      for (
-        var i = gTranscriptDisplayStartIndex;
-        i < gTranscriptDisplayStartIndex + numberToRemove;
-        i++
-      ) {
-        $("#transid" + gTranscriptIndex[i]).remove();
-        counter++;
-      }
-      //trace("Trimming " + numberToRemove + " transcript from top");
-      var tempEndForTrace = gTranscriptDisplayStartIndex + numberToRemove;
-      trace(
-        "trimTranscript(): removed from top: " +
-          counter +
-          " starting at index: " +
-          gTranscriptDisplayStartIndex +
-          " up to index: " +
-          tempEndForTrace
-      );
-      gTranscriptDisplayStartIndex = gTranscriptDisplayStartIndex + numberToRemove;
-    } else {
-      //trim items from bottom of transcript div
-      counter = 0;
-      for (i = gTranscriptDisplayEndIndex - numberToRemove; i <= gTranscriptDisplayEndIndex; i++) {
-        $("#transid" + gTranscriptIndex[i]).remove();
-        counter++;
-      }
-      //trace("Trimming " + numberToRemove + " transcript from bottom");
-      gTranscriptDisplayEndIndex = gTranscriptDisplayEndIndex - numberToRemove;
-      trace(
-        "trimTranscript(): removed from bottom: " +
-          counter +
-          " starting at index: " +
-          gTranscriptDisplayEndIndex -
-          numberToRemove
-      );
-    }
-    var transcriptDiv = $("#transcriptDiv");
-    var currElement = $(
-      "#transid" + timeStrToTimeId(gTranscriptData[gCurrentHighlightedTranscriptIndex][0])
-    );
-    var newScrollDestination =
-      transcriptDiv.scrollTop() + currElement.offset().top - transcriptDiv.offset().top;
-    transcriptDiv.scrollTop(newScrollDestination);
-  }
 }
 
 function scrollTranscriptToTimeId(timeId) {
@@ -2027,21 +1970,24 @@ function scrollTranscriptToTimeId(timeId) {
         appendTranscript(appendCount);
       }
     }
+    trimTranscript();
+
     transcriptTable.children("*").css("background-color", ""); //clear all element highlights
     var highlightedTranscriptElement = $(".transid" + timeId);
     highlightedTranscriptElement.css("background-color", cBackground_color_active); //set new element highlights
 
+    const scrollTopMarginTop = 50;
     if (highlightedTranscriptElement !== undefined) {
       var newScrollDestination =
         transcriptDiv.scrollTop() +
-        highlightedTranscriptElement.offset().top -
+        (highlightedTranscriptElement.offset().top - scrollTopMarginTop) -
         transcriptDiv.offset().top;
 
       transcriptDiv.animate({ scrollTop: newScrollDestination }, 250, "swing", function () {
         trace("Finished animating: " + newScrollDestination);
       });
     }
-    trimTranscript();
+
     gLastTranscriptTimeId = timeId;
   }
 }
@@ -2064,6 +2010,58 @@ function findClosestTranscriptItem(secondsSearch) {
       " searches"
   );
   return scrollTimeId;
+}
+
+function performSearch() {
+  //trace("performSearch(): start");
+  var searchResultsTable = $("#searchResultsTable");
+  var searchResultCount = 0;
+  var searchText = $("#searchInputField").val().toLowerCase();
+  searchResultsTable.html("");
+  if (searchText.length > 1) {
+    for (var counter = 0; counter < gTranscriptData.length; counter++) {
+      if (gTranscriptData[counter][1].toLowerCase().indexOf(searchText) !== -1) {
+        var html = getSearchResultHTML(counter);
+        var searchResultTextIndex = html.toLowerCase().indexOf(searchText);
+        html =
+          html.slice(0, searchResultTextIndex) +
+          "<span class='searchResultHighlight'>" +
+          html.slice(searchResultTextIndex, searchResultTextIndex + searchText.length) +
+          "</span>" +
+          html.slice(searchResultTextIndex + searchText.length);
+        searchResultsTable.append(html);
+        //trace("performSearch():found: " + counter);
+        searchResultCount++;
+      }
+      if (searchResultCount > 500) {
+        break;
+      }
+    }
+  }
+}
+
+function getSearchResultHTML(searchArrayIndex) {
+  //trace("getUtteranceObjectHTML():" + utteranceIndex);
+  var searchObject = gTranscriptData[searchArrayIndex];
+  var html = $("#searchResultTemplate").html();
+  var timeId = searchObject[0];
+
+  html = html.replace(/@searchResultTimeid/g, timeId);
+  html = html.replace("@timestamp", timeIdToTimeStr(searchObject[0]));
+  html = html.replace("@words", searchObject[1]);
+  return html;
+}
+
+function searchResultClick(timeId) {
+  transcriptClick(timeId);
+
+  // switch back to transcript tab
+  $("#textBtn").addClass("selected");
+  $("#searchBtn").removeClass("selected");
+  $("#aboutBtn").removeClass("selected");
+  $("#transcriptDiv").css("display", "block");
+  $("#searchDiv").css("display", "none");
+  $("#aboutDiv").css("display", "none");
 }
 
 //------------ helpers

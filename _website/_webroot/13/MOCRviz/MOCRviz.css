@@ -252,6 +252,7 @@ button {
 }
 
 #transcriptDiv {
+  display: none;
   overflow-y: scroll;
   position: relative;
   flex: 1 1 auto;
@@ -294,7 +295,7 @@ tr.trItem > td {
 
 /* ----------------- search -----------------*/
 #searchDiv {
-  display: none;
+  /* display: none; */
   overflow-y: scroll;
   position: relative;
   flex: 1 1 auto;

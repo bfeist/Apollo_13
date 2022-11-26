@@ -211,12 +211,12 @@
         <div id="middle">
           <div class="button-column-container">
             <div class="button-column-item">
-              <a class="icon-btn selected" id="textBtn" title="Channel transcript">
+              <a class="icon-btn" id="textBtn" title="Channel transcript">
                 <span>TRSCPT</span>
               </a>
             </div>
             <div class="button-column-item">
-              <a class="icon-btn" id="searchBtn" title="Search this channel transcript">
+              <a class="icon-btn selected" id="searchBtn" title="Search this channel transcript">
                 <span>SEARCH</span>
               </a>
             </div>
@@ -611,7 +611,7 @@
     <tr
       class="trItem trans_30track"
       style="@style"
-      onclick="searchResultClick('@searchResultid', '@entrytypevar')"
+      onclick="searchResultClick('@searchResultTimeid')"
     >
       <td class="timestamp">@timestamp</td>
       <td class="spokenwords">@words</td>
