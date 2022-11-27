@@ -208,141 +208,143 @@
             </audio>
           </div>
         </div>
-        <div id="middle">
-          <div class="button-column-container">
-            <div class="button-column-item">
-              <a class="icon-btn selected" id="textBtn" title="Channel transcript">
-                <span>TRSCPT</span>
-              </a>
-            </div>
-            <div class="button-column-item">
-              <a class="icon-btn" id="searchBtn" title="Search this channel transcript">
-                <span>SEARCH</span>
-              </a>
-            </div>
-            <div class="button-column-item">
-              <a class="icon-btn" id="aboutBtn" title="About these transcripts">
-                <span>ABOUT</span>
-              </a>
-            </div>
-          </div>
-        </div>
         <div id="right">
           <div id="rightTitle">
             Mission Contol Audio Channel:<span id="rightTitleText">CAPCOM [L]</span>
           </div>
+          <div class="button-row-container">
+            <div class="button-row-item">
+              <a
+                class="icon-btn selected"
+                id="textBtn"
+                title="Channel transcript"
+                style="background-position: 12% 55%; width: 90px"
+              >
+                <span>TRANSCRIPT</span>
+              </a>
+            </div>
+            <div class="button-row-item">
+              <a class="icon-btn" id="searchBtn" title="Search this channel transcript">
+                <span>SEARCH</span>
+              </a>
+            </div>
+            <div class="button-row-item">
+              <a class="icon-btn" id="aboutBtn" title="About these transcripts" style="width: 60px">
+                <span>ABOUT</span>
+              </a>
+            </div>
+          </div>
           <div class="monitor">
-            <div class="output-wrapper">
-              <div id="transcriptDiv">
-                <table class="transcriptTable" id="transcriptTable"></table>
+            <div id="transcriptDiv">
+              <table class="transcriptTable" id="transcriptTable"></table>
+            </div>
+            <div id="searchDiv">
+              <div style="display: flex; flex-direction: row">
+                <span class="title">Search</span>
+                <input style="flex-grow: 1" type="text" id="searchInputField" />
               </div>
-              <div id="searchDiv">
-                <div style="display: flex; flex-direction: row">
-                  <span class="title">Search</span>
-                  <input style="flex-grow: 1" type="text" id="searchInputField" />
-                </div>
-                <hr />
-                <div id="searchResultsDiv">
-                  <table id="searchResultsTable"></table>
-                </div>
+              <hr />
+              <div id="searchResultsDiv">
+                <table id="searchResultsTable"></table>
               </div>
-              <div id="aboutDiv">
-                <div class="title">About the Mission Control Audio</div>
-                <div class="subtitle">Digitization</div>
-                <div class="copy">
-                  <p>
-                    This Mission Control audio was digitized in a
-                    <a
-                      href="https://www.nasa.gov/feature/nasa-university-of-texas-at-dallas-reveal-apollo-11-behind-the-scenes-audio"
-                      target="_blank"
-                      >multi-year effort</a
+            </div>
+            <div id="aboutDiv">
+              <div class="title">About the Mission Control Audio</div>
+              <div class="subtitle">Digitization</div>
+              <div class="copy">
+                <p>
+                  This Mission Control audio was digitized in a
+                  <a
+                    href="https://www.nasa.gov/feature/nasa-university-of-texas-at-dallas-reveal-apollo-11-behind-the-scenes-audio"
+                    target="_blank"
+                    >multi-year effort</a
+                  >
+                  under the guidance of Prof. John Hansen at UT Dallas. The original tranche of
+                  transfers were supplied to the Apollo in Real time team in 2017 along with all
+                  11,000 hours of Apollo 11 audio.
+                </p>
+                <p>
+                  The tapes surrounding the Apollo 13 explosion were later discovered in the
+                  National Archives, having been separated from the others for many decades, due to
+                  their use in the post-mission congressional investigation to find the cause of the
+                  on-board explosion. They were digitized by NASA's Johnson Space Center (JSC) in
+                  February and March, 2020 with the help of JSC Historical Preservation Officer,
+                  Sandra Tetley.
+                </p>
+              </div>
+              <div>
+                <a href="img/13_tape_1.jpg" target="_blank"
+                  ><img src="img/13_tape_1.jpg" height="70"
+                /></a>
+                <a href="img/13_tape_3.jpg" target="_blank"
+                  ><img src="img/13_tape_3.jpg" height="70"
+                /></a>
+                <a href="img/13_tape_4.jpg" target="_blank"
+                  ><img src="img/13_tape_4.jpg" height="70"
+                /></a>
+                <a href="img/13_tape_5.jpg" target="_blank"
+                  ><img src="img/13_tape_5.jpg" height="70"
+                /></a>
+                <a href="img/13_tape_6.jpg" target="_blank"
+                  ><img src="img/13_tape_6.jpg" height="70"
+                /></a>
+                <a href="img/13_tape_2.jpg" target="_blank"
+                  ><img src="img/13_tape_2.jpg" height="70"
+                /></a>
+              </div>
+              <div class="subtitle">Processing</div>
+              <div class="copy">
+                <p>
+                  The Soundscriber machine that played back each tape for digitization is the only
+                  remaining machine of its kind in the world. It was built around the time of the
+                  Apollo missions and even though it was refurbished prior to digitization, it still
+                  introduced severe distortions to the audio during the playback process and
+                  subsequent digital files.
+                </p>
+
+                <p>
+                  These artifacts, known as "wow" - a long term drift that makes the many-hour long
+                  tapes play back nearly an hour longer than originally recorded - and "flutter" - a
+                  short term drift that makes the sounds warble in pitch about three times a second
+                  - were corrected using a custom algorithm developed by Apollo in Real Time team
+                  member, <a href="https://twitter.com/ke6jjj">Jeremy Cooper</a>. The resulting
+                  digital files are a near-perfect representation of what was originally recorded on
+                  the tapes at the time of the mission. Since they contain no time variation and
+                  have been double-checked by an original timing source known as an IRIG-B
+                  generator, the corrected files as a whole are the primary source material that the
+                  team relies upon when publishing the exact timing of mission events, including the
+                  synchronization of video sources in the timeline. They are indisputably
+                  historically accurate.
+                </p>
+              </div>
+
+              <div class="title">About the Mission Control Transcripts</div>
+              <div class="copy">
+                <p>
+                  Unlike the main space-to-ground Apollo in Real Time transcript (left), which was
+                  created based upon the original mission transcript that was typewritten in 1970,
+                  the transcripts provided here for each channel of Mission Control flight
+                  controller audio were generated using the
+                  <a href="https://openai.com/blog/whisper/" target="_blank" class="openAiLink">
+                    <svg
+                      class="openAiLogo"
+                      version="1.1"
+                      id="openai-horizontal"
+                      xmlns="http://www.w3.org/2000/svg"
+                      xmlns:xlink="http://www.w3.org/1999/xlink"
+                      x="0px"
+                      y="0px"
+                      viewBox="0 0 936 232"
+                      xml:space="preserve"
                     >
-                    under the guidance of Prof. John Hansen at UT Dallas. The original tranche of
-                    transfers were supplied to the Apollo in Real time team in 2017 along with all
-                    11,000 hours of Apollo 11 audio.
-                  </p>
-                  <p>
-                    The tapes surrounding the Apollo 13 explosion were later discovered in the
-                    National Archives, having been separated from the others for many decades, due
-                    to their use in the post-mission congressional investigation to find the cause
-                    of the on-board explosion. They were digitized by NASA's Johnson Space Center
-                    (JSC) in February and March, 2020 with the help of JSC Historical Preservation
-                    Officer, Sandra Tetley.
-                  </p>
-                </div>
-                <div>
-                  <a href="img/13_tape_1.jpg" target="_blank"
-                    ><img src="img/13_tape_1.jpg" height="70"
-                  /></a>
-                  <a href="img/13_tape_3.jpg" target="_blank"
-                    ><img src="img/13_tape_3.jpg" height="70"
-                  /></a>
-                  <a href="img/13_tape_4.jpg" target="_blank"
-                    ><img src="img/13_tape_4.jpg" height="70"
-                  /></a>
-                  <a href="img/13_tape_5.jpg" target="_blank"
-                    ><img src="img/13_tape_5.jpg" height="70"
-                  /></a>
-                  <a href="img/13_tape_6.jpg" target="_blank"
-                    ><img src="img/13_tape_6.jpg" height="70"
-                  /></a>
-                  <a href="img/13_tape_2.jpg" target="_blank"
-                    ><img src="img/13_tape_2.jpg" height="70"
-                  /></a>
-                </div>
-                <div class="subtitle">Processing</div>
-                <div class="copy">
-                  <p>
-                    The Soundscriber machine that played back each tape for digitization is the only
-                    remaining machine of its kind in the world. It was built around the time of the
-                    Apollo missions and even though it was refurbished prior to digitization, it
-                    still introduced severe distortions to the audio during the playback process and
-                    subsequent digital files.
-                  </p>
-
-                  <p>
-                    These artifacts, known as "wow" - a long term drift that makes the many-hour
-                    long tapes play back nearly an hour longer than originally recorded - and
-                    "flutter" - a short term drift that makes the sounds warble in pitch about three
-                    times a second - were corrected using a custom algorithm developed by Apollo in
-                    Real Time team member, <a href="https://twitter.com/ke6jjj">Jeremy Cooper</a>.
-                    The resulting digital files are a near-perfect representation of what was
-                    originally recorded on the tapes at the time of the mission. Since they contain
-                    no time variation and have been double-checked by an original timing source
-                    known as an IRIG-B generator, the corrected files as a whole are the primary
-                    source material that the team relies upon when publishing the exact timing of
-                    mission events, including the synchronization of video sources in the timeline.
-                    They are indisputably historically accurate.
-                  </p>
-                </div>
-
-                <div class="title">About the Mission Control Transcripts</div>
-                <div class="copy">
-                  <p>
-                    Unlike the main space-to-ground Apollo in Real Time transcript (left), which was
-                    created based upon the original mission transcript that was typewritten in 1970,
-                    the transcripts provided here for each channel of Mission Control flight
-                    controller audio were generated using the
-                    <a href="https://openai.com/blog/whisper/" target="_blank" class="openAiLink">
-                      <svg
-                        class="openAiLogo"
-                        version="1.1"
-                        id="openai-horizontal"
-                        xmlns="http://www.w3.org/2000/svg"
-                        xmlns:xlink="http://www.w3.org/1999/xlink"
-                        x="0px"
-                        y="0px"
-                        viewBox="0 0 936 232"
-                        xml:space="preserve"
-                      >
-                        <style type="text/css">
-                          .st0 {
-                            fill: #ffffff;
-                          }
-                        </style>
-                        <path
-                          class="st0"
-                          d="M667.2,90.6c-13.8,0-23.6,4.7-28.4,13.6l-2.6,4.8V92.9h-22.4v97.9h23.5v-58.2c0-13.9,7.6-21.9,20.7-21.9
+                      <style type="text/css">
+                        .st0 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                      <path
+                        class="st0"
+                        d="M667.2,90.6c-13.8,0-23.6,4.7-28.4,13.6l-2.6,4.8V92.9h-22.4v97.9h23.5v-58.2c0-13.9,7.6-21.9,20.7-21.9
                    c12.6,0,19.8,7.8,19.8,21.3v58.8h23.6v-63C701.4,104.5,688.6,90.6,667.2,90.6z M553,90.6c-27.8,0-45,17.3-45,45.2v13.7
                    c0,26.8,17.4,43.5,45.4,43.5c18.8,0,31.9-6.9,40.2-21l-14.6-8.4c-6.1,8.1-15.9,13.2-25.5,13.2c-14.2,0-22.7-8.8-22.7-23.4v-3.9h65.7
                    v-16.2C596.5,107.3,579.5,90.6,553,90.6L553,90.6z M575.1,133.7h-44.4v-2.4c0-16.1,7.9-25,22.3-25c13.8,0,22.1,8.8,22.1,23.4
@@ -353,10 +355,10 @@
                    C491.6,112.1,479,90.6,450.6,90.6L450.6,90.6z M468.1,149c0,15.8-9.2,25.6-24,25.6c-13.8,0-23.4-10.4-23.4-25.2v-14.7
                    c0-15,9.7-25.6,23.6-25.6c14.7,0,23.8,9.8,23.8,25.6L468.1,149z M766.5,58.1L719,190.8h23.9l9.1-28.4h54.6l0.1,0.3l9,28.2h23.9
                    L792.1,58.1L766.5,58.1z M757.9,143.6l21.4-67.1l21.2,67.1H757.9z"
-                        />
-                        <path
-                          class="st0"
-                          d="M212.6,95.1c5.2-15.7,3.4-32.8-4.9-47c-12.6-21.8-37.8-33.1-62.4-27.8C134.3,7.9,118.6,0.9,102.1,1
+                      />
+                      <path
+                        class="st0"
+                        d="M212.6,95.1c5.2-15.7,3.4-32.8-4.9-47c-12.6-21.8-37.8-33.1-62.4-27.8C134.3,7.9,118.6,0.9,102.1,1
                    C76.9,0.9,54.5,17.2,46.8,41.1C30.6,44.5,16.7,54.6,8.5,68.9c-12.6,21.8-9.7,49.2,7.1,67.9c-5.2,15.6-3.4,32.8,4.9,47
                    C33.1,205.7,58.3,217,83,211.7c10.9,12.3,26.7,19.4,43.2,19.3c25.2,0.1,47.5-16.2,55.3-40.1c16.2-3.3,30.1-13.4,38.3-27.8
                    C232.4,141.3,229.5,113.8,212.6,95.1z M126.2,216c-10.1,0-19.8-3.5-27.6-10c0.3-0.2,1-0.5,1.4-0.8l45.8-26.4
@@ -369,39 +371,38 @@
                    L89.2,89.5V67.1c0-0.2,0.1-0.5,0.3-0.6l46.3-26.7c20.6-11.9,47-4.8,58.9,15.8C199.7,64.4,201.5,74.6,199.8,84.5L199.8,84.5z
                     M78.7,124.3l-19.4-11.2c-0.2-0.1-0.3-0.3-0.4-0.5V59.1C59,35.3,78.2,16,102,16c10.1,0,19.9,3.5,27.6,10c-0.3,0.2-0.9,0.5-1.4,0.8
                    L82.5,53.2c-2.3,1.3-3.8,3.8-3.8,6.5V124.3z M89.2,101.6l24.9-14.4l24.9,14.4v28.7l-24.9,14.4l-24.9-14.4L89.2,101.6z"
-                        />
-                      </svg>
-                    </a>
-                    Whisper model.
-                  </p>
-                  <p>
-                    The automated transcription of the 7,200 hours of Mission Control audio provided
-                    here required over <span class="highlighted">750 hours</span> of AI processing
-                    time. The resulting transcripts contain over
-                    <span class="highlighted">2,929,556 utterances</span>, consisting of
-                    <span class="highlighted">38,321,298 words</span>, totaling
-                    <span class="highlighted">171.6MB of text</span>. If you would like to download
-                    the transcripts for all mission control channels in a single file, you may do so
-                    <a
-                      href="https://apolloinrealtimemedia.nyc3.digitaloceanspaces.com/A13/MOCR_audio/transcripts/allChannelsTranscript.zip"
-                      >here</a
-                    >
-                    (version 2022-11-26).
-                  </p>
-                </div>
-                <div class="subtitle">Accuracy and Timing</div>
-                <div class="copy">
-                  <p>
-                    As valuable as these resulting transcripts are, they remain imperfect. The
-                    Apollo in Real Time team will not be endeavoring to manually correct these
-                    generated transcripts. Instead, as AI transcription improves over time the audio
-                    will be re-processed, replacing these transcripts.
-                  </p>
-                  <p>
-                    The Apollo in Real Time team is grateful to the OpenAI team for the development
-                    and open-source release of the Whisper model.
-                  </p>
-                </div>
+                      />
+                    </svg>
+                  </a>
+                  Whisper model.
+                </p>
+                <p>
+                  The automated transcription of the 7,200 hours of Mission Control audio provided
+                  here required over <span class="highlighted">750 hours</span> of AI processing
+                  time. The resulting transcripts contain over
+                  <span class="highlighted">2,929,556 utterances</span>, consisting of
+                  <span class="highlighted">38,321,298 words</span>, totaling
+                  <span class="highlighted">171.6MB of text</span>. If you would like to download
+                  the transcripts for all mission control channels in a single file, you may do so
+                  <a
+                    href="https://apolloinrealtimemedia.nyc3.digitaloceanspaces.com/A13/MOCR_audio/transcripts/allChannelsTranscript.zip"
+                    >here</a
+                  >
+                  (version 2022-11-26).
+                </p>
+              </div>
+              <div class="subtitle">Accuracy and Timing</div>
+              <div class="copy">
+                <p>
+                  As valuable as these resulting transcripts are, they remain imperfect. The Apollo
+                  in Real Time team will not be endeavoring to manually correct these generated
+                  transcripts. Instead, as AI transcription improves over time the audio will be
+                  re-processed, replacing these transcripts.
+                </p>
+                <p>
+                  The Apollo in Real Time team is grateful to the OpenAI team for the development
+                  and open-source release of the Whisper model.
+                </p>
               </div>
             </div>
           </div>

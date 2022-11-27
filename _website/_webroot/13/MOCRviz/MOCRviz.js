@@ -522,7 +522,7 @@ function mainApplication() {
     playFromCurrGET(false);
     refreshTapeActivityDisplay(true);
     gWaveformRefresh = true;
-    setControllerDetails();
+    setControllerDetails(gActiveChannel);
   };
 
   // hide player element if in iframe
@@ -572,7 +572,7 @@ function mainApplication() {
   loadChannelSoundfile();
   playFromCurrGET(true);
   refreshTapeActivityDisplay(true);
-  setControllerDetails();
+  setControllerDetails(gActiveChannel);
   window.setInterval(function () {
     //trace("setIntroTimeUpdatePoller()");
     frameUpdateOnTimer();
@@ -1235,7 +1235,7 @@ function channelButtons_click() {
   playFromCurrGET(true);
   refreshTapeActivityDisplay(true);
   gWaveformRefresh = true;
-  setControllerDetails();
+  setControllerDetails(gActiveChannel);
   resetAndLoadTranscript();
 }
 
@@ -1283,6 +1283,8 @@ function channelButtons_hover(hoverChannelNum) {
   if (parent.gMobileSite !== true && parent.gCurrMissionTime !== undefined) {
     parent.thirtyButtons_hover_fromMOCRviz(hoverChannelNum);
   }
+
+  setControllerDetails(hoverChannelNum, false);
 }
 
 function channelButtons_mouseleave() {
@@ -1297,6 +1299,7 @@ function channelButtons_mouseleave() {
   if (parent.gMobileSite !== true && parent.gCurrMissionTime !== undefined) {
     parent.thirtyButtons_mouseleave_fromMOCRviz();
   }
+  setControllerDetails(gActiveChannel);
 }
 
 function positionIsometricElements() {
@@ -1491,6 +1494,9 @@ function isometric_dots_hover() {
   $(".btn-channel").removeClass("btn-hover");
   $("#btn-ch" + hoverChannelNum).addClass("btn-hover");
 
+  //show controller info
+  setControllerDetails(hoverChannelNum, false);
+
   //draw hover highlight line
   for (var i = 0; i < cAvailableChannelsArray.length; i++) {
     if (cAvailableChannelsArray[i] === hoverChannelNum) {
@@ -1528,7 +1534,7 @@ function isometric_dots_click() {
   playFromCurrGET(true);
   refreshTapeActivityDisplay(true);
   gWaveformRefresh = true;
-  setControllerDetails();
+  setControllerDetails(gActiveChannel);
 }
 
 function isometric_dots_mouseleave() {
@@ -1543,12 +1549,15 @@ function isometric_dots_mouseleave() {
   if (parent.gMobileSite !== true && parent.gCurrMissionTime !== undefined) {
     parent.thirtyButtons_mouseleave_fromMOCRviz();
   }
+  setControllerDetails(gActiveChannel);
 }
 
-function setControllerDetails() {
-  $("#controller-name").text(cTrackInfo["ch" + gActiveChannel][0]);
-  $("#controller-description").text(cTrackInfo["ch" + gActiveChannel][1]);
-  $("#rightTitleText").text(cTrackInfo["ch" + gActiveChannel][0]);
+function setControllerDetails(channelNum, setRight = true) {
+  $("#controller-name").text(cTrackInfo["ch" + channelNum][0]);
+  $("#controller-description").text(cTrackInfo["ch" + channelNum][1]);
+  if (setRight) {
+    $("#rightTitleText").text(cTrackInfo["ch" + channelNum][0]);
+  }
 }
 
 function getTapeByGETseconds(seconds, channel) {
@@ -1772,6 +1781,9 @@ function resetAndLoadTranscript() {
 
 function transcriptClick(timeId) {
   gCurrGETSeconds = timeStrToSeconds(timeIdToTimeStr(timeId));
+  if (parent.gCurrMissionTime !== "" && parent.gCurrMissionTime !== undefined) {
+    parent.seekToTime(secondsToTimeId(gCurrGETSeconds));
+  }
   playFromCurrGET(true);
 
   // scroll the transcript
@@ -1780,7 +1792,7 @@ function transcriptClick(timeId) {
 
   refreshTapeActivityDisplay(true);
   gWaveformRefresh = true;
-  setControllerDetails();
+  setControllerDetails(gActiveChannel);
 }
 
 function repopulateTranscript(timeId) {
