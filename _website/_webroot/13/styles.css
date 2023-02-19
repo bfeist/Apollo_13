@@ -1361,9 +1361,6 @@ body.app-ready .splash-btn.activated.selected {
   align-items: stretch;
 }
 
-.output-screen {
-  /*height: 300px;*/
-}
 .output-wrapper,
 .TOC_container,
 .commentarytable,
@@ -1655,6 +1652,7 @@ div.body:after {
 }
 header {
   display: table;
+  width: 100%;
 }
 
 .header-wrapper {

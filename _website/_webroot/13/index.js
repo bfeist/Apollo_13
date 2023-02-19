@@ -2292,24 +2292,14 @@ jQuery(function ($) {
         gCurrMissionTime +
         "&ch=" +
         $("#MOCRvizIframe")[0].contentWindow.gActiveChannel;
-      // var text = "%23Apollo11 in Real-time. Mission control audio channel " + $('#MOCRvizIframe')[0].contentWindow.cTrackInfo['ch' + $('#MOCRvizIframe')[0].contentWindow.gActiveChannel][0] + " at " + gCurrMissionTime + " %23NASA";
       var channel =
         $("#MOCRvizIframe")[0].contentWindow.cTrackInfo[
           "ch" + $("#MOCRvizIframe")[0].contentWindow.gActiveChannel
         ][0];
     } else {
-      var sharedUtteranceArray =
-        gUtteranceData[
-          gUtteranceDataLookup[findClosestUtterance(timeStrToSeconds(gCurrMissionTime))]
-        ];
-      // url = "https://apolloinrealtime.org/13/?t=" + timeIdToTimeStr(sharedUtteranceArray[0]);
       url = "https://apolloinrealtime.org/13/?t=" + gCurrMissionTime;
-      // text = "%23Apollo11 in Real-time: " + timeIdToTimeStr(sharedUtteranceArray[0]) + " " + sharedUtteranceArray[1] + ": " + sharedUtteranceArray[2].substr(0, 67) + "... ";
       channel = "Main space-to-ground";
     }
-    var hashtags = "nasa";
-    // var twitterWindow = window.open('https://twitter.com/share?url=' + url + '&text=' + text + '&hashtags=' + hashtags, 'twitter-popup', 'height=350,width=600');
-    // if(twitterWindow.focus) { twitterWindow.focus(); }
 
     $("#shareModelGET").text(gCurrMissionTime);
     $("#shareModelChannel").text(channel);

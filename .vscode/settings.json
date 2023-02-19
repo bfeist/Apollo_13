@@ -2,6 +2,10 @@
   "liveServer.settings.root": "/_website/_webroot",
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
+  "files.associations": {
+    "*.html": "html",
+    "*.htm": "html"
+  },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -13,11 +17,7 @@
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[python]": {
-    "editor.defaultFormatter": null
-  },
-  "files.associations": {
-    "*.html": "html",
-    "*.htm": "html"
+    "editor.defaultFormatter": "ms-python.python"
   },
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": ["--line-length", "120"],
