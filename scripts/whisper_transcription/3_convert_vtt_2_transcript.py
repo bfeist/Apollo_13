@@ -1,6 +1,5 @@
 import re
 import os
-import tape_info
 
 
 def secondsFromGET(timestamp):
@@ -61,11 +60,32 @@ def showUtteranceGET(tapeStart, wavStart, vttTimestamp):
     return GETFromSeconds(secondsFromGET(tapeStart) + wavStart + nearestSecondFromVTTTimestamp(vttTimestamp))
 
 
-inputPath = "E:/A13_MOCR_transcription/"
+def getTapeStart(fullVttPath):
+    for tape in tapeRanges:
+        if tape["name"] in fullVttPath:
+            return tape["start"]
+    return None
+
+
+inputPath = "F:/A13_MOCR_transcription/"
+tapeRangesPath = "D:/Apollo_13/_website/_webroot/13/MOCRviz/data/tape_ranges.csv"
+
+# Read in the tape ranges csv file
+tapeRanges = []
+with open(tapeRangesPath, "r") as tapeRangesFile:
+    for line in tapeRangesFile:
+        values = re.split(r"\|", line)
+        tapeRanges.append({"name": values[0], "type": values[1], "start": values[2], "end": values[3].strip})
+
 
 # Convert each track across tapes into a single transcript accounting for HR1 or HR2 tape types
-
+tapeNames = []
 for tapeType in ["HR1", "HR2"]:
+    if tapeType == "HR1":
+        tapeNames = [tape["name"] for tape in tapeRanges if "HR1" in tape["type"]]
+    else:
+        tapeNames = [tape["name"] for tape in tapeRanges if "HR2" in tape["type"]]
+
     print("Processing " + tapeType + " tapes")
     for track in range(2, 31):
         # if the transcript for this track already exists, skip it
@@ -78,7 +98,7 @@ for tapeType in ["HR1", "HR2"]:
         for tape in os.listdir(inputPath):
             if not os.path.isdir(os.path.join(inputPath, tape)):
                 continue
-            if not tapeType in tape:
+            if not tape.replace("_defluttered", "") in tapeNames:
                 continue
 
             print(f"Reading VTTs: {tapeType} CH{track} - {tape}")
@@ -103,7 +123,7 @@ for tapeType in ["HR1", "HR2"]:
         print("Process all vtts for this track across all tapes of tapeType")
         transcriptArr = []
         for vtt in vtts:
-            tapeStart = tape_info.getTapeStartByFilename(vtt)
+            tapeStart = getTapeStart(vtt)
             with open(f"{vtt}", "r", encoding="utf-8") as f:
                 # print(f"Processing {vtt}")
                 lines = f.readlines()
@@ -118,8 +138,6 @@ for tapeType in ["HR1", "HR2"]:
                         continue
                     if re.match(r"((\d\d:)?\d\d:\d\d.\d\d\d) --> ((\d\d:)?\d\d:\d\d.\d\d\d)", line):
                         currentStart = line.split(" --> ")[0]
-                        # currentEnd = line.split(" --> ")[1]
-                        # duration = round(nearestSecondFromVTTTimestamp(currentEnd) - nearestSecondFromVTTTimestamp(currentStart))
                     else:
                         if len(utterance) > 0:
                             utterance = utterance + " " + line.rstrip()
@@ -131,7 +149,6 @@ for tapeType in ["HR1", "HR2"]:
                         # if the current line ends with a punctuation mark
                         # Or if the line is over 500 characters long
                         # Write the line to the output file.
-                        # if re.match(r".*[.?!…]$", line) or duration > 1:
                         if re.match(r".*[.?!…]$", line) or len(utterance) > 500:
                             seconds = secondsFromGET(tapeStart) + wavStart + nearestSecondFromVTTTimestamp(uttStart)
                             transcriptArr.append(f"{seconds}||{utterance}")
@@ -146,6 +163,10 @@ for tapeType in ["HR1", "HR2"]:
             transcriptArr[i] = transcriptArr[i].replace(
                 transcriptArr[i].split("||")[0], GETFromSeconds(int(transcriptArr[i].split("||")[0]))
             )
+
+        # create the output folder if it doesn't exist
+        if not os.path.exists(f"{inputPath}_raw_transcripts"):
+            os.mkdir(f"{inputPath}_raw_transcripts")
 
         # write the transcript to a file
         with open(f"{inputPath}_raw_transcripts/{tapeType}_CH{track}_transcript.txt", "w", encoding="utf-8") as out:

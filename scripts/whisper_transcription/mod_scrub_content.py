@@ -32,13 +32,15 @@ def scrubContent(content):
         {"old": "Honey fuck off", "new": "Honeysuckle"},
         {"old": "Honey suckle", "new": "Honeysuckle"},
         {"old": "honey circle", "new": "Honeysuckle"},
+        {"old": "Ernie Suckle", "new": "Honeysuckle"},
         {"old": "eggs", "new": "AAGS"},
         {"old": " pings", "new": " PGNCS"},
         {"old": "Flight, tell me", "new": " Flight, TELMU"},
         {"old": "tell me, flight", "new": " TELMU, Flight"},
         {"old": "Tell me, flight", "new": " TELMU, Flight"},
         {"old": "limb", "new": "LM"},
-        {"old": "Limb", "new": "LM"},
+        {"old": "Seacats", "new": "CCATS"},
+        {"old": "Maryland", "new": "Marilyn"},
     ]
     # replace all occurrences of old with new in content
     for replacement in replacements:

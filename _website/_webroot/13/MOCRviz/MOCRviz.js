@@ -1367,7 +1367,7 @@ function positionIsometricElements() {
       "px;top:" +
       275 +
       "px'>R</span>"
-  ); //BOOSTER C
+  ); //BOOSTER R
   isoSelector.append(
     "<span id='dot19' class='isometric_dot' style='left:" + 127 + "px;top:" + 195 + "px'>R</span>"
   ); //RETRO
@@ -1387,7 +1387,7 @@ function positionIsometricElements() {
       "px;top:" +
       305 +
       "px'>R</span>"
-  ); //SURGEON
+  ); //SURGEON R
   isoSelector.append(
     "<span id='dot14' class='isometric_dot' style='left:" + 279 + "px;top:" + 231 + "px'>C</span>"
   ); //CAPCOM
@@ -1397,7 +1397,7 @@ function positionIsometricElements() {
       "px;top:" +
       260 +
       "px'>R</span>"
-  ); //CAPCOM
+  ); //CAPCOM R
   isoSelector.append(
     "<span id='dot17' class='isometric_dot' style='left:" + 366 + "px;top:" + 166 + "px'>PE</span>"
   ); //POS EECOM
@@ -1429,14 +1429,14 @@ function positionIsometricElements() {
       "px;top:" +
       260 +
       "px'>L</span>"
-  ); //FLIGHT
+  ); //FLIGHT L
   isoSelector.append(
     "<span id='dot8' class='isometric_dot isometric_dot_small' style='left:" +
       500 +
       "px;top:" +
       240 +
       "px'>R</span>"
-  ); //FLIGHT
+  ); //FLIGHT R
   isoSelector.append(
     "<span id='dot9' class='isometric_dot' style='left:" + 538 + "px;top:" + 161 + "px'>FA</span>"
   ); //FAO

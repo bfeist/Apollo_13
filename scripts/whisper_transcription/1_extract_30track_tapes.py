@@ -142,7 +142,7 @@ def encodeWAVFilesForTranscriptionFromActivityRange(workingPath, inputFilename, 
 
 
 inputPath = "O:/Apollo_13_30-Track/44.1/defluttered/"
-workingPath = "E:/A13_MOCR_transcription/"
+workingPath = "F:/A13_MOCR_transcription/"
 
 for root, dirs, files in os.walk(inputPath):
     for dir in dirs:
