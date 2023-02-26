@@ -98,7 +98,10 @@ for tapeType in ["HR1", "HR2"]:
         for tape in os.listdir(inputPath):
             if not os.path.isdir(os.path.join(inputPath, tape)):
                 continue
-            if not tape.replace("_defluttered", "") in tapeNames:
+            if not tape.startswith("DA13"):
+                continue
+            tapeNumber = re.search(r"(T\d\d\d)", tape).group(1)
+            if not tapeNumber in tapeNames:
                 continue
 
             print(f"Reading VTTs: {tapeType} CH{track} - {tape}")
