@@ -41,6 +41,8 @@ def scrubContent(content):
         {"old": "limb", "new": "LM"},
         {"old": "Seacats", "new": "CCATS"},
         {"old": "Maryland", "new": "Marilyn"},
+        {"old": "Soup", "new": "Sup"},
+        {"old": "A-S-A-P", "new": "ASAP"},
     ]
     # replace all occurrences of old with new in content
     for replacement in replacements:

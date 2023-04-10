@@ -22,5 +22,6 @@
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": ["--line-length", "120"],
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": false
+  "python.linting.enabled": false,
+  "liveServer.settings.port": 3002
 }
