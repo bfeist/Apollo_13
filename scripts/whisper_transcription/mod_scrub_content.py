@@ -22,6 +22,7 @@ def scrubContent(content):
         {"old": "calm", "new": "comm"},
         {"old": "a firm", "new": "affirm"},
         {"old": " span", "new": "SPAN"},
+        {"old": "Spann", "new": "SPAN"},
         {"old": "diskie", "new": "DSKY"},
         {"old": "verb", "new": "VERB"},
         {"old": "noun", "new": "NOUN"},
@@ -33,7 +34,7 @@ def scrubContent(content):
         {"old": "Honey suckle", "new": "Honeysuckle"},
         {"old": "honey circle", "new": "Honeysuckle"},
         {"old": "Ernie Suckle", "new": "Honeysuckle"},
-        {"old": "eggs", "new": "AAGS"},
+        {"old": "eggs", "new": "AGS"},
         {"old": " pings", "new": " PGNCS"},
         {"old": "Flight, tell me", "new": " Flight, TELMU"},
         {"old": "tell me, flight", "new": " TELMU, Flight"},
@@ -43,6 +44,12 @@ def scrubContent(content):
         {"old": "Maryland", "new": "Marilyn"},
         {"old": "Soup", "new": "Sup"},
         {"old": "A-S-A-P", "new": "ASAP"},
+        {"old": "Bromorrow", "new": "Fra Mauro"},
+        {"old": "hat's firm", "new": "hat's affirm"},
+        {"old": "moker", "new": "MOCR"},
+        {"old": "Thanks for watching!", "new": ""},
+        {"old": "Thank you for watching.", "new": ""},
+        {"old": "Thank you for watching.", "new": ""},
     ]
     # replace all occurrences of old with new in content
     for replacement in replacements:
