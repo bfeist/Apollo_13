@@ -176,7 +176,7 @@ function onPlayerStateChange(event) {
     }
     if (gPlaybackState === "unexpectedbuffering") {
       //trace("onPlayerStateChange():PLAYING: was unexpected buffering so calling findClosestUtterance");
-      ga("send", "event", "transcript", "click", "youtube scrub");
+      //ga("send", "event", "transcript", "click", "youtube scrub");
       scrollTranscriptToTimeId(
         findClosestUtterance(event.target.getCurrentTime() + gCurrVideoStartSeconds)
       );
@@ -249,7 +249,7 @@ function setAutoScrollPoller() {
     if (gCurrMissionTime !== gLastTimeIdChecked) {
       if (parseInt(totalSec) % 30 === 0) {
         //every 30 seconds, fire a playing event
-        ga("send", "event", "playback", "playing", gCurrMissionTime);
+        //ga("send", "event", "playback", "playing", gCurrMissionTime);
       }
 
       var timeId = timeStrToTimeId(gCurrMissionTime);
@@ -415,7 +415,7 @@ function findClosestPhoto(secondsSearch) {
 
 function historicalButtonClick() {
   trace("historicalButtonClick");
-  ga("send", "event", "launch", "click", "realtime");
+  //ga("send", "event", "launch", "click", "realtime");
   window.clearInterval(gIntroInterval);
   gIntroInterval = null;
   var nearestHistTimeId = getNearestHistoricalMissionTimeId();
@@ -432,7 +432,7 @@ function historicalButtonClick() {
 
 function oneMinuteToLaunchButtonClick() {
   trace("oneMinuteToLaunchButtonClick");
-  ga("send", "event", "launch", "click", "oneminute");
+  //ga("send", "event", "launch", "click", "oneminute");
   window.clearInterval(gIntroInterval);
   gIntroInterval = null;
   onMouseOutHandler(); //remove any errant navigator rollovers that occurred during modal
@@ -514,7 +514,7 @@ function goToURL(url) {
 }
 
 function galleryClick(timeId) {
-  ga("send", "event", "galleryClick", "img", gPhotoData[gPhotoDataLookup[timeId]][1] + ".jpg");
+  //ga("send", "event", "galleryClick", "img", gPhotoData[gPhotoDataLookup[timeId]][1] + ".jpg");
   seekToTime(timeId);
 }
 
@@ -522,7 +522,7 @@ function seekToTime(timeId) {
   // transcript click handling --------------------
   trace("seekToTime(): " + timeId);
 
-  ga("send", "event", "seekToTime", "seek", timeId);
+  //ga("send", "event", "seekToTime", "seek", timeId);
 
   gDashboardManuallyToggled = false; //reset manual dashboard toggle to reenable auto show/hide
   var totalSeconds = timeIdToSeconds(timeId);
@@ -2196,7 +2196,7 @@ jQuery(function ($) {
   //buttons
 
   $("#GETBtn").click(function () {
-    ga("send", "event", "button", "click", "GET");
+    //ga("send", "event", "button", "click", "GET");
     try {
       var GETinput = $("input[name=missionElapsedTime]").val();
       GETinput = padZeros(GETinput, 9);
@@ -2207,12 +2207,12 @@ jQuery(function ($) {
   });
 
   $("#searchBtn").click(function () {
-    ga("send", "event", "button", "click", "search");
+    //ga("send", "event", "button", "click", "search");
     toggleSearchOverlay();
   });
 
   $("#dashboardBtn").click(function () {
-    ga("send", "event", "button", "click", "dashboard");
+    //ga("send", "event", "button", "click", "dashboard");
     toggleDashboardOverlay();
   });
 
@@ -2225,18 +2225,18 @@ jQuery(function ($) {
     );
 
   $(".fullscreenBtn").click(function () {
-    ga("send", "event", "button", "click", "fullscreen");
+    //ga("send", "event", "button", "click", "fullscreen");
     toggleFullscreen();
   });
 
   $("#playPauseBtn").click(function () {
     if ($("#playPauseBtn").hasClass("pause")) {
-      ga("send", "event", "button", "click", "pause");
+      //ga("send", "event", "button", "click", "pause");
       player.pauseVideo();
       $("#playPauseBtnLabel").text("PLAY");
       $("#playPauseBtn").addClass("blink_me_orange");
     } else {
-      ga("send", "event", "button", "click", "play");
+      //ga("send", "event", "button", "click", "play");
       player.playVideo();
       $("#playPauseBtnLabel").text("PAUSE");
       $("#playPauseBtn").removeClass("blink_me_orange");
@@ -2245,7 +2245,7 @@ jQuery(function ($) {
 
   $("#soundBtn").click(function () {
     if (player.isMuted() === true) {
-      ga("send", "event", "button", "click", "unmute");
+      //ga("send", "event", "button", "click", "unmute");
       if (gMOCRToggled) {
         closeMOCRviz(); //includes unmuting player and adding class below
         activateAppTab("photoTab");
@@ -2254,7 +2254,7 @@ jQuery(function ($) {
         $(this).addClass("mute");
       }
     } else {
-      ga("send", "event", "button", "click", "mute");
+      //ga("send", "event", "button", "click", "mute");
       player.mute();
       // btnIcon = "ui-icon-volume-off";
       // btnText = "Un-Mute";
@@ -2263,19 +2263,19 @@ jQuery(function ($) {
   });
 
   $("#realtimeBtn").click(function () {
-    ga("send", "event", "button", "click", "realtime");
+    //ga("send", "event", "button", "click", "realtime");
     historicalButtonClick();
   });
 
   $("#aboutBtn").click(function () {
-    ga("send", "event", "button", "click", "help");
+    //ga("send", "event", "button", "click", "help");
 
     $('[data-js-class="HelpOverlayManager"]').each(function () {
       $(this).data("helpOverlayManager").showHelp();
     });
   });
   $("#aboutSplashBtn").click(function () {
-    ga("send", "event", "button", "click", "help");
+    //ga("send", "event", "button", "click", "help");
 
     $('[data-js-class="HelpOverlayManager"]').each(function () {
       $(this).data("helpOverlayManager").showHelp();
@@ -2283,7 +2283,7 @@ jQuery(function ($) {
   });
 
   $("#shareBtn").click(function () {
-    ga("send", "event", "button", "click", "share");
+    //ga("send", "event", "button", "click", "share");
     $("#shareModalCopyWebsiteLinkAction").text("COPY LINK");
     $("#shareModalCopyLinkAction").text("COPY LINK");
     if (gMOCRToggled) {
@@ -2310,7 +2310,7 @@ jQuery(function ($) {
 
   //content tab button events
   $("#transcriptTab").click(function () {
-    ga("send", "event", "tab", "click", "transcript");
+    //ga("send", "event", "tab", "click", "transcript");
     activateContentTab(this.id);
     setTimeout(function () {
       scrollTranscriptToCurrMissionTime();
@@ -2318,13 +2318,13 @@ jQuery(function ($) {
   });
 
   $("#tocTab").click(function () {
-    ga("send", "event", "tab", "click", "toc");
+    //ga("send", "event", "tab", "click", "toc");
     activateContentTab(this.id);
     scrollTOCToCurrMissionTime();
   });
 
   $("#commentaryTab").click(function () {
-    ga("send", "event", "tab", "click", "commentary");
+    //ga("send", "event", "tab", "click", "commentary");
     activateContentTab(this.id);
     setTimeout(function () {
       scrollCommentaryToCurrMissionTime();
@@ -2333,7 +2333,7 @@ jQuery(function ($) {
 
   //app tab button events
   $("#photoTab").click(function () {
-    ga("send", "event", "tab", "click", "photo");
+    //ga("send", "event", "tab", "click", "photo");
     activateAppTab(this.id);
     // closeGeosampleOverlay(); // NA for 13
     closeSpacecraftDetails();
@@ -2341,7 +2341,7 @@ jQuery(function ($) {
   });
 
   $("#mocrTab").click(function () {
-    ga("send", "event", "tab", "click", "mocr");
+    //ga("send", "event", "tab", "click", "mocr");
     activateAppTab(this.id);
     // closeGeosampleOverlay(); // NA for 13
     closeSpacecraftDetails();
@@ -2356,19 +2356,19 @@ jQuery(function ($) {
   // });
 
   $("#spacecraftTab").click(function () {
-    ga("send", "event", "tab", "click", "geosample");
+    //ga("send", "event", "tab", "click", "geosample");
     activateAppTab(this.id);
     closeMOCRviz();
     openSpacecraftDetails();
   });
 
   $("#LRO-overlay").click(function () {
-    ga("send", "event", "tab", "click", "LRO-overlay");
+    //ga("send", "event", "tab", "click", "LRO-overlay");
     window.open("https://lunar.gsfc.nasa.gov/about.html", "_blank");
   });
 
   $("#graph-overlay").click(function () {
-    ga("send", "event", "tab", "click", "LRO-overlay");
+    //ga("send", "event", "tab", "click", "LRO-overlay");
     window.open(
       cMediaCdnRoot + "/documents/A13_Mission_Ops_Report_lowres_courtesy_Andy_Anderson_v3.pdf",
       "_blank"
@@ -2469,7 +2469,7 @@ function proportionalWidthOnPhotoBlock() {
 function thirtyButtons_click() {
   // console.log("select-channel-button clicked: " + $(this).attr('id'));
   activateAppTab("mocrTab");
-  ga("send", "event", "30track", "click", "channelbutton");
+  //ga("send", "event", "30track", "click", "channelbutton");
   gActiveChannel = parseInt(
     $(this)
       .attr("id")

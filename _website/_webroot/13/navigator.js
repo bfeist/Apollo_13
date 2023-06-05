@@ -169,7 +169,7 @@ function initNavigator() {
     if (event.point.y < gTier1Top + gTier1Height + gTierSpacing) {
       //if tier1 clicked
       trace("NAV: Tier1 clicked");
-      ga("send", "event", "navigator", "click", "tier1");
+      //ga("send", "event", "navigator", "click", "tier1");
       mouseXSeconds = (event.point.x - gTier1Left) * gTier1SecondsPerPixel - cCountdownSeconds;
     } else if (
       event.point.y >= gTier1Top + gTier1Height + gTierSpacing &&
@@ -177,12 +177,12 @@ function initNavigator() {
     ) {
       // if tier2 clicked
       trace("NAV: Tier2 clicked");
-      ga("send", "event", "navigator", "click", "tier2");
+      //ga("send", "event", "navigator", "click", "tier2");
       mouseXSeconds = (event.point.x - gTier2Left) * gTier2SecondsPerPixel + gTier2StartSeconds;
     } else {
       //tier3 clicked
       trace("NAV: Tier3 clicked");
-      ga("send", "event", "navigator", "click", "tier3");
+      //ga("send", "event", "navigator", "click", "tier3");
       mouseXSeconds = (event.point.x - gTier3Left) * gTier3SecondsPerPixel + gTier3StartSeconds;
     }
     gCurrMissionTime = secondsToTimeStr(mouseXSeconds);

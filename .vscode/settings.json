@@ -1,5 +1,6 @@
 {
   "liveServer.settings.root": "/_website/_webroot",
+  "liveServer.settings.port": 3002,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "files.associations": {
@@ -22,6 +23,5 @@
   "python.formatting.provider": "black",
   "python.formatting.blackArgs": ["--line-length", "120"],
   "python.linting.pylintEnabled": true,
-  "python.linting.enabled": false,
-  "liveServer.settings.port": 3002
+  "python.linting.enabled": false
 }

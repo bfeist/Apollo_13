@@ -485,7 +485,7 @@ function mainApplication() {
     ) {
       //if in the top mulitrack area
       //determine channel clicked
-      ga("send", "event", "MOCRviz", "click", "channel");
+      //ga("send", "event", "MOCRviz", "click", "channel");
       var availableChannelsIndex = Math.round(
         (event.point.y - cChannelStrokeWidth / 2) / (cChannelStrokeWidth + cFillerStrokeWidth)
       );
@@ -503,7 +503,7 @@ function mainApplication() {
       var mouseGEToffset = event.point.x - Math.round($(window).width() / 2);
     } else {
       //if in the wav form area
-      ga("send", "event", "MOCRviz", "click", "wav");
+      //ga("send", "event", "MOCRviz", "click", "wav");
       mouseGEToffset =
         (event.point.x - Math.round($(window).width() / 2)) * gWaveform512.seconds_per_pixel;
     }
@@ -1230,7 +1230,7 @@ function channelButtons_click() {
       .attr("id")
       .substr($(this).attr("id").indexOf("ch") + 2)
   ); //get channel number from button label
-  ga("send", "event", "MOCRviz", "click", "channelbutton");
+  //ga("send", "event", "MOCRviz", "click", "channelbutton");
   loadChannelSoundfile();
   playFromCurrGET(true);
   refreshTapeActivityDisplay(true);
@@ -1529,7 +1529,7 @@ function isometric_dots_click() {
       .attr("id")
       .substr($(this).attr("id").indexOf("dot") + 3)
   ); //get channel number from dot label
-  ga("send", "event", "MOCRviz", "click", "isobuttons");
+  //ga("send", "event", "MOCRviz", "click", "isobuttons");
   loadChannelSoundfile();
   playFromCurrGET(true);
   refreshTapeActivityDisplay(true);
