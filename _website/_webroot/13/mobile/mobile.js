@@ -1,269 +1,301 @@
 //constants
 var cMissionDurationSeconds = 547200; //152 hours
 var cCountdownSeconds = 127048;
-var cDefaultStartTimeId = '-000102';
+var cDefaultStartTimeId = "-000102";
 var cLaunchDate = Date.parse("1970-04-11 19:13:00 GMT");
 var cLaunchDateModern = Date.parse(Date.now().getFullYear().toString() + "-04-11 19:13:00 GMT");
 var cCountdownStartDate = Date.parse("1970-04-10 7:55:50 GMT"); //35 hours, 17 minutes, 10 seconds before launch
-var cCountdownStartDateModern = Date.parse(Date.now().getFullYear().toString() + "-04-10 7:55:50 GMT");
+var cCountdownStartDateModern = Date.parse(
+  Date.now().getFullYear().toString() + "-04-10 7:55:50 GMT"
+);
 
-var gCurrMissionTime = '';
+var gCurrMissionTime = "";
 var gActiveChannel = 14;
 var gMobileSite = true;
-var gPlaybackState = 'paused';
+var gPlaybackState = "paused";
 
 var gInterval;
 
 //non-mobile detect and redirect
-if(! /Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
-    var url = "../" + document.location.search;
-    $(location).attr('href',url);
+if (!/Android|webOS|iPhone|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+  var url = "../" + document.location.search;
+  $(location).attr("href", url);
 }
 
-$(document).ready(function() {
-    var t = getUrlParameter('t');
-    if (typeof t !== "undefined") {
-        gCurrMissionTime = t;
-        $('#button1m').css("display", "none");
+$(document).ready(function () {
+  var t = getUrlParameter("t");
+  if (typeof t !== "undefined") {
+    gCurrMissionTime = t;
+    $("#button1m").css("display", "none");
+  } else {
+    gCurrMissionTime = timeIdToTimeStr(getNearestHistoricalMissionTimeId());
+    setTimeUpdatePoller();
+  }
+
+  var ch = getUrlParameter("ch");
+  if (typeof ch !== "undefined") {
+    gActiveChannel = parseInt(ch);
+  }
+
+  displayHistoricalTimeDifferenceByTimeId(timeStrToTimeId(gCurrMissionTime));
+
+  var playPauseBtn = document.getElementById("playPauseBtn");
+  playPauseBtn.onclick = function () {
+    // var MOCRvizIframeSelector = $('#MOCRvizIframe')[0];
+    if ($("#playPauseBtn").hasClass("pause")) {
+      //ga('send', 'event', 'button', 'click', 'pause');
+      gPlaybackState = "paused";
+      // MOCRvizIframeSelector.contentWindow.gPlayer.pause();
+      // $('#playPauseBtn').addClass("blink_me_orange");
+      $("#playPauseBtn").removeClass("pause");
+      $("#playPauseBtn").addClass("blink_me_orange");
+      clearInterval(gInterval);
     } else {
-        gCurrMissionTime = timeIdToTimeStr(getNearestHistoricalMissionTimeId());
-        setTimeUpdatePoller();
+      //ga('send', 'event', 'button', 'click', 'play');
+      // MOCRvizIframeSelector.contentWindow.gPlayer.play();
+      // $('#playPauseBtn').removeClass("blink_me_orange");
+      $("#playPauseBtn").addClass("pause");
+      $("#playPauseBtn").removeClass("blink_me_orange");
+      gPlaybackState = "normal";
+      setTimeUpdatePoller();
     }
-
-    var ch = getUrlParameter('ch');
-    if (typeof ch !== "undefined") {
-        gActiveChannel = parseInt(ch);
-    }
-
-    displayHistoricalTimeDifferenceByTimeId(timeStrToTimeId(gCurrMissionTime));
-
-    var playPauseBtn = document.getElementById('playPauseBtn');
-    playPauseBtn.onclick = function () {
-            // var MOCRvizIframeSelector = $('#MOCRvizIframe')[0];
-            if ($("#playPauseBtn").hasClass('pause')) {
-                ga('send', 'event', 'button', 'click', 'pause');
-                gPlaybackState = 'paused';
-                // MOCRvizIframeSelector.contentWindow.gPlayer.pause();
-                // $('#playPauseBtn').addClass("blink_me_orange");
-                $("#playPauseBtn").removeClass('pause');
-                $('#playPauseBtn').addClass("blink_me_orange");
-                clearInterval(gInterval);
-            } else {
-                ga('send', 'event', 'button', 'click', 'play');
-                // MOCRvizIframeSelector.contentWindow.gPlayer.play();
-                // $('#playPauseBtn').removeClass("blink_me_orange");
-                $("#playPauseBtn").addClass('pause');
-                $('#playPauseBtn').removeClass("blink_me_orange");
-                gPlaybackState = 'normal';
-                setTimeUpdatePoller();
-            }
-        };
+  };
 });
 
 function setTimeUpdatePoller() {
-    clearInterval(gInterval);
-    gInterval = setInterval(function () {
-        // gCurrMissionTime = secondsToTimeStr(MOCRvizIframeSelector.contentWindow.gCurrGETSeconds);
-        gCurrMissionTime = secondsToTimeStr(timeStrToSeconds(gCurrMissionTime) + 1);
-        displayHistoricalTimeDifferenceByTimeId(timeStrToTimeId(gCurrMissionTime));
-    }, 1000);
+  clearInterval(gInterval);
+  gInterval = setInterval(function () {
+    // gCurrMissionTime = secondsToTimeStr(MOCRvizIframeSelector.contentWindow.gCurrGETSeconds);
+    gCurrMissionTime = secondsToTimeStr(timeStrToSeconds(gCurrMissionTime) + 1);
+    displayHistoricalTimeDifferenceByTimeId(timeStrToTimeId(gCurrMissionTime));
+  }, 1000);
 }
 
 function launchButtonClick() {
-    $('.splash-content').hide();
-    var MOCRvizIframeSelector = $('#MOCRvizIframe')[0];
-    gCurrMissionTime = '-00:01:05';
-    MOCRvizIframeSelector.contentWindow.gCurrGETSeconds = timeStrToSeconds(gCurrMissionTime);
-    MOCRvizIframeSelector.contentWindow.gActiveChannel = gActiveChannel;
-    MOCRvizIframeSelector.contentWindow.loadChannelSoundfile();
-    MOCRvizIframeSelector.contentWindow.playFromCurrGET();
-    MOCRvizIframeSelector.contentWindow.refreshTapeActivityDisplay(true);
-    MOCRvizIframeSelector.contentWindow.gWaveformRefresh = true;
-    gPlaybackState = 'normal';
-    setTimeUpdatePoller();
+  $(".splash-content").hide();
+  var MOCRvizIframeSelector = $("#MOCRvizIframe")[0];
+  gCurrMissionTime = "-00:01:05";
+  MOCRvizIframeSelector.contentWindow.gCurrGETSeconds = timeStrToSeconds(gCurrMissionTime);
+  MOCRvizIframeSelector.contentWindow.gActiveChannel = gActiveChannel;
+  MOCRvizIframeSelector.contentWindow.loadChannelSoundfile();
+  MOCRvizIframeSelector.contentWindow.playFromCurrGET();
+  MOCRvizIframeSelector.contentWindow.refreshTapeActivityDisplay(true);
+  MOCRvizIframeSelector.contentWindow.gWaveformRefresh = true;
+  gPlaybackState = "normal";
+  setTimeUpdatePoller();
 }
 
 function historicalButtonClick() {
-    $('.splash-content').hide();
-    var MOCRvizIframeSelector = $('#MOCRvizIframe')[0];
-    MOCRvizIframeSelector.contentWindow.gCurrGETSeconds = timeStrToSeconds(gCurrMissionTime);
-    MOCRvizIframeSelector.contentWindow.gActiveChannel = gActiveChannel;
-    MOCRvizIframeSelector.contentWindow.loadChannelSoundfile();
-    MOCRvizIframeSelector.contentWindow.playFromCurrGET();
-    MOCRvizIframeSelector.contentWindow.refreshTapeActivityDisplay(true);
-    MOCRvizIframeSelector.contentWindow.gWaveformRefresh = true;
-    gPlaybackState = 'normal';
-    setTimeUpdatePoller();
+  $(".splash-content").hide();
+  var MOCRvizIframeSelector = $("#MOCRvizIframe")[0];
+  MOCRvizIframeSelector.contentWindow.gCurrGETSeconds = timeStrToSeconds(gCurrMissionTime);
+  MOCRvizIframeSelector.contentWindow.gActiveChannel = gActiveChannel;
+  MOCRvizIframeSelector.contentWindow.loadChannelSoundfile();
+  MOCRvizIframeSelector.contentWindow.playFromCurrGET();
+  MOCRvizIframeSelector.contentWindow.refreshTapeActivityDisplay(true);
+  MOCRvizIframeSelector.contentWindow.gWaveformRefresh = true;
+  gPlaybackState = "normal";
+  setTimeUpdatePoller();
 }
 
-function getNearestHistoricalMissionTimeId() { //proc for "snap to real-time" button
+function getNearestHistoricalMissionTimeId() {
+  //proc for "snap to real-time" button
 
-    //var nowDate = Date.parse("2015-12-06 10:00pm -500");
+  //var nowDate = Date.parse("2015-12-06 10:00pm -500");
 
-    var nowDate = Date.now();
-    var histDate = new Date(nowDate.getTime());
+  var nowDate = Date.now();
+  var histDate = new Date(nowDate.getTime());
 
-    // var nowDate = Date.now();
-    // //var histDate=new Date(nowDate.getTime());
-    // var dateAsString = nowDate.toUTCString();
-    // var histDateAsUTCString = dateAsString.substr(5,7) + cCountdownStartDate.getYear().toString() + " " + dateAsString.substr(16);
-    // //var histDate=nowDate.toUTCString
-    // var histDate=Date.parse(histDateAsUTCString);
+  // var nowDate = Date.now();
+  // //var histDate=new Date(nowDate.getTime());
+  // var dateAsString = nowDate.toUTCString();
+  // var histDateAsUTCString = dateAsString.substr(5,7) + cCountdownStartDate.getYear().toString() + " " + dateAsString.substr(16);
+  // //var histDate=nowDate.toUTCString
+  // var histDate=Date.parse(histDateAsUTCString);
 
-    histDate.setMonth(cCountdownStartDateModern.getMonth());
-    // histDate.setYear(cCountdownStartDateModern.getYear());
+  histDate.setMonth(cCountdownStartDateModern.getMonth());
+  // histDate.setYear(cCountdownStartDateModern.getYear());
 
-    var dayOfMonth = 0;
-    if (nowDate.getDate() <= 4) {
-        dayOfMonth = nowDate.getDate() + 10;
-    } else if (nowDate.getDate() > 4 && nowDate.getDate() <= 10) {
-        dayOfMonth = nowDate.getDate() + 7;
-    } else if (nowDate.getDate() >= 10 && nowDate.getDate() <= 17) {
-        dayOfMonth = nowDate.getDate()
-    } else if (nowDate.getDate() > 17 && nowDate.getDate() <= 24) {
-        dayOfMonth = nowDate.getDate() - 7;
-    } else if (nowDate.getDate() > 24 && nowDate.getDate() <= 31) {
-        dayOfMonth = nowDate.getDate() - 14;
-    } else {
-        dayOfMonth = nowDate.getDate();
-    }
-    histDate.setDate(dayOfMonth);
+  var dayOfMonth = 0;
+  if (nowDate.getDate() <= 4) {
+    dayOfMonth = nowDate.getDate() + 10;
+  } else if (nowDate.getDate() > 4 && nowDate.getDate() <= 10) {
+    dayOfMonth = nowDate.getDate() + 7;
+  } else if (nowDate.getDate() >= 10 && nowDate.getDate() <= 17) {
+    dayOfMonth = nowDate.getDate();
+  } else if (nowDate.getDate() > 17 && nowDate.getDate() <= 24) {
+    dayOfMonth = nowDate.getDate() - 7;
+  } else if (nowDate.getDate() > 24 && nowDate.getDate() <= 31) {
+    dayOfMonth = nowDate.getDate() - 14;
+  } else {
+    dayOfMonth = nowDate.getDate();
+  }
+  histDate.setDate(dayOfMonth);
 
-    if (histDate < cCountdownStartDate) { //bump to same time next day if in the few hours on the 15th before recording starts
-        histDate.setDate(11);
-    }
+  if (histDate < cCountdownStartDate) {
+    //bump to same time next day if in the few hours on the 15th before recording starts
+    histDate.setDate(11);
+  }
 
-    // Convert dates to milliseconds
-    var histDate_ms = histDate.getTime();
-    var countdownStartDate_ms = cCountdownStartDateModern.getTime();
-    var launchDate_ms = cLaunchDateModern.getTime();
+  // Convert dates to milliseconds
+  var histDate_ms = histDate.getTime();
+  var countdownStartDate_ms = cCountdownStartDateModern.getTime();
+  var launchDate_ms = cLaunchDateModern.getTime();
 
-    if (histDate_ms < countdownStartDate_ms) { //if now is before the countdownStartDate, shift forward days to start on first day of the mission
-        //var daysToMoveForward = Math.ceil((countdownStartDate_ms - histDate_ms) / (1000 * 60 * 60 * 24));
-        var daysToMoveForward = 1;
-        histDate_ms += (1000 * 60 * 60 * 24) * daysToMoveForward;
-    } else if (histDate_ms > launchDate_ms + (cMissionDurationSeconds * 1000)) { //hist date occurs after mission ended, shift backward days to start on first day of the mission
-        //var daysToMoveBackward = Math.floor((histDate_ms - countdownStartDate_ms) / (1000 * 60 * 60 * 24));
-        var daysToMoveBackward = 1;
-        histDate_ms -= (1000 * 60 * 60 * 24) * daysToMoveBackward;
-    }
+  if (histDate_ms < countdownStartDate_ms) {
+    //if now is before the countdownStartDate, shift forward days to start on first day of the mission
+    //var daysToMoveForward = Math.ceil((countdownStartDate_ms - histDate_ms) / (1000 * 60 * 60 * 24));
+    var daysToMoveForward = 1;
+    histDate_ms += 1000 * 60 * 60 * 24 * daysToMoveForward;
+  } else if (histDate_ms > launchDate_ms + cMissionDurationSeconds * 1000) {
+    //hist date occurs after mission ended, shift backward days to start on first day of the mission
+    //var daysToMoveBackward = Math.floor((histDate_ms - countdownStartDate_ms) / (1000 * 60 * 60 * 24));
+    var daysToMoveBackward = 1;
+    histDate_ms -= 1000 * 60 * 60 * 24 * daysToMoveBackward;
+  }
 
-    var timeSinceLaunch_ms = histDate_ms - launchDate_ms;
+  var timeSinceLaunch_ms = histDate_ms - launchDate_ms;
 
-    return secondsToTimeId(timeSinceLaunch_ms / 1000);
+  return secondsToTimeId(timeSinceLaunch_ms / 1000);
 }
 
 function displayHistoricalTimeDifferenceByTimeId(timeId) {
-    //trace("displayHistoricalTimeDifferenceByTimeId():" + timeid);
+  //trace("displayHistoricalTimeDifferenceByTimeId():" + timeid);
 
-    var sign = timeId.substr(0,1);
-    var hours = Math.abs(parseInt(timeId.substr(0,3)));
-    var minutes = parseInt(timeId.substr(3,2));
-    var seconds = parseInt(timeId.substr(5,2));
+  var sign = timeId.substr(0, 1);
+  var hours = Math.abs(parseInt(timeId.substr(0, 3)));
+  var minutes = parseInt(timeId.substr(3, 2));
+  var seconds = parseInt(timeId.substr(5, 2));
 
-    var conversionMultiplier = 1;
-    if (sign === "-") { //if on countdown, subtract the mission time from the launch moment
-        conversionMultiplier = -1;
-    }
+  var conversionMultiplier = 1;
+  if (sign === "-") {
+    //if on countdown, subtract the mission time from the launch moment
+    conversionMultiplier = -1;
+  }
 
-    var timeidDate = new Date(cLaunchDateModern.getTime());
+  var timeidDate = new Date(cLaunchDateModern.getTime());
 
-    timeidDate.add({
-        hours: hours * conversionMultiplier,
-        minutes: minutes * conversionMultiplier,
-        seconds: seconds * conversionMultiplier
-    });
+  timeidDate.add({
+    hours: hours * conversionMultiplier,
+    minutes: minutes * conversionMultiplier,
+    seconds: seconds * conversionMultiplier,
+  });
 
-    // var historicalDate = new Date(timeidDate.getTime()); //for display only
-    // $(".historicalDate").text(historicalDate.toDateString());
+  // var historicalDate = new Date(timeidDate.getTime()); //for display only
+  // $(".historicalDate").text(historicalDate.toDateString());
 
-    var month_names_short = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
-    var days = ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'];
-    $(".historicalDate").text(days[timeidDate.getDay()] + ' ' + month_names_short[timeidDate.getMonth()] + " " + timeidDate.getDate() + " " + cLaunchDate.getFullYear() + " ");
+  var month_names_short = [
+    "Jan",
+    "Feb",
+    "Mar",
+    "Apr",
+    "May",
+    "Jun",
+    "Jul",
+    "Aug",
+    "Sep",
+    "Oct",
+    "Nov",
+    "Dec",
+  ];
+  var days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+  $(".historicalDate").text(
+    days[timeidDate.getDay()] +
+      " " +
+      month_names_short[timeidDate.getMonth()] +
+      " " +
+      timeidDate.getDate() +
+      " " +
+      cLaunchDate.getFullYear() +
+      " "
+  );
 
-    var timezoneOffset = -(new Date(cLaunchDateModern).getTimezoneOffset() / 60);
-    var timezoneOffsetString = timezoneOffset.toString();
-    var absTimezoneOffset = Math.abs(parseInt(timezoneOffsetString)).toString();
-    if (timezoneOffsetString === absTimezoneOffset) { //if positive timezone offset, add a +
-        timezoneOffsetString = '+' + timezoneOffsetString;
-    }
-    var timezoneOffsetPaddingAmount = 3 - absTimezoneOffset.length;
-    for (var i = 0; i < timezoneOffsetPaddingAmount; i++) {
-        timezoneOffsetString = timezoneOffsetString + "0";
-    }
+  var timezoneOffset = -(new Date(cLaunchDateModern).getTimezoneOffset() / 60);
+  var timezoneOffsetString = timezoneOffset.toString();
+  var absTimezoneOffset = Math.abs(parseInt(timezoneOffsetString)).toString();
+  if (timezoneOffsetString === absTimezoneOffset) {
+    //if positive timezone offset, add a +
+    timezoneOffsetString = "+" + timezoneOffsetString;
+  }
+  var timezoneOffsetPaddingAmount = 3 - absTimezoneOffset.length;
+  for (var i = 0; i < timezoneOffsetPaddingAmount; i++) {
+    timezoneOffsetString = timezoneOffsetString + "0";
+  }
 
-    // console.log("Timezone offset: " + timezoneOffsetString);
+  // console.log("Timezone offset: " + timezoneOffsetString);
 
-    var options = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
-    $(".historicalTime").text(timeidDate.toLocaleTimeString('en-US', options) + " " + timezoneOffsetString);
+  var options = { hour: "2-digit", minute: "2-digit", second: "2-digit", hour12: true };
+  $(".historicalTime").text(
+    timeidDate.toLocaleTimeString("en-US", options) + " " + timezoneOffsetString
+  );
 
-    // $(".missionElapsedTime").text(gCurrMissionTime);
+  // $(".missionElapsedTime").text(gCurrMissionTime);
 }
 
 function secondsToTimeStr(totalSeconds) {
-    var hours = Math.abs(parseInt(totalSeconds / 3600));
-    var minutes = Math.abs(parseInt(totalSeconds / 60)) % 60 % 60;
-    var seconds = Math.abs(parseInt(totalSeconds)) % 60;
-    seconds = Math.floor(seconds);
-    var timeStr = padZeros(hours,3) + ":" + padZeros(minutes,2) + ":" + padZeros(seconds,2);
-    if (totalSeconds < 0) {
-        timeStr = "-" + timeStr.substr(1); //change timeStr to negative, replacing leading zero in hours with "-"
-    }
-    return timeStr;
+  var hours = Math.abs(parseInt(totalSeconds / 3600));
+  var minutes = (Math.abs(parseInt(totalSeconds / 60)) % 60) % 60;
+  var seconds = Math.abs(parseInt(totalSeconds)) % 60;
+  seconds = Math.floor(seconds);
+  var timeStr = padZeros(hours, 3) + ":" + padZeros(minutes, 2) + ":" + padZeros(seconds, 2);
+  if (totalSeconds < 0) {
+    timeStr = "-" + timeStr.substr(1); //change timeStr to negative, replacing leading zero in hours with "-"
+  }
+  return timeStr;
 }
 
 function secondsToTimeId(seconds) {
-    var timeId = secondsToTimeStr(seconds).split(":").join("");
-    return secondsToTimeStr(seconds).split(":").join("");
+  var timeId = secondsToTimeStr(seconds).split(":").join("");
+  return secondsToTimeStr(seconds).split(":").join("");
 }
 
 function timeIdToSeconds(timeId) {
-    var sign = timeId.substr(0,1);
-    var hours = parseInt(timeId.substr(0,3));
-    var minutes = parseInt(timeId.substr(3,2));
-    var seconds = parseInt(timeId.substr(5,2));
-    var signToggle = (sign === "-") ? -1 : 1;
-    var totalSeconds = signToggle * ((Math.abs(hours) * 60 * 60) + (minutes * 60) + seconds);
-    //if (totalSeconds > 230400)
-    //    totalSeconds -= 9600;
-    return totalSeconds;
+  var sign = timeId.substr(0, 1);
+  var hours = parseInt(timeId.substr(0, 3));
+  var minutes = parseInt(timeId.substr(3, 2));
+  var seconds = parseInt(timeId.substr(5, 2));
+  var signToggle = sign === "-" ? -1 : 1;
+  var totalSeconds = signToggle * (Math.abs(hours) * 60 * 60 + minutes * 60 + seconds);
+  //if (totalSeconds > 230400)
+  //    totalSeconds -= 9600;
+  return totalSeconds;
 }
 
 function timeIdToTimeStr(timeId) {
-    return timeId.substr(0,3) + ":" + timeId.substr(3,2) + ":" + timeId.substr(5,2);
+  return timeId.substr(0, 3) + ":" + timeId.substr(3, 2) + ":" + timeId.substr(5, 2);
 }
 
 function timeStrToTimeId(timeStr) {
-    return timeStr.split(":").join("");
+  return timeStr.split(":").join("");
 }
 
 function timeStrToSeconds(timeStr) {
-    var sign = timeStr.substr(0,1);
-    var hours = parseInt(timeStr.substr(0,3));
-    var minutes = parseInt(timeStr.substr(4,2));
-    var seconds = parseInt(timeStr.substr(7,2));
-    var signToggle = (sign === "-") ? -1 : 1;
-    var totalSeconds = Math.round(signToggle * ((Math.abs(hours) * 60 * 60) + (minutes * 60) + seconds));
-    return totalSeconds;
+  var sign = timeStr.substr(0, 1);
+  var hours = parseInt(timeStr.substr(0, 3));
+  var minutes = parseInt(timeStr.substr(4, 2));
+  var seconds = parseInt(timeStr.substr(7, 2));
+  var signToggle = sign === "-" ? -1 : 1;
+  var totalSeconds = Math.round(signToggle * (Math.abs(hours) * 60 * 60 + minutes * 60 + seconds));
+  return totalSeconds;
 }
 
 function padZeros(num, size) {
-    var s = num + "";
-    while (s.length < size) s = "0" + s;
-    return s;
+  var s = num + "";
+  while (s.length < size) s = "0" + s;
+  return s;
 }
 
 var getUrlParameter = function getUrlParameter(sParam) {
-    var sPageURL = window.location.search.substring(1),
-        sURLVariables = sPageURL.split('&'),
-        sParameterName,
-        i;
+  var sPageURL = window.location.search.substring(1),
+    sURLVariables = sPageURL.split("&"),
+    sParameterName,
+    i;
 
-    for (i = 0; i < sURLVariables.length; i++) {
-        sParameterName = sURLVariables[i].split('=');
+  for (i = 0; i < sURLVariables.length; i++) {
+    sParameterName = sURLVariables[i].split("=");
 
-        if (sParameterName[0] === sParam) {
-            return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-        }
+    if (sParameterName[0] === sParam) {
+      return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
     }
+  }
 };
