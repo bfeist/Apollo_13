@@ -1096,6 +1096,12 @@ body.splash-loaded .splash-content {
   padding: 0 0 0 0;
 }
 
+.splash-content .actions .section .historicalSubtext {
+  font-size: 0.8em;
+  color: #bbbbbb;
+  padding: 0 0 0 0;
+}
+
 .splash-content .actions .section.fullscreen {
   margin-top: 1em;
 }

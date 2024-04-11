@@ -1,27 +1,26 @@
 {
   "liveServer.settings.root": "/_website/_webroot",
   "liveServer.settings.port": 3002,
+  "git.ignoreLimitWarning": true,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "files.associations": {
-    "*.html": "html",
-    "*.htm": "html"
-  },
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "[javascript]": {
+  "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[html]": {
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "[python]": {
-    "editor.defaultFormatter": "ms-python.python"
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "python.formatting.provider": "black",
-  "python.formatting.blackArgs": ["--line-length", "120"],
-  "python.linting.pylintEnabled": true,
-  "python.linting.enabled": false
+  "[python]": {
+    "editor.defaultFormatter": "ms-python.black-formatter"
+  },
+  "cssModules.camelCase": true
 }
