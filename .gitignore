@@ -11,3 +11,4 @@ _website/_webroot/11mp3
 venv/*
 **/spacecraft_dev
 __pycache__
+**/_unused/*
