@@ -2,7 +2,6 @@ import os
 import json
 import csv
 from datetime import timedelta
-import mod_scrub_content  # Ensure this module is accessible
 
 # Define paths
 CSV_PATH = "D:/Apollo_13/_website/_webroot/13/MOCRviz/data/tape_ranges.csv"

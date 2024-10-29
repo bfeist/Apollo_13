@@ -61,8 +61,12 @@ def seconds_to_timeid(seconds):
         seconds = abs(seconds)
     hours, remainder = divmod(seconds, 3600)
     minutes, secs = divmod(remainder, 60)
-    time_str = f"{int(hours):02}{int(minutes):02}{int(secs):02}"
-    return f"-{time_str}" if negative else time_str
+    time_str = (
+        f"-{int(hours):02}{int(minutes):02}{int(secs):02}"
+        if negative
+        else f"{int(hours):03}{int(minutes):02}{int(secs):02}"
+    )
+    return time_str
 
 
 def sort_utterances(utterances):
