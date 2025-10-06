@@ -31,16 +31,14 @@
   <link rel="stylesheet" type="text/css" href="styles.css" />
 
   <script type="text/javascript" src="https://www.youtube.com/iframe_api"></script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-WHBJ2838KH"></script>
   <script>
-    (function (i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date(); a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
 
-    ga('create', 'UA-37086725-6', 'auto');
-    ga('send', 'pageview');
+    gtag('config', 'G-WHBJ2838KH');
   </script>
   <script type="text/javascript" src="lib/webfontloader.js"></script>
   <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
@@ -93,7 +91,7 @@
         </div>
       </div>
 
-      <div class="navigator-wrapper monitor">
+      <div class="navigator-wrapper monitor"> 
         <div id="navigator" class="navigator">
           <canvas id="navCanvas" hidpi="off" resize keepalive="true"></canvas>
         </div>
@@ -346,13 +344,13 @@
         </a>
         <div>
           Join in-progress
-          <small>~52 years ago</small>
+          <small><br>~55 years ago</small>
           <div class="histtime">
-            Using time of day
             <div class="historicalDate date">Thu Dec 07 1972</div>
             <div class="historicalTime time">12:32:00 AM</div>
+            <div class="historicalSubtext">Current time in 1970</div>
           </div>
-          <small><span class="historicalSubtext">Current time in 1970</span></small>
+          
         </div>
       </div>
 
@@ -416,7 +414,7 @@
           <div class="section-header">Introduction</div>
           <div class="intro">
             <p>
-              This website replays the Apollo 13 mission as it happened, 50 years ago. It consists entirely of
+              This website replays the Apollo 13 mission as it happened. It consists entirely of
               historical material, all timed to Ground Elapsed Time--the master mission clock. Footage of Mission
               Control, film shot by the astronauts, and television broadcasts transmitted from space have been
               painstakingly placed to the very moments they were shot during the mission, as has every photograph taken,
@@ -550,9 +548,10 @@
             Geology, Geophysics, and Geochemistry Lab, NASA GSFC
             <br>
             <br>
-            <span class="accent">Dr. John Hansen and the National Science Foundation</span> 30-track Mission Control <a
-              target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">audio digitization</a>.
-            More info at <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>
+            <span class="section-subheader">University of Texas – Dallas, Center for Robust Speech Systems (CRSS-UTDallas)</span>
+            <br>Special thanks to the research team at <span class="accent">CRSS-UTDallas under the leadership of Dr. John Hansen</span>, for their work in creating the Fearless Steps APOLLO Community Resource, and National Science Foundation (NSF) CCRI funded project, resulting in the recovery of all Apollo mission audio, and full speaker/speech diarization of all 150,000hrs of communications. 
+            Details found at the: CRSS-UTDallas Explore Apollo website: <a target="_blank" href="http://exploreapollo.org">exploreapollo.org</a>, and NASA Podcast <a
+            target="_blank" href="https://www.nasa.gov/johnson/HWHAP/heroes-behind-the-heroes">“Heroes Behind the Heroes” Audio Digitizing Recovery</a>.
             <br>
             <br>
             <span class="accent">Todd Miller</span> Director, <a href="https://www.apollo11movie.com/"
