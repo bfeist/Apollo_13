@@ -12,4 +12,4 @@ venv/*
 **/spacecraft_dev
 __pycache__
 **/_unused/*
-.env
+/.env
